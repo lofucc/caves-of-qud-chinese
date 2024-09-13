@@ -6,8 +6,13 @@
 ## 已完成
 
 - 游戏字体替换，添加中文字体支持
+
 - 设置界面（部分使用机翻）
-![image-20240913234627454](.\reviews\image-20240913234627454.png)
+  [![pAnvGbF.png](https://s21.ax1x.com/2024/09/13/pAnvGbF.png)](https://imgse.com/i/pAnvGbF)
+
+  
+
+  
 
 ## 待完成
 
