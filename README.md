@@ -7,7 +7,7 @@
 
 - 游戏字体替换，添加中文字体支持
 - 设置界面（部分使用机翻）
-  - ![image-20240913234627454](C:\Users\lofucc\AppData\Roaming\Typora\typora-user-images\image-20240913234627454.png)
+![image-20240913234627454](.\reviews\image-20240913234627454.png)
 
 ## 待完成
 
