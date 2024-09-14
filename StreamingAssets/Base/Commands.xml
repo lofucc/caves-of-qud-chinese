@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<commands>
+
+  <!-- Adventure is the category used by the game when walking around. -->
+  <navcategory ID="Adventure">
+    <layer ID="System"/>
+    <layer ID="UI"/>
+    <layer ID="Adventure"/>
+    <layer ID="AdventureNav"/>
+    <layer ID="AdventureLooker"/>
+    <layer ID="AdventureTargeting"></layer>
+    <layer ID="Dynamic"/>
+  </navcategory>
+
+  <!-- Generic UI Menu, unless you need something special this is a good baseline for a new screen. -->
+  <navcategory ID="Menu">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="CategoryNav" />
+    <layer ID="AdventureNav"/>
+    <layer ID="Menus"/>
+  </navcategory>
+
+  <!-- Generic UI Menu, unless you need something special this is a good baseline for a new screen. -->
+  <navcategory ID="StatusScreens">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="CategoryNav" />
+    <layer ID="AdventureNav"/>
+    <layer ID="Menus"/>
+    <layer ID="StatusScreens"></layer>
+  </navcategory>
+
+  <navcategory ID="StatusScreens:Charsheet">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="CategoryNav" />
+    <layer ID="AdventureNav"/>
+    <layer ID="Menus"/>
+    <layer ID="StatusScreens"></layer>
+    <layer ID="StatusScreens:Charsheet"></layer>
+  </navcategory>
+
+  <!-- Generic UI Menu, unless you need something special this is a good baseline for a new screen. -->
+  <navcategory ID="Popup">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="AdventureNav"/>
+    <layer ID="Menus"/>
+  </navcategory>
+
+  <!-- Chargen adds some additional keybinds (random, etc) -->
+  <navcategory ID="Chargen">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="Menus"/>
+    <layer ID="Chargen"/>
+  </navcategory>
+
+  <!-- Looker mode binds, with most adventure binds disabled -->
+  <navcategory ID="Looker">
+    <layer ID="UI"/>
+    <layer ID="UINav"></layer>
+    <layer ID="Menus"/>
+    <layer ID="AdventureNav"/>
+    <layer ID="AdventureLooker"/>
+    <layer ID="Targeting"/>
+  </navcategory>
+
+  <!-- Targeting mode binds, with most adventure binds disabled -->
+  <navcategory ID="Targeting">
+    <layer ID="UI"/>
+    <layer ID="UINav"></layer>
+    <layer ID="Menus"/>
+    <layer ID="Targeting"/>
+    <layer ID="AdventureNav"/>
+    <layer ID="AdventureTargeting"></layer>
+  </navcategory>
+
+  <!-- Additional commands for Conversation -->
+  <navcategory ID="Conversation">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="Menus"/>
+    <layer ID="Conversation"/>
+  </navcategory>
+
+  <!-- Offer / Identify / etc are also enabled in the trade layer -->
+  <navcategory ID="Trade">
+    <layer ID="UI"/>
+    <layer ID="UINav"/>
+    <layer ID="CategoryNav"></layer>
+    <layer ID="Menus"/>
+    <layer ID="Trade"/>
+  </navcategory>
+
+  <!-- This could probably just use "Menus" but we made it it's own group for special properties of keybinds screen. -->
+  <navcategory ID="Keybind">
+    <layer ID="UI"/>
+    <layer ID="Menus"/>
+    <layer ID="UINav"/>
+  </navcategory>
+
+  <!-- Only one "button" can be used as a modifier in gamepad binds. -->
+  <command ID="GamepadAlt" DisplayText="游戏手柄 Alt" Category="菜单" Layer="Adventure">
+    <gamepadBind Button="leftTrigger"/>
+  </command>
+
+  <command ID="Accept" DisplayText="接受" Category="菜单" Layer="UINav" InputModuleBind="submit" Required="true" SkipUpgrade="true" CanShareBindsWith="Submit,CmdUse">
+    <keyboardBind Key="enter"/>
+    <keyboardBind Key="numpadenter"/>
+    <keyboardBind Key="space"/>
+    <gamepadBind Button="buttonSouth" />
+  </command>
+  <command ID="Cancel" DisplayText="取消" Category="菜单" Layer="UINav" InputModuleBind="cancel" Required="true" SkipUpgrade="true" CanShareBindsWith="CmdSystemMenu">
+    <keyboardBind Key="escape"/>
+    <gamepadBind Button="buttonEast" />
+  </command>
+  <!--
+  <command ID="UI:Click" DisplayText="UI:Click" Category="InternalUI" Layer="UINav" InputModuleBind="leftClick" Bindable="false" Display="hidden">
+    <mouseBind Button="leftButton"/>
+  </command>
+  <command ID="UI:RightClick" DisplayText="UI:RightClick" Category="InternalUI" Layer="UINav" InputModuleBind="rightClick" Bindable="false" Display="hidden">
+    <mouseBind Button="rightButton"/>
+  </command>
+  <command ID="UI:ScrollWheel" DisplayText="UI:ScrollWheel" Category="InternalUI" Layer="UINav" InputModuleBind="scrollWheel" Bindable="false" Display="hidden">
+    <mouseBind Button="scroll"/>
+  </command>
+-->
+  <command ID="UI:Navigate" DisplayText="操作" Type="Value" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection" Required="true">
+    <gamepadBind Button="leftStick"/>
+  </command>
+  <command ID="UI:Navigate/up" DisplayText="向上操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/up,CmdMoveN" Required="true" UpgradeFrom="CmdMoveN">
+    <gamepadBind Button="dpad/up"/>
+    <keyboardBind Key="upArrow"/>
+    <keyboardBind Key="numpad8"/>
+    <keyboardBind Key="k" Set="hjkl"/>
+  </command>
+  <command ID="UI:Navigate/down" DisplayText="向下操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/down,CmdMoveS" Required="true" UpgradeFrom="CmdMoveS">
+    <gamepadBind Button="dpad/down"/>
+    <keyboardBind Key="downArrow"/>
+    <keyboardBind Key="numpad2"/>
+    <keyboardBind Key="j" Set="hjkl"/>
+  </command>
+  <command ID="UI:Navigate/left" DisplayText="向左操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/left,CmdMoveW" Required="true" UpgradeFrom="CmdMoveW">
+    <gamepadBind Button="dpad/left"/>
+    <keyboardBind Key="leftArrow"/>
+    <keyboardBind Key="numpad4"/>
+    <keyboardBind Key="h" Set="hjkl"/>
+  </command>
+  <command ID="UI:Navigate/right" DisplayText="向右操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/right,CmdMoveE" Required="true" UpgradeFrom="CmdMoveE">
+    <gamepadBind Button="dpad/right"/>
+    <keyboardBind Key="rightArrow"/>
+    <keyboardBind Key="numpad6"/>
+    <keyboardBind Key="l" Set="hjkl"/>
+  </command>
+
+  <command ID="Submit" DisplayText="提交文本" Category="菜单" Layer="UINav" Required="true" CanShareBindsWith="Accept">
+    <keyboardBind Key="enter"/>
+    <keyboardBind Key="numpadenter"/>
+  </command>
+
+  <command ID="CmdHelp" DisplayText="帮助" Category="菜单" Layer="UI" Auto="DownPass">
+    <keyboardBind Key="F1"/>
+    <gamepadBind Alt="true" Button="start"/>
+  </command>
+
+  <command ID="UI:DetailsNavigate" DisplayText="操作详情" Category="菜单" Layer="CategoryNav">
+    <gamepadBind Button="rightStick"/>
+  </command>
+  <command ID="UI:DetailsNavigate/up" DisplayText="左上操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/up,CmdMoveN" Required="true" UpgradeFrom="CmdMoveN">
+    <gamepadBind Button="rightStick/up"/>
+    <keyboardBind Modifier="shift" Key="upArrow"/>
+    <keyboardBind Modifier="shift" Key="k" Set="hjkl"/>
+  </command>
+  <command ID="UI:DetailsNavigate/down" DisplayText="右下操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/down,CmdMoveS" Required="true" UpgradeFrom="CmdMoveS">
+    <gamepadBind Button="rightStick/down"/>
+    <keyboardBind Modifier="shift" Key="downArrow"/>
+    <keyboardBind Modifier="shift" Key="j" Set="hjkl"/>
+  </command>
+  <command ID="UI:DetailsNavigate/left" DisplayText="右上操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/up,CmdMoveN" Required="true" UpgradeFrom="CmdMoveN">
+    <gamepadBind Button="rightStick/left"/>
+    <keyboardBind Modifier="shift" Key="leftArrow"/>
+    <keyboardBind Modifier="shift" Key="h" Set="hjkl"/>
+  </command>
+  <command ID="UI:DetailsNavigate/right" DisplayText="左下上操作" Category="菜单" Layer="UINav" CanShareBindsWith="IndicateDirection/down,CmdMoveS" Required="true" UpgradeFrom="CmdMoveS">
+    <gamepadBind Button="rightStick/right"/>
+    <keyboardBind Modifier="shift" Key="rightArrow"/>
+    <keyboardBind Modifier="shift" Key="l" Set="hjkl"/>
+  </command>
+
+  <command ID="Page Up" DisplayText="向上翻页" Category="菜单" Layer="Menus" Required="true" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <keyboardBind Key="pageUp"/>
+    <keyboardBind Modifier="ctrl" Key="upArrow"/>
+    <keyboardBind Modifier="ctrl" Key="numpad9"/>
+    <gamepadBind Alt="true" Button="dpad/up"/>
+    <gamepadBind Alt="true" Button="leftStick/up"/>
+    <keyboardBind Modifier="ctrl" Key="k" Set="hjkl"/>
+  </command>
+
+  <command ID="Page Down" DisplayText="向下翻页" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <keyboardBind Key="pageDown"/>
+    <keyboardBind Modifier="ctrl" Key="downArrow"/>
+    <keyboardBind Modifier="ctrl" Key="numpad3"/>
+    <gamepadBind Alt="true" Button="dpad/down"/>
+    <gamepadBind Alt="true" Button="leftStick/down"/>
+    <keyboardBind Modifier="ctrl" Key="j" Set="hjkl"/>
+  </command>
+
+  <command ID="Page Left" DisplayText="上一页" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <keyboardBind Key="numpad7"/>
+    <keyboardBind Key="home"/>
+    <gamepadBind Button="leftShoulder"/>
+    <keyboardBind Key="y" Set="hjkl"/>
+  </command>
+  <command ID="Page Right" DisplayText="下一页" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <keyboardBind Key="numpad9"/>
+    <keyboardBind Key="end"/>
+    <gamepadBind Button="rightShoulder"/>
+    <keyboardBind Key="u" Set="hjkl"/>
+  </command>
+
+  <command ID="Category Left" DisplayText="上一分类" Category="菜单" Layer="CategoryNav" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <gamepadBind Alt="true" Button="dpad/left"/>
+    <keyboardBind Key="Q"/>
+    <keyboardBind Modifier="ctrl" Key="leftArrow"/>
+  </command>
+  <command ID="Category Right" DisplayText="下一个分类" Category="菜单" Layer="CategoryNav" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+    <gamepadBind Alt="true" Button="dpad/right"/>
+    <keyboardBind Key="E"/>
+    <keyboardBind Modifier="ctrl" Key="rightArrow"/>
+  </command>
+
+  <command ID="CmdInsert" DisplayText="插入" Category="菜单" Layer="Menus" Auto="DownPass">
+    <keyboardBind Key="insert"/>
+    <gamepadBind Alt="true" Button="buttonNorth"/>
+    <keyboardBind Key="]" Modifier="ctrl" Set="hjkl"/>
+  </command>
+  <command ID="CmdDelete" DisplayText="删除" Category="菜单" Layer="Menus" Auto="DownPass">
+    <keyboardBind Key="delete"/>
+    <keyboardBind Key="backspace"/>
+    <gamepadBind Alt="true" Button="buttonWest"/>
+    <keyboardBind Key="[" Set="hjkl"/>
+  </command>
+
+  <command ID="CmdFilter" DisplayText="过滤/搜索" Category="菜单" Layer="Menus" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="f" />
+  </command>
+
+  <command ID="V Positive" DisplayText="值 +" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
+    <keyboardBind Key="numpadPlus"/>
+    <keyboardBind Key="equals"/>
+    <gamepadBind Button="buttonWest"/>
+  </command>
+  <command ID="V Negative" DisplayText="值 -" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
+    <keyboardBind Key="numpadMinus"/>
+    <keyboardBind Key="minus"/>
+    <gamepadBind Button="buttonNorth"/>
+  </command>
+
+  <command ID="CmdOptions" DisplayText="查看选项" Category="菜单" Layer="Menus" Auto="DownPass">
+    <keyboardBind Key="tab"/>
+    <gamepadBind Button="rightTrigger"/>
+  </command>
+
+  <command ID="Toggle" DisplayText="切换" Category="菜单" Layer="Menus" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="tab"/>
+    <gamepadBind Button="select"/>
+  </command>
+
+  <command ID="InventoryQuickDrop" DisplayText="物品快捷键:丢弃" Category="状态" Layer="StatusScreens" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="d"/>
+  </command>
+
+  <command ID="InventoryQuickEat" DisplayText="物品快捷键:吃" Category="状态" Layer="StatusScreens" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="a"/>
+  </command>
+
+  <command ID="InventoryQuickDrink" DisplayText="物品快捷键:喝" Category="状态" Layer="StatusScreens" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="q"/>
+  </command>
+
+  <command ID="InventoryQuickApply" DisplayText="物品快捷键:使用" Category="状态" Layer="StatusScreens" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="p"/>
+  </command>
+
+  <command ID="CmdStatusBuyMutation" DisplayText="购买新突变" Category="状态" Layer="StatusScreens:Charsheet" Auto="DownPass">
+    <keyboardBind Key="m"/>
+    <gamepadBind Button="buttonNorth"/>
+  </command>
+
+  <command ID="CmdStatusShowEffects" DisplayText="显示效果" Category="状态" Layer="StatusScreens:Charsheet" Auto="DownPass">
+    <keyboardBind Key="e"/>
+    <gamepadBind Button="buttonEast"/>
+  </command>
+
+  <command ID="Navigate Vertical" DisplayText="垂直操作" Category="行动" Layer="AdventureNav"></command>
+  <command ID="Navigate Horizontal" DisplayText="水平操作" Category="行动" Layer="AdventureNav"></command>
+
+  <command ID="IndicateDirection" Type="Value" DisplayText="指示方向" Category="行动" Layer="AdventureNav">
+    <gamepadBind Button="leftStick"/>
+  </command>
+  <command ID="IndicateDirection/up" DisplayText="指示方向上" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="IndicateDirection/down" DisplayText="指示方向下" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="IndicateDirection/left" DisplayText="指示方向左" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="IndicateDirection/right" DisplayText="指示方向右" Category="行动" Layer="AdventureNav">
+  </command>
+
+  <command ID="Take A Step" DisplayText="迈出一步" Category="行动" Layer="AdventureNav">
+    <gamepadBind Button="rightTrigger"/>
+  </command>
+
+  <command ID="LookDirection" DisplayText="看向" Type="Value" Category="行动" Layer="AdventureNav">
+    <gamepadBind Button="rightStick"/>
+  </command>
+  <command ID="LookDirection/up" DisplayText="看向上" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="LookDirection/down" DisplayText="看向下" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="LookDirection/left" DisplayText="看向左" Category="行动" Layer="AdventureNav">
+  </command>
+  <command ID="LookDirection/right" DisplayText="看向右" Category="行动" Layer="AdventureNav">
+  </command>
+
+  <command ID="Highlight" DisplayText="高亮" Category="行动" Layer="Adventure">
+    <gamepadBind Alt="true" Button="rightTrigger"/>
+  </command>
+  <command ID="ForceAttack" DisplayText="强制攻击" Category="行动" Layer="Adventure">
+    <gamepadBind Alt="true" Button="leftShoulder"/>
+  </command>
+
+  <command ID="Take All" DisplayText="全部拿走" Category="行动" Layer="Menus" Auto="DownPass" CanShareBindsWith="Toggle">
+    <keyboardBind Key="tab"/>
+    <gamepadBind Button="rightTrigger"/>
+  </command>
+  <command ID="Store Items" DisplayText="储存物品" Category="行动" Layer="Menus" Auto="DownPass">
+    <keyboardBind Key="F2"/>
+    <keyboardBind Key="numpadMultiply"/>
+    <gamepadBind Button="rightShoulder"/>
+  </command>
+  <command ID="System" DisplayText="系统" Category="行动" Layer="Adventure"></command>
+
+  <command ID="CmdUse" DisplayText="使用" Category="行动" Layer="Adventure">
+    <keyboardBind Key="space"/>
+    <gamepadBind Button="buttonSouth"/>
+  </command>
+  <command ID="CmdTalk" DisplayText="对话" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="c"/>
+  </command>
+  <command ID="CmdLook" DisplayText="看" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="l" Set="default"/>
+    <keyboardBind Key="semicolon" Set="hjkl"/>
+  </command>
+  <command ID="CmdGet" DisplayText="获取" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="g"/>
+  </command>
+  <command ID="CmdGetFrom" DisplayText="附近互动" Category="冒险" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="space"/>
+    <keyboardBind Modifier="ctrl" Key="g"/>
+    <gamepadBind Alt="true" Button="buttonSouth"/>
+  </command>
+  <command ID="CmdOpen" DisplayText="打开" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="o"/>
+  </command>
+  <command ID="CmdAbilities" DisplayText="能力选择器" Category="冒险" Layer="Adventure" Auto="Down" Required="true">
+    <keyboardBind Key="a"/>
+    <gamepadBind Alt="true" Button="buttonWest"/>
+  </command>
+  <command ID="CmdFire" DisplayText="远程武器开火" Category="冒险" Layer="AdventureTargeting" Auto="Down">
+    <keyboardBind Key="f"/>
+    <gamepadBind Button="rightShoulder"/>
+  </command>
+  <command ID="CmdReload" DisplayText="装填武器" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="r"/>
+    <gamepadBind Button="rightStickPress"/>
+  </command>
+  <command ID="CmdReplaceCell" DisplayText="更换能源电池" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="r"/>
+    <gamepadBind Alt="true" Button="rightStickPress"/>
+  </command>
+  <command ID="CmdThrow" DisplayText="投掷 投掷武器" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="t"/>
+    <gamepadBind Alt="true" Button="rightShoulder"/>
+  </command>
+  <command ID="CmdTarget" DisplayText="选择目标" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="t"/>
+  </command>
+  <command ID="CmdAttackNearest" DisplayText="近战攻击最近的敌人" Category="冒险" Layer="Adventure" Auto="Repeat">
+    <gamepadBind Button="leftShoulder"/>
+  </command>
+  <command ID="CmdWait" DisplayText="等待/拍打火焰" Category="冒险" Layer="Adventure" Auto="Repeat">
+    <keyboardBind Key="numpad5"/>
+    <keyboardBind Modifier="shift" Key="space"/>
+  </command>
+  <command ID="CmdWait20" DisplayText="等待20回合" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="numpadPeriod"/>
+  </command>
+  <command ID="CmdWait100" DisplayText="等待100回合" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="numpadPeriod"/>
+  </command>
+  <command ID="CmdWaitN" DisplayText="等待若干回合" Category="冒险" Layer="Adventure" Auto="Down"></command>
+  <command ID="CmdWaitUntilHealed" DisplayText="休息直至痊愈" Category="冒险" Layer="Adventure" Auto="Down">
+    <gamepadBind Button="buttonEast"/>
+    <keyboardBind Key="backquote"/>
+  </command>
+  <command ID="CmdWaitUntilPartyHealed" DisplayText="休息直至队伍痊愈" Category="冒险" Layer="Adventure" Auto="Down">
+  </command>
+  <command ID="CmdWaitUntilMorning" DisplayText="休息到早上" Category="冒险" Layer="Adventure" Auto="Down"></command>
+  <command ID="CmdWaitMenu" DisplayText="等待菜单" Category="冒险" Layer="Adventure" Auto="Down">
+    <gamepadBind Alt="true" Button="buttonEast"/>
+    <keyboardBind Modifier="ctrl" Key="backquote"/>
+  </command>
+  <command ID="CmdMoveMenu" DisplayText="移动菜单" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="shift" Key="m"/>
+  </command>
+  <command ID="CmdAutoExplore" DisplayText="自动探索" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="numpad0"/>
+    <gamepadBind Alt="true" Button="buttonNorth"/>
+  </command>
+  <command ID="CmdWalk" DisplayText="走" Category="冒险" Layer="AdventureLooker" Auto="Down">
+    <keyboardBind Key="w"/>
+  </command>
+  <command ID="CmdAutoAttack" DisplayText="近战时自动攻击" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="a"/>
+  </command>
+  <command ID="Use Ability" DisplayText="使用选定的能力" Category="冒险" Layer="Adventure">
+    <gamepadBind Button="buttonWest"/>
+  </command>
+
+  <command ID="CmdCompanions" DisplayText="与同伴互动" Category="冒险" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="c"/>
+  </command>
+
+  <command ID="CmdStartTrade" DisplayText="开始交易" Category="交易" Layer="Conversation" Auto="DownPass" CanShareBindsWith="Toggle">
+    <keyboardBind Key="tab"/>
+    <keyboardBind Key="T"/>
+    <gamepadBind Button="start"/>
+  </command>
+
+  <command ID="CmdTradeAdd" DisplayText="添加一个" Category="交易" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Positive">
+    <keyboardBind Key="equals"/>
+    <keyboardBind Key="numpadPlus"/>
+    <gamepadBind Button="rightShoulder"/>
+    <keyboardBind Key="numpad9"/>
+  </command>
+  <command ID="CmdTradeRemove" DisplayText="删除一个" Category="交易" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Negative">
+    <keyboardBind Key="minus"/>
+    <keyboardBind Key="numpadMinus"/>
+    <keyboardBind Key="numpad7"/>
+    <gamepadBind Button="leftShoulder"/>
+  </command>
+  <command ID="CmdTradeAllItems" DisplayText="全部/删除整个堆" Category="交易" Layer="Trade" Auto="DownPass" CanShareBindsWith="Accept,Submit">
+    <keyboardBind Key="enter"/>
+    <keyboardBind Key="numpadEnter"/>
+    <keyboardBind Modifier="ctrl" Key="space"/>
+    <gamepadBind Button="rightTrigger"/>
+    <gamepadBind Button="buttonSouth"/>
+  </command>
+  <command ID="CmdTradeToggleAll" DisplayText="全部/删除整个库存" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="tab"/>
+  </command>
+  <command ID="CmdTradeOffer" DisplayText="交易" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="o"/>
+    <gamepadBind Button="start"/>
+  </command>
+  <command ID="CmdVendorActions" DisplayText="供应商行动" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="space"/>
+    <gamepadBind Alt="true" Button="buttonSouth"/>
+  </command>
+  <command ID="CmdVendorRepair" DisplayText="供应商维修" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="r"/>
+  </command>
+  <command ID="CmdVendorLook" DisplayText="供应商查看" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="l"/>
+  </command>
+  <command ID="CmdVendorRecharge" DisplayText="供应商充电" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="c"/>
+  </command>
+  <command ID="CmdVendorRead" DisplayText="供应商阅读" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="b"/>
+  </command>
+  <command ID="CmdVendorExamine" DisplayText="供应商检查" Category="交易" Layer="Trade" Auto="DownPass">
+    <keyboardBind Key="i"/>
+  </command>
+
+  <command ID="CmdInventory" DisplayText="打开背包栏" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="i"/>
+  </command>
+  <command ID="CmdEquipment" DisplayText="打开装备栏" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="e"/>
+  </command>
+  <command ID="CmdSkillsPowers" DisplayText="打开技能栏" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="k" Set="default"/>
+    <keyboardBind Key="k" Modifier="shift" Set="hjkl"/>
+  </command>
+  <command ID="CmdCharacter" DisplayText="打开角色表" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="tab"/>
+    <keyboardBind Key="x"/>
+    <gamepadBind Button="start"/>
+  </command>
+  <command ID="CmdQuests" DisplayText="打开任务栏" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="q"/>
+  </command>
+  <command ID="CmdFactions" DisplayText="打开派系表" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="f"/>
+  </command>
+  <command ID="CmdLastStatusPage" DisplayText="打开最近状态页面" Category="状态" Layer="Adventure" Auto="Down"></command>
+  <command ID="CmdTinkering" DisplayText="打开制作" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="n" Set="default"/>
+    <keyboardBind Key="n" Modifier="shift" Set="hjkl"/>
+  </command>
+  <command ID="CmdJournal" DisplayText="打开日志" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="j" Set="default"/>
+    <keyboardBind Key="j" Modifier="shift" Set="hjkl"/>
+  </command>
+  <command ID="CmdMessageHistory" DisplayText="显示消息历史记录" Category="状态" Layer="Adventure" Auto="Down"></command>
+  <command ID="CmdActiveEffects" DisplayText="打开激活效果" Category="状态" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="e"/>
+  </command>
+
+  <command ID="CmdMissileWeaponMenu" DisplayText="远程武器菜单" Category="目标" Layer="Targeting" Auto="DownPass" CanShareBindsWith="V Positive,V Negative">
+    <gamepadBind Button="buttonNorth"/>
+  </command>
+  <command ID="CmdTargetSelf" DisplayText="目标自我" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="numpad5"/>
+    <keyboardBind Key="period"/>
+    <gamepadBind Button="leftShoulder"/>
+  </command>
+  <command ID="CmdMarkTarget" DisplayText="标记目标" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="m"/>
+  </command>
+  <command ID="CmdLockUnlock" DisplayText="切换目标锁定" Category="菜单" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="F1"/>
+    <gamepadBind Button="rightStickPress"/>
+  </command>
+  <command ID="CmdAltFire1" DisplayText="Alt Fire 1" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="1"/>
+  </command>
+  <command ID="CmdAltFire2" DisplayText="Alt Fire 2" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="2"/>
+  </command>
+  <command ID="CmdAltFire3" DisplayText="Alt Fire 3" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="3"/>
+  </command>
+  <command ID="CmdAltFire4" DisplayText="Alt Fire 4" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="4"/>
+  </command>
+  <command ID="CmdAltFire5" DisplayText="Alt Fire 5" Category="目标" Layer="Targeting" Auto="DownPass">
+    <keyboardBind Key="5"/>
+  </command>
+
+  <command ID="CmdMoveNW" DisplayText="向左上移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad7"/>
+    <keyboardBind Modifier="shift" Key="upArrow"/>
+    <keyboardBind Key="y" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveN" DisplayText="向上移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad8"/>
+    <keyboardBind Key="upArrow"/>
+    <keyboardBind Key="k" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveNE" DisplayText="向右上移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad9"/>
+    <keyboardBind Modifier="shift" Key="rightArrow"/>
+    <keyboardBind Key="u" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveW" DisplayText="向左移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad4"/>
+    <keyboardBind Key="leftArrow"/>
+    <keyboardBind Key="h" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveE" DisplayText="向右移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad6"/>
+    <keyboardBind Key="rightArrow"/>
+    <keyboardBind Key="l" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveSW" DisplayText="向左下移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad1"/>
+    <keyboardBind Modifier="shift" Key="leftArrow"/>
+    <keyboardBind Key="b" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveS" DisplayText="向下移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad2"/>
+    <keyboardBind Key="downArrow"/>
+    <keyboardBind Key="j" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveSE" DisplayText="向右下移动" Category="移动" Layer="AdventureNav">
+    <keyboardBind Key="numpad3"/>
+    <keyboardBind Modifier="shift" Key="downArrow"/>
+    <keyboardBind Key="n" Set="hjkl"/>
+  </command>
+  <command ID="CmdMoveU" DisplayText="向上移动（换图）" Category="移动" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
+    <keyboardBind Key="numpadMinus"/>
+    <keyboardBind Modifier="shift" Key="comma"/>
+    <keyboardBind Key="s"/>
+    <gamepadBind Button="dpad/up"/>
+  </command>
+  <command ID="CmdMoveD" DisplayText="向下移动（换图）" Category="移动" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
+    <keyboardBind Key="numpadPlus"/>
+    <keyboardBind Modifier="shift" Key="period"/>
+    <keyboardBind Key="d"/>
+    <gamepadBind Button="dpad/down"/>
+  </command>
+
+  <command ID="CmdMoveTo" DisplayText="移动到选择位置" Category="移动" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="enter"/>
+  </command>
+  <command ID="CmdMoveToEdge" DisplayText="移动到地图边缘" Category="移动" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="shift" Key="enter"/>
+    <gamepadBind Button="buttonNorth"/>
+  </command>
+  <command ID="CmdMoveToPointOfInterest" DisplayText="移动到兴趣点" Category="移动" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="backspace"/>
+    <gamepadBind Button="leftStickPress"/>
+  </command>
+
+  <command ID="CmdAttackNW" DisplayText="强制左上攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad7"/>
+    <keyboardBind Modifier="ctrl,shift" Key="upArrow"/>
+    <keyboardBind Modifier="ctrl" Key="y" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackN" DisplayText="强制上攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad8"/>
+    <keyboardBind Modifier="ctrl" Key="upArrow"/>
+    <keyboardBind Modifier="ctrl" Key="k" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackNE" DisplayText="强制右上攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad9"/>
+    <keyboardBind Modifier="ctrl,shift" Key="rightArrow"/>
+    <keyboardBind Modifier="ctrl" Key="u" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackW" DisplayText="强制左攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad4"/>
+    <keyboardBind Modifier="ctrl" Key="leftArrow"/>
+    <keyboardBind Modifier="ctrl" Key="h" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackE" DisplayText="强制右攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad6"/>
+    <keyboardBind Modifier="ctrl" Key="rightArrow"/>
+    <keyboardBind Modifier="ctrl" Key="l" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackSW" DisplayText="强制左下攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad1"/>
+    <keyboardBind Modifier="ctrl,shift" Key="leftArrow"/>
+    <keyboardBind Modifier="ctrl" Key="b" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackS" DisplayText="强制下攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad2"/>
+    <keyboardBind Modifier="ctrl" Key="downArrow"/>
+    <keyboardBind Modifier="ctrl" Key="j" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackSE" DisplayText="强制右下攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpad3"/>
+    <keyboardBind Modifier="ctrl,shift" Key="downArrow"/>
+    <keyboardBind Modifier="ctrl" Key="n" Set="hjkl"/>
+  </command>
+  <command ID="CmdAttackU" DisplayText="强制上攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpadMinus"/>
+    <keyboardBind Modifier="ctrl,shift" Key="period"/>
+  </command>
+  <command ID="CmdAttackD" DisplayText="强制下攻击" Category="移动" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="numpadPlus"/>
+    <keyboardBind Modifier="ctrl,shift" Key="comma"/>
+  </command>
+  <command ID="CmdAttackDirection" DisplayText="强制攻击方向" Category="移动" Layer="Adventure" Auto="Down">
+    <keyboardBind Key="backslash"/>
+  </command>
+  <command ID="CmdAttackCell" DisplayText="强制攻击指定方块" Category="移动" Layer="Adventure" Auto="Down">
+    <keyboardBind Modifier="ctrl" Key="backslash"/>
+  </command>
+
+  <command ID="CmdAbility1" DisplayText="激活技能1" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="1"/>
+  </command>
+  <command ID="CmdAbility2" DisplayText="激活技能2" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="2"/>
+  </command>
+  <command ID="CmdAbility3" DisplayText="激活技能3" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="3"/>
+  </command>
+  <command ID="CmdAbility4" DisplayText="激活技能4" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="4"/>
+  </command>
+  <command ID="CmdAbility5" DisplayText="激活技能5" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="5"/>
+  </command>
+  <command ID="CmdAbility6" DisplayText="激活技能6" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="6"/>
+  </command>
+  <command ID="CmdAbility7" DisplayText="激活技能7" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="7"/>
+  </command>
+  <command ID="CmdAbility8" DisplayText="激活技能8" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="8"/>
+  </command>
+  <command ID="CmdAbility9" DisplayText="激活技能9" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="9"/>
+  </command>
+  <command ID="CmdAbility10" DisplayText="激活技能10" Category="能力栏" Layer="Adventure">
+    <keyboardBind Key="0"/>
+  </command>
+
+  <command ID="CmdAbilityBar1" DisplayText="能力栏 1" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="1"/>
+  </command>
+  <command ID="CmdAbilityBar2" DisplayText="能力栏 2" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="2"/>
+  </command>
+  <command ID="CmdAbilityBar3" DisplayText="能力栏 3" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="3"/>
+  </command>
+  <command ID="CmdAbilityBar4" DisplayText="能力栏 4" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="4"/>
+  </command>
+  <command ID="CmdAbilityBar5" DisplayText="能力栏 5" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="5"/>
+  </command>
+
+  <command ID="CmdAbilityNextPage" DisplayText="下一个能力页面（简述，使用能力页面向上）" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl" Key="tab"/>
+  </command>
+  <command ID="CmdAbilityPrevPage" DisplayText="上一个能力页面（简述，使用能力向上翻页）" Category="能力栏" Layer="Adventure">
+    <keyboardBind Modifier="ctrl,shift" Key="tab"/>
+  </command>
+
+  <command ID="Ability Page Up" DisplayText="能力栏上翻页" Category="冒险" Layer="Adventure">
+    <gamepadBind Alt="true" Button="dpad/up"/>
+  </command>
+  <command ID="Ability Page Down" DisplayText="能力栏下翻页" Category="冒险" Layer="Adventure">
+    <gamepadBind Alt="true" Button="dpad/down"/>
+  </command>
+  
+  <command ID="Next Ability" DisplayText="下一个能力" Category="冒险" Layer="Adventure">
+    <gamepadBind Button="dpad/right"/>
+  </command>
+  <command ID="Previous Ability" DisplayText="上一个能力" Category="冒险" Layer="Adventure">
+    <gamepadBind Button="dpad/left"/>
+  </command>
+  
+  <command ID="CmdZoomIn" DisplayText="放大" Category="显示" Layer="Adventure" Auto="DownPass">
+    <gamepadBind Alt="true" Button="dpad/left"/>
+  </command>
+  <command ID="CmdZoomOut" DisplayText="缩小" Category="显示" Layer="Adventure" Auto="DownPass">
+    <gamepadBind Alt="true" Button="dpad/right"/>
+  </command>
+  <command ID="CmdShowSidebar" DisplayText="切换侧边栏" Category="显示" Layer="Adventure" Auto="DownPass">
+    <keyboardBind Key="numpadDivide"/>
+  </command>
+  <command ID="CmdShowSidebarMessages" DisplayText="循环侧边栏模式" Category="显示" Layer="Adventure" Auto="DownPass">
+    <keyboardBind Key="numpadMultiply"/>
+  </command>
+  <command ID="CmdToggleMessageVerbosity" DisplayText="切换简洁消息" Category="显示" Layer="Adventure" Auto="DownPass"></command>
+
+  <command ID="CmdChargenRandom" DisplayText="进行随机选择" Category="人物创建" Layer="Chargen">
+    <keyboardBind Key="r"/>
+    <gamepadBind Button="buttonWest"/>
+  </command>
+  <command ID="CmdChargenReset" DisplayText="重置选择" Category="人物创建" Layer="Chargen">
+    <keyboardBind Key="delete"/>
+    <gamepadBind Button="buttonNorth"/>
+  </command>
+  <command ID="CmdChargenItemOptions" DisplayText="所选项目的选项" Category="人物创建" Layer="Chargen">
+    <keyboardBind Key="o"/>
+    <gamepadBind Button="dpad/left"/>
+  </command>
+  <command ID="CmdChargenMutationVariant" DisplayText="选择突变变体" Category="人物创建" Layer="Chargen">
+    <keyboardBind Key="v"/>
+  </command>
+  <command ID="CmdDebugQuickstart" DisplayText="快速入门（需要启用调试选项）" Category="人物创建" Layer="Chargen"></command>
+
+  <command ID="CmdQuit" DisplayText="退出" Category="系统" Layer="System">
+    <keyboardBind Modifier="ctrl" Key="q"/>
+  </command>
+  <command ID="CmdLoad" DisplayText="加载游戏" Category="系统" Layer="System">
+    <keyboardBind Key="F9"/>
+  </command>
+  <command ID="CmdSave" DisplayText="保存游戏" Category="系统" Layer="System">
+    <keyboardBind Key="F5"/>
+  </command>
+  <command ID="CmdSystemMenu" DisplayText="系统菜单" Category="系统" Layer="System">
+    <keyboardBind Key="escape"/>
+    <gamepadBind Button="select"/>
+  </command>
+
+  <command ID="CmdIgnore" DisplayText="忽略的键" Category="系统" Layer="Adventure"></command>
+
+  <command ID="AdventureMouseContextAction" DisplayText="鼠标上下文操作" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Button="leftButton"/>
+  </command>
+  <command ID="AdventureMouseInteract" DisplayText="鼠标互动" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Button="rightButton"/>
+  </command>
+  <command ID="AdventureMouseInteractAll" DisplayText="鼠标交互全部" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Modifier="ctrl" Button="rightButton"/>
+  </command>
+  <command ID="AdventureMouseLook" DisplayText="鼠标查看" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Modifier="shift" Button="rightButton"/>
+  </command>
+  <command ID="AdventureMouseQuickLook" DisplayText="鼠标快速查看" Category="鼠标操作" Layer="Adventure">
+  </command>
+  <command ID="AdventureMouseForceAttack" DisplayText="鼠标强制攻击" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Modifier="ctrl" Button="leftButton"/>
+  </command>
+  <command ID="AdventureMouseForceMove" DisplayText="鼠标强制移动" Category="鼠标操作" Layer="Adventure">
+    <mouseBind Modifier="shift" Button="leftButton"/>
+  </command>
+
+  <command ID="AdventureNavMouseLeftClick" DisplayText="目标左键点击" Category="瞄准鼠标" Layer="UINav">
+    <mouseBind Button="leftButton"/>
+  </command>
+
+  <command ID="AdventureNavMouseRightClick" DisplayText="目标右键点击" Category="瞄准鼠标" Layer="UINav">
+    <mouseBind Button="rightButton"/>
+  </command>
+
+  <command ID="CmdShowReachability" DisplayText="显示可达性" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdShowFPS" DisplayText="显示帧率" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdToggleAnimation" DisplayText="切换动画" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdShowBrainlog" DisplayText="显示脑日志" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdWish" DisplayText="希望" Category="调试" Layer="Adventure" Auto="DownPass">
+    <keyboardBind Modifier="ctrl" Key="w"/>
+  </command>
+  <command ID="CmdXP" DisplayText="给予 250000 XP" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdExplore" DisplayText="探索区" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdNoclipD" DisplayText="Noclip下来" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdNoclipU" DisplayText="Noclip上去" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdDismemberLimb" DisplayText="肢解肢体" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdRegenerateLimb" DisplayText="再生肢体" Category="调试" Layer="Adventure" Auto="DownPass"></command>
+
+</commands>
