@@ -3,19 +3,26 @@
 
 目前只汉化caves of qud的xml文件内英文描述，大概看了下xml文件，覆盖面还很广
 
+**新进展：**使用Mono.Cecil修改dll内的字符文本然后重新打包成功，这样可以对硬编码部分的字符内容进行汉化
+
+[![pAuuLFA.png](https://s21.ax1x.com/2024/09/14/pAuuLFA.png)](https://imgse.com/i/pAuuLFA)
+
+剩下的就是时间问题，目前大部分采用机翻，有兴趣的可以一起建个群优化文本
+
 ## 已完成
 
 - 游戏字体替换，添加中文字体支持
 
-- 设置界面（部分使用机翻）
-  [![pAnvGbF.png](https://s21.ax1x.com/2024/09/13/pAnvGbF.png)](https://imgse.com/i/pAnvGbF)
-
+- 设置界面
   
-
-  
+- 按键配置界面
+- 技能界面
 
 ## 待完成
 
-- 按键映射配置界面
-- 。。。
+- 物品
+- 人物创建
+- 帮助
+- 对话文本
+- 硬编码UI部分
 
