@@ -10,12 +10,14 @@
 - 设置界面（部分使用机翻）
   [![pAnvGbF.png](https://s21.ax1x.com/2024/09/13/pAnvGbF.png)](https://imgse.com/i/pAnvGbF)
 
+- 按键映射配置界面
+
   
 
   
 
 ## 待完成
 
-- 按键映射配置界面
+- 人物创建界面
 - 。。。
 
