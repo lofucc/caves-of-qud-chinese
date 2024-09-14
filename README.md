@@ -5,7 +5,8 @@
 
 **新进展**：使用Mono.Cecil修改dll内的字符文本然后重新打包成功，这样可以对硬编码部分的字符内容进行汉化
 
-[![pAuuLFA.png](https://s21.ax1x.com/2024/09/14/pAuuLFA.png)](https://imgse.com/i/pAuuLFA)
+![image](https://lofucc.github.io/picx-images-hosting/20240914/PixPin_2024-09-14_19-24-13.2vep7vq0wp.webp))
+
 
 剩下的就是时间问题，目前大部分采用机翻，有兴趣的可以一起建个群优化文本
 
