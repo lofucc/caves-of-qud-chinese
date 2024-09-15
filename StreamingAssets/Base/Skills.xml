@@ -108,7 +108,7 @@
             Minimum="17|17"
             Class="Multiweapon_Flurry"
             Snippet="flurrying"
-            Description="激活;冷却时间60。你用每只手进行一次攻击，包括变异或科技带来的额外手。" 
+            Description="激活;冷却时间60。你用每一个持有武器的肢体进行攻击，包括变异或科技赋予的额外肢体。。" 
             Tile="Abilities/abil_flurry.bmp" Foreground="y" Detail="M"/>
     <power Name="多武器熟练度"
             Cost="0"
@@ -182,7 +182,7 @@
 
   <skill Name="口才" Class="Persuasion" Description="你善于说服别人" Cost="100" Attribute="Ego" Snippet="persuasion" Tile="Abilities/sw_skill_persuasion.png" Foreground="y" Detail="m">
     <power Name="威胁凝视" Cost="0" Attribute="Ego" Minimum="17" Class="Persuasion_MenacingStare" Snippet="the menacing stare" Description="你凝视附近的对手并让他们惊恐地逃跑。" Tile="Abilities/abil_menacing_stare.bmp" Foreground="y" Detail="m"></power>
-    <power Name="威吓" Cost="200" Attribute="Ego" Minimum="17" Class="Persuasion_Intimidate" Snippet="intimidating" Description="冷却时间 50。你试图恐吓相邻的敌对生物（1d8 + [Ego修正] 穿透检定 vs. MA）。成功后，一个受惊的生物会逃离你 4d4 轮。" Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"></power>
+    <power Name="威吓" Cost="200" Attribute="Ego" Minimum="17" Class="Persuasion_Intimidate" Snippet="intimidating" Description="冷却时间 50。你试图恐吓相邻的敌对生物（1d8 + [Ego修正] 穿透检定 vs. MA）。成功后，一个受惊的生物会逃离你 6d4 轮。" Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"></power>
     <power Name="羞辱" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_Berate" Snippet="berating" Description="冷却时间 50。你羞辱附近的一个生物 6d6 轮，使其 DV、命中、自我、意志力受到 -4 惩罚，并且速度受到 -10% 惩罚。" Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="m"></power>
     <power Name="蛇油器" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_SnakeOiler" Snippet="hustling" Description="物品交换时，Ego会被视为高出 4 点." Tile="Abilities/sw_skill_snake_oiler.png" Foreground="y" Detail="m"></power>
     <power Name="传教" Cost="300" Attribute="Ego" Minimum="23" Class="Persuasion_Proselytize" Snippet="proselytizing" Description="你说服了一个聪明的生物加入你。" Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="m"></power>

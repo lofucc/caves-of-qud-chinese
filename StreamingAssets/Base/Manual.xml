@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<help>
+	<topic name="快速入门">
+这是您开始游戏时应该做的九件事。之后，使用本帮助的其余部分作为参考手册。
+
+{{W|1. 四处走动}}
+
+{{?KB|按方向键移动 (~CmdMoveN, ~CmdMoveE, etc) 或者通过点击地图的方式.}}{{?Gamepad|Indicate direction with ~UI:Navigate and press ~Take A Step to move or hold ~Take A Step to move continuously.}}{{?Gamepad|
+You can also auto-explore the map with ~CmdAutoExplore.}}
+
+{{W|2. 与事物互动}}
+
+走到 NPC 或其他物体旁边并按 ~CmdUse.
+
+{{W|3. 查看东西}}
+
+{{?KB|按 }}~CmdLook 进入查看模式然后在地图上移动光标.{{?KB|或者 {{hotkey|right-click}} 快速查看.}}
+
+{{W|4. 使用能力}}
+
+{{?KB|单击屏幕底部能力栏上的按钮或按其热键.}}{{?Gamepad|Navigate the hotbar at the bottom of your screen with ~UI:Navigate/left and ~UI:Navigate/right
+and then press ~Use Ability to use an ability.}}
+
+{{W|5. 查看你的角色表}}
+
+{{?KB|按 ~CmdCharacter 查看角色信息.
+按 ~CmdEquipment 查看装备.
+按 ~CmdInventory 查看背包.
+按 ~CmdJournal 查看日志.
+按 ~CmdQuests 查看任务.
+按 ~CmdSkillsPowers 查看技能.
+按 ~CmdFactions 查看你的派系关系.
+
+你可以使用以下命令滚动浏览这些页面 ~Page Left 和 ~Page Right.}}{{?Gamepad|Press ~CmdCharacter to view your core character info.
+Navigate to other pages in your character sheet with ~Page Left and ~Page Right.}}
+
+{{W|6. 调出兴趣点列表}}
+
+按 ~CmdMoveToPointOfInterest.
+
+{{W|7. 显示有关地图上对象的附加信息}}
+
+按 ~Highlight 用于包含额外信息（例如生物敌意）的覆盖层 (红色 = 敌对的, 黄色 = 中性的, 绿色 = 友好的) 并且清楚地看到 
+有趣的项目.
+
+{{W|8. 走到另一张地图}}
+
+只需走出屏幕，或使用以下命令前往世界地图 ~CmdMoveU.
+
+{{W|9. 攻击敌人}}
+
+要进行基本攻击，只需走进敌对生物即可.或者你可以使用攻击能力.
+</topic>	
+  <topic name="属性">
+[[{{C|Strength}}]]
+你的力量决定了你造成的近战伤害（通过提高 你的护甲穿透力），你抵抗强制移动的能力，以及你的
+承载能力。
+
+[[{{C|Agility}}]]
+你的敏捷决定了你近战和远程的准确性和你躲避攻击的能力。
+
+[[{{C|Toughness}}]]
+你的韧性决定了你的生命值，你的生命再生速度，以及你抵抗毒物和疾病的能力。
+
+[[{{C|Intelligence}}]]
+你的智力决定了你的技能点数和检查遗物的能力。
+
+[[{{C|Willpower}}]]
+你的意志力会调整你激活的技能的冷却时间，决定你抵抗精神攻击的能力，并修改你的命中
+点再生率。
+
+[[{{C|Ego}}]]
+你的自我决定了你的心理突变的效力，与商人讨价还价的能力，以及你支配意志的能力其他生物的。
+
+[[{{C|护甲值和闪避值 (AV / DV)}}]]
+你的护甲值 (AV) 衡量的是你受到的保护程度，抵御对你的物理攻击。AV越高，对手对你造成伤害越低，大多数人物的AV初始值都是0。
+
+你的闪避值 (DV) 衡量的是你被物理攻击击中的可能性。DV越高，对手击中你的可能性越低。DV 由你的敏捷修正值修改。
+人物初始DV最大是6.
+
+[[{{C|精神护甲 (MA)}}]]
+心灵护甲（MA）是衡量你抵御心灵攻击能力（包括混乱、精神分裂和灵能武器）的指标，就像你的护甲值衡量你抵御物理攻击的能力一样。
+MA越高，敌人的心灵攻击对你造成严重影响的可能性就越小。MA会受到意志力修正值的影响。大多数角色的基础MA为4。
+
+[[{{C|速度 (QN)}}]]
+你的速度值衡量你执行每一个动作的速度。你的基础敏捷值为100。请注意，增强这个值的方法非常少。
+
+[[{{C|移动速度 (MS)}}]]
+你的移动速度衡量你行走或飞行的速度。你的基础移动速度为100。
+
+[[{{C|温度 (T)}}]]
+你的温度衡量你有多热或多冷。如果你感到寒冷，你的敏捷值会减半。如果你被冻结，你将无法进行物理动作。
+如果你着火了，你会在每回合受到热伤害，直到你的温度降低。
+
+[[{{C|耐酸}}]]
+你的酸性抗性衡量你抵御酸性伤害的能力。你的基础酸性抗性值为0。当达到100时，你对酸性伤害免疫。
+
+[[{{C|耐寒}}]]
+你的寒冷抗性衡量你抵御寒冷伤害的能力，以及你对降低温度效果的隔离程度。你的基础寒冷抗性值为0。
+当达到100时，你对寒冷伤害免疫，并且温度无法被降低
+
+[[{{C|耐电}}]]
+你的电抗性衡量你抵御电击伤害的能力，以及你对电流的抗性。你的基础电抗性值为0。当达到100时，你对电击伤害免疫，并且不导电。
+
+[[{{C|耐热}}]]
+你的热抗性衡量你抵御热伤害的能力，以及你对增加温度效果的隔离程度。你的基础热抗性值为0。
+当达到100时，你对热伤害免疫，并且温度无法被提升。
+
+</topic>
+  <topic name="技能">
+你的技能代表了你在生活中学到的能力。每个技能树都有几个相关的技能。
+你一开始会根据你的种族或职业获得一些技能。你可以通过花费技能点来购买其他技能，技能点
+是你在提升等级时获得的（你的智力值越高，获得的技能点越多）。
+
+要购买新技能，你必须首先购买该技能树中的入门技能。
+你必须满足购买技能的属性或能力要求。
+如果你的种族或职业已经授予你某些技能，你可以在没有其入门技能的情况下开始使用这些技能。
+
+技能通常会授予你激活的能力。一旦你购买了一个技能，你可以通过‘管理能力’菜单（‘a’键）访问你的新激活能力。
+
+</topic>
+  <topic name="变异与缺陷">
+变异是赋予卡德居民的特殊生物能力——外部拱顶的真实血统并不拥有变异。
+变异分为两种类型：身体变异和精神变异。
+每种变异都有一个变异值。你的身体变异的值和由身体变异授予的激活能力的冷却时间是固定的。
+另一方面，你的精神变异的值会受到自我修正值的影响，由精神变异授予的能力的冷却时间会根据
+你意志力的每一点高于或低于16的范围，调节5%。
+
+大多数角色开始时的变异值为1。你在升级时会获得一个变异点，你可以用它来将你一个变异的变异值增加1。
+任何变异的变异值都不得超过1加上你的角色等级除以2。
+此外，变异值最多只能通过变异点提升到10，但如果你的自我进一步提升，它们的变异值可以超过10
+
+或者，你可以花费4个变异点从三个随机选择的变异中选择一个新的变异。
+你选择的变异的初始值为1。如果你是合成体，你将被提供物理变异的选择；如果你是超能者，你将被提供精神变异的选择；
+否则，你将被提供三个完全随机的变异。变异通常会授予你激活的能力。一旦获得变异，你可以通过‘管理能力’
+菜单（‘a’键）访问你新的激活能力。
+
+缺陷是主要具有负面效果的变异。某些变异体一开始就会有一个缺陷。缺陷没有关联的数值。
+</topic>
+  <topic name="遗物">
+遗物是技术复杂到古德的居民中少有人理解的物品。
+一个未识别的遗物会被你显示为‘奇异遗物’。你可以检查一个遗物以尝试识别它。
+如果成功，你将缩小该遗物功能的可能性（例如，曾经是‘棍棒’，现在你可以识别为‘步枪’）。最终你可以完全识别该遗物。
+然而，每次你尝试识别物品而失败时，都有小概率会损坏它。成功识别遗物的机会取决于你的智力值。
+</topic>
+  <topic name="药剂">
+药剂是化学配方的混合物，可以以多种方式提升你的精神和身体属性。
+它们是遗物，因此你必须成功识别它们才能了解它们的作用。
+在服用一种药剂的同时再服用另一种药剂是危险的；每当你服用新的药剂时，药剂之间不良反应的可能性会增加。
+你的耐力值越高，你能在不产生不良效果的情况下服用多种药剂的机会就越大。
+
+药剂对真人的影响比对变异人的效果更强。此外，由于变异者的体内化学成分本质上不稳定，变异者服用药剂时
+有5%的机会会产生不良效果。
+
+药剂可以通过工匠技能调制。除了需要一些零件外，调制药剂通常还需要一种自然材料。
+</topic>
+  <topic name="武器和盔甲">
+[[{{C|武器}}]]
+每件武器都有一个穿透值和一个伤害值（例如，{{C|&#x1A;}}4，{{R|&#x3;}}1d4）。
+近战武器的穿透值与你的力量值相关，但该值会根据武器的材料设有上限（l 查看武器以查看其穿透上限）。
+剑和匕首的穿透值等于你的力量值。斧头的穿透值等于1加你的力量值，因为它们具有很强的穿透力。
+棍棒的穿透值等于2加你的力量值，因为它们具有震慑作用，并且不太依赖于对手的护甲。
+投射武器的穿透值是固定的，不会根据你的力量值变化。
+武器可能会修改其他统计数据；查看武器以完全了解它的效果。
+
+[[{{C|盔甲}}]]
+大多数护甲都有一个护甲值和一个闪避值（例如，{{b|&#x4;}}4 {{K|&#x9;}}4），
+这些值会增强你自己的护甲值（{{b|&#x4;}}AV）和闪避值（{{K|&#x9;}}DV）（参见 {{g|属性}}）。
+盔甲可能会修改其他统计数据；查看护甲以完全了解它的效果。
+</topic>
+  <topic name="战斗">
+[[{{C|近战战斗}}]]
+近战战斗是指使用剑、匕首、斧头和棍棒等标准近战武器在两个相邻的对手之间进行的战斗。
+要攻击一个敌对的相邻对手，只需朝对手的方向移动即可。
+要攻击其他对象，例如非敌对对手或墙壁，请按住‘control’键，并朝你希望攻击的方向移动。
+
+当你对目标进行近战攻击时，会发生以下事件序列: 
+
+[[{{c|1. 确定你是否击中了目标。}}]]
+你的命中掷骰是1d20加上你的敏捷修正值和你从武器或技能力量中获得的任何加成。
+如果这个掷骰结果超过了你对手的闪避值（DV），则表示你击中了目标。
+目标上方的空圆圈图标表示你的攻击未命中。
+
+[[{{c|2. 确定是否发生了盾牌格挡。}}]]
+如果目标装备了盾牌，他们有基本的25%几率用盾牌进行格挡，这一几率会随着技能的提升而增加。
+成功的格挡会将盾牌的护甲值（AV）添加到目标的护甲值（AV）中，用于此次攻击。
+
+[[{{c|3. 确定你的攻击穿透目标护甲的程度。}}]]
+每件武器都有一个穿透值（例如，{{C|&#x1A;}}4）。这个值表示你的武器通常能够轻松穿透的护甲值（AV）。
+如果你的武器的穿透值远远超过了目标的AV，你的武器可能会多次穿透目标。
+每次你的武器穿透目标的护甲时，目标将受到等于你武器伤害值（例如，{{R|&#x3;}}1d4）的伤害。
+目标上方的实心圆圈图标表示你的攻击命中了目标，但未能穿透目标的护甲。
+心形图标表示你的攻击命中了目标并成功穿透了目标的护甲
+
+[[{{c|4. 确定是否进行多次攻击。}}]]
+你有15%的几率用副手进行额外的攻击。具有多个肢体的角色可能会进行额外的攻击。
+
+[[{{C|远程战斗}}]]
+远程战斗是指使用弓、手枪和步枪等远程武器进行的对抗战斗。要进行远程攻击，
+按 ‘f’ 键瞄准你的武器，然后再次按 ‘f’ 键发射。
+
+当你进行远程攻击时，会发生以下事件序列：
+
+[[{{c|1. 确定你的投射物的轨迹。}}]]
+投射物偏离预期轨道的距离由你的敏捷值和武器的准确度决定。
+
+[[{{c|2. 击中投射物轨迹上的第一个中型或更大的目标。}}
+
+[[{{c|3. 确定投射物穿透目标护甲的程度。}}]]
+这与近战攻击的处理方式相同。
+
+[[{{c|4. 确定是否进行多次攻击。}}]]
+某些能力允许你使用特定的远程武器发射多个投射物。
+
+如果你在与多个敌对对手进行近战战斗，每次进行远程攻击时有50%的几率
+导致攻击偏离（向左或向右偏离45度）
+</topic>
+  <topic name="豁免检定">
+某些效果或能力要求生物进行豁免检定或面临后果。
+每个豁免检定都有一个属性和难度值。要通过豁免检定，你需要掷一个基础的1d20，然后
+加上相关属性的修正值。如果这个数字达到或超过了难度值，则通过检定；
+否则，检定失败。一些针对生物能力的豁免检定也会将生物的属性修正值加入到难度值中。
+</topic>
+
+  <topic name="行动成本">
+完成某项任务所需的时间是以行动成本来衡量的。大多数任务的行动成本为1000。
+你的QN提高了你恢复这一成本的速度，使你能够比较慢的生物更频繁地行动。
+
+一些技能、变异和装备使你能够以减少或零行动成本执行特定的行动。
+</topic>
+<topic name="制作人员">
+
+                                 [[{{C|Created by}}
+                      Brian Bucklew and Jason Grinblat
+
+                            Tile Art - Samuel Wilson
+                               Music - Craig Hamilton
+         Additional Writing &amp;&amp; Design - Caelyn Sandel
+              Additional Programming - Corey Frang
+              Additional Programming - Armithaig
+              QA &amp;&amp; Additional Design - Nick Decapua
+                    Additional Music - Brandon Tanner
+                        Sound Design - A Shell in the Pit
+            QA, Additional Design, &amp;&amp;
+              Additional Programming - Thaumatic Systems
+                      Background Art - Cyril van der Haegen
+                            Logo Art - Laura &amp;&amp; Jeff Bucholtz
+                Community Management - Ivy Melinda &amp;&amp; the mayor team
+
+                               {{C|Special thanks}}
+                                  Ashenai
+                               Riley Vincent
+                                   Gibbed
+                                Floorislava
+                                 Dr Amazing
+                                  Devonaut
+                                    Vaos
+                                   Tyskil
+                                   Lakren
+                                   Stelas
+                               Social Animal
+                                Contra Duck
+                                 Saberwulf
+                                 Megaflare
+                                 Doctorfrog
+                                  Palecur
+                                 NovaPolice
+                                  Mirdath
+                                  The Glow
+                                   Dyzzy
+                                  Schister
+                                Lazybuttons
+                                   Colonp
+                                    Niff
+                                 Matterhorn
+                                  Clamiam
+                                   Donraj
+                                Randy Marsh
+                                   Rabbi
+                                  Getter77
+                                  Capuchin
+                                Wafflecopter
+                                  Nomikos
+                                  Magitek
+                                Andrew Smash
+                                   Vastin
+                                   Frumple
+                                   Sappho
+                                  Soulwynd
+                                  Cpbpunch
+                                   Tarran
+                               Brian Turcotte
+                                    Oryx
+                          Jim Shepard, Dungeonmans]]
+</topic>
+<topic name="[[开源协议]]">
+[[{{c|License for Harmony (https://github.com/pardeike/Harmony)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Andreas Pardeike
+
+{{c|License for FuzzySharp (https://github.com/JakeBayer/FuzzySharp)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2018 
+  
+{{c|License for UnityStandaloneFileBrowser
+ (https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Gökhan Gökçe
+
+{{c|License for ZString (https://github.com/Cysharp/ZString)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2020 Yoshifumi Kawai / Cysharp, Inc.
+
+{{c|License for UniTask (https://github.com/Cysharp/UniTask)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.
+
+
+{{W|MIT License}} {{c|- Full Text}}
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.]]
+
+</topic>
+</help>

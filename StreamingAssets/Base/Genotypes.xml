@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 创建角色的基因型描述 -->
+<genotypes>
+
+  <genotype Name="Mutated Human" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*" RandomWeight="90" DisplayName="变异人" Subtypes="Callings" Class="" Tile="UI/sw_mutant.bmp" DetailColor="g" BodyObject="Humanoid" BaseHPGain="1-4" BaseSPGain="50" BaseMPGain="1" Species="human" IsMutant="true" CharacterBuilderModules="XRL.CharacterBuilds.Qud.QudCasteModule,XRL.CharacterBuilds.Qud.QudCyberneticsModule">
+    <stat Name="Strength" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Strength}} 数值决定了你在近战攻击中穿透对手护甲的效果、近战攻击的伤害、抵抗被迫移动的能力以及携带容量。"/>
+    <stat Name="Agility" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Agility}} 数值决定了你在近战和远程武器上的准确度，以及你躲避攻击的能力。"/>
+    <stat Name="Toughness" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Toughness}} 数值决定了你的生命值、自然恢复速度，以及抵抗毒药和疾病的能力。"/>
+    <stat Name="Intelligence" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Intelligence}} 数值决定了你的技能点数量和检验遗物的能力。"/>
+    <stat Name="Willpower" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Willpower}} 数值会影响你激活技能的冷却时间，决定你抵抗精神攻击的能力，并且调整你的自然恢复速度。"/>
+    <stat Name="Ego" Minimum="10" Maximum="24" ChargenDescription="你的 {{W|Ego}} 数值决定了你精神变异的威力、与商人讨价还价的能力，以及支配其他生物意志的能力。"/>
+    <skills>
+      <skill Name="Tactics_Run" />
+      <skill Name="Survival_Camp" />
+    </skills>
+    <extrainfo>变异</extrainfo>
+    <extrainfo>中等起始属性</extrainfo>
+    <extrainfo>-600 声望 {{C|普图斯骑士团}}</extrainfo>
+  </genotype>
+
+  <genotype Name="True Kin" MutationPoints="0" StatPoints="38" AllowedMutationCategories="" CyberneticsLicensePoints="2" RandomWeight="10" DisplayName="真人" Subtypes="Castes" Class="" Tile="UI/sw_truekin.bmp" DetailColor="C" BodyObject="Humanoid" BaseHPGain="1-4" BaseSPGain="70" BaseMPGain="0" Species="human" IsTrueKin="true" CharacterBuilderModules="XRL.CharacterBuilds.Qud.QudCallingModule,XRL.CharacterBuilds.Qud.QudMutationsModule">
+    <stat Name="Strength" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Strength}} 数值决定了你在近战攻击中穿透对手护甲的效果、近战攻击的伤害、抵抗被迫移动的能力以及携带容量。"/>
+    <stat Name="Agility" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Agility}} 数值决定了你在近战和远程武器上的准确度，以及你躲避攻击的能力。"/>
+    <stat Name="Toughness" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Toughness}} 数值决定了你的生命值、自然恢复速度，以及抵抗毒药和疾病的能力。"/>
+    <stat Name="Intelligence" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Intelligence}} 数值决定了你的技能点数量和检验遗物的能力。"/>
+    <stat Name="Willpower" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Willpower}} 数值会影响你激活技能的冷却时间，决定你抵抗精神攻击的能力，并且调整你的自然恢复速度。"/>
+    <stat Name="Ego" Minimum="12" Maximum="24" ChargenDescription="你的 {{W|Ego}} 数值决定了你精神变异的威力、与商人讨价还价的能力，以及支配其他生物意志的能力。"/>
+    <skills>
+      <skill Name="Persuasion_RebukeRobot" />
+      <skill Name="Tactics_Run" />
+      <skill Name="Survival_Camp" />
+    </skills>
+    <reputations>
+      <reputation With="Templar" Value="600" />
+    </reputations>
+    <extrainfo>起始属性高</extrainfo>
+    <extrainfo>机械体访问</extrainfo>
+    <extrainfo>{{C|20}} 每个级别奖励技能点</extrainfo>
+    <extrainfo>基于起源生态的额外抗性</extrainfo>
+    <extrainfo>可能会斥责机器人</extrainfo>
+  </genotype>
+
+</genotypes>

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--种族职业选择-->
+<subtypes>
+
+  <class ID="Castes" ChargenTitle="选择种族" SingularTitle="caste" StatBoxDisplay="true">
+
+    <category Name="Ekuemekiyye" DisplayName="{{G|圣城埃克米的毒树}}">
+
+      <subtype Name="Horticulturist" Gear="StartingGear_Horticulturist" Tile="creatures/caste_1.bmp" DetailColor="g">
+        <stat Name="Intelligence" Bonus="3" />
+        <skills>
+          <skill Name="CookingAndGathering" />
+          <skill Name="CookingAndGathering_Harvestry" />
+          <skill Name="Axe" />
+          <skill Name="Rifles" />
+          <skill Name="Survival_JungleSurvival" />
+        </skills>
+        <savemodifiers>
+          <savemodifier Vs="Bleeding" Amount="2" />
+        </savemodifiers>
+      </subtype>
+
+      <subtype Name="万阳祭司" Gear="StartingGear_PriestOfAllSuns" Tile="creatures/caste_2.bmp" DetailColor="Y">
+        <stat Name="Ego" Bonus="3" />
+        <skills>
+          <skill Name="Cudgel" />
+          <skill Name="Physic" />
+          <skill Name="Physic_Nostrums" />
+          <skill Name="Persuasion" />
+          <skill Name="Persuasion_SnakeOiler" />
+          <skill Name="Persuasion_Intimidate" />
+          <skill Name="Survival_JungleSurvival" />
+        </skills>
+        <savemodifiers>
+          <savemodifier Vs="Bleeding" Amount="2" />
+        </savemodifiers>
+      </subtype>
+
+      <subtype Name="诸月牧师" Gear="StartingGear_PriestofAllMoons" Tile="creatures/caste_3.bmp" DetailColor="W">
+        <stat Name="Willpower" Bonus="2" />
+        <stat Name="Toughness" Bonus="2" />
+        <skills>
+          <skill Name="Axe" />
+          <skill Name="CookingAndGathering_Butchery" />
+          <skill Name="Discipline_Lionheart" />
+          <skill Name="Endurance_PoisonTolerance" />
+          <skill Name="Survival_JungleSurvival" />
+        </skills>
+        <savemodifiers>
+          <savemodifier Vs="Bleeding" Amount="2" />
+        </savemodifiers>
+      </subtype>
+
+      <subtype Name="天象祭司" Gear="StartingGear_Syzygyrior" Tile="creatures/caste_4.bmp" DetailColor="g">
+        <stat Name="Agility" Bonus="3" />
+        <skills>
+          <skill Name="Multiweapon_Fighting" />
+          <skill Name="Multiweapon_Proficiency" />
+          <skill Name="Multiweapon_Expertise" />
+          <skill Name="Survival_JungleSurvival" />
+        </skills>
+        <savemodifiers>
+          <savemodifier Vs="Bleeding" Amount="2" />
+        </savemodifiers>
+      </subtype>
+
+    </category>
+
+    <category Name="Ibul" DisplayName="{{C|冰封的伊布尔城市}}">
+
+      <subtype Name="工匠" Gear="StartingGear_Artifex" Tile="creatures/caste_5.bmp" DetailColor="c">
+        <stat Name="Intelligence" Bonus="3" />
+        <stat Name="ColdResistance" Bonus="15" />
+        <skills>
+          <skill Name="Tinkering" />
+          <skill Name="Tinkering_Repair" />
+          <skill Name="Tinkering_Disassemble" />
+          <skill Name="Tinkering_DeployTurret" />
+          <skill Name="Tinkering_Tinker1" />
+          <skill Name="Tinkering_Tinker2" />
+        </skills>
+      </subtype>
+
+      <subtype Name="领事" Gear="StartingGear_Consul" Tile="creatures/caste_6.bmp" DetailColor="c">
+        <stat Name="Ego" Bonus="3" />
+        <stat Name="ColdResistance" Bonus="15" />
+        <skills>
+          <skill Name="Persuasion_InspiringPresence" />
+          <skill Name="Persuasion_Proselytize" />
+        </skills>
+      </subtype>
+
+      <subtype Name="禁卫" Gear="StartingGear_Praetorian" Tile="creatures/caste_7.bmp" DetailColor="c">
+        <stat Name="Strength" Bonus="2" />
+        <stat Name="Toughness" Bonus="1" />
+        <stat Name="Willpower" Bonus="1" />
+        <stat Name="ColdResistance" Bonus="15" />
+        <skills>
+          <skill Name="LongBlades" />
+          <skill Name="Shield" />
+          <skill Name="Shield_Slam" />
+          <skill Name="Rifles" />
+        </skills>
+      </subtype>
+
+      <subtype Name="宦官" Gear="StartingGear_Eunuch" Tile="creatures/caste_8.bmp" DetailColor="c">
+        <stat Name="Agility" Bonus="2" />
+        <stat Name="Intelligence" Bonus="2" />
+        <stat Name="ColdResistance" Bonus="15" />
+        <skills>
+          <skill Name="ShortBlades" />
+          <skill Name="ShortBlades_Hobble" />
+          <skill Name="Pistol" />
+          <skill Name="Pistol_WeakSpotter" />
+          <skill Name="Acrobatics" />
+          <skill Name="Acrobatics_Dodge" />
+          <skill Name="Tactics" />
+        </skills>
+      </subtype>
+
+    </category>
+
+    <category Name="Yawningmoon" DisplayName="{{R|盎月的岩壳炮台}}">
+
+      <subtype Name="炉边之子" Gear="StartingGear_ChildoftheHearth" Tile="creatures/caste_9.bmp" DetailColor="r">
+        <stat Name="Strength" Bonus="3" />
+        <stat Name="HeatResistance" Bonus="15" />
+        <skills>
+          <skill Name="Cudgel" />
+          <skill Name="Cudgel_Slam" />
+          <skill Name="HeavyWeapons" />
+          <skill Name="Endurance_Calloused" />
+        </skills>
+      </subtype>
+
+      <subtype Name="轮回之子" Gear="StartingGear_ChildoftheWheel" Tile="creatures/caste_10.bmp" DetailColor="r">
+        <stat Name="Agility" Bonus="2" />
+        <stat Name="Strength" Bonus="1" />
+        <stat Name="Ego" Bonus="1" />
+        <stat Name="HeatResistance" Bonus="15" />
+        <skills>
+          <skill Name="ShortBlades" />
+          <skill Name="Axe" />
+          <skill Name="Axe_Cleave" />
+          <skill Name="Multiweapon_Fighting" />
+          <skill Name="Multiweapon_Proficiency" />
+          <skill Name="Discipline_IronMind" />
+        </skills>
+      </subtype>
+
+      <subtype Name="深渊之子" Gear="StartingGear_ChildoftheDeep" Tile="creatures/caste_11.bmp" DetailColor="r">
+        <stat Name="Toughness" Bonus="3" />
+        <stat Name="HeatResistance" Bonus="15" />
+        <skills>
+          <skill Name="HeavyWeapons" />
+          <skill Name="HeavyWeapons_Tank" />
+          <skill Name="Endurance" />
+          <skill Name="Survival_MountainsSurvival" />
+          <skill Name="Survival_DesertCanyonSurvival" />
+        </skills>
+      </subtype>
+
+      <subtype Name="怒火神之子" Gear="StartingGear_FumingGodChild" Tile="creatures/caste_12.bmp" DetailColor="r">
+        <stat Name="Willpower" Bonus="4" />
+        <stat Name="HeatResistance" Bonus="15" />
+        <skills>
+          <skill Name="Discipline" />
+          <skill Name="Discipline_FastingWay" />
+          <skill Name="Discipline_Lionheart" />
+          <skill Name="Endurance_PoisonTolerance" />
+          <skill Name="Persuasion" />
+          <skill Name="Persuasion_Intimidate" />
+        </skills>
+      </subtype>
+
+    </category>
+
+  </class>
+
+  <class ID="Callings" ChargenTitle="选择职业" SingularTitle="calling">
+
+    <subtype Name="传教士" Gear="StartingGear_Apostle" Tile="creatures/caste_13.bmp" DetailColor="m">
+      <stat Name="Ego" Bonus="2" />
+      <skills>
+        <skill Name="Persuasion_Intimidate" />
+        <skill Name="Persuasion_Proselytize" />
+        <skill Name="Customs" />
+      </skills>
+    </subtype>
+
+    <subtype Name="神秘探险者" Gear="StartingGear_Arconaut" Tile="creatures/caste_14.bmp" DetailColor="Y">
+      <stat Name="Agility" Bonus="2" />
+      <skills>
+        <skill Name="ShortBlades" />
+        <skill Name="Tinkering" />
+        <skill Name="Tinkering_Scavenger" />
+        <skill Name="Acrobatics" />
+        <skill Name="Acrobatics_Dodge" />
+      </skills>
+      <extrainfo>开始时携带随机杂物和遗物</extrainfo>
+    </subtype>
+
+    <subtype Name="灰须" Gear="StartingGear_Greybeard" Tile="creatures/caste_15.bmp" DetailColor="w">
+      <stat Name="Willpower" Bonus="3" />
+      <stat Name="Strength" Bonus="-1" />
+      <skills>
+        <skill Name="Cudgel" />
+        <skill Name="Persuasion_Berate" />
+        <skill Name="Endurance_Calloused" />
+      </skills>
+      <reputations>
+        <reputation With="Bears" Value="100" />
+      </reputations>
+    </subtype>
+
+    <subtype Name="枪侠" Gear="StartingGear_Gunslinger" Tile="creatures/caste_16.bmp" DetailColor="K">
+      <stat Name="Agility" Bonus="2" />
+      <skills>
+        <skill Name="Pistol" />
+        <skill Name="Pistol_Akimbo" />
+      </skills>
+      <reputations>
+        <reputation With="Strangers" Value="200" />
+      </reputations>
+    </subtype>
+
+    <subtype Name="掠夺者" Gear="StartingGear_Marauder" Tile="creatures/caste_17.bmp" DetailColor="r">
+      <stat Name="Strength" Bonus="2" />
+      <skills>
+        <skill Name="Axe" />
+        <skill Name="Axe_Dismember" />
+        <skill Name="Tactics_Charge" />
+        <skill Name="CookingAndGathering_Butchery" />
+      </skills>
+    </subtype>
+
+    <subtype Name="旅行者" Gear="StartingGear_Pilgrim" Tile="creatures/caste_18.bmp" DetailColor="y">
+      <stat Name="Willpower" Bonus="2" />
+      <skills>
+        <skill Name="Discipline" />
+        <skill Name="Discipline_FastingWay" />
+        <skill Name="Discipline_IronMind" />
+        <skill Name="Survival" />
+      </skills>
+    </subtype>
+
+    <subtype Name="流浪者" Gear="StartingGear_Nomad" Tile="creatures/caste_19.bmp" DetailColor="W">
+      <stat Name="Toughness" Bonus="2" />
+      <skills>
+        <skill Name="Survival" />
+        <skill Name="Survival_SaltDesertSurvival" />
+        <skill Name="CookingAndGathering_Harvestry" />
+        <skill Name="Survival_Trailblazer" />
+        <skill Name="Endurance_Weathered" />
+      </skills>
+      <reputations>
+        <reputation With="Issachari" Value="200" />
+      </reputations>
+      <extrainfo>开具携带{{B|回收工具}}</extrainfo>
+    </subtype>
+
+    <subtype Name="学者" Class="ScholarSkills" Gear="StartingGear_Scholar" Tile="creatures/caste_20.bmp" DetailColor="C">
+      <stat Name="Intelligence" Bonus="2" />
+      <skills>
+        <skill Name="Tinkering" />
+				<skill Name="Physic" />
+        <skill Name="Physic_Nostrums" />
+        <skill Name="CookingAndGathering_Harvestry" />
+        <skill Name="Tactics" />
+        <skill Name="Customs" />
+      </skills>
+    </subtype>
+
+    <subtype Name="修补匠" Gear="StartingGear_Tinker" Tile="creatures/caste_21.bmp" DetailColor="c">
+      <stat Name="Intelligence" Bonus="2" />
+      <skills>
+        <skill Name="Tinkering" />
+        <skill Name="Tinkering_LayMine" />
+        <skill Name="Tinkering_Disassemble" />
+        <skill Name="Tinkering_Repair" />
+        <skill Name="Tinkering_Tinker1" />
+      </skills>
+      <reputations>
+        <reputation With="Barathrumites" Value="100" />
+      </reputations>
+      <extrainfo>开始时携带一些随机的遗物和废料</extrainfo>
+    </subtype>
+
+    <subtype Name="守卫" Gear="StartingGear_Warden" Tile="creatures/caste_22.bmp" DetailColor="w">
+      <stat Name="Strength" Bonus="2" />
+      <skills>
+        <skill Name="LongBlades" />
+        <skill Name="Shield" />
+        <skill Name="Shield_Slam" />
+        <skill Name="Rifles" />
+        <skill Name="Pistol" />
+      </skills>
+      <reputations>
+        <reputation With="Wardens" Value="300" />
+      </reputations>
+    </subtype>
+
+    <subtype Name="水贩" Gear="StartingGear_WaterMerchant" Tile="creatures/caste_23.bmp" DetailColor="B">
+      <stat Name="Ego" Bonus="2" />
+      <skills>
+        <skill Name="ShortBlades" />
+        <skill Name="Persuasion_SnakeOiler" />
+      </skills>
+      <reputations>
+        <reputation With="Water" Value="200" />
+      </reputations>
+      <extrainfo>允许进入许多定居点进行贸易</extrainfo>
+      <extrainfo>开具携带贸易商品</extrainfo>
+    </subtype>
+
+    <subtype Name="水藤种植者" Gear="StartingGear_WatervineFarmer" Tile="creatures/caste_24.bmp" DetailColor="y">
+      <stat Name="Toughness" Bonus="2" />
+      <skills>
+        <skill Name="CookingAndGathering" />
+        <skill Name="CookingAndGathering_Harvestry" />
+        <skill Name="Axe" />
+        <skill Name="Survival_SaltmarshSurvival" />
+      </skills>
+      <reputations>
+        <reputation With="Joppa" Value="100" />
+				<reputation With="Farmers" Value="200" />
+			</reputations>
+      <extrainfo>开始时携带随机的烹饪材料</extrainfo>
+    </subtype>
+
+  </class>
+
+</subtypes>

@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <!--    
+    1 Base objects
+    2 Liquid pools
+    3 Gases
+    4 Spacetime anomalies
+    5 Misc    
+  -->
+
+  <!-- 气体 -->
+
+  <!--
+
+    ******************
+       Base Objects
+    ******************
+
+  -->
+
+  <object Name="PhysicalObject" Inherits="Object">
+    <part Name="Render" DisplayName="[Object]" RenderString="?" RenderLayer="1" RenderIfDark="true" />
+    <part Name="Physics" Category="Miscellaneous" IsReal="true" Solid="false" Weight="1" />
+    <part Name="MeleeWeapon" BaseDamage="1d2" Stat="Strength" Skill="Cudgel" />
+    <part Name="Commerce" Value="0.01" />
+    <part Name="Description" Short="A hideous specimen." />
+    <part Name="BurnToAshesIfOrganic" />
+    <stat Name="Hitpoints" ShortName="HP" Min="0" Max="64000" Value="25" />
+    <stat Name="AV" ShortName="AV" Min="0" Max="100" Value="2" />
+    <stat Name="DV" ShortName="DV" Min="-100" Max="100" Value="0" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Category" Value="object" />    
+  </object>
+  <object Name="InorganicObject" Inherits="PhysicalObject">
+    <part Name="Inorganic" />
+    <stat Name="DV" Value="-20" />
+    <part Name="Physics" Organic="false" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Breakable" />
+  </object>
+  <object Name="InertObject" Inherits="PhysicalObject">
+    <part Name="Physics" Takeable="false" Organic="false" FreezeTemperature="-99999" BrittleTemperature="-99999" FlameTemperature="99999" VaporTemperature="99999" />
+    <part Name="NoDamage" />
+    <tag Name="NoEffects" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <!--
+
+    ******************
+       Liquid pools
+    ******************
+
+  -->
+  
+  <object Name="Water" Inherits="Object">
+    <part Name="Render" DisplayName="pool" Tile="Liquids/Water/puddle_1.png" RenderString="~" ColorString="&amp;b" RenderLayer="2" RenderIfDark="true" />
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="0" InitialLiquid="" NamePreposition="of" />
+    <part Name="Physics" Category="Liquids" Takeable="false" FreezeTemperature="0" Weight="0" BrittleTemperature="-100" FlameTemperature="99999" VaporTemperature="100" />
+    <part Name="Inorganic" />
+    <part Name="MentalShield" />
+    <part Name="Description" Short="A pool of liquid." />
+    <tag Name="PaintedLiquidAtlas" Value="Liquids/Water/" />
+    <tag Name="Pool" />
+    <tag Name="ImpactSound" Value="Sounds/Multipurpose/sfx_liquid_impact"></tag>
+  </object>
+  <object Name="Pond" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="water-600,salt-400" />
+  </object>
+
+  <object Name="SaltyWaterPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="water-600,salt-400" />
+  </object>
+  <object Name="SaltyWaterDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="water-600,salt-400" />
+  </object>
+  <object Name="SaltyWaterExtraDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="8000" InitialLiquid="water-600,salt-400" />
+  </object>
+  <object Name="SmallSlimePuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="50" InitialLiquid="slime-1000" />
+  </object>
+  <object Name="SlimePuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="slime-1000" />
+  </object>
+  <object Name="SludgePuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" StartVolume="1d250+250" InitialLiquid="sludge-1000" />
+  </object>
+  <object Name="GooPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" StartVolume="1d250+250" InitialLiquid="goo-1000" />
+  </object>
+  <object Name="OozePuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" StartVolume="1d250+250" InitialLiquid="ooze-1000" />
+  </object>
+  <object Name="BrackishWaterPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="water-900,salt-100" />
+  </object>
+  <object Name="FreshWaterPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" InitialLiquid="water-1000" />
+  </object>
+  <object Name="BasePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" />
+  </object>
+  <object Name="DamnedPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="putrid-500,blood-300,wax-100,ink-100" />
+  </object>
+  <object Name="BrackishPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="water-900,salt-100" />
+  </object>
+  <object Name="DeepBrackishPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" StartVolume="500" InitialLiquid="water-900,salt-100" />
+  </object>
+  <object Name="BloodSplash" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="1" StartVolume="1" InitialLiquid="blood-1000" />
+  </object>
+  <object Name="AcidWaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="acid-1000,water-1000" />
+  </object>
+  <object Name="FreshWaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="water-1000" />
+  </object>
+  <object Name="FreshWaterPool300" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="300" InitialLiquid="water-1000" />
+  </object>
+  <object Name="DeepFreshWaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2000" InitialLiquid="water-1000" />
+  </object>
+
+  <object Name="OilDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" StartVolume="10d10" InitialLiquid="oil-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="CloningPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="1" StartVolume="1" InitialLiquid="cloning-1000" />
+  </object>
+  <object Name="AsphaltDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="asphalt-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="AsphaltPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="asphalt-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="OilPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" StartVolume="10d10" InitialLiquid="oil-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="LavaPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="lava-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="9000" />
+  </object>
+  <object Name="SmallLavaPuddle" Inherits="LavaPuddle">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="15-20" InitialLiquid="lava-1000" />
+  </object>
+  <object Name="SaltPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="salt-1000" />
+    <part Name="Physics"/>
+  </object>
+  <object Name="SaltDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="salt-1000" />
+  </object>
+  <object Name="SaltBloodDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="salt-900,blood-100" />
+  </object>
+  <object Name="AlgalWaterDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="water-1000,algae-500" />
+    <tag Name="NoRuinsRemove" />
+  </object>
+  <object Name="AlgalWaterBloodDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="water-900,algae-400,blood-200" />
+    <tag Name="NoRuinsRemove" />
+  </object>
+  <object Name="AlgaePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="2000" InitialLiquid="water-1000,algae-500" />
+    <tag Name="NoRuinsRemove" />
+  </object>
+  <object Name="AlgalWaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="2000" InitialLiquid="water-1000,algae-500" />
+    <tag Name="NoRuinsRemove" />
+  </object>
+  <object Name="AlgalWaterBloodPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="2000" InitialLiquid="water-900,algae-400,blood-200" />
+    <tag Name="NoRuinsRemove" />
+  </object>
+  <object Name="MoltenWaxPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="200" InitialLiquid="wax-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="9000" />
+  </object>
+  <object Name="MoltenWaxDrop" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2" InitialLiquid="wax-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="9000" />
+  </object>
+  <object Name="InkDrop" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="5" StartVolume="1d5" InitialLiquid="ink-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="9000" />
+  </object>
+  <object Name="ProteanDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="proteangunk-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="9000" />
+  </object>
+  <object Name="HoneyPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="honey-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="AcidPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="acid-1000" />
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="350" VaporTemperature="9999" />
+  </object>
+  <object Name="ConvalessencePuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="convalessence-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="200" BrittleTemperature="-120" FreezeTemperature="-119" />
+  </object>
+  <object Name="SmallConvalessencePuddle" Inherits="ConvalessencePuddle">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="15-20" InitialLiquid="convalessence-1000" />
+  </object>
+  <object Name="ConvalessenceDeepPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="convalessence-1000" />
+    <part Name="Physics" FlameTemperature="5000" VaporTemperature="200" BrittleTemperature="-120" FreezeTemperature="-119" />
+  </object>
+  <object Name="VomitPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2" StartVolume="2" InitialLiquid="putrid-1000" />
+  </object>
+  <object Name="NeutronPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2" StartVolume="2" InitialLiquid="neutronflux-1000" />
+  </object>
+  <object Name="BrainBrinePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2" StartVolume="2" InitialLiquid="brainbrine-1000" />
+  </object>
+  <object Name="LushAcidPuddle" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="wine-400,acid-600" />
+  </object>
+	<object Name="WarmStaticPuddle" Inherits="Water">
+		<part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="warmstatic-1000" />
+	</object>
+	<object Name="DilutedWarmStaticPuddle" Inherits="Water">
+		<part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="warmstatic-1000,water-500" />
+	</object>
+
+  <!-- Base liquid pools for LiquidSpitter -->
+  <!-- (name pattern must match LiquidSpitter logic, don't need proteangunk) -->
+	<object Name="AcidPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="acid-1000" />
+  </object>
+	<object Name="SaltyAcidPool" Inherits="Water">
+		<part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="acid-900,salt-100" />
+	</object>
+  <object Name="BloodPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="blood-1000" />
+  </object>
+  <object Name="BrainbrinePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="brainbrine-1000" />
+  </object>
+  <object Name="CiderPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="cider-1000" />
+  </object>
+  <object Name="CloningPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="cloning-1000" />
+  </object>
+  <object Name="OilyAsphaltPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="2000" StartVolume="2000" InitialLiquid="asphalt-800,oil-200" />
+  </object>
+  <object Name="ConvalessencePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="convalessence-1000" />
+  </object>
+  <object Name="GelPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="gel-1000" />
+  </object>
+  <object Name="GooPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="goo-1000" />
+  </object>
+  <object Name="HoneyPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="honey-1000" />
+  </object>
+  <object Name="InkPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="ink-1000" />
+  </object>
+  <object Name="LavaPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="lava-1000" />
+  </object>
+  <object Name="NeutronfluxPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="neutronflux-1000" />
+  </object>
+  <object Name="OilPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="oil-1000" />
+  </object>
+  <object Name="PutrescencePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="putrid-1000" />
+  </object>
+  <object Name="SaltPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="salt-1000" />
+  </object>
+  <object Name="SapPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="sap-1000" />
+  </object>
+  <object Name="SlimePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="slime-1000" />
+  </object>
+  <object Name="SludgePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="sludge-1000" />
+  </object>
+  <object Name="TarPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="asphalt-1000" />
+  </object>
+  <object Name="OozePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="ooze-1000" />
+  </object>
+  <object Name="WaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="water-1000" />
+  </object>
+  <object Name="WaxPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="wax-1000" />
+  </object>
+  <object Name="WinePool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="wine-1000" />
+  </object>
+  <object Name="SunslagPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="sunslag-1000" />
+  </object>
+
+  <!-- End liquid pools -->
+  
+  <!--
+
+    ***********
+       Gases
+    ***********
+
+  -->
+
+  <object Name="Gas" Inherits="InertObject">
+    <part Name="Render" DisplayName="[Gas]" RenderString="." RenderLayer="8" RenderIfDark="false" />
+    <part Name="Gas" GasType="InertGas" />
+    <removepart Name="NoDamage" />
+    <part Name="NoDamageExcept" Except="AffectGas" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="NeverStack"></tag>
+  </object>
+  
+  <object Name="PoisonGas" Inherits="Gas">
+    <part Name="Render" DisplayName="poison gas" />
+    <part Name="Gas" GasType="PoisonGas" ColorString="&amp;g" />
+    <part Name="GasPoison" />
+    <part Name="Description" Short="Plumes of noxious gas stick to the air. They crowd the lungs of wet-blooded creatures who can't extract the displaced oxygen." />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+    <tag Name="GasGenerationName" Value="Poison Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="poison save difficulty and damage" />
+    <tag Name="ActivationColorString" Value="&amp;g" />		
+  </object>
+  <object Name="PoisonGas80" Inherits="PoisonGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="MiasmaticAsh" Inherits="Gas">
+    <part Name="Render" DisplayName="osseous ash" />
+    <part Name="Description" Short="Bone bits are aerosolized into a thick coal fog. Light is lost inside." />
+    <part Name="Gas" GasType="MiasmaticAsh" ColorString="&amp;K" />
+    <part Name="GasAsh" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+    <tag Name="GasGenerationName" Value="Osseous Ash Generation" />
+    <tag Name="LevelEffectDescription" Value="asphyxiation save difficulty and damage" />
+    <tag Name="ActivationColorString" Value="&amp;K" />
+    <intproperty Name="NavigationWeight" Value="98" />		
+  </object>
+  <object Name="MiasmaticAsh80" Inherits="MiasmaticAsh">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="MiasmaticAsh200" Inherits="MiasmaticAsh">
+    <part Name="Gas" Density="200" />
+  </object>
+
+  <object Name="Plasma" Inherits="Gas">
+    <part Name="Render" DisplayName="plasma" />
+    <part Name="Description" Short="Ribbons of emerald and neon lace streak through the crackling air and bloom in violent florets." />
+    <part Name="Gas" GasType="Plasma" Seeping="true" ColorString="&amp;g^Y" />
+    <part Name="GasPlasma" />
+    <part Name="GasDamaging" GasType="Plasma" Noun="plasma" MessageColor="&amp;W" CreatureDamageDivisor="100" DamageAttributes="Plasma Gas" TargetPart="Physics" ExcludeTag="Item" />
+    <tag Name="GasGenerationName" Value="Plasma Emission" />
+    <tag Name="LevelEffectDescription" Value="damage and duration of plasma adhesion" />
+    <tag Name="ActivationColorString" Value="&amp;W" />
+  </object>
+  <object Name="Plasma80" Inherits="Plasma">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="Plasma200" Inherits="Plasma">
+    <part Name="Gas" Density="200" />
+  </object>
+  <object Name="Plasma1000" Inherits="Plasma">
+    <part Name="Gas" Density="1000" />
+  </object>
+
+  <object Name="Steam" Inherits="Gas">
+    <part Name="Gas" GasType="Steam" ColorString="&amp;Y^y" />
+    <part Name="Render" DisplayName="steam" />
+    <tag Name="GasGenerationName" Value="Steam Generation" />
+    <tag Name="ActivationColorString" Value="&amp;Y" />
+  </object>
+  <object Name="SteamGas" Inherits="Gas">
+    <part Name="Render" DisplayName="scalding steam" />
+    <part Name="Gas" GasType="SteamGas" ColorString="&amp;Y^y" />
+    <part Name="GasSteam" />
+    <part Name="Description" Short="Hot aerosol swells as it starts to dissipate into air." />
+    <tag Name="GasGenerationName" Value="Steam Gas Generation" />
+    <tag Name="ActivationColorString" Value="&amp;Y" />
+  </object>
+  <object Name="SteamGas80" Inherits="SteamGas">
+    <part Name="Gas" Density="80" />
+  </object>
+
+  <object Name="CryoGas" Inherits="Gas">
+    <part Name="Render" DisplayName="cryogenic mist" />
+    <part Name="Gas" GasType="Cryo" Density="20" ColorString="&amp;C^Y" />
+    <part Name="GasCryo" />
+    <part Name="Description" Short="Machine-chilled water was depressurized to a freezing fog to hold the processes of life in suspension." />
+    <tag Name="GasGenerationName" Value="Cryogenic Mist Generation" />
+    <tag Name="ActivationColorString" Value="&amp;C" />
+  </object>
+  <object Name="StableCryoGas" Inherits="CryoGas">
+    <part Name="Render" DisplayName="cryogenic mist" />
+    <part Name="Gas" Stable="true" GasType="Cryo" Density="100" ColorString="&amp;C^Y" />        
+    <tag Name="GasGenerationName" Value="Stable Cryogenic Mist Generation" />    
+  </object>
+  <object Name="CryoGas80" Inherits="CryoGas">
+    <part Name="Gas" Density="80" />
+  </object>
+
+  <object Name="AcidGas" Inherits="Gas">
+    <part Name="Render" DisplayName="腐蚀气体" />
+    <part Name="Gas" GasType="AcidGas" ColorString="&amp;g^G" />
+    <part Name="GasDamaging" GasType="Acid" Noun="acid" MessageColor="&amp;G" DamageAttributes="Acid Gas" TargetPart="Physics" ExcludeTag="Item"/>
+    <part Name="Description" Short="Even now the nimbus of vaporized acid is condensing, starting to settle on its colonized surfaces, starting to sink through their soft edges." />
+    <tag Name="GasGenerationName" Value="腐蚀气体制造" />
+    <tag Name="LevelEffectDescription" Value="damage" />
+    <tag Name="ActivationColorString" Value="&amp;G" />
+    <tag Name="GasGenerationAddSeeping" Value="true" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+  </object>
+  <object Name="AcidGas10" Inherits="AcidGas">
+    <part Name="Gas" Density="10" />
+  </object>
+  <object Name="AcidGas20" Inherits="AcidGas">
+    <part Name="Gas" Density="20" />
+  </object>
+  <object Name="AcidGas60" Inherits="AcidGas">
+    <part Name="Gas" Density="60" />
+  </object>
+  <object Name="AcidGas80" Inherits="AcidGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="StunGas" Inherits="Gas">
+    <part Name="Render" DisplayName="stun gas" />
+    <part Name="Gas" GasType="StunGas" ColorString="&amp;c^C" />
+    <part Name="GasStun" />
+    <part Name="Description" Short="The nickel-dew sticks to the air and arrests the transient molecules of migrant-matter." />
+    <tag Name="GasGenerationName" Value="Stun Gas Generation" />
+    <tag Name="ActivationColorString" Value="&amp;c" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+  </object>
+  <object Name="StunGas80" Inherits="StunGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="SleepGas" Inherits="Gas">
+    <part Name="Render" DisplayName="睡眠气体" />
+    <part Name="Description" Short="Miasma settles the lungs of its neighbors and guides them to the dreaming dale. Their bodies repose." />
+    <part Name="Gas" GasType="SleepGas" ColorString="&amp;w^Y" />
+    <part Name="GasSleep" />
+    <tag Name="GasGenerationName" Value="睡眠气体制造" />
+    <tag Name="LevelEffectDescription" Value="sleep save difficulty" />
+    <tag Name="ActivationColorString" Value="&amp;y" />
+    <tag Name="GasGenerationBlockEvent" Value="CanApplyInvoluntarySleep" />
+    <tag Name="DynamicObjectsTable:AjiConch" />		
+  </object>
+  <object Name="SleepGas80" Inherits="SleepGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="ConfusionGas" Inherits="Gas">
+    <part Name="Render" DisplayName="confusion gas" />
+    <part Name="Description" Short="Cobalt gas seeps into the nose and disarranges the mind." />
+    <part Name="Gas" GasType="ConfusionGas" ColorString="&amp;b^c" />
+    <part Name="GasConfusion" />
+    <tag Name="GasGenerationName" Value="Confusion Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="confusion save difficulty" />
+    <tag Name="ActivationColorString" Value="&amp;y" />		
+  </object>
+  <object Name="ConfusionGas80" Inherits="ConfusionGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="ConfusionGas200" Inherits="ConfusionGas">
+    <part Name="Gas" Density="200" />
+  </object>
+  
+  <object Name="Miasma" Inherits="Gas">
+    <part Name="Render" DisplayName="miasma" />
+    <part Name="Description" Short="Tongue, nail, and spleen were caked together then lacerated by heat to airy dots of dung." />
+    <part Name="Gas" GasType="DiseaseGas" ColorString="&amp;K^g" />
+    <part Name="GasDisease" />
+    <tag Name="GasGenerationName" Value="Miasma Generation" />
+    <tag Name="LevelEffectDescription" Value="disease save difficulty" />
+    <tag Name="ActivationColorString" Value="&amp;K" />		
+  </object>
+  <object Name="Miasma80" Inherits="Miasma">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="NormalityGas" Inherits="Gas">
+    <part Name="Render" DisplayName="normality gas" />
+    <part Name="Gas" GasType="NormalityGas" Seeping="true" Level="2" ColorString="&amp;K^y" />
+    <part Name="GasDamaging" GasType="NormalityGas" Noun="normality gas" MessageColor="&amp;y" DamageAttributes="Normality" TargetPart="Extradimensional" TargetTag="Entropic" />
+    <part Name="RealityStabilization" Visibility="3" FromGas="true" WorksOnCellContents="true" WorksOnSelf="true" />
+    <part Name="Description" Short="Gas molecules arrange along the ley lines of this plane to form an aeriform mesh. Objects on orthogonal trajectories are netted and shunted back toward their planar homes." />
+    <tag Name="GasGenerationName" Value="Normality Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="astral tethering and damage versus extradimensional beings" />
+    <tag Name="ActivationColorString" Value="&amp;K^y" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+    <tag Name="Nullifiable" />
+  </object>
+  <object Name="NormalityGas10" Inherits="NormalityGas">
+    <part Name="Gas" Density="10" />
+  </object>
+  <object Name="NormalityGas20" Inherits="NormalityGas">
+    <part Name="Gas" Density="20" />
+  </object>
+  <object Name="NormalityGas60" Inherits="NormalityGas">
+    <part Name="Gas" Density="60" />
+  </object>
+  <object Name="NormalityGas80" Inherits="NormalityGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="NormalityGas200" Inherits="NormalityGas">
+    <part Name="Gas" Density="200" />
+  </object>
+
+  <object Name="DefoliantGas" Inherits="Gas">
+    <part Name="Render" DisplayName="defoliant" />
+    <part Name="Gas" GasType="DefoliantGas" Seeping="true" ColorString="&amp;W^w" Level="1" />
+    <part Name="GasDamaging" GasType="Defoliant" Noun="defoliant" MessageColor="&amp;y" DamageAttributes="Defoliant Gas" TargetTag="LivePlant" TargetPart="PhotosyntheticSkin" AffectEquipment="true" AffectCybernetics="true" />
+    <part Name="Description" Short="The synthetic mist called Golden Dawn ascends from its canister to atomize leafage and leave a clear view of the horizon in its wake." />
+    <tag Name="GasGenerationName" Value="Defoliant Generation" />
+    <tag Name="LevelEffectDescription" Value="damage" />
+    <tag Name="ActivationColorString" Value="&amp;W^K" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+  </object>
+  <object Name="DefoliantGas80" Inherits="DefoliantGas">
+    <part Name="Gas" Density="80" />
+  </object>
+
+  <object Name="FungicideGas" Inherits="Gas">
+    <part Name="Render" DisplayName="fungicide" />
+    <part Name="Gas" GasType="FungicideGas" Seeping="true" ColorString="&amp;M^m" Level="1" />
+    <part Name="GasDamaging" GasType="Fungicide" Noun="fungicide" MessageColor="&amp;y" DamageAttributes="Fungicide Gas AffectGas" TargetTag="LiveFungus" TargetBodyPartCategory="Fungal" TargetEquippedTag="FungalInfection" TargetPart="GasFungalSpores" />
+    <part Name="Description" Short="Magenta showers the heterotrophs in a wet film that inhibits their absorption of dead animal and plant-things." />
+    <tag Name="GasGenerationName" Value="Fungicide Generation" />
+    <tag Name="LevelEffectDescription" Value="damage" />
+    <tag Name="ActivationColorString" Value="&amp;M^K" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+  </object>
+  <object Name="FungicideGas80" Inherits="FungicideGas">
+    <part Name="Gas" Density="80" />
+  </object>
+
+  <object Name="GlitterGas" Inherits="Gas">
+    <part Name="Render" DisplayName="glitter dust" />
+    <part Name="Gas" GasType="GlitterGas" ColorString="&amp;m^C" />
+    <part Name="GasGlitter" />
+    <part Name="Description" Short="Minuscule hexagons of crushed glass, insect parts, and polyester film twinkle in the air like the ionized helium of star dust." />
+    <tag Name="GasGenerationName" Value="Glitter Dust Generation" />
+    <tag Name="ActivationColorString" Value="&amp;C^m" />
+    <tag Name="DynamicObjectsTable:AjiConch" />
+  </object>
+  <object Name="GlitterGas80" Inherits="GlitterGas">
+    <part Name="Gas" Density="80" />
+  </object>
+  
+  <object Name="FungalSporeGasLuminous" Inherits="Gas">
+    <part Name="Render" DisplayName="fungal spores" />
+    <part Name="Description" Short="Brumes of spinning mold-dots make the air look fuzzy." />
+    <part Name="GasFungalSpores" Infection="LuminousInfection" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="FungalSporeGasLuminous80" Inherits="FungalSporeGasLuminous">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="FungalSporeGasPuff" Inherits="Gas">
+    <part Name="Render" DisplayName="fungal spores" />
+    <part Name="Description" Short="Brumes of spinning mold-dots make the air look fuzzy." />
+    <part Name="GasFungalSpores" Infection="PuffInfection" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="FungalSporeGasPuff80" Inherits="FungalSporeGasPuff">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="FungalSporeGasWax" Inherits="Gas">
+    <part Name="Render" DisplayName="fungal spores" />
+    <part Name="Description" Short="Brumes of spinning mold-dots make the air look fuzzy." />
+    <part Name="GasFungalSpores" Infection="WaxInfection" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="FungalSporeGasWax80" Inherits="FungalSporeGasWax">
+    <part Name="Gas" Density="80" />
+  </object>
+  <object Name="FungalSporeGasMumbles" Inherits="Gas">
+    <part Name="Render" DisplayName="fungal spores" />
+    <part Name="Description" Short="Brumes of spinning mold-dots make the air look fuzzy." />
+    <part Name="GasFungalSpores" Infection="MumblesInfection" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+  <object Name="FungalSporeGasMumbles80" Inherits="FungalSporeGasMumbles">
+    <part Name="Gas" Density="80" />
+  </object>
+	
+	<object Name="Shimmering Heat" Inherits="InertObject">
+		<part Name="NoDamage" />
+		<part Name="Render" DisplayName="shimmering heat" RenderString="*" RenderLayer="-1" />
+		<part Name="Description" Short="Hot air crests over an eddy and flares in the baking light." />
+		<part Name="Physics" Weight="0" IsReal="false" />
+		<part Name="PyroZone" Level="1" Duration="3" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+		<stag Name="Heat" />
+    <part Name="SoundRender" Sound="Sounds/Abilities/sfx_ability_pyrokinesis_passive" Volume="0.5"></part>
+    <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_pyrokinesis_active" Volume="1"></part>
+      <xtagGrammar massNoun="true" />
+	</object>
+	<object Name="Frigid Mist" Inherits="InertObject">
+		<part Name="NoDamage" />
+		<part Name="Render" DisplayName="freezing mist" RenderString="*" RenderLayer="-1" />
+		<part Name="Description" Short="Air cracks under an eddy and blows supercooled moisture to sparkling dust." />
+		<part Name="Physics" Weight="0" IsReal="false" />
+		<part Name="CryoZone" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+		<stag Name="Cold" />
+	</object>
+  
+  <!-- End gases -->
+
+  <!--
+
+    *************************
+       Spacetime anomalies
+    *************************
+
+  -->
+  <object Name="Space-Time Anomaly" Inherits="InertObject">
+    <part Name="Render" DisplayName="spacetime vortex" ColorString="&amp;Y" RenderLayer="50" RenderString="@" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="Description" Short="Shining images of distant places and times project off the faces of a platonic prism-thing, and sound waves are pulled apart to the asymptote. The leylines are knotted here, and the illusion of locality crumples away." />
+    <stat Name="DV" Value="1000" />
+    <part Name="NoDamage" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="SoundRender" Sound="Sounds/Abilities/sfx_ability_spacetimeVortex_lp"></part>
+    <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_head" Volume="1"></part>
+    <part Name="SoundOnDestroy" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_tail" Volume="1"></part>
+    <part Name="SpawnBlocker" />
+  </object>
+  <object Name="Space-Time Vortex" Inherits="Space-Time Anomaly">
+    <part Name="Temporary" Duration="20" />
+    <part Name="SpaceTimeVortex" />
+    <intproperty Name="NavigationWeight" Value="98" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="Space-Time Rift" Inherits="Space-Time Anomaly">
+    <part Name="SpaceTimeRift" />
+    <intproperty Name="NavigationWeight" Value="97" />
+  </object>
+  <object Name="Wormhole" Inherits="Furniture">
+    <part Name="Render" DisplayName="shimmering sphere" RenderString="197" RenderLayer="9" ColorString="&amp;y^K" Occluding="false" RenderIfDark="true" />
+    <part Name="Physics" Weight="5000" Takeable="false" Solid="false" FreezeTemperature="-15200" BrittleTemperature="-15200" />
+    <stat Name="Hitpoints" Value="250" />
+    <part Name="Wormhole" />
+    <part Name="Description" Short="Shining images of distant places and times project off the faces of a platonic prism-thing, and sound waves are pulled apart to the asymptote. The leylines are knotted here, and the illusion of locality crumples away." />
+    <tag Name="IgnoresGravity" />
+    <part Name="SoundRender" Sound="Sounds/Abilities/sfx_ability_spacetimeVortex_lp"></part>
+  </object>
+  <object Name="TrembleExitWormhole" Inherits="Wormhole">
+    <part Name="WorldTeleporter" MaxLevel="5" TargetZone="$TrembleEntranceEncounter" TargetObject="TrembleEntranceWormhole" />
+  </object>
+  <object Name="TrembleEntranceWormhole" Inherits="Wormhole">
+    <part Name="WorldTeleporter" MaxLevel="5" TargetZone="JoppaWorld.0.24.1.1.13" TargetObject="TrembleExitWormhole" />
+  </object>
+  
+  <!-- End spacetime anomalies -->
+
+  <!--
+
+    **********
+       Misc
+    **********
+
+  -->
+
+	<object Name="InteriorVoid" Inherits="CosmeticObject">
+		<part Name="Physics" Solid="true" Takeable="false" />
+		<part Name="Render" DisplayName="empty space" ColorString="&amp;k" TileColor="&amp;k" DetailColor="k" RenderString=" " RenderLayer="0" />
+		<part Name="InteriorVoid" />
+		<tag Name="OverlayColor" Value="&amp;k^k" />
+		<tag Name="NoAutowalk" />
+		<tag Name="NoBlockMessage" />
+		<tag Name="NoTwiddle" />
+		<tag Name="Impassable" />
+		<tag Name="SpawnBlocker" />
+		<tag Name="Wall" />
+		<xtagGrammar massNoun="true" />
+		<intproperty Name="NavigationWeight" Value="100" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+	<object Name="Kindleflame" Inherits="LightSource">
+    <part Name="Render" DisplayName="kindled flame" RenderString="*" ColorString="&amp;R" DetailColor="W" Tile="Items/item_14-12.bmp" RenderLayer="5" />
+    <part Name="Physics" FlameTemperature="2550" Takeable="false" IsReal="false" />
+    <part Name="LightSource" Lit="true" Radius="2" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A burning flame of amber floats below a psychic wick." />
+    <part Name="Flame" />
+    <part Name="TorchProperties" ChangeColorString="true" LiquidExtinguishes="false" />
+    <part Name="TemperatureOnHit" Amount="3d20" Max="true" MaxTemp="200" OnWielderHit="false" />
+    <part Name="Temporary" Duration="200" />
+    <tag Name="IgnoresGravity" />
+  </object>
+  <object Name="Hologram Distraction" Inherits="InertObject">
+    <part Name="Render" DisplayName="[Hologram]" RenderString="@" RenderLayer="6" ColorString="&amp;B" RenderIfDark="false" />
+    <part Name="Distraction" />
+    <part Name="HologramMaterial" />
+    <part Name="HologramInvulnerability" />
+    <part Name="Combat" />
+    <tag Name="IgnoresGravity" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="RealityStabilizationField" Inherits="Object">
+    <part Name="Render" DisplayName="{{normal|normality field}}" RenderLayer="-1" RenderString=" " Tile="Terrain/sw_normality_field.bmp" ColorString="&amp;k" Occluding="false" RenderIfDark="false" />
+    <part Name="AnimatedMaterialRealityStabilizationField" />
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/NormalityField" />
+    <part Name="Physics" Weight="100000" FlameTemperature="99999" VaporTemperature="99999" FreezeTemperature="-99999" BrittleTemperature="-99999" Takeable="false" Solid="false" />
+    <part Name="NoDamage" />
+    <part Name="RealityStabilization" Strength="100" WorksOnSelf="true" WorksOnCellContents="true" SelfVisibility="0" IsTechScannable="false" />
+    <part Name="Description" Short="Shadowing segments arrange along the ley lines of this plane to form a geometric mesh. Objects on orthogonal trajectories are netted and shunted back toward their planar homes." />
+    <tag Name="Nullifiable" />
+    <tag Name="IgnoresGravity" />
+  </object>
+  
+  <!-- End misc -->	
+	
+</objects>
