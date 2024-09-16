@@ -3864,17 +3864,17 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
   <object Name="Stinger Poison" Inherits="Stinger">
     <part Name="Render" DetailColor="G" />
     <part Name="StingerPoisonProperties" />
-    <tag Name="VariantName" Value="Stinger (Poisoning Venom)" />
+    <tag Name="VariantName" Value="毒刺 (有毒毒素)" />
   </object>
   <object Name="Stinger Paralysis" Inherits="Stinger">
     <part Name="Render" DetailColor="M" />
     <part Name="StingerParalysisProperties" />
-    <tag Name="VariantName" Value="Stinger (Paralyzing Venom)" />
+    <tag Name="VariantName" Value="毒刺 (麻痹毒素)" />
   </object>
   <object Name="Stinger Confusion" Inherits="Stinger">
     <part Name="Render" DetailColor="B" />
     <part Name="StingerConfusionProperties" />
-    <tag Name="VariantName" Value="Stinger (Confusing Venom)" />
+    <tag Name="VariantName" Value="毒刺 (混乱毒素)" />
   </object>
   <object Name="Horns" Inherits="MeleeWeapon">
     <part Name="MeleeWeapon" Slot="Head" BaseDamage="2" Stat="Strength" Skill="ShortBlades" MaxStrengthBonus="100" />
@@ -8923,18 +8923,18 @@ You may activate this item to conjure a force field in front of you. Robots will
   <!-- 1-pointers -->
   <object Name="BiologicalIndexer" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="A minuscule graphene array that processes optical data against a repository of organic lifeforms." />
-    <part Name="Render" DisplayName="{{Y|optical bioscanner}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R" />
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="You gain access to the precise hit point, armor, and dodge values of biological creatures." />
+    <part Name="Description" Short="一个微小的石墨烯阵列，利用光学数据与有机生命形式的数据库进行比对。" />
+    <part Name="Render" DisplayName="{{Y|光学生物扫描仪}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="你可以获取生物生物的精确生命值、护甲值和闪避值。" />
     <part Name="CyberneticsBiologicalIndexer" />
     <tag Name="StartingCybernetic:General" />
   </object>
 
   <object Name="TechnologicalIndexer" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="A minuscule graphene array that processes optical data against a repository of robotic lifeforms and artifacts." />
-    <part Name="Render" DisplayName="{{Y|optical technoscanner}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="You gain access to the precise hit point, armor, and dodge values of robotic creatures and you automatically identify artifacts." />
+    <part Name="Description" Short="一个微小的石墨烯阵列，通过光学数据与机器人生命体和工件的数据库进行比对。" />
+    <part Name="Render" DisplayName="{{Y|光学技术扫描仪}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="你可以获取机器人生物的精确生命值、护甲值和闪避值，并且可以自动识别工件。" />
     <part Name="CyberneticsTechIndexer" />
     <tag Name="StartingCybernetic:General" />
   </object>
@@ -8949,8 +8949,8 @@ You may activate this item to conjure a force field in front of you. Robots will
 
   <object Name="CherubicVisage" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="1" />
-    <part Name="Description" Short="Carnal instructions dictate the reformation of the face's bone structure and plump tissue mass into a soft and angelic countenance. Through such thaumaturgy, the people of hoary Ibul, cradled in the breast of a collapsed ice shelf, wander its lamplighted streets in rosy-cheeked disinterest." />
-    <part Name="Render" DisplayName="{{Y|cherubic visage}}" Tile="Items/sw_cherubic.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Description" Short="肉体的指示使面部骨骼结构和丰盈的组织变为柔软而天使般的面容。通过这种神秘的术法，冰雪覆盖的古老伊布尔的居民在崩塌的冰架怀抱中徘徊于灯火通明的街道上，面带红润的脸颊，神情漠然。" />
+    <part Name="Render" DisplayName="{{Y|天使面容}}" Tile="Items/sw_cherubic.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="+1 Ego" />
     <part Name="CyberneticsStatModifier" Stats="Ego:1" />
     <tag Name="StartingCybernetic:工匠" />
@@ -9007,21 +9007,21 @@ These effects do not stack with the bonuses of a compass bracelet." />
   <!-- 2-pointers -->
   <object Name="DermalInsulation" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="3" />
-    <part Name="Description" Short="Pillowy fiberglass scales tense around a supporting axis. Once installed, they'll unwind and inflate under the skin." />
-    <part Name="Render" DisplayName="{{Y|dermal insulation}}" Tile="Items/sw_dermalinsulation.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="2" BehaviorDescription="+6 heat resistance
-+6 cold resistance
-+6 electrical resistance
-+6 acid resistance" />
+    <part Name="Description" Short="柔软的玻璃纤维鳞片紧贴在支撑轴周围。一旦安装，它们会在皮肤下展开并膨胀。" />
+    <part Name="Render" DisplayName="{{Y|表皮绝缘}}" Tile="Items/sw_dermalinsulation.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head,Back" Cost="2" BehaviorDescription="+6 耐热性
++6 耐寒性
++6 耐电性
++6 耐酸性" />
     <part Name="CyberneticsStatModifier" Stats="HeatResistance:6;ColdResistance:6;ElectricResistance:6;AcidResistance:6" />
     <tag Name="StartingCybernetic:General" />
     <tag Name="CyberneticsDestroyOnRemoval" />
   </object>
   <object Name="NightVision" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="Nerve-packed retina scatters incoming radiation and bends light so the irises turn jade." />
-    <part Name="Render" DisplayName="{{Y|night vision}}" Tile="Items/night_vision_implant.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="2" BehaviorDescription="You gain the ability to see in the dark." />
+    <part Name="Description" Short="神经密集的视网膜散射入射辐射并折射光线，使瞳孔变成翡翠色。" />
+    <part Name="Render" DisplayName="{{Y|夜视}}" Tile="Items/night_vision_implant.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="2" BehaviorDescription="你可以在黑暗中看见事物。" />
     <part Name="CyberneticsNightVision" />
     <tag Name="StartingCybernetic:General" />
     <tag Name="CyberneticsOneOnly" />
@@ -9029,26 +9029,25 @@ These effects do not stack with the bonuses of a compass bracelet." />
 
   <object Name="HyperElasticAnkleTendons" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="1" />
-    <part Name="Description" Short="Banded ropes of hydrogel are bundled into one." />
-    <part Name="Render" DisplayName="{{Y|hyper-elastic ankle tendons}}" Tile="Items/sw_hypertendons.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+6 movespeed" />
+    <part Name="Description" Short="带状水凝胶绳索被捆成一束。" />
+    <part Name="Render" DisplayName="{{Y|超弹性脚踝肌腱}}" Tile="Items/sw_hypertendons.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+6 移动速度" />
     <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-6" />
     <tag Name="StartingCybernetic:General" />    
   </object>
 
   <object Name="ParabolicMuscularSubroutine" Inherits="BaseCyberneticsEquipment_2point">
-    <part Name="Description" Short="Nerve bundles so arranged to stimulate muscles in the arm along a parabolic slide rule." />
-    <part Name="Render" DisplayName="{{Y|parabolic muscular subroutine}}" Tile="Items/sw_parabolic.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="Your throw range is increased by 2.
-When you throw something at a target inside your throw range, your throwing accuracy is 100%." />
+    <part Name="Description" Short="神经束按照抛物线滑尺的方式排列，以刺激手臂中的肌肉。" />
+    <part Name="Render" DisplayName="{{Y|抛物线肌肉子程序}}" Tile="Items/sw_parabolic.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="你的投掷范围增加了 2。当你向投掷范围内的目标投掷物品时，投掷准确度为 100%。" />
     <part Name="CyberneticsPropertyModifier" Props="ThrowRangeBonus:2;ThrowToHitBonus:2;CloseThrowRangeAccuracyBonus:100" />
     <tag Name="StartingCybernetic:General" />
   </object>
 
   <object Name="TranslucentSkin" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="5" />
-    <part Name="Description" Short="The diaphanous dermis throws the circulatory, muscular, and nervous networks into silhouetted relief." />
-    <part Name="Render" DisplayName="{{Y|translucent skin}}" Tile="Items/sw_transparent.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="Description" Short="半透明的皮肤使循环系统、肌肉系统和神经网络的轮廓显现出来。" />
+    <part Name="Render" DisplayName="{{Y|半透明皮肤}}" Tile="Items/sw_transparent.bmp" ColorString="&amp;C" DetailColor="r" />
     <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="2" BehaviorDescription="+2 DV" />
     <part Name="CyberneticsStatModifier" Stats="DV:2" />
     <tag Name="StartingCybernetic:General" />
@@ -9056,27 +9055,27 @@ When you throw something at a target inside your throw range, your throwing accu
 
   <object Name="StabilizerArmLocks" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="5" />
-    <part Name="Description" Short="Chrome clasps fasten arm joints to emulate the stillness of unlife." />
-    <part Name="Render" DisplayName="{{Y|stabilizer arm locks}}" Tile="Items/sw_armlocks.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="For the purpose of determining your accuracy with ranged attacks, your agility is treated as if it were 6 points higher." />
+    <part Name="Description" Short="铬合金夹具将手臂关节固定，模拟无生命的静止状态。" />
+    <part Name="Render" DisplayName="{{Y|稳定臂锁}}" Tile="Items/sw_armlocks.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Arm" Cost="2" BehaviorDescription="在计算远程攻击准确度时，你的敏捷值被视为高出 6 点。" />
     <part Name="CyberneticsPropertyModifier" Props="MissileWeaponAccuracyBonus:3" />
     <tag Name="StartingCybernetic:General" />    
   </object>
 
   <object Name="RapidReleaseFingerFlexors" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="1" />
-    <part Name="Description" Short="Neuronically charged tissue sheaths transmit the will faster than what cell biology had achieved." />
-    <part Name="Render" DisplayName="{{Y|rapid release finger flexors}}" Tile="Items/sw_flexors.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="You fire pistols 25% faster." />
+    <part Name="Description" Short="神经充电的组织鞘比细胞生物学所能实现的更快地传递意志。" />
+    <part Name="Render" DisplayName="{{Y|快速释放手指屈肌}}" Tile="Items/sw_flexors.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="你射击手枪的速度提高了 25%。" />
     <part Name="CyberneticsPropertyModifier" Props="PistolEnergyModifier:25" />
     <tag Name="StartingCybernetic:General" />    
   </object>
 
   <object Name="CarbideHandBones" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="15" />
-    <part Name="Description" Short="Blue carbide merely dents where weak collagen would be smashed to bits." />
-    <part Name="Render" DisplayName="{{Y|carbide hand bones}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;b" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="Your fists deal 2d3 damage." />
+    <part Name="Description" Short="蓝色碳化物在脆弱的胶原部位只会留下凹痕，而不会像胶原蛋白那样被击碎。" />
+    <part Name="Render" DisplayName="{{Y|碳化物手骨}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;b" DetailColor="r" />
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="你的拳头造成 2d3 点伤害" />
     <part Name="CyberneticsFistReplacement" FistObject="CarbideFist" />
     <tag Name="StartingCybernetic:General" />    
   </object>
@@ -9095,9 +9094,9 @@ When you throw something at a target inside your throw range, your throwing accu
 
   <object Name="Pentaceps" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="10" />
-    <part Name="Description" Short="The quartet of knee joint extensors gain the assistance of a synthetic fifth." />
-    <part Name="Render" DisplayName="{{Y|pentaceps}}" Tile="Items/sw_pentacips.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="Your Charge range is increased by 4 spaces." />
+    <part Name="Description" Short="四个膝关节伸展肌群获得了一个合成的第五部件的辅助。" />
+    <part Name="Render" DisplayName="{{Y|五节肌腱}}" Tile="Items/sw_pentacips.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="你的冲锋范围增加了 4 个格子。" />
     <part Name="CyberneticsPropertyModifier" Props="ChargeRangeModifier:4" />
     <tag Name="StartingCybernetic:General" />
   </object>
@@ -9112,10 +9111,10 @@ When you throw something at a target inside your throw range, your throwing accu
 
   <object Name="InflatableAxons" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="Nanoscopic stents inflate the gossamer brain-threads that restrict the conduction of the will." />
-    <part Name="Render" DisplayName="{{Y|inflatable axons}}" Tile="Items/sw_axions.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="Activated. Cooldown 100.
-You gain +40 quickness for 10 rounds, then you become sluggish for 10 rounds (-10 quickness)." />
+    <part Name="Description" Short="纳米级支架膨胀了那些细微的脑部神经丝，以限制意志的传导。" />
+    <part Name="Render" DisplayName="{{Y|气囊式轴突}}" Tile="Items/sw_axions.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="激活。冷却时间 100 回合。
+在 10 回合内你获得 +40 的速度值加成，随后你会变得迟缓 10 回合（-10 速度值）。" />
     <part Name="CyberneticsInflatableAxons" Bonus="40" />
     <tag Name="StartingCybernetic:General" />
     <tag Name="CyberneticsOneOnly" />    
@@ -9123,10 +9122,10 @@ You gain +40 quickness for 10 rounds, then you become sluggish for 10 rounds (-1
 
   <object Name="NocturnalApex" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="The metabolic rhythms of the Holy City's denizens are synchronized to their diurnal rituals: during the day, repose in prayer beneath the shade of a fluted ziggurat; during the night, prowl the toxic arboreta for sacrifices." />
-    <part Name="Render" DisplayName="{{Y|nocturnal apex}}" Tile="Items/sw_nocturnal.bmp" TileColor="&amp;r" DetailColor="C" />
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="+10% to natural healing rate during the day.
-Once per night, you can Prowl, gaining +6 agility and +10 movespeed for 100 rounds." />
+    <part Name="Description" Short="圣城居民的代谢节律与他们的昼夜仪式相协调：白天，他们在有浮雕的金字塔阴影下安静祈祷；夜晚，他们则在有毒的树木中徘徊寻找祭品。" />
+    <part Name="Render" DisplayName="{{Y|圣城仪式}}" Tile="Items/sw_nocturnal.bmp" TileColor="&amp;r" DetailColor="C" />
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="白天自然恢复速度提高 10%。
+每晚你可以使用潜行技能，获得 +6 敏捷和 +10 移动速度，持续 100 回合" />
     <part Name="CyberneticsNocturnalApex" />
     <tag Name="StartingCybernetic:万阳祭司" />
     <tag Name="StartingCybernetic:诸月牧师" />
@@ -9138,9 +9137,9 @@ Once per night, you can Prowl, gaining +6 agility and +10 movespeed for 100 roun
 
   <object Name="AirCurrentMicrosensor" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="Near the Fuming God Sea, where seawater crashes into sunrock and erupts into mephitic vapor, a labyrinth of volcanic grottos form a dimensionless space where the utility of sight wanes. For the children of the deep, new senses wax in its stead." />
-    <part Name="Render" DisplayName="{{Y|air current microsensor}}" Tile="Items/sw_aircurrent.bmp" ColorString="&amp;C" DetailColor="r" />
-    <part Name="CyberneticsBaseItem" Slots="Body,Head" Cost="2" BehaviorDescription="Staircases and other up/down map transitions are always revealed to you." />
+    <part Name="Description" Short="在熏神海附近，海水撞击日岩，喷发出有毒的蒸汽，形成了一个无维度的火山洞穴迷宫，在这里，视力的效用逐渐减退。对于深渊的子民而言，新的感官在此逐渐显现。" />
+    <part Name="Render" DisplayName="{{Y|深渊视界}}" Tile="Items/sw_aircurrent.bmp" ColorString="&amp;C" DetailColor="r" />
+    <part Name="CyberneticsBaseItem" Slots="Body,Head" Cost="2" BehaviorDescription="楼梯及其他上下楼层的地图转换始终对你可见。" />
     <part Name="CyberneticsAirCurrentMicrosensor" />
     <tag Name="StartingCybernetic:深渊之子" />
     <tag Name="StartingCybernetic:轮回之子" />
@@ -10584,8 +10583,8 @@ This implant can't be uninstalled." />
     <part Name="Food" Satiation="None" Thirst="0" Message="一股温暖的刺痛感袭遍全身。" />
     <part Name="ConfuseOnEat" Strength="1d8" Duration="5d3" Level="1" BuildupTimeout="15" />
     <part Name="GeometricHealOnEat" Amount="12-14" Ratio="-50" Duration="3" />
-    <part Name="Description" Short="Lichen sticks in the winding grooves of woodshed, shimmering and smelling of spice." />
-    <part Name="RulesDescription" Text="Heals and confuses when eaten." />
+    <part Name="Description" Short="木棚中缠绕的地衣附着在弯曲的凹槽里，闪烁着光芒，散发出香料的气味。" />
+    <part Name="RulesDescription" Text="食用后可治愈并混乱。" />
     <xtagGrammar adjunctNoun="portion" massNoun="true" />
     <stag Name="Medical" />
   </object>

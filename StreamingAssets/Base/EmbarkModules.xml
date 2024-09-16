@@ -19,7 +19,7 @@
 				<description>
 					永久死亡: 死后失去你的人物
 				</description>
-				<stringgamestate Name="GameMode" Value="Classic"></stringgamestate>
+				<stringgamestate Name="GameMode" Value="经典的"></stringgamestate>
 			</mode>
 
 			<mode ID="Roleplay" Title="角色扮演">
@@ -27,7 +27,7 @@
 				<description>
 					在上个存档点复活
 				</description>
-				<stringgamestate Name="GameMode" Value="Roleplay"></stringgamestate>
+				<stringgamestate Name="GameMode" Value="角色扮演"></stringgamestate>
 				<stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
 			</mode>
 
@@ -39,7 +39,7 @@
 					{{c|&#249;}} 更多 XP 用于发现和执行水仪式。
 					{{c|&#249;}} 检查点在定居点。
 				</description>
-				<stringgamestate Name="GameMode" Value="Wander"></stringgamestate>
+				<stringgamestate Name="GameMode" Value="漫步"></stringgamestate>
 				<stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
 			</mode>
 
@@ -49,7 +49,7 @@
 					{{c|&#249;}} 一次拥有固定角色和世界种子的机会。
 					{{c|&#249;}} 当前天数 {{W|{day_of_year}}} of {{W|{year}}}.
 				</description>
-				<stringgamestate Name="GameMode" Value="Daily"></stringgamestate>
+				<stringgamestate Name="GameMode" Value="日常"></stringgamestate>
 			</mode>
 		</modes>
   </module>
@@ -121,8 +121,9 @@
     <pregens>
       
     <!-- True Kin -->
-      <pregen Name="禁卫军总理" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
-        <code>H4sIACEIKGEA/81U74vTQBD9fnD/wxL8mIZeLSJCP9T6AzmVei1VkPuwSYZkcbsbdmeVIP3fbyZNbfYKFgWlC6XNvDczL29m+/P6Soikklv4Ds4ra5IXIplk42wynmTTaZJ2eB6ULgeEGyKMe2xry6DBU/grPwvRleTTQ+u2AU76cvc+W9TSyQLBveSKPvsUSv68BWORaB+6hFTMvYdtrtvRYkUJTSo2+96zo7JULILG4GBmIKCTOhXLkGtV3EK7tt/AzEzQeq+xE1NKlCTjlzoKPeGev5EWy3pFBU6kHRtQvQOfS65dAHGrTEQ4sfCA7fY/dj35LyxchfwCHYxUnTewp3PBpZOA1in53xycIzqVBwR/YSY+Fnbex6VVBv0yuKKWHsq4H/uMDkyFNQHPB3mEzCulFbYEPIuBtQ1VbcDzRX+U884gaK0qMAW/xjRGPyutG/sD3Cn0urIcPMYO0+tQ2awaMEiM0dNhRwLuYCuVUaYicDyEcnrdeUPROOMfbs2izcEZQFVc2tqcKDu/N5qtG90MQx40FEjqB//w+xOtFDGP/VjUR1XVuFGd7dHUmWlDN9dhow7YSL7wDCVvJC3TEO5Hxef+j2bLX/fXV7sH0tV16+sGAAA=</code>
+    <!--注意构建码 -->
+    <pregen Name="禁卫军总领" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
+        <code>H4sIAEwY6GYC/82V0WrbMBSG7/sUxvTSMUkaShnkIk23UbqNrAlpofRCtg+2mCIZ6ajDFF/sAfYavdlzjb3GJKVN41o1gcIWgcHW+f6j378P+P4gMCvMyQruQCoqePguCIdxPx72h/FoFEZrINGUZVvEwBD9p+JKZJqBMvs3bsOu+83dFrKoSrDq68tP8bQgkqQI8tS2VvFXndnrI3CBBvvsBFEwUQpWCat607kRlFGwXJsYP3uMgqlmqCWMOWiUhEXBTCeMphdQLcQ34GOuGXs0u3GUESTGS9Onqxxit82mxTPTp2XzxWGu7ZPMdl5IDcEF5T6ulXIDqTdPdfTmsOc62fOsGw53jvpRZfv+efjx++ev/5zzBFHSRCOoPY76pcmd054JylHNtEwLoiDznr7+LCiB51gY4iTyI5OcMoqVIY5fIRZC5wUHpTq6nHMExmgOPLVvPHoFu6KMleI7yA7mfS5stVWsPUGQcl4CR8P3jk689UtYEcopzw3T9xCJCXBSmqJX/w8ndlolIDkgTfd5ZFsud55ZZkPuDTwVBQxSNO/V/J9tL/94O/WzI2v7C80LXFL30aIOkdBuagYdzJJIShwVfiBmqr1k3dq9fcsYubvbg/ovF91myiUIAAA=</code>
         <description>
 &amp;c&#249;&amp;y 基于冲锋的近战战斗机
 &amp;c&#249;&amp;y 从夜视开始
@@ -130,25 +131,17 @@
         </description>
       </pregen>
 
-      <!-- <pregen Name="第一位园丁" Genotype="True Kin" Tile="creatures/sw_first_horticulturalist.bmp" Foreground="y" Detail="g" Background="k">
-        <code>H4sIAEQIKGEA/81UYYvTQBD9fnD/YQl+TEOvFhWhH2IVT06ltuEU5D5skiFd3O6G3Vk1SP/7zW7aa/YKFgWlC6XJvDczb99M++vygrGk4Rv4DsYKrZKXLJlk42wynmTTaZIGvHRC1gPCFRHGO2yjayfBUvirf2cslPRnBxVdCz7py/J9Nl9zwysE88pXtNknV/vPW1AaifYhJKQstxY2pexG8xUltCm77XvPDspSNncSnYGZAoeGy5QtXClFdQNdob+BmiknZa8xiKk5cpLxoI5CT3zP30iLZb2mAkfSDg2o3p7vSxbGAbsRKiIcWbjHtv3Ddkf+CwtXrjxDByNVpw3c0X3Ba21QVEGgsPi/XMwRjSgdgj0zIx8LO+3lQguFduFMteYW6rif9xoNqAbXBDwb5BGSN0IK7Ah4HgOFds1agfU/9kfQO4UgpWhAVf4a0xj9LKRs9Q8wx83eNNoHD7H99ALK21ULCokxevoiBpaw4UIJ1RA4HkIlXTdvKRpn/MOtmXclGAW0r+e2NkfKTu+N9NaNroYhCxIqJPWDf/n+RCtFzEM/L+qjruh+isu8hZ/DJj1XuzDZYasA3HIjeICSa+D1w6AGw/Ln7o+m67/uLi+295ltPBvxBgAA</code>
+      <pregen Name="第一位园丁" Genotype="True Kin" Tile="creatures/sw_first_horticulturalist.bmp" Foreground="y" Detail="g" Background="k">
+        <code>H4sIAP4c6GYC/82V0WrbMBSG7/sUxvTSMUkWtjHIhZuOtXQrWRO6QemFbB8cMUUy0tE6U3zfPkOfYfel71PoY1Ry2jSuVRMotBEYbJ3vP/r9+4DPtzyz/IzM4S9IRQX3v3h+P+yG/W4/HAz8YAHEmrJ0hegZovtYnItUM1Bm/6TasOt8ebeCTIscrPr30fdwNCOSJAhyx7ZW4U+d2usbcIEG+1EJAi9SCuYxKzqjiRHkgXe8MDF88hh4I81QSxhy0CgJC7yxjhlNDqCYij/Ah1wz9mB26SglSIyXus+qso3tNusWd02fhs1nh1VtH2W281Rq8A4od3GNlGtIuXwqg1eHPdHxhmddc7h21A8q2/f26v/d5c3t9cU7Rx0hShprBLXBaT83uXbgY0E5qrGWyYwoSJ2nL74MSuAZzgzxMXAjUUYZxcIQn14gpkJnMw5KtTD7HIExmgFP7BsPXsB+UcZycQayxdDXTNhqo1g6giD5JAeOhu98+OysH8GcUE55Zpiug4hNgFFuik79G07sqIhBckCabPLINlyuPbPMhtzpOSoKGCRo3qv+S1td7vGu1E+OrO1DkZg0OGFRDv/8oEUmdDU3vRbmmEhKKsrfA5L6TrJs7J6+ZpCqu9Ot8h6afu7HKggAAA==</code>
         <description>
-&amp;c&#249;&amp;y 混合近战和远程战斗
-&amp;c&#249;&amp;y 从烹饪和采集开始
+&amp;c&#249;&amp;y 混合近战与远程战斗者
+&amp;c&#249;&amp;y 开始时掌握烹饪和采集技能
 &amp;c&#249;&amp;y {{W|生存能力强}} 的开始构建
-        </description>
-      </pregen> -->
-      <pregen Name="First Gardener" Genotype="True Kin" Tile="creatures/sw_first_horticulturalist.bmp" Foreground="y" Detail="g" Background="k">
-        <code>H4sIAEQIKGEA/81UYYvTQBD9fnD/YQl+TEOvFhWhH2IVT06ltuEU5D5skiFd3O6G3Vk1SP/7zW7aa/YKFgWlC6XJvDczb99M++vygrGk4Rv4DsYKrZKXLJlk42wynmTTaZIGvHRC1gPCFRHGO2yjayfBUvirf2cslPRnBxVdCz7py/J9Nl9zwysE88pXtNknV/vPW1AaifYhJKQstxY2pexG8xUltCm77XvPDspSNncSnYGZAoeGy5QtXClFdQNdob+BmiknZa8xiKk5cpLxoI5CT3zP30iLZb2mAkfSDg2o3p7vSxbGAbsRKiIcWbjHtv3Ddkf+CwtXrjxDByNVpw3c0X3Ba21QVEGgsPi/XMwRjSgdgj0zIx8LO+3lQguFduFMteYW6rif9xoNqAbXBDwb5BGSN0IK7Ah4HgOFds1agfU/9kfQO4UgpWhAVf4a0xj9LKRs9Q8wx83eNNoHD7H99ALK21ULCokxevoiBpaw4UIJ1RA4HkIlXTdvKRpn/MOtmXclGAW0r+e2NkfKTu+N9NaNroYhCxIqJPWDf/n+RCtFzEM/L+qjruh+isu8hZ/DJj1XuzDZYasA3HIjeICSa+D1w6AGw/Ln7o+m67/uLi+295ltPBvxBgAA</code>
-        <description>
-&amp;c&#249;&amp;y Hybrid melee and ranged fighter
-&amp;c&#249;&amp;y Starts with cooking and gathering
-&amp;c&#249;&amp;y {{W|Highly survivable}} starting build
         </description>
       </pregen>
 
       <pregen Name="炉台长子" Genotype="True Kin" Tile="creatures/sw_first_child_of_the_hearth.bmp" Foreground="y" Detail="r" Background="k">
-        <code>H4sIAFgIKGEA/81UYWvbMBD9Xuh/EGYfHZOkYYxCPqTeWEdXyBqTDUY/yPbNFlMkI502zMh/78lOGquBhQ02IghJ7r27e3p39q/LC8aiim/gBxgrtIquWTRNxsl0PE1msyju8NwJWQ4IEyKMd9hGl06CpfBX/5+xrqQ/OyhrG/BJXx4+JmnNDS8QzI2vaJNPrvSf96A0Eu2+S4jZwlrY5LIdpStKaGK27nvPD8piljqJzsBcgUPDZcyWLpeiuIM2099BzZWTstfYiSk5cpLxrI5Cr3zP30gLZb2lAkfSDg2o3p7vS2bGAbsTKiAcWbjHtv2P7Y78FxauXH6GDgaqThu4o/uCaU01mP7GsAZ2C9xg/b+sXCAakTsEe2ZuvhR22tClFgrt0pmi5hbKsJ83HA2oiqy9ZpPpIJGgRSWkwJaQ1yGQaVfVCqx/5F9AHxSClKICVfh7TEL0s5Cy0T/BEHQVQu8qTcHZIbYfX4fyZtWAQmKMrt6EwANsuFBCVQSOh1BO9100vlOQ8Q/XJm1zMApQFOe2N0fKTi+O9NaNhgOMLEgokNQP3vX9CXaKmId+3ZPMTS5KuOWqvNG0N8M+PV27brjhuhCw5kbwDop8tn0e1mBg/jz+0YT91+PlxfYJFKR47fsGAAA=</code>
+        <code>H4sIANEd6GYC/82V0WrbMBSG7/MURuzSMUkaRhnkInXLNrpB1oSuMHoh2wdHTJGMdLRhim92N3azF9kD9GZPs9E+RiWnTeNaCYFeNAKDrfOdo9+/f/BVJ7CL5HQB30BpJgV5E5BB1IsGvUE0HJJwCSSG8WyN6Fui91BcyMxw0Hb/S73h1tXqbg2ZlQW47ouzD1E8p4qmCOrIjdbRJ5O56y0IiRb7WDeEwVhrWCS87MZT21CEwflSxOhRYxjEhqNRMBJgUFEeBhOTcJaeQjmTX0GMhOH8XuxKUUaRWi1NnXXlFW6X2ZR4bOe0ZD45rB770OYmz5SB4JQJH9dyuYFUq6cqfLbZU5PsudcNhTtbfd/l5t78+Hn79/rf9a//f36TzsvaPUZULDEIeo8dfypyZ9MnkgnUE6PSOdWQeU9ffh1UIHKcW6I/CP3MOGecYWmR1xuImTT5XIDWW5j3AoFzloNI3Sv3N2CfGeeF/A7KMgcbmJNc2uqwVaw8TtBiWoBAy3cPDr31M1hQJpjILdPzEIl1cFw4OYcvG9m4TEAJQJbuc2ZbKncOLXcmdz3BIBo4pGjfq/lfW1/+fNfdj4qc7JiqhGXwjorsSNrMknBLpzR1dPpbmHOqGK0p4mZq4kWr1u7lc8JU3112qjsdaZLAMwgAAA==</code>
         <description>
 &amp;c&#249;&amp;y 近战战士和极限战士
 &amp;c&#249;&amp;y 从硬质合金手骨开始
@@ -159,7 +152,7 @@
     <!-- Mutants -->
   
       <pregen Name="沼泽人" Genotype="Mutated Human" Tile="creatures/sw_marsh_taur.bmp" Foreground="y" Detail="g" Background="k">
-        <code>H4sIAGwIKGEA/81UXWvbMBR9L/Q/CLNH17ghjFHIg5d9sgayJHSD0QfZvthismT0sZGN/PdeKc5suTDDBiGGkPieo3tOjnT1+/qKkKiiDfwApZkU0R2JZkmazNJZMp9Hscdzy3g5INwiIe2wRpaWg8byN/dOiG/png7a7Vtwi75u7pNlTRUtDKjXrqNOPtvSfd6DkAZpK78gJpnW0OR8f7Pc4oI2Jg9H7UXvLCZLy41VsBBgjaI8Jmubc1Z8gv1OfgexEJbzo0dvpqSGoo0/7rD0wmn+xVpo6w02eGatF8B+J75rubKGGijJB9tQEbCe5XjCDscfh478DzlubX6BMQauplPs6D5E7GVLUOfKz28a9tYXluDI13SGTYvd0mFFA4fC9+gn9fgMjHjmScz5eacAfjFRkQ3dDwU8cSmtMMi6HQMPVDHqoXSInDZmWnaFibKWA7mHSp9RN2vamuVM2nOK7nBnWqm6wn/r9i+PZ5qazBjFcmvg0sZmbGx6btaSCaPXVhU11VCGeu5uMgpEZWq3IcPxQiirGGdmj8irENhJW9UCtBu8EfRRGOCcVSAK9z/mIfqFcd7Kn3j93ZGXIfS2kq7Y14bHLaLttgV/NG4w6ADYQEOZwIke3w85/t/M3Rrhislj474er68OT6AIWPBJCAAA</code>
+        <code>H4sIAJwe6GYC/82Uy4rbMBSG93kKY7r0GE8wpRSycNMrnUCahJlCmYVsH2xRWRK6tLgh0E23fYYu+hR9n5Z5jErKpXHiBMNQxgKDc87/H30+Us5y4JnlF6iCTyAkZtR/6vnDMAqH0TCMYz9YC1KNSb6nuDSKaJusWK4JSBP/4AJ2LXdve5JFzcG638+uwnGJBMoUiGe2tAzf6dw+r4AyZWQTZwi8REqoUlJfjOfGwAPveg0x+scYeGNNlBYwoqCVQCTwpjolOHsL9YJ9BDqimpAN7I4oRwoZlianyzxS5zGbiM9NnSPMg81c2a3NVp5ohRTk3mtdIdomPmp1Q7La/VoF9+74XKc9b3iDsHO/Ny5b98/3H79//rr7+u2BW+2O3ewle9zsA8bO7a64KRq1JCQQyFzFxoDYX8vWqHNvcSzxSwHwBdPCm6G6BWHnGTNNlTFcntFcI4GRU0WtolVwH9KJOTLMCXhXUMh+oyYVL3GKme4558JcI87EJvC/UY+itw87ORKlBE61gj6PjkPIzrNjyjBVcqpFViIJeevu65muBNBClfZ4o/bz9ZMCE6xqI3lyQrFguigpSHlG84YqIAQXQDP7yfEJ2Q0mhLPPIIzm8QnNi4LZ7KDD/8FHfM7BXcyLOG7Nz6BCmJopeGLcpqaDiZ3Frf7OV9a93Q5WfwFf+xubIQoAAA==</code>
         <description>
 &amp;c&#249;&amp;y 基于冲锋的近战
 &amp;c&#249;&amp;y 冻结敌人的能力
@@ -169,7 +162,7 @@
       </pregen>
     
       <pregen Name="梦龟" Genotype="Mutated Human" Tile="Creatures/sw_dream_tortoise.bmp" Foreground="y" Detail="w" Background="k">
-        <code>H4sIAAAAAAAACs1VUWvbMBB+L/Q/CLNHNySl67pBHjJvtNtayOrQDUYfZPuwxWTJSKeNEPLfe7LTxnZo044uxGBs3Xf33aez7rw4PGAsyHkJf8BYoVXwgQXHg+HgeHg6GJ0FYY0nTsis5TAih+EKK3XmJFgy//JrxhbN4wGazSvwQT+vLwdRwQ1PEcxHz2gH313m73NQGsntqg4I2cRaKBM5P4piCqhCdtPkHq+VhSxyEp2BsQKHhsuQTV0iRfoN5jP9G9RYOSkbjbWYjCMnGQ/qyPQGXyrtE5FsyFsnIc57f0975ZAjZOzClVx1vDZqeY8tm5dl+M+1jF2yp6XsKNteyZW7J52YVCvucFc1rD8ccds9rGJP2/Y6lhUxDtsWCxLSmmPdtc21aC/Y6gSvihyRnIqn0CavnW64EVwh+fgd9tFIuxobte3L8LlZL0DkBYLybQSUSOU7zq8NlWmnKWMJULFzbhkNEzCN/TUUrBe3jzbS6FUbaYJoROIQ9rGT+uK2t9JUC4V26kxacAtZN6cfWWhA5VgQcNb5JMEkF1LgnID3XWCmXV4osHYz5otCkFLkoFK/lXdd9IeQstJ/wRB02oU+55qMb9e29tkLeBVXUJ+Oo5OTLnANJRfK91hvYiS03YmfI92I/ziCo0JrCzFyg6TnUqd1G+zhKXpK6DN+cr04n+yrrir+sl+df9weHizvAPZg4hzPCQAA</code>
+        <code>H4sIAFkf6GYC/9WWTW/TMBjH7/0UUcQxi9ppjIHUQwloAzapLNVAQjs4yaPEwrEtv4CqqhIXrpzhwgEJIb4Yg2+B7a6lL24JqhjFUqT08f95/MsT+9+MWoEZYYlqeAVCYkbDe0G4H7fj/fZh3DkKo4kg05gUc4qOUbSnkzUrNAFp4i9cwI7R7G5OMhhysNnPz0/jpEIC5QrEfVtaxk91Ya9joEwZ2ZlLiIKelFBnZLiXpCaBR8HFBKL7izEKEk2UFtCloJVAJAr6OiM4fwLDAXsJtEs1IdewM6ICKWRYFjndzC31p5gPTK0V1KUFXelpmq1+phVSUAQnukbUJ15p94JkPPs1jrbueqqz/6DpC5SNe36dZWtfff549eX9t3effnz4+v3N27D1b7vudoBZS+5435c4G3e+5qZw2zMhgUDuKi54xvwYeaMue4pjqRMDzFEOnuVn+gskMKLKyG1rNggTpp2s45WMo21ATwCXlQJqDzwYIFruPjIT5gXtOmVKAHhwjGRgzBXEJH4D0CvRy9+ZSeevmklPKYEzrWDX3WQZtLGd9BmmSva1yCskofASTBxfCaClqoziyP+Cw16JCVZDo7i7RjFguqwoSLmhyiOqgBBcAs3tU99ZI3uGCeHsNQijOVyjeVgyM3u71eBwhIinHNze3Ds48M6fQ40wtSbjN+DMNLBn3dmbf4N/gUnFmIRUIaEM7SnL3fnd8R28Cbr5Z8lSul3zMeMcbfUp6O4uW+OfzD41sdgLAAA=</code>
         <description>
 &amp;c&#249;&amp;y 近战战士
 &amp;c&#249;&amp;y 高装甲
@@ -179,7 +172,7 @@
       </pregen>
       
       <pregen Name="枪翼" Genotype="Mutated Human" Tile="Creatures/sw_gunwing.bmp" Foreground="y" Detail="K" Background="k">
-        <code>H4sIAJAIKGEA/81U32vbMBB+L/R/EGaPrnFD94NCHpJsa8dWSJvQDkYfZPuwRWTJSLqNMPq/96Qks53ADBuEGELs+07f9+l0p9/nZ4xFJa/hJxgrtIquWTRK0mSUjpKrqygOeIZCFp2ES0pIt1itC5RgKfzDfzMWKP2zhZbrBvyi7w/fklnFDc8dmKlntMk9Fv53A0o7SrsLC2I2sRbqTK4vZgta0MTscaM9bp3FbIbSoYGxAnSGy5jNMZMi/wrrpV6BGiuUcuMxmCm442TjjzsKvfGaf7HWt/WRCA6stQLEt8v3lHfouIOC3WLNVS/roI477GXz8rJN/oc6LjA7wTL2XA1XcZvuCW9QWSlUCeZYFQzHRtz2xGq452u4inVDbGk3YkFCHjjaWd08HSMhcyfm/UyBr7rEIWGmUTlCL/eBR24ED1DaRXYHMix3C6KsHCianHsU+UqBtUeUf6JmO6beZ21yYFPMMgn/L9t+PB9pXCbOGZGhg1Obl31jwwMz10I5O0eTV9xC0dfz15IzoEpXEfCudyDRpBRSuLU/qe7AEbLUWFahha/Zhz70RTmQUpSgcr+P9330SUjZ6F907x2ofSo1Bd+2sW63RbxZNBBa44IK3QMeoOZCUYPvXwwZ7Xfir4v+isG28X/P52cvrzAEiiVECAAA</code>
+        <code>H4sIACwg6GYC/82U3WrbMBTH7/MUwvTSNW7oPijkIkm7dWyFtAltYfRCtg+2iCwZfWyEkFcZvd5D7GnGnqOS0mRxogRDKbXAYOv8zzk/H+mceQeZFeS4hB8gJOEsOENBN4qjbtyNTk+DcClINKHZhuLEKOKVseSZpiDN/ne3Ydd8/bYhmcwqsN73N9+iYYEFThWIgQ0to2ud2eczMK6M7Mo5hKgvJZQJnR0Px8ahCtHtEqL3nzFEQ02VFtBjoJXANEQjnVCSfoXZhE+B9Zim9Bl2TZRhhQ1LndNZjtRhzDriuYmzg7mVzIVdudnIV1phBRm61CVmPvFOqWuSxfprEb644mOdtLzgNcLG9X72snH//fr9989j0HnbQrtDN7lki0u9xdi42GVlgsYegwQKqYtYGw+ba+7ddd4rHEs8ADz1pF5rh1wzZYQnBzS3WBDsVLFXtAhfQngJJC8UMNPY15qkUwZStpv4jrC85YifuEgBDXSSUHh10p3dh7cdGX2lBEm0gjbPjG3IxkNjxAlTcqRFWmAJmTf7cpQrASxXhVG89x9v0M8JJWpmL0C8RzLhOi9cT56hj3s0X5gCSkkOLLW//GGP7I5QWvGfIA4QXeTcWN91GrRDgKtxBe5iHpvz89lvoMSEmXbdM2cTU8G+HcJe/8ZX1r09dBZPCtRlmhgKAAA=</code>
         <description>
 &amp;c&#249;&amp;y 主要远程战斗
 &amp;c&#249;&amp;y 快速且机动性强
@@ -189,7 +182,7 @@
       </pregen>
         
       <pregen Name="星眼异能者" Genotype="Mutated Human" Tile="creatures/sw_stareye_esper.bmp" Foreground="y" Detail="m" Background="k">
-        <code>H4sIAEJQKGEA/81UbWvbMBD+Xuh/EGYfXeOG7q2QD573ylqWNaEbjH6Q7cMWkyUjnTrCyH+vJCezlcAMG4QYTKJ7nrt7fC/6fX5GSFTTFh5BaSZFdE2iWZIms3SWXF1FsccLw3g1IlxaQrrFWlkZDtqaf7gzIT6ke7bQat2Bc/p+d5PkDVW0RFBvXESdfDWVez+AkGhpt94hJpnW0BZ8fZEvrUMXk/s+93xQFpPccDQK5gIMKspjsjAFZ+VnWK/kTxBzYTjvNXoxFUVqZfxRZ03PXM6/SAtlvbUBDqQNCWy8Hd+FvDVIESry0bRUBKyDOu6wTf9nsyX/Qx2XpjjBMgaqpqu4pbuAWSc1cjhW+XzPbGx9YgXc0zVdwraz0dKxRQOH0scYFrV/RkI8c5fM6ck5ZepRrqkogyZ4Yi6NQMu63AfuqWLUQ+kY2TVmOu0Nqxskt1SwzvDeerzkSzRCMFGT91Id9atXtkWdVEi+YAPq/xMPh4cj7U+GqFhhEE5tgfaFTW/QQjKBemFU2VANVZjPXVKoQNTYWOB50JAoqxlnuLbAixBYSVM3ArTbwFch9EkgcM5qcHt2TV6G6DfGeSd/2Zk4cHxXS2t8PdjG4xbRbtmBn4wLW+cAuIOWMjfm+xdFYT83c9dH6DE5Ne7n4fxs8wQF9WkKUQgAAA==</code>
+        <code>H4sIAM8g6GYC/81Uy4rbMBTd5yuE6dITPGH6GsgidZ90QtNJmBbKLGT7YovKkpGvppiQz5hFd4Uu+wv9nLbfUUmZpHFiD4ahjAUG+95zrg5H8lkOiFleSnO4AlUyKbxT4o2GwXAUjIYnJ56/BkSa8WQHcWwQwaaZy0RzKE39kyvYtdy+7UAWVQGW/fH8bBhmVNEYQT2zo8vhe53Y5xUIiQY2dQSfTMoS8ohXR+HcEAqfXKxFjP9p9EmoOWoFYwEaFeU+memIs/gtVAv5GcRYaM5vxG4VJRSp0VLX6ToP8HaZdYnPzZwDmXububEbmp081UgREvJa51Q0gQ+srkFW26+Vf2fH5zrqueE1hZ39vmHZub9+fvtz/fX39x/e4H69dudu9ip77Paexs5+54UZGjQ0SuAQu4m1hNhdy8aqY2/kWMUhp0xdyYqKGBokbDmh1AIN4fgWzAVVjDpU0Aha+XdResbSDMmUClZovq72Wu8ctRBMpOSlVH33dmHuUyEVkneYgfrvWg+ql/ebIRNExSKN0OcQ2RfZOUVmkgksZ1rFGS0hadx9He+oQKSYGcTD5uP1JinjDCuDeNSCWEidZgJKm0xPWjBvBALnLAUbOqfkcQvsA+O8kF/MhWwf9SKVpvt00OF/8GgxL8DdyyNzfE39c8gpsz9tS+5GxsCJDeVGfucb694uB6u/8ZVp5ysKAAA=</code>
         <description>
 &amp;c&#249;&amp;y 基于精神的远程战斗
 &amp;c&#249;&amp;y 有效的人群控制和地图视野
@@ -198,7 +191,7 @@
       </pregen>
     
       <pregen Name="火叶" Genotype="Mutated Human" Tile="Creatures/sw_firefrond.bmp" Foreground="y" Detail="R" Background="k">
-        <code>H4sIALEIKGEA/81UYWvbMBD9Xuh/EGYfXeOGso5BPqTZuo2tkCVZOxj9INuHLSpLRjp1mJH/XklJZsuBGTYWYgix7z3dezrd6df5GSFRSWt4BqWZFNFbEk2SNJmkk+TqKoo9nhnGix7h0hLSHVbLwnDQNvzDfRPiU7pnB63bBtyi78svybyiiuYI6sZl1MlXU7jfBxASLe3OL4jJTGuoM95ezFd2QROT+632tHMWk7nhaBRMBRhUlMdkYTLO8s/QruUTiKkwnG89ejMFRWpt/HZnQ6+c5h+shbbe2QQH1joBm2/PdynvDFKEgnw0NRUB66COe2yzfdnsyH9Rx5XJTrCMgavxKu7oLuGDLaF6ZgLILVU1qGPV0R+eza1PrJIDX+O1rBubLe1HNHDIfY5uYrdPz4hn7sWcn29CI804ENfiNfQ1PHcujUBLvBwC91Qx6qG0j+zPZlz5ltOaiZIsaXtE1UUlUepWYAXIcrJ6YsEM/2f1G6NKkMJu+99Fu4/HIw3PDFGxzCCc2vQMjY2Pz0IygXphVF5RDUWo564qVCBKrCzwJjiQaFYyzrA9BNbSlJUA7cZvAH0SCJyzEkTutnEdog+M80b+tJfgAfS+lDb4uov1Wy2izaoB3xkXts4BsISaMt9ng1sis9udubsjXDHaNe7v8fxs8wIqHOwZVwgAAA==</code>
+        <code>H4sIADkh6GYC/82UzWrcMBDH7/sUxvToGGcJbSnsYbP9pA1sd7dpoeQg24MtIktGGrWYZaGXHHPuCwR67SHPlOQxKmmz2/1wjSGUWGCQNf//6OeRNfOeZ4afkQK+gVRUcP+F5/fDKOxH/fDoyA+WglhTlm4oDo0iWgULkWoGyqx/dQt2zNezDcmsKsG6v0w+hKOcSJIgyGObWoUfdWqfN8AFGtmJMwTeUCkoYlYdjKbGUAbe6RJi8Jcx8EaaoZYw4KBREhZ4Yx0zmryHaibOgQ+4Zuwedk2UEiSGZZvTRZ5gM+Y24kuTZw9zZzOXdmWzmU80EoTUe6sLwuvEe6XekizWb4vgwRWf6rjjBd8ibF3ve5fNe/P7+u7n1e2vy5ury7sfF37vcSvuTt/spTpc8x3G1lUvSpM0qgkoYJC4jFt9YnPMa1ede4VjiT9xhSRm4NkbVUANxdo2Epqj8Rw2aE6JpMSpolrRIngI7GtGCsozb0KqboOOc4FCVRxzQJp403PKuw18rGUGgpvi/nfOvdWzx20gQ0RJY43Q5Q6yC9m6hYwF5ajGWiY5UZDW7r7s8CiBZ5gbxfP64/WHGWUUqwbFTOgs56BUg+YdR2CMZsAT+8XP/iH7TBkrxXeQDZpXmTDRp70Wd8En5bQE918emOOri0+gINRdgfqmG5sCDm1HrvW3/mPd7Ky3+APN4DnsLgoAAA==</code>
         <description>
 &amp;c&#249;&amp;y 混合近战战士和精神施法者
 &amp;c&#249;&amp;y 能够使敌人着火
@@ -208,7 +201,7 @@
       </pregen>
     
       <pregen Name="蜜蜂机器人" Genotype="Mutated Human" Tile="Creatures/sw_bzzzt.bmp" Foreground="y" Detail="W" Background="k">
-        <code>H4sIAMEIKGEA/81VXYsaMRR9X9j/EIZ9dAdXpLQFH1y77ZZ2i9XBFso+ZGYumWAmGfJRkeJ/35uodaJQoaWDA6LmnJxzcpPc+XV9RUjCaA0/QRuuZPKWJIO0nw76g3Q4THoBzx0XZYtwh4T+DqtV6QQYHP7h/xMSJP2zg7J1A37S99nndFJRTQsL+t4rmvSrK/3nA0hlkfYUJvTI2Bioc7G+ncxxQtMji6336JCsRyZOWKdhJMFZTUWPTF0uePEJ1plaghxJJ8Q2YwhTUksxxu90OHTjPf8QLY71DgVOoh0MUG/P95JPzlILJXl0NZUR66SOe2yz/bHZkf+ijnOXX2AZo1Tnq7ije8GMyyXorqoXtgy1zYXV7yjX+QrWDar12yMGBBRB43BPt08rSGDuzXyee6e1WnHJyETQlWl7BO5EOWmReHcMLKjmNED9NrLfm/PODz6u5gUVBC8V6C3Qnf8jcFZZdMYLDCgmWYfmX7w3WfBwzruznTdcYqnBdrnRWcWLJXnvokv+vxeqCk6FWJMZNI5Jr/XP5oc/zx11q7HFC5I7C5fWro6Dne9XU8WlNVOni4oaKGM//0awGiSzFQJvog1JxowLbtcIvI6BTDlWSTC+3x1BH6UFITgDWfhlvIrRb1yIRq3wrXMy8YEpHBwextpHLqHNvIFwMm6xzhEwg5py6ZvIUVvOcblj36zjGWdPjf96vr7avABMFNzuvgkAAA==</code>
+        <code>H4sIANMh6GYC/82V3WrbMBTH7/MUwuzSNWkIYxvkIvW6dWwdWRKyweiFbB9sUVky+lgIIW+wh+gudrtX2Mu0sMfYkdJk+XBDoIxaEHB0/ufo579knXmL4AhyWsI3UJpJEbwiQSdqR512J+p2g3ApSCzj2YbiFBXtVbCUmeWgcf6rn3Bjvn7akIxnFbjsL8MPUVxQRVMD6syV1tEnm7nfWxDSoOzSJ4SkrzWUCZ+dxCNMqEIyWUL0/jGGJLbcWAU9AdYoykMysAln6XuYjeU1iJ6wnN/DrokyaiiybHP6yDNzGHMb8TXW2cPcWcyXXaW5ypfWUAMZubAlFXXiPau3JIv1v0X4aMdHNmm44VuER/t9n+Xq3v7+9efHz7vvN0Hrab32+45r6Qa7vcN4tN9lhUXbNQENHFJfceuG2Bzz2lmfvcJxxGdWKTllIicxp1NdQ7FOi6UVBnNOD2gmVDHqVe1a0SJ8DOy5e2vFUsoJfvqgloFGI18AywuDsHgzAa4k8mbzfnS4ZMJ0450dVUzgGQDT8EM7Llh6Td5Y1XA7Zcoo5zMyhMrmwi30v3n3Zq+etpX0DV4uiTXQ5F6yC3l0MxlIJoweWJUWVENWu/qyyxsFIjcFKl7Wb2/QzxlnZoaKFw8oxtLmhQCtD2jeCQOcsxxE6t74+QOyz4zzSk5BHSh1nkuMdltHfBMBrUYV+HN5gttXFx9CSZlwd3V9+03QwL7rzbX5R59Y/3TVWvwFN95jOjIMAAA=</code>
         <description>
 &amp;c&#249;&amp;y 混合近战战斗机和电攻击者
 &amp;c&#249;&amp;y 挖洞者和陷阱设置者

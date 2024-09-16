@@ -6,7 +6,7 @@
 
     <category Name="Ekuemekiyye" DisplayName="{{G|圣城埃克米的毒树}}">
 
-      <subtype Name="Horticulturist" Gear="StartingGear_Horticulturist" Tile="creatures/caste_1.bmp" DetailColor="g">
+      <subtype Name="园艺师" Gear="StartingGear_Horticulturist" Tile="creatures/caste_1.bmp" DetailColor="g">
         <stat Name="Intelligence" Bonus="3" />
         <skills>
           <skill Name="CookingAndGathering" />
