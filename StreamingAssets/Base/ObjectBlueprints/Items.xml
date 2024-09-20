@@ -14,7 +14,7 @@
    10 Data disks
    11 Energy cells
    12 Light sources
-   13 Meds
+   13 药物
    14 Scrap
    15 Tools
    16 Trade goods
@@ -53,7 +53,7 @@
   </object>  
   <object Name="MeleeWeapon" Inherits="Item">
     <part Name="Render" RenderString="\" />
-    <part Name="Physics" Weight="5" Category="Melee Weapons" />
+    <part Name="Physics" Weight="5" Category="近战武器" />
     <part Name="TinkerItem" Bits="00" CanDisassemble="false" CanBuild="false" />
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="ShowMeleeWeaponStats" Value="true" />
@@ -67,7 +67,7 @@
   <object Name="MissileWeapon" Inherits="Item">
     <part Name="Render" RenderString=")" />
     <part Name="MissileWeapon" RangeIncrement="3" EnergyCost="1000" />
-    <part Name="Physics" Weight="5" Category="Missile Weapons" />    
+    <part Name="Physics" Weight="5" Category="远程武器" />    
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="MissileWeapon" Value="1" />
 	  <removetag Name="EquipSound" />
@@ -77,7 +77,7 @@
   </object>
   <object Name="Projectile" Inherits="MeleeWeapon">
     <part Name="Render" DisplayName="{{c|projectile}}" RenderString="/" Tile="Assets_Content_Textures_Items_sw_ammo.bmp"  DetailColor="w" />
-    <part Name="Physics" Weight="0" Category="Projectiles" />
+    <part Name="Physics" Weight="0" Category="弹药1" />
     <part Name="Projectile" BasePenetration="1" BaseDamage="1d2" ColorString="&amp;w" />
     <tag Name="NoEffects" />
     <tag Name="Ammo" />
@@ -100,7 +100,7 @@
   <object Name="Armor" Inherits="Item">
     <part Name="Render" DisplayName="[Armor]" RenderString="]" />
     <part Name="Armor" AV="1" DV="0" WornOn="Body" />
-    <part Name="Physics" Weight="30" Category="Armor" />
+    <part Name="Physics" Weight="30" Category="盔甲" />
     <part Name="TinkerItem" Bits="00" CanDisassemble="false" CanBuild="false" />
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="Armor" Value="1" />
@@ -113,7 +113,7 @@
   <object Name="Shield" Inherits="Item">
     <part Name="Render" DisplayName="[Shield]" RenderString="}" />
     <part Name="Shield" AV="1" DV="0" WornOn="Hand" />
-    <part Name="Physics" Weight="15" Category="Shields" />
+    <part Name="Physics" Weight="15" Category="盾牌" />
     <part Name="TinkerItem" Bits="00" CanDisassemble="false" CanBuild="false" />
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="Shield" Value="1" />
@@ -194,9 +194,9 @@
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
   <object Name="MineShell" Inherits="InorganicObject">
-    <part Name="Render" DisplayName="{{c|mine}}" ColorString="&amp;R" TileColor="&amp;c" RenderString="^" Tile="Items/sw_mine.bmp" DetailColor="R" RenderLayer="10" />
+    <part Name="Render" DisplayName="{{c|时间圆盘}}" ColorString="&amp;R" TileColor="&amp;c" RenderString="^" Tile="Items/sw_mine.bmp" DetailColor="R" RenderLayer="10" />
     <part Name="Physics" Weight="2" Takeable="true" Solid="false" />
-    <part Name="Description" Short="Anarchy is wound into stasis by time's virtual antipode and packaged into a metal disc. Only the instruction of movement will direct it to unaccrete." />
+    <part Name="Description" Short="无政府状态被时间的虚拟对立物缠绕成停滞状态，并包装成金属圆盘。只有运动的指令才能引导它走向无积木。" />
     <stat Name="AV" Value="1" />
     <stat Name="Hitpoints" Value="5" />
     <part Name="Tinkering_Mine" />
@@ -209,7 +209,7 @@
   <object Name="Grenade" Inherits="BaseThrownWeapon">
     <part Name="Render" DisplayName="{{c|[Grenade]}}" ColorString="&amp;c" DetailColor="y" RenderString="235" Tile="Items/sw_grenade_mki.bmp" />    
     <part Name="Stacker" />
-    <part Name="Physics" Category="Grenades" />
+    <part Name="Physics" Category="手榴弹" />
     <part Name="Examiner" Complexity="1" Alternate="UnknownGrenade" />
     <part Name="Commerce" Value="20" />
     <part Name="Metal" />
@@ -266,19 +266,19 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_wood" />
   </object>
   <object Name="Club" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="club" Tile="Items/sw_cudgel_10.bmp" />
+    <part Name="Render" DisplayName="木锤" Tile="Items/sw_cudgel_10.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="2" />
-    <part Name="Description" Short="Wood was shaved into a bludgeoning bulb." />
+    <part Name="Description" Short="木头被削成了一种钝击用的球形物体" />
     <tag Name="Tier" Value="0" />
     <part Name="Physics" Weight="5" />
 		<stag Name="Contemporary" />
   </object>
 	<object Name="Wrench" Inherits="BaseCudgel">
-		<part Name="Render" DisplayName="wrench" Tile="Items/wrench.bmp" ColorString="&amp;c" TileColor="&amp;y" DetailColor="c" />
+		<part Name="Render" DisplayName="扳手" Tile="Items/wrench.bmp" ColorString="&amp;c" TileColor="&amp;y" DetailColor="c" />
 		<part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
 		<part Name="Commerce" Value="5" />
-		<part Name="Description" Short="An armlength of time-tortured metal is punched through with screwing iron for extra torque." />
+		<part Name="Description" Short="一个经历时间折磨的金属臂，穿透着旋转的铁，以增加扭矩" />
 		<tag Name="Tier" Value="0" />
 		<part Name="Physics" Weight="1" />
 		<part Name="Metal" />
@@ -286,20 +286,20 @@
 		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
 	</object>
 	<object Name="Pestle" Inherits="BaseCudgel">
-		<part Name="Render" DisplayName="pestle" Tile="Items/pestle.bmp" ColorString="&amp;y" DetailColor="Y" />
+		<part Name="Render" DisplayName="杵" Tile="Items/pestle.bmp" ColorString="&amp;y" DetailColor="Y" />
 		<part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2-1" Skill="Cudgel" Stat="Strength" />
 		<part Name="Commerce" Value="3" />
-		<part Name="Description" Short="A bulb of stone is dusted by humoric powders." />
+		<part Name="Description" Short="一个石制的球体被幽默的粉末覆盖。" />
 		<tag Name="EquipSound" Value="sfx_equip_material_generic_stone" />
 		<tag Name="Tier" Value="0" />
 		<part Name="Physics" Weight="1" />
 		<stag Name="Contemporary" />
 	</object>
   <object Name="Staff" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="staff" Tile="Items/sw_cudgel_11.bmp" DetailColor="r" />
+    <part Name="Render" DisplayName="法杖" Tile="Items/sw_cudgel_11.bmp" DetailColor="r" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="12" />
-    <part Name="Description" Short="Quartersawn witchwood wears a thousand nicks along its warped length." />
+    <part Name="Description" Short="经过四分锯切的女巫木在扭曲的长度上布满了无数划痕。" />
     <tag Name="Tier" Value="0" />
     <part Name="Physics" Weight="4" />    
     <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_oneHanded_staff_swing" />
@@ -307,19 +307,19 @@
 		<stag Name="Contemporary" />
   </object>
   <object Name="Walking Stick" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="walking stick" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
+    <part Name="Render" DisplayName="拐杖" Tile="Items/sw_cudgel_11.bmp" ColorString="&amp;w" DetailColor="g" />
     <part Name="Physics" Weight="4" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="12" />
-    <part Name="Description" Short="Brinestalk was scythed from its marsh home and dried in the high salt sun. Its top is spiraled into a crook." />
+    <part Name="Description" Short="咸茎从其沼泽栖息地割下，并在高盐阳光下晾干。它的顶部卷成一个钩状。" />
     <tag Name="Tier" Value="0" />
 		<stag Name="Contemporary" />
   </object>
   <object Name="Mace2" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{w|bronze}} mace" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;w" />
+    <part Name="Render" DisplayName="{{w|青铜}}狼牙棒" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;w" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="10" />
-    <part Name="Description" Short="A corm of bell bronze is screw-fitted to a scarred wooden shaft." />
+    <part Name="Description" Short="一个铃青铜的球茎与一个布满伤痕的木杆螺旋连接。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="0" />
     <part Name="Physics" Weight="6" />    
@@ -329,10 +329,10 @@
 		<stag Name="Contemporary" />
   </object>
   <object Name="Warhammer2" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="iron mace" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;y" />
+    <part Name="Render" DisplayName="铁锤" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="10" />
-    <part Name="Description" Short="Iron lines unfold into a head of six flanges." />
+    <part Name="Description" Short="铁制的线条展开成六个法兰的头部。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="1" />
     <part Name="Physics" Weight="6" />    
@@ -344,7 +344,7 @@
     <part Name="Render" DisplayName="{{Y|steel}} war hammer" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="Hand grease shines on the pole, and a volume of polished steel weights one end." />
+    <part Name="Description" Short="手上的油脂在杆上闪闪发光，一块抛光钢材重重地压在一端。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="2" />
     <part Name="Physics" Weight="4" />    
@@ -353,20 +353,20 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
   </object>
   <object Name="Steel War Hammerth" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="two-handed {{Y|steel}} war hammer" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="双手{{Y|钢}}战锤" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="3" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="Hand grease shines on the tall pole, and a hefty volume of polished steel weighs one end." />
+    <part Name="Description" Short="手上的油脂在高杆上闪闪发光，一块沉重的抛光钢材压在一端。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="2" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
     <part Name="Physics" UsesTwoSlots="true" Weight="9" />    
   </object>
   <object Name="Steel Hammer" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{Y|steel}} mace" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|钢}}狼牙棒" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="A corm of polished steel is blown out of a combat-pecked rod." />
+    <part Name="Description" Short="一个抛光钢材的球茎从一个布满战斗凿痕的杆上吹出。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="2" />
     <part Name="Physics" Weight="5" />    
@@ -375,11 +375,11 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
   </object>
   <object Name="Shillelagh" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="shillelagh" Tile="Items/sw_cudgel_10.bmp" />
+    <part Name="Render" DisplayName="爱尔兰棍" Tile="Items/sw_cudgel_10.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="12" />
     <part Name="Physics" Weight="4" />
-    <part Name="Description" Short="Across Moghra'yi, wood was hewn from the trunk of a boreal titan and shaved into a stick by practitioners of the foreign art. They shaped one end of the bark into an oaken knot." />
+    <part Name="Description" Short="在莫格拉'伊，木材从北方巨人的树干上砍下，由外来艺术的从业者削成一根棍子。他们将树皮的一端雕刻成一个橡木结。" />
     <tag Name="Tier" Value="0" />
     <part Name="ModSturdy" />
     <tag Name="NoSparkingQuest" />
@@ -388,78 +388,78 @@
 		<stag Name="Contemporary" />
   </object>
   <object Name="Billowing Conch of the Aji" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="billowing conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
+    <part Name="Render" DisplayName="{{r|阿吉}}的滚滚海螺" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="A fist-sized snail shell is coiled in soft spirals, blackened with soot, and stinks of sulfur." />
+    <part Name="Description" Short="一个拳头大小的蜗牛壳呈柔软的螺旋状，表面熏黑，散发着硫磺的臭味。" />
     <part Name="AjiConch" />
     <part Name="Physics" Weight="2" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_material_horn" />
     <tag Name="NoSparkingQuest" />
   </object>
   <object Name="Grandfather Horn" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="grandfather horn" Tile="creatures/sw_goathorn.bmp" />
+    <part Name="Render" DisplayName="祖父号角" Tile="creatures/sw_goathorn.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="80" />
-    <part Name="Description" Short="It's the hoary, bowing horn of a wizened mangoat, wind-etched and gilded with scarlet tassels." />
+    <part Name="Description" Short="这是一个苍老弯曲的魔羔角，经过风的雕刻，装饰着猩红的流苏。" />
     <part Name="GrandfatherHorn" />
     <part Name="Physics" Weight="7" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_material_horn" />
 		<stag Name="Contemporary" />
   </object>
   <object Name="Amber-Tipped Staff" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="amber-tipped staff" Tile="Items/sw_cudgel_12.bmp" DetailColor="W" />
+    <part Name="Render" DisplayName="琥珀头杖" Tile="Items/sw_cudgel_12.bmp" DetailColor="W" />
     <part Name="MeleeWeapon" HitBonus="1" MaxStrengthBonus="3" BaseDamage="3d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="It's a gnarled, acacia staff set with a small orb of primordial amber." />
+    <part Name="Description" Short="这是一个扭曲的金合欢木法杖，上面镶嵌着一颗小小的原始琥珀球。" />
     <tag Name="Tier" Value="0" />
     <part Name="Physics" Weight="9" />    
   </object>
   <object Name="Cudgel3" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{b|carbide}} hammer" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|硬质合金}}锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;b" />
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="2d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="40" />
-    <part Name="Description" Short="The shaft widens to a rigid polygon of azure metal. Nicks and scores tally on its surface." />
+    <part Name="Description" Short="杆的末端宽展成一个刚硬的蓝色金属多边形。表面布满了划痕和刻痕。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="3" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
     <part Name="Physics" Weight="6" />    
   </object>
   <object Name="Cudgel3th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="two-handed {{b|carbide}} hammer" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="双手{{b|硬质合金}}锤" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;b" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="4" BaseDamage="2d4+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="40" />
-    <part Name="Description" Short="The long shaft widens to a rigid and symmetric polygon of azure metal. Nicks and scores tally on its two heads." />
+    <part Name="Description" Short="长杆的末端宽展成一个刚硬对称的蓝色金属多边形。两端布满了划痕和刻痕。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="3" />
     <part Name="Physics" Weight="11" UsesTwoSlots="true" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
   </object>
   <object Name="Cudgel4" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{B|carbide}} folding hammer" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|硬质合金}}折叠锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="80" />
-    <part Name="Description" Short="The hammer shaft is capped by a head of bright and azure metal. Darker stripes across its face and throat note where it struck and beat softer carbide down." />
+    <part Name="Description" Short="锤杆的顶端镶嵌着一颗明亮的蓝色金属头。面部和喉部的深色条纹标记着它击打和压制较软碳化物的地方" />
     <part Name="Metal" />
     <tag Name="Tier" Value="4" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
     <part Name="Physics" Weight="5" />    
   </object>
   <object Name="Cudgel4th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="two-handed {{B|carbide}} folding hammer" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="双手{{B|硬质合金}}折叠锤" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="5" BaseDamage="2d6" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="80" />
-    <part Name="Description" Short="The hammer pole is capped by a twin-head of bright and azure metal. Darker stripes across its faces and throats note where it struck and beat softer carbide down." />
+    <part Name="Description" Short="锤杆的顶端镶嵌着一对明亮的蓝色金属头。面部和喉部的深色条纹标记着它击打和压制较软碳化物的地方。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="4" />
     <part Name="Physics" Weight="9" UsesTwoSlots="true" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
   </object>
   <object Name="Cudgel5" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|fullerite}} maul" Tile="Items/sw_cudgel_4.bmp" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="{{K|富勒石}}大锤" Tile="Items/sw_cudgel_4.bmp" ColorString="&amp;K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="2d4+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="160" />
-    <part Name="Description" Short="A dusky mass of gravid metal, like a meteorite, is welded to a steel shaft." />
+    <part Name="Description" Short="一块像陨石一样的灰暗的重力金属被焊接到钢轴上。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="5" />
     <part Name="Physics" Weight="9" />    
@@ -468,10 +468,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_heavy" />
   </object>
   <object Name="Cudgel5th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="two-handed {{K|fullerite}} maul" Tile="Items/sw_cudgel_5.bmp" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="双手{{K|富勒石}}大锤" Tile="Items/sw_cudgel_5.bmp" ColorString="&amp;K" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="6" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="160" />
-    <part Name="Description" Short="A dusky and twin-faced mass of gravid metal, like a meteorite, is welded to a steel pole." />
+    <part Name="Description" Short="一个暗淡的双面重金属块，如同陨石，焊接在一根钢杆上。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="5" />
     <part Name="Physics" UsesTwoSlots="true" Weight="20" />    
@@ -480,10 +480,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_heavy" />
   </object>
   <object Name="Cudgel6" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} mace}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;g" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|{{crysteel|水晶}} 狼牙棒}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;g" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="2d6" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="390" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+    <part Name="Description" Short="高炉将潮汐能从地球上吸走，将碳加热到太阳温度，然后将其倒入六边形模具中。祖母绿钳用于将雾化并排出的钒-绿色闪光-回收到歧管中，使金属变得完美并赋予其特有的色调。" />
     <tag Name="Tier" Value="6" />
     <part Name="Metal" />
     <part Name="Crysteel" />
@@ -493,10 +493,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
   </object>
   <object Name="Cudgel6th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} warhammer}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;g" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|{{crysteel|水晶}} 战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;g" DetailColor="K" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="390" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+    <part Name="Description" Short="高炉将潮汐能从地球上吸走，将碳加热到太阳温度，然后将其倒入六边形模具中。祖母绿钳用于将雾化并排出的钒-绿色闪光-回收到歧管中，使金属变得完美并赋予其特有的色调。" />
     <part Name="Metal" />
     <part Name="Crysteel" />
     <tag Name="Tier" Value="6" />
@@ -506,10 +506,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
   </object>
   <object Name="Cudgel7" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|flawless {{crysteel|crysteel}} mace}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;G" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|完美的{{crysteel|水晶}}狼牙棒}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;G" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="720" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+    <part Name="Description" Short="高炉将潮汐能从地球上吸走，将碳加热到太阳温度，然后将其倒入六边形模具中。祖母绿钳用于将雾化并排出的钒-绿色闪光-回收到歧管中，使金属变得完美并赋予其特有的色调。将带有灰尘颗粒的斑驳的铸型剔除并送入石矿，仅留下完美的六边形棱柱。" />
     <part Name="Metal" />
     <part Name="Crysteel" />
     <tag Name="Flawless" />
@@ -520,10 +520,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
   </object>
   <object Name="Cudgel7th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|flawless {{crysteel|crysteel}} warhammer}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;G" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|完美的{{crysteel|crysteel}}战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;G" DetailColor="K" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="3d6" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="720" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+    <part Name="Description" Short="高炉从地球上吸出潮汐能，将碳加热到太阳温度，然后将其倒入六角形模具中。祖母绿钳子用于将雾化并排出的钒（绿色闪光）的铸件回收到歧管中，使金属变得不完美并赋予其特有的色调。沾满灰尘颗粒的铸件被剔除并喂食石食动物，只留下完美的六角棱柱。" />
     <part Name="Metal" />
     <part Name="Crysteel" />
     <tag Name="Flawless" />
@@ -534,10 +534,10 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
   </object>
   <object Name="Cudgel8" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} hammer" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;m" DetailColor="y" />
+    <part Name="Render" DisplayName="{{zetachrome|zetachrome}}锤子" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;m" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="1500" />
-    <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+    <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了球体被困在 6D 时空扭结中的地方。在那里，它们在滑流中滑行了数十亿年，直到人们发现了它们，建造了机器来提取和冷却它们，并在恒星熔炉中重新加热它们。" />
     <part Name="Metal" />
 	  <part Name="Zetachrome" />
     <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
@@ -548,10 +548,10 @@
 		<stag Name="Historical" />
   </object>
   <object Name="Cudgel8th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} warhammer" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;m" DetailColor="y" />
+    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} 战锤" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;m" DetailColor="y" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="4d6" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="1500" />
-    <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+    <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了球体被困在 6D 时空扭结中的地方。在那里，它们在滑流中滑行了数十亿年，直到人们发现了它们，建造了机器来提取和冷却它们，并在恒星熔炉中重新加热它们。" />
     <part Name="Metal" />
 	  <part Name="Zetachrome" />
     <tag Name="Tier" Value="8" />
@@ -562,10 +562,10 @@
 		<stag Name="Historical" />
   </object>
   <object Name="Maghammer" Inherits="Cudgel5th">
-    <part Name="Render" DisplayName="{{c-C-Y-W alternation|maghammer}}" Tile="Items/sw_cudgel_13.bmp" ColorString="&amp;C" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c-C-Y-W alternation|锤}}" Tile="Items/sw_cudgel_13.bmp" ColorString="&amp;C" DetailColor="y" />
     <part Name="MeleeWeapon" BaseDamage="6d2" />
     <part Name="Commerce" Value="520" />
-    <part Name="Description" Short="Bands of aquamarine lodestone tori wrap around the hitting part of a hefty, double-fisted truncheon. On the bottom handle there's a slot for a battery to juice the magnets." />
+    <part Name="Description" Short="海蓝宝石磁石环带缠绕在巨大的双拳警棍的打击部分上。底部手柄上有一个电池槽，可以为磁铁供电。" />
     <part Name="Metal" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
@@ -577,19 +577,19 @@
     <tag Name="Tier" Value="5" />    
   </object>	
   <object Name="Rhinox-Skull Maul" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{g|rhinox-skull}} maul" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Render" DisplayName="{{g|犀牛头骨}} 大槌" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="320" />
-    <part Name="Description" Short="Thick and diamond-hard headbone with three horn holes functions as the jumbo head of a bludgeon. A long shaft of shining steel was driven through the maw and welded inside." />
+    <part Name="Description" Short="厚而坚硬的头骨带有三个角孔，充当大棒的大头。一根闪亮的钢制长轴穿过胃口并焊接在里面。" />
     <tag Name="Tier" Value="6" />
     <part Name="Physics" Weight="25" UsesTwoSlots="true" />    
   </object>
   <object Name="Stun Rod" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{c|stun}} rod" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|眩晕}} 棒" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="50" />
-    <part Name="Description" Short="A long slate rod flares out at the collar to hold capacitors and a concussive corm." />
+    <part Name="Description" Short="一根长石板棒在衣领处张开，用来固定电容器和震荡球茎。" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
     <part Name="AIPassiveEnergyCellReload" />
@@ -602,12 +602,12 @@
     <tag Name="Tier" Value="1" />    
   </object>
   <object Name="Prayer Rod" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{c|prayer}} rod" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W" />
+    <part Name="Render" DisplayName="{{c|祈祷}}棒" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
     <part Name="ElementalDamage" Damage="1d5+5" Attributes="Electric" ChargeUse="5" />
     <part Name="Commerce" Value="50" />
-		<part Name="Description" Short="A long slate rod flares out at the collar to hold capacitors and an electrified corm for searing liturgy to memory." />
+		<part Name="Description" Short="衣领处有一根长长的石板棒，用来固定电容器和一个带电的球茎，用于将礼拜仪式铭记在心。" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
     <part Name="AIPassiveEnergyCellReload" />
@@ -621,10 +621,10 @@
     <tag Name="NoSparkingQuest" />    
   </object>
   <object Name="Syphon Baton" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{syphon|syphon}} baton" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{syphon|syphon}} 指挥棒" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="150" />
-    <part Name="Description" Short="Ring magnets form a cylindric mace-head to bash against objects and syphon their electron juice into a battery slotted on the shaft." />
+    <part Name="Description" Short="环形磁铁形成一个圆柱形的狼牙棒头，可以猛击物体，并将其电子汁吸入轴上开槽的电池中。" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
     <part Name="AIPassiveEnergyCellReload" />
@@ -659,11 +659,11 @@
 	  />
   </object>
   <object Name="Dagger" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{w|bronze}} dagger" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;w" />
+    <part Name="Render" DisplayName="{{w|青铜}}匕首" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;w" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" />
     <part Name="ThrownWeapon" Penetration="1" Damage="1d2" Attributes="ShortBlades" />
     <part Name="Commerce" Value="5" />
-    <part Name="Description" Short="Bell bronze is shaped to a point and its handle wrapped in leather." />
+    <part Name="Description" Short="青铜钟呈尖状，手柄上包裹着皮革。" />
     <part Name="Metal" />
     <tag Name="NoAIEquipAsThrownWeapon" />
     <tag Name="HideThrownWeaponPerformance" />
@@ -671,48 +671,48 @@
 		<stag Name="Contemporary" />
   </object>
   <object Name="Desert Kris" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="desert kris" Tile="Items/sw_shortblade_9.bmp" />
+    <part Name="Render" DisplayName="沙漠克里斯" Tile="Items/sw_shortblade_9.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" />
     <part Name="Commerce" Value="15" />
-    <part Name="Description" Short="Iron wormwags out of its halite stub of a hilt." />
+    <part Name="Description" Short="铁蠕虫从它的石盐柄中发出声音。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="1" />
   </object>
   <object Name="Dagger2" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="iron dagger" Tile="Items/sw_shortblade_1.bmp" />
+    <part Name="Render" DisplayName="铁匕首" Tile="Items/sw_shortblade_1.bmp" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" />
     <part Name="ThrownWeapon" Penetration="2" Damage="1d3" Attributes="ShortBlades" />
     <part Name="Commerce" Value="10" />
-    <part Name="Description" Short="Pits mark the blade like craters on an iron edge-world." />
+    <part Name="Description" Short="刀刃上布满了凹坑，就像钢铁边缘世界上的陨石坑一样。" />
     <part Name="Metal" />
     <tag Name="NoAIEquipAsThrownWeapon" />
     <tag Name="HideThrownWeaponPerformance" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Steel Kukri" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{Y|steel}} kukri" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|钢}} 库克里" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="Bright metal spills out the leather fuzz hilt along the killer's recurve." />
+    <part Name="Description" Short="明亮的金属沿着杀手的反曲弓从皮革绒毛剑柄上溢出。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Steel Dagger" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{Y|steel}} dagger" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|钢}}匕首" Tile="Items/sw_shortblade_1.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4" />
     <part Name="ThrownWeapon" Penetration="3" Damage="1d4" Attributes="ShortBlades" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="The edge is bright and polished." />
+    <part Name="Description" Short="边缘光亮且抛光。" />
     <part Name="Metal" />
     <tag Name="NoAIEquipAsThrownWeapon" />
     <tag Name="HideThrownWeaponPerformance" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Steel Utility Knife" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{Y|steel}} utility knife" Tile="Items/sw_shortblade_12.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|钢}}美工刀" Tile="Items/sw_shortblade_12.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4" />
     <part Name="Commerce" Value="20" />
-    <part Name="Description" Short="A use-dull and finger-smudged knife folds in on itself." />
+    <part Name="Description" Short="一把用过的、被手指弄脏的钝刀会自动折叠起来。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="2" />
   </object>
@@ -725,20 +725,20 @@
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Steel Butcher Knife" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{Y|steel}} butcher knife" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y" />
+    <part Name="Render" DisplayName="{{Y|钢}}屠刀" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4" />
     <part Name="Commerce" Value="28" />
-    <part Name="Description" Short="A wide and bright blade has been painted with entrails." />
+    <part Name="Description" Short="宽而明亮的刀刃上涂满了内脏。" />
     <part Name="Metal" />
     <part Name="IntPropertyChanger" AffectedProperty="ButcheryToolEquipped" Amount="1" ChargeUse="0" IsEMPSensitive="false" IsBootSensitive="false" IsTechScannable="false" WorksOnHolder="true" WorksOnWearer="false" NameForStatus="Edge" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Dagger3" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{b|carbide}} dagger" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;b" />
+    <part Name="Render" DisplayName="{{b|硬质合金}}匕首" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;b" />
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d6" />
     <part Name="ThrownWeapon" Penetration="4" Damage="1d6" Attributes="ShortBlades" />
     <part Name="Commerce" Value="40" />
-    <part Name="Description" Short="Salt and scars form a comet's tail along the azure blade edge." />
+    <part Name="Description" Short="盐和伤痕沿着蔚蓝的刀刃形成彗尾。" />
     <part Name="Metal" />
     <tag Name="NoAIEquipAsThrownWeapon" />
     <tag Name="HideThrownWeaponPerformance" />
@@ -749,40 +749,40 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <object Name="Obsidian Kris" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|obsidian}} kris" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="{{K|黑曜石}}克里斯" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" />
     <part Name="Commerce" Value="40" />
-    <part Name="Description" Short="Volcanic glass was fished from Fuming God Sea and chipped to shape along the Icepyres." />
+    <part Name="Description" Short="火山玻璃是从发烟神海打捞出来的，并沿着冰火堆削成形状。" />
     <tag Name="Tier" Value="3" />
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_glass" />
   </object>
   <object Name="Dagger4" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{B|folded carbide}} dagger" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|折叠硬质合金}}匕首" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" />
     <part Name="ThrownWeapon" Penetration="5" Damage="1d8" Attributes="ShortBlades" />
     <part Name="Commerce" Value="75" />
-    <part Name="Description" Short="Blue and shining metal narrows to a sticking point." />
+    <part Name="Description" Short="蓝色闪亮的金属缩小到一个关键点。" />
     <part Name="Metal" />
     <tag Name="NoAIEquipAsThrownWeapon" />
     <tag Name="HideThrownWeaponPerformance" />
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="ArmDagger4" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{B|folded carbide}} wristblade" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|折叠硬质合金}}腕刃" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" Slot="Arm" />
     <part Name="Commerce" Value="75" />
-    <part Name="Description" Short="A ribbon of leather is looped through the hilt of a bright blade." />
+    <part Name="Description" Short="一条皮革丝带穿过一把明亮的刀片的刀柄。" />
     <part Name="Metal" />
     <tag Name="Tier" Value="4" />
     <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_foldedCarbide_wristblade_swing" />
   </object>
   <object Name="Dagger5" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|fullerite}} dagger" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;K" />
+    <part Name="Render" DisplayName="{{K|富勒岩}}匕首" Tile="Items/sw_shortblade_3.bmp" ColorString="&amp;K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d10" />
     <part Name="ThrownWeapon" Penetration="6" Damage="1d10" Attributes="ShortBlades" />
     <part Name="Commerce" Value="150" />
     <part Name="Metal" />
-    <part Name="Description" Short="A razor edge of dense and dusky metal zigzags in shape. Its face is matte and starless." />
+    <part Name="Description" Short="致密暗色金属的剃刀边缘呈锯齿状。它的脸是哑光的，没有星星。" />
     <tag Name="Tier" Value="5" />
     <part Name="Physics" Weight="2" />    
     <tag Name="NoAIEquipAsThrownWeapon" />
@@ -791,11 +791,11 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_metal_heavy" />
   </object>
   <object Name="Dagger6" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} dagger}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;g" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|{{crysteel|crysteel}} 匕首}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;g" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d12" />
     <part Name="ThrownWeapon" Penetration="7" Damage="1d12" Attributes="ShortBlades" />
     <part Name="Commerce" Value="310" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+    <part Name="Description" Short="高炉从地球上吸出潮汐能，将碳加热到太阳温度，然后将其倒入六角形模具中。祖母绿钳子用于将雾化并排出的钒（绿色闪光）的铸件回收到歧管中，使金属变得不完美并赋予其特有的色调。" />
     <part Name="Metal" />
     <part Name="Crysteel" />
     <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
@@ -806,11 +806,11 @@
     <tag Name="Tier" Value="6" />
   </object>
   <object Name="Dagger7" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|flawless {{crysteel|crysteel}} dagger}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;G" DetailColor="K" />
+    <part Name="Render" DisplayName="{{K|完美的 {{crysteel|crysteel}} 匕首}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;G" DetailColor="K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1" />
     <part Name="ThrownWeapon" Penetration="8" Damage="1d12+1" Attributes="ShortBlades" />
     <part Name="Commerce" Value="690" />
-    <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+    <part Name="Description" Short="高炉从地球上吸出潮汐能，将碳加热到太阳温度，然后将其倒入六角形模具中。祖母绿钳子用于将雾化并排出的钒（绿色闪光）的铸件回收到歧管中，使金属变得不完美并赋予其特有的色调。沾满灰尘颗粒的铸件被剔除并喂食石食动物，只留下完美的六角棱柱。" />
     <part Name="Metal" />
     <part Name="Crysteel" />
     <tag Name="Flawless" />
@@ -822,11 +822,11 @@
     <tag Name="Tier" Value="7" />
   </object>
   <object Name="Dagger8" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} dagger" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;m" DetailColor="y" />
+    <part Name="Render" DisplayName="{{zetachrome|zetachrome}} 匕首" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;m" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d12+2" />
     <part Name="ThrownWeapon" Penetration="9" Damage="1d12+2" Attributes="ShortBlades" />
     <part Name="Commerce" Value="1390" />
-    <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+    <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了球体被困在 6D 时空扭结中的地方。在那里，它们在滑流中滑行了数十亿年，直到人们发现了它们，建造了机器来提取和冷却它们，并在恒星熔炉中重新加热它们。" />
     <part Name="Metal" />
 	<part Name="Zetachrome" />
     <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
@@ -839,7 +839,7 @@
 		<stag Name="Historical" />
   </object>
   <object Name="Vibro Dagger" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{c|vibro dagger}}" Tile="Items/sw_shortblade_8.bmp" ColorString="&amp;c" DetailColor="y" />
+    <part Name="Render" DisplayName="{{c|振动匕首}}" Tile="Items/sw_shortblade_8.bmp" ColorString="&amp;c" DetailColor="y" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
     <part Name="ThrownWeapon" Penetration="0" Damage="1d4" Attributes="ShortBlades" />
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
@@ -847,7 +847,7 @@
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
     <part Name="AIPassiveEnergyCellReload" />
-    <part Name="Description" Short="A matte blade of ionic plastifer sits on a finger-rest hilt. When charged it blurs in high-width motion and jostles its material obstacles out of the way." />
+    <part Name="Description" Short="离子增塑剂的哑光刀片位于指托柄上。充电后，它会在高宽度运动中变得模糊，并将其物质障碍推开。" />
     <part Name="RulesDescription" Text="When charged, this weapon's penetration value is equal to the defender's armor value." />
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true" />
     <part Name="Metal" />
@@ -860,7 +860,7 @@
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Gaslight Dagger" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{gaslight|gaslight}} kris" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g" />
+    <part Name="Render" DisplayName="{{gaslight|煤气灯}} 克里斯" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g" />
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
     <part Name="ThrownWeapon" Penetration="0" Damage="1d4" Attributes="ShortBlades" />
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
@@ -868,7 +868,7 @@
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="AIOffensiveEnergyCellReload" />
     <part Name="AIPassiveEnergyCellReload" />
-    <part Name="Description" Short="Through a bore in the wood grip draws a crinkled beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
+    <part Name="Description" Short="透过木柄上的孔，射出一道皱纹的苍白光束。在运动中，它会加热到钢铁熔化的温度，并呼呼地带走物质。" />
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true" />
     <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="4" />
     <part Name="Metal" />
@@ -1573,7 +1573,7 @@
   <object Name="Lead Slug" Inherits="Projectile">
     <part Name="Render" DisplayName="lead slug" ColorString="&amp;w" DetailColor="y" Tile="items/sw_bullet.bmp" />
     <part Name="AmmoSlug" ProjectileObject="ProjectileLeadSlug" />
-    <part Name="Physics" Category="Ammo" />
+    <part Name="Physics" Category="弹药2" />
     <part Name="Description" Short="Lead is cast to a cylindric lump shaved to a point." />
     <part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="50" />
     <tag Name="AlwaysStack" Value="Yes" />
@@ -1972,7 +1972,7 @@ This weapon increases the damage bonus of its ammo by 1." />
   </object>
   <object Name="BaseArrow" Inherits="Projectile">
     <part Name="Render" Tile="items/sw_arrow.bmp" DetailColor="y" />
-    <part Name="Physics" Category="Ammo" />
+    <part Name="Physics" Category="弹药2" />
     <part Name="MeleeWeapon" Skill="ShortBlades" />
     <tag Name="AmmoName" Value="arrow" />
     <tag Name="AlwaysStack" Value="Yes" />
@@ -2175,7 +2175,7 @@ This weapon increases the damage bonus of its ammo by 1." />
   <object Name="HE Missile" Inherits="Projectile">
     <part Name="Render" DisplayName="HE Missile" ColorString="&amp;c" DetailColor="C" Tile="items/sw_rocket.bmp" />
     <part Name="AmmoMissile" ProjectileObject="ProjectileHEMissile" />
-    <part Name="Physics" Category="Ammo" Weight="2" />
+    <part Name="Physics" Category="弹药2" Weight="2" />
     <part Name="Description" Short="A bright gashead tips the end of the steely death chute." />
     <part Name="MissileStatusColor" Color="c" />
     <part Name="TinkerItem" Bits="BC1" CanBuild="true" CanDisassemble="true" NumberMade="5" />
@@ -2808,7 +2808,7 @@ This weapon increases the damage bonus of its ammo by 1." />
   <object Name="Shotgun Shell" Inherits="Projectile">
     <part Name="Render" DisplayName="shotgun shell" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
     <part Name="AmmoShotgunShell" ProjectileObject="ProjectileShotgunShell" />
-    <part Name="Physics" Category="Ammo" />
+    <part Name="Physics" Category="弹药2" />
     <part Name="Description" Short="A handful of pellets are encased in a thick wax-paper and plastic shell." />
     <part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="5" />
     <tag Name="AlwaysStack" Value="Yes" />
@@ -2904,7 +2904,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
 
   <object Name="Geomagnetic Disc" Inherits="Item">
     <part Name="Render" DisplayName="geomagnetic disc" RenderString="." Tile="Items/sw_geomagnetic_disc.bmp" DetailColor="Y" ColorString="&amp;C" Occluding="false" />
-    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="Thrown Weapons" />
+    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="投掷武器" />
     <part Name="Description" Short="Ions were spun into a euhedral disc on a spinning wheel, and aquamarine was heat-set on the inner ring by deepsea steam." />
     <part Name="ThrownWeapon" />
     <part Name="GeomagneticDisc" Damage="2d6" ChargeUse="100" Bounces="5" />
@@ -2935,7 +2935,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
   </object>
   <object Name="ThrowingAxe" Inherits="Item">
     <part Name="Render" DisplayName="throwing axe" RenderString="\" ColorString="&amp;w" Tile="Items/sw_throwing_axe.bmp" DetailColor="y" Occluding="false" />
-    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="Thrown Weapons" />
+    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="投掷武器" />
     <part Name="Description" Short="A salt-scratched blade head is fit to a splintered handle with a wood wedge." />
     <part Name="ThrownWeapon" Damage="2d12" Penetration="9" Attributes="Axe" />
 	  <tag Name="EquipSound" Value="sfx_equip_weapon_thrown_bladed" />
@@ -3781,7 +3781,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="Thick and plated bonestuff curves to its host shape." />
     <part Name="NaturalEquipment" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <part Name="AddsRep" Faction="Tortoises" Value="400" />
     <removepart Name="TinkerItem" />
     <intproperty Name="Natural" Value="1" />
@@ -3800,7 +3800,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="Hundreds and hundreds of fossilized hairs crown the body in a protective coat." />
     <part Name="NaturalEquipment" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <removepart Name="TinkerItem" />
     <intproperty Name="Natural" Value="1" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -3826,7 +3826,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="0" />
     <part Name="Description" Short="Wide airfoil fin-flaps beat at the wind." />
     <part Name="NaturalEquipment" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <removepart Name="TinkerItem" />
     <intproperty Name="Natural" Value="1" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -3846,7 +3846,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="NaturalEquipment" />
     <part Name="NoBreak" />
     <part Name="NoDamage" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <removepart Name="TinkerItem" />
     <intproperty Name="Natural" Value="1" />
     <tag Name="MutationEquipment" Value="Stinger" />
@@ -3885,7 +3885,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="NaturalEquipment" />
     <part Name="NoDamage" />
     <part Name="NoBreak" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <part Name="HornsProperties" />
     <removepart Name="TinkerItem" />
     <intproperty Name="Natural" Value="1" />
@@ -3926,7 +3926,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
 		<part Name="NaturalEquipment" />
 		<part Name="NoDamage" />
 		<part Name="NoBreak" />
-		<part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />		
+		<part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />		
 		<removepart Name="TinkerItem" />
 		<intproperty Name="Natural" Value="1" />		
 		<tag Name="ExcludeFromDynamicEncounters" />		
@@ -3944,7 +3944,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
 		<part Name="NaturalEquipment" />
 		<part Name="NoDamage" />
 		<part Name="NoBreak" />
-		<part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+		<part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
 		<removepart Name="TinkerItem" />
 		<intproperty Name="Natural" Value="1" />
 		<tag Name="MutationEquipment" Value="Beak" />
@@ -3979,7 +3979,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="0" />
     <part Name="Description" Short="Spaded palms and long claws are shaped to loosen earth and shovel it away." />
     <part Name="NaturalEquipment" />
-    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="Physics" Category="自然盔甲" IsReal="false" Weight="0" />
     <part Name="DiggingTool" />
     <removepart Name="TinkerItem" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -4234,7 +4234,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="sooty smock" RenderString="]" />
     <part Name="Commerce" Value="40" />
     <part Name="Description" Short="An apron is pocked with carbon craters the color of the light-sucking void, a thing dreamed by sophists who watched the stars race toward their excluded middle." />
-    <part Name="Physics" Weight="1" Category="Clothes" />
+    <part Name="Physics" Weight="1" Category="衣服" />
     <tag Name="Tier" Value="1" />
   </object>
 	
@@ -4578,7 +4578,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{W-w sequence|quilted}} {{C-c sequence|shawl}}" RenderString="]" Tile="items/sw_shawl.bmp" ColorString="&amp;C" DetailColor="W" />
     <part Name="Commerce" Value="4" />
     <part Name="Description" Short="Wool of many colors was horse-bought from the dromads and sourced beyond the Pale Sea and its great pan of salt. Once the Issachar spun it to yarn on the wheel, a marsh dweller hand-knotted the tzitzit." />
-    <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="1" Organic="true" Category="衣服" />
     <tag Name="Tier" Value="1" />
 		<stag Name="Contemporary" />
   </object>
@@ -4606,7 +4606,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{R|scarlet}} shawl" RenderString="]" ColorString="&amp;R" Tile="items/sw_shawl.bmp" DetailColor="Y" />
     <part Name="Commerce" Value="18" />
     <part Name="Description" Short="A silk shoulder drape has been cut and dyed with crushed insects shaved from an oak from the Bowl of Iris." />
-    <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="1" Organic="true" Category="衣服" />
     <part Name="Springy" Factor="0.9" />
     <tag Name="Tier" Value="1" />
 		<stag Name="Contemporary" />
@@ -4872,7 +4872,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="&amp;Kps&amp;Cion&amp;Kic amp&amp;Clif&amp;Kier ba&amp;Cckpa&amp;Kck" RenderString="]" Tile="Items/sw_backpack.bmp" ColorString="&amp;K" DetailColor="C" />
     <part Name="Commerce" Value="220" />
     <part Name="Description" Short="This heavy, bulky, barely man-portable psionic amplifier unit is densely packed with circuitry for generating subtle resonances with the wearer's neural patterns, forcibly injecting extra power into esper operancies." />
-    <part Name="Physics" Weight="30" Category="Artifacts" />
+    <part Name="Physics" Weight="30" Category="遗物" />
     <part Name="BootSequence" BootTime="20" />
     <part Name="IntPropertyChanger" AffectedProperty="MentalMutationForceShift" AfterUpdateEvent="SyncMutationLevels" Amount="2" ChargeUse="15" WorksOnWearer="true" MustBeUnderstood="false" IsPowerLoadSensitive="true" PowerLoadBonusDivisor="100" NameForStatus="Psiamp" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -4957,7 +4957,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{W|witchwood}} wreath" RenderString="]" Tile="Items/sw_wreath.bmp" ColorString="&amp;w" DetailColor="W" />
     <part Name="Commerce" Value="2" />
     <part Name="Description" Short="Twigs from the witching tree are pared and twisted to a garland for hindsun." />
-    <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="1" Organic="true" Category="衣服" />
     <tag Name="Mods" Value="None" />
     <tag Name="DynamicObjectsTable:Headwear" />
     <tag Name="Tier" Value="1" />
@@ -5234,7 +5234,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="&amp;Cps&amp;Yion&amp;Cic amp&amp;Ylif&amp;Cier he&amp;Ylm&amp;Cet" RenderString="]" Tile="Items/sw_metal_helmet.bmp" ColorString="&amp;C" DetailColor="Y" />
     <part Name="Commerce" Value="85" />
     <part Name="Description" Short="Curvilinear waveguides on the sides of this bulky metal helmet mimic the structure of limbic neural architecture deep in the wearer's brain, setting up resonances that artificially supercharge esper capabilities." />
-    <part Name="Physics" Weight="6" Category="Artifacts" />
+    <part Name="Physics" Weight="6" Category="遗物" />
     <part Name="BootSequence" BootTime="5" />
     <part Name="IntPropertyChanger" AffectedProperty="MentalMutationForceShift" AfterUpdateEvent="SyncMutationLevels" Amount="1" ChargeUse="5" WorksOnWearer="true" MustBeUnderstood="false" IsPowerLoadSensitive="true" PowerLoadBonusDivisor="150" NameForStatus="Psiamp" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -5524,7 +5524,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{Y-y-m-M-m-y-Y-M-m-y sequence|polyhedral}} rings" RenderString="236" Tile="Items/sw_poly_rings.bmp" ColorString="&amp;m" DetailColor="Y"/>
     <part Name="Commerce" Value="150" />
     <part Name="Description" Short="The hoops sport rhombic facets that reflect light at wavelengths between plum and quartz." />
-    <part Name="Physics" Weight="1" Category="Trade Goods" />
+    <part Name="Physics" Weight="1" Category="交易物品" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_coin" />
     <tag Name="Tier" Value="3" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -5535,7 +5535,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{silvery|silver rondure}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" />
     <part Name="Commerce" Value="50" />
     <part Name="Description" Short="Silver was melted and cast to a perfect sphere in isomorphic veneration of the Kasaphescence." />
-    <part Name="Physics" Weight="1" Category="Trade Goods" />
+    <part Name="Physics" Weight="1" Category="交易物品" />
     <part Name="AddsRep" Faction="Mechanimists" Value="50" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_coin" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -5548,7 +5548,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Render" DisplayName="{{telemetric|telemetric}} {{C|visor}}" RenderString="]" Tile="Items/sw_visor.bmp" ColorString="&amp;c" DetailColor="W" />
     <part Name="Commerce" Value="60" />
     <part Name="Description" Short="The glass lune is showered in information across the electromagnetic channels." />
-    <part Name="Physics" Weight="1" Category="Artifacts" />
+    <part Name="Physics" Weight="1" Category="遗物" />
     <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" />
     <part Name="IntPropertyChanger" AffectedProperty="TechScannerEquipped" Amount="1" ChargeUse="1" WorksOnWearer="true" NameForStatus="Techscanning" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" SlottedType="#Solar Cell,@DynamicObjectsTable:EnergyCells:Tier{zonetier}" />
@@ -5568,7 +5568,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Description" Short="Visual Instrument and Sensory Augmentation (G Edition)
 
 Data is painted back and forth between the glass lunes of visor and wristlet. Whereas the outer trim shines gold on F Edition, on this model it fades to grey." />
-    <part Name="Physics" Weight="8" Category="Artifacts" />
+    <part Name="Physics" Weight="8" Category="遗物" />
     <part Name="BootSequence" BootTime="15" ReadoutInName="true" ReadoutInDescription="true" />
     <part Name="MultiIntPropertyChanger" AffectedProperties="BioScannerEquipped:1,TechScannerEquipped:1,StructureScannerEquipped:1" ChargeUse="5" WorksOnWearer="true" NameForStatus="ScanSystems" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" SlottedType="#Solar Cell,@DynamicObjectsTable:EnergyCells:Tier{zonetier}" />
@@ -5646,7 +5646,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
   </object>
   <object Name="BaseUtilityBracelet" Inherits="BaseBracelet">
     <part Name="Render" Tile="Items/sw_bracelet_tech.bmp" />
-    <part Name="Physics" Category="Artifacts" />    
+    <part Name="Physics" Category="遗物" />    
     <part Name="Metal" />
     <tag Name="TinkerCategory" Value="utility" />
     <tag Name="BaseObject" Value="*noinherit" />
@@ -5667,7 +5667,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" DisplayName="bracelet" Tile="Assets_Content_Textures_Items_sw_necklace.bmp" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="Glass arches cut and fished from the trash sea have been paired by palette and cored into beads. They've been hung on a dried strand of goat gut and bartered up and down the River Svy." />
-    <part Name="Physics" Weight="1" Category="Trade Goods" />
+    <part Name="Physics" Weight="1" Category="交易物品" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" />
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="AggregateWith" Value="BeadedBracelet" />
@@ -5689,7 +5689,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
   </object>
   <object Name="Blood-stained neck-ring" Inherits="BaseBracelet">
     <part Name="Render" DisplayName="neck-ring" RenderString="236" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r" Tile="Items/sw_neckring.bmp" />
-    <part Name="Physics" Weight="1" Category="Trade Goods" />
+    <part Name="Physics" Weight="1" Category="交易物品" />
     <part Name="Description" Short="A broad tube of pipeline copper is a makeshift gorget. It's splashed in patterns of worm blood and sea rust." />
     <part Name="Metal" />
     <part Name="AddsRep" Faction="Baboons" Value="400" />
@@ -5916,7 +5916,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" DisplayName="&amp;Kinhi&amp;rb&amp;Kitor cuff" RenderString="]" Tile="Items/sw_techbracelet.bmp" ColorString="&amp;K" DetailColor="r" />
     <part Name="Commerce" Value="60" />
     <part Name="Description" Short="A gunmetal cuff that clamps on with an implacable grip and produces esoteric harmonics that disrupt the subtle workings of the esper brain." />
-    <part Name="Physics" Weight="3" Category="Artifacts" />
+    <part Name="Physics" Weight="3" Category="遗物" />
     <part Name="IntPropertyChanger" AffectedProperty="MentalMutationForceShift" AfterUpdateEvent="SyncMutationLevels" Amount="-20" ChargeUse="5" WorksOnWearer="true" MustBeUnderstood="false" IsPowerLoadSensitive="true" PowerLoadBonusDivisor="30" NameForStatus="Psiamp" />
     <part Name="Capacitor" Charge="10000" MaxCharge="10000" ChargeRate="10" />
     <part Name="BroadcastPowerReceiver" />
@@ -6245,7 +6245,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" DisplayName="leather moccasins" RenderString="]" Tile="items/sw_shoes.bmp" DetailColor="w" />
     <part Name="Commerce" Value="2" />
     <part Name="Description" Short="Boar leather vamps are scuffed with little fissures sparking in wind-rasped quartz." />
-    <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="1" Organic="true" Category="衣服" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
     <tag Name="Tier" Value="1" />
   </object>
@@ -6254,7 +6254,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" Tile="items/sw_sandals.bmp" DetailColor="w" DisplayName="sandals" RenderString="]" />
     <part Name="Commerce" Value="2" />
     <part Name="Description" Short="A pair of strapped shoes are cracked on the soles in sinelike patterns of gravel walking." />
-    <part Name="Physics" Weight="1" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="1" Organic="true" Category="衣服" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
     <tag Name="Tier" Value="1" />
 		<stag Name="Contemporary" />
@@ -6302,7 +6302,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" DisplayName="sandals of the river-wives" RenderString="]" ColorString="&amp;g" Tile="Items/sw_sandals.bmp" />
     <part Name="Commerce" Value="15" />
     <part Name="Description" Short="A canyon pearl fastens sandal straps embroidered in the syncretic imagery of swiftwater nymphs. Like the glacier flow itself, the veneration of Calypso moved with the mystai down the sundered honeycomb and in through the shale fissures beneath the olive mount. There it fractured into the mysteries of the many-named wives, where the memory of freshwater became more faceted than its smooth surface of origin." />
-    <part Name="Physics" Weight="2" Organic="true" Category="Clothes" />
+    <part Name="Physics" Weight="2" Organic="true" Category="衣服" />
     <part Name="Springy" Factor="0.8" />
     <part Name="MoveCostMultiplier" Amount="-5" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
@@ -6571,7 +6571,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <part Name="Render" Tile="items/sw_sandals.bmp" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" DisplayName="{{y-y-y-g-G-g-y sequence|jeweled sandals}}" RenderString="]" />    
     <part Name="Commerce" Value="200" />
     <part Name="Description" Short="A shining jewel, container for gigantic melancholies and gigantic mirths alike, is beset inside a strapped sandal of sheyd leather." />
-    <part Name="Physics" Weight="1" Category="Clothes" />
+    <part Name="Physics" Weight="1" Category="衣服" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
     <tag Name="NoSparkingQuest" />
     <tag Name="Gender" Value="plural" />
@@ -6664,7 +6664,7 @@ Extinguished permanently when unequipped." />
     <part Name="Description" Short="It's a robotic eye lidded by a furcate chassis and embellished with antenna lashes. A minuscule barrel pokes out from its pupil and vibrates. The inner lid is articulated, allowing the drone to scan for incoming projectiles and shoot them down with laser light." />
     <part Name="Armor" AV="0" DV="0" WornOn="Floating Nearby" />
     <part Name="Commerce" Value="800" />
-    <part Name="Physics" Weight="5" Category="Artifacts" />
+    <part Name="Physics" Weight="5" Category="遗物" />
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;B&#15;" RangeIncrement="3" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" AnimationDelay="7" WeaponAccuracy="12" NoWildfire="true" EnergyCost="0" FiresManually="false" />
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectilePointDefenseLaser" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -7635,7 +7635,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="BaseTierArtifact" Inherits="Tool">
     <part Name="Render" DisplayName="[base artifact]" Tile="Items/sw_curio.bmp" RenderString="004" ColorString="&amp;c" DetailColor="C" />
     <part Name="Description" Short="Tiny glyphs are inscribed on each exterior face of the handheld box." />
-    <part Name="Physics" Weight="1" Category="Tools" />
+    <part Name="Physics" Weight="1" Category="工具" />
     <part Name="Examiner" />
     <tag Name="BaseObject" />
     <stat Name="Hitpoints" Value="100" />
@@ -8418,7 +8418,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="Albino Ape Pelt" Inherits="Item">
     <part Name="Render" DisplayName="{{Y|albino ape pelt}}" Tile="Items/sw_ape_pelt.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="*" RenderLayer="5" />
     <part Name="Description" Short="A snow white trapazoid of fine ape fur, prized for its beauty and warmth." />
-    <part Name="Physics" Weight="10" Category="Trade Goods" />
+    <part Name="Physics" Weight="10" Category="交易物品" />
     <part Name="Commerce" Value="100" />
     <tag Name="Tier" Value="2" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -8427,7 +8427,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="Ogre Ape Pelt" Inherits="Item">
     <part Name="Render" DisplayName="{{W|ogre ape pelt}}" ColorString="&amp;W" Tile="Items/sw_ape_pelt.bmp" DetailColor="w" />
     <part Name="Description" Short="A mat of coarse and golden hair is splattered with blood in two shades." />
-    <part Name="Physics" Weight="10" Category="Trade Goods" />
+    <part Name="Physics" Weight="10" Category="交易物品" />
     <part Name="Commerce" Value="300" />
     <tag Name="Tier" Value="6" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -8466,7 +8466,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="Corpse" Inherits="Item">
     <part Name="Render" DisplayName="[Corpse]" Tile="items/sw_splat1.bmp" TileColor="&amp;r" DetailColor="w" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Food" Satiation="Meal" Gross="true" IllOnEat="true" />
-    <part Name="Physics" Category="Corpses" Weight="5" Organic="true" />
+    <part Name="Physics" Category="尸体" Weight="5" Organic="true" />
     <part Name="Description" Short="A corpse." />
     <part Name="Springy" Factor="0.5" />
     <tag Name="Meat" />
@@ -8550,7 +8550,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="Render" DisplayName="[Corpse]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
 		<removepart Name="Food" />
 		<removebuilder Name="RandomTile" />
-		<part Name="Physics" Category="Corpses" Weight="25" Organic="false" />
+		<part Name="Physics" Category="尸体" Weight="25" Organic="false" />
 		<part Name="Description" Short="A corpse." />		
 		<tag Name="Meat" Value="*delete" />		
 		<builder Name="RandomTile" Tiles="Items/sw_splat1.bmp,Items/sw_splat2.bmp,Items/sw_splat3.bmp,Items/sw_splat4.bmp" />
@@ -8626,7 +8626,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   </object>
   <object Name="RobotLimb" Inherits="Item">
     <part Name="Render" DisplayName="[Corpse]" Tile="items/sw_limb_robot.bmp" TileColor="&amp;c" DetailColor="C" RenderString="%" ColorString="&amp;w" RenderLayer="5" />
-    <part Name="Physics" Category="Scrap" Weight="5" />
+    <part Name="Physics" Category="废料" Weight="5" />
     <part Name="Description" Short="A chunk of metallic debris." />
     <removepart Name="Corpse" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_metal" />
@@ -8758,7 +8758,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   </object>
   <object Name="Ashes" Inherits="Item">
     <part Name="Render" DisplayName="ashes" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
-    <part Name="Physics" Organic="true" Category="Corpses" FlameTemperature="99999" VaporTemperature="1500" />
+    <part Name="Physics" Organic="true" Category="尸体" FlameTemperature="99999" VaporTemperature="1500" />
     <part Name="Description" Short="Matter was crushed, burned, and granulated into a soft powder." />
     <tag Name="DynamicObjectsTable:Corpses" />
     <tag Name="Gender" Value="plural" />
@@ -8836,7 +8836,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 
   <!-- Base objects -->
   <object Name="BaseCyberneticsEquipment" Inherits="Item">
-    <part Name="Physics" Category="Cybernetic Implants" Weight="0" />
+    <part Name="Physics" Category="赛博插件" Weight="0" />
     <part Name="Render" DisplayName="{{Y|cybernetic implant}}" RenderString="135" ColorString="&amp;C" DetailColor="R" Tile="Items/sw_dermalplating.bmp" />
     <part Name="CyberneticsBaseItem" />
     <part Name="Examiner" Complexity="3" />
@@ -9130,7 +9130,7 @@ These effects do not stack with the bonuses of a compass bracelet." />
     <tag Name="StartingCybernetic:万阳祭司" />
     <tag Name="StartingCybernetic:诸月牧师" />
     <tag Name="StartingCybernetic:天象祭司" />
-    <tag Name="StartingCybernetic:Horticulturist" />
+    <tag Name="StartingCybernetic:园艺师" />
     <tag Name="CyberneticsOneOnly" />
     <tag Name="SpecialArcologyText" Value="{{G|[Ekuemekiyye only]}}" />
   </object>
@@ -9526,7 +9526,7 @@ If you have a force modulator implant installed, force knives can be thrown thro
 	</object>
 	<object Name="ForceKnife" Inherits="BaseDagger">
 		<part Name="Render" DisplayName="{{C|force}} knife" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp" />
-		<part Name="Physics" Weight="0" Category="Thrown Weapons" />
+		<part Name="Physics" Weight="0" Category="投掷武器" />
 		<part Name="Description" Short="A length of raw space was kineticized and sharpened to a point." />
 		<part Name="MeleeWeapon" BaseDamage="1d8" />
 		<part Name="ThrownWeapon" Damage="1d8" Attributes="ShortBlades" />
@@ -9811,7 +9811,7 @@ This implant can't be uninstalled." />
   -->
   
   <object Name="Book" Inherits="Item">
-    <part Name="Physics" Category="Books" />
+    <part Name="Physics" Category="书籍" />
     <part Name="ReadAchievement" />
     <tag Name="Mods" Value="BookMods" />
     <tag Name="Book" Value="1" />
@@ -10143,7 +10143,7 @@ This implant can't be uninstalled." />
   -->
   <object Name="DataDisk" Inherits="Item">
     <part Name="Render" Tile="items/sw_data_disc.bmp" DetailColor="W" DisplayName="data disk" ColorString="&amp;c" RenderString="007" RenderLayer="4" />
-    <part Name="Physics" Weight="1" Category="Data Disks" />
+    <part Name="Physics" Weight="1" Category="数据盘" />
     <part Name="Commerce" Value="100" />
     <part Name="DataDisk" />
     <part Name="NotNameable" />
@@ -10306,7 +10306,7 @@ This implant can't be uninstalled." />
   -->
   <object Name="Energy Cell" Inherits="Trinket">
     <part Name="Render" DisplayName="[Energy Cell]" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" DetailColor="C" />
-    <part Name="Physics" Category="Energy Cells" />
+    <part Name="Physics" Category="能源电池" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
     <part Name="EnergyCell" Charge="10000" MaxCharge="10000" />
     <part Name="Metal" />
@@ -10389,7 +10389,7 @@ This implant can't be uninstalled." />
   </object>
   <object Name="Liquid Fueled Energy Cell" Inherits="Item">
     <part Name="Render" DisplayName="[Liquid Fueled Energy Cell]" RenderString="'" RenderLayer="5" DetailColor="C" Tile="Items/sw_cell_liquid.bmp" />
-    <part Name="Physics" Category="Energy Cells" />
+    <part Name="Physics" Category="能源电池" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="2" />
     <part Name="LiquidFueledEnergyCell" />
     <part Name="LeakWhenBroken" />
@@ -10474,7 +10474,7 @@ This implant can't be uninstalled." />
   <object Name="LightSource" Inherits="Item">
     <part Name="Render" DisplayName="[LightSource]" RenderString="*" RenderLayer="5" />
     <part Name="LightSource" Lit="true" Radius="4" />
-    <part Name="Physics" Category="Light Sources" />
+    <part Name="Physics" Category="光源" />
     <tag Name="TinkerCategory" Value="utility" />
     <tag Name="LightSource" Value="1" />
     <tag Name="BaseObject" Value="*noinherit" />
@@ -10508,7 +10508,7 @@ This implant can't be uninstalled." />
   <!--
 
     **********
-       Meds
+       药物
     **********
 
   -->
@@ -10516,7 +10516,7 @@ This implant can't be uninstalled." />
   <object Name="Bandage" Inherits="Item">
     <part Name="Examiner" Complexity="0" />
     <part Name="Render" Tile="Items/sw_bandage.bmp" DetailColor="R" DisplayName="bandage" ColorString="&amp;y" RenderString="012" RenderLayer="5" />
-    <part Name="Physics" Organic="true" Category="Meds" Weight="0" />
+    <part Name="Physics" Organic="true" Category="药物" Weight="0" />
     <part Name="Springy" Factor="0.8" />
     <part Name="Description" Short="It's worm silk gauze spooled about a wood rod and suited to staunch bleeding." />
     <part Name="Commerce" Value="1" />
@@ -10529,7 +10529,7 @@ This implant can't be uninstalled." />
   </object>
   <object Name="Medication" Inherits="Item">
     <part Name="Render" DisplayName="[medication autoinjector]" ColorString="&amp;Y" DetailColor="m" RenderString="012" RenderLayer="5" Tile="Items/sw_injector.bmp" />
-    <part Name="Physics" Category="Meds" />
+    <part Name="Physics" Category="药物" />
     <part Name="Examiner" Unknown="UnknownMed" Alternate="UnknownMed" Complexity="1" />    
     <part Name="Commerce" Value="10" />
     <part Name="Medication" />
@@ -10578,7 +10578,7 @@ This implant can't be uninstalled." />
   </object>
   <object Name="Witchwood Bark" Inherits="Snack">
     <part Name="Render" DisplayName="{{W|巫术树皮}}" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_jerky1.bmp" RenderString="'" RenderLayer="5" />
-    <part Name="Physics" Category="Meds" />
+    <part Name="Physics" Category="药物" />
     <part Name="Commerce" Value="4" />
     <part Name="Food" Satiation="None" Thirst="0" Message="一股温暖的刺痛感袭遍全身。" />
     <part Name="ConfuseOnEat" Strength="1d8" Duration="5d3" Level="1" BuildupTimeout="15" />
@@ -10601,7 +10601,7 @@ This implant can't be uninstalled." />
   
   <object Name="Scrap" Inherits="Item">
     <part Name="Render" DisplayName="[scrap]" ColorString="&amp;K" RenderString="232" RenderLayer="4" Tile="Assets_Content_Textures_Items_sw_gadget.bmp" />
-    <part Name="Physics" Weight="2" Category="Scrap" />
+    <part Name="Physics" Weight="2" Category="废料" />
     <part Name="Description" Short="A piece of scrap was shed or peeled off a machine fossil." />
     <part Name="Metal" />
     <part Name="TinkerItem" Bits="0" CanDisassemble="true" CanBuild="false" />
@@ -10757,7 +10757,7 @@ This implant can't be uninstalled." />
 
   -->
   <object Name="Tonic" Inherits="Medication">
-    <part Name="Physics" Category="Tonics" Weight="0" />
+    <part Name="Physics" Category="补药" Weight="0" />
     <part Name="Description" Short="玻璃管和炒作针将补品直接输送到血液中。" />
     <part Name="Commerce" Value="40" />
     <part Name="RulesDescription" />
@@ -10985,7 +10985,7 @@ These effects stack if multiple rubbergums are ingested." />
   -->
   <object Name="Tool" Inherits="Item">
     <part Name="Render" DisplayName="{{c|[Tool]}}" RenderString="004" RenderLayer="5" Tile="Tiles/sw_box.bmp" />
-    <part Name="Physics" Category="Tools" />
+    <part Name="Physics" Category="工具" />
     <part Name="Examiner" Alternate="UnknownTool" Complexity="0" />
     <part Name="Metal" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_tool" />
@@ -11073,7 +11073,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="portable wall" RenderString="004" ColorString="&amp;C" TileColor="&amp;b" DetailColor="C" Tile="Items/sw_deposit_box.bmp" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="Tiny glyphs are inscribed on each exterior face of the handheld box. Though contrarians still puzzle over their meaning, most of Qud's prominent linguist cults have converged on a single interpretation: 'For When Both Nature and Architects Have Failed You'. One brass pull ring separates you from the promise of those words." />
-    <part Name="Physics" Weight="8" Category="Tools" />
+    <part Name="Physics" Weight="8" Category="工具" />
     <part Name="PortableWall" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="4" />
     <tag Name="Gift" Value="*noinherit" />
@@ -11086,7 +11086,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="spiral borer" Tile="Items/sw_spiral_borer.bmp" RenderString="004" ColorString="&amp;C" DetailColor="w" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="A slotted back satchel heavy with core metal weighs the shoulders down. Stenciled on the side is a pictograph of a drill pointing down into the earth." />
-    <part Name="Physics" Weight="40" Category="Tools" />
+    <part Name="Physics" Weight="40" Category="工具" />
     <part Name="SpiralBorerCurio" />
     <part Name="Examiner" Complexity="4" />
     <tag Name="Gift" Value="*noinherit" />
@@ -11098,7 +11098,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|tattoo}} gun" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c" />
     <part Name="Commerce" Value="25" />
     <part Name="Description" Short="Ink is jetted into and under the skin canvas by a needle and rotary motor." />
-    <part Name="Physics" Weight="1" Category="Tools" />
+    <part Name="Physics" Weight="1" Category="工具" />
     <part Name="LiquidVolume" MaxVolume="6" StartVolume="0-6" InitialLiquid="ink-1000" />
     <part Name="LeakWhenBroken" />
     <part Name="TattooGun" />
@@ -11119,7 +11119,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="Templar phylactery" RenderString="004" Tile="Items/sw_phylactery.bmp" ColorString="&amp;w" DetailColor="c" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="An wood-carved jewel box opens to a photographic plate and light beamer. Slit in the crystal around the edge is a verse chosen from the rhombic torah." />
-    <part Name="Physics" Weight="3" Category="Tools" />
+    <part Name="Physics" Weight="3" Category="工具" />
     <part Name="TemplarPhylactery" />
     <part Name="MeleeWeapon" MaxStrengthBonus="1" /><!-- to prevent it from being considered an improvised weapon -->
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="6" />
@@ -11136,7 +11136,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="{{nanoneuro|nano-neuro}} {{Y|animator}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp" />
     <part Name="AnimateObject" />
     <tag Name="Tier" Value="7" />
-    <part Name="Physics" Weight="12" Category="Tools" />
+    <part Name="Physics" Weight="12" Category="工具" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
     <part Name="Commerce" Value="900" />
     <part Name="Metal" />
@@ -11147,7 +11147,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="Droid Scrambler" Inherits="Trinket">
     <part Name="Render" DisplayName="{{Y|droid scrambler}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp" />
-    <part Name="Physics" Category="Tools" />
+    <part Name="Physics" Category="工具" />
     <part Name="Commerce" Value="25" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="1" Understanding="0" />
     <part Name="Description" Short="A transmitter discoid beeps out staccato noise to create interference across short-range frequency bands." />
@@ -11163,7 +11163,7 @@ These effects stack if multiple rubbergums are ingested." />
   <!-- Recoilers -->
   <object Name="BaseRecoiler" Inherits="Item">
     <part Name="Render" DisplayName="{{Y|recoiler}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp" />
-    <part Name="Physics" Category="Tools" />
+    <part Name="Physics" Category="工具" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="2" Difficulty="1" />
     <part Name="Teleporter" ChargeUse="2500" Sound="Sounds/Interact/sfx_interact_recoiler_activate" />
     <part Name="Description" Short="A cassette is cut with hexagonal grooves and steeped in the right amount of magnetic charge to spool a spacetime tether (and generate its characteristic hot gum smell). On top, a recessed button snaps the potential and initiates the recoil." />
@@ -11272,7 +11272,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Spraybottle" Inherits="Item">
     <part Name="Examiner" Complexity="2" Alternate="UnknownBottle" />
     <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="spray bottle" ColorString="&amp;C" DetailColor="c" RenderString="012" RenderLayer="5" />
-    <part Name="Physics" Category="Applicators" />
+    <part Name="Physics" Category="应用器" />
     <part Name="Description" Short="Some tinker concocted a siphon tube and pressurized nozzle to spray liquid they didn't want to pour." />
     <part Name="Commerce" Value="20" />
     <part Name="Applicator" />
@@ -11288,7 +11288,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Fixit Spray" Inherits="Item">
     <part Name="Examiner" Complexity="2" Alternate="UnknownBottle" />
     <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="Fix-It spray foam" ColorString="&amp;y" RenderString="012" RenderLayer="5" />
-    <part Name="Physics" Category="Applicators" />
+    <part Name="Physics" Category="应用器" />
     <part Name="Description" Short="An aerosol can blown full of foaminating caulk." />
     <part Name="Commerce" Value="20" />
     <part Name="Applicator" />
@@ -11301,7 +11301,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Desalination Pellet" Inherits="Item">
     <part Name="Examiner" Complexity="2" Unknown="UnknownOddTrinket" />
     <part Name="Render" DisplayName="desalination pellet" ColorString="&amp;Y" RenderString="&quot;" RenderLayer="5" Tile="Items/sw_pellet.bmp" />
-    <part Name="Physics" Category="Applicators" Weight="0" />
+    <part Name="Physics" Category="应用器" Weight="0" />
     <part Name="Description" Short="A chalky white cap of rice lattice sucks the salt from liquid volumes. The letter 'H' is etched on its face." />
     <part Name="Commerce" Value="25" />
     <part Name="Applicator" />
@@ -11315,7 +11315,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Metamorphic Polygel" Inherits="Item">
     <part Name="Examiner" Complexity="5" Alternate="UnknownBottle" />
     <part Name="Render" DisplayName="{{metamorphic|metamorphic polygel}}" Tile="items/sw_spray.bmp" ColorString="&amp;y" DetailColor="M" RenderString="012" RenderLayer="5" />
-    <part Name="Physics" Category="Applicators" />
+    <part Name="Physics" Category="应用器" />
     <part Name="Description" Short="Pink slime kneads the inner wall of a glass bottle and starts to take the shape of what's on the other side." />
     <part Name="Commerce" Value="600" />
     <part Name="Applicator" />
@@ -11331,7 +11331,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Spray-a-Brain" Inherits="Item">
     <part Name="Examiner" Complexity="6" Alternate="UnknownBottle" />
     <part Name="Render" Tile="items/sw_spray.bmp" DisplayName="Spray{{r|-}}a{{r|-}}Brain" ColorString="&amp;G" TileColor="&amp;G" DetailColor="r" RenderString="012" RenderLayer="5" />
-    <part Name="Physics" Category="Applicators" />
+    <part Name="Physics" Category="应用器" />
     <part Name="Description" Short="&quot;SPRAY-A-BRAIN: If these walls could talk...&quot;" />
     <part Name="Commerce" Value="150" />
     <part Name="Applicator" />
@@ -11346,7 +11346,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="High-Powered Magnet" Inherits="Item">
     <part Name="Render" DisplayName="high-powered magnet" Tile="items/sw_magnet.bmp" TileColor="&amp;c" DetailColor="W" RenderString="012" ColorString="&amp;w" RenderLayer="5" />
-    <part Name="Physics" Category="Artifacts" Weight="5" />
+    <part Name="Physics" Category="遗物" Weight="5" />
     <part Name="Description" Short="Iron fragments mottle its cankered surfaces." />
     <part Name="Commerce" Value="150" />
     <part Name="Applicator" />
@@ -11370,7 +11370,7 @@ These effects stack if multiple rubbergums are ingested." />
 
   <object Name="BaseCurrency" Inherits="Item">
     <part Name="Render" RenderString="*" RenderLayer="5" />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
     <intproperty Name="Currency" Value="1" />
     <tag Name="AdjustWeaponScore" Value="-2" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -11389,7 +11389,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="{{w|bronze ingot}}" Tile="Items/sw_ingot.bmp" RenderString="248" ColorString="&amp;w" DetailColor="w" RenderLayer="5" />
     <part Name="Commerce" Value="100" />
     <part Name="Description" Short="A weighty and tapered block was molded from the two-tone soup of liquid copper and tin." />
-    <part Name="Physics" Category="Trade Goods" Weight="5" />
+    <part Name="Physics" Category="交易物品" Weight="5" />
     <part Name="Metal" />
     <intproperty Name="Currency" Value="1" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_metal" />
@@ -11404,7 +11404,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Commerce" Value="10" />
     <part Name="Description" Short="To ritualize the passage to Brightsheol or another thin place, several ornaments were interred: coin, manikin, locket, and pipe." />
     <builder Name="RandomTile" Tiles="Items/sw_grave_goods_1.bmp,Items/sw_grave_goods_2.bmp,Items/sw_grave_goods_3.bmp" />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
     <tag Name="Gender" Value="plural" />
 		<xtagGrammar massNoun="true" />
@@ -11573,7 +11573,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Description" Short="This figurine worked from *material* intricately depicts *creature.an*:
 
 " />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone" />
     <tag Name="Tier" Value="1" />
     <tag Name="DynamicObjectsTable:TradeGoods" />
@@ -11657,7 +11657,7 @@ These effects stack if multiple rubbergums are ingested." />
 
   <object Name="Trinket" Inherits="Item">
     <part Name="Render" DisplayName="{{c|trinket}}" RenderString="004" RenderLayer="5" Tile="Items/sw_gadget.bmp" />
-    <part Name="Physics" Category="Trinkets" />
+    <part Name="Physics" Category="小饰品" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
 		<part Name="TinkerItem" Bits="0" CanDisassemble="true" CanBuild="false" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" />
@@ -11676,7 +11676,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
 		<part Name="TinkerItem" CanDisassemble="false" />
     <part Name="Description" Short="Wax from the hives of Odrum is mixed in dye and moulded to the shape of styli. Together in the box they sample the iridescence of the world and offer the tools to expand it." />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
     <part Name="Springy" Factor="0.1" />
     <part Name="NoRust" />
     <part Name="Crayons" />
@@ -11689,7 +11689,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Commerce" Value="5" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
     <part Name="Description" Short="Carved and stained olive wood houses the steel teeth that grind irregularities from cooking salt." />
-    <part Name="Physics" Category="Food" />
+    <part Name="Physics" Category="食物" />
     <part Name="NoRust" />
     <tag Name="Tier" Value="1" />
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="0-1" InitialLiquid="salt-1000" />
@@ -11700,7 +11700,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Commerce" Value="5" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
     <part Name="Description" Short="A hot metal clamp compels burning hair to the wheeling curves of the gyre." />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
     <part Name="SpiralIron" />
     <tag Name="Tier" Value="1" />
     <stag Name="Trinket" />
@@ -11710,7 +11710,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Commerce" Value="5" />
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1" />
     <part Name="Description" Short="A toral pane of crystal bisects the straight edge and puts a greasy bubble in center view." />
-    <part Name="Physics" Category="Trade Goods" />
+    <part Name="Physics" Category="交易物品" />
     <part Name="BubbleLevel" />
     <tag Name="Tier" Value="1" />
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" ManualSeal="true" LiquidVisibleWhenSealed="true" />
@@ -11781,7 +11781,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="WaterContainer" Inherits="Item">
     <part Name="LiquidVolume" MaxVolume="64" Volume="0" />
     <part Name="Render" DisplayName="[Water Container]" ColorString="&amp;b" RenderString="168" RenderLayer="5" Tile="Items/sw_waterskin.bmp" TileColor="&amp;w" DetailColor="y" />
-    <part Name="Physics" Category="Water Containers" SpecificHeat="4.1813" />
+    <part Name="Physics" Category="液体容器" SpecificHeat="4.1813" />
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="5" />
     <part Name="NotNameable" />
@@ -11977,7 +11977,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="StorageTank" Inherits="Item">
     <part Name="Armor" AV="0" DV="0" WornOn="Arm" />
-    <part Name="Physics" Weight="5" Category="Water Containers" SpecificHeat="0.17" />
+    <part Name="Physics" Weight="5" Category="液体容器" SpecificHeat="0.17" />
     <part Name="LiquidVolume" MaxVolume="128" Volume="128" StartVolume="0" ManualSeal="true" />
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="8" />
@@ -11993,7 +11993,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="Gourd" Inherits="Item">
     <part Name="Armor" AV="0" DV="0" WornOn="Arm" />
-    <part Name="Physics" Weight="1" Organic="true" Category="Water Containers" />
+    <part Name="Physics" Weight="1" Organic="true" Category="液体容器" />
     <part Name="LiquidVolume" MaxVolume="16" Volume="16" StartVolume="0" />
     <part Name="LeakWhenBroken" />
     <part Name="Commerce" Value="0.5" />
@@ -12015,7 +12015,7 @@ These effects stack if multiple rubbergums are ingested." />
 	</object>
 	<object Name="Magnetic Bottle" Inherits="WaterContainer">
 		<part Name="Render" DisplayName="magnetic bottle" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false" />
-		<part Name="Physics" Weight="3" Category="Artifacts" />
+		<part Name="Physics" Weight="3" Category="遗物" />
 		<part Name="Commerce" Value="200" />
 		<part Name="Description" Short="Magnetic glass spike-warps the placid ferrofluids contained within." />
 		<part Name="RulesDescription" Text="When powered, this container can have neutron flux safely poured into it from any source, and neutron flux may be safely poured from this container into other suitable containers." />
@@ -12349,7 +12349,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="Argyve's Data Disk" Inherits="BaseDataDisk">
     <part Name="Render" DisplayName="{{Y|stamped data disk}}" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5" />
-    <part Name="Physics" Category="Quest Items" />
+    <part Name="Physics" Category="任务物品" />
     <part Name="Examiner" Complexity="1" Understanding="1" />
     <tag Name="QuestItem" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -12359,7 +12359,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="Scratched Data Disk" Inherits="BaseDataDisk">
     <part Name="Render" DisplayName="{{Y|scratched data disk}}" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5" />
-    <part Name="Physics" Category="Quest Items" />
+    <part Name="Physics" Category="任务物品" />
     <part Name="Examiner" Complexity="1" Understanding="1" />    
     <tag Name="QuestItem" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -12369,7 +12369,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
   <object Name="Stamped Data Disk" Inherits="BaseDataDisk">
     <part Name="Render" DisplayName="{{Y|stamped data disk}}" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5" />
-    <part Name="Physics" Category="Quest Items" />
+    <part Name="Physics" Category="任务物品" />
     <part Name="Examiner" Complexity="1" Understanding="1" />    
     <tag Name="QuestItem" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -12387,7 +12387,7 @@ These effects stack if multiple rubbergums are ingested." />
   </object>
 
   <object Name="Scrapped Waydroid" Inherits="Item">
-    <part Name="Physics" Category="Quest Items" />
+    <part Name="Physics" Category="任务物品" />
     <part Name="Render" DisplayName="scrapped waydroid" RenderString="2" ColorString="&amp;y" Tile="Creatures/sw_waydroid.bmp" DetailColor="Y" RenderLayer="5" />
     <part Name="Repair" FixedBlueprint="Dormant Waydroid" Difficulty="1" />
     <part Name="Commerce" Value="5" />
@@ -12402,7 +12402,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="{{c|dormant waydroid}}" RenderString="2" ColorString="&amp;c" Tile="Creatures/sw_waydroid.bmp" DetailColor="W" RenderLayer="5" />
     <part Name="Commerce" Value="30" />
     <part Name="Description" Short="Here lies a waydroid in unknowing slumber. Might a willing tinker give it life again?" />
-		<part Name="Physics" Category="Quest Items" />
+		<part Name="Physics" Category="任务物品" />
     <tag Name="ExcludeFromDynamicEncounters" />
     <tag Name="NoSparkingQuest" />
     <stag Name="Scrap" />

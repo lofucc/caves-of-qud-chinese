@@ -1,0 +1,1725 @@
+<activatedabilities>
+	<ability Command="CommandAmputateLimb">
+		<description>您截掉自己的肢体或受感染同伴的肢体。</description>
+		<UITile Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="Y" />
+	</ability>
+	<ability Command="CommandFlyToggle">
+		<description>
+			<p>你经过地面地形，并且不会受到近战地面生物的攻击。</p>
+			<br />
+			<p>每一轮都有 <stat Name="CrashChance" />% 概率摔倒在地。</p>
+			<br />
+			<p>你只能在地面上飞行。</p>
+		</description>
+		<UITile Tile="Abilities/abil_fly_toggle_off.bmp" Foreground="y" Detail="b" /> 
+  </ability>
+  <ability Command="CommandSwoopAttack">
+		<description>
+			<p>你俯冲攻击地面上的目标，一回合攻击，一回合返回空中。</p>
+			<br />
+			<p>有 <stat Name="SwoopCrashChance" />% 概率摔倒在地（如果你的攻击被盾牌阻挡，则翻倍）。</p>
+		</description>
+		<UITile Tile="Abilities/abil_swoop.bmp" Foreground="B" Detail="W" /> 
+  </ability>
+  <ability Command="CommandEndBurrowing">
+    <UITile Tile="Abilities/abil_stop_burrow.bmp" Foreground="w" Detail="W" />
+		<description>你从你的洞穴中出现。</description>
+  </ability>
+  <ability Command="CommandEndDomination">
+    <UITile Tile="Abilities/abil_end_domination.bmp" Foreground="m" Detail="r" />
+		<description>你停止统治这个生物。</description>
+  </ability>
+  <ability Command="ShadeOilPhase">			
+		<description>
+			<p>你可以在短时间内穿越固体物体。</p>
+      <br />
+      <statline Name="Duration" />				
+		</description>
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandEndSubmerged">
+    <UITile Tile="Abilities/abil_surface.bmp" Foreground="B" Detail="W" />
+		<description>你从藏身之处出现。</description>
+  </ability>
+  <ability Command="ActivateFabricateFromSelf">
+		<description>
+			<p>You <stat Name="FabricateVerb" /> <stat Name="An" /><stat Name="FabricateBlueprint" /> from <stat Name="FabricateSource" />.</p>
+      <br/>
+			<statline Name="BatchSize" DisplayName="Batch size" />
+			<statline Name="HitpointsPer" DisplayName="Hitpoints per batch" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_fabricate.bmp" Foreground="C" Detail="W" /> 
+  </ability>
+  <ability Command="CommandPlaceMine">
+		<description>
+			<p>You place <stat Name="MineAn" /> <stat Name="MineDisplayName" /> mine.</p>
+      <br />
+      <statline Name="MineTimer" DisplayName="Timer" Unit="round" HideValue="-1" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" /> 
+  </ability>
+  <ability Command="CommandRunOver">
+		<description>
+			<p>You charge in a line and run down creatures in your path.</p>
+      <br />
+			<statline Name="Damage" />
+			<statline Name="Range" />
+			<statline Name="Knockdown" DisplayName="Knockdown save" />
+			<statline Name="Daze" DisplayName="Daze save" />
+		</description>
+    <UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B" /> 
+  </ability>
+  <ability Command="CommandClone">
+		<description>You clone an organic creature.</description>
+		<UITile Tile="Abilities/abil_clone.bmp" Foreground="r" Detail="W" /> 
+  </ability>
+  <ability Command="CommandTinkerTurret">
+		<description>
+      <p>You tinker <stat Name="An" /> <stat Name="TurretName" /> in an adjacent space.</p>
+      <br/>
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+	</ability>
+  <ability Command="CommandEngulf">
+    <description>You engulf an adjacent creature, consuming it alive and potentially more.</description>
+    <UITile Tile="Abilities/abil_engulf.bmp" Foreground="G" Detail="W" /> 
+  </ability>
+  <ability Command="CommandToggleAnchorSpikes">
+		<description>You cannot be forced to move by physical means.</description>
+		<UITile Tile="Abilities/abil_anchor_spikes_toggle_off.bmp" Foreground="y" Detail="r" /> 
+    <UITile Tile="Abilities/abil_anchor_spikes_toggle_on.bmp" Foreground="Y" Detail="w" State="ToggleOn" />		
+  </ability>
+  <ability Command="CommandToggleAnomalyFumigator">
+		<description>You emit clouds of normality gas every turn.</description>
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_off.bmp" Foreground="y" Detail="w" /> 
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" /> 
+  </ability>
+  <ability Command="CommandCathedraBlackOpal"> 		
+		<description>
+			<p>You sunder spacetime, teleporting to a random location in Qud.</p>
+			<br />				
+			<statline Name="Cooldown" />
+		</description>						
+		<UITile Tile="Abilities/abil_wormhole.bmp" Foreground="r" Detail="B" /> 
+  </ability>
+  <ability Command="CommandCathedraRuby">
+		<description>
+			<p>You generate a pyrokinesis field around yourself, dealing damage and setting things on fire for 3 rounds.</p>
+			<br />				
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
+			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
+			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" /> 
+  </ability>
+  <ability Command="CommandCathedraSapphire">
+		<description>
+			<p>You invoke a concussive force around yourself. Creatures are pushed away from the center of blast, stunned, and dealt crushing damage in up to 3 increments.</p>
+			<br />				
+			<statline Name="Area" />
+			<statline Name="DamageIncrement" DisplayName="Damage increment" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="g" Detail="G" /> 
+  </ability>
+  <ability Command="CommandCathedraWhiteOpal"> 
+		<description>
+			<p>You release a burst of glitter around yourself.</p>
+			<br />				
+			<statline Name="Duration" Unit="turn" />				
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+    <UITile Tile="Items/sw_skin_glitter.bmp" Foreground="M" Detail="Y" />
+  </ability>
+  <ability Command="CommandToggleFireSuppressionSystem">
+		<description>Automatically discharges flame-retardant gel every round you're on fire.</description>
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_off.bmp" Foreground="y" Detail="r" />
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_on.bmp" Foreground="y" Detail="R" />
+  </ability>    
+  <ability Command="CommandRecomposite">
+		<description>
+			<p>You teleport to any explored space on the map.</p>		
+      <br />		
+			<statline Name="Cooldown" />				
+		</description>
+		<UITile Tile="Abilities/abil_recomposite.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandInflateAxons">
+		<description>			
+			<p>You gain +<stat Name="QuicknessBonus" /> Quickness for <stat Name="QuicknessDuration" /> rounds, then you become sluggish for 10 rounds.</p>
+			<br />			
+			<statline Name="Cooldown" />
+		</description>
+    <UITile Tile="Items/sw_axions.bmp" Foreground="W" Detail="g" />
+  </ability>
+  <ability Command="CommandEmergencyRecomposite">
+		<description>			
+			<p>You teleport to a random, explored space on the map.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_emergency_recomposite.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandToggleMedassistModule">
+    <description>
+      <p>Automatically applies up to 8 loaded injectors when appropriate.</p>
+      <br />
+      <statline Name="Loadout" />
+    </description>
+    <UITile Tile="Abilities/abil_medassist_module_toggle_off.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_medassist_module_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandToggleCyberNightVision">
+    <description>You see in the dark.</description>
+    <UITile Tile="Abilities/abil_night_vision_toggle_off.bmp" Foreground="y" Detail="g" />
+		<UITile Tile="Abilities/abil_night_vision_toggle_on.bmp" Foreground="Y" Detail="G" />
+	</ability>
+  <ability Command="CommandToggleNocturnalApex">
+    <description>
+      <p>Gain +<stat Name="AgilityBonus" /> Agility and +<stat Name="MovespeedBonus" /> move speed for <stat Name="Duration" /> rounds.</p>
+      <br />
+      <statline Name="Cooldown" />      
+    </description>
+    <UITile Tile="Items/sw_nocturnal.bmp" Foreground="b" Detail="C" />
+  </ability>
+  <ability Command="CommandActivateOnboardRecoilerImprinting">
+    <description>
+      <p>Imprints onboard recoiler with a location to recoil back to.</p>
+      <br />
+      <statline Name="Location" DisplayName="Current location" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_imprint.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandActivateOnboardRecoilerTeleporter">
+    <description>
+      <p>You teleport back to the programmed location.</p>
+      <br />
+      <statline Name="Location" DisplayName="Current location" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandTogglePenetratingRadar">
+    <description>
+      <p>You gain total visibility in a radius of <stat Name="Radius" /> around you, blocked only by force fields and spacetime anomalies.</p>
+      <br />
+    </description>
+    <UITile Tile="Abilities/abil_penetrating_radar_toggle_off.bmp" Foreground="B" Detail="y" />
+		<UITile Tile="Abilities/abil_penetrating_radar_toggle_on.bmp" Foreground="B" Detail="Y" />
+  </ability>
+  <ability Command="CommandTogglePhaseHarmonicModulator">
+    <description>You can interact with both in-phase and out-of-phase objects and creatures.</description>
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_off.bmp" Foreground="y" Detail="m" />
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_on.bmp" Foreground="Y" Detail="m" State="ToggleOn" />
+  </ability>
+	<ability Command="AlterHolographicVisage">
+		<description>You alter your visage and gain +200 reputation with the chosen faction.</description>
+		<UITile Tile="Abilities/abil_alter_visage.bmp" Foreground="C" Detail="B" />
+	</ability>
+	<ability Command="CommandStasisEntangler">		
+		<description>
+			<p>You choose one creature in line of sight. All other creatures are put into stasis fields for <stat Name="Duration" />.</p>
+			<br />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Items/implant_stasis_entangler.bmp" Foreground="r" Detail="C" />
+	</ability>
+	<ability Command="CommandTogglePhaseAdaptiveScope">
+		<description>When you fire a missile weapon or throw something, your projectile shifts phase to pass through obstacles and reach your target.</description>
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_off.bmp" Foreground="y" Detail="y" />
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_on.bmp" Foreground="Y" Detail="y" State="ToggleOn" />
+	</ability>
+	<ability Command="CommandFabricateForceKnife">
+		<description>You fabricate a force knife that deals 1d8 damage, has penetration value equal to its target's armor value, and has +6 throwing range.</description>
+		<UITile Tile="Abilities/abil_fabricate_force_knife.bmp" Foreground="C" Detail="B" />
+	</ability>
+	<ability Command="ProjectStasisField">
+    <description>
+      <p>Creates up to <stat Name="Coverage" /> squares of stasis field that last for <stat Name="Duration" />.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Items/sw_stasis_projector.bmp" Foreground="C" Detail="r" />
+  </ability>
+  <ability Command="CommandActivateTetheredRecoilerTeleporter">
+    <description>
+      <p>You teleport to the tethered location.</p>
+      <br />
+      <statline Name="Cooldown" />
+      <statline Name="Destination" />
+      <statline Name="TetherStatus" DisplayName="Tether status" />
+    </description>
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="ActivateAjiConch">
+		<description>
+			<p>You blow into the conch and produce a cone of random gas.</p>
+			<br />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_shell_1.bmp" Foreground="r" Detail="K" />
+  </ability>
+	<ability Command="CommandRecoil">
+		<description>You teleport back to a programmed location.</description>
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="y" Detail="g" />
+	</ability>
+  <ability Command="ToggleHologramEmitter">
+		<description>
+			<p>You generate <stat Name="DecoyNumber" /> holographic <stat Name="Decoys" /> of yourself.</p>
+			<br />
+			<p>Decoys move in reflection to you and draw aggro.</p>
+			<statline Name="Range" />
+			<p><stat Name="ChargeDraw" /> charge draw per round.</p>
+		</description>
+		<UITile Tile="Abilities/abil_activate_decoy.bmp" Foreground="B" Detail="b" />
+  </ability>
+  <ability Command="ToggleForceEmitter">
+		<description>
+			<p>You generate a forcefield around yourself.</p>
+			<br />
+			<p>Creates a 3x3 forcefield centered on yourself.</p>
+			<p>You may fire missile weapons through the forcefield.</p>
+			<p>High charge draw per round.</p>			
+		</description>
+		<UITile Tile="Abilities/abil_force_emitter.bmp" Foreground="B" Detail="C" />
+  </ability>
+  <ability Command="CommandQuickenMind">
+		<description>
+			<p>You are quickened with creative energy.</p>
+			<br />
+			<p><stat Name="RefreshDescription" /></p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_quicken_mind.bmp" Foreground="M" Detail="Y" />
+  </ability>
+  <ability Command="ActivateTeleprojector">		
+		<description>
+			<p>You project your mind into an adjacent robot and control its actions while your own body lies dormant.</p>
+			<br />
+			<p>Technological attack vs. a robot.</p>
+			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
+			<p>High charge draw on activate.</p>
+			<p>Low charge draw per round.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_teleprojector.bmp" Foreground="C" Detail="M" />
+  </ability>
+  <ability Command="ConfigureTemperatureController">
+		<description>
+			<p>You set a target temperature and are heated or cooled each round until you reach it.</p>
+			<br />
+			<statline Name="TemperatureChange" DisplayName="Temperature change per round" />
+			<statline Name="ChargeUse" DisplayName="Charge use per round" />			
+		</description>
+		<UITile Tile="Abilities/abil_set_temperature.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="ActivatePaxInfection">
+		<description>
+			<p>You puff spore and spread Klanq.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_klanq_infection.bmp" Foreground="O" Detail="C" /> 
+  </ability>
+  <ability Command="ActivateSkyshroud">
+		<description>
+			<p>You start dashing in a plume of flame and smoke.</p>
+			<br />
+			<p>While dashing, whenever you move in a direction, you dash toward the nearest enemy or obstacle and perform an attack.</p>
+			<br />
+			<p>For every three spaces you dash, you gain a +2 bonus to hit and a +2 penetration roll bonus to your dash attack.</p>
+			<br />
+			<p>If you do not encounter an enemy or obstacle after twenty spaces, you stop moving.</p>
+			<br />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Items/sw_jetbackpack.bmp" Foreground="M" Detail="m" />
+  </ability>
+  <ability Command="ActivateStopsvalinn">
+		<description>
+			<p>You generate a wall of force that impedes the movement of robots.</p>
+			<br />
+			<p>Creates 3 contiguous spaces of mobile forcefield.</p>
+			<p>Robot movement save: Willpower 18</p>
+			<p>High charge draw per round.</p>
+		</description>
+		<UITile Tile="Items/sw_buckler2.bmp" Foreground="Y" Detail="r" />
+  </ability>
+  <ability Command="CommandBeguileCreature">
+		<description>
+			<p>You beguile an adjacent creature into serving you loyally.</p>
+			<br />
+			<p>Mental attack vs. a creature with a mind.</p>
+			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
+			<p>Beguiled creatures get <stat Name="BonusHP" /> bonus hit points.</p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/beguiling.bmp" Foreground="m" Detail="R" />
+  </ability>
+  <ability Command="CommandBurgeoning">
+    <description>
+      <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
+      <br />
+			<p>Plants vary by mutation rank.</p>
+			<statline Name="Area" />
+			<statline Name="Range" />      
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Mutations/burgeoning.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandClairvoyance">			
+		<description>
+      <p>You briefly gain vision of a nearby area.</p>
+      <br />
+      <statline Name="VisionRadius" DisplayName="Vision radius"/>
+      <statline Name="VisionDuration" DisplayName="Vision duration" Unit="round" />
+      <statline Name="Cooldown" />
+    </description>
+		<UITile Tile="Mutations/clairvoyance.bmp" Foreground="m" Detail="C" />
+  </ability>
+  <ability Command="CommandConfuse">
+		<description>
+			<p>You confuse nearby enemies.</p>
+			<br />
+			<p>Affected creatures act semi-randomly and receive a <stat Name="Penalty" /> penalty to their mental abilities.</p>
+			<statline Name="ConeAngle" DisplayName="Cone angle" />
+			<statline Name="ConeLength" DisplayName="Cone length" />
+			<statline Name="Duration" />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/confusion.bmp" Foreground="r" Detail="B" />
+  </ability>
+  <ability Command="CommandCryokinesis">
+		<description>
+			<p>You chill a nearby area with your mind, dealing damage and freezing things for 3 rounds.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
+			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
+			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/cryokinesis.bmp" Foreground="b" Detail="B" />
+  </ability>
+  <ability Command="CommandDisintegration">
+		<description>
+			<p>You disintegrate nearby matter.</p>
+			<br />			
+			<statline Name="Area" />
+			<statline Name="DamageNonStructural" DisplayName="Damage to non-structural objects" />
+			<statline Name="DamageStructural" DisplayName="Damage to structural objects" />
+			<p>You are exhausted for 3 rounds after using this power.</p>
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/disintergration.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandDominateCreature">
+		<description>
+			<p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
+			<br />			
+			<p>Mental attack vs. a creature with a mind.</p>
+			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/domination.bmp" Foreground="w" Detail="M" />
+  </ability>
+  <ability Command="CommandForceBubble">
+    <description>
+			<p>You generate a forcefield around yourself.</p>
+			<br />			
+			<p>Creates a 3x3 forcefield centered on yourself.</p>
+			<p>You may fire missile weapons through the forcefield.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_force_bubble_toggle_off.bmp" Foreground="B" Detail="y" />
+		<UITile Tile="Abilities/abil_force_bubble_toggle_on.bmp" Foreground="B" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandForceWall">
+		<description>
+			<p>You generate a wall of force that protects you from your enemies.</p>
+			<br />
+			<p>Creates 9 contiguous squares of immobile forcefield.</p>
+			<p>You may fire missile weapons through the forcefield.</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/force_wall.bmp" Foreground="B" Detail="y" />
+  </ability>
+  <ability Command="CommandKindle">
+    <description>
+      <p>You ignite a small fire with your mind.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/kindle.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="CommandLeyShift">
+    <description>
+      <p>You shift spacetime in the local region.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_ley_shift.bmp" Foreground="m" Detail="G" />
+  </ability>
+  <ability Command="CommandLifeDrain">
+    <description>
+      <p>You bond with a nearby organic creature and leech its life force.</p>
+      <br />
+      <p>Mental attack vs. a creature with a mind.</p>
+      <p>Drains <stat Name="HP" /> per round.</p>
+      <p>Target gets a mental save to resist damage each round.</p>
+      <br />
+      <statline Name="Duration" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/syphon_vim.bmp" Foreground="m" Detail="M" />
+  </ability>
+  <ability Command="CommandLase">
+    <description>
+      <p>You focus your ambient light into a laser beam.</p>      
+      <p>Temporarily reduces the radius of your ambient light by 1.</p>
+      <br />      
+      <statline Name="LaserDamageInc" DisplayName="Laser damage increment" />
+      <statline Name="LaserPen" DisplayName="Laser penetration" />
+    </description>
+    <UITile Tile="Mutations/light_manipulation.bmp" Foreground="Y" Detail="C" />
+  </ability>
+  <ability Command="CommandAmbientLight">
+    <description>
+      <p>You produce ambient light within a radius of <stat Name="Radius" />.</p>
+      <p>You may focus the light into a laser beam, temporarily reducing the radius by 1.</p>
+      <br />
+      <statline Name="RechargeRate" DisplayName="Ambient light recharge rate" />
+    </description>
+    <UITile Tile="Abilities/abil_ambient_light_toggle_off.bmp" Foreground="y" Detail="C" />
+		<UITile Tile="Abilities/abil_ambient_light_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandMassMind">
+    <description>
+      <p>Refreshes all mental mutations.</p>
+      <p>Each use attracts slightly more attention from psychic interlopers.</p>
+      <br />
+      <statline Name="CooldownNoWillpower" DisplayName="Cooldown" />
+      <p>Cooldown is not affected by Willpower.</p>
+    </description>
+    <UITile Tile="Mutations/mass_mind.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandMentalMirror">
+    <description>
+      <p>When you suffer a mental attack while Mental Mirror is off cooldown, you gain +<stat Name="BonusMA" /> MA. If the attack then fails to penetrate your MA, it's reflected back at your attacker.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/mental_mirror.bmp" Foreground="g" Detail="y" />
+  </ability>
+  <ability Command="CommandPrecognition">
+    <description>
+      <p>You peer into your near future.</p>
+      <br />
+      <p>You may activate this power and then later revert to the point in time when you activated it.</p>
+      <br />
+      <statline Name="Duration" DisplayName="Duration between use and reversion" />
+      <statline Name="Cooldown" />
+    </description>    
+    <UITile Tile="Mutations/precognition.bmp" Foreground="Y" Detail="M" />
+  </ability>
+  <ability Command="CommandPrecognitionRevert">
+    <description>
+      <p>Reverts an active precognitive vision to the point in time when the vision began.</p>      
+    </description>
+    <UITile Tile="Abilities/abil_end_vision.bmp" Foreground="y" Detail="M" />
+  </ability>
+  <ability Command="CommandPsychometryMenu">
+    <description>
+      <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
+      <br />
+      <p>Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
+      <p>Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" />.</p>
+      <br />
+      <p>To use Psychometry, interact with an artifact and then choose 'read history with Psychometry'.</p>
+    </description>
+    <UITile Tile="Mutations/psychometry.bmp" Foreground="C" Detail="W" />    
+  </ability>
+  <ability Command="CommandPyrokinesis">
+		<description>
+			<p>You heat a nearby area with your mind, dealing damage and setting things on fire for 3 rounds.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
+			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
+			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
+			<statline Name="Cooldown" Unit="round" />
+		</description>
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" />
+  </ability>  
+  <ability Command="CommandSpaceTimeVortex">
+    <description>
+      <p>You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.</p>
+      <br />
+      <p>Summons a vortex that swallows everything in its path.</p>
+      <p>You may enter the vortex to teleport to a random location in Qud.<stat Name="BonusDuration" /></p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/spacetime_vortex.bmp" Foreground="B" Detail="m" />
+  </ability>
+  <ability Command="CommandStunningForce">
+		<description>
+			<p>You invoke a concussive force in a nearby area. Creatures are pushed away from the center of blast, stunned, and dealt crushing damage in up to 3 increments.</p>
+			<br />
+			<statline Name="Range" />
+			<statline Name="Area" />
+			<statline Name="DamageIncrement" DisplayName="Damage increment" />				
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandSunderMind">
+    <description>
+      <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
+      <br />
+      <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
+      <p>Taking any action other than passing the turn will break the connection.</p>
+      <p>Each round you make a mental attack vs MA.</p>
+      <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
+      <br />
+      <statline Name="DamageIncrement" DisplayName="Damage increment" />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
+    <UITile Tile="Mutations/sunder_mind.bmp" Foreground="w" Detail="R" />
+  </ability>        
+  <ability Command="CommandTelepathy">
+		<description>
+			<p>You may communicate with others through the psychic aether.</p>
+			<br />
+			<p>Chat with anyone in vision.</p>
+			<p>Takes you much less time to issue orders to companions.</p>
+		</description>
+		<UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
+  </ability>
+  <ability Command="CommandTeleport">
+		<description>
+			<p>You teleport to a nearby location.</p>
+			<br />
+			<p>Teleport to a random location within a designated area.</p>
+			<statline Name="UncertaintyRadius" DisplayName="Uncertainty radius" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+  </ability>
+	<ability Command="CommandLeaderTeleport">
+		<description>
+			<p>You teleport to a nearby location near your leader.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+	</ability>
+  <ability Command="CommandTeleportOther">
+		<description>
+			<p>You teleport an adjacent creature to a random nearby location.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/teleport_other.bmp" Foreground="B" Detail="Y" />
+  </ability>
+  <ability Command="CommandTemporalFugue">
+		<description>
+			<p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
+			<br />
+			<statline Name="Copies" />
+			<statline Name="Duration" />		
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="G" />
+  </ability>
+  <ability Command="CommandQuantumFugue">
+    <!-- todo:jason -->
+    <description>
+      <p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
+      <br />
+      <p>Inhabit the body of the healthiest copy when the effect expires.</p>
+      <statline Name="Copies" />
+      <statline Name="Duration" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="M" />
+  </ability>
+  <ability Command="CommandTimeDilation">
+		<description>
+			<p>You distort time around your person in order to slow down your enemies.</p>
+			<br />
+			<p>Creatures within <stat Name="Range" /> spaces are slowed according to how close they are to you.</p>
+			<p>Distance 1: creatures receive a <stat Name="QuicknessPenalty1" />% Quickness penalty</p>
+			<p>Distance 4: creatures receive a <stat Name="QuicknessPenalty4" />% Quickness penalty</p>
+			<p>Distance 7: creatures receive a <stat Name="QuicknessPenalty7" />% Quickness penalty</p>
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Mutations/time_dilation.bmp" Foreground="y" Detail="m" />
+  </ability>
+  <ability Command="CommandWillForceStrength">
+		<description>
+			<p>Through sheer force of will, you perform uncanny physical feats.</p>
+			<br />
+			<p>Augment your Strength attribute by an amount equal to twice your Ego bonus.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="Strength bonus" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_strength.bmp" Foreground="C" Detail="R" />
+  </ability>
+  <ability Command="CommandWillForceAgility">
+		<description>
+			<p>Through sheer force of will, you perform uncanny physical feats.</p>
+			<br />
+			<p>Augment your Agility attribute by an amount equal to twice your Ego bonus.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="Agility bonus" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_agility.bmp" Foreground="C" Detail="G" />
+  </ability>
+  <ability Command="CommandWillForceToughness">
+		<description>
+			<p>Through sheer force of will, you perform uncanny physical feats.</p>
+			<br />
+			<p>Augment your Toughness attribute by an amount equal to twice your Ego bonus.</p>
+      <br />
+			<statline Name="Bonus" DisplayName="Toughness bonus" />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_boost_toughness.bmp" Foreground="C" Detail="B" />
+  </ability>
+  <ability Command="CommandSpitAcid">
+		<description>
+			<p>You spit a puddle of corrosive acid.</p>
+			<br />
+			<p>Covers the area in acidic slime.</p>
+			<statline Name="Area" />
+			<statline Name="Range" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandBelchUrchins">
+		<description>
+			<p>You belch forth various urchins in a nearby area.</p>
+			<br />			
+			<statline Name="Amount" DisplayName="Number of urchins" />
+			<statline Name="Range" />
+			<statline Name="Radius" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_belch.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBurrow">
+    <description>
+      <p>You can travel underground by burrowing.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_burrow.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandDecarbonizer">
+    <description>
+      <p>You extract carbon from living material.</p>
+      <br />
+      <p>Shoots a beam after a 3-round warmup that dismembers the limbs of its targets.</p>
+      <br />
+      <statline Name="BeamDistance" DisplayName="Beam distance" Unit="space" />   
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_decarbonize.bmp" Foreground="r" Detail="R" />
+  </ability>
+  <ability Command="CommandScintillate">
+    <description>
+      <p>You confuse nearby hostile creatures per Confusion rank <stat Name="ConfusionRank"/>.</p>
+      <br />
+      <p>You can't act while scintillating.</p>
+      <br />
+      <statline Name="ConfusionRank" DisplayName="Confusion rank" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_scintillate.bmp" Foreground="W" Detail="Ma" />
+  </ability>  
+  <ability Command="CommandFearAura">
+    <description>
+      <p>You scare creatures around you.</p>
+      <br />
+      <p>You cause adjacent creatures to flee in terror.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_fear.bmp" Foreground="w" Detail="G" />
+  </ability>
+  <ability Command="CommandStoneGaze">
+    <description>
+      <p>You turn things to stone with your gaze.</p>
+      <br />
+      <p>Shoots a beam after a 3-round warmup that tourns your target to stone.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="y" Detail="Y" />
+  </ability>
+  <ability Command="CommandCrungleGaze">
+    <description>
+      <p>You provoke waking dreams with your gaze.</p>
+      <br />
+      <p>Shoots a beam after a 3-round warmup that sends your target to a waking dream.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="b" Detail="B" />
+  </ability>
+  <ability Command="CommandIrisdualBeam">
+    <description>
+      <p>You molt power beams across the spectrum of light and matter.</p>
+      <br />
+      <p>Fires <stat Name="Beams" /> beams at random enemies every round for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="m" Detail="W" />
+  </ability>
+  <ability Command="CommandInfiltrate">
+    <description>      
+      <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_infiltrate.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandMagneticPulse">
+    <description>      
+      <p>After a one-round warmup, you emit a pulse with radius <stat Name="Radius" /> that attempts to pull metal objects toward you, including gear equipped on creatures.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_magnetic_pulse.bmp" Foreground="y" Detail="r" />
+  </ability>
+  <ability Command="CommandMassiveCharge">
+    <description>      
+      <p>After a one-round warmup, you launch into a destructive charge, destroying walls and pushing creatures in your path.</p>
+      <br />
+      <statline Name="Distance" DisplayName="Charge distance" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_charge.bmp" Foreground="R" Detail="Y" />
+  </ability>
+	<ability Command="CommandSlog">
+		<description>
+      <p>You spew a pool of liquid from your space into a nearby area.</p>
+      <br />            
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="KnockdownChance" DisplayName="Chance to knock opponents down" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="G" />
+	</ability>
+  <ability Command="CommandSpinWeb">        
+    <description>
+      <p>You spin sticky silk webs.</p>
+      <br />
+      <p>While spinning, you leave webs in your wake as you move.</p>
+      <br />
+      <statline Name="SpinDuration" Unit="move action" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
+		<UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandSpinSimpleWeb">
+    <description>
+      <p>You spin sticky silk webs.</p>
+      <br />
+      <p>While spinning, you leave webs in your wake as you move.</p>
+      <br />
+      <statline Name="SpinDuration" Unit="move action" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
+    <UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandStickyTongue">
+    <description>
+      <p>After a one-round warmup, you pull the nearest creature toward you with your tongue.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_tongue.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandWaveformWorm">
+    <description>
+      <p>You dash in a direction, dealing damage to creatures you pass through.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_waveform_dash.bmp" Foreground="g" Detail="G" />
+  </ability>
+  <ability Command="CommandBreatherBase">
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_ConfusionBreather">
+    <description>
+      <p>You breathe confusion gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="b" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_CorrosiveBreather">
+    <description>
+      <p>You breathe corrosive gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_FireBreather">
+    <description>
+      <p>You breathe fire.</p>
+      <br />
+      <statline Name="Damage" />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="R" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_IceBreather">
+    <description>
+      <p>You breathe ice.</p>
+      <br />
+      <statline Name="Damage" />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="C" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_NormalityBreather">
+    <description>
+      <p>You breathe normality gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="K" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_PoisonBreather">
+    <description>
+      <p>You breathe poison gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="G" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_ShameBreather">
+    <description>
+      <p>You breathe shame gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="y" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_SleepBreather">
+    <description>
+      <p>You breathe sleep gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandBreathe_StunBreather">
+    <description>
+      <p>You breathe stun gas.</p>
+      <br />
+      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
+      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="c" Detail="W" />
+  </ability> 
+  <ability Command="CommandReleaseAdrenaline">
+    <description>
+      <p>You increase your body's adrenaline flow for <stat Name="Duration" />.</p>
+      <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" /> rank.</p>
+      <br />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/adrenal_control.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandDigUp">
+    <description>You dig a passage up.</description>
+    <UITile Tile="Tiles2/sw_stairsup.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandDigDown">
+    <description>You dig a passage down.</description>
+    <UITile Tile="Tiles2/sw_stairsdown.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandToggleBurrowingClaws">
+    <description>
+      <p>You bear spade-like claws that can burrow through the earth.</p>
+      <br />
+      <statline Name="WallPenetration" DisplayName="Claw penetration vs. walls" />
+      <p>Claws destroy walls after 4 penetrating hits.</p>      
+    </description>
+    <UITile Tile="Abilities/abil_burrowing_claws_toggle_off.bmp" Foreground="r" Detail="y" />
+		<UITile Tile="Abilities/abil_burrowing_claws_toggle_on.bmp" Foreground="R" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandTightenCarapace">
+    <description>You can tighten your <stat Name="CarapaceName" /> to double its AV bonus at a -2 DV penalty as long as you remain still.</description>
+    <UITile Tile="Mutations/carapace.bmp" Foreground="y" Detail="g" />
+  </ability>
+  <ability Command="CommandDischarge">
+    <description>
+      <p>Discharges all held electrical charge for 1d4 damage per <stat Name="DischargeChunk" /> charge.</p>
+      <p>Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge.</p>
+      <p>Must have at least <stat Name="DischargeChunk" /> charge to activate.</p>
+      <statline Name="CurrentCharge" DisplayName="Current charge" />      
+    </description>
+    <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W" />
+  </ability>
+  <ability Command="CommandToggleProvideCharge">
+    <description>You power equipped devices that have integrated power systems.</description>
+    <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W" />
+		<UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandElectromagneticPulse">
+    <description>
+      <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
+      <br />
+      <statline Name="Area" Unit="centered around yourself" />
+      <statline Name="Duration" DisplayName="Disabled duration" Unit="rounds" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/electromagnetic_pulse.bmp" Foreground="W" Detail="b" />
+  </ability>
+  <ability Command="CommandFlamingRay">
+    <description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/flaming_ray.bmp" Foreground="w" Detail="R" />
+  </ability>
+  <ability Command="CommandFrostWebs">
+    <description>
+      <p>You fill a nearby area with frosty webs.</p>
+      <br />      
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/spinnerets.bmp" Foreground="C" Detail="B" />
+  </ability>  
+  <ability Command="GasGenerationCommandSleepGas">
+    <description>
+      <p>You release a burst of sleep gas around yourself</p>
+      <br />
+      <p>Releases sleep gas for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="w" Detail="Y" />
+		<UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />		
+  </ability>
+  <ability Command="GasGenerationCommandNormalityGas">
+    <description>
+      <p>You release a burst of normality gas around yourself</p>
+      <br />
+      <p>Releases normality gas for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="K" Detail="y" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="K" Detail="y" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandAcidGas">
+    <description>
+      <p>You release a burst of corrosive gas around yourself</p>
+      <br />
+      <p>Releases corrosive gas for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="G" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="G" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandPlasma">
+    <description>
+      <p>You release a burst of plasma around yourself</p>
+      <br />
+      <p>Releases plasma for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="G" Detail="Y" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="G" Detail="Y" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandDefoliantGas">
+    <description>
+      <p>You release a burst of defoliant around yourself</p>
+      <br />
+      <p>Releases defoliant for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="W" Detail="w" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="W" Detail="w" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandPoisonGas">
+    <description>
+      <p>You release a burst of poison gas around yourself</p>
+      <br />
+      <p>Releases poison gas for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="k" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="k" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandFungicideGas">
+    <description>
+      <p>You release a burst of fungicide around yourself</p>
+      <br />
+      <p>Releases fungicide for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="M" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="M" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandConfusionGas">
+    <description>
+      <p>You release a burst of confusion gas around yourself</p>
+      <br />
+      <p>Releases confusion gas for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="b" Detail="c" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="b" Detail="c" State="ToggleOn" />
+  </ability>
+  <ability Command="GasGenerationCommandGlitterGas">
+    <description>
+      <p>You release a burst of glitter around yourself</p>
+      <br />
+      <p>Releases glitter for <stat Name="Duration" />.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="C" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="C" State="ToggleOn" />
+  </ability>
+  
+  <ability Command="CommandSpitLiquid">
+    <description>
+      <p>You spit a puddle of <stat Name="Liquid" />.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="W" />
+  </ability>
+  <ability Command="CommandMetamorphosis">
+    <description>
+      <p>You assume the form of any creature you touch.</p>
+      <br />
+      <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/metamorphosis.bmp" Foreground="w" Detail="G" />
+  </ability>  
+	<ability Command="CommandEndMetamorphosis">
+    <description>You stop assuming this creature's form.</description>
+    <UITile Tile="Abilities/abil_end_metamorphosis.bmp" Foreground="w" Detail="r" />
+  </ability>    
+  <ability Command="CommandTogglePhase">              
+		<description>
+			<p>You may phase through solid objects for brief periods of time.</p>
+      <br />
+			<statline Name="Duration"></statline>
+			<statline Name="Cooldown"></statline>
+		</description>
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+  </ability>
+  <ability Command="CommandBask">
+    <description>
+      <p>You bask in sunlight and absort the sun's nourishing rays instead of eating a meal.</p>
+      <br />
+      <p>You gain a special metabolizing effect for <stat Name="DurationDay" />.</p>
+      <br />
+      <statline Name="BonusRegen" DisplayName="Bonus to natural healing rate"/>
+      <statline Name="BonusQuickness" DisplayName="Quickness bonus" />
+    </description>  
+    <UITile Tile="Mutations/photosynthetic_skin.bmp" Foreground="g" Detail="W" />
+  </ability>
+  <ability Command="CommandQuillFling">
+    <description>
+      <p>You expel 10% of your <stat Name="Quills" /> in a burst around yourself.</p>
+      <p>You regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round.</p>
+      <p>If you drop below half your <stat Name="Quills" />, you lose <stat Name="AVPenalty"/> AV.</p>
+      <br />
+      <p><stat Name="QuillPen" /></p>
+      <p><stat Name="QuillDamage" /></p>
+    </description>  
+    <UITile Tile="Mutations/quills.bmp" Foreground="r" Detail="W" />
+  </ability>
+  <ability Command="CommandSpitSlime">
+    <description>
+      <p>You produce a viscous slime that you can spit at things.</p>
+      <br />
+      <p>Covers an area with slime.</p>
+      <statline Name="Range" />
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="W" />
+  </ability>    
+  <ability Command="CommandSting">
+    <description>
+      <p>You strike with your stinger, automatically hitting, penetrating, and applying your <stat Name="VenomType" /> venom.</p>      
+      <br />
+      <statline Name="StingerPen" DisplayName="Stinger penetration" />
+      <statline Name="StingerDamage" DisplayName="Stinger damage" />
+      <p><switch Name="VenomType">
+        <case Value="paralyzing">Venom paralyzes opponents for <stat Name="Duration" />.</case>
+        <case Value="confusing">Venom confuses opponents for <stat Name="Duration" />.</case>
+        <case Value="poisonous">Venom poisons opponents for <stat Name="Duration" />.</case>
+      </switch></p>
+      <statline Name="Cooldown" />
+    </description>  
+    <UITile Tile="Mutations/stinger.bmp" Foreground="w" Detail="W" />
+  </ability>
+	<ability Command="CommandRepellingForce">
+    <description>
+      <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
+      <br />
+      <p>Creatures are pushed away from center of blast.</p>      
+      <statline Name="Area" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_repel.bmp" Foreground="W" Detail="g" />
+	</ability>    
+  <ability Command="CommandFreezingRay">
+    <description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+  </ability>
+  <ability Command="CommandPowerSwitch">
+	<!-- UITile is set by code to be the tile of the item the switch is on. -->
+	<description>
+		<stat Name="ItemDescription" />
+	</description>
+  </ability>
+	<ability Command="CommandFreezeBreath">
+		<description>
+      <p><stat Name="EmitText" /></p>
+      <br />
+      <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+      <statline Name="Damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+	</ability>
+  <ability Command="CommandDig">
+    <description>Automatically digs from your location to a target location.</description>
+    <UITile Tile="Abilities/abil_dig.bmp" Foreground="w" Detail="Y" />
+  </ability>
+  <ability Command="CommandToggleRunning">
+		<description>
+      <p>You move fast <switch Name="PowerSkate"><case Value="true">and leave behind a fiery exhaust</case><default>for a short duration</default></switch>.</p>  
+      <br />
+      <p><switch Name="Multipler"><case Value="100">Double</case><case Value="200">Triple</case><default>+<stat Name="Multiplier" />%</default></switch> your move speed for <switch Name="PowerSkate"><case Value="true">until you run out of fuel</case><default><stat Name="Duration" /></default></switch>.</p>
+      <switch Name="DV"><case Value="0"></case><default><p><stat Name="DV" /> DV</p></default></switch>
+      <p>-10 to hit in melee combat.</p>
+      <switch Name="MissileAccuracy">
+        <case Value="Pistol"><p>Reduced accuracy with missile weapons, except pistols.</p></case>
+        <case Value=""><p>Reduced accuracy with missile weapons.</p></case>
+      </switch>
+      <p>Sprinting ends early if you take a physical action other than move or pass.</p>			
+      <br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_sprint_toggle_off.bmp" Foreground="w" Detail="y" />
+    <UITile Tile="Abilities/abil_sprint_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandToggleTrashRifling">
+		<description>
+      <p>You rifle through trash, with a <switch Name="RiflingSkills">
+        <case Value="TrashDivining"><stat Name="Chance" />% chance to piece together clues and learn a random secret</case>
+        <case Value="Scavenger">chance to scavenge scrap from the pile</case>
+        <case Value="Scavenger,TrashDivining">chance to scavenge scrap from the pile and a <stat Name="Chance" />% chance to piece together clues and learn a random secret</case>
+        </switch>.</p>
+    </description>
+		<UITile Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="b" Detail="y" />
+		<UITile Tile="Abilities/abil_trash_toggle_on.bmp" Foreground="b" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandAcrobaticsJump">
+    <UITile Tile="Abilities/abil_jump.bmp" Foreground="g" Detail="G" />
+		<description>
+			<p><switch Name="IsRangeIncreased"><case Value="true">You <switch Name="Rocket"><case Value="true">rocket </case></switch>jump into an unoccupied space within range <stat Name="MinimumRange" />-<stat Name="Range" />.</case>
+      <default>You <switch Name="Rocket"><case Value="true">rocket </case></switch>jump into an unoccupied space <stat Name="Range" /> spaces away.</default></switch></p>
+      <switch Name="CanJumpOverCreatures">
+        <case Value="true"><p>You can jump over creatures.</p></case>
+        <default><p>You cannot jump over creatures.</p></default>
+      </switch>      
+		</description>
+    <tag Name="Skill">Acrobatics</tag>
+  </ability>
+  <ability Command="CommandAxeBerserk">
+    <description>
+      <p>You enter a blood frenzy, and for <stat Name="Duration" /> your chance to dismember with axe attacks is 100%.</p>
+      <p>Cannot use if Dismember is on cooldown, and using Berserk puts Dismember on cooldown.</p>
+      <p>Must be wielding an axe to activate.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_berserk.bmp" Foreground="r" Detail="R" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandToggleDecapitate">
+    <description>
+      <p>Heads are added to the list of possible limbs you can dismember.</p>
+      <p>Chopping off the only head of a creature kills them instantly.</p>
+      <p>If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn; Toughness 35 save).</p>
+    </description>
+    <UITile Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandDismember">
+    <description>
+      <p>You make an axe attack against an opponent. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding.</p>
+      <br />
+      <statline Name="BleedDamage" DisplayName="Bleed damage" />
+      <statline Name="BleedSave" DisplayName="Bleed save" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_dismember.bmp" Foreground="W" Detail="r" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandAxeHookAndDrag">
+    <description>
+      <p>You grab an opponent's limb with the heel of your axe.</p>
+      <p>If successful, whenever you move, you pull your opponent with you and you make a free attack with your axe.</p>
+      <p>Your opponent gets a chance to resist the move and a chance to break free at the start of their turn.</p>      
+      <br />
+      <statline Name="DurationSpecial" />
+      <statline Name="ResistSave" DisplayName="Resist movement / break free save" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_hook_and_drag.bmp" Foreground="W" Detail="G" />
+    <tag Name="Skill">Axe</tag>
+  </ability>
+  <ability Command="CommandButcherToggle">
+    <description>You butcher corpses you move over.</description>
+    <UITile Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_butcher_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+    <tag Name="Skill">CookingAndGathering</tag>
+  </ability>
+  <ability Command="CommandHarvestToggle">
+    <description>You harvest plants you move over.</description>
+    <UITile Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="g" />
+    <UITile Tile="Abilities/abil_harvest_toggle_on.bmp" Foreground="Y" Detail="g" State="ToggleOn" />
+    <tag Name="Skill">CookingAndGathering</tag>
+  </ability>
+  <ability Command="CommandFloorSmash">
+    <description>
+      <p>After a 3-round warmup, you launch a slab of fulcrete at the ground, dealing damage and creating a pit in the target square, with a chance for additional pits in adjacent squares.</p>      
+      <br />
+      <statline Name="Range" />            
+      <statline Name="Damage" />
+      <statline Name="AdditionalDirectHitDamage" DisplayName="Additional direct hit damage" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_catapult.bmp" Foreground="C" Detail="R" />
+  </ability>
+  <ability Command="CommandSnapjawHowl">
+    <description>
+      <p>You howl and send nearby snapjaws into a frenzy.</p>
+      <br />
+      <statline Name="Radius" DisplayName="Radius of effect" />
+      <statline Name="Duration" />      
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_howl.bmp" Foreground="w" Detail="C" />
+  </ability>
+  <ability Command="CommandSubmerge">
+    <description>You submerge yourself in a body of water.</description>
+    <UITile Tile="Abilities/abil_submerge.bmp" Foreground="B" Detail="W" />
+  </ability>
+  <ability Command="CommandConk">
+    <description>
+      <p>You make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds.</p>
+      <p>Dazing a dazed opponent stuns them.</p>
+      <p>Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage).</p>      
+      <br />            
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_conk.bmp" Foreground="W" Detail="B" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandCudgelSlam">
+    <description>
+      <p>You make an attack with a cudgel at an adjacent opponent with +1 to your penetration roll.</p>
+      <p>If you hit, you slam your opponent backwards up to <stat Name="Distance" /> spaces, pushing other creatures and breaking through walls if their AVs are less than 5 times your strength modifier.</p>
+      <p>Opponents who get pushed are stunned for 1 round plus an additional round for each space pushed.</p>
+      <p>Opponents who are pushed through or against walls take extra weapon damage for each wall.</p>
+      <p>Gigantic opponents don't get pushed but are still stunned for 1 round.</p>
+      <p>Destroys a wall or door if its AV is under 5 times your Strength modifier.</p>      
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_slam.bmp" Foreground="W" Detail="w" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandSmashUp">
+    <description>
+      <p>For <stat Name="Duration" />, your chance to daze with cudgel attacks is 100% and Slam has no cooldown.</p>
+      <p>Cannot use if Slam is on cooldown, and using Demolish puts Slam on cooldown.</p>
+      <p>Must be wielding a cudgel to activate.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_demolish.bmp" Foreground="w" Detail="R" />
+    <tag Name="Skill">Cudgel</tag>
+  </ability>
+  <ability Command="CommandFlurry">
+    <description>
+      <p>You make an attack with every weapon-wielding limb, including extra limbs granted by mutation or technology.</p>      
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_flurry.bmp" Foreground="W" Detail="g" />
+    <tag Name="Skill">Multiweapon_Fighting</tag>
+  </ability>  
+  <ability Command="CommandStaunchWounds">
+      <UITile Tile="Abilities/abil_staunch_wounds.bmp" Foreground="y" Detail="R" />
+  </ability>
+  <ability Command="CommandSingleWeaponFighting">
+		<description>You don't make offhand attacks in exchange for mastery with a single weapon.</description>
+		<UITile Tile="Abilities/abil_single_weapon_fighting_toggle_off.bmp" Foreground="W" Detail="y" />
+    <UITile Tile="Abilities/abil_single_weapon_fighting_toggle_on.bmp" Foreground="W" Detail="Y" State="ToggleOn" />
+    <tag Name="Skill">SingleWeaponFighting</tag>
+  </ability>
+  <ability Command="CommandHeavyWeaponsSweep">
+    <description>
+      <p>You fire <stat Name="Shots" /> shots with your heavy weapon, sweeping over a <stat Name="ConeWidth" /> degree cone. Your heavy weapon is reloaded before each shot.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_sweep.bmp" Foreground="C" Detail="r" />
+    <tag Name="Skill">HeavyWeapons</tag>
+  </ability>
+  <ability Command="CommandAggressiveStance">    
+    <description>
+      <p>While wielding a long blade in your primary hand, you gain +<stat Name="PenBonus" /> to your penetration rolls but -<stat Name="HitPenalty" /> to hit.</p>
+      <br />
+      <p>Stances may also affect other skills.</p>
+    </description>
+    <UITile Tile="Abilities/abil_aggressive_stance_toggle_off.bmp" Foreground="y" Detail="r" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDefensiveStance">
+    <description>
+      <p>While wielding a long blade in your primary hand, you gain +<stat Name="DVBonus" /> DV.</p>
+      <br />
+      <p>Stances may also affect other skills.</p>
+    </description>
+    <UITile Tile="Abilities/abil_defensive_stance_toggle_off.bmp" Foreground="y" Detail="b" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDeathblow">
+    <description>
+      <p>For the next <stat Name="Duration" />, Lunge and Swipe have no cooldown.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_engarde.bmp" Foreground="Y" Detail="W" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandDuelingStance">
+    <description>
+      <p>While wielding a long blade in your primary hand, you gain +<stat Name="HitBonus" /> to hit.</p>
+      <br />
+      <p>Stances may also affect other skills.</p>
+    </description>
+    <UITile Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="g" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandLunge">
+    <description>      
+      <p>{{W|Aggressive stance}}: Lunges through an empty space at an opponent and attacks with +2 to your penetration roll. You must must through the empty space.</p>
+      <br />
+      <p>{{W|Defensive stance}}: Attacks an opponent then lunges backward 2 spaces.</p>
+      <br />
+      <p>{{W|Dueling stance}}: Attacks an opponent with +1 to your penetration roll. The attack is guaranteed to hit and penetrate at least once.</p>
+      <br />
+      <p>Must be wielding a long blade in your primary hand to use Lunge.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_lunge.bmp" Foreground="W" Detail="C" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandSwipe">
+    <description>
+      <p>{{W|Aggressive stance}}: Makes an attack against all adjacent opponents.</p>
+      <br />
+      <p>{{W|Defensive stance}}: Pushes all adjacent creatures back 1 space and attempts to trip oponents. (Strength / Agility save; difficulty 30)</p>
+      <br />
+      <p>{{W|Dueling stance}}: Attacks an opponent and attempts to disarm them (Strength save; difficulty 25 + Agility modifier). The attack is guaranteed to hit and penetrate at least once.</p>
+      <br />
+      <p>Must be wielding a long blade in your primary hand to use Lunge.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_swipe.bmp" Foreground="W" Detail="m" />
+    <tag Name="Skill">LongBlades</tag>
+  </ability>
+  <ability Command="CommandPersuasionBerate">
+    <description>
+      <p>You shame a nearby creature, giving it -4 to DV, to-hit, Ego, and Willpower, and -10% to Quickness.</p>
+      <br />
+      <statline Name="Duration" />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="r" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandIntimidate">
+    <description>
+      <p>You terrify adjacent, hostile creatures into fleeing from you for <stat Name="Duration" />.</p>
+      <br />
+      <p>Mental attack vs. creatures with mind.</p>
+      <br />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandPersuasionMenacingStare">
+    <description>
+      <p>You stare down an opponent and send them fleeing in terror.</p>
+      <br />
+      <p>Mental attack vs. creatures with mind.</p>
+      <br />
+      <statline Name="Range" />
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_menacing_stare.bmp" Foreground="w" Detail="M" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandProselytize">
+    <description>
+      <p>You persuade an intelligent creature to join you.</p>
+      <br />
+      <p>Ego + character level attack vs. MA + character level</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="G" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandRebukeRobot">
+		<description>
+			<p>You rebuke a robot into wandering away or joining you.</p>
+			<br />			
+			<p>Ego-based attack vs. a robot.</p>			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_rebuke_robot.bmp" Foreground="y" Detail="C" />
+    <tag Name="Skill">Persuasion</tag>
+  </ability>
+  <ability Command="CommandToggleAkimbo">
+		<description>Whenever you make a ranged attack while wielding multiple guns, you fire a shot with each of them.</description>
+		<UITile Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="C" />
+    <tag Name="Skill">Pistol</tag>
+  </ability>
+  <ability Command="CommandPistolEmptyTheClips">
+		<description>
+			<p>Firing a pistol only takes half a round instead of a full round.</p>			
+			<br />
+			<statline Name="Duration" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_empty_the_clips.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Pistol</tag>
+  </ability>
+  <ability Command="CommandMarkTarget">
+		<description>
+			<p>You spend a turn to draw a bead on a target and mark it.</p>
+			<br />
+			<p>Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy.</p>
+			<br />
+			<p>You may only mark one target at a time.</p>
+			<br />
+			<p>Targets get unmarked if you lose vision of them.</p>			
+		</description>
+		<UITile Tile="Abilities/abil_mark_target.bmp" Foreground="r" Detail="R" />
+    <tag Name="Skill">Rifles</tag>
+  </ability>
+  <ability Command="CommandDisciplineMeditate">
+		<description>
+			<p>While meditating, you regenerate three times as fast, and negative status effects wear out three times as fast.</p>
+			<br />
+			<p>The only action you can take while meditating is Wait.</p>
+			<br />
+			<p>You stop meditating if you take damage in a single round exceeding <stat Name="DamageThreshold" />.</p>
+			<br />
+			<p>If you rest for 10 or more turns, you automatically begin meditating.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_meditate.bmp" Foreground="w" Detail="b" />
+    <tag Name="Skill">Discipline</tag>
+  </ability>
+  <ability Command="CommandShieldWall">
+    <description>
+			<p>For the next three rounds, you automatically block all incoming melee attacks.</p>
+			<br />
+			<p>Cannot be used with bucklers.</p>
+      <statline Name="Cooldown" />
+    </description>
+    <UITile Tile="Abilities/abil_shield_wall.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Shield</tag>
+  </ability>
+  <ability Command="CommandShieldSlam">					
+		<description>
+			<p>You knock an opponent down with your shield and deal them damage.</p>
+      <br />
+      <p>Whenever you charge an opponent with a shield equipped, you get a free Shield Slam attack against them.</p>
+			<br />			
+			<statline Name="Damage" />
+			<statline Name="KnockdownSave" DisplayName="Knockdown save" />
+			<statline Name="Cooldown" />			
+		</description>
+		<UITile Tile="Abilities/abil_shield_slam.bmp" Foreground="C" Detail="R" />
+    <tag Name="Skill">Shield</tag>
+  </ability>
+  <ability Command="CommandHobble">
+		<description>
+			<p>You make an attack with a short blade in your primary hand, looking for a weak spot in your opponent's armor. If you hit, you penetrate exactly once and hobble them.</p>
+			<br />
+			<statline Name="HobbleEffect" DisplayName="Hobble effect" />
+			<statline Name="HobbleDuration" DisplayName="Hobble duration" Unit="round" />			
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_hobble.bmp" Foreground="g" Detail="W" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandToggleRejoinder">
+		<description>Once per round, when an opponent misses you with a melee attack, there's a 40% chance you make a free attack with a short blade you're wielding.</description>
+		<UITile Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="w" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandShank">
+		<description>
+			<p>You make a melee attack with a short blade in either your primary hand (preferred) or offhand. If you hit, the attack gets +2 to penetration rolls for each negative status effect your opponent suffers from.</p>
+			<br />			
+			<statline Name="PrimaryHandCooldown" DisplayName="Primary hand cooldown" Unit="round" />
+			<statline Name="OffhandCooldown" DisplayName="Offhand cooldown" Unit="round" />			
+		</description>
+		<UITile Tile="Abilities/abil_shank.bmp" Foreground="W" Detail="m" />
+    <tag Name="Skill">ShortBlades</tag>
+  </ability>
+  <ability Command="CommandSurvivalCamp">
+		<description>
+			<p>You start a campfire for cooking meals and preserving foods.</p>
+			<br />
+			<p>You can't make camp while in combat.</p>
+		</description>
+		<UITile Tile="Items/sw_campfire.bmp" Foreground="w" Detail="R" />
+    <tag Name="Skill">Survival</tag>
+  </ability>
+  <ability Command="CommandMeleeCharge">
+		<description>
+			<p>You charge forward and make a melee attack with +1 to your penetration roll.</p>
+			<br />
+			<statline Name="Range" Unit="spaces" />
+			<statline Name="Cooldown" />
+		</description>
+		<UITile Tile="Abilities/abil_charge.bmp" Foreground="W" Detail="r" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandTacticsJuke">		
+		<description>
+			<p>You move one space at no action cost, swapping spaces if there's a creature in the target space. </p>
+			<br />
+			<p>You can swap spaces with hostile creatures.</p>
+			<br />
+			<statline Name="Cooldown" />
+		</description>		
+		<UITile Tile="Abilities/abil_juke.bmp" Foreground="b" Detail="B" />
+    <tag Name="Skill">Tactics</tag>
+  </ability>
+  <ability Command="CommandDeployTurret">
+		<description>You deploy a missile weapon as a static turret and supply it with ammo.</description>
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandLayMine">
+		<description>You deploy a grenade as a mine.</description>
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+	</ability>
+  <ability Command="CommandLayMineTimed">
+		<description>You deploy a grenade as a timed bomb.</description>
+		<UITile Tile="Abilities/abil_set_bomb.bmp" Foreground="B" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+	</ability>
+  <ability Command="CommandRechargeObject">
+		<description>You recharge an energy cell or capacitor with tinkering bits.</description>
+		<UITile Tile="Abilities/abil_recharge.bmp" Foreground="C" Detail="W" />
+    <tag Name="Skill">Tinkering</tag>
+  </ability>
+  <ability Command="CommandReleaseVehicle">
+		<description>You exit the pilot seat of the vehicle you're in.</description>
+		<UITile Tile="Abilities/abil_exit_seat.bmp" Foreground="w" Detail="W" />
+  </ability>
+	<ability Command="CommandSeatEject">
+		<description>You and your seated companions are forcefully ejected out of the vehicle you're in.</description>
+		<UITile Tile="Abilities/abil_eject.bmp" Foreground="r" Detail="W" />
+	</ability>
+
+</activatedabilities>

@@ -9,8 +9,6 @@
     5 Misc    
   -->
 
-  <!-- 气体 -->
-
   <!--
 
     ******************
@@ -21,7 +19,7 @@
 
   <object Name="PhysicalObject" Inherits="Object">
     <part Name="Render" DisplayName="[Object]" RenderString="?" RenderLayer="1" RenderIfDark="true" />
-    <part Name="Physics" Category="Miscellaneous" IsReal="true" Solid="false" Weight="1" />
+    <part Name="Physics" Category="杂项" IsReal="true" Solid="false" Weight="1" />
     <part Name="MeleeWeapon" BaseDamage="1d2" Stat="Strength" Skill="Cudgel" />
     <part Name="Commerce" Value="0.01" />
     <part Name="Description" Short="A hideous specimen." />
@@ -341,12 +339,12 @@
   </object>
   
   <object Name="PoisonGas" Inherits="Gas">
-    <part Name="Render" DisplayName="poison gas" />
+    <part Name="Render" DisplayName="有毒气体" />
     <part Name="Gas" GasType="PoisonGas" ColorString="&amp;g" />
     <part Name="GasPoison" />
     <part Name="Description" Short="Plumes of noxious gas stick to the air. They crowd the lungs of wet-blooded creatures who can't extract the displaced oxygen." />
     <tag Name="DynamicObjectsTable:AjiConch" />
-    <tag Name="GasGenerationName" Value="Poison Gas Generation" />
+    <tag Name="GasGenerationName" Value="有毒气体制造" />
     <tag Name="LevelEffectDescription" Value="poison save difficulty and damage" />
     <tag Name="ActivationColorString" Value="&amp;g" />		
   </object>
@@ -452,11 +450,11 @@
   </object>
   
   <object Name="StunGas" Inherits="Gas">
-    <part Name="Render" DisplayName="stun gas" />
+    <part Name="Render" DisplayName="眩晕气体" />
     <part Name="Gas" GasType="StunGas" ColorString="&amp;c^C" />
     <part Name="GasStun" />
     <part Name="Description" Short="The nickel-dew sticks to the air and arrests the transient molecules of migrant-matter." />
-    <tag Name="GasGenerationName" Value="Stun Gas Generation" />
+    <tag Name="GasGenerationName" Value="眩晕气体发生" />
     <tag Name="ActivationColorString" Value="&amp;c" />
     <tag Name="DynamicObjectsTable:AjiConch" />
   </object>
@@ -480,11 +478,11 @@
   </object>
   
   <object Name="ConfusionGas" Inherits="Gas">
-    <part Name="Render" DisplayName="confusion gas" />
+    <part Name="Render" DisplayName="混乱气体" />
     <part Name="Description" Short="Cobalt gas seeps into the nose and disarranges the mind." />
     <part Name="Gas" GasType="ConfusionGas" ColorString="&amp;b^c" />
     <part Name="GasConfusion" />
-    <tag Name="GasGenerationName" Value="Confusion Gas Generation" />
+    <tag Name="GasGenerationName" Value="混乱气体制造" />
     <tag Name="LevelEffectDescription" Value="confusion save difficulty" />
     <tag Name="ActivationColorString" Value="&amp;y" />		
   </object>
