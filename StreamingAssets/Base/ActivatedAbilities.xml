@@ -42,65 +42,67 @@
     <UITile Tile="Abilities/abil_surface.bmp" Foreground="B" Detail="W" />
 		<description>你从藏身之处出现。</description>
   </ability>
+  <!--困难-->
   <ability Command="ActivateFabricateFromSelf">
 		<description>
-			<p>You <stat Name="FabricateVerb" /> <stat Name="An" /><stat Name="FabricateBlueprint" /> from <stat Name="FabricateSource" />.</p>
+			<p>你 <stat Name="FabricateVerb" /> <stat Name="An" /><stat Name="FabricateBlueprint" /> 从 <stat Name="FabricateSource" />.</p>
       <br/>
-			<statline Name="BatchSize" DisplayName="Batch size" />
-			<statline Name="HitpointsPer" DisplayName="Hitpoints per batch" />
+			<statline Name="BatchSize" DisplayName="批量大小" />
+			<statline Name="HitpointsPer" DisplayName="每批次的生命值" />
 			<statline Name="Cooldown" />
 		</description>
 		<UITile Tile="Abilities/abil_fabricate.bmp" Foreground="C" Detail="W" /> 
   </ability>
+
   <ability Command="CommandPlaceMine">
 		<description>
-			<p>You place <stat Name="MineAn" /> <stat Name="MineDisplayName" /> mine.</p>
+			<p>你放置 <stat Name="MineAn" /> <stat Name="MineDisplayName" /> 地雷。</p>
       <br />
-      <statline Name="MineTimer" DisplayName="Timer" Unit="round" HideValue="-1" />
+      <statline Name="MineTimer" DisplayName="定时器" Unit="round" HideValue="-1" />
 			<statline Name="Cooldown" Unit="round" />
 		</description>
 		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" /> 
   </ability>
   <ability Command="CommandRunOver">
 		<description>
-			<p>You charge in a line and run down creatures in your path.</p>
+			<p>你沿直线冲锋，碾压路径上的生物。</p>
       <br />
 			<statline Name="Damage" />
 			<statline Name="Range" />
-			<statline Name="Knockdown" DisplayName="Knockdown save" />
-			<statline Name="Daze" DisplayName="Daze save" />
+			<statline Name="Knockdown" DisplayName="击倒豁免" />
+			<statline Name="Daze" DisplayName="眩晕豁免" />
 		</description>
     <UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B" /> 
   </ability>
   <ability Command="CommandClone">
-		<description>You clone an organic creature.</description>
+		<description>你复制一个有机生物。</description>
 		<UITile Tile="Abilities/abil_clone.bmp" Foreground="r" Detail="W" /> 
   </ability>
   <ability Command="CommandTinkerTurret">
 		<description>
-      <p>You tinker <stat Name="An" /> <stat Name="TurretName" /> in an adjacent space.</p>
+      <p>你修理 <stat Name="An" /> <stat Name="TurretName" /> 在相邻空间</p>
       <br/>
       <statline Name="Cooldown" />
     </description>
 		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
 	</ability>
   <ability Command="CommandEngulf">
-    <description>You engulf an adjacent creature, consuming it alive and potentially more.</description>
+    <description>你吞噬了一个相邻的生物，活活地将其消耗掉，甚至可能更多</description>
     <UITile Tile="Abilities/abil_engulf.bmp" Foreground="G" Detail="W" /> 
   </ability>
   <ability Command="CommandToggleAnchorSpikes">
-		<description>You cannot be forced to move by physical means.</description>
+		<description>你无法被物理手段强迫移动。</description>
 		<UITile Tile="Abilities/abil_anchor_spikes_toggle_off.bmp" Foreground="y" Detail="r" /> 
     <UITile Tile="Abilities/abil_anchor_spikes_toggle_on.bmp" Foreground="Y" Detail="w" State="ToggleOn" />		
   </ability>
   <ability Command="CommandToggleAnomalyFumigator">
-		<description>You emit clouds of normality gas every turn.</description>
+		<description>你每回合都会释放出正常气体的云雾。</description>
     <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_off.bmp" Foreground="y" Detail="w" /> 
     <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" /> 
   </ability>
   <ability Command="CommandCathedraBlackOpal"> 		
 		<description>
-			<p>You sunder spacetime, teleporting to a random location in Qud.</p>
+			<p>你撕裂时空，传送到 Qud 的随机位置。</p>
 			<br />				
 			<statline Name="Cooldown" />
 		</description>						
@@ -108,29 +110,29 @@
   </ability>
   <ability Command="CommandCathedraRuby">
 		<description>
-			<p>You generate a pyrokinesis field around yourself, dealing damage and setting things on fire for 3 rounds.</p>
+			<p>你在自己周围产生一个火焰场，造成伤害并点燃物体，持续 3 回合。</p>
 			<br />				
 			<statline Name="Area" />
-			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
-			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
-			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
+			<statline Name="DamageRound1" DisplayName="回合 1 伤害" />
+			<statline Name="DamageRound2" DisplayName="回合 2 伤害" />
+			<statline Name="DamageRound3" DisplayName="回合 3 伤害" />
 			<statline Name="Cooldown" Unit="round" />
 		</description>
 		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" /> 
   </ability>
   <ability Command="CommandCathedraSapphire">
 		<description>
-			<p>You invoke a concussive force around yourself. Creatures are pushed away from the center of blast, stunned, and dealt crushing damage in up to 3 increments.</p>
+			<p>你在周围召唤出冲击力场。生物会被从爆炸中心推开，晕倒，并受到最多 3 次重击伤害。</p>
 			<br />				
 			<statline Name="Area" />
-			<statline Name="DamageIncrement" DisplayName="Damage increment" />
+			<statline Name="DamageIncrement" DisplayName="伤害增量" />
 			<statline Name="Cooldown" Unit="round" />
 		</description>
 		<UITile Tile="Mutations/stunning_force.bmp" Foreground="g" Detail="G" /> 
   </ability>
   <ability Command="CommandCathedraWhiteOpal"> 
 		<description>
-			<p>You release a burst of glitter around yourself.</p>
+			<p>你在自己周围释放出一阵闪光。</p>
 			<br />				
 			<statline Name="Duration" Unit="turn" />				
 			<statline Name="Cooldown" Unit="round" />
@@ -138,13 +140,13 @@
     <UITile Tile="Items/sw_skin_glitter.bmp" Foreground="M" Detail="Y" />
   </ability>
   <ability Command="CommandToggleFireSuppressionSystem">
-		<description>Automatically discharges flame-retardant gel every round you're on fire.</description>
+		<description>每回合自动释放防火胶，当你着火时生效。</description>
 		<UITile Tile="Abilities/abil_fire_suppression_toggle_off.bmp" Foreground="y" Detail="r" />
 		<UITile Tile="Abilities/abil_fire_suppression_toggle_on.bmp" Foreground="y" Detail="R" />
   </ability>    
   <ability Command="CommandRecomposite">
 		<description>
-			<p>You teleport to any explored space on the map.</p>		
+			<p>你可以传送到地图上任何已探索的区域。</p>		
       <br />		
 			<statline Name="Cooldown" />				
 		</description>
@@ -152,7 +154,7 @@
   </ability>
   <ability Command="CommandInflateAxons">
 		<description>			
-			<p>You gain +<stat Name="QuicknessBonus" /> Quickness for <stat Name="QuicknessDuration" /> rounds, then you become sluggish for 10 rounds.</p>
+			<p>你获得 +<stat Name="QuicknessBonus" /> 速度值，持续 <stat Name="QuicknessDuration" /> 回合，然后变得迟钝，持续 10 回合（-10速度值）。</p>
 			<br />			
 			<statline Name="Cooldown" />
 		</description>
@@ -160,7 +162,7 @@
   </ability>
   <ability Command="CommandEmergencyRecomposite">
 		<description>			
-			<p>You teleport to a random, explored space on the map.</p>
+			<p>你传送到地图上一个随机的已探索区域。</p>
 			<br />
 			<statline Name="Cooldown" />
 		</description>
@@ -168,7 +170,7 @@
   </ability>
   <ability Command="CommandToggleMedassistModule">
     <description>
-      <p>Automatically applies up to 8 loaded injectors when appropriate.</p>
+      <p>在适当的时候自动应用最多 8 个已装载的注射器。</p>
       <br />
       <statline Name="Loadout" />
     </description>
@@ -176,13 +178,13 @@
     <UITile Tile="Abilities/abil_medassist_module_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
   </ability>
   <ability Command="CommandToggleCyberNightVision">
-    <description>You see in the dark.</description>
+    <description>你可以在黑暗中看见。</description>
     <UITile Tile="Abilities/abil_night_vision_toggle_off.bmp" Foreground="y" Detail="g" />
 		<UITile Tile="Abilities/abil_night_vision_toggle_on.bmp" Foreground="Y" Detail="G" />
 	</ability>
   <ability Command="CommandToggleNocturnalApex">
     <description>
-      <p>Gain +<stat Name="AgilityBonus" /> Agility and +<stat Name="MovespeedBonus" /> move speed for <stat Name="Duration" /> rounds.</p>
+      <p>获得 +<stat Name="AgilityBonus" /> 敏捷和 +<stat Name="MovespeedBonus" /> 移动速度，持续 <stat Name="Duration" /> 回合。</p>
       <br />
       <statline Name="Cooldown" />      
     </description>
@@ -190,54 +192,54 @@
   </ability>
   <ability Command="CommandActivateOnboardRecoilerImprinting">
     <description>
-      <p>Imprints onboard recoiler with a location to recoil back to.</p>
+      <p>带有回缩位置的印记载具。</p>
       <br />
-      <statline Name="Location" DisplayName="Current location" />
+      <statline Name="Location" DisplayName="当前位置" />
       <statline Name="Cooldown" />
     </description>
     <UITile Tile="Abilities/abil_imprint.bmp" Foreground="B" Detail="W" />
   </ability>
   <ability Command="CommandActivateOnboardRecoilerTeleporter">
     <description>
-      <p>You teleport back to the programmed location.</p>
+      <p>你传送回预设位置。</p>
       <br />
-      <statline Name="Location" DisplayName="Current location" />
+      <statline Name="Location" DisplayName="当前位置" />
       <statline Name="Cooldown" />
     </description>
     <UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
   </ability>
   <ability Command="CommandTogglePenetratingRadar">
     <description>
-      <p>You gain total visibility in a radius of <stat Name="Radius" /> around you, blocked only by force fields and spacetime anomalies.</p>
+      <p>你在半径为 <stat Name="Radius" /> 的范围内获得完全视野，仅受力场和时空异常的阻碍。</p>
       <br />
     </description>
     <UITile Tile="Abilities/abil_penetrating_radar_toggle_off.bmp" Foreground="B" Detail="y" />
 		<UITile Tile="Abilities/abil_penetrating_radar_toggle_on.bmp" Foreground="B" Detail="Y" />
   </ability>
   <ability Command="CommandTogglePhaseHarmonicModulator">
-    <description>You can interact with both in-phase and out-of-phase objects and creatures.</description>
+    <description>你可以与同相和异相的物体和生物互动。</description>
     <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_off.bmp" Foreground="y" Detail="m" />
     <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_on.bmp" Foreground="Y" Detail="m" State="ToggleOn" />
   </ability>
 	<ability Command="AlterHolographicVisage">
-		<description>You alter your visage and gain +200 reputation with the chosen faction.</description>
+		<description>你改变了你的外貌，获得了与所选阵营的 +200 声望。</description>
 		<UITile Tile="Abilities/abil_alter_visage.bmp" Foreground="C" Detail="B" />
 	</ability>
 	<ability Command="CommandStasisEntangler">		
 		<description>
-			<p>You choose one creature in line of sight. All other creatures are put into stasis fields for <stat Name="Duration" />.</p>
+			<p>你选择视线中的一个生物。所有其他生物被置入静止场，持续时间为 <stat Name="Duration" />。</p>
 			<br />
 			<statline Name="Cooldown" />			
 		</description>
 		<UITile Tile="Items/implant_stasis_entangler.bmp" Foreground="r" Detail="C" />
 	</ability>
 	<ability Command="CommandTogglePhaseAdaptiveScope">
-		<description>When you fire a missile weapon or throw something, your projectile shifts phase to pass through obstacles and reach your target.</description>
+		<description>当你用远程武器射击或投掷物品时，你的投射物会转移相位，以穿透障碍物并抵达目标。</description>
 		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_off.bmp" Foreground="y" Detail="y" />
 		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_on.bmp" Foreground="Y" Detail="y" State="ToggleOn" />
 	</ability>
 	<ability Command="CommandFabricateForceKnife">
-		<description>You fabricate a force knife that deals 1d8 damage, has penetration value equal to its target's armor value, and has +6 throwing range.</description>
+		<description>你制造了一把力量刀，造成 1d8 点伤害，其穿透值等于目标的护甲值，并且投掷范围增加 +6。</description>
 		<UITile Tile="Abilities/abil_fabricate_force_knife.bmp" Foreground="C" Detail="B" />
 	</ability>
 	<ability Command="ProjectStasisField">
