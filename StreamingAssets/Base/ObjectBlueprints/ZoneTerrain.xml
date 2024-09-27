@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version='1.0' encoding='UTF-8'?>
 <objects>
 
   <!--    
@@ -19,495 +19,495 @@
   -->
   
   <object Name="Plant" Inherits="PhysicalObject">
-    <part Name="Render" DisplayName="[Plant]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false" />
-    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="植物" Takeable="false" />
-    <part Name="MentalShield" />
-    <part Name="PlantProperties" />
-    <part Name="NoBleed" />
-    <part Name="Springy" Factor="0.8" />
-    <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Plant" />
-    <tag Name="LivePlant" />
-    <tag Name="BodyType" Value="Bush" />
-    <stag Name="Plank" Value="plank" />
-    <stag Name="Fiber" Value="strip" />
-    <stag Name="FiberMaterial" Value="bark" />
-    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree"></tag>
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+    <part Name="Render" DisplayName="[植物]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false"/>
+    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="植物" Takeable="false"/>
+    <part Name="MentalShield"/>
+    <part Name="PlantProperties"/>
+    <part Name="NoBleed"/>
+    <part Name="Springy" Factor="0.8"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="Plant"/>
+    <tag Name="LivePlant"/>
+    <tag Name="BodyType" Value="Bush"/>
+    <stag Name="Plank" Value="plank"/>
+    <stag Name="Fiber" Value="strip"/>
+    <stag Name="FiberMaterial" Value="bark"/>
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant"/>
   </object>
   <object Name="SolidPlant" Inherits="Plant">
-    <part Name="Render" RenderString="230" ColorString="&amp;w" TileColor="&amp;g" DetailColor="w" Occluding="true" RenderLayer="7" />
-    <part Name="Physics" Weight="6000" Solid="true" Takeable="false" />
-    <tag Name="Wall" />
-    <tag Name="HangingSupport" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" RenderString="230" ColorString="&amp;w" TileColor="&amp;g" DetailColor="w" Occluding="true" RenderLayer="7"/>
+    <part Name="Physics" Weight="6000" Solid="true" Takeable="false"/>
+    <tag Name="Wall"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Tree" Inherits="Plant">
-    <tag Name="Tree" />
-    <tag Name="Class" Value="tree" />
-    <tag Name="BodyType" Value="Tree" />
-    <tag Name="PrimaryLimbType" Value="Arm" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Tree"/>
+    <tag Name="Class" Value="tree"/>
+    <tag Name="BodyType" Value="Tree"/>
+    <tag Name="PrimaryLimbType" Value="Arm"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="SolidTree" Inherits="Tree">
-    <part Name="Render" RenderString="230" ColorString="&amp;w" TileColor="&amp;g" DetailColor="w" Occluding="true" RenderLayer="7" />
-    <part Name="Physics" Weight="6000" Solid="true" Takeable="false" />
-    <tag Name="Wall" />
-    <tag Name="Tree" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" RenderString="230" ColorString="&amp;w" TileColor="&amp;g" DetailColor="w" Occluding="true" RenderLayer="7"/>
+    <part Name="Physics" Weight="6000" Solid="true" Takeable="false"/>
+    <tag Name="Wall"/>
+    <tag Name="Tree"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Shimscale Mangrove Tree_blue" Inherits="SolidTree">
-    <part Name="Render" DisplayName="shimscale mangrove tree" Tile="terrain/sw_mangrove1.bmp" TileColor="&amp;c" Occluding="true" />
-    <part Name="Description" Short="Light peaks through its wet leaves in scattershot, and its roots look like a wax colonnade melted into a maze and resolidified." />
-    <tag Name="PlacementIsSkippable" />
+    <part Name="Render" DisplayName="薄鳞红树林树" Tile="terrain/sw_mangrove1.bmp" TileColor="&amp;c" Occluding="true"/>
+    <part Name="Description" Short="光线透过湿润的叶片散射而出，根系如同融化的蜡柱重新凝固成迷宫。"/>
+    <tag Name="PlacementIsSkippable"/>
   </object>
   <object Name="Shimscale Mangrove Tree" Inherits="SolidTree">
-    <part Name="Render" DisplayName="shimscale mangrove tree" Tile="Terrain/sw_mangrove1.bmp" />
-		<part Name="Description" Short="Light peaks through its wet leaves in scattershot, and its roots look like a wax colonnade melted into a maze and resolidified." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_mangrove1.bmp,Terrain/sw_mangrove2.bmp" />
-    <tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="DynamicObjectsTable:Ruins_Plants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants" />
-    <tag Name="DynamicObjectsTable:Water_Plants" />
-    <tag Name="PlacementIsSkippable" />
+    <part Name="Render" DisplayName="薄鳞红树林树" Tile="Terrain/sw_mangrove1.bmp"/>
+		<part Name="Description" Short="光线透过湿润的叶片散射而出，根系如同融化的蜡柱重新凝固成迷宫。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_mangrove1.bmp,Terrain/sw_mangrove2.bmp"/>
+    <tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="DynamicObjectsTable:Ruins_Plants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
+    <tag Name="DynamicObjectsTable:Water_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
   </object>
   <object Name="Holographic Shimscale Mangrove Tree" Inherits="Shimscale Mangrove Tree">
-    <part Name="Physics" Solid="false" />
-    <part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1" />
-    <intproperty Name="Bleeds" Value="0" />
+    <part Name="Physics" Solid="false"/>
+    <part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1"/>
+    <intproperty Name="Bleeds" Value="0"/>
   </object>
   <object Name="Banana Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="banana tree" RenderString="244" Tile="Terrain/sw_tree_banana_1.bmp" ColorString="&amp;r" TileColor="&amp;g" DetailColor="W" Occluding="true" />
-    <part Name="Description" Short="Fruited hands climb the stalks of the grifter tree. When the light catches on the surface of the exposed corm, Spindle glitter throws it back to the widened grove." />
-    <part Name="Harvestable" OnSuccess="Banana" StartRipeChance="1:50" RipeColor="&amp;W" RipeTileColor="&amp;g" RipeDetailColor="W" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="G" />
-    <tag Name="HangingSupport" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_tree_banana_1.bmp,Terrain/sw_tree_banana_2.bmp,Terrain/sw_tree_banana_3.bmp,Terrain/sw_tree_banana_4.bmp" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
-    <tag Name="DynamicObjectsTable:BananaGrove_Plants" />
+    <part Name="Render" DisplayName="香蕉树" RenderString="244" Tile="Terrain/sw_tree_banana_1.bmp" ColorString="&amp;r" TileColor="&amp;g" DetailColor="W" Occluding="true"/>
+    <part Name="Description" Short="果实累累的手状枝条攀爬在欺诈树的树干上。当光线照射到裸露的球茎表面时，细长的闪光将其反射回宽阔的林地。"/>
+    <part Name="Harvestable" OnSuccess="Banana" StartRipeChance="1:50" RipeColor="&amp;W" RipeTileColor="&amp;g" RipeDetailColor="W" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="G"/>
+    <tag Name="HangingSupport"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_tree_banana_1.bmp,Terrain/sw_tree_banana_2.bmp,Terrain/sw_tree_banana_3.bmp,Terrain/sw_tree_banana_4.bmp"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2"/>
+    <tag Name="DynamicObjectsTable:BananaGrove_Plants"/>
   </object>
   <object Name="Holographic Banana Tree" Inherits="Banana Tree">
-    <removepart Name="Harvestable" />
-    <part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.05" />
-		<tag Name="DynamicObjectsTable:BananaGrove_Plants:Weight" Value="0.2" /> 		
-    <intproperty Name="Bleeds" Value="0" />
+    <removepart Name="Harvestable"/>
+    <part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.05"/>
+		<tag Name="DynamicObjectsTable:BananaGrove_Plants:Weight" Value="0.2"/> 		
+    <intproperty Name="Bleeds" Value="0"/>
   </object>  
   <object Name="Dogthorn Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="dogthorn tree" RenderString="157" ColorString="&amp;G" Tile="terrain/sw_fattree1.bmp" TileColor="&amp;G" DetailColor="w" Occluding="true" />
-    <part Name="Description" Short="A tangled nest of roots spill through the earth. The bark is splintered into pointy spines. The leaves are greasy and stinking." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Hills_FarmablePlants" />
-		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_Plants" />
-    <tag Name="DynamicObjectsTable:Hills_Plants" />
-		<tag Name="DynamicObjectsTable:Mountains_Plants" />
-    <tag Name="PlacementIsSkippable" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="狗刺树" RenderString="157" ColorString="&amp;G" Tile="terrain/sw_fattree1.bmp" TileColor="&amp;G" DetailColor="w" Occluding="true"/>
+    <part Name="Description" Short="根系缠绕成巢状，穿透大地。树皮裂成尖锐的刺。叶片油腻且散发着恶臭。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Hills_FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Plants"/>
+    <tag Name="DynamicObjectsTable:Hills_Plants"/>
+		<tag Name="DynamicObjectsTable:Mountains_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Holographic Dogthorn Tree" Inherits="Dogthorn Tree">
-    <part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Hills_FarmablePlants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants" Value="0.1" />
-		<tag Name="DynamicObjectsTable:DesertCanyon_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Hills_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Mountains_Plants" Value="0.1" />
-		<intproperty Name="Bleeds" Value="0" />
+    <part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Hills_FarmablePlants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:DesertCanyon_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Hills_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Mountains_Plants" Value="0.1"/>
+		<intproperty Name="Bleeds" Value="0"/>
   </object>
   <object Name="Leafless Dogthorn Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="dogthorn tree" RenderString="157" ColorString="&amp;k" Tile="terrain/sw_fattree3.png" TileColor="&amp;k" DetailColor="w" Occluding="false" />
-    <part Name="Description" Short="A tangled nest of roots spill through the earth. The bark is splintered into pointy spines." />
-    <tag Name="HangingSupport" />
-		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="狗刺树" RenderString="157" ColorString="&amp;k" Tile="terrain/sw_fattree3.png" TileColor="&amp;k" DetailColor="w" Occluding="false"/>
+    <part Name="Description" Short="根系错综复杂，蔓延于地表之下。树皮裂成尖锐的刺。"/>
+    <tag Name="HangingSupport"/>
+		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Dogthorn Tree2" Inherits="Leafless Dogthorn Tree">
   </object>
   <object Name="Fracti" Inherits="Plant">
-    <part Name="Render" DisplayName="fractus" RenderString="#" ColorString="&amp;g" Tile="Terrain/sw_fracti1.bmp" DetailColor="y" Occluding="false" RenderLayer="8" />
-    <part Name="Description" Short="A particularly prickly peano patch." />
-    <part Name="Harvestable" OnSuccess="Spine Fruit" OnSuccessAmount="1" StartRipeChance="1:50" RipeColor="&amp;M" RipeTileColor="&amp;g" RipeDetailColor="M" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="y" />
-    <part Name="Fracti" />
-    <stag Name="Plank" Value="strip" />
-    <stag Name="Fiber" Value="strip" />
-    <stag Name="FiberMaterial" Value="fibre" />
-	  <tag Name="Species" Value="fractus" />
-	  <tag Name="Class" Value="succulent" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Saltdunes_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Saltdunes_Plants" />
-    <tag Name="SpawnBlocker"></tag>
+    <part Name="Render" DisplayName="分形棘丛" RenderString="#" ColorString="&amp;g" Tile="Terrain/sw_fracti1.bmp" DetailColor="y" Occluding="false" RenderLayer="8"/>
+    <part Name="Description" Short="一种特别多刺的皮亚诺植物群落。"/>
+    <part Name="Harvestable" OnSuccess="Spine Fruit" OnSuccessAmount="1" StartRipeChance="1:50" RipeColor="&amp;M" RipeTileColor="&amp;g" RipeDetailColor="M" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="y"/>
+    <part Name="Fracti"/>
+    <stag Name="Plank" Value="strip"/>
+    <stag Name="Fiber" Value="strip"/>
+    <stag Name="FiberMaterial" Value="fibre"/>
+	  <tag Name="Species" Value="fractus"/>
+	  <tag Name="Class" Value="succulent"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_Plants"/>
+    <tag Name="SpawnBlocker"/>
   </object>
   <object Name="Fracti2" Inherits="Fracti">
-    <part Name="Render" DetailColor="W" />
-    <part Name="Harvestable" UnripeDetailColor="W" />
+    <part Name="Render" DetailColor="W"/>
+    <part Name="Harvestable" UnripeDetailColor="W"/>
   </object>
   <object Name="Fracti3" Inherits="Fracti">
-    <part Name="Render" DetailColor="w" />
-    <part Name="Harvestable" UnripeDetailColor="w" />
+    <part Name="Render" DetailColor="w"/>
+    <part Name="Harvestable" UnripeDetailColor="w"/>
   </object>
   <object Name="Starapple Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="starapple tree" RenderString="157" ColorString="&amp;R" TileColor="&amp;g" Tile="Terrain/sw_starappletree.bmp" DetailColor="R" Occluding="true" />
-    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:5" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K" />
-    <part Name="Description" Short="Starapples hang from ashen branches, motes of luscious, red light in a bleached tableau." />
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Hills_FarmablePlants" />
-		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants" />				
-    <tag Name="DynamicObjectsTable:Jungle_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_Plants" />
-    <tag Name="DynamicObjectsTable:Hills_Plants" />
-		<tag Name="DynamicObjectsTable:Mountains_Plants" />
-    <tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="PlacementIsSkippable" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="星果木" RenderString="157" ColorString="&amp;R" TileColor="&amp;g" Tile="Terrain/sw_starappletree.bmp" DetailColor="R" Occluding="true"/>
+    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:5" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K"/>
+    <part Name="Description" Short="星果悬挂在灰烬般的枝条上，犹如在一片苍白景象中的美味红光斑点。"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Hills_FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants"/>				
+    <tag Name="DynamicObjectsTable:Jungle_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Plants"/>
+    <tag Name="DynamicObjectsTable:Hills_Plants"/>
+		<tag Name="DynamicObjectsTable:Mountains_Plants"/>
+    <tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Starapple Tree Barathrumite" Inherits="Starapple Tree">
-    <tag Name="CallToArmsCrop"></tag>
+    <tag Name="CallToArmsCrop"/>
   </object>
   <object Name="Starapple Farm Tree" Inherits="Starapple Tree">
-    <part Name="Physics" Owner="Farmers" />
-    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:8" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Physics" Owner="Farmers"/>
+    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:8" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Starapple Farm Ezra" Inherits="Starapple Tree">
-    <part Name="Physics" Owner="Ezra" />
-    <part Name="Harvestable" StartRipeChance="1:1"  />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Physics" Owner="Ezra"/>
+    <part Name="Harvestable" StartRipeChance="1:1"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Starapple Tree Ripe" Inherits="Tree">
-    <part Name="Render" DisplayName="starapple tree" RenderString="157" ColorString="&amp;R" TileColor="&amp;g" Tile="Terrain/sw_starappletree.bmp" DetailColor="R" Occluding="true" />
-    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:1" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K" />
-    <part Name="Description" Short="Starapples hang from ashen branches, motes of luscious, red light in a bleached tableau." />
-    <tag Name="HangingSupport" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="星果木" RenderString="157" ColorString="&amp;R" TileColor="&amp;g" Tile="Terrain/sw_starappletree.bmp" DetailColor="R" Occluding="true"/>
+    <part Name="Harvestable" OnSuccess="Starapple" OnSuccessAmount="1" StartRipeChance="1:1" RipeColor="&amp;R" RipeTileColor="&amp;g" RipeDetailColor="R" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="K"/>
+    <part Name="Description" Short="星果悬挂在灰烬般的枝条上，犹如在一片苍白景象中的美味红光斑点。"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Witchwood Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="witchwood tree" RenderString="157" ColorString="&amp;W" Tile="terrain/sw_talltree1.bmp" TileColor="&amp;W" DetailColor="g" Occluding="true" />
-    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:75" RipeColor="&amp;r" RipeTileColor="&amp;W" RipeDetailColor="r" UnripeColor="&amp;W" UnripeTileColor="&amp;W" UnripeDetailColor="w" />
-    <part Name="Description" Short="Golden fronds unfurl when the desert wind moistens. Pieces of bark, collated into tiny intersecting rings, have been chewed off by wood grazers." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_talltree1.bmp,Terrain/sw_talltree2.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Hills_FarmablePlants" />
-		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants" />
-		<tag Name="DynamicObjectsTable:Jungle_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DesertCanyon_Plants" />
-    <tag Name="DynamicObjectsTable:Hills_Plants" />
-		<tag Name="DynamicObjectsTable:Mountains_Plants" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="PlacementIsSkippable"></tag>
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="巫木树" RenderString="157" ColorString="&amp;W" Tile="terrain/sw_talltree1.bmp" TileColor="&amp;W" DetailColor="g" Occluding="true"/>
+    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:75" RipeColor="&amp;r" RipeTileColor="&amp;W" RipeDetailColor="r" UnripeColor="&amp;W" UnripeTileColor="&amp;W" UnripeDetailColor="w"/>
+    <part Name="Description" Short="当沙漠之风湿润时，金色的羽状叶会展开。树皮被木食动物啃食成细小交错的环状碎片。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_talltree1.bmp,Terrain/sw_talltree2.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Hills_FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:Mountains_FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:Jungle_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Plants"/>
+    <tag Name="DynamicObjectsTable:Hills_Plants"/>
+		<tag Name="DynamicObjectsTable:Mountains_Plants"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Dreadroot" Inherits="BasePlant">
-    <part Name="Render" Tile="Creatures/sw_dreadroot.bmp" RenderIfDark="true" DisplayName="dreadroot" RenderString="231" ColorString="&amp;K" DetailColor="w" />
-    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100" />
-    <part Name="Corpse" CorpseChance="15" CorpseBlueprint="Dreadroot Tuber" />
-    <mutation Name="FearAura" />
-    <stat Name="Hitpoints" Value="3" />
-    <part Name="Description" Short="Skin peels on the tuber belly as it hums with grounding bass, and the shoots throb in upsetting staccato." />
-    <part Name="Harvestable" OnSuccess="Dreadroot Tuber" StartRipeChance="1:10" RipeColor="&amp;w" RipeTileColor="&amp;y" RipeDetailColor="w" UnripeColor="&amp;K" UnripeTileColor="&amp;y" UnripeDetailColor="K" />
-    <stag Name="Plank" Value="mass" />
-    <tag Name="ExcludeFromHostiles" />
-    <tag Name="Role" Value="Controller" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
+    <part Name="Render" Tile="Creatures/sw_dreadroot.bmp" RenderIfDark="true" DisplayName="恐惧之根" RenderString="231" ColorString="&amp;K" DetailColor="w"/>
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100"/>
+    <part Name="Corpse" CorpseChance="15" CorpseBlueprint="Dreadroot Tuber"/>
+    <mutation Name="FearAura"/>
+    <stat Name="Hitpoints" Value="3"/>
+    <part Name="Description" Short="块茎腹部的皮肤剥落，伴随着沉稳的低音嗡鸣，而嫩芽则以令人不安的断奏跳动。"/>
+    <part Name="Harvestable" OnSuccess="Dreadroot Tuber" StartRipeChance="1:10" RipeColor="&amp;w" RipeTileColor="&amp;y" RipeDetailColor="w" UnripeColor="&amp;K" UnripeTileColor="&amp;y" UnripeDetailColor="K"/>
+    <stag Name="Plank" Value="mass"/>
+    <tag Name="ExcludeFromHostiles"/>
+    <tag Name="Role" Value="Controller"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2"/>
   </object>
   <object Name="Sunflower" Inherits="Plant">
-    <part Name="Render" DisplayName="sunflower" RenderString="15" ColorString="&amp;W" Tile="Terrain/sw_tree_circle_4.bmp" TileColor="&amp;W" DetailColor="g" Occluding="true" />
-    <part Name="Description" Short="Bright florets explode from a central disc of darker, spiraling florets. Together they're like a tiny sun." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_tree_circle_1.bmp,Terrain/sw_tree_circle_2.bmp,Terrain/sw_tree_circle_3.bmp,Terrain/sw_tree_circle_4.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="向日葵" RenderString="15" ColorString="&amp;W" Tile="Terrain/sw_tree_circle_4.bmp" TileColor="&amp;W" DetailColor="g" Occluding="true"/>
+    <part Name="Description" Short="明亮的花瓣从中央较暗的螺旋状花盘中绽放。它们仿佛是一个小小的太阳。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_tree_circle_1.bmp,Terrain/sw_tree_circle_2.bmp,Terrain/sw_tree_circle_3.bmp,Terrain/sw_tree_circle_4.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>  
   <object Name="Dicalyptus Tree" Inherits="SolidTree">
-    <part Name="Render" DisplayName="diacalyptus tree" RenderString="157" ColorString="&amp;g" Tile="Terrain/sw_bigtree1.bmp" TileColor="&amp;g" DetailColor="w" />
-    <part Name="Description" Short="A hut's girth of bug-gnawed bark shoots up into ethereal sky and splays into a crown of foliage." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_bigtree1.bmp,Terrain/sw_bigtree2.bmp" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="对角叶树" RenderString="157" ColorString="&amp;g" Tile="Terrain/sw_bigtree1.bmp" TileColor="&amp;g" DetailColor="w"/>
+    <part Name="Description" Short="一株被虫蛀过的树皮围成的小屋般的树干，直冲入神秘的天空，顶端展开成一片繁茂的树冠。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_bigtree1.bmp,Terrain/sw_bigtree2.bmp"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Holographic Dicalyptus Tree" Inherits="Dicalyptus Tree">
-    <part Name="Physics" Solid="false" />
-    <part Name="ConcealedHologramMaterial" />
-    <intproperty Name="Bleeds" Value="0" />
+    <part Name="Physics" Solid="false"/>
+    <part Name="ConcealedHologramMaterial"/>
+    <intproperty Name="Bleeds" Value="0"/>
   </object>
   <object Name="Lahbloom" Inherits="Plant">
-    <part Name="Render" DisplayName="lahbloom" RenderString="12" ColorString="&amp;W" Tile="Terrain/sw_lahbloom.bmp" TileColor="&amp;W" DetailColor="w" Occluding="false" />
-    <part Name="Harvestable" OnSuccess="Lah Petals" StartRipeChance="1:5" RipeColor="&amp;r" RipeTileColor="&amp;r" RipeDetailColor="W" UnripeColor="&amp;W" UnripeTileColor="&amp;W" UnripeDetailColor="w" />
-    <part Name="Description" Short="Insects circle and buzz around a quartet of golden brown petals that droop over their thickling stalk. When something touches it, the floret lashes up in a dreamful rage." />
+    <part Name="Render" DisplayName="拉布卢姆" RenderString="12" ColorString="&amp;W" Tile="Terrain/sw_lahbloom.bmp" TileColor="&amp;W" DetailColor="w" Occluding="false"/>
+    <part Name="Harvestable" OnSuccess="Lah Petals" StartRipeChance="1:5" RipeColor="&amp;r" RipeTileColor="&amp;r" RipeDetailColor="W" UnripeColor="&amp;W" UnripeTileColor="&amp;W" UnripeDetailColor="w"/>
+    <part Name="Description" Short="昆虫围绕着四片金棕色的花瓣盘旋嗡鸣，这些花瓣垂落在粗壮的花茎上。当有东西触碰它时，花蕊会以梦幻般的愤怒猛烈抽打。"/>
   </object>
   <object Name="Yuckwheat" Inherits="Plant">
-    <part Name="Render" DisplayName="yuckwheat" RenderString="245" ColorString="&amp;w" DetailColor="W" Occluding="false" Tile="Terrain/sw_wheat_1.bmp" />
-    <part Name="Harvestable" OnSuccess="Yuckwheat Stem" StartRipeChance="1:3" RipeColor="&amp;W" RipeTileColor="&amp;w" RipeDetailColor="W" UnripeColor="&amp;w" UnripeTileColor="&amp;w" UnripeDetailColor="k" />
-    <part Name="Description" Short="Coral petals sprout from the top of a flimsy stem. A metal or bone hoof has crushed its siblings and spread their acid fibers across the soil." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_wheat_1.bmp,Terrain/sw_wheat_2.bmp,Terrain/sw_wheat_3.bmp,Terrain/sw_wheat_4.bmp" />
-    <tag Name="Fiber" Value="cord" />
-    <stag Name="FiberMaterial" Value="thatch" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Flowerfields_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Flowerfields_Plants" />
+    <part Name="Render" DisplayName="恶心麦" RenderString="245" ColorString="&amp;w" DetailColor="W" Occluding="false" Tile="Terrain/sw_wheat_1.bmp"/>
+    <part Name="Harvestable" OnSuccess="Yuckwheat Stem" StartRipeChance="1:3" RipeColor="&amp;W" RipeTileColor="&amp;w" RipeDetailColor="W" UnripeColor="&amp;w" UnripeTileColor="&amp;w" UnripeDetailColor="k"/>
+    <part Name="Description" Short="脆弱的茎顶上长着珊瑚状花瓣。一只金属或骨质的蹄子碾碎了它的同伴，将它们的酸性纤维散播在土壤上。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_wheat_1.bmp,Terrain/sw_wheat_2.bmp,Terrain/sw_wheat_3.bmp,Terrain/sw_wheat_4.bmp"/>
+    <tag Name="Fiber" Value="cord"/>
+    <stag Name="FiberMaterial" Value="thatch"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Plants"/>
   </object>
   <object Name="Yuckwheat Barathrumite" Inherits="Yuckwheat">
-    <tag Name="CallToArmsCrop"></tag>
+    <tag Name="CallToArmsCrop"/>
   </object>
   <object Name="Watervine" Inherits="Plant">
-    <part Name="Render" DisplayName="watervine" RenderString="244" ColorString="&amp;g" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;w" DetailColor="g" Occluding="false" />
-    <part Name="Harvestable" OnSuccess="Vinewafer" OnSuccessAmount="1" StartRipeChance="1:20" RipeColor="&amp;g" RipeTileColor="&amp;w" RipeDetailColor="g" UnripeColor="&amp;K" UnripeTileColor="&amp;w" UnripeDetailColor="K" />
-    <part Name="Description" Short="Salt gathers in its furrows. It's knotted with moisture-swollen wafers in place of leaves." />
-    <part Name="Fireflies" />
-    <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp" />
-    <tag Name="LiquidNative" Value="water" />
-    <stag Name="Plank" Value="thatch" />
-    <stag Name="Fiber" Value="rope" />
-    <stag Name="FiberMaterial" Value="vine" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
-    <tag Name="PlacementIsSkippable"></tag>
-    <tag Name="ImpactSound" Value="Sounds/Foley/fly_tileMove_marsh"></tag>
+    <part Name="Render" DisplayName="水藤" RenderString="244" ColorString="&amp;g" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;w" DetailColor="g" Occluding="false"/>
+    <part Name="Harvestable" OnSuccess="Vinewafer" OnSuccessAmount="1" StartRipeChance="1:20" RipeColor="&amp;g" RipeTileColor="&amp;w" RipeDetailColor="g" UnripeColor="&amp;K" UnripeTileColor="&amp;w" UnripeDetailColor="K"/>
+    <part Name="Description" Short="盐分在其沟壑中聚集。它的叶片位置长满了吸满水分的结节。"/>
+    <part Name="Fireflies"/>
+    <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp"/>
+    <tag Name="LiquidNative" Value="water"/>
+    <stag Name="Plank" Value="thatch"/>
+    <stag Name="Fiber" Value="rope"/>
+    <stag Name="FiberMaterial" Value="vine"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
+    <tag Name="ImpactSound" Value="Sounds/Foley/fly_tileMove_marsh"/>
   </object>
   <object Name="Watervine Barathrumite" Inherits="Watervine">
-    <tag Name="CallToArmsCrop"></tag>
+    <tag Name="CallToArmsCrop"/>
   </object>
 
   <object Name="Gnawed Watervine" Inherits="Watervine">
-    <part Name="Render" DisplayName="gnawed watervine" ColorString="&amp;g" RenderString="'" RenderLayer="5" />
-    <part Name="Description" Short="Salt gathers in its furrows. It's knotted with moisture-swollen wafers in place of leaves, and it appears to be half-eaten." />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="啃咬水藤" ColorString="&amp;g" RenderString="'" RenderLayer="5"/>
+    <part Name="Description" Short="盐分在其沟壑中积聚。它结满了代替叶子的水分肿胀的薄片，看起来像是被半吃掉了。"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Brinestalk" Inherits="Plant">
-    <part Name="Render" DisplayName="brinestalk" RenderString="157" ColorString="&amp;w" Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="g" Occluding="true" />
-    <part Name="Description" Short="Girthy pilings of fibrous salt-rot stake out these pools of brine. They belong to no one." />
-    <stag Name="Plank" Value="bundle" />
-    <stag Name="Fiber" Value="rope" />
-    <stag Name="FiberMaterial" Value="fibre" />
-    <xtagGrammar massNoun="true" />
-    <tag Name="LiquidNative" Value="water" />
-    <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
-    <tag Name="PlacementIsSkippable" />
+    <part Name="Render" DisplayName="盐茎" RenderString="157" ColorString="&amp;w" Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="g" Occluding="true"/>
+    <part Name="Description" Short="粗壮的纤维盐腐柱支撑着这些盐水池。它们不属于任何人。"/>
+    <stag Name="Plank" Value="bundle"/>
+    <stag Name="Fiber" Value="rope"/>
+    <stag Name="FiberMaterial" Value="fibre"/>
+    <xtagGrammar massNoun="true"/>
+    <tag Name="LiquidNative" Value="water"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Plants"/>
+    <tag Name="PlacementIsSkippable"/>
   </object>
   <object Name="Swarmshade Tree_blue" Inherits="Tree">
-    <part Name="Render" DisplayName="swarmshade tree" RenderString="005" ColorString="&amp;g" Tile="terrain/sw_fattree2.bmp" TileColor="&amp;c" DetailColor="w"  Occluding="true" />
-    <part Name="Description" Short="A nebula of spaded leaves swish with dry creek and beetle munch." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="群影树" RenderString="005" ColorString="&amp;g" Tile="terrain/sw_fattree2.bmp" TileColor="&amp;c" DetailColor="w" Occluding="true"/>
+    <part Name="Description" Short="一簇簇铲形叶片如同干涸溪流中的虫鸣般沙沙作响。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Swarmshade Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="swarmshade tree" RenderString="005" ColorString="&amp;g" Tile="terrain/sw_fattree2.bmp" TileColor="&amp;g" DetailColor="w"  Occluding="true" />
-    <part Name="Description" Short="A nebula of spaded leaves swish with dry creek and beetle munch." />
-    <tag Name="HangingSupport" />
-		<builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp" />
-    <tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="DynamicObjectsTable:Ruins_Plants" />
-    <tag Name="DynamicObjectsTable:Water_Plants" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="群影树" RenderString="005" ColorString="&amp;g" Tile="terrain/sw_fattree2.bmp" TileColor="&amp;g" DetailColor="w" Occluding="true"/>
+    <part Name="Description" Short="一簇簇铲形叶片如同干涸溪流中的虫鸣般沙沙作响。"/>
+    <tag Name="HangingSupport"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp"/>
+    <tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="DynamicObjectsTable:Ruins_Plants"/>
+    <tag Name="DynamicObjectsTable:Water_Plants"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Holographic Swarmshade Tree" Inherits="Swarmshade Tree">
-    <part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1" />		
-    <intproperty Name="Bleeds" Value="0" />
+    <part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1"/>		
+    <intproperty Name="Bleeds" Value="0"/>
   </object>
   <object Name="Ziv Bough_blue" Inherits="Tree">
-    <part Name="Render" DisplayName="ziv bough" RenderString="231" ColorString="&amp;G" Tile="Terrain/sw_warp_wood_1.bmp" TileColor="&amp;c" DetailColor="w" Occluding="true" />
-    <part Name="Description" Short="The trunk column corkscrews on the radial path of light and blossoms a crown of victory laurel." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_warp_wood_1.bmp,Terrain/sw_warp_wood_2.bmp" />		
-    <tag Name="HangingSupport" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="兹夫枝" RenderString="231" ColorString="&amp;G" Tile="Terrain/sw_warp_wood_1.bmp" TileColor="&amp;c" DetailColor="w" Occluding="true"/>
+    <part Name="Description" Short="树干柱沿着光线的径向路径螺旋上升，绽放出胜利桂冠的王冠。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_warp_wood_1.bmp,Terrain/sw_warp_wood_2.bmp"/>		
+    <tag Name="HangingSupport"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Ziv Bough" Inherits="Tree">
-    <part Name="Render" DisplayName="ziv bough" RenderString="231" ColorString="&amp;g" Tile="Terrain/sw_warp_wood_1.bmp" DetailColor="w" Occluding="true" />
-		<part Name="Description" Short="The trunk column corkscrews on the radial path of light and blossoms a crown of victory laurel." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_warp_wood_1.bmp,Terrain/sw_warp_wood_2.bmp" />		
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="DynamicObjectsTable:Ruins_Plants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants" />
-    <tag Name="DynamicObjectsTable:Water_Plants" />
-		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="兹夫枝" RenderString="231" ColorString="&amp;g" Tile="Terrain/sw_warp_wood_1.bmp" DetailColor="w" Occluding="true"/>
+		<part Name="Description" Short="树干柱沿着光线的径向路径螺旋上升，绽放出胜利桂冠的王冠。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_warp_wood_1.bmp,Terrain/sw_warp_wood_2.bmp"/>		
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="DynamicObjectsTable:Ruins_Plants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
+    <tag Name="DynamicObjectsTable:Water_Plants"/>
+		<tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+		<tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Holographic Ziv Bough" Inherits="Ziv Bough">
-    <part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.1" />
-		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1" />
-		<intproperty Name="Bleeds" Value="0" />
+    <part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.1"/>
+		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.1"/>
+		<intproperty Name="Bleeds" Value="0"/>
   </object>
 	<object Name="Star Palm" Inherits="Tree">
-		<part Name="Render" DisplayName="star palm" RenderString="157" ColorString="&amp;G" Tile="Creatures/sw_palm.bmp" DetailColor="w" Occluding="true" />
-		<part Name="Description" Short="Sun-sated fronds sag against a bug-scarred trunk in the shape of a melted star." />				
-		<tag Name="HangingSupport" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants" Value="0.5" />
-		<tag Name="DynamicObjectsTable:Ruins_Plants" Value="0.5" />
+		<part Name="Render" DisplayName="星棕榈" RenderString="157" ColorString="&amp;G" Tile="Creatures/sw_palm.bmp" DetailColor="w" Occluding="true"/>
+		<part Name="Description" Short="饱受阳光照射的叶片垂挂在满是虫痕的树干上，形状如同融化的星星。"/>				
+		<tag Name="HangingSupport"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants" Value="0.5"/>
+		<tag Name="DynamicObjectsTable:Ruins_Plants" Value="0.5"/>
 		<tag Name="DynamicObjectsTable:DeepJungle_Plants" Value="0.5"/>
-		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants" Value="0.5" />
-		<tag Name="DynamicObjectsTable:Water_Plants" Value="0.5" />
+		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants" Value="0.5"/>
+		<tag Name="DynamicObjectsTable:Water_Plants" Value="0.5"/>
 	</object>
 	<object Name="Holographic Star Palm" Inherits="Star Palm">
-		<part Name="ConcealedHologramMaterial" />
-		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.05" />
-		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.05" />
-		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.05" />
-		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.05" />
-		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.05" />
-		<intproperty Name="Bleeds" Value="0" />
+		<part Name="ConcealedHologramMaterial"/>
+		<tag Name="DynamicObjectsTable:Jungle_Plants:Weight" Value="0.05"/>
+		<tag Name="DynamicObjectsTable:Ruins_Plants:Weight" Value="0.05"/>
+		<tag Name="DynamicObjectsTable:DeepJungle_Plants:Weight" Value="0.05"/>
+		<tag Name="DynamicObjectsTable:BaroqueRuins_Plants:Weight" Value="0.05"/>
+		<tag Name="DynamicObjectsTable:Water_Plants:Weight" Value="0.05"/>
+		<intproperty Name="Bleeds" Value="0"/>
 	</object>
   <object Name="Slime Grass" Inherits="Plant">
-    <part Name="Render" DisplayName="scumgrass" RenderString="161" ColorString="&amp;w" Tile="creatures/sw_weeds1.bmp" TileColor="&amp;w" DetailColor="g"  Occluding="true" />
-    <part Name="Description" Short="The strands glisten with a frothing film." />
-    <part Name="LiquidRepellent" Liquids="water,cider,goo,oil,ooze,proteangunk,slime,sludge,wine" />
-    <xtagGrammar iArticle="some" adjunctNoun="clump" />
-    <stag Name="Plank" Value="thatch" />
-    <stag Name="Fiber" Value="twine" />
-    <stag Name="FiberMaterial" Value="thatch" />
-    <tag Name="DynamicObjectsTable:Jungle_Plants" />
-    <tag Name="DynamicObjectsTable:Water_Plants" />
-    <builder Name="RandomTile" Tiles="Creatures/sw_weeds1.bmp,Creatures/sw_weeds2.bmp" />
+    <part Name="Render" DisplayName="泡沫草" RenderString="161" ColorString="&amp;w" Tile="creatures/sw_weeds1.bmp" TileColor="&amp;w" DetailColor="g" Occluding="true"/>
+    <part Name="Description" Short="茎秆上覆盖着一层泡沫般的薄膜。"/>
+    <part Name="LiquidRepellent" Liquids="water,cider,goo,oil,ooze,proteangunk,slime,sludge,wine"/>
+    <xtagGrammar iArticle="some" adjunctNoun="clump"/>
+    <stag Name="Plank" Value="thatch"/>
+    <stag Name="Fiber" Value="twine"/>
+    <stag Name="FiberMaterial" Value="thatch"/>
+    <tag Name="DynamicObjectsTable:Jungle_Plants"/>
+    <tag Name="DynamicObjectsTable:Water_Plants"/>
+    <builder Name="RandomTile" Tiles="Creatures/sw_weeds1.bmp,Creatures/sw_weeds2.bmp"/>
   </object>  
   <object Name="Grave Moss" Inherits="Plant">
-    <part Name="Render" RenderIfDark="true" Tile="Creatures/sw_moss_1.bmp" DisplayName="grave moss" RenderString="231" DetailColor="C" ColorString="&amp;C" TileColor="&amp;C" />
-    <stat Name="Hitpoints" Value="100" />
-    <part Name="Description" Short="It's achromous and brittle; it crunches under the foot. How it clusters into mats must conform to the shape of life-wet body-banks it once flowered from, and with dark red blood will again." />
-    <part Name="LightSource" Lit="true" Radius="1" />
-    <builder Name="RandomTile" Tiles="Creatures/sw_moss_1.bmp,Creatures/sw_moss_2.bmp,Creatures/sw_moss_3.bmp,Creatures/sw_moss_4.bmp,Creatures/sw_moss_5.bmp" />
-    <part Name="GraveMoss" />
-    <part Name="Harvestable" OnSuccess="Clump of Grave Moss" OnSuccessAmount="1" DestroyOnHarvest="true" StartRipeChance="1:50" RipeColor="&amp;B" RipeTileColor="&amp;B" RipeDetailColor="B" UnripeColor="&amp;C" UnripeTileColor="&amp;C" UnripeDetailColor="C" />
-    <part Name="BurnOffGas" DamagePer="5" DamageTriggerTypes="Heat,Fire" Blueprint="MiasmaticAsh80" />
-    <xtagGrammar iArticle="some" />
+    <part Name="Render" RenderIfDark="true" Tile="Creatures/sw_moss_1.bmp" DisplayName="墓地苔藓" RenderString="231" DetailColor="C" ColorString="&amp;C" TileColor="&amp;C"/>
+    <stat Name="Hitpoints" Value="100"/>
+    <part Name="Description" Short="它无色且脆弱；踩上去会发出嘎吱声。它聚集成垫的方式必定符合其曾经绽放的生命湿润体库的形状，将来也会再次用深红色的血液重现。"/>
+    <part Name="LightSource" Lit="true" Radius="1"/>
+    <builder Name="RandomTile" Tiles="Creatures/sw_moss_1.bmp,Creatures/sw_moss_2.bmp,Creatures/sw_moss_3.bmp,Creatures/sw_moss_4.bmp,Creatures/sw_moss_5.bmp"/>
+    <part Name="GraveMoss"/>
+    <part Name="Harvestable" OnSuccess="Clump of Grave Moss" OnSuccessAmount="1" DestroyOnHarvest="true" StartRipeChance="1:50" RipeColor="&amp;B" RipeTileColor="&amp;B" RipeDetailColor="B" UnripeColor="&amp;C" UnripeTileColor="&amp;C" UnripeDetailColor="C"/>
+    <part Name="BurnOffGas" DamagePer="5" DamageTriggerTypes="Heat,Fire" Blueprint="MiasmaticAsh80"/>
+    <xtagGrammar iArticle="some"/>
   </object>
   <object Name="Stillvine" Inherits="Plant">
-    <part Name="Render" DisplayName="stillvine" RenderString="244" ColorString="&amp;K" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;y" DetailColor="C" Occluding="false" />
-    <part Name="Description" Short="Ghost-canes are twirled to pictorial stillness, and moisture gathers on their buds." />
-    <part Name="Fireflies" />
-    <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp" />
-    <stag Name="Plank" Value="thatch" />
-    <stag Name="Fiber" Value="rope" />
-    <stag Name="FiberMaterial" Value="vine" />
+    <part Name="Render" DisplayName="静藤" RenderString="244" ColorString="&amp;K" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;y" DetailColor="C" Occluding="false"/>
+    <part Name="Description" Short="幽灵竹被旋转成静止的画面，水分在它们的花蕾上聚集。"/>
+    <part Name="Fireflies"/>
+    <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp"/>
+    <stag Name="Plank" Value="thatch"/>
+    <stag Name="Fiber" Value="rope"/>
+    <stag Name="FiberMaterial" Value="vine"/>
   </object>   
   <object Name="Nimbus Beam" Inherits="Tree">
-    <part Name="Render" DisplayName="nimbus beam" RenderString="157" ColorString="&amp;g" Tile="Terrain/sw_fuzzy_circle_4.bmp" TileColor="&amp;g" DetailColor="w" Occluding="true" />
-    <part Name="Description" Short="Puffy halos of acid and myrtle green leaves gird the length of a sky-toward wood minaret. The peak breaks out the canopy to win the sun-drinking game." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_tree_fuzzy_1.bmp,Terrain/sw_tree_fuzzy_2.bmp,Terrain/sw_tree_fuzzy_3.bmp,Terrain/sw_tree_fuzzy_4.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="nimbus beam" RenderString="157" ColorString="&amp;g" Tile="Terrain/sw_fuzzy_circle_4.bmp" TileColor="&amp;g" DetailColor="w" Occluding="true"/>
+    <part Name="Description" Short="蓬松的酸性光环和鼠尾草绿叶环绕着这根朝天的木制尖塔。顶端突破树冠，赢得了阳光汲取比赛。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_tree_fuzzy_1.bmp,Terrain/sw_tree_fuzzy_2.bmp,Terrain/sw_tree_fuzzy_3.bmp,Terrain/sw_tree_fuzzy_4.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Nachash Tree" Inherits="Tree">
-    <part Name="Render" DisplayName="nachash tree" RenderString="225" ColorString="&amp;g" Tile="Terrain/sw_fuzzy_circle_4.bmp" TileColor="&amp;g" DetailColor="w" Occluding="false" />
-    <part Name="Description" Short="Moss-slick shoots coil at the crown of a slouching trunk like the she-medusa. Air musses them into more disarray." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_tree_curly_1.bmp,Terrain/sw_tree_curly_2.bmp,Terrain/sw_tree_curly_3.bmp,Terrain/sw_tree_curly_4.bmp" />
-    <tag Name="HangingSupport" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants" />
-    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
-    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
+    <part Name="Render" DisplayName="纳卡什树" RenderString="225" ColorString="&amp;g" Tile="Terrain/sw_fuzzy_circle_4.bmp" TileColor="&amp;g" DetailColor="w" Occluding="false"/>
+    <part Name="Description" Short="苔藓覆盖的枝条在倾斜的树干顶端盘旋，如同女蛇发。空气使它们更加凌乱。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_tree_curly_1.bmp,Terrain/sw_tree_curly_2.bmp,Terrain/sw_tree_curly_3.bmp,Terrain/sw_tree_curly_4.bmp"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
   </object>
   <object Name="Urberry Bush" Inherits="Plant">
-    <part Name="Render" DisplayName="urberry bush" RenderString="005" ColorString="&amp;G" Tile="Terrain/sw_urberry_bush_1.bmp" TileColor="&amp;G" DetailColor="m" Occluding="false" />
-    <part Name="Description" Short="Through the nether of a vaulted root-trellis, leaves point at perfect angles to sift sunlight and bathe ur-buds in soft gold warmth." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_urberry_bush_1.bmp,Terrain/sw_urberry_bush_2.bmp,Terrain/sw_urberry_bush_3.bmp" />
-    <part Name="Harvestable" OnSuccess="Urberry" StartRipeChance="1:60" RipeColor="&amp;m" RipeDetailColor="m" UnripeColor="&amp;G" UnripeDetailColor="k" />
-    <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.1" />
-    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants:Weight" Value="0.2" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_FarmablePlants" />
-    <tag Name="DynamicObjectsTable:BaroqueRuins_FarmablePlants:Weight" Value="0.2" />
+    <part Name="Render" DisplayName="乌尔莓灌木" RenderString="005" ColorString="&amp;G" Tile="Terrain/sw_urberry_bush_1.bmp" TileColor="&amp;G" DetailColor="m" Occluding="false"/>
+    <part Name="Description" Short="透过拱形根架的阴间，叶子以完美的角度排列，筛过阳光，使乌尔花蕾沐浴在柔和的金色温暖中。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_urberry_bush_1.bmp,Terrain/sw_urberry_bush_2.bmp,Terrain/sw_urberry_bush_3.bmp"/>
+    <part Name="Harvestable" OnSuccess="Urberry" StartRipeChance="1:60" RipeColor="&amp;m" RipeDetailColor="m" UnripeColor="&amp;G" UnripeDetailColor="k"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_Plants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.1"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:DeepJungle_FarmablePlants:Weight" Value="0.2"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:BaroqueRuins_FarmablePlants:Weight" Value="0.2"/>
   </object>
 	<object Name="n-Ary Tree" Inherits="Tree">
-		<part Name="Render" DisplayName="n-ary tree" RenderString="006" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;C" DetailColor="y" Occluding="false" />
-		<part Name="Description" Short="Bright sequin leaves shimmer in indigo constellations, and branches fork through the entropy fungus." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_tree_crystal_1.bmp,Terrain/sw_tree_crystal_2.bmp" />
-		<tag Name="HangingSupport" />
-		<part Name="RandomColors" MainColor="m,m,M" />
-		<tag Name="LiquidNative" Value="warmstatic" />
-		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
-		<tag Name="DynamicObjectsTable:FarmablePlants" />
-		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+		<part Name="Render" DisplayName="n-ary树" RenderString="006" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;C" DetailColor="y" Occluding="false"/>
+		<part Name="Description" Short="亮片般的叶片在靛蓝星空中闪烁，枝条穿过熵菌的迷宫。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_tree_crystal_1.bmp,Terrain/sw_tree_crystal_2.bmp"/>
+		<tag Name="HangingSupport"/>
+		<part Name="RandomColors" MainColor="m,m,M"/>
+		<tag Name="LiquidNative" Value="warmstatic"/>
+		<tag Name="DynamicObjectsTable:MoonStair_Plants"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants"/>
 	</object>
 	<object Name="Glitchwood Tree" Inherits="Tree">
-		<part Name="Render" DisplayName="glitchwood tree" RenderString="157" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;y" DetailColor="K" Occluding="false" />
-		<part Name="Description" Short="Bent roots chunnel upward to a canopy of fuzz. The eye tries to draw a boundary around single leaves, but their light lines sputter and lose their derivatives." />
-		<builder Name="RandomTile" Tiles="terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp" />
-		<tag Name="HangingSupport" />
-		<part Name="ConcealedHologramMaterial" DescriptionPostfix="false" />
-		<tag Name="LiquidNative" Value="warmstatic" />
-		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
-		<tag Name="DynamicObjectsTable:FarmablePlants" />
-		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+		<part Name="Render" DisplayName="故障木树" RenderString="157" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;y" DetailColor="K" Occluding="false"/>
+		<part Name="Description" Short="弯曲的根部向上延伸至一片模糊的树冠。眼睛试图在单片叶子周围划定边界，但它们的轮廓线断断续续，逐渐消失。"/>
+		<builder Name="RandomTile" Tiles="terrain/sw_fattree1.bmp,Terrain/sw_fattree2.bmp"/>
+		<tag Name="HangingSupport"/>
+		<part Name="ConcealedHologramMaterial" DescriptionPostfix="false"/>
+		<tag Name="LiquidNative" Value="warmstatic"/>
+		<tag Name="DynamicObjectsTable:MoonStair_Plants"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants"/>
 	</object>
 	<object Name="Icosahedar" Inherits="Tree">
-		<part Name="Render" DisplayName="icosahedar" RenderString="005" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;W" DetailColor="y" Occluding="false" />
-		<part Name="Description" Short="Waxen sprigs sag to the weight of the algebraic tubers. Each one is perfect and regular, its faces matte with sheenless platonic dew." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_tree_bulbs_1.bmp,Terrain/sw_tree_bulbs_2.bmp" />
-		<tag Name="LiquidNative" Value="warmstatic" />
-		<tag Name="HangingSupport" />
-		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
-		<tag Name="DynamicObjectsTable:FarmablePlants" />
-		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+		<part Name="Render" DisplayName="二十面体" RenderString="005" Tile="terrain/sw_talltree1.bmp" ColorString="&amp;W" DetailColor="y" Occluding="false"/>
+		<part Name="Description" Short="蜡质的嫩枝因代数块茎的重量而低垂。每一个都完美而规整，其表面覆盖着无光泽的柏拉图露珠。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_tree_bulbs_1.bmp,Terrain/sw_tree_bulbs_2.bmp"/>
+		<tag Name="LiquidNative" Value="warmstatic"/>
+		<tag Name="HangingSupport"/>
+		<tag Name="DynamicObjectsTable:MoonStair_Plants"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants"/>
 	</object>
 	<object Name="Noisegrass" Inherits="Plant">
-		<part Name="Render" DisplayName="noisegrass" RenderString="157" Tile="terrain/sw_noise_grass_1.bmp" ColorString="&amp;K" DetailColor="y" Occluding="false" />
-		<part Name="Description" Short="Real potential surfs the rhizome on choppy waves and quantizes into woody blades of grass." />
-		<builder Name="RandomTile" Tiles="Terrain/sw_noise_grass_1.bmp,Terrain/sw_noise_grass_2.bmp,Terrain/sw_noise_grass_3.bmp,Terrain/sw_noise_grass_4.bmp" />
-		<part Name="RandomRenderString" Strings="174,175" />
-		<tag Name="LiquidNative" Value="warmstatic" />
+		<part Name="Render" DisplayName="噪音草" RenderString="157" Tile="terrain/sw_noise_grass_1.bmp" ColorString="&amp;K" DetailColor="y" Occluding="false"/>
+		<part Name="Description" Short="真实的潜力在根茎上乘风破浪，量化成木质的草叶。"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_noise_grass_1.bmp,Terrain/sw_noise_grass_2.bmp,Terrain/sw_noise_grass_3.bmp,Terrain/sw_noise_grass_4.bmp"/>
+		<part Name="RandomRenderString" Strings="174,175"/>
+		<tag Name="LiquidNative" Value="warmstatic"/>
 		<part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Bundle of Noisegrass" StartRipeChance="1:10" RipeColor="&amp;M" RipeTileColor="&amp;K" RipeDetailColor="M" UnripeColor="&amp;K" UnripeTileColor="&amp;K" UnripeDetailColor="y"/>
-		<xtagGrammar iArticle="some" />
-		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
-		<tag Name="DynamicObjectsTable:FarmablePlants" />
-		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+		<xtagGrammar iArticle="some"/>
+		<tag Name="DynamicObjectsTable:MoonStair_Plants"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants"/>
 	</object>
 
   <!-- Unique -->
   <object Name="Yempuris" Inherits="BasePlant">
-    <part Name="Render" RenderIfDark="true" Visible="true" DisplayName="yempuris phi" RenderLayer="10" RenderString="228" ColorString="&amp;g" DetailColor="m" Tile="creatures/sw_yempuris.bmp" />
-    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" />
-    <stat Name="Hitpoints" Value="50" />
-    <stat Name="HeatResistance" Value="25" />
-    <stat Name="ColdResistance" Value="25" />
-    <stat Name="AcidResistance" Value="25" />
-    <stat Name="ElectricResistance" Value="25" />
-    <part Name="Description" Short="Bubbles of green stipules are arrayed in rings of quickening lattice growth. The pace is sorcerous; the earnest and everforward will of the plantworld is captured here at a millionfold." />
-    <part Name="Yempuris" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <stag Name="Plank" Value="frond" />
+    <part Name="Render" RenderIfDark="true" Visible="true" DisplayName="耶姆普里斯菲" RenderLayer="10" RenderString="228" ColorString="&amp;g" DetailColor="m" Tile="creatures/sw_yempuris.bmp"/>
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false"/>
+    <stat Name="Hitpoints" Value="50"/>
+    <stat Name="HeatResistance" Value="25"/>
+    <stat Name="ColdResistance" Value="25"/>
+    <stat Name="AcidResistance" Value="25"/>
+    <stat Name="ElectricResistance" Value="25"/>
+    <part Name="Description" Short="绿色的小叶泡泡排列成快速生长的晶格环。生长的速度如同魔法般迅速；这里捕捉到了植物世界坚定而不断前进的意志，速度达到了百万倍。"/>
+    <part Name="Yempuris"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    <stag Name="Plank" Value="frond"/>
   </object>
   
   <!-- End plants -->
@@ -520,73 +520,73 @@
 
   -->  
   <object Name="Fungus" Inherits="PhysicalObject">
-    <part Name="Render" DisplayName="[Fungus]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false" />
-    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="Fungus" Takeable="false" />
-    <part Name="MentalShield" />
-    <part Name="FungusProperties" />
-    <part Name="NoBleed" />
-    <part Name="Springy" Factor="0.8" />
-    <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="BodyType" Value="Fungus" />
-    <tag Name="Fungus" />
-    <tag Name="LiveFungus" />
-    <stag Name="Plank" Value="mass" />
+    <part Name="Render" DisplayName="[真菌]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false"/>
+    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="Fungus" Takeable="false"/>
+    <part Name="MentalShield"/>
+    <part Name="FungusProperties"/>
+    <part Name="NoBleed"/>
+    <part Name="Springy" Factor="0.8"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="BodyType" Value="Fungus"/>
+    <tag Name="Fungus"/>
+    <tag Name="LiveFungus"/>
+    <stag Name="Plank" Value="mass"/>
   </object>
   <object Name="SolidFungus" Inherits="Fungus">
-    <part Name="Render" RenderString="157" ColorString="&amp;M" TileColor="&amp;c" DetailColor="M" Occluding="true" RenderLayer="7" />
-    <part Name="Physics" Weight="6000" Solid="true" Takeable="false" />
-    <tag Name="Wall" />
-    <tag Name="HangingSupport" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" RenderString="157" ColorString="&amp;M" TileColor="&amp;c" DetailColor="M" Occluding="true" RenderLayer="7"/>
+    <part Name="Physics" Weight="6000" Solid="true" Takeable="false"/>
+    <tag Name="Wall"/>
+    <tag Name="HangingSupport"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Godshroom" Inherits="Fungus">
-    <part Name="Render" Tile="Items/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{o|elcatl}}" DetailColor="o" RenderString="*" ColorString="&amp;O" />
-    <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Godshroom Cap" />
-    <stat Name="Hitpoints" Value="3" />
-    <part Name="Description" Short="Its aspect imbued with lucent coral, this mushroom catches your eye like no other. Qud knows no such hue, and so you ask =player.reflexive=: what sort of radiant rain dyed its flesh? Could it be an iota of the Eaters themselves, mummified in the soil of the Rainbow Wood?" />
-    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Godshroom Cap" />
-    <tag Name="NoClear" />
-    <part Name="Interesting" Radius="2" />
+    <part Name="Render" Tile="Items/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{o|埃尔卡特}}" DetailColor="o" RenderString="*" ColorString="&amp;O"/>
+    <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Godshroom Cap"/>
+    <stat Name="Hitpoints" Value="3"/>
+    <part Name="Description" Short="它的外观充满了发光的珊瑚，这种蘑菇吸引了你的眼球，无与伦比。Qud 从未见过这样的色彩，于是你自问: 是什么样的光辉之雨染红了它的肉身？难道是彩虹林土壤中木乃伊化的吞噬者的一丝痕迹？"/>
+    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Godshroom Cap"/>
+    <tag Name="NoClear"/>
+    <part Name="Interesting" Radius="2"/>
   </object>
   <object Name="Brightshroom" Inherits="Fungus">
-    <part Name="Render" RenderIfDark="true" Tile="Terrain/sw_shroom_caps_spotted_1.bmp" DisplayName="brightshroom" RenderString="231" DetailColor="Y" ColorString="&amp;Y" TileColor="&amp;y" />
-    <stat Name="Hitpoints" Value="10" />
-    <part Name="Description" Short="Shining hyphae pour their soft light up into the orbicular cap of the earthlamp." />
-    <part Name="LightSource" Lit="true" Radius="3" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_shroom_caps_spotted_1.bmp,Terrain/sw_shroom_caps_spotted_2.bmp,Terrain/sw_shroom_caps_spotted_3.bmp,Terrain/sw_shroom_caps_spotted_4.bmp" />
-    <part Name="AnimatedMaterialGeneric" AnimationLength="12" LowFrameOffset="1" HighFrameOffset="1" DetailColorAnimationFrames="0=Y,9=y" />
-    <stag Name="HardMaterial" Value="flesh" />
+    <part Name="Render" RenderIfDark="true" Tile="Terrain/sw_shroom_caps_spotted_1.bmp" DisplayName="光亮菇" RenderString="231" DetailColor="Y" ColorString="&amp;Y" TileColor="&amp;y"/>
+    <stat Name="Hitpoints" Value="10"/>
+    <part Name="Description" Short="发光的菌丝将柔和的光芒洒向地灯菌的球形菌盖。"/>
+    <part Name="LightSource" Lit="true" Radius="3"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_shroom_caps_spotted_1.bmp,Terrain/sw_shroom_caps_spotted_2.bmp,Terrain/sw_shroom_caps_spotted_3.bmp,Terrain/sw_shroom_caps_spotted_4.bmp"/>
+    <part Name="AnimatedMaterialGeneric" AnimationLength="12" LowFrameOffset="1" HighFrameOffset="1" DetailColorAnimationFrames="0=Y,9=y"/>
+    <stag Name="HardMaterial" Value="flesh"/>
   </object>
   <object Name="Spotted Shagspook" Inherits="SolidFungus">
-    <part Name="Render" DisplayName="spotted shagspook" Tile="Creatures/sw_shroom1.bmp" />
-    <part Name="Description" Short="Its stalk is trunk-fat, and powder coats the spots on its humongous cap. The pigment of its skin is liquid dye from a nearby weep." />
-    <builder Name="RandomTile" Tiles="Creatures/sw_shroom1.bmp,Creatures/sw_shroom2.bmp" />
-    <tag Name="Aquatic" />
-		<tag Name="Diggable" />
-    <tag Name="LiquidNative" Value="proteangunk" />
+    <part Name="Render" DisplayName="斑点幽灵菇" Tile="Creatures/sw_shroom1.bmp"/>
+    <part Name="Description" Short="它的茎粗壮如树干，巨大的菌盖上覆盖着粉末状的斑点。其皮肤的颜色来自附近weep植物的液体染料。"/>
+    <builder Name="RandomTile" Tiles="Creatures/sw_shroom1.bmp,Creatures/sw_shroom2.bmp"/>
+    <tag Name="Aquatic"/>
+		<tag Name="Diggable"/>
+    <tag Name="LiquidNative" Value="proteangunk"/>
   </object>
   <object Name="Dandy Cap" Inherits="SolidFungus">
-    <part Name="Render" DisplayName="dandy cap" Tile="Creatures/sw_shroom3.bmp" />
-    <part Name="Description" Short="Nature bequeathed a dandy cap to the slender, bowed stalk and gills that pucker on its underside. The pigment of its skin is liquid dye from a nearby weep." />
-    <builder Name="RandomTile" Tiles="Creatures/sw_shroom3.bmp,Creatures/sw_shroom4.bmp" />
-    <tag Name="Aquatic" />
-		<tag Name="Diggable" />
-    <tag Name="LiquidNative" Value="proteangunk" />
+    <part Name="Render" DisplayName="公子伞" Tile="Creatures/sw_shroom3.bmp"/>
+    <part Name="Description" Short="大自然赋予了这根纤细弯曲的菌柄和其下侧紧闭的菌褶一顶公子伞。它的表皮颜色如同附近哭泣草流出的液体染料。"/>
+    <builder Name="RandomTile" Tiles="Creatures/sw_shroom3.bmp,Creatures/sw_shroom4.bmp"/>
+    <tag Name="Aquatic"/>
+		<tag Name="Diggable"/>
+    <tag Name="LiquidNative" Value="proteangunk"/>
   </object>
   <object Name="Arsplice Hyphae" Inherits="Fungus">
-    <part Name="Render" DisplayName="arsplice hyphae" RenderString="12" ColorString="&amp;C" Tile="terrain/sw_arsplice_hyphae_unripe_even_1.bmp" TileColor="&amp;C" DetailColor="r" Occluding="false" RenderLayer="4" />
-    <part Name="Description" Short="Fairy rings of braided grass-coral-fungi hybrids poke along their shadow network and excrete replicated struts as sheathing." />
-    <stat Name="Hitpoints" Value="400" />
-    <tag Name="NoRuinsRemove" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="亚拼接菌丝" RenderString="12" ColorString="&amp;C" Tile="terrain/sw_arsplice_hyphae_unripe_even_1.bmp" TileColor="&amp;C" DetailColor="r" Occluding="false" RenderLayer="4"/>
+    <part Name="Description" Short="由编织的草珊瑚真菌杂交体构成的仙女环沿着它们的阴影网络延伸，并分泌复制的支架作为护套。"/>
+    <stat Name="Hitpoints" Value="400"/>
+    <tag Name="NoRuinsRemove"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Arsplice Hyphae A" Inherits="Arsplice Hyphae">
-    <builder Name="RandomTile" Tiles="Terrain/sw_arsplice_hyphae_unripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_4.bmp" />
-    <part Name="Harvestable" OnSuccess="Arsplice Seed" StartRipeChance="1:365" RipeTiles="Terrain/sw_arsplice_hyphae_ripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_4.bmp" RipeColor="&amp;m" RipeDetailColor="m" UnripeTiles="Terrain/sw_arsplice_hyphae_unripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_4.bmp" UnripeColor="&amp;C" UnripeDetailColor="C" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_arsplice_hyphae_unripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_4.bmp"/>
+    <part Name="Harvestable" OnSuccess="Arsplice Seed" StartRipeChance="1:365" RipeTiles="Terrain/sw_arsplice_hyphae_ripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_ripe_odd_4.bmp" RipeColor="&amp;m" RipeDetailColor="m" UnripeTiles="Terrain/sw_arsplice_hyphae_unripe_odd_1.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_2.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_3.bmp,Terrain/sw_arsplice_hyphae_unripe_odd_4.bmp" UnripeColor="&amp;C" UnripeDetailColor="C"/>
   </object>
   <object Name="Arsplice Hyphae B" Inherits="Arsplice Hyphae">
-    <builder Name="RandomTile" Tiles="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp,Terrain/sw_arsplice_hyphae_unripe_even_2.bmp,Terrain/sw_arsplice_hyphae_unripe_even_3.bmp,Terrain/sw_arsplice_hyphae_unripe_even_4.bmp" />
-    <part Name="Harvestable" OnSuccess="Arsplice Seed" StartRipeChance="1:365" RipeTiles="Terrain/sw_arsplice_hyphae_ripe_even_1.bmp,Terrain/sw_arsplice_hyphae_ripe_even_2.bmp,Terrain/sw_arsplice_hyphae_ripe_even_3.bmp,Terrain/sw_arsplice_hyphae_ripe_even_4.bmp" RipeColor="&amp;m" RipeDetailColor="m" UnripeTiles="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp,Terrain/sw_arsplice_hyphae_unripe_even_2.bmp,Terrain/sw_arsplice_hyphae_unripe_even_3.bmp,Terrain/sw_arsplice_hyphae_unripe_even_4.bmp" UnripeColor="&amp;C" UnripeDetailColor="C" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp,Terrain/sw_arsplice_hyphae_unripe_even_2.bmp,Terrain/sw_arsplice_hyphae_unripe_even_3.bmp,Terrain/sw_arsplice_hyphae_unripe_even_4.bmp"/>
+    <part Name="Harvestable" OnSuccess="Arsplice Seed" StartRipeChance="1:365" RipeTiles="Terrain/sw_arsplice_hyphae_ripe_even_1.bmp,Terrain/sw_arsplice_hyphae_ripe_even_2.bmp,Terrain/sw_arsplice_hyphae_ripe_even_3.bmp,Terrain/sw_arsplice_hyphae_ripe_even_4.bmp" RipeColor="&amp;m" RipeDetailColor="m" UnripeTiles="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp,Terrain/sw_arsplice_hyphae_unripe_even_2.bmp,Terrain/sw_arsplice_hyphae_unripe_even_3.bmp,Terrain/sw_arsplice_hyphae_unripe_even_4.bmp" UnripeColor="&amp;C" UnripeDetailColor="C"/>
   </object>
 
   <!-- End fungi -->
@@ -601,299 +601,299 @@
 
   <!-- Corals -->
   <object Name="Coral" Inherits="PhysicalObject">
-    <part Name="Render" DisplayName="[Coral]" RenderLayer="3" RenderString="157" Tile="terrain/sw_reef_organic_even_1.bmp" ColorString="&amp;r" Occluding="false" />
-    <part Name="Physics" Conductivity="20" Solid="false" Weight="200" Category="Invertebrates" Takeable="false" />
-    <part Name="MentalShield" />
-    <part Name="PlantProperties" />
-    <part Name="NoBleed" />
-    <part Name="Springy" Factor="1.0" />
-    <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="PlantLike" />
-    <tag Name="LiveAnimal" />
-    <tag Name="BodyType" Value="Bush" />
-    <stag Name="Plank" Value="colony" />
-    <stag Name="Fiber" Value="polyp" />
-    <stag Name="FiberMaterial" Value="limestone" />
-    <tag Name="DiscardInsteadOfGeneratingStacked" Value="1"></tag>
+    <part Name="Render" DisplayName="[珊瑚]" RenderLayer="3" RenderString="157" Tile="terrain/sw_reef_organic_even_1.bmp" ColorString="&amp;r" Occluding="false"/>
+    <part Name="Physics" Conductivity="20" Solid="false" Weight="200" Category="Invertebrates" Takeable="false"/>
+    <part Name="MentalShield"/>
+    <part Name="PlantProperties"/>
+    <part Name="NoBleed"/>
+    <part Name="Springy" Factor="1.0"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="PlantLike"/>
+    <tag Name="LiveAnimal"/>
+    <tag Name="BodyType" Value="Bush"/>
+    <stag Name="Plank" Value="colony"/>
+    <stag Name="Fiber" Value="polyp"/>
+    <stag Name="FiberMaterial" Value="limestone"/>
+    <tag Name="DiscardInsteadOfGeneratingStacked" Value="1"/>
   </object>
   <object Name="PolypCache" Inherits="Coral">
-    <part Name="Render" DisplayName="swollen bulb" RenderString="007" ColorString="&amp;Y" DetailColor="W" Tile="Terrain/sw_sunslag_bulb_odd.bmp" RenderLayer="7" Occluding="false" />
-    <part Name="Physics" Weight="5" Takeable="false" Solid="false" />
-    <part Name="Description" Short="Stuck to the feelers of a polyp cluster and beetling from a corroded strut is a swollen lump of film. A bright broth of carbon-melted platinum goo burns inside." />
-    <part Name="LiquidVolume" StartVolume="1" MaxVolume="1" ManualSeal="false" LiquidVisibleWhenSealed="true" InitialLiquid="sunslag-1" />
-    <tag Name="NoRuinsRemove" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="肿胀的球茎" RenderString="007" ColorString="&amp;Y" DetailColor="W" Tile="Terrain/sw_sunslag_bulb_odd.bmp" RenderLayer="7" Occluding="false"/>
+    <part Name="Physics" Weight="5" Takeable="false" Solid="false"/>
+    <part Name="Description" Short="附着在多头簇的感觉器上，从腐蚀的支架上突出的是一个肿胀的薄膜团。里面燃烧着一种明亮的碳熔融铂金粘液。"/>
+    <part Name="LiquidVolume" StartVolume="1" MaxVolume="1" ManualSeal="false" LiquidVisibleWhenSealed="true" InitialLiquid="sunslag-1"/>
+    <tag Name="NoRuinsRemove"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Coral Polyp" Inherits="Coral">
-    <part Name="Render" DisplayName="coral polyp" RenderString="231" ColorString="&amp;r" Tile="terrain/sw_reef_organic_even_1.bmp" DetailColor="r" Occluding="false" />
-    <part Name="Description" Short="Feelers sway in a circlet on a skeletal vase-column. The aboral side is yoked to other polyps, forming a fossilized arcology." />
-    <tag Name="HangingSupport" />
-    <part Name="RandomRenderString" Strings="15,42,9,248" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp,Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp" />
-    <tag Name="NavigationPolyp" />
-    <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.5" />
-    <tag Name="Reef" />
-    <tag Name="CoralReef" />
-    <tag Name="NoRuinsRemove" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="珊瑚水母" RenderString="231" ColorString="&amp;r" Tile="terrain/sw_reef_organic_even_1.bmp" DetailColor="r" Occluding="false"/>
+    <part Name="Description" Short="触须在骨骼状的柱体上摇曳成一圈。背面与其他珊瑚水母相连，形成化石般的弧形建筑。"/>
+    <tag Name="HangingSupport"/>
+    <part Name="RandomRenderString" Strings="15,42,9,248"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp,Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp"/>
+    <tag Name="NavigationPolyp"/>
+    <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.5"/>
+    <tag Name="Reef"/>
+    <tag Name="CoralReef"/>
+    <tag Name="NoRuinsRemove"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Coral Polyp A" Inherits="Coral Polyp">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp"/>
   </object>
   <object Name="Coral Polyp B" Inherits="Coral Polyp">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp"/>
   </object>
   <object Name="Coral and Palladium Strut" Inherits="Coral">
-    <part Name="Render" DisplayName="palladium strut with coral growth" RenderString="231" ColorString="&amp;r" TileColor="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="r"  Occluding="true" />
-    <part Name="Description" Short="Bow polyps colonize the cylindrical topology of the lattice and pattern out an orthogonal neighborhood in a network of life." />
-    <tag Name="HangingSupport" />
-    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp,Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp" />
-    <part Name="PluckablePolyp" />
-    <tag Name="NavigationPolyp" />
-    <tag Name="NavigationStrut" />
-    <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.75" />
-    <tag Name="Reef" />
-    <tag Name="CoralReef" />
-    <tag Name="NoRuinsRemove" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="钯支撑柱上的珊瑚生长" RenderString="231" ColorString="&amp;r" TileColor="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="r" Occluding="true"/>
+    <part Name="Description" Short="弓状珊瑚虫群落占据了晶格的圆柱形拓扑结构，在生命网络中形成了一个正交的社区。"/>
+    <tag Name="HangingSupport"/>
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp,Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp"/>
+    <part Name="PluckablePolyp"/>
+    <tag Name="NavigationPolyp"/>
+    <tag Name="NavigationStrut"/>
+    <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.75"/>
+    <tag Name="Reef"/>
+    <tag Name="CoralReef"/>
+    <tag Name="NoRuinsRemove"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Coral and Palladium Strut A" Inherits="Coral and Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp"/>
   </object>
   <object Name="Coral and Palladium Strut B" Inherits="Coral and Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp"/>
   </object>
   <object Name="Finger Coral" Inherits="Coral">
-    <part Name="Render" DisplayName="finger coral" RenderString="157" ColorString="&amp;r" DetailColor="R" Occluding="false" />
-    <part Name="Description" Short="Soft-body beings excrete the calcified walls of their arcologies as air-climbing spires. They have stone texture and house microlife in their cavities." />
-    <tag Name="HangingSupport" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_coral_branching_1.bmp,Terrain/sw_coral_branching_2.bmp,Terrain/sw_coral_branching_3.bmp,Terrain/sw_coral_branching_4.bmp" />
-    <tag Name="Gender" Value="plural" />
-    <stag Name="Plank" Value="finger" />
-    <stag Name="Fiber" Value="polyp" />
-    <stag Name="FiberMaterial" Value="limestone" />
-    <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
+    <part Name="Render" DisplayName="指状珊瑚" RenderString="157" ColorString="&amp;r" DetailColor="R" Occluding="false"/>
+    <part Name="Description" Short="软体生物分泌出它们弧形建筑的钙化墙壁，形成攀爬空气的尖塔。它们具有石质纹理，并在其腔室内栖息着微小生命。"/>
+    <tag Name="HangingSupport"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_coral_branching_1.bmp,Terrain/sw_coral_branching_2.bmp,Terrain/sw_coral_branching_3.bmp,Terrain/sw_coral_branching_4.bmp"/>
+    <tag Name="Gender" Value="plural"/>
+    <stag Name="Plank" Value="finger"/>
+    <stag Name="Fiber" Value="polyp"/>
+    <stag Name="FiberMaterial" Value="limestone"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_Plants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants"/>
   </object>
 
   <!-- Palladium struts -->
   <object Name="Palladium Strut" Inherits="InorganicObject">
-    <part Name="Render" DisplayName="palladium strut" RenderString="231" ColorString="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="C"  Occluding="true" />
-    <part Name="Description" Short="Cry-packed casing freckles on cyclinders joined at right angles. Shine from the softer metal pokes through, silvery-white palladium that once performed hydro- and electroconduction across a vast arcological lattice." />
-    <part Name="Physics" Takeable="false" />
-    <part Name="Metal" />
-    <tag Name="HangingSupport" />
-    <stat Name="Hitpoints" Value="200" />
-    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp,Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp" />
-    <tag Name="NavigationStrut" />
-    <tag Name="Reef" />
-    <tag Name="MetalReef" />
-    <tag Name="NoRuinsRemove" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="钯支架" RenderString="231" ColorString="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="C" Occluding="true"/>
+    <part Name="Description" Short="充满冷冻剂的外壳点缀在垂直相连的圆柱上。较软金属的光泽穿透而出，银白色的钯曾在这庞大的生态建筑网络中执行水和电的传导功能。"/>
+    <part Name="Physics" Takeable="false"/>
+    <part Name="Metal"/>
+    <tag Name="HangingSupport"/>
+    <stat Name="Hitpoints" Value="200"/>
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp,Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp"/>
+    <tag Name="NavigationStrut"/>
+    <tag Name="Reef"/>
+    <tag Name="MetalReef"/>
+    <tag Name="NoRuinsRemove"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Palladium Strut A" Inherits="Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp"/>
   </object>
   <object Name="Palladium Strut B" Inherits="Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp"/>
   </object>
 
   <!-- Sponges -->
   <object Name="Sponge" Inherits="PhysicalObject">
-    <part Name="Render" DisplayName="[Sponge]" RenderLayer="3" RenderString="157" Tile="terrain/sw_coral_ball_1.bmp" ColorString="&amp;r" Occluding="false" />
-    <part Name="Physics" Conductivity="30" Solid="false" Weight="50" Category="Invertebrates" Takeable="false" />
-    <part Name="MentalShield" />
-    <part Name="PlantProperties" />
-    <part Name="NoBleed" />
-    <part Name="Springy" Factor="1.2" />
-    <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="PlantLike" />
-    <tag Name="LiveAnimal" />
-    <tag Name="BodyType" Value="Bush" />
-    <stag Name="Plank" Value="cluster" />
-    <stag Name="Fiber" Value="ball" />
-    <stag Name="FiberMaterial" Value="sponge" />
+    <part Name="Render" DisplayName="[海绵]" RenderLayer="3" RenderString="157" Tile="terrain/sw_coral_ball_1.bmp" ColorString="&amp;r" Occluding="false"/>
+    <part Name="Physics" Conductivity="30" Solid="false" Weight="50" Category="Invertebrates" Takeable="false"/>
+    <part Name="MentalShield"/>
+    <part Name="PlantProperties"/>
+    <part Name="NoBleed"/>
+    <part Name="Springy" Factor="1.2"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="PlantLike"/>
+    <tag Name="LiveAnimal"/>
+    <tag Name="BodyType" Value="Bush"/>
+    <stag Name="Plank" Value="cluster"/>
+    <stag Name="Fiber" Value="ball"/>
+    <stag Name="FiberMaterial" Value="sponge"/>
   </object>
   <object Name="Tunnel Sponge" Inherits="Sponge">
-    <part Name="Render" DisplayName="tunnel sponge" RenderString="239" ColorString="&amp;W" DetailColor="r" Occluding="true" />
-    <part Name="Description" Short="Porous skeletons of spongin poke the inverted tunnel buttes, stone-like, out to angles." />
-    <tag Name="HangingSupport" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_sponge_tube_1.bmp,Terrain/sw_sponge_tube_2.bmp,Terrain/sw_sponge_tube_3.bmp,Terrain/sw_sponge_tube_4.bmp" />
-    <stag Name="Plank" Value="tunnel" />
-    <stag Name="Fiber" Value="ring" />
-    <stag Name="FiberMaterial" Value="sponge" />
-    <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
+    <part Name="Render" DisplayName="隧道海绵" RenderString="239" ColorString="&amp;W" DetailColor="r" Occluding="true"/>
+    <part Name="Description" Short="海绵质的多孔骨架从倒置的隧道丘陵中突出，呈现出类似石头的角度。"/>
+    <tag Name="HangingSupport"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_sponge_tube_1.bmp,Terrain/sw_sponge_tube_2.bmp,Terrain/sw_sponge_tube_3.bmp,Terrain/sw_sponge_tube_4.bmp"/>
+    <stag Name="Plank" Value="tunnel"/>
+    <stag Name="Fiber" Value="ring"/>
+    <stag Name="FiberMaterial" Value="sponge"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_Plants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants"/>
   </object>
   <object Name="Bop Sponge" Inherits="Sponge">
-    <part Name="Render" DisplayName="bop sponge" RenderString="005" ColorString="&amp;B" Occluding="false" />
-    <part Name="Description" Short="It's laminated jelly molded as a globoid with pores to filter and nosh algae, and it jiggles." />
-    <builder Name="RandomTile" Tiles="Terrain/sw_coral_ball_1.bmp,Terrain/sw_coral_ball_2.bmp,Terrain/sw_coral_ball_3.bmp,Terrain/sw_coral_ball_4.bmp" />
-    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Bop Cheek" />
-    <stag Name="Plank" Value="strip" />
-    <stag Name="Fiber" Value="cheek" />
-    <stag Name="FiberMaterial" Value="sponge" />
+    <part Name="Render" DisplayName="波普海绵" RenderString="005" ColorString="&amp;B" Occluding="false"/>
+    <part Name="Description" Short="这是一种层状果冻状的球形体，上面布满了过滤和食用藻类的孔洞，还会颤动。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_coral_ball_1.bmp,Terrain/sw_coral_ball_2.bmp,Terrain/sw_coral_ball_3.bmp,Terrain/sw_coral_ball_4.bmp"/>
+    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Bop Cheek"/>
+    <stag Name="Plank" Value="strip"/>
+    <stag Name="Fiber" Value="cheek"/>
+    <stag Name="FiberMaterial" Value="sponge"/>
   </object>
   <object Name="Farm Bop Sponge" Inherits="Bop Sponge">
-    <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
-    <tag Name="DynamicObjectsTable:FarmablePlants" />
-    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
-    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Bop Cheek" RipeColor="&amp;B" UnripeColor="&amp;b" StartRipeChance="1:8" />
+    <tag Name="DynamicObjectsTable:PalladiumReef_Plants"/>
+    <tag Name="DynamicObjectsTable:FarmablePlants"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants"/>
+    <part Name="Harvestable" DestroyOnHarvest="true" OnSuccess="Bop Cheek" RipeColor="&amp;B" UnripeColor="&amp;b" StartRipeChance="1:8"/>
   </object>
 
 	<!-- Crystal -->
 	<object Name="Crystal" Inherits="PhysicalObject">
-		<part Name="Render" DisplayName="[Crystal]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;m" Occluding="false" />
-		<part Name="Physics" Conductivity="80" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Category="Crystal" />
-		<part Name="MentalShield" />
-		<part Name="PlantProperties" />
-		<part Name="NoBleed" />
-		<part Name="Springy" Factor="0.1" />
-		<stat Name="AV" Value="4" />
-		<part Name="RefractLight" Chance="25" />
-		<tag Name="BaseObject" Value="*noinherit" />
-		<tag Name="Crystal" />
-		<tag Name="LiveCrystal" />
-		<stag Name="Plank" Value="prism" />
-		<stag Name="Fiber" Value="shard" />
-		<stag Name="FiberMaterial" Value="crystal" />
+		<part Name="Render" DisplayName="[水晶]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;m" Occluding="false"/>
+		<part Name="Physics" Conductivity="80" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Category="Crystal"/>
+		<part Name="MentalShield"/>
+		<part Name="PlantProperties"/>
+		<part Name="NoBleed"/>
+		<part Name="Springy" Factor="0.1"/>
+		<stat Name="AV" Value="4"/>
+		<part Name="RefractLight" Chance="25"/>
+		<tag Name="BaseObject" Value="*noinherit"/>
+		<tag Name="Crystal"/>
+		<tag Name="LiveCrystal"/>
+		<stag Name="Plank" Value="prism"/>
+		<stag Name="Fiber" Value="shard"/>
+		<stag Name="FiberMaterial" Value="crystal"/>
 	</object>
 	<object Name="Psychal Rhythm Rock" Inherits="Crystal">
-		<part Name="Render" DisplayName="psychal rhythm rock" RenderString="013" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="m" Occluding="false" />
-		<part Name="Description" Short="Stalactitic prisms stutter-hum the compressed thoughtstuff of trillions across the psychic sea." />
-		<tag Name="HangingSupport" />
-		<builder Name="RandomTile" Tiles="Creatures/sw_crystal1.bmp,Creatures/sw_crystal2.bmp,Creatures/sw_crystal3.bmp,Creatures/sw_crystal4.bmp" />
-		<part Name="RandomRenderString" Strings="013,014" />
-		<tag Name="DynamicObjectsTable:MoonStair_Plants" />
-		<tag Name="DynamicObjectsTable:FarmablePlants" />
-		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants" />
+		<part Name="Render" DisplayName="心灵节奏石" RenderString="013" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="m" Occluding="false"/>
+		<part Name="Description" Short="钟乳状棱镜断断续续地哼鸣着横跨心灵之海的万亿压缩思维物质。"/>
+		<tag Name="HangingSupport"/>
+		<builder Name="RandomTile" Tiles="Creatures/sw_crystal1.bmp,Creatures/sw_crystal2.bmp,Creatures/sw_crystal3.bmp,Creatures/sw_crystal4.bmp"/>
+		<part Name="RandomRenderString" Strings="013,014"/>
+		<tag Name="DynamicObjectsTable:MoonStair_Plants"/>
+		<tag Name="DynamicObjectsTable:FarmablePlants"/>
+		<tag Name="DynamicObjectsTable:MoonStair_FarmablePlants"/>
 	</object>
 	
 	<!-- Chavvah -->
 	<object Name="Chavvah Branch" Inherits="Crystal">
-		<part Name="Render" DisplayName="crystalline branch" RenderString="#" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y" />
-		<part Name="Description" Short="Microcolumns of incandescent crystal are bundled in dense posies, and branch through the sky as magnificent fractals. They toss moonlight back and forth between them." />
-		<part Name="Physics" Weight="500" />
-		<stat Name="Hitpoints" Value="1000" />
-		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_branch_floor_1.bmp,Terrain/sw_chavvah_branch_floor_2.bmp,Terrain/sw_chavvah_branch_floor_3.bmp,Terrain/sw_chavvah_branch_floor_4.bmp,Terrain/sw_chavvah_branch_floor_5.bmp,Terrain/sw_chavvah_branch_floor_6.bmp" />
-		<part Name="Graffitied" ChanceOneIn="1000" />
-		<tag Name="IgnoreOccupationChecks" />
-		<tag Name="NoPassByMessage" />
-		<tag Name="NoSparkingQuest" />
-		<intproperty Name="Bridge" Value="1" />
+		<part Name="Render" DisplayName="晶枝" RenderString="#" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y"/>
+		<part Name="Description" Short="炽热水晶的微柱密集地束成花束，如同壮丽的分形在天空中延伸。它们相互之间反射着月光。"/>
+		<part Name="Physics" Weight="500"/>
+		<stat Name="Hitpoints" Value="1000"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_branch_floor_1.bmp,Terrain/sw_chavvah_branch_floor_2.bmp,Terrain/sw_chavvah_branch_floor_3.bmp,Terrain/sw_chavvah_branch_floor_4.bmp,Terrain/sw_chavvah_branch_floor_5.bmp,Terrain/sw_chavvah_branch_floor_6.bmp"/>
+		<part Name="Graffitied" ChanceOneIn="1000"/>
+		<tag Name="IgnoreOccupationChecks"/>
+		<tag Name="NoPassByMessage"/>
+		<tag Name="NoSparkingQuest"/>
+		<intproperty Name="Bridge" Value="1"/>
 	</object>
 	<object Name="Chavvah Dense Leaves" Inherits="Crystal">
-		<part Name="Render" DisplayName="dense crystal leaves" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" Occluding="true" />
-		<part Name="Description" Short="Drops of static dew fuzz the sharp crystal edges. The flats themselves are radiant and rustle on a psychic breeze. In gestalt, they flow like reversible sequins across the mind/body divide." />
-		<part Name="Physics" Weight="100" />
-		<stat Name="Hitpoints" Value="20" />
-		<part Name="RandomRenderString" Strings="044,046" />
-		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_leaves_dense_1.bmp,Terrain/sw_chavvah_leaves_dense_2.bmp,Terrain/sw_chavvah_leaves_dense_3.bmp,Terrain/sw_chavvah_leaves_dense_4.bmp" />
-		<part Name="AnimatedMaterialGeneric" HFlipPermyriadChancePerFrame="2" />
-		<tag Name="Gender" Value="plural" />
+		<part Name="Render" DisplayName="密晶叶" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" Occluding="true"/>
+		<part Name="Description" Short="静电露珠模糊了锐利的水晶边缘。叶片本身散发着光芒，在心灵微风中沙沙作响。整体来看，它们如同可逆的亮片般在心灵与肉体之间流动。"/>
+		<part Name="Physics" Weight="100"/>
+		<stat Name="Hitpoints" Value="20"/>
+		<part Name="RandomRenderString" Strings="044,046"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_leaves_dense_1.bmp,Terrain/sw_chavvah_leaves_dense_2.bmp,Terrain/sw_chavvah_leaves_dense_3.bmp,Terrain/sw_chavvah_leaves_dense_4.bmp"/>
+		<part Name="AnimatedMaterialGeneric" HFlipPermyriadChancePerFrame="2"/>
+		<tag Name="Gender" Value="plural"/>
 	</object>
 	<object Name="Chavvah Sparse Leaves" Inherits="Crystal">
-		<part Name="Render" DisplayName="sparse crystal leaves" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" />
-		<part Name="Description" Short="Drops of static dew fuzz the sharp crystal edges. The flats themselves are radiant and rustle on a psychic breeze. In gestalt, they flow like reversible sequins across the mind/body divide." />
-		<part Name="Physics" Weight="50" />
-		<stat Name="Hitpoints" Value="15" />
-		<part Name="RandomRenderString" Strings="046,096" />
-		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_leaves_sparse_1.bmp,Terrain/sw_chavvah_leaves_sparse_2.bmp,Terrain/sw_chavvah_leaves_sparse_3.bmp,Terrain/sw_chavvah_leaves_sparse_4.bmp" />
-		<part Name="AnimatedMaterialGeneric" HFlipPermyriadChancePerFrame="2" />
-		<tag Name="Gender" Value="plural" />
+		<part Name="Render" DisplayName="稀疏水晶叶" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y"/>
+		<part Name="Description" Short="静电露珠模糊了锐利的水晶边缘。叶片本身散发着光芒，在心灵微风中沙沙作响。整体来看，它们如同可逆的亮片般在心灵与肉体之间流动。"/>
+		<part Name="Physics" Weight="50"/>
+		<stat Name="Hitpoints" Value="15"/>
+		<part Name="RandomRenderString" Strings="046,096"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_leaves_sparse_1.bmp,Terrain/sw_chavvah_leaves_sparse_2.bmp,Terrain/sw_chavvah_leaves_sparse_3.bmp,Terrain/sw_chavvah_leaves_sparse_4.bmp"/>
+		<part Name="AnimatedMaterialGeneric" HFlipPermyriadChancePerFrame="2"/>
+		<tag Name="Gender" Value="plural"/>
 	</object>
 	<object Name="Chavvah Chime Left" Inherits="Crystal">
-		<part Name="Render" DisplayName="chiming rock" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_1.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m" />
-		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
-		<part Name="Physics" Weight="1000" />
-		<stat Name="Hitpoints" Value="2000" />
-		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
-    <part Name="Interesting" Radius="1" Key="Chavvah Chime" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Render" DisplayName="鸣响石" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_1.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m"/>
+		<part Name="Description" Short="它的棱角被静电磨平，水晶球根在转化的月光下燃烧。它以近远不同的音调鸣响。"/>
+		<part Name="Physics" Weight="1000"/>
+		<stat Name="Hitpoints" Value="2000"/>
+		<part Name="ConversationScript" ConversationID="ChavvahFrontChime"/>
+		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow"/>
+    <part Name="Interesting" Radius="1" Key="Chavvah Chime"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
 	<object Name="Chavvah Chime Right" Inherits="Crystal">
-		<part Name="Render" DisplayName="chiming rock" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_2.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m" />
-		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
-		<part Name="Physics" Weight="1000" />
-		<stat Name="Hitpoints" Value="2000" />
-		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
-    <part Name="Interesting" Radius="1" Key="Chavvah Chime" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Render" DisplayName="鸣响石" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_2.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m"/>
+		<part Name="Description" Short="它的棱角被静电磨平，水晶球根在转化的月光下燃烧。它以近远不同的音调鸣响。"/>
+		<part Name="Physics" Weight="1000"/>
+		<stat Name="Hitpoints" Value="2000"/>
+		<part Name="ConversationScript" ConversationID="ChavvahFrontChime"/>
+		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow"/>
+    <part Name="Interesting" Radius="1" Key="Chavvah Chime"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
 	</object>	
 	<object Name="Chavvah Taproot Floor" Inherits="Crystal">
-		<part Name="Render" DisplayName="crystalline taproot" RenderString="249" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y" RenderLayer="2" />
-		<part Name="Description" Short="Little crystal shoots were crushed by pure ego-weight to a girthful, stout, and equant tranducer of transient thoughtsoft. Decohered emotion and memory crystallize as they shoot up the root." />
-		<part Name="Physics" Weight="1000" />
-		<stat Name="Hitpoints" Value="2000" />
-		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_branch_floor_1.bmp,Terrain/sw_chavvah_branch_floor_2.bmp,Terrain/sw_chavvah_branch_floor_3.bmp,Terrain/sw_chavvah_branch_floor_4.bmp,Terrain/sw_chavvah_branch_floor_5.bmp,Terrain/sw_chavvah_branch_floor_6.bmp" />
-		<part Name="Graffitied" ChanceOneIn="1000" />
-		<tag Name="IgnoreOccupationChecks" />
-		<tag Name="NoPassByMessage" />
-		<tag Name="NoSparkingQuest" />
-		<intproperty Name="Bridge" Value="1" />
+		<part Name="Render" DisplayName="水晶根茎" RenderString="249" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y" RenderLayer="2"/>
+		<part Name="Description" Short="细小的水晶芽被纯粹的自我重量压成粗壮而均匀的瞬时思维转换器。情感和记忆在其上升过程中结晶化。"/>
+		<part Name="Physics" Weight="1000"/>
+		<stat Name="Hitpoints" Value="2000"/>
+		<builder Name="RandomTile" Tiles="Terrain/sw_chavvah_branch_floor_1.bmp,Terrain/sw_chavvah_branch_floor_2.bmp,Terrain/sw_chavvah_branch_floor_3.bmp,Terrain/sw_chavvah_branch_floor_4.bmp,Terrain/sw_chavvah_branch_floor_5.bmp,Terrain/sw_chavvah_branch_floor_6.bmp"/>
+		<part Name="Graffitied" ChanceOneIn="1000"/>
+		<tag Name="IgnoreOccupationChecks"/>
+		<tag Name="NoPassByMessage"/>
+		<tag Name="NoSparkingQuest"/>
+		<intproperty Name="Bridge" Value="1"/>
 	</object>
 	<object Name="Crystalline Root" Inherits="Crystal">
-		<part Name="Render" DisplayName="crystalline root" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y" RenderString="197" RenderIfDark="true" RenderLayer="3" />
-		<part Name="Description" Short="Hexagon fibers of delicate crystal twine through the earth and push the ambient psychal glow up the phloem to the sapient chimes." />
+		<part Name="Render" DisplayName="水晶根须" ColorString="&amp;m" TileColor="&amp;m" DetailColor="y" RenderString="197" RenderIfDark="true" RenderLayer="3"/>
+		<part Name="Description" Short="精致的六角晶体纤维贯穿土壤，将周围的灵光沿着韧皮部传递给智慧之钟。"/>
 		<part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
-		<part Name="Graffitied" ChanceOneIn="1000" />
-		<part Name="Springy" Factor="0.1" />
-		<tag Name="PaintedFence" Value="base,spikey" />
-		<tag Name="PaintedFenceAtlas" Value="Tiles2/Roots/" />
-		<tag Name="PaintedFenceExtension" Value=".png" />
-		<tag Name="PaintWith" Value="CrystallineRoots" />
-		<tag Name="IgnoreOccupationChecks" />
-		<tag Name="PitDetailColor" Value="K" />
-		<part Name="DropPit" />
-		<tag Name="NoPassByMessage" />
-		<tag Name="NoSparkingQuest" />
-		<intproperty Name="Bridge" Value="1" />
+		<part Name="Graffitied" ChanceOneIn="1000"/>
+		<part Name="Springy" Factor="0.1"/>
+		<tag Name="PaintedFence" Value="base,spikey"/>
+		<tag Name="PaintedFenceAtlas" Value="Tiles2/Roots/"/>
+		<tag Name="PaintedFenceExtension" Value=".png"/>
+		<tag Name="PaintWith" Value="CrystallineRoots"/>
+		<tag Name="IgnoreOccupationChecks"/>
+		<tag Name="PitDetailColor" Value="K"/>
+		<part Name="DropPit"/>
+		<tag Name="NoPassByMessage"/>
+		<tag Name="NoSparkingQuest"/>
+		<intproperty Name="Bridge" Value="1"/>
 	</object>
 	<object Name="Crystalline Radicle" Inherits="Crystalline Root">
-		<part Name="Render" DisplayName="young crystalline root" />
-		<part Name="Description" Short="Hexagon fibers of delicate, newly shedded crystal twine through the earth and vibrate with pre-psychal fullness. They radiate an early glow." />
-		<part Name="Harvestable" OnSuccess="Crystal of Eve" StartRipeChance="1:40" RipeColor="&amp;B" RipeTileColor="&amp;m" RipeDetailColor="B" UnripeColor="&amp;m" UnripeTileColor="&amp;m" UnripeDetailColor="y" />
-		<removepart Name="DropPit" />
+		<part Name="Render" DisplayName="幼晶根"/>
+		<part Name="Description" Short="纤细的新脱落晶体纤维穿插于土壤之中，振动着充满前心灵的充实感。它们散发着早期的光芒。"/>
+		<part Name="Harvestable" OnSuccess="Crystal of Eve" StartRipeChance="1:40" RipeColor="&amp;B" RipeTileColor="&amp;m" RipeDetailColor="B" UnripeColor="&amp;m" UnripeTileColor="&amp;m" UnripeDetailColor="y"/>
+		<removepart Name="DropPit"/>
 	</object>
 	<object Name="TauSoft" Inherits="Crystal">
-		<part Name="Render" DisplayName="glowing soft" Tile="Terrain/sw_chavvah_soft.bmp" RenderLayer="4" RenderString="236" ColorString="&amp;m" DetailColor="y" Occluding="false" />
-		<part Name="Description" Short="Heartroots tangle at the yawning psychal nexus of the crystal tree. They burn with the light of gaseous feelstuff, all the bits of ambient order in the soil and rock animated by a deeper dimensional warping. This is a shore on the psychic sea." />
-		<part Name="Physics" Weight="1000" />
-		<stat Name="Hitpoints" Value="2000" />
-		<part Name="ConversationScript" ConversationID="TauSoft" />
-		<part Name="GameUnique" State="TauElse" />
-		<tag Name="PaintWith" Value="ChavvahRoots" />
-		<tag Name="ExcludeFromDynamicEncounters" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
-    <part Name="Interesting" Radius="1" />
+		<part Name="Render" DisplayName="发光软体" Tile="Terrain/sw_chavvah_soft.bmp" RenderLayer="4" RenderString="236" ColorString="&amp;m" DetailColor="y" Occluding="false"/>
+		<part Name="Description" Short="心根在水晶树的心灵节点处纠缠。它们燃烧着气体情感物质的光芒，土壤和岩石中的所有秩序碎片都被更深层次的维度扭曲所激活。这里是心灵海洋的岸边。"/>
+		<part Name="Physics" Weight="1000"/>
+		<stat Name="Hitpoints" Value="2000"/>
+		<part Name="ConversationScript" ConversationID="TauSoft"/>
+		<part Name="GameUnique" State="TauElse"/>
+		<tag Name="PaintWith" Value="ChavvahRoots"/>
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow"/>
+    <part Name="Interesting" Radius="1"/>
 	</object>
 
 	<!-- Stalagmites -->
 	<object Name="BaseStalagmite" Inherits="InorganicObject">
-		<part Name="Render" DisplayName="stalagmite" ColorString="&amp;w" DetailColor="r" RenderLayer="3"></part>
-		<part Name="RandomTile" Tiles="Items/sw_stalag1.bmp,Items/sw_stalag2.bmp,Items/sw_stalag3.bmp,Items/sw_stalag4.bmp" />
-		<tag Name="BaseObject" Value="*noinherit" />
-		<tag Name="ExcludeFromDynamicEncounters" />
-		<part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="6000" Takeable="false" Solid="true" />
-		<stat Name="AV" Value="10" />
-		<stat Name="Hitpoints" Value="5000" />
-		<tag Name="NoSparkingQuest" />
-		<tag Name="VaporObject" Value="LavaPuddle" />
-		<tag Name="Flyover" />
-		<intproperty Name="AllowMissiles" Value="1" />
+		<part Name="Render" DisplayName="石笋" ColorString="&amp;w" DetailColor="r" RenderLayer="3"/>
+		<part Name="RandomTile" Tiles="Items/sw_stalag1.bmp,Items/sw_stalag2.bmp,Items/sw_stalag3.bmp,Items/sw_stalag4.bmp"/>
+		<tag Name="BaseObject" Value="*noinherit"/>
+		<tag Name="ExcludeFromDynamicEncounters"/>
+		<part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="6000" Takeable="false" Solid="true"/>
+		<stat Name="AV" Value="10"/>
+		<stat Name="Hitpoints" Value="5000"/>
+		<tag Name="NoSparkingQuest"/>
+		<tag Name="VaporObject" Value="LavaPuddle"/>
+		<tag Name="Flyover"/>
+		<intproperty Name="AllowMissiles" Value="1"/>
 	</object>
 	<object Name="MiasmaticStalagmite" Inherits="BaseStalagmite">
-		<part Name="Description" Short="A squadron of flowstone limbs grip the cave floor, and a banded trunk of calcite pokes the rotting air. Its twirling apex is wrapped in bone-made-vapor." />
-		<part Name="Render" DisplayName="ashy stalagmite" ColorString="&amp;M" DetailColor="r"></part>
+		<part Name="Description" Short="一队流石肢体紧握洞穴地面，一截带条纹的方解石躯干刺入腐烂的空气中。其旋涡状顶端被骨质蒸汽包裹。"/>
+		<part Name="Render" DisplayName="灰烬石笋" ColorString="&amp;M" DetailColor="r"/>
 		<part Name="Walltrap" WarmColor="^K&amp;m" ReadyColor="^K&amp;M" TurnInterval="20"/>
 		<part Name="WalltrapGas" GasBlueprint="MiasmaticAsh" Density="20-60" PrimaryColor="K" SecondaryColor="k" JetLength="1"/>
-		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
 
 	<!-- End plant-likes -->
@@ -906,287 +906,287 @@
 
   -->
   <object Name="Floor" Inherits="CosmeticObject">
-    <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" RenderIfDark="true" Tile="terrain/sw_ground_dots1.png" />
-    <part Name="Physics" Solid="false" Takeable="false" Weight="-1" Category="Terrain" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
-    <tag Name="NoPassByMessage" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <tag Name="IgnoreOccupationChecks"></tag>
-    <tag Name="HideInNearbyItemsList"></tag>
+    <part Name="Render" DisplayName="[地面]" RenderString="." RenderLayer="0" RenderIfDark="true" Tile="terrain/sw_ground_dots1.png"/>
+    <part Name="Physics" Solid="false" Takeable="false" Weight="-1" Category="Terrain" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999"/>
+    <tag Name="NoPassByMessage"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    <tag Name="IgnoreOccupationChecks"/>
+    <tag Name="HideInNearbyItemsList"/>
   </object>
   <object Name="ClamGrass" Inherits="Floor">
-    <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" ColorString="&amp;O" RenderIfDark="true" DetailColor="" Tile="Terrain/sw_grass2.bmp" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/ClamGlow" />
+    <part Name="Render" DisplayName="[地面]" RenderString="." RenderLayer="0" ColorString="&amp;O" RenderIfDark="true" DetailColor="" Tile="Terrain/sw_grass2.bmp"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/ClamGlow"/>
   </object>
   <object Name="ArenaFloor" Inherits="Floor">
-    <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" RenderIfDark="true" Tile="terrain/sw_arena_floor.bmp" />
-    <part Name="Physics" Solid="false" Takeable="false" Weight="-1" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="[地面]" RenderString="." RenderLayer="0" RenderIfDark="true" Tile="terrain/sw_arena_floor.bmp"/>
+    <part Name="Physics" Solid="false" Takeable="false" Weight="-1" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="DirtFloor" Inherits="Floor">
-    <part Name="Render" DisplayName="packed dirt floor" RenderString="250" ColorString="&amp;w" DetailColor="w" RenderLayer="0" />
-    <part Name="RandomTileOnMove" Tiles="Terrain/sw_ground_dots1.png,Terrain/sw_ground_dots2.png,Terrain/sw_ground_dots3.png,Terrain/sw_ground_dots4.png" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="压实的泥土地面" RenderString="250" ColorString="&amp;w" DetailColor="w" RenderLayer="0"/>
+    <part Name="RandomTileOnMove" Tiles="Terrain/sw_ground_dots1.png,Terrain/sw_ground_dots2.png,Terrain/sw_ground_dots3.png,Terrain/sw_ground_dots4.png"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="DirtPath" Inherits="DirtFloor">
-    <part Name="Render" DisplayName="dirt path" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="泥土小径"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="DirtRoad" Inherits="DirtPath">
-    <part Name="Render" DisplayName="dirt path" />
-    <part Name="SpawnBlocker" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="泥土小径"/>
+    <part Name="SpawnBlocker"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="SaltPath" Inherits="DirtPath">
-    <part Name="Render" DisplayName="saltstone path" RenderString="250" ColorString="&amp;Y" DetailColor="y" RenderLayer="0" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="盐石小径" RenderString="250" ColorString="&amp;Y" DetailColor="y" RenderLayer="0"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="PaintedFlowers" Inherits="DirtPath">
-    <part Name="Render" DisplayName="saltstone path" RenderString="250" ColorString="&amp;Y" DetailColor="y" RenderLayer="0" />
-    <part Name="PaintedFlowers" />
-    <removepart Name="RandomTileOnMove" />
+    <part Name="Render" DisplayName="盐石小径" RenderString="250" ColorString="&amp;Y" DetailColor="y" RenderLayer="0"/>
+    <part Name="PaintedFlowers"/>
+    <removepart Name="RandomTileOnMove"/>
   </object>
   <object Name="WhiteTile" Inherits="DirtPath">
-    <part Name="Render" DisplayName="white tile" RenderString="250" ColorString="&amp;y" DetailColor="Y" RenderLayer="0" />
-    <removepart Name="RandomTileOnMove" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="白色瓷砖" RenderString="250" ColorString="&amp;y" DetailColor="Y" RenderLayer="0"/>
+    <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="GreenTile" Inherits="DirtPath">
-    <part Name="Render" DisplayName="green tile" RenderString="250" ColorString="&amp;c" DetailColor="C" RenderLayer="0" />
-    <removepart Name="RandomTileOnMove" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="绿瓷砖" RenderString="250" ColorString="&amp;c" DetailColor="C" RenderLayer="0"/>
+    <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="RedTile" Inherits="DirtPath">
-    <part Name="Render" DisplayName="red tile" RenderString="177" ColorString="&amp;b^c" DetailColor="C" RenderLayer="0" />
-    <removepart Name="RandomTileOnMove" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="红砖" RenderString="177" ColorString="&amp;b^c" DetailColor="C" RenderLayer="0"/>
+    <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="FungalTrailBrick" Inherits="Floor">
-    <part Name="Render" RenderIfDark="true" DisplayName="coral path" RenderString="#" ColorString="&amp;O" Tile="tiles/sw_floor_brick1.bmp" DetailColor="o" RenderLayer="1" />
-		<part Name="Description" Short="Coral bricks tesselate the path toward an otherplace." />
-    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp" />
-    <part Name="FungalVision" />
-    <tag Name="IgnoreSpaceTimeVortex" />
-    <tag Name="NoClear" />
+    <part Name="Render" RenderIfDark="true" DisplayName="珊瑚之路" RenderString="#" ColorString="&amp;O" Tile="tiles/sw_floor_brick1.bmp" DetailColor="o" RenderLayer="1"/>
+		<part Name="Description" Short="珊瑚砖铺就通往异境的小径。"/>
+    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp"/>
+    <part Name="FungalVision"/>
+    <tag Name="IgnoreSpaceTimeVortex"/>
+    <tag Name="NoClear"/>
   </object>
   <object Name="CryptTrail" Inherits="Floor">
-    <part Name="Render" RenderIfDark="true" DisplayName="black marble walkway" RenderString="#" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" Tile="tiles/sw_floor_brick1.bmp" RenderLayer="1" />
-    <part Name="Description" Short="Black marble rectangles tesselate the path." />
-    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp" />
+    <part Name="Render" RenderIfDark="true" DisplayName="黑色大理石步道" RenderString="#" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" Tile="tiles/sw_floor_brick1.bmp" RenderLayer="1"/>
+    <part Name="Description" Short="黑色大理石矩形拼接成路径。"/>
+    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp"/>
   </object>
   <object Name="StiltTile" Inherits="DirtPath">
-    <part Name="Render" DisplayName="white tile" RenderString="250" ColorString="&amp;y" RenderLayer="0" />
-    <removepart Name="RandomTileOnMove" />
-    <tag Name="NoSparkingQuest" />
-    <part Name="StiltTile" />
+    <part Name="Render" DisplayName="白色瓷砖" RenderString="250" ColorString="&amp;y" RenderLayer="0"/>
+    <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoSparkingQuest"/>
+    <part Name="StiltTile"/>
   </object>
   <object Name="RandomFlower" Inherits="DirtPath" RenderLayer="0">
-    <part Name="RandomFlower" />
-    <removepart Name="RandomTileOnMove" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="RandomFlower"/>
+    <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="Walkway" Inherits="Furniture">
-    <part Name="Render" DisplayName="[walkway]" RenderString="249" ColorString="&amp;r" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true" RenderLayer="1" />    
-    <part Name="Physics" Weight="50" Takeable="false" Solid="false" />
-    <intproperty Name="Bridge" Value="1" />
-    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp" />
-    <tag Name="NoPassByMessage" />
-    <tag Name="NoSparkingQuest" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" DisplayName="[步道]" RenderString="249" ColorString="&amp;r" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true" RenderLayer="1"/>    
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false"/>
+    <intproperty Name="Bridge" Value="1"/>
+    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp"/>
+    <tag Name="NoPassByMessage"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Bridge" Inherits="Walkway">
-    <part Name="Render" DisplayName="bridge" RenderString="#" ColorString="&amp;r" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" RenderLayer="3" />
-    <part Name="Description" Short="Brick rectangles tesselate the path." />
-    <part Name="Physics" Weight="50" Takeable="false" Solid="false" />
-    <tag Name="Tier" Value="1" />
-    <tag Name="SuspendedPlatform"></tag>
+    <part Name="Render" DisplayName="桥" RenderString="#" ColorString="&amp;r" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" RenderLayer="3"/>
+    <part Name="Description" Short="砖块矩形铺成的小径"/>
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false"/>
+    <tag Name="Tier" Value="1"/>
+    <tag Name="SuspendedPlatform"/>
   </object>
   <object Name="MetalWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="metal walkway" ColorString="&amp;r" DetailColor="C" />
-    <part Name="Description" Short="Metal rectangles tesselate the path." />
+    <part Name="Render" DisplayName="金属步道" ColorString="&amp;r" DetailColor="C"/>
+    <part Name="Description" Short="金属矩形拼接成路径。"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
-    <tag Name="SuspendedPlatform"></tag>
+    <tag Name="SuspendedPlatform"/>
   </object>
   <object Name="BrickWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="brick walkway" ColorString="&amp;w" TileColor="&amp;r" />
-    <part Name="Description" Short="Brick rectangles tesselate the path." />
+    <part Name="Render" DisplayName="砖石步道" ColorString="&amp;w" TileColor="&amp;r"/>
+    <part Name="Description" Short="砖块矩形铺成的小径"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
   <object Name="MarbleWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="marble walkway" ColorString="&amp;c" TileColor="&amp;K" DetailColor="C" />
-    <part Name="Description" Short="Marble rectangles tesselate the path." />
+    <part Name="Render" DisplayName="大理石步道" ColorString="&amp;c" TileColor="&amp;K" DetailColor="C"/>
+    <part Name="Description" Short="大理石矩形铺成的小径。"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
   <object Name="BlackMarbleWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="black marble walkway" ColorString="&amp;c" TileColor="&amp;K" DetailColor="y" />
-    <part Name="Description" Short="Black marble rectangles tesselate the path." />
+    <part Name="Render" DisplayName="黑色大理石步道" ColorString="&amp;c" TileColor="&amp;K" DetailColor="y"/>
+    <part Name="Description" Short="黑色大理石矩形拼接成路径。"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
 	<object Name="GreyMarbleWalkway" Inherits="Walkway">
-		<part Name="Render" DisplayName="marble walkway" ColorString="&amp;y" TileColor="&amp;y" DetailColor="y" />
-		<part Name="Description" Short="Grey marble rectangles tesselate the path." />
-		<part Name="Physics" Weight="5000" />
+		<part Name="Render" DisplayName="大理石步道" ColorString="&amp;y" TileColor="&amp;y" DetailColor="y"/>
+		<part Name="Description" Short="灰色大理石矩形铺成的小径。"/>
+		<part Name="Physics" Weight="5000"/>
 	</object>
   <object Name="WoodFloor" Inherits="Floor">
-    <part Name="Render" DisplayName="woodfloor" RenderString="#" RenderLayer="0" ColorString="&amp;w" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true" />
-    <part Name="Physics" Weight="50" Takeable="false" Solid="false" Organic="true" />
-    <intproperty Name="Bridge" Value="1" />
-    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="木制地板" RenderString="#" RenderLayer="0" ColorString="&amp;w" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true"/>
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false" Organic="true"/>
+    <intproperty Name="Bridge" Value="1"/>
+    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="MarbleFloor" Inherits="Floor">
-    <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" RenderIfDark="true" ColorString="&amp;C^k" DetailColor="k" Tile="assets_content_textures_tiles_tile-dirt.png" />
-    <part Name="Physics" Weight="50" Takeable="false" Solid="false" />
-    <intproperty Name="Bridge" Value="1" />
-    <tag Name="NoSparkingQuest" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="Render" DisplayName="[地面]" RenderString="." RenderLayer="0" RenderIfDark="true" ColorString="&amp;C^k" DetailColor="k" Tile="assets_content_textures_tiles_tile-dirt.png"/>
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false"/>
+    <intproperty Name="Bridge" Value="1"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="BrineBridge" Inherits="Furniture">
-    <part Name="Render" DisplayName="bridge" RenderString="#" RenderLayer="3" ColorString="&amp;w" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true" />
-    <part Name="Description" Short="A bridge made of dried brinestalk." />
-    <part Name="Physics" Weight="50" Takeable="false" Solid="false" Organic="true" />
-    <intproperty Name="Bridge" Value="1" />
-    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp" />
-    <tag Name="NoSparkingQuest" />
-    <tag Name="SuspendedPlatform"></tag>
+    <part Name="Render" DisplayName="桥" RenderString="#" RenderLayer="3" ColorString="&amp;w" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true"/>
+    <part Name="Description" Short="由干燥的盐茎制成的桥梁"/>
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false" Organic="true"/>
+    <intproperty Name="Bridge" Value="1"/>
+    <part Name="PickRandomTile" Tile="Tiles/sw_floor_brickb~#1-4~.bmp"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="SuspendedPlatform"/>
   </object>
   <object Name="SaltDune" Inherits="Floor">
-    <part Name="Render" DisplayName="salt dune" RenderString="176" ColorString="&amp;Y" DetailColor="y" RenderLayer="0" />
+    <part Name="Render" DisplayName="盐丘" RenderString="176" ColorString="&amp;Y" DetailColor="y" RenderLayer="0"/>
   </object>
   <object Name="HighSaltDune" Inherits="Floor">
-    <part Name="Render" DisplayName="salt dune" RenderString="177" ColorString="&amp;Y" DetailColor="y" RenderLayer="0" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/DesertWinds" />
+    <part Name="Render" DisplayName="盐丘" RenderString="177" ColorString="&amp;Y" DetailColor="y" RenderLayer="0"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/DesertWinds"/>
   </object>
   <object Name="HighSaltDuneWhite" Inherits="HighSaltDune">
-    <part Name="Render" ColorString="&amp;y" DetailColor="Y" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" ColorString="&amp;y" DetailColor="Y"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="HighSaltDuneCyan" Inherits="HighSaltDune">
-    <part Name="Render" ColorString="&amp;c" DetailColor="y" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" ColorString="&amp;c" DetailColor="y"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="HighSaltDune1White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_1.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_1.bmp"/>
   </object>
   <object Name="HighSaltDune2White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_2.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_2.bmp"/>
   </object>
   <object Name="HighSaltDune3White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_3.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_3.bmp"/>
   </object>
   <object Name="HighSaltDune4White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_4.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_4.bmp"/>
   </object>
   <object Name="HighSaltDune5White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_5.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_5.bmp"/>
   </object>
   <object Name="HighSaltDune6White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_6.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_6.bmp"/>
   </object>
   <object Name="HighSaltDune7White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_7.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_7.bmp"/>
   </object>
   <object Name="HighSaltDune8White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_8.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_8.bmp"/>
   </object>
   <object Name="HighSaltDune9White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_9.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_9.bmp"/>
   </object>
   <object Name="HighSaltDune10White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_10.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_10.bmp"/>
   </object>
   <object Name="HighSaltDune11White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_11.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_11.bmp"/>
   </object>
   <object Name="HighSaltDune12White" Inherits="HighSaltDuneWhite">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_12.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_12.bmp"/>
   </object>
   <object Name="HighSaltDune1Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_1.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_1.bmp"/>
   </object>
   <object Name="HighSaltDune2Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_2.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_2.bmp"/>
   </object>
   <object Name="HighSaltDune3Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_3.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_3.bmp"/>
   </object>
   <object Name="HighSaltDune4Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_4.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_4.bmp"/>
   </object>
   <object Name="HighSaltDune5Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_5.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_5.bmp"/>
   </object>
   <object Name="HighSaltDune6Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_6.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_6.bmp"/>
   </object>
   <object Name="HighSaltDune7Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_7.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_7.bmp"/>
   </object>
   <object Name="HighSaltDune8Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_8.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_8.bmp"/>
   </object>
   <object Name="HighSaltDune9Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_9.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_9.bmp"/>
   </object>
   <object Name="HighSaltDune10Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_10.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_10.bmp"/>
   </object>
   <object Name="HighSaltDune11Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_11.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_11.bmp"/>
   </object>
   <object Name="HighSaltDune12Cyan" Inherits="HighSaltDuneCyan">
-    <part Name="Render" Tile="Terrain/sw_ground_dune_12.bmp" />
+    <part Name="Render" Tile="Terrain/sw_ground_dune_12.bmp"/>
   </object>
   <object Name="Sunken Room Stairs" Inherits="Walkway">
-    <part Name="Render" DisplayName="marble steps" ColorString="&amp;K" />
-    <part Name="Description" Short="Dappled marble rectangles are stepping stones in and out of the pit." />
-    <removepart Name="PickRandomTile" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="大理石台阶" ColorString="&amp;K"/>
+    <part Name="Description" Short="斑驳的大理石矩形是进出坑洞的踏脚石。"/>
+    <removepart Name="PickRandomTile"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Sunken Room Stairs NW" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_nw.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_nw.bmp"/>
   </object>
   <object Name="Sunken Room Stairs N" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_n.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_n.bmp"/>
   </object>
   <object Name="Sunken Room Stairs NE" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_ne.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_ne.bmp"/>
   </object>
   <object Name="Sunken Room Stairs W" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_w.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_w.bmp"/>
   </object>
   <object Name="Sunken Room Stairs E" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_e.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_e.bmp"/>
   </object>
   <object Name="Sunken Room Stairs SW" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_sw.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_sw.bmp"/>
   </object>
   <object Name="Sunken Room Stairs S" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_s.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_s.bmp"/>
   </object>
   <object Name="Sunken Room Stairs SE" Inherits="Sunken Room Stairs">
-    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_se.bmp" />
+    <part Name="Render" Tile="Tiles2/sw_sunken_room_stairs_se.bmp"/>
   </object>
   <object Name="Primal Grass" Inherits="Floor">
-    <part Name="Render" DisplayName="primal grass" RenderString="." ColorString="&amp;C" Tile="Terrain/sw_grass1.bmp" TileColor="&amp;C" />
-    <removepart Name="Description" />
-    <builder Name="RandomTile" Tiles="assets_content_textures_tiles_tile-grass1.png,Terrain/sw_grass1.bmp,Terrain/sw_grass2.bmp,Terrain/sw_grass3.bmp,Tiles/tile-dirt1.png" />
-    <part Name="RandomRenderString" Strings="39,44,46,96" />
-    <stag Name="Plank" Value="thatch" />
-    <stag Name="Fiber" Value="blade" />
-    <stag Name="FiberMaterial" Value="grass" />
-    <tag Name="LiquidNative" Value="proteangunk" />
-    <part Name="RandomColors" MainColor="c,C" />
-    <tag Name="DynamicObjectsTable:Fungal_Plants" />
-    <tag Name="DynamicObjectsTable:Fungal_FarmablePlants" />
+    <part Name="Render" DisplayName="原始草" RenderString="." ColorString="&amp;C" Tile="Terrain/sw_grass1.bmp" TileColor="&amp;C"/>
+    <removepart Name="Description"/>
+    <builder Name="RandomTile" Tiles="assets_content_textures_tiles_tile-grass1.png,Terrain/sw_grass1.bmp,Terrain/sw_grass2.bmp,Terrain/sw_grass3.bmp,Tiles/tile-dirt1.png"/>
+    <part Name="RandomRenderString" Strings="39,44,46,96"/>
+    <stag Name="Plank" Value="thatch"/>
+    <stag Name="Fiber" Value="blade"/>
+    <stag Name="FiberMaterial" Value="grass"/>
+    <tag Name="LiquidNative" Value="proteangunk"/>
+    <part Name="RandomColors" MainColor="c,C"/>
+    <tag Name="DynamicObjectsTable:Fungal_Plants"/>
+    <tag Name="DynamicObjectsTable:Fungal_FarmablePlants"/>
   </object>
 	<object Name="SmallHexFloor" Inherits="Floor">
-		<part Name="Render" DisplayName="strange floor" Tile="Terrain/sw_hex_dotted_1.bmp" RenderString="250" ColorString="&amp;m" DetailColor="m" RenderLayer="0" />
-		<tag Name="NoSparkingQuest" />
-		<tag Name="Immutable" Value="*delete" />
+		<part Name="Render" DisplayName="奇异地板" Tile="Terrain/sw_hex_dotted_1.bmp" RenderString="250" ColorString="&amp;m" DetailColor="m" RenderLayer="0"/>
+		<tag Name="NoSparkingQuest"/>
+		<tag Name="Immutable" Value="*delete"/>
 	</object>
   <object Name="FoamcreteFloor" Inherits="Floor">
-    <part Name="Render" DisplayName="foamcrete floor" Tile="Terrain/sw_hex_dotted_1.bmp" ColorString="&amp;C" DetailColor="k" />
-    <tag Name="NoSparkingQuest" />
+    <part Name="Render" DisplayName="泡沫混凝土地板" Tile="Terrain/sw_hex_dotted_1.bmp" ColorString="&amp;C" DetailColor="k"/>
+    <tag Name="NoSparkingQuest"/>
   </object>
 
   <!-- End floors -->
@@ -1199,32 +1199,32 @@
 
   -->
   <object Name="Web" Inherits="InorganicObject">
-    <part Name="Render" DisplayName="web" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;Y" RenderLayer="3" RenderIfDark="false" />
-    <part Name="Physics" Solid="false" Takeable="false" Weight="5" Conductivity="5" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="50" VaporTemperature="300" />
-    <stat Name="Hitpoints" Value="50" />
-    <part Name="Sticky" DestroyOnBreak="true" />
-    <part Name="MentalShield" />
-    <tag Name="NoEffects" />
-    <tag Name="HotBurn" Value="20" />
-    <part Name="Description" Short="Glistening silk was spun to a capture spiral and mounted on a series of bridge threads." />
+    <part Name="Render" DisplayName="蛛网" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;Y" RenderLayer="3" RenderIfDark="false"/>
+    <part Name="Physics" Solid="false" Takeable="false" Weight="5" Conductivity="5" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="50" VaporTemperature="300"/>
+    <stat Name="Hitpoints" Value="50"/>
+    <part Name="Sticky" DestroyOnBreak="true"/>
+    <part Name="MentalShield"/>
+    <tag Name="NoEffects"/>
+    <tag Name="HotBurn" Value="20"/>
+    <part Name="Description" Short="闪亮的丝线编织成捕捉螺旋，固定在一系列桥线上。"/>
     <tag Name="Breakable" Value="*delete"/>
   </object>
   <object Name="FrostWeb" Inherits="Web">
-    <part Name="Render" DisplayName="frosty web" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;C" RenderLayer="3" RenderIfDark="false" />
-		<part Name="Description" Short="Glistening silk was spun to a capture spiral and mounted on a series of bridge threads. Hoarfrost fractals texture the strands outside the 2D plane." />		
-		<part Name="Physics" Solid="false" Takeable="false" Weight="5" Temperature="-250" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="500" VaporTemperature="300" />
-    <stat Name="Hitpoints" Value="150" />
-    <part Name="Sticky" DestroyOnBreak="true" />
-    <part Name="Temporary" Duration="20" />
+    <part Name="Render" DisplayName="霜冻蛛网" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;C" RenderLayer="3" RenderIfDark="false"/>
+		<part Name="Description" Short="闪耀的丝线编织成捕捉螺旋，并固定在一系列桥线上。霜花分形纹理覆盖在二维平面之外的丝线上。"/>		
+		<part Name="Physics" Solid="false" Takeable="false" Weight="5" Temperature="-250" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="500" VaporTemperature="300"/>
+    <stat Name="Hitpoints" Value="150"/>
+    <part Name="Sticky" DestroyOnBreak="true"/>
+    <part Name="Temporary" Duration="20"/>
   </object>
   <object Name="PhaseWeb" Inherits="Web">
-    <part Name="Render" DisplayName="phase web" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;y" RenderLayer="3" RenderIfDark="false" />
-    <stat Name="Hitpoints" Value="50" />
-    <removepart Name="Sticky" />
-    <part Name="PhaseSticky" DestroyOnBreak="true" />
-    <part Name="Harvestable" OnSuccess="Phase Silk" OnSuccessAmount="1" StartRipeChance="1:3" RipeColor="&amp;Y" RipeTileColor="&amp;Y" UnripeColor="&amp;y" UnripeTileColor="&amp;y" />
-    <part Name="Description" Short="Glistening silk was spun to a capture spiral and mounted on a series of bridge threads. The filament vibrates across dimensions in the manifold." />
-    <tag Name="IgnorePhaseMatchForStuck"></tag>
+    <part Name="Render" DisplayName="相位网" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;y" RenderLayer="3" RenderIfDark="false"/>
+    <stat Name="Hitpoints" Value="50"/>
+    <removepart Name="Sticky"/>
+    <part Name="PhaseSticky" DestroyOnBreak="true"/>
+    <part Name="Harvestable" OnSuccess="Phase Silk" OnSuccessAmount="1" StartRipeChance="1:3" RipeColor="&amp;Y" RipeTileColor="&amp;Y" UnripeColor="&amp;y" UnripeTileColor="&amp;y"/>
+    <part Name="Description" Short="闪耀的丝线编织成捕捉螺旋，并固定在一系列桥线上。丝线在流形中跨维度振动。"/>
+    <tag Name="IgnorePhaseMatchForStuck"/>
   </object>
   
   <!-- End obstacles -->
@@ -1238,242 +1238,242 @@
 
   --> 
   <object Name="Stairs" Inherits="InorganicObject">
-    <part Name="Render" Visible="true" DisplayName="stairs" RenderString="&lt;" Occluding="false" RenderLayer="7" RenderIfDark="true" />
-    <tag Name="OverlayColor" Value="&amp;M^k" />
-    <tag Name="ImportantOverlayObject" />
-    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
-    <stat Name="Hitpoints" Value="9999" />
-    <part Name="MentalShield" />
-    <part Name="NoDamage" />
-    <tag Name="NoSparkingQuest" />
-    <tag Name="ExcavatoryTerrainFeature" />
-    <tag Name="Gender" Value="plural" />
-    <xtagGrammar iArticle="some" />
-    <tag Name="SpawnBlocker" />
-    <tag Name="Stairs" />
-    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Render" Visible="true" DisplayName="楼梯" RenderString="&lt;" Occluding="false" RenderLayer="7" RenderIfDark="true"/>
+    <tag Name="OverlayColor" Value="&amp;M^k"/>
+    <tag Name="ImportantOverlayObject"/>
+    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999"/>
+    <stat Name="Hitpoints" Value="9999"/>
+    <part Name="MentalShield"/>
+    <part Name="NoDamage"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="ExcavatoryTerrainFeature"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar iArticle="some"/>
+    <tag Name="SpawnBlocker"/>
+    <tag Name="Stairs"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="StairsUp" Inherits="Stairs">
-    <part Name="Render" DisplayName="stairs up" Tile="Tiles2/sw_stairsup.bmp" ColorString="&amp;Y^k" TileColor="&amp;y" DetailColor="Y" RenderString="&lt;" />
-    <part Name="StairsUp" />
-    <part Name="StairHighlight" bEnabled="true" />
-    <part Name="Interesting" Key="StairsUp" Order="2000" />
-    <part Name="Description" Short="Dust blooms on the ascending stair." />
+    <part Name="Render" DisplayName="上楼梯" Tile="Tiles2/sw_stairsup.bmp" ColorString="&amp;Y^k" TileColor="&amp;y" DetailColor="Y" RenderString="&lt;"/>
+    <part Name="StairsUp"/>
+    <part Name="StairHighlight" bEnabled="true"/>
+    <part Name="Interesting" Key="StairsUp" Order="2000"/>
+    <part Name="Description" Short="上升的楼梯上绽放着尘埃之花。"/>
   </object>
   <object Name="StairsDown" Inherits="Stairs">
-    <part Name="Render" DisplayName="stairs down"  Tile="Tiles2/sw_stairsdown.bmp" ColorString="&amp;Y^k" TileColor="&amp;y" DetailColor="Y" RenderString="&gt;" />
-    <part Name="StairsDown" />
-    <part Name="StairHighlight" bEnabled="true" />
-    <part Name="Interesting" Key="StairsDown" Order="1000" />
-    <part Name="Description" Short="Light ebbs off the descending stair." />
+    <part Name="Render" DisplayName="下楼梯" Tile="Tiles2/sw_stairsdown.bmp" ColorString="&amp;Y^k" TileColor="&amp;y" DetailColor="Y" RenderString="&gt;"/>
+    <part Name="StairsDown"/>
+    <part Name="StairHighlight" bEnabled="true"/>
+    <part Name="Interesting" Key="StairsDown" Order="1000"/>
+    <part Name="Description" Short="光线从下降的楼梯上逐渐消失。"/>
   </object>
   <object Name="StairsUpUnconnected" Inherits="StairsUp">
-    <part Name="StairsUp"  Connected="false"/>
-    <tag Name="IgnoreForStairConnections" />
-    <tag Name="Borer" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="StairsUp" Connected="false"/>
+    <tag Name="IgnoreForStairConnections"/>
+    <tag Name="Borer"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="StairsDownUnconnected" Inherits="StairsDown">
     <part Name="StairsDown" Connected="false"/>
-    <tag Name="IgnoreForStairConnections" />
-    <tag Name="Borer" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="IgnoreForStairConnections"/>
+    <tag Name="Borer"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="StairsDownBarathrumsStudy" Inherits="StairsDown">
-    <tag Name="KeyObject" Value="BarathrumKey" />
-    <part Name="Interesting" Key="BarathrumsStudy" Explanation="locked" Order="3000" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="KeyObject" Value="BarathrumKey"/>
+    <part Name="Interesting" Key="BarathrumsStudy" Explanation="locked" Order="3000"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="SlimyShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="slimy shaft" ColorString="&amp;G" DetailColor="g" RenderString="008" TileColor="&amp;G" Tile="Tiles/OpenPit.png" />
-    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You fall down the slimy shaft!" />
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Machinic tones are made soft against the slime-wet walls of a darkling shaft. A void is beneath." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <tag Name="ExcludeFromDynamicEncounters" />
-    <xtagGrammar iArticle="" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="黏滑通道" ColorString="&amp;G" DetailColor="g" RenderString="008" TileColor="&amp;G" Tile="Tiles/OpenPit.png"/>
+    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="你从黏糊糊的轴上掉下去了！"/>
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="机械的声音在这黑暗通道的黏湿墙壁上变得柔和。下方是一片虚空。"/>
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="Gender" Value="neuter"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
+    <xtagGrammar iArticle=""/>
   </object>
   <object Name="OpenShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-    <part Name="StairsDown" Connected="false" PullDown="true" />
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up from the empty space." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="深坑" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K"/>
+    <part Name="StairsDown" Connected="false" PullDown="true"/>
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="黑暗从空旷的空间中涌出。"/>
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="Gender" Value="neuter"/>
+    <xtagGrammar iArticle=""/>
   </object>
   <object Name="OpenShaft2" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="深坑" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K"/>
     <part Name="StairsDown" Connected="false" PullDown="true" Levels="2"/>
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up from the empty space." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="黑暗从空旷的空间中涌出。"/>
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="Gender" Value="neuter"/>
+    <xtagGrammar iArticle=""/>
   </object>
   <object Name="Air" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="open air" ColorString="&amp;g^k" RenderString=" " />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="开阔空间" ColorString="&amp;g^k" RenderString=" "/>
     <part Name="StairsDown" Connected="false" PullDown="true" ConnectLanding="false" PullMessage="You fall down!" GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
-    <part Name="StairHighlight" bEnabled="false" />
-    <tag Name="OverlayColor" Value="&amp;k^k" />
-    <part Name="Description" Short="Space is emptied of solid impediments." />
-    <part Name="ChasmMaterial" />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-		<tag Name="FallPreposition" Value="through" />
-		<tag Name="FallUseDefiniteArticle" Value="true" />
-    <xtagGrammar iArticle="some" />
+    <part Name="StairHighlight" bEnabled="false"/>
+    <tag Name="OverlayColor" Value="&amp;k^k"/>
+    <part Name="Description" Short="空间中没有固体障碍物。"/>
+    <part Name="ChasmMaterial"/>
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="Gender" Value="neuter"/>
+		<tag Name="FallPreposition" Value="through"/>
+		<tag Name="FallUseDefiniteArticle" Value="true"/>
+    <xtagGrammar iArticle="some"/>
   </object>
   <object Name="LazyAir" Inherits="Air">
     <part Name="ChasmMaterial" Lazy="true"/>
   </object>
   <object Name="Pit" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DetailColor="k" DisplayName="open air" ColorString="&amp;w^k" RenderString=" " TileColor="&amp;w^k"/>
-    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You scramble down a craggy ledge." GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
-    <removepart Name="StairHighlight" />
-    <tag Name="OverlayColor" Value="&amp;k^k" />
-    <part Name="Description" Short="Space is emptied of solid impediments." />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DetailColor="k" DisplayName="开阔空间" ColorString="&amp;w^k" RenderString=" " TileColor="&amp;w^k"/>
+    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="你爬下崎岖的壁架。" GenericFall="true" JumpPrompt="看起来像是一个非常漫长的秋天。你确定要跳吗？"/>
+    <removepart Name="StairHighlight"/>
+    <tag Name="OverlayColor" Value="&amp;k^k"/>
+    <part Name="Description" Short="空间中没有固体障碍物。"/>
     <part Name="PitMaterial"/>
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <xtagGrammar iArticle="some" />
-		<tag Name="Pit" />
-		<tag Name="Gender" Value="neuter" />
-    <tag Name="PaintedWallExtension" Value=".png" />
-    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <xtagGrammar iArticle="some"/>
+		<tag Name="Pit"/>
+		<tag Name="Gender" Value="neuter"/>
+    <tag Name="PaintedWallExtension" Value=".png"/>
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_"/>
   </object>
   <object Name="LazyPit" Inherits="Pit">
     <part Name="PitMaterial" Lazy="true"/>
   </object>
 	<object Name="DarkRedPit" Inherits="Pit">
-		<part Name="Render" ColorString="&amp;r^k" TileColor="&amp;r^k" />
-		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<part Name="Render" ColorString="&amp;r^k" TileColor="&amp;r^k"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 	</object>
 	<object Name="DarkCyanPit" Inherits="Pit">
-		<part Name="Render" ColorString="&amp;c^k" TileColor="&amp;c^k" />
-		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<part Name="Render" ColorString="&amp;c^k" TileColor="&amp;c^k"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 	</object>
   <object Name="TombShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-    <part Name="StairsDown" Connected="false" PullDown="true" />
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up from the empty space." />
-    <tag Name="Gender" Value="neuter" />
-    <tag Name="NoAutowalk" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="深坑" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K"/>
+    <part Name="StairsDown" Connected="false" PullDown="true"/>
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="黑暗从空旷的空间中涌出。"/>
+    <tag Name="Gender" Value="neuter"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="ElevatorShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="elevator shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="电梯井" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K"/>
     <part Name="StairsDown" Connected="false" PullDown="true" Levels="1"/>
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="A freightless tether slings down a dark and vast channel." />
-    <tag Name="Gender" Value="neuter" />
-    <tag Name="NoAutowalk" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="一条没有货物的缆绳沿着黑暗而广阔的通道垂下。"/>
+    <tag Name="Gender" Value="neuter"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="ReefOpenShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="coral pit" ColorString="&amp;B" TileColor="&amp;C" DetailColor="r" RenderString="008" Tile="Terrain/sw_openpit_2.bmp" />
-    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="" />
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up the polyp-strewn fringes of an open pit." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Physics" IsReal="false"/>
+    <part Name="Render" DisplayName="珊瑚坑" ColorString="&amp;B" TileColor="&amp;C" DetailColor="r" RenderString="008" Tile="Terrain/sw_openpit_2.bmp"/>
+    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage=""/>
+    <part Name="StairHighlight" bEnabled="false"/>
+    <part Name="Description" Short="黑暗从布满水螅的开放坑洞边缘涌起。"/>
+    <removepart Name="Interesting"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="Gender" Value="neuter"/>
+    <xtagGrammar iArticle=""/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="PondDown" Inherits="InorganicObject">
-    <part Name="Render" DisplayName="small crack" Tile="terrain/sw_crack.bmp" RenderString="." Occluding="false" RenderIfDark="true" ColorString="&amp;y" RenderLayer="1" Visible="false" />
-    <part Name="HiddenRender" Difficulty="2" DisplayName="stone crack" Tile="terrain/sw_crack.bmp" RenderString="&gt;" ColorString="&amp;Y" RenderLayer="3" />
-    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
-    <part Name="Description" Short="A cleft in the red stone opens to a waterspray of underearth." />
-    <stat Name="Hitpoints" Value="9999" />
-    <part Name="Connect" Direction="d" Type="StairsUp" />
-    <part Name="StairsDown" />
-    <part Name="MentalShield" />
-    <part Name="NoDamage" />
-    <part Name="RenderLiquidBackground" />
-    <part Name="Interesting" Order="2000" />
-    <tag Name="OverlayColor" Value="&amp;M^k" />
-    <tag Name="NoSparkingQuest" />
-    <tag Name="ExcavatoryTerrainFeature" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="小裂缝" Tile="terrain/sw_crack.bmp" RenderString="." Occluding="false" RenderIfDark="true" ColorString="&amp;y" RenderLayer="1" Visible="false"/>
+    <part Name="HiddenRender" Difficulty="2" DisplayName="stone crack" Tile="terrain/sw_crack.bmp" RenderString="&gt;" ColorString="&amp;Y" RenderLayer="3"/>
+    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999"/>
+    <part Name="Description" Short="红石中的裂隙通向地底的水喷泉。"/>
+    <stat Name="Hitpoints" Value="9999"/>
+    <part Name="Connect" Direction="d" Type="StairsUp"/>
+    <part Name="StairsDown"/>
+    <part Name="MentalShield"/>
+    <part Name="NoDamage"/>
+    <part Name="RenderLiquidBackground"/>
+    <part Name="Interesting" Order="2000"/>
+    <tag Name="OverlayColor" Value="&amp;M^k"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="ExcavatoryTerrainFeature"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Kitchen" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to kitchen" />
-    <part Name="Interesting" Key="StairsDownKitchen" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往厨房的楼梯"/>
+    <part Name="Interesting" Key="StairsDownKitchen"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Columbarium" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to columbarium" />
-    <part Name="Interesting" Key="StairsDownColumbarium" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往骨灰堂的楼梯"/>
+    <part Name="Interesting" Key="StairsDownColumbarium"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Library" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to library" />
-    <part Name="Interesting" Key="StairsDownLibrary" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往图书馆的楼梯"/>
+    <part Name="Interesting" Key="StairsDownLibrary"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Living Quarters" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to living quarters" />
-    <part Name="Interesting" Key="StairsDownLivingQuarters" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往生活区的楼梯"/>
+    <part Name="Interesting" Key="StairsDownLivingQuarters"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Workshop" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to workshop" />
-    <part Name="Interesting" Key="StairsDownWorkshop" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往工坊的楼梯"/>
+    <part Name="Interesting" Key="StairsDownWorkshop"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Infirmary" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to convalescence quarter" />
-    <part Name="Interesting" Key="StairsDownInfirmary" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往康复区的楼梯"/>
+    <part Name="Interesting" Key="StairsDownInfirmary"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Market" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to market" />
-    <part Name="Interesting" Key="StairsDownMarket" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通向市场的楼梯"/>
+    <part Name="Interesting" Key="StairsDownMarket"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Many Eyes" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to Many Eyes" />
-    <part Name="Interesting" Key="StairsDownManyEyes" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往多眼之地的楼梯"/>
+    <part Name="Interesting" Key="StairsDownManyEyes"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Yd StairsDown Salon" Inherits="StairsDown">
-    <part Name="Render" DisplayName="stairs down to salon" />
-    <part Name="Interesting" Key="StairsDownSalon" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="通往沙龙的楼梯"/>
+    <part Name="Interesting" Key="StairsDownSalon"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
 	<object Name="Chavvah Spiral StairsUp" Inherits="StairsUp">
-		<part Name="Render" DisplayName="spiral stairs up" ColorString="&amp;M" TileColor="&amp;Y" DetailColor="y" Tile="Terrain/sw_chavvah_stairsdown.bmp" />
-		<part Name="Description" Short="Smooth and cloudy frustums hover in a helix of psionic suspension." />
-		<part Name="StairsUp" ConnectionObject="Chavvah Spiral StairsDown" />
-		<xtagGrammar iArticle="some" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Render" DisplayName="螺旋楼梯（上行）" ColorString="&amp;M" TileColor="&amp;Y" DetailColor="y" Tile="Terrain/sw_chavvah_stairsdown.bmp"/>
+		<part Name="Description" Short="平滑而朦胧的圆台在念力悬浮中形成螺旋结构。"/>
+		<part Name="StairsUp" ConnectionObject="Chavvah Spiral StairsDown"/>
+		<xtagGrammar iArticle="some"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
 	<object Name="Chavvah Spiral StairsDown" Inherits="StairsDown">
-		<part Name="Render" DisplayName="spiral stairs down" ColorString="&amp;M" TileColor="&amp;Y" DetailColor="y" Tile="Terrain/sw_chavvah_stairsup.bmp" />
-		<part Name="Description" Short="Smooth and cloudy frustums hover in a helix of psionic suspension." />
-		<part Name="StairsDown" ConnectionObject="Chavvah Spiral StairsUp" />
-		<xtagGrammar iArticle="some" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+		<part Name="Render" DisplayName="螺旋楼梯向下" ColorString="&amp;M" TileColor="&amp;Y" DetailColor="y" Tile="Terrain/sw_chavvah_stairsup.bmp"/>
+		<part Name="Description" Short="平滑而朦胧的圆台在念力悬浮中形成螺旋结构。"/>
+		<part Name="StairsDown" ConnectionObject="Chavvah Spiral StairsUp"/>
+		<xtagGrammar iArticle="some"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
 	<object Name="Chavvah Roots Spiral StairsDown" Inherits="Chavvah Spiral StairsDown">
-		<tag Name="KeyObject" Value="CrystalKey" />
-    <tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="KeyObject" Value="CrystalKey"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
   
   <!-- End up/down connection terrain -->

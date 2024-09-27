@@ -1,290 +1,190 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version='1.0' encoding='UTF-8'?>
 <skills>
 
-  <skill Name="杂技" Class="Acrobatics" Description="杂技专精" Cost="75" Attribute="Strength" Snippet="acrobatics" Tile="Abilities/sw_skill_acrobatics.png" Foreground="y" Detail="G">
-    <power Name="Agility反应" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="躲避导弹攻击时 DV+5" Tile="Abilities/sw_skill_swift_reflexes.png" Foreground="y" Detail="G"></power>
-    <power Name="轻快" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="DV+2 奖励" Tile="Abilities/sw_skill_spry.png" Foreground="y" Detail="G"></power>
-    <power Name="跳跃" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="跳到范围2内的一个未被占据的方格, 不能跳过生物" Tile="Abilities/abil_jump.bmp" Foreground="y" Detail="G"></power>
-    <power Name="翻滚" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="DV+1. Juke's冷却时间减少至 20." Tile="Abilities/sw_skill_tumble.png" Foreground="y" Detail="G"></power>
+  <skill Name="杂技" Class="Acrobatics" Description="你擅长杂技。" Cost="75" Attribute="Strength" Snippet="acrobatics" Tile="Abilities/sw_skill_acrobatics.png" Foreground="y" Detail="G">
+    <power Name="迅捷反应" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="当躲避远程攻击时，你的闪避值（DV）获得+5加成。" Tile="Abilities/sw_skill_swift_reflexes.png" Foreground="y" Detail="G"/>
+    <power Name="敏捷" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="你获得+2的DV加成。" Tile="Abilities/sw_skill_spry.png" Foreground="y" Detail="G"/>
+    <power Name="跳跃" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="你跳入距离2范围内的一个未被占据的方格。你不能跳过被生物占据的方格。" Tile="Abilities/abil_jump.bmp" Foreground="y" Detail="G"/>
+    <power Name="翻滚" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="你获得+1的DV加成。此外，闪避的冷却时间减少到20。" Tile="Abilities/sw_skill_tumble.png" Foreground="y" Detail="G"/>
   </skill>
 
-  <skill Name="斧头" Class="Axe" Description="斧头专精" Cost="50" Attribute="Strength" Snippet="the axe" Tile="Abilities/sw_skill_axe.png" Foreground="y" Detail="R">
-    <power Name="斧头熟练度" Cost="0" Attribute="Strength" Minimum="0" Class="Axe_Expertise" Snippet="the axe" Description="用斧头攻击获得 +2" Tile="Abilities/sw_skill_axe_proficiency.png" Foreground="y" Detail="R"></power>
-    <power Name="劈开" Cost="150" Attribute="Strength" Minimum="19" Class="Axe_Cleave" Snippet="cleaving" Description="用斧头击中对手时, 有75%的几率切割对方的护甲, 使他们的AV受到-1的惩罚. 这种惩罚可以叠加多次, 最高可达Strength修正值的一半. 最高时, 暴击+1." Tile="Abilities/sw_skill_cleave.png" Foreground="y" Detail="R"></power>
-    <power Name="冲锋攻击" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Axe_Cleave,Tactics_Charge" Snippet="charging and striking" Description="用斧头冲锋并命中时, 如果切割了敌人的护甲, 他们的AV会受到额外-1的惩罚. 如果你有肢解, 用斧头冲锋时肢解的几率会增加一倍. 用棍棒冲锋并击中对手时, 会使对手晕眩." Tile="Abilities/sw_skill_axe_charging_strike.png" Foreground="y" Detail="R"></power>
-    <power Name="肢解" Cost="150" Attribute="Strength" Minimum="21" Class="Axe_Dismember" Snippet="dismembering" Description="激活;冷却时间30. 斧的攻击. 如果击中并穿透, 随机肢解对手的一条肢体, 使其开始流血(每回合1-2点伤害, Tou大于35可豁免). 此外, 斧头攻击穿透有一定的肢解几率:单手斧3%,双手斧6%" Tile="Abilities/abil_dismember.bmp" Foreground="y" Detail="R"></power>
-    <power Name="斧头钩击" Cost="150" Attribute="Strength" Minimum="23" Class="Axe_HookAndDrag" Snippet="hooking and dragging" Description="激活,冷却时间50. 用斧头的后跟抓住对手的四肢. 如果成功,在移动时拉住对手, 并攻击一次. 对手有机会抵抗该移动(Strength豁免;难度20+Str修正), 并有机会在回合开始时挣脱(相同的豁免). 持续9回合或直到你肢解对手" Tile="Abilities/abil_hook_and_drag.bmp" Foreground="y" Detail="R"></power>
-    <power Name="斩头" Cost="150" Attribute="Strength" Minimum="25" Class="Axe_Decapitate" Prereq="Axe_Dismember" Snippet="decapitating" Description="你可以肢解的肢体中增加了头部. 砍掉一个生物唯一的头会让他们立刻丧命. 如果该生物有多个头部,它们开始大量流血(每回合造成2-3点伤害,韧性豁免:35)." Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R"></power>
-    <power Name="狂暴!" Cost="300" Attribute="Strength" Minimum="29" Class="Axe_Berserk" Prereq="Axe_Dismember" Snippet="going berserk" Description="激活;冷却时间100.
-你进入一个血腥狂乱状态, 在5轮内斧头攻击肢解的几率是100%. 要使用狂暴,肢解必须不在CD,使用狂暴会使肢解进入CD." Tile="Abilities/abil_berserk.bmp" Foreground="y" Detail="R"></power>
+  <skill Name="斧头" Class="Axe" Description="你擅长使用斧头。" Cost="50" Attribute="Strength" Snippet="the axe" Tile="Abilities/sw_skill_axe.png" Foreground="y" Detail="R">
+    <power Name="斧头熟练度" Cost="0" Attribute="Strength" Minimum="0" Class="Axe_Expertise" Snippet="the axe" Description="使用斧头攻击时命中率提高+2。" Tile="Abilities/sw_skill_axe_proficiency.png" Foreground="y" Detail="R"/>
+    <power Name="劈砍" Cost="150" Attribute="Strength" Minimum="19" Class="Axe_Cleave" Snippet="cleaving" Description="当你用斧头击中对手时，有75%的几率斩开他们的护甲，使其AV降低1点。此惩罚效果可以叠加，最多可达你力量修正值的一半（向上取整），并在暴击时额外+1。" Tile="Abilities/sw_skill_cleave.png" Foreground="y" Detail="R"/>
+    <power Name="冲锋打击" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Axe_Cleave,Tactics_Charge" Snippet="charging and striking" Description="当你用斧头冲锋并命中时，若能劈开对方的护甲，对方的AV将额外减少1。如果你拥有肢解技能，使用斧头冲锋时肢解的几率将翻倍。当你用棍棒冲锋并命中时，会自动使对方眩晕。" Tile="Abilities/sw_skill_axe_charging_strike.png" Foreground="y" Detail="R"/>
+    <power Name="肢解" Cost="150" Attribute="Strength" Minimum="21" Class="Axe_Dismember" Snippet="dismembering" Description="激活技能；冷却时间30回合。斧头攻击。如果你命中并穿透敌人防御，你会随机肢解其一个肢体并使其开始流血（每回合1-2点伤害。坚韧豁免；难度35）。此外，你的穿透攻击有几率肢解目标: 单手斧为3%，双手斧为6%。" Tile="Abilities/abil_dismember.bmp" Foreground="y" Detail="R"/>
+    <power Name="钩拉" Cost="150" Attribute="Strength" Minimum="23" Class="Axe_HookAndDrag" Snippet="hooking and dragging" Description="激活技能；冷却时间50。你用斧头的刃背抓住对手的肢体。如果成功，当你移动时可以拖拽对手并进行一次免费的斧头攻击。对手有机会抵抗移动（力量检定；难度20 + 你的力量修正）并在其回合开始时尝试挣脱（相同的检定）。持续9轮或直到肢解对手。" Tile="Abilities/abil_hook_and_drag.bmp" Foreground="y" Detail="R"/>
+    <power Name="斩首" Cost="150" Attribute="Strength" Minimum="25" Class="Axe_Decapitate" Prereq="Axe_Dismember" Snippet="decapitating" Description="头部被加入到你可以肢解的身体部位列表中。砍掉生物唯一的头颅会立即杀死它们。如果生物有多个头颅，它们会开始大量出血（每回合2-3点伤害。坚韧豁免；难度35）。" Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R"/>
+    <power Name="狂暴！" Cost="300" Attribute="Strength" Minimum="29" Class="Axe_Berserk" Prereq="Axe_Dismember" Snippet="going berserk" Description="激活；冷却时间100。你进入嗜血狂热状态，在接下来的5轮中，使用斧头攻击时肢解敌人的几率为100%。使用狂暴技能时，肢解技能必须处于非冷却状态，且使用狂暴后会使肢解技能进入冷却。" Tile="Abilities/abil_berserk.bmp" Foreground="y" Detail="R"/>
   </skill>
 
-  <skill Name="弓和步枪" Class="Rifles" Description="弓箭和步枪专精" Cost="100" Attribute="Agility" Snippet="the bow and the rifle" Tile="Abilities/sw_skill_bow_and_rifle.png" Foreground="y" Detail="B">
-    <power Name="稳定之手" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="确保使用弓箭和步枪的精度, Agility被视为高了4点" Tile="Abilities/sw_skill_steady_hand.png" Foreground="y" Detail="B"></power>
-    <power Name="目标标记" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_DrawABead" Snippet="drawing a bead" Description="用一个标记对手, 当用弓或步枪射击有标记的目标时, Agility+2. 一次只能标记一个目标, 如果看不见目标, 标记就会消失" Tile="Abilities/abil_mark_target.bmp" Foreground="y" Detail="B"></power>
-    <power Name="压制火力" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SuppressiveFire" Prereq="Rifle_DrawABead" Snippet="suppressive fire" Description="当向一个有标记的目标射击时, 如果射击穿透, 目标将被压制, 不能移动3-5回合. 压制后标记移除" Tile="Abilities/tile_supressive_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="碾压火力" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_FlatteningFire" Prereq="Rifle_DrawABead,Rifle_SuppressiveFire" Snippet="flattening fire" Description="如果目标被6个或更多的固体障碍物包围, 压制火力就会升级为碾压火力, 碾压火力会使目标趴下并解除他们的武装." Tile="Abilities/sw_skill_flattening_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="伤害之火" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_WoundingFire" Prereq="Rifle_DrawABead" Snippet="wounding fire" Description="向被标记的目标射击时，每一发命中，你的目标每轮损失1点伤害(豁免:20 + 武器最大伤害)。然后移除标记" Tile="Abilities/sw_skill_wounding_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="迷惑之火" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_DisorientingFire" Snippet="disorienting fire" Prereq="Rifle_DrawABead,Rifle_WoundingFire" Description="只要你的目标看不到或听不到任何阵营盟友，伤害之火就会升级为迷惑之火。迷惑之火还会使目标的DV和MA减4。" Tile="Abilities/sw_skill_disorienting_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="真火" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SureFire" Prereq="Rifle_DrawABead" Snippet="sure fire" Description="向一个有标记的目标开火，没有精度惩罚(武器的精度仍然很重要)。然后移除标记。" Tile="Abilities/sw_skill_sure_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="信标之火" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_BeaconFire" Prereq="Rifle_DrawABead,Rifle_SureFire" Snippet="beacon fire" Description="当目标是燃烧的、发光的或磷光的，“真火”就升级为“信标之火”。信标之火射击也被视为暴击。" Tile="Abilities/sw_skill_beacon_fire.png" Foreground="y" Detail="B"></power>
-    <power Name="终极开火" Cost="300" Attribute="Agility" Minimum="29" Class="Rifle_OneShot" Prereq="Rifle_DrawABead" Snippet="ultra fire" Description="冷却时间100。向一个有标记的目标射击。射击结合了所有其他火焰技能的效果。" Tile="Abilities/sw_skill_ultra_fire.png" Foreground="y" Detail="B"></power>
+  <skill Name="弓箭与步枪" Class="Rifles" Description="你擅长使用弓箭和步枪。" Cost="100" Attribute="Agility" Snippet="the bow and the rifle" Tile="Abilities/sw_skill_bow_and_rifle.png" Foreground="y" Detail="B">
+    <power Name="稳定之手" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="在计算你使用弓和步枪的命中率时，你的敏捷值被视为提高了4点。" Tile="Abilities/sw_skill_steady_hand.png" Foreground="y" Detail="B"/>
+    <power Name="瞄准标记" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_DrawABead" Snippet="drawing a bead" Description="你花费一个回合对目标进行瞄准并标记。当你使用弓或步枪射击被标记的目标时，你的敏捷度将被视为高出2点，以提高命中率。你一次只能标记一个目标。如果你失去对目标的视线，标记将会消失。" Tile="Abilities/abil_mark_target.bmp" Foreground="y" Detail="B"/>
+    <power Name="压制射击" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SuppressiveFire" Prereq="Rifle_DrawABead" Snippet="suppressive fire" Description="你向标记的目标开火。如果你的射击穿透了目标，目标将被压制，在接下来的3-5轮内无法移动。然后目标将不再被标记。" Tile="Abilities/tile_supressive_fire.png" Foreground="y" Detail="B"/>
+    <power Name="碾压之火" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_FlatteningFire" Prereq="Rifle_DrawABead,Rifle_SuppressiveFire" Snippet="flattening fire" Description="只要目标被6个或更多的固体障碍物包围，压制之火就会升级为碾压之火。碾压之火还会将目标击倒并使其解除武装。" Tile="Abilities/sw_skill_flattening_fire.png" Foreground="y" Detail="B"/>
+    <power Name="创伤之火" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_WoundingFire" Prereq="Rifle_DrawABead" Snippet="wounding fire" Description="你向标记的目标开火。每次射击击中时，每穿透一次，目标每回合流血1点伤害（豁免: 20 + 武器的最大伤害）。然后目标不再被标记。" Tile="Abilities/sw_skill_wounding_fire.png" Foreground="y" Detail="B"/>
+    <power Name="眩晕之火" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_DisorientingFire" Snippet="disorienting fire" Prereq="Rifle_DrawABead,Rifle_WoundingFire" Description="只要目标无法看到或听到任何派系盟友，伤害之火就会升级为眩晕之火。眩晕之火还会降低目标的DV和MA各4点。" Tile="Abilities/sw_skill_disorienting_fire.png" Foreground="y" Detail="B"/>
+    <power Name="精准射击" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SureFire" Prereq="Rifle_DrawABead" Snippet="sure fire" Description="你向已标记的目标射击，不会受到精度惩罚（武器本身的精度仍然重要）。然后目标将不再被标记。" Tile="Abilities/sw_skill_sure_fire.png" Foreground="y" Detail="B"/>
+    <power Name="信标之焰" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_BeaconFire" Prereq="Rifle_DrawABead,Rifle_SureFire" Snippet="beacon fire" Description="只要目标处于燃烧、发光或磷光状态，确击之焰将升级为信标之焰。信标之焰的攻击被视为暴击。" Tile="Abilities/sw_skill_beacon_fire.png" Foreground="y" Detail="B"/>
+    <power Name="超能火焰" Cost="300" Attribute="Agility" Minimum="29" Class="Rifle_OneShot" Prereq="Rifle_DrawABead" Snippet="ultra fire" Description="冷却时间100。你向标记的目标开火。你的射击结合了你所拥有的所有其他火焰力量的效果。" Tile="Abilities/sw_skill_ultra_fire.png" Foreground="y" Detail="B"/>
   </skill>
 
-  <skill Name="烹饪和采集" Class="CookingAndGathering" Description="烹饪和采集专长" Cost="100" Attribute="Intelligence" Snippet="cooking and gathering" Tile="Abilities/sw_skill_cooking_and_gathering.png" Foreground="y" Detail="r">
-    <power Name="肉食准备" Cost="0" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_MealPreparation" Snippet="meal preparation" Description="在篝火旁，你可以根据食谱做饭，选择两种食材，并保存新鲜的食物。
-根据食谱烹饪的食物会赋予特殊的地位效果。用选定的食材烹饪的饭菜赋予动态生成的状态效果。
-腌制食品被用作膳食配料。" Tile="Abilities/sw_skill_meal_preperation.png" Foreground="y" Detail="r"></power>
-    <power Name="收获" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Harvestry" Snippet="harvestry" Description="可以从植物中收获新鲜的原料和其他可用的部分。" Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="r"></power>
-    <power Name="屠宰" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Butchery" Snippet="butchery" Description="可以从动物尸体上屠宰新鲜原料和其他可用部分。" Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r"></power>
-    <power Name="烹饪增强" Cost="50" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_Spicer" Snippet="spicing" Description="当你选择烹饪材料时，你最多可以选择三种而不是两种。用三种食材烹饪的饭菜会赋予更强大的地位效应。" Tile="Abilities/sw_skill_spicer.png" Foreground="y" Detail="r"></power>
-    <power Name="硬核厨师" Cost="100" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_CarbideChef" Snippet="the carbide chef" Description="升级时触发或探索到新地图有5%概率触发，获取两天的启发。在受到启发时，下次你选择食材做饭时，你可以选择三种动态生成的效果来应用。可以为选定的效果创建一个配方。" Tile="Abilities/sw_skill_carbide_chef.png" Foreground="y" Detail="r"></power>
+  <skill Name="烹饪与采集" Class="CookingAndGathering" Description="你擅长烹饪和采集食材。" Cost="100" Attribute="Intelligence" Snippet="cooking and gathering" Tile="Abilities/sw_skill_cooking_and_gathering.png" Foreground="y" Detail="r">
+    <power Name="餐食准备" Cost="0" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_MealPreparation" Snippet="meal preparation" Description="在营地篝火旁，你可以根据食谱烹饪，选择最多两种食材进行烹饪，并保存新鲜食物。根据食谱烹饪的食物会赋予特殊状态效果。使用选定食材烹饪的食物会生成动态状态效果。保存的食物可用作餐食的食材。" Tile="Abilities/sw_skill_meal_preperation.png" Foreground="y" Detail="r"/>
+    <power Name="收割术" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Harvestry" Snippet="harvestry" Description="你可以从植物中采集新鲜的原料和其他可用部分。" Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="r"/>
+    <power Name="屠宰术" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Butchery" Snippet="butchery" Description="你可以从动物尸体上获取新鲜食材和其他可用部位。" Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r"/>
+    <power Name="调味大师" Cost="50" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_Spicer" Snippet="spicing" Description="当你选择食材烹饪时，可以选择多达三种而非两种。使用三种食材烹饪的食物能够赋予更强大的状态效果。" Tile="Abilities/sw_skill_spicer.png" Foreground="y" Detail="r"/>
+    <power Name="碳化物厨师" Cost="100" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_CarbideChef" Snippet="the carbide chef" Description="每当你升级时，以及5%的时间探索新地图时，你会受到启发两天。在受启发期间，下次你通过选择食材烹饪餐点时，可以选择三种动态生成的效果之一应用。你将创建一个对应效果的食谱。" Tile="Abilities/sw_skill_carbide_chef.png" Foreground="y" Detail="r"/>
   </skill>
 
-  <skill Name="棍棒" Class="Cudgel" Description="棍棒专长" Cost="50" Attribute="Strength" Snippet="the cudgel" Tile="Abilities/sw_skill_cudgel.png" Foreground="y" Detail="g">
-    <power Name="棍术熟练度" Cost="0" Attribute="Strength" Minimum="0" Class="Cudgel_Expertise" Snippet="the cudgel" Description="用棍棒攻击获得 +2" Tile="Abilities/sw_skill_cudgel_proficiency.png" Foreground="y" Detail="g"></power>
-    <power Name="棍棒晕眩" Cost="150" Attribute="Strength" Minimum="17" Class="Cudgel_Bludgeon" Snippet="bludgeoning" Tile="Abilities/sw_skill_bludgeon.bmp"  Foreground="y" Detail="g" Description="当用棍棒攻击时，有50%的几率使你的对手晕眩(-4Intelligence，-4Agility，-10移动速度)，持续3-4回合。如果你使一个被眩晕的对手再次晕眩，他们将被晕眩1轮(不能采取行动，DV为0)。"></power>
-    <power Name="冲锋攻击" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Cudgel_Bludgeon,Tactics_Charge" Snippet="charging and striking" Description="当你用棍棒冲锋并击中对手时，自动使对手晕眩。当你用斧头冲锋并命中时，如果你劈开他们的护甲，他们的AV会受到额外-1的惩罚。如果你有肢解，你用斧头冲锋时肢解的几率会增加一倍。" Tile="Abilities/sw_skill_cudgel_charging_strike.png" Foreground="y" Detail="g"></power>
-    <!--？？？？ -->
-    <power Name="击晕" Cost="150" Attribute="Strength" Minimum="21" Class="Cudgel_Conk" Prereq="Cudgel_Bludgeon" Snippet="conking" Description="激活;冷却时间10。
-你用棍棒攻击相邻的对手。如果击中，会使他们晕眩3-4轮。晕眩被晕眩的对手会使他们晕倒。被晕倒的对手30-40回合内昏迷不醒(昏迷不醒的对手会在受到伤害后醒来)。" Tile="Abilities/abil_conk.bmp" Foreground="y" Detail="g"></power>
-    <power Name="回手攻击" Cost="100" Attribute="Strength" Minimum="23" Class="Cudgel_Backswing" Snippet="the backswing" Description="每当你用一手进行棍棒攻击时，你有25%的几率用同样的手进行额外的自由攻击。" Tile="Abilities/sw_skill_backswing.png" Foreground="y" Detail="g"></power>
-    <power Name="猛击" Cost="150" Attribute="Strength" Minimum="25" Class="Cudgel_Slam" Snippet="slamming" Description="激活;冷却时间50。你用棍棒攻击相邻的对手，你的穿透掷骰+1。如果你击中了对手，你便会将其向后推3个空间，推动其他生物并冲破墙壁(如果他们的av低于你的Strength修正值的5倍)。被推的对手被击晕1回合，每推一个空间就会被击晕1回合。被推过或撞到墙壁的对手每堵墙都会受到额外的武器伤害。巨大的对手不会被推，但仍然会昏迷1回合。摧毁一堵墙或一扇门，如果它的AV低于你的Strength修正值的5倍。" Tile="Abilities/abil_slam.bmp" Foreground="y" Detail="g"></power>
-    <power Name="拆除" Cost="300" Attribute="Strength" Minimum="29" Class="Cudgel_SmashUp" Prereq="Cudgel_Slam" Snippet="demolishing" Description="激活;冷却时间100。
-在接下来的5个回合中，你的棍棒攻击晕眩的几率是100%，猛击没有冷却时间。要使用拆除，猛击必须没在CD，使用拆除会使猛击进入CD。" Tile="Abilities/abil_demolish.bmp" Foreground="y" Detail="g"></power>
+  <skill Name="棍棒" Class="Cudgel" Description="你擅长使用钝击武器。" Cost="50" Attribute="Strength" Snippet="the cudgel" Tile="Abilities/sw_skill_cudgel.png" Foreground="y" Detail="g">
+    <power Name="棍棒熟练" Cost="0" Attribute="Strength" Minimum="0" Class="Cudgel_Expertise" Snippet="the cudgel" Description="使用棍棒攻击时命中率+2。" Tile="Abilities/sw_skill_cudgel_proficiency.png" Foreground="y" Detail="g"/>
+    <power Name="钝击" Cost="150" Attribute="Strength" Minimum="17" Class="Cudgel_Bludgeon" Snippet="bludgeoning" Tile="Abilities/sw_skill_bludgeon.bmp" Foreground="y" Detail="g" Description="当你用棍棒击中敌人时，有50%的几率使其眩晕（-4 智力，-4 敏捷，-10 移动速度）持续3-4回合。如果使已经眩晕的敌人再次眩晕，他们将被昏迷1回合（无法行动且DV为0）。"/>
+    <power Name="冲锋打击" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Cudgel_Bludgeon,Tactics_Charge" Snippet="charging and striking" Description="当你用棍棒冲锋并击中时，你会自动使对手晕眩。当你用斧头冲锋并击中时，如果你劈开他们的盔甲，他们的 AV 会受到额外的 -1 惩罚。如果你有肢解，你用斧头冲锋时肢解的几率会加倍。" Tile="Abilities/sw_skill_cudgel_charging_strike.png" Foreground="y" Detail="g"/>
+    <power Name="敲晕" Cost="150" Attribute="Strength" Minimum="21" Class="Cudgel_Conk" Prereq="Cudgel_Bludgeon" Snippet="conking" Description="激活技能；冷却时间10回合。你用棍棒攻击相邻的敌人。如果命中，你会自动使他们眩晕3-4回合。再次眩晕已经眩晕的敌人会使他们昏迷。对已经昏迷的敌人使用此技能会使他们失去意识30-40回合（失去意识的敌人受到伤害后会醒来并处于眩晕状态）。" Tile="Abilities/abil_conk.bmp" Foreground="y" Detail="g"/>
+    <power Name="回旋打击" Cost="100" Attribute="Strength" Minimum="23" Class="Cudgel_Backswing" Snippet="the backswing" Description="当你用主手进行棍棒攻击时，有25%的几率使用同一手进行一次额外的免费攻击。" Tile="Abilities/sw_skill_backswing.png" Foreground="y" Detail="g"/>
+    <power Name="猛击" Cost="150" Attribute="Strength" Minimum="25" Class="Cudgel_Slam" Snippet="slamming" Description="激活技能；冷却时间50。你使用棍棒对相邻的对手进行一次攻击，穿透值+1。如果你命中，你会将对手向后猛推最多3个格子，如果其他生物的AV小于你力量修正值的5倍，它们会被推开，墙壁也会被突破。被推开的对手会在每被推动一个格子后额外晕眩1轮。被推入或撞到墙壁的对手会受到额外的武器伤害。巨型对手不会被推开，但仍会晕眩1轮。如果墙壁或门的AV低于你力量修正值的5倍，则会被摧毁。" Tile="Abilities/abil_slam.bmp" Foreground="y" Detail="g"/>
+    <power Name="摧毁" Cost="300" Attribute="Strength" Minimum="29" Class="Cudgel_SmashUp" Prereq="Cudgel_Slam" Snippet="demolishing" Description="激活；冷却时间100。接下来的5轮中，使用棍棒攻击使敌人眩晕的几率为100%，并且重击没有冷却时间。使用摧毁时，重击必须处于非冷却状态，且使用摧毁会使重击进入冷却。" Tile="Abilities/abil_demolish.bmp" Foreground="y" Detail="g"/>
   </skill>
 
-  <skill Name="风俗民俗" Class="Customs" Description="你熟悉Qud的风俗习惯和民俗。" Cost="150" Attribute="Intelligence" Snippet="customs and folklore" Tile="Abilities/sw_skill_customs_and_folklore.png" Foreground="y" Detail="B">
-    <power Name="机智" Cost="0" Attribute="Intelligence" Minimum="19" Class="Customs_Tactful" Snippet="being tactful" Description="每当你与一个新生物开始水仪式，你会获得25点额外声望。如果你在使用生物治疗后购买此异能，下次使用该生物治疗时，你将获得25额外声望。" Tile="Abilities/sw_skill_tactful.png" Foreground="y" Detail="B"></power>
-    <power Name="垃圾占卜" Cost="150" Attribute="Intelligence" Minimum="21" Class="Customs_TrashDivining" Snippet="trash divining" Description="每当你翻找垃圾时，你都有5%的机会拼凑出线索并了解到一个随机的秘密。" Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="y" Detail="B"></power>
+  <skill Name="风俗与传说" Class="Customs" Description="你熟悉Qud的风俗和传说。" Cost="150" Attribute="Intelligence" Snippet="customs and folklore" Tile="Abilities/sw_skill_customs_and_folklore.png" Foreground="y" Detail="B">
+    <power Name="审慎" Cost="0" Attribute="Intelligence" Minimum="19" Class="Customs_Tactful" Snippet="being tactful" Description="当你首次与新生物进行水之仪式时，获得25点声望奖励。如果你在与某个生物交往后购买此能力，下次与该生物交往时同样获得25点声望奖励。" Tile="Abilities/sw_skill_tactful.png" Foreground="y" Detail="B"/>
+    <power Name="垃圾占卜" Cost="150" Attribute="Intelligence" Minimum="21" Class="Customs_TrashDivining" Snippet="trash divining" Description="每当你翻找垃圾时，有5%的几率拼凑出线索并学到一个随机秘密。" Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="y" Detail="B"/>
   </skill>
 
-  <skill Name="单武器"
-          Cost="100"
-          Attribute="Agility|Strength"
-          Class="SingleWeaponFighting"
-          Snippet="single weapon fighting"
-          Description="你可以选择不进行副手攻击，以换取对单一武器的精通。"
-          Tile="Abilities/sw_skill_single_weapon_fighting.png" Foreground="y" Detail="W">
-    <power Name="适时攻击"
-            Cost="0"
-            Attribute="Agility|Strength"
-            Minimum="17|17"
-            Class="SingleWeaponFighting_OpportuneAttacks"
-            Snippet="opportune attacks"
-            Description="当使用单手近战获得暴击时，最多两个随机武器或盾牌技能的冷却时间会立即刷新。" 
-           Tile="Abilities/sw_skill_opportune_attacks.png"  Foreground="y" Detail="W"/>
-    <power Name="武器专长"
-            Cost="150"
-            Attribute="Agility|Strength"
-            Minimum="21|21"
-            Class="SingleWeaponFighting_WeaponExpertise"
-            Snippet="single weapon expertise"
-            Description="当使用单武器近战攻击时，有50%的机会立即免费进行第二次攻击。" 
-           Tile="Abilities/sw_skill_weapon_expertise.png"  Foreground="y" Detail="W"/>
-    <power Name="穿透打击"
-            Cost="200"
-            Attribute="Agility|Strength"
-            Minimum="23|23"
-            Class="SingleWeaponFighting_PenetratingStrikes"
-            Snippet="penetrating strikes"
-            Description="当单武器战斗时，你的近战攻击总能额外穿透一次。"
-            Tile="Abilities/sw_skill_penetrating_strikes.png"  Foreground="y" Detail="W"/>
-    <power Name="武器精通"
-            Cost="300"
-            Attribute="Agility|Strength"
-            Minimum="29|29"
-            Class="SingleWeaponFighting_WeaponMastery"
-            Prereq="SingleWeaponFighting_WeaponExpertise"
-            Snippet="single weapon mastery"
-            Description="当使用单武器近战攻击时，立即免费进行第二次攻击。"
-            Tile="Abilities/sw_skill_weapon_mastery.png"  Foreground="y" Detail="W"/>
+  <skill Name="单手武器格斗" Cost="100" Attribute="Agility|Strength" Class="SingleWeaponFighting" Snippet="single weapon fighting" Description="你可以选择放弃副手攻击，以换取对单一武器的精通。" Tile="Abilities/sw_skill_single_weapon_fighting.png" Foreground="y" Detail="W">
+    <power Name="适时攻击" Cost="0" Attribute="Agility|Strength" Minimum="17|17" Class="SingleWeaponFighting_OpportuneAttacks" Snippet="opportune attacks" Description="当你在单手使用近战武器时打出暴击，最多两个随机武器或盾牌技能的冷却时间将立即重置。" Tile="Abilities/sw_skill_opportune_attacks.png" Foreground="y" Detail="W"/>
+    <power Name="武器专精" Cost="150" Attribute="Agility|Strength" Minimum="21|21" Class="SingleWeaponFighting_WeaponExpertise" Snippet="single weapon expertise" Description="当你单手使用武器进行近战攻击时，有50%的几率立即进行第二次免费攻击。" Tile="Abilities/sw_skill_weapon_expertise.png" Foreground="y" Detail="W"/>
+    <power Name="穿透打击" Cost="200" Attribute="Agility|Strength" Minimum="23|23" Class="SingleWeaponFighting_PenetratingStrikes" Snippet="penetrating strikes" Description="单武器战斗时，你的近战攻击总是额外穿透一次。" Tile="Abilities/sw_skill_penetrating_strikes.png" Foreground="y" Detail="W"/>
+    <power Name="武器专精" Cost="300" Attribute="Agility|Strength" Minimum="29|29" Class="SingleWeaponFighting_WeaponMastery" Prereq="SingleWeaponFighting_WeaponExpertise" Snippet="single weapon mastery" Description="当你单手持武器进行近战攻击时，可以立即免费进行第二次攻击。" Tile="Abilities/sw_skill_weapon_mastery.png" Foreground="y" Detail="W"/>
   </skill>
 
-  <skill Name="多武器" Class="Multiweapon_Fighting" Description="你擅长多武器战斗。你使用副手武器攻击的机会会增加。" Cost="150" Attribute="Agility" Snippet="dual wielding" Tile="Abilities/sw_skill_multiweapon_fighting.png"  Foreground="y" Detail="M">
-    <power Name="乱舞"
-            Cost="0"
-            Attribute="Agility|Strength"
-            Minimum="17|17"
-            Class="Multiweapon_Flurry"
-            Snippet="flurrying"
-            Description="激活;冷却时间60。你用每一个持有武器的肢体进行攻击，包括变异或科技赋予的额外肢体。。" 
-            Tile="Abilities/abil_flurry.bmp" Foreground="y" Detail="M"/>
-    <power Name="多武器熟练度"
-            Cost="0"
-            Attribute="Agility|Strength"
-            Minimum="17|17"
-            Class="Multiweapon_Proficiency"
-            Snippet="striking with the offhand"
-            Description="你的每件副手武器的攻击几率增加20%。"
-            Tile="Abilities/sw_skill_multiweapon_proficiency.png" Foreground="y" Detail="M"/>
-    <power Name="多武器专长"
-            Prereq="Multiweapon_Proficiency"
-            Cost="150"
-            Attribute="Agility|Strength"
-            Minimum="23|23"
-            Class="Multiweapon_Expertise"
-            Snippet="ambidexterity"
-            Description="你的每个副手武器的攻击几率增加35%。"
-            Tile="Abilities/sw_skill_multiweapon_expertise.png" Foreground="y" Detail="M"/>
-    <power Name="精通多武器"
-            Prereq="Multiweapon_Expertise"
-            Cost="200"
-            Attribute="Agility|Strength"
-            Minimum="27|27"
-            Class="Multiweapon_Mastery"
-            Snippet="multiweapon fighting"
-            Description="你的每个副手武器的攻击几率增加50%。"
-            Tile="Abilities/sw_skill_multiweapon_mastery.png" Foreground="y" Detail="M"/>
+  <skill Name="多武器战斗" Class="Multiweapon_Fighting" Description="你擅长多武器战斗。使用副手武器攻击的几率增加。" Cost="150" Attribute="Agility" Snippet="dual wielding" Tile="Abilities/sw_skill_multiweapon_fighting.png" Foreground="y" Detail="M">
+    <power Name="疾风骤雨" Cost="0" Attribute="Agility|Strength" Minimum="17|17" Class="Multiweapon_Flurry" Snippet="flurrying" Description="激活技能；冷却时间60回合。使用所有持武器的肢体发动攻击，包括因突变或科技获得的额外肢体。" Tile="Abilities/abil_flurry.bmp" Foreground="y" Detail="M"/>
+    <power Name="多武器熟练" Cost="0" Attribute="Agility|Strength" Minimum="17|17" Class="Multiweapon_Proficiency" Snippet="striking with the offhand" Description="你使用每件副手武器击中的几率增加20%。" Tile="Abilities/sw_skill_multiweapon_proficiency.png" Foreground="y" Detail="M"/>
+    <power Name="多武器专精" Prereq="Multiweapon_Proficiency" Cost="150" Attribute="Agility|Strength" Minimum="23|23" Class="Multiweapon_Expertise" Snippet="ambidexterity" Description="你使用每个副手武器攻击的几率增加35%。" Tile="Abilities/sw_skill_multiweapon_expertise.png" Foreground="y" Detail="M"/>
+    <power Name="多武器精通" Prereq="Multiweapon_Expertise" Cost="200" Attribute="Agility|Strength" Minimum="27|27" Class="Multiweapon_Mastery" Snippet="multiweapon fighting" Description="你使用每个副手武器攻击的几率提高50%。" Tile="Abilities/sw_skill_multiweapon_mastery.png" Foreground="y" Detail="M"/>
   </skill>
 
-  <skill Name="耐力" Class="Endurance" Description="你善于忍受恶劣的条件和情况。" Cost="100" Attribute="Toughness" Snippet="endurance" Tile="Abilities/sw_skill_endurance.png" Foreground="y" Detail="w">
-    <power Name="摆脱它" Cost="0" Attribute="Toughness" Minimum="0" Class="Endurance_ShakeItOff" Snippet="shaking it off" Description="每轮你受到晕眩或眩晕，你都有(Tou-10)%的几率摆脱该效果。你受到的毒伤害也会减少25%。" Tile="Abilities/sw_skill_shake_it_off.png" Foreground="y" Detail="w"></power>
-    <power Name="游泳" Cost="100" Attribute="Toughness" Minimum="15" Class="Endurance_Swimming" Snippet="swimming" Description="降低游泳时的移动速度惩罚(通常为50点)25点。" Tile="Abilities/sw_skill_swimming.png" Foreground="y" Detail="w"></power>
-    <power Name="耐毒性" Cost="100" Attribute="Toughness" Minimum="19" Class="Endurance_PoisonTolerance" Snippet="poison tolerance" Description="你受到的毒伤害减少 25%。" Tile="Abilities/sw_skill_poison_tolerance.png" Foreground="y" Detail="w"></power>
-    <power Name="风化" Cost="200" Attribute="Toughness" Minimum="21" Class="Endurance_Weathered" Snippet="weathering" Description="你受到的冷热效果的伤害减少15%。此外，影响体温变化的严重程度降低了15%。" Tile="Abilities/sw_skill_weathered.png" Foreground="y" Detail="w"></power>
-    <power Name="喝到饱" Cost="150" Attribute="Toughness" Minimum="23" Class="Endurance_Juicer" Snippet="juicing" Description="你可以再摄入一种补品，而不会对你已经摄入的补品产生不良反应。" Tile="Abilities/sw_skill_juicer.png" Foreground="y" Detail="w"></power>
-    <power Name="长满老茧" Cost="200" Attribute="Toughness" Minimum="23" Class="Endurance_Calloused" Snippet="being calloused" Description="自然 AV 提高到 1。" Tile="Abilities/sw_skill_calloused.png" Foreground="y" Detail="w"></power>
-    <power Name="长步者" Cost="250" Attribute="Toughness" Minimum="25" Class="Endurance_Longstrider" Snippet="longstriding" Description="可以再冲刺 10 回合。" Tile="Abilities/sw_skill_longstrider.png" Foreground="y" Detail="w"></power>
+  <skill Name="耐力" Class="Endurance" Description="你擅长在恶劣的环境和情况下生存。" Cost="100" Attribute="Toughness" Snippet="endurance" Tile="Abilities/sw_skill_endurance.png" Foreground="y" Detail="w">
+    <power Name="摆脱影响" Cost="0" Attribute="Toughness" Minimum="0" Class="Endurance_ShakeItOff" Snippet="shaking it off" Description="每当你处于眩晕或昏迷状态时，你有 (耐力-10)% 的几率摆脱该效果。你受到的毒伤也会减少25%。" Tile="Abilities/sw_skill_shake_it_off.png" Foreground="y" Detail="w"/>
+    <power Name="游泳" Cost="100" Attribute="Toughness" Minimum="15" Class="Endurance_Swimming" Snippet="swimming" Description="减少游泳时的速度惩罚（通常为50点）25点。" Tile="Abilities/sw_skill_swimming.png" Foreground="y" Detail="w"/>
+    <power Name="毒抗" Cost="100" Attribute="Toughness" Minimum="19" Class="Endurance_PoisonTolerance" Snippet="poison tolerance" Description="你受到的毒伤害减少25%。" Tile="Abilities/sw_skill_poison_tolerance.png" Foreground="y" Detail="w"/>
+    <power Name="风霜" Cost="200" Attribute="Toughness" Minimum="21" Class="Endurance_Weathered" Snippet="weathering" Description="你受到的加热和冷却效果伤害减少15%。此外，改变你体温的效果强度也会降低15%。" Tile="Abilities/sw_skill_weathered.png" Foreground="y" Detail="w"/>
+    <power Name="榨汁者" Cost="150" Attribute="Toughness" Minimum="23" Class="Endurance_Juicer" Snippet="juicing" Description="你可以额外摄入一种药剂，而不会与已摄入的药剂产生不良反应。" Tile="Abilities/sw_skill_juicer.png" Foreground="y" Detail="w"/>
+    <power Name="茧皮" Cost="200" Attribute="Toughness" Minimum="23" Class="Endurance_Calloused" Snippet="being calloused" Description="你的天生AV提升至1" Tile="Abilities/sw_skill_calloused.png" Foreground="y" Detail="w"/>
+    <power Name="长行者" Cost="250" Attribute="Toughness" Minimum="25" Class="Endurance_Longstrider" Snippet="longstriding" Description="你可以额外冲刺10回合。" Tile="Abilities/sw_skill_longstrider.png" Foreground="y" Detail="w"/>
   </skill>
 
-  <skill Name="医学" Class="Physic" Description="你很擅长医学。" Cost="50" Attribute="Intelligence" Snippet="physic" Tile="Abilities/sw_skill_physic.png" Foreground="y" Detail="R">
-    <power Name="严重伤口" Cost="0" Attribute="Intelligence" Minimum="0" Class="Physic_StaunchWounds" Snippet="staunching wounds" Description="使用的绷带可以更有效地止血。" Tile="Abilities/sw_skill_staunch_wounds.png" Foreground="y" Detail="R"></power>
-    <power Name="秘方" Cost="100" Attribute="Intelligence" Minimum="21" Class="Physic_Nostrums" Snippet="brewing nostrums" Description="你可以在篝火旁为你和你的同伴治疗流血、中毒、疾病和疾病发作。" Tile="Abilities/sw_skill_nostrums.png" Foreground="y" Detail="R"></power>
-    <power Name="截肢" Cost="50" Attribute="Intelligence" Minimum="23" Class="Physic_AmputateLimb" Snippet="amputating limbs" Description="你可以自愿截除自己的肢体和被感染同伴的肢体。" Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="R"></power>
-    <power Name="药剂师" Cost="100" Attribute="Intelligence" Minimum="25" Class="Physic_Apothecary" Snippet="administering healing" Description="在额外一轮中使用治疗补品。" Tile="Abilities/sw_skill_apothecary.png" Foreground="y" Detail="R"></power>
+  <skill Name="治疗术" Class="Physic" Description="你擅长治疗。" Cost="50" Attribute="Intelligence" Snippet="physic" Tile="Abilities/sw_skill_physic.png" Foreground="y" Detail="R">
+    <power Name="止血" Cost="0" Attribute="Intelligence" Minimum="0" Class="Physic_StaunchWounds" Snippet="staunching wounds" Description="你使用的绷带在止血方面效果显著提升。" Tile="Abilities/sw_skill_staunch_wounds.png" Foreground="y" Detail="R"/>
+    <power Name="诺斯特拉姆" Cost="100" Attribute="Intelligence" Minimum="21" Class="Physic_Nostrums" Snippet="brewing nostrums" Description="你可以在篝火旁为你和你的同伴治疗出血、中毒、疾病和病症发作。" Tile="Abilities/sw_skill_nostrums.png" Foreground="y" Detail="R"/>
+    <power Name="断肢" Cost="50" Attribute="Intelligence" Minimum="23" Class="Physic_AmputateLimb" Snippet="amputating limbs" Description="你可以自愿切断自己的肢体以及受感染同伴的肢体。" Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="R"/>
+    <power Name="药剂师" Cost="100" Attribute="Intelligence" Minimum="25" Class="Physic_Apothecary" Snippet="administering healing" Description="你使用的治疗药剂效果持续时间延长一轮。" Tile="Abilities/sw_skill_apothecary.png" Foreground="y" Detail="R"/>
   </skill>
 
   <skill Name="重型武器" Class="HeavyWeapons" Description="你擅长使用重型武器。" Cost="100" Attribute="Strength" Snippet="heavy weapons" Tile="Abilities/sw_skill_heavy_weapon.png" Foreground="y" Detail="C">
-    <power Name="肩带" Cost="0" Attribute="Strength" Minimum="19" Class="HeavyWeapons_StrappingShoulders" Snippet="the strapping shoulder" Description="你可以更有效地扛起你的武器。重型武器的重量占你的负担的一半。" Tile="Abilities/sw_skill_strapping_shoulders.png" Foreground="y" Detail="C"></power>
-    <power Name="坦克" Cost="150" Attribute="Strength" Minimum="23" Class="HeavyWeapons_Tank" Snippet="tanking" Description="当你使用重型武器时，你不会受到移动惩罚。" Tile="Abilities/sw_skill_tank.png" Foreground="y" Detail="C"></power>
-    <power Name="扫" Cost="200" Attribute="Strength" Minimum="27" Class="HeavyWeapons_Sweep" Snippet="sweeping a gun back and forth" Description="你用重型武器扫过一个九十度的圆锥体，发射五枪。你的重型武器在每次射击前都会重新装弹。" Tile="Abilities/abil_sweep.bmp" Foreground="y" Detail="C"></power>
+    <power Name="强健肩膀" Cost="0" Attribute="Strength" Minimum="19" Class="HeavyWeapons_StrappingShoulders" Snippet="the strapping shoulder" Description="你更有效地扛起武器。重型武器对你的负重影响减半。" Tile="Abilities/sw_skill_strapping_shoulders.png" Foreground="y" Detail="C"/>
+    <power Name="重装战士" Cost="150" Attribute="Strength" Minimum="23" Class="HeavyWeapons_Tank" Snippet="tanking" Description="携带重型武器时不会受到移动惩罚。" Tile="Abilities/sw_skill_tank.png" Foreground="y" Detail="C"/>
+    <power Name="扫射" Cost="200" Attribute="Strength" Minimum="27" Class="HeavyWeapons_Sweep" Snippet="sweeping a gun back and forth" Description="你使用重型武器连续发射5次，覆盖90度扇形区域。每次射击前都会重新装填重型武器。" Tile="Abilities/abil_sweep.bmp" Foreground="y" Detail="C"/>
   </skill>
 
-  <skill Name="长刀" Class="LongBlades" Description="你擅长长刺和砍刀。" Cost="100" Attribute="Agility" Snippet="the long blade" Tile="Abilities/sw_skill_long_blade.png" Foreground="y" Detail="Y">
-    <power Name="长刀熟练度" Cost="0" Attribute="Strength" Minimum="0" Class="LongBladesProficiency" Snippet="the long blade" Description="你可以使用两种姿态。
-进攻性姿态:当你一手持有长刃时，你的长刃和短刃攻击在穿透骰上获得+1，但击中骰获得-2。
-防御姿态:当你一手挥舞长剑时，你获得+ 2dv。" Tile="Abilities/sw_skill_long_blade_proficiency.png" Foreground="y" Detail="Y"></power>
-    <power Name="弓步" Cost="200" Attribute="Agility" Minimum="17" Class="LongBladesLunge" Snippet="lunging" Description="激活;冷却时间15。
-进攻性姿态:冲过空地攻击对手，并使你的穿透掷骰+2。你必须穿过空白的空间。
-防守姿势:攻击对手，然后向后冲2步。
-决斗姿态:以+1穿透掷骰攻击对手。攻击保证至少击中并穿透一次。" Tile="Abilities/abil_lunge.bmp" Foreground="y" Detail="Y"></power>
-    <power Name="挥击" Cost="200" Attribute="Strength" Minimum="17" Class="LongBladesSwipe" Snippet="swiping" Description="激活;冷却时间15。
-攻击姿态:对所有相邻对手发动攻击。
-防御姿态:将所有相邻生物向后推1个空间，并尝试绊倒对手(力量/敏捷豁免;困难30)。
-决斗姿态:攻击对手并试图解除其武装(力量豁免;难度25 +你的Agi修正)。攻击保证至少击中并穿透一次。" Tile="Abilities/abil_swipe.bmp" Foreground="y" Detail="Y"></power>
-    <power Name="决斗姿态" Cost="200" Attribute="Intelligence" Minimum="17" Class="LongBladesDuelingStance" Snippet="dueling stance" Description="你可以进入决斗姿态。当你的主手挥舞长刀时，你用长刀和短刀击中时都会获得+2。" Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="Y"></power>
-    <power Name="改进进攻姿态" Cost="100" Attribute="Strength" Minimum="23" Class="LongBladesImprovedAggressiveStance" Snippet="improved aggressive stance" Description="你在攻击姿态下的穿透加值增加到+2，但你的击中惩罚增加到-3。" Tile="Abilities/sw_skill_improved_aggressive_stance.png" Foreground="y" Detail="Y"></power>
-    <power Name="改善防守姿态" Cost="100" Attribute="Agility" Minimum="23" Class="LongBladesImprovedDefensiveStance" Snippet="improved defensive stance" Description="你在防御姿态下的 DV 加值增加至 +3。" Tile="Abilities/sw_skill_improved_defensive_stance.png" Foreground="y" Detail="Y"></power>
-    <power Name="改善决斗姿势" Cost="100" Attribute="Intelligence" Minimum="21" Class="LongBladesImprovedDuelistStance" Prereq="LongBladesDuelingStance" Snippet="improved dueling stance" Description="你在决斗姿态下的命中加值增加至+3。" Tile="Abilities/sw_skill_improved_dueling_stance.png" Foreground="y" Detail="Y"></power>
-    <power Name="警惕！" Cost="300" Attribute="Strength,Agility|Agility,Strength" Minimum="29,23|29,23" Class="LongBladesDeathblow" Snippet="yelling 'en grade!'" Description="活性;冷却时间 100。在接下来的 10 轮中，弓步和挥击没有冷却时间。" Tile="Abilities/abil_engarde.bmp" Foreground="y" Detail="Y"></power>
+  <skill Name="长刃" Class="LongBlades" Description="你擅长使用长柄刺击和挥砍武器。" Cost="100" Attribute="Agility" Snippet="the long blade" Tile="Abilities/sw_skill_long_blade.png" Foreground="y" Detail="Y">
+    <power Name="长刃专精" Cost="0" Attribute="Strength" Minimum="0" Class="LongBladesProficiency" Snippet="the long blade" Description="你可使用两种姿态。攻击姿态: 主手持有长刃时，你的长刃和短刃攻击穿透力+1，但命中率-2。防御姿态: 主手持有长刃时，获得+2 DV。" Tile="Abilities/sw_skill_long_blade_proficiency.png" Foreground="y" Detail="Y"/>
+    <power Name="突刺" Cost="200" Attribute="Agility" Minimum="17" Class="LongBladesLunge" Snippet="lunging" Description="激活；冷却时间15。进攻姿态: 穿过一个空格向对手突刺并攻击，穿透力+2。你必须穿过这个空格。防御姿态: 攻击对手后向后撤退2格。决斗姿态: 攻击对手，穿透力+1。攻击必定命中并至少穿透一次。" Tile="Abilities/abil_lunge.bmp" Foreground="y" Detail="Y"/>
+    <power Name="挥击" Cost="200" Attribute="Strength" Minimum="17" Class="LongBladesSwipe" Snippet="swiping" Description="激活技能；冷却时间15回合。攻击姿态: 对所有相邻敌人发动攻击。防御姿态: 将所有相邻生物推开1格并尝试绊倒敌人（力量/敏捷检定；难度30）。决斗姿态: 攻击一名敌人并尝试解除其武装（力量检定；难度25+你的敏捷修正）。攻击必定命中且至少穿透一次。" Tile="Abilities/abil_swipe.bmp" Foreground="y" Detail="Y"/>
+    <power Name="决斗姿态" Cost="200" Attribute="Intelligence" Minimum="17" Class="LongBladesDuelingStance" Snippet="dueling stance" Description="你获得了决斗姿态。当你主手握持长剑时，使用长剑和短剑时命中率提高+2。" Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="Y"/>
+    <power Name="改进的攻击姿态" Cost="100" Attribute="Strength" Minimum="23" Class="LongBladesImprovedAggressiveStance" Snippet="improved aggressive stance" Description="你在攻击姿态下的穿透加成提高到+2，但命中惩罚也增加到-3。" Tile="Abilities/sw_skill_improved_aggressive_stance.png" Foreground="y" Detail="Y"/>
+    <power Name="强化防御姿态" Cost="100" Attribute="Agility" Minimum="23" Class="LongBladesImprovedDefensiveStance" Snippet="improved defensive stance" Description="在防御姿态下的DV加值提升至+3。" Tile="Abilities/sw_skill_improved_defensive_stance.png" Foreground="y" Detail="Y"/>
+    <power Name="改良决斗姿态" Cost="100" Attribute="Intelligence" Minimum="21" Class="LongBladesImprovedDuelistStance" Prereq="LongBladesDuelingStance" Snippet="improved dueling stance" Description="在决斗姿态下，你的命中加值提升至+3。" Tile="Abilities/sw_skill_improved_dueling_stance.png" Foreground="y" Detail="Y"/>
+    <power Name="准备姿势！" Cost="300" Attribute="Strength,Agility|Agility,Strength" Minimum="29,23|29,23" Class="LongBladesDeathblow" Snippet="yelling 'en grade!'" Description="激活；冷却时间100。接下来的10轮内，突刺和挥砍没有冷却时间。" Tile="Abilities/abil_engarde.bmp" Foreground="y" Detail="Y"/>
   </skill>
 
-  <skill Name="口才" Class="Persuasion" Description="你善于说服别人" Cost="100" Attribute="Ego" Snippet="persuasion" Tile="Abilities/sw_skill_persuasion.png" Foreground="y" Detail="m">
-    <power Name="威胁凝视" Cost="0" Attribute="Ego" Minimum="17" Class="Persuasion_MenacingStare" Snippet="the menacing stare" Description="你凝视附近的对手并让他们惊恐地逃跑。" Tile="Abilities/abil_menacing_stare.bmp" Foreground="y" Detail="m"></power>
-    <power Name="威吓" Cost="200" Attribute="Ego" Minimum="17" Class="Persuasion_Intimidate" Snippet="intimidating" Description="冷却时间 50。你试图恐吓相邻的敌对生物（1d8 + [Ego修正] 穿透检定 vs. MA）。成功后，一个受惊的生物会逃离你 6d4 轮。" Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"></power>
-    <power Name="羞辱" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_Berate" Snippet="berating" Description="冷却时间 50。你羞辱附近的一个生物 6d6 轮，使其 DV、命中、自我、意志力受到 -4 惩罚，并且速度受到 -10% 惩罚。" Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="m"></power>
-    <power Name="蛇油器" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_SnakeOiler" Snippet="hustling" Description="物品交换时，Ego会被视为高出 4 点." Tile="Abilities/sw_skill_snake_oiler.png" Foreground="y" Detail="m"></power>
-    <power Name="传教" Cost="300" Attribute="Ego" Minimum="23" Class="Persuasion_Proselytize" Snippet="proselytizing" Description="你说服了一个聪明的生物加入你。" Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="m"></power>
-    <power Name="鼓舞人心的存在" Cost="250" Attribute="Ego" Minimum="25" Class="Persuasion_InspiringPresence" Snippet="being inspiring" Description="你的话让你的同伴更加勇敢。" Tile="Abilities/sw_skill_inspiring_presence.png" Foreground="y" Detail="m"></power>
+  <skill Name="说服术" Class="Persuasion" Description="你擅长说服他人。" Cost="100" Attribute="Ego" Snippet="persuasion" Tile="Abilities/sw_skill_persuasion.png" Foreground="y" Detail="m">
+    <power Name="威吓凝视" Cost="0" Attribute="Ego" Minimum="17" Class="Persuasion_MenacingStare" Snippet="the menacing stare" Description="你用凶狠的目光瞪视附近的敌人，令其因恐惧而逃跑。" Tile="Abilities/abil_menacing_stare.bmp" Foreground="y" Detail="m"/>
+    <power Name="恐吓" Cost="200" Attribute="Ego" Minimum="17" Class="Persuasion_Intimidate" Snippet="intimidating" Description="冷却时间 50。你试图恐吓相邻的敌对生物（1d8 + [自我修正值] 穿透 vs. 意志抗性）。成功后，被吓到的生物将在 6d4 轮内逃离你。" Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"/>
+    <power Name="斥责" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_Berate" Snippet="berating" Description="冷却时间 50 回合。你使附近的一个生物蒙羞 6d6 回合，使其防御值（DV）、命中率、意志力和速度降低 4 点，并且速度降低 10%。" Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="m"/>
+    <power Name="蛇油贩子" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_SnakeOiler" Snippet="hustling" Description="在交易时，你的自我被视为比实际高4点。" Tile="Abilities/sw_skill_snake_oiler.png" Foreground="y" Detail="m"/>
+    <power Name="劝化" Cost="300" Attribute="Ego" Minimum="23" Class="Persuasion_Proselytize" Snippet="proselytizing" Description="你说服一个智慧生物加入你。" Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="m"/>
+    <power Name="鼓舞人心的存在" Cost="250" Attribute="Ego" Minimum="25" Class="Persuasion_InspiringPresence" Snippet="being inspiring" Description="你的话语激励了你的同伴。" Tile="Abilities/sw_skill_inspiring_presence.png" Foreground="y" Detail="m"/>
   </skill>
 
-  <skill Name="手枪" Class="Pistol" Description="你熟练使用各种手枪。" Cost="100" Attribute="Agility" Snippet="the pistol" Tile="Abilities/sw_skill_pistol.png" Foreground="y" Detail="c">
-    <power Name="稳定之手" Cost="0" Attribute="Agility" Minimum="0" Class="Pistol_SteadyHands" Snippet="the pistol" Description="使用手枪时，Agi被视为 +4 " Tile="Abilities/sw_skill_steady_hands.png" Foreground="y" Detail="c"></power>
-    <power Name="多抢射击" Cost="150" Attribute="Agility" Minimum="17" Class="Pistol_Akimbo" Snippet="akimbo" Description="装备多把枪时，开火会使用每一把枪。" Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="c"></power>
-    <power Name="弱点发现者" Cost="150" Attribute="Agility" Minimum="19" Class="Pistol_WeakSpotter" Snippet="spotting weakness" Description="您使用手枪获得暴击的可能性提高 5%（标准几率为 5%）。" Tile="Abilities/sw_skill_weak_spotter.png" Foreground="y" Detail="c"></power>
-    <power Name="跑步射击" Cost="50" Attribute="Agility" Minimum="21" Class="Pistol_SlingAndRun" Snippet="slinging and running" Description="跑步时使用手枪射击不会导致准确性受到惩罚。" Tile="Abilities/sw_skill_sling_and_run.png" Foreground="y" Detail="c"></power>
-    <power Name="缴械射击" Cost="100" Attribute="Agility" Minimum="23" Class="Pistol_DisarmingShot" Snippet="disarming with a gun" Description="当你用手枪击中对手时，你有基于敏捷性的机会解除对手的武装。" Tile="Abilities/sw_skill_disarming_shot.png" Foreground="y" Detail="c"></power>
-    <power Name="死亡射击" Cost="200" Attribute="Agility" Minimum="25" Class="Pistol_DeadShot" Snippet="critical aim" Description="用手枪造成的暴击更加致命。" Tile="Abilities/sw_skill_dead_shot.png" Foreground="y" Detail="c"></power>
-    <power Name="清空弹夹" Cost="300" Attribute="Agility" Minimum="27" Class="Pistol_EmptyTheClips" Snippet="emptying the clips" Description="冷却时间 200。20回合内，手枪射击只需要半发子弹而不是整发。" Tile="Abilities/abil_empty_the_clips.bmp" Foreground="y" Detail="c"></power>
-    <power Name="最快的枪" Cost="400" Attribute="Agility" Minimum="29" Class="Pistol_FastestGun" Snippet="the lightning-quick draw" Description="手枪射击的动作成本降低 25%。" Tile="Abilities/sw_skill_fastest_gun_in_the_rust.png" Foreground="y" Detail="c"></power>
+  <skill Name="手枪" Class="Pistol" Description="你擅长使用各种类型的手枪。" Cost="100" Attribute="Agility" Snippet="the pistol" Tile="Abilities/sw_skill_pistol.png" Foreground="y" Detail="c">
+    <power Name="稳手" Cost="0" Attribute="Agility" Minimum="0" Class="Pistol_SteadyHands" Snippet="the pistol" Description="在计算你使用手枪的命中率时，你的敏捷被视为提高了4点。" Tile="Abilities/sw_skill_steady_hands.png" Foreground="y" Detail="c"/>
+    <power Name="双持连射" Cost="150" Attribute="Agility" Minimum="17" Class="Pistol_Akimbo" Snippet="akimbo" Description="当你持有多把枪械进行远程攻击时，每把枪都会发射一发子弹。" Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="c"/>
+    <power Name="弱点瞄准者" Cost="150" Attribute="Agility" Minimum="19" Class="Pistol_WeakSpotter" Snippet="spotting weakness" Description="使用手枪时，你造成暴击的几率提高5%（基础几率为5%）" Tile="Abilities/sw_skill_weak_spotter.png" Foreground="y" Detail="c"/>
+    <power Name="边跑边射" Cost="50" Attribute="Agility" Minimum="21" Class="Pistol_SlingAndRun" Snippet="slinging and running" Description="你在奔跑时使用手枪射击不会受到精度惩罚。" Tile="Abilities/sw_skill_sling_and_run.png" Foreground="y" Detail="c"/>
+    <power Name="解除武装射击" Cost="100" Attribute="Agility" Minimum="23" Class="Pistol_DisarmingShot" Snippet="disarming with a gun" Description="当你用左轮手枪命中对手时，你有基于敏捷的机会使其解除武装。" Tile="Abilities/sw_skill_disarming_shot.png" Foreground="y" Detail="c"/>
+    <power Name="死神之击" Cost="200" Attribute="Agility" Minimum="25" Class="Pistol_DeadShot" Snippet="critical aim" Description="使用手枪时，你的致命一击更加致命。" Tile="Abilities/sw_skill_dead_shot.png" Foreground="y" Detail="c"/>
+    <power Name="清空弹匣" Cost="300" Attribute="Agility" Minimum="27" Class="Pistol_EmptyTheClips" Snippet="emptying the clips" Description="冷却时间200。在接下来的20轮中，手枪射击只需半轮时间而非一整轮。" Tile="Abilities/abil_empty_the_clips.bmp" Foreground="y" Detail="c"/>
+    <power Name="锈蚀之地最快的枪" Cost="400" Attribute="Agility" Minimum="29" Class="Pistol_FastestGun" Snippet="the lightning-quick draw" Description="发射手枪的动作成本减少25%。" Tile="Abilities/sw_skill_fastest_gun_in_the_rust.png" Foreground="y" Detail="c"/>
   </skill>
 
-  <skill Name="自律" Class="Discipline" Description="你善于保持自律." Cost="150" Attribute="Willpower" Snippet="self-discipline" Tile="Abilities/sw_skill_self_discipline.png" Foreground="y" Detail="g">
-    <power Name="冥想" Cost="0" Attribute="Willpower" Minimum="0" Class="Discipline_Meditate" Snippet="meditation" Description="冥想时，您的恢复速度会提高三倍，负面状态效果的消耗速度也会提高三倍。冥想时你唯一可以采取的行动就是等待。如果你在单轮中受到的伤害超过（Wil*3）-60，你就会停止冥想。如果你休息 10 轮或更多，你就会自动开始冥想。" Tile="Abilities/abil_meditate.bmp" Foreground="y" Detail="g"></power>
-    <power Name="断食之道" Cost="50" Attribute="Willpower" Minimum="17" Class="Discipline_FastingWay" Snippet="fasting" Description="你的饥饿和口渴程度是正常水平的一半。
-膳食对新陈代谢的影响持续时间是原来的两倍。" Tile="Abilities/sw_skill_fasting_way.png" Foreground="y" Detail="g"></power>
-    <power Name="钢铁意志" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_IronMind" Snippet="the iron mind" Description="每回合你感到困惑，你就有 (Wil-10)% 的几率摆脱效果。" Tile="Abilities/sw_skill_iron_mind.png" Foreground="y" Detail="g"></power>
-    <power Name="狮心王" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_Lionheart" Snippet="the lionheart" Description="每一轮你感到恐惧，你就有 (Wil-10)% 的几率摆脱这种效果。" Tile="Abilities/sw_skill_lionheart.png" Foreground="y" Detail="g"></power>
-    <power Name="努力" Cost="150" Attribute="Willpower" Minimum="23" Class="Discipline_Conatus" Snippet="conatus" Description="您可以再冲刺 10 回合。" Tile="Abilities/sw_skill_conatus.png" Foreground="y" Detail="g"></power>
-    <power Name="心灵超越身体" Cost="150" Attribute="Willpower" Minimum="29" Class="Discipline_MindOverBody" Snippet="putting the mind over the body" Description="你的饥饿和口渴率只有六分之一。
-膳食对代谢的影响持续时间是原来的六倍。
-你不会因饥饿而受到惩罚。" Tile="Abilities/sw_skill_mind_over_body.png" Foreground="y" Detail="g"></power>
+  <skill Name="自律" Class="Discipline" Description="你擅长保持自律。" Cost="150" Attribute="Willpower" Snippet="self-discipline" Tile="Abilities/sw_skill_self_discipline.png" Foreground="y" Detail="g">
+    <power Name="冥想" Cost="0" Attribute="Willpower" Minimum="0" Class="Discipline_Meditate" Snippet="meditation" Description="冥想时，你的生命恢复速度提高三倍，负面状态效果的持续时间缩短三倍。冥想期间唯一可以执行的动作是等待。如果你在单轮中受到的伤害超过（意志力*3）-60，冥想将被中断。如果你休息10轮或更长时间，你将自动开始冥想。" Tile="Abilities/abil_meditate.bmp" Foreground="y" Detail="g"/>
+    <power Name="禁食之道" Cost="50" Attribute="Willpower" Minimum="17" Class="Discipline_FastingWay" Snippet="fasting" Description="你的饥饿和口渴速度减半。餐食带来的代谢效果持续时间延长一倍。" Tile="Abilities/sw_skill_fasting_way.png" Foreground="y" Detail="g"/>
+    <power Name="铁心" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_IronMind" Snippet="the iron mind" Description="每当你陷入混乱状态时，你有 (意志力-10)% 的几率摆脱该效果。" Tile="Abilities/sw_skill_iron_mind.png" Foreground="y" Detail="g"/>
+    <power Name="狮心" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_Lionheart" Snippet="the lionheart" Description="每当你陷入恐惧状态时，你有(意志力-10)%的机会摆脱该效果。" Tile="Abilities/sw_skill_lionheart.png" Foreground="y" Detail="g"/>
+    <power Name="意志奔腾" Cost="150" Attribute="Willpower" Minimum="23" Class="Discipline_Conatus" Snippet="conatus" Description="你可以额外冲刺10回合。" Tile="Abilities/sw_skill_conatus.png" Foreground="y" Detail="g"/>
+    <power Name="心灵胜过肉体" Cost="150" Attribute="Willpower" Minimum="29" Class="Discipline_MindOverBody" Snippet="putting the mind over the body" Description="你的饥饿和口渴速度降低至六分之一。餐食带来的代谢效果持续时间延长六倍。即使极度饥饿也不会受到任何惩罚。" Tile="Abilities/sw_skill_mind_over_body.png" Foreground="y" Detail="g"/>
   </skill>
 
-  <skill Name="盾牌" Class="Shield" Description="你擅长使用盾牌。" Cost="100" Attribute="Strength" Snippet="the shield" Tile="Abilities/sw_skill_shield.png" Foreground="y" Detail="b">
-    <power Name="格挡" Cost="0" Attribute="Strength" Minimum="0" Class="Shield_Block" Snippet="blocking" Description="只要你挥舞着盾牌，每回合就有50%的几率挡下一次近战攻击。当你格挡攻击时，你将盾牌的AV加成加到你对该攻击的AV中。如果你装备了多个护盾，那么每回合的格挡限制是每个护盾，你只能尝试格挡一次特定的攻击，使用你最好的可用护盾。" Tile="Abilities/sw_skill_block.png" Foreground="y" Detail="b"></power>
-    <power Name="盾牌猛击" Cost="100" Attribute="Strength" Minimum="17" Class="Shield_Slam" Snippet="shield slamming" Description="激活;冷却时间40。你试图击倒对手并造成(Str调整值)d2 +你的盾牌的AV加成伤害。你的对手有机会抵抗(Str豁免:20 +Str修改器)。当你向装备盾牌的对手冲锋时，你将获得一次免费的盾牌猛击攻击。" Tile="Abilities/abil_shield_slam.bmp" Foreground="y" Detail="b"></power>
-    <power Name="灵巧格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_DeftBlocking" Snippet="blocking deftly" Description="你用盾牌格挡的几率提高到 75%。" Tile="Abilities/sw_skill_deft_blocking.png" Foreground="y" Detail="b"></power>
-    <power Name="快速格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_SwiftBlocking" Snippet="blocking swiftly" Description="每个盾牌每轮可以阻挡一次额外的攻击。" Tile="Abilities/sw_skill_swift_blocking.png" Foreground="y" Detail="b"></power>
-    <power Name="惊人格挡" Cost="200" Attribute="Strength" Minimum="21" Class="Shield_StaggeringBlock" Snippet="staggering blocks" Description="每当你格挡对手的攻击时，有（Str*2）-35%的几率让对手昏迷1d2回合。" Tile="Abilities/sw_skill_staggering_block.png" Foreground="y" Detail="b"></power>
-    <power Name="盾墙" Cost="200" Attribute="Willpower" Minimum="25" Class="Shield_ShieldWall" Snippet="forming a wall with your shield" Description="在接下来的三轮中，你会自动阻止所有传入的近战攻击（不能与圆盾一起使用）。" Tile="Abilities/abil_shield_wall.bmp" Foreground="y" Detail="b"></power>
+  <skill Name="护盾" Class="Shield" Description="你擅长使用护盾。" Cost="100" Attribute="Strength" Snippet="the shield" Tile="Abilities/sw_skill_shield.png" Foreground="y" Detail="b">
+    <power Name="格挡" Cost="0" Attribute="Strength" Minimum="0" Class="Shield_Block" Snippet="blocking" Description="只要你装备了盾牌，每回合就有50%的几率格挡一次近战攻击。当你格挡攻击时，会将盾牌的AV加值加到该次攻击的AV上。如果你装备了多个盾牌，每个盾牌每回合只能格挡一次，且你只能尝试使用最好的可用盾牌来格挡一次给定的攻击。" Tile="Abilities/sw_skill_block.png" Foreground="y" Detail="b"/>
+    <power Name="盾击" Cost="100" Attribute="Strength" Minimum="17" Class="Shield_Slam" Snippet="shield slamming" Description="激活技能；冷却时间40回合。你尝试将对手击倒并造成（力量修正值）d2 + 盾牌AV加值的伤害。对手有机会抵抗（力量豁免；难度20 + 你的力量修正值）。当你装备盾牌冲锋对手时，你可以对其发动一次免费的盾击攻击。" Tile="Abilities/abil_shield_slam.bmp" Foreground="y" Detail="b"/>
+    <power Name="灵巧格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_DeftBlocking" Snippet="blocking deftly" Description="使用盾牌格挡的概率提升至75%。" Tile="Abilities/sw_skill_deft_blocking.png" Foreground="y" Detail="b"/>
+    <power Name="迅捷格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_SwiftBlocking" Snippet="blocking swiftly" Description="每轮每盾牌可额外格挡一次攻击。" Tile="Abilities/sw_skill_swift_blocking.png" Foreground="y" Detail="b"/>
+    <power Name="震慑格挡" Cost="200" Attribute="Strength" Minimum="21" Class="Shield_StaggeringBlock" Snippet="staggering blocks" Description="每当您格挡对手的攻击时，有 (力量*2)-35% 的几率使对手在 1d2 回合内昏迷。" Tile="Abilities/sw_skill_staggering_block.png" Foreground="y" Detail="b"/>
+    <power Name="护盾壁垒" Cost="200" Attribute="Willpower" Minimum="25" Class="Shield_ShieldWall" Snippet="forming a wall with your shield" Description="在接下来的三轮中，你将自动阻挡所有近战攻击（不能与小圆盾一起使用）" Tile="Abilities/abil_shield_wall.bmp" Foreground="y" Detail="b"/>
   </skill>
 
-  <skill Name="短刀" Class="ShortBlades" Description="您擅长使用小型单手刀和刀片。" Cost="50" Attribute="Agility" Snippet="the short blade" Tile="Abilities/sw_skill_short_blade.png" Foreground="y" Detail="m">
-    <power Name="短刀专长" Cost="0" Attribute="Agility" Minimum="0" Class="ShortBlades_Expertise" Snippet="the short blade" Description="用短刀击中你会获得+1。此外，主手中使用短刃攻击的动作成本降低了 25%。" Tile="Abilities/sw_skill_short_blade_expertise.png" Foreground="y" Detail="m"></power>
-    <power Name="放血者" Cost="150" Attribute="Agility" Minimum="17" Class="ShortBlades_Bloodletter" Snippet="bloodletting" Description="你的短刃攻击穿透有75%的几率使你的对手流血(每回合0-1点伤害,Tou豁免;难度20 +Agi修正)。对手每回合豁免止血，每回合豁免难度降低1。此效果可以叠加数次，次数等于Agi修正+1。" Tile="Abilities/sw_skill_bloodletter.png" Foreground="y" Detail="m"></power>
-    <power Name="戳" Cost="100" Attribute="Agility" Minimum="17" Class="ShortBlades_Jab" Snippet="jabbing" Description="每当你用短刀进行副手攻击时，你会立即用同一武器进行另一次攻击。乱舞攻击不会触发此操作。" Tile="Abilities/sw_skill_jab.png" Foreground="y" Detail="m"></power>
-    <power Name="挑筋" Cost="150" Attribute="Agility" Minimum="21" Class="ShortBlades_Hobble" Snippet="hobbling" Description="你用主手中的短剑进行攻击，寻找对手盔甲上的弱点。如果你击中，你会穿透一次并阻碍他们（16-20 轮-50% 移动速度）。" Tile="Abilities/abil_hobble.bmp" Foreground="y" Detail="m"></power>
-    <power Name="尖锐" Prereq="Tactics_Juke" Cost="100" Attribute="Agility" Minimum="23" Class="ShortBlades_PointedCircle" Snippet="the pointed circle" Description="每当你用主手挥舞短剑来戏弄对手时，你就进行了一次免费攻击。如果你有放血者，攻击造成流血的几率是 100%。" Tile="Abilities/sw_skill_pointed_circle.png" Foreground="y" Detail="m"></power>
-    <power Name="反击" Cost="250" Attribute="Agility" Minimum="25" Class="ShortBlades_Rejoinder" Snippet="rejoindering" Description="每回合一次，当对手的近战攻击未击中你时，你有 40% 的几率用你所挥舞的短剑进行免费攻击。" Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="m"></power>
-    <power Name="刺杀" Cost="250" Attribute="Agility" Minimum="27" Class="ShortBlades_Shank" Snippet="shanking" Description="激活;冷却时间 10（主要）或 20（副手）。你可以用主手（首选）或副手的短剑进行近战攻击。如果你击中，你的对手每遭受一次负面状态效果，攻击的穿透检定就会获得+2。" Tile="Abilities/abil_shank.bmp" Foreground="y" Detail="m"></power>
+  <skill Name="短刃" Class="ShortBlades" Description="你擅长使用小型单手刀具和利刃。" Cost="50" Attribute="Agility" Snippet="the short blade" Tile="Abilities/sw_skill_short_blade.png" Foreground="y" Detail="m">
+    <power Name="短刃专精" Cost="0" Attribute="Agility" Minimum="0" Class="ShortBlades_Expertise" Snippet="the short blade" Description="使用短刃攻击时命中率提高+1。此外，主手使用短刃攻击的动作成本降低25%。" Tile="Abilities/sw_skill_short_blade_expertise.png" Foreground="y" Detail="m"/>
+    <power Name="血祭者" Cost="150" Attribute="Agility" Minimum="17" Class="ShortBlades_Bloodletter" Snippet="bloodletting" Description="你的短刃穿透攻击有75%的几率使对手流血（每回合0-1点伤害。坚韧检定；难度20+你的敏捷修正）。对手每回合需要进行一次检定以停止流血，检定难度每回合降低1点。此效果可以叠加，次数等于1加上你的敏捷修正。" Tile="Abilities/sw_skill_bloodletter.png" Foreground="y" Detail="m"/>
+    <power Name="刺击" Cost="100" Attribute="Agility" Minimum="17" Class="ShortBlades_Jab" Snippet="jabbing" Description="当你用短刃发动副手攻击时，会立即再次使用同一武器进行一次攻击。连击攻击不会触发此效果。" Tile="Abilities/sw_skill_jab.png" Foreground="y" Detail="m"/>
+    <power Name="蹒跚打击" Cost="150" Attribute="Agility" Minimum="21" Class="ShortBlades_Hobble" Snippet="hobbling" Description="你用主手的短刃发动攻击，寻找对手装甲中的弱点。如果命中，你会穿透其防御并使其蹒跚（-50% 移动速度，持续 16-20 回合）。" Tile="Abilities/abil_hobble.bmp" Foreground="y" Detail="m"/>
+    <power Name="尖锐圆环" Prereq="Tactics_Juke" Cost="100" Attribute="Agility" Minimum="23" Class="ShortBlades_PointedCircle" Snippet="the pointed circle" Description="当你手持短刃为主要武器时，每次躲避对手攻击都会进行一次免费攻击。如果你拥有血祭者技能，这次攻击造成流血的几率为100%。" Tile="Abilities/sw_skill_pointed_circle.png" Foreground="y" Detail="m"/>
+    <power Name="反击" Cost="250" Attribute="Agility" Minimum="25" Class="ShortBlades_Rejoinder" Snippet="rejoindering" Description="每回合一次，当敌人用近战攻击你但未命中时，你有40%的机会使用手中短刃进行一次免费攻击。" Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="m"/>
+    <power Name="刺击" Cost="250" Attribute="Agility" Minimum="27" Class="ShortBlades_Shank" Snippet="shanking" Description="激活技能；冷却时间为主手10回合或副手20回合。使用主手（优先）或副手的短刃进行一次近战攻击。若命中，每次对手受到的负面状态效果都会使攻击的穿透力+2。" Tile="Abilities/abil_shank.bmp" Foreground="y" Detail="m"/>
   </skill>
 
-  <skill Name="策略" Class="Tactics" Description="您了解基本的战斗策略。" Cost="50" Attribute="Agility" Snippet="tactics" Tile="Abilities/sw_skill_tactics.png" Foreground="y" Detail="B">
-    <power Name="跃障" Cost="0" Attribute="Agility" Minimum="0" Class="Tactics_Hurdle" Snippet="hurdling" Description="冲刺时您的 DV 不会受到惩罚，并且可以在不中断冲刺的情况下跳跃。" Tile="Abilities/sw_skill_hurdle.png" Foreground="y" Detail="B"></power>
-    <power Name="灵巧投掷" Cost="50" Attribute="Agility" Minimum="10" Class="Tactics_Throwing" Snippet="throwing" Description="当向投掷范围内的目标投掷时，你的投掷范围会增加 3 倍，并且投掷偏差会减半。" Tile="Abilities/sw_skill_deft_throwing.png" Foreground="y" Detail="B"></power>
-    <power Name="冲锋" Cost="150" Attribute="Strength" Minimum="17" Class="Tactics_Charge" Snippet="charging" Description="你向前冲锋两到三个方格并进行近战攻击，穿透检定+1。" Tile="Abilities/abil_charge.bmp" Foreground="y" Detail="B"></power>
-    <power Name="踢退" Cost="50" Attribute="Strength" Minimum="19" Class="Tactics_Kickback" Snippet="kicking back" Description="每当您向近战范围内的目标发射导弹武器时，都会尝试将目标向后踢。" Tile="Abilities/sw_skill_kickback.png" Foreground="y" Detail="B"></power>
-    <power Name="戏耍" Cost="200" Attribute="Agility" Minimum="21" Class="Tactics_Juke" Snippet="juking" Description="活性;冷却时间 40。你移动一格无需任何行动成本。您可以与敌对对手交换方块。" Tile="Abilities/abil_juke.bmp" Foreground="y" Detail="B"></power>
+  <skill Name="战术" Class="Tactics" Description="你了解基本的战斗策略。" Cost="50" Attribute="Agility" Snippet="tactics" Tile="Abilities/sw_skill_tactics.png" Foreground="y" Detail="B">
+    <power Name="跨越障碍" Cost="0" Attribute="Agility" Minimum="0" Class="Tactics_Hurdle" Snippet="hurdling" Description="冲刺时不受防御值（DV）惩罚，并且可以不断开冲刺状态跳跃。" Tile="Abilities/sw_skill_hurdle.png" Foreground="y" Detail="B"/>
+    <power Name="灵巧投掷" Cost="50" Attribute="Agility" Minimum="10" Class="Tactics_Throwing" Snippet="throwing" Description="你的投掷范围增加3，且在目标处于你的投掷范围内时，投掷偏差减半。" Tile="Abilities/sw_skill_deft_throwing.png" Foreground="y" Detail="B"/>
+    <power Name="冲锋" Cost="150" Attribute="Strength" Minimum="17" Class="Tactics_Charge" Snippet="charging" Description="向前冲锋两到三个格子，并进行一次近战攻击，穿刺值+1。" Tile="Abilities/abil_charge.bmp" Foreground="y" Detail="B"/>
+    <power Name="反冲踢" Cost="50" Attribute="Strength" Minimum="19" Class="Tactics_Kickback" Snippet="kicking back" Description="当你向近战范围内的目标发射导弹武器时，你会尝试将目标踢退。" Tile="Abilities/sw_skill_kickback.png" Foreground="y" Detail="B"/>
+    <power Name="闪避" Cost="200" Attribute="Agility" Minimum="21" Class="Tactics_Juke" Snippet="juking" Description="激活；冷却时间40。你可以在没有行动成本的情况下移动一格。你可以与敌对对手交换位置。" Tile="Abilities/abil_juke.bmp" Foreground="y" Detail="B"/>
   </skill>
 
-  <skill Name="修补" Class="Tinkering" Description="您擅长检查、建造、修复和改装文物。" Cost="100" Attribute="Intelligence" Snippet="tinkering" Tile="Abilities/sw_skill_tinkering.png" Foreground="y" Detail="c">
-    <power Name="小工具检查器" Cost="0" Attribute="Intelligence" Minimum="15" Class="Tinkering_GadgetInspector" Snippet="inspecting gadgets" Description="在检查工件方面会更加成功，并且可以布线。" Tile="Abilities/sw_skill_gadget_inspector.png" Foreground="y" Detail="c"></power>
-    <power Name="拆卸" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Disassemble" Snippet="disassembling" Description="您可以将废料和工件拆解成碎片。您可以从项目示意图中获得最高有效位，并有 50% 的机会接收剩余的每个位。" Tile="Abilities/sw_skill_disassemble.png" Foreground="y" Detail="c"></power>
-    <power Name="逆向工程" Cost="100" Prereq="Tinkering_Disassemble" Attribute="Intelligence" Minimum="25" Class="Tinkering_ReverseEngineer" Snippet="reverse engineering" Description="每当你拆卸一个物品时，你就有 25% 的机会学习如何建造该物品。" Tile="Abilities/sw_skill_reverse_engineer.png" Foreground="y" Detail="c"></power>
-    <power Name="清道夫" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Scavenger" Snippet="scavenging" Description="每当你踩过垃圾时，你都会敏锐地翻阅它们，偶尔会发现废品。此外，你还可以从你摧毁的机器人中收获额外的废料。" Tile="Abilities/sw_skill_scavenger.png" Foreground="y" Detail="c"></power>
-    <power Name="维修" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_Repair" Snippet="repairing" Description="您可以使用 Bits 修复损坏的物品。" Tile="Items/sw_toolbox_large.bmp" Foreground="y" Detail="c"></power>
-    <power Name="部署炮塔" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_DeployTurret" Snippet="deploying turrets" Description="您可以将导弹武器部署为静态炮塔。" Tile="Abilities/abil_deploy_turret.bmp" Foreground="y" Detail="c"></power>
-    <power Name="布设地雷 / 设置炸弹" Cost="50" Attribute="Intelligence" Minimum="17" Class="Tinkering_LayMine" Snippet="laying mines and setting bombs" Description="你可以放置手榴弹作为地雷或将它们设置为炸弹。" Tile="Abilities/abil_lay_mine.bmp" Foreground="y" Detail="c"></power>
-    <power Name="修补匠 I" Cost="100" Attribute="Intelligence" Minimum="19" Class="Tinkering_Tinker1" Snippet="tinkering" Description="您可以从低层原理图构建项目，并获得 1 个免费原理图。您还可以为能量电池和电容器充电。" Tile="Abilities/sw_skill_tinker_1.png" Foreground="y" Detail="c"></power>
-    <power Name="修补匠 II" Cost="200" Prereq="Tinkering_Tinker1" Attribute="Intelligence" Minimum="23" Class="Tinkering_Tinker2" Snippet="advanced tinkering" Description="您可以根据中层原理图构建项目，并获得 1 个免费原理图。" Tile="Abilities/sw_skill_tinker_2.png" Foreground="y" Detail="c"></power>
-    <power Name="修补匠 III" Cost="300" Prereq="Tinkering_Tinker2" Attribute="Intelligence" Minimum="29" Class="Tinkering_Tinker3" Snippet="masterful tinkering" Description="您可以根据高级原理图构建项目，并获得 1 个免费原理图。" Tile="Abilities/sw_skill_tinker_3.png" Foreground="y" Detail="c"></power>
+  <skill Name="修补术" Class="Tinkering" Description="你擅长检查、制造、修理和改装遗物。" Cost="100" Attribute="Intelligence" Snippet="tinkering" Tile="Abilities/sw_skill_tinkering.png" Foreground="y" Detail="c">
+    <power Name="装置检查员" Cost="0" Attribute="Intelligence" Minimum="15" Class="Tinkering_GadgetInspector" Snippet="inspecting gadgets" Description="你对古物的检查更为成功，并且可以部署线路。" Tile="Abilities/sw_skill_gadget_inspector.png" Foreground="y" Detail="c"/>
+    <power Name="拆解" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Disassemble" Snippet="disassembling" Description="你可以拆解废料和文物以获取部件。从物品蓝图中获得最重要的部件，并有50%的几率获得每个剩余部件。" Tile="Abilities/sw_skill_disassemble.png" Foreground="y" Detail="c"/>
+    <power Name="逆向工程" Cost="100" Prereq="Tinkering_Disassemble" Attribute="Intelligence" Minimum="25" Class="Tinkering_ReverseEngineer" Snippet="reverse engineering" Description="当你拆解物品时，有25%的几率学会如何制作该物品。" Tile="Abilities/sw_skill_reverse_engineer.png" Foreground="y" Detail="c"/>
+    <power Name="拾荒者" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Scavenger" Snippet="scavenging" Description="当你经过垃圾时，你会敏锐地翻找并偶尔发现废料。此外，你从摧毁的机器人身上也能获取额外的废料。" Tile="Abilities/sw_skill_scavenger.png" Foreground="y" Detail="c"/>
+    <power Name="修复" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_Repair" Snippet="repairing" Description="你可以使用比特修复损坏的物品。" Tile="Items/sw_toolbox_large.bmp" Foreground="y" Detail="c"/>
+    <power Name="部署炮塔" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_DeployTurret" Snippet="deploying turrets" Description="你可以将导弹武器部署为静态炮塔。" Tile="Abilities/abil_deploy_turret.bmp" Foreground="y" Detail="c"/>
+    <power Name="布设地雷 / 安置炸弹" Cost="50" Attribute="Intelligence" Minimum="17" Class="Tinkering_LayMine" Snippet="laying mines and setting bombs" Description="你可以将手榴弹布置成地雷或安置成炸弹。" Tile="Abilities/abil_lay_mine.bmp" Foreground="y" Detail="c"/>
+    <power Name="修补匠 I" Cost="100" Attribute="Intelligence" Minimum="19" Class="Tinkering_Tinker1" Snippet="tinkering" Description="你可以使用低级蓝图制造物品，并获得1个免费蓝图。你还可以为能量电池和电容器充电。" Tile="Abilities/sw_skill_tinker_1.png" Foreground="y" Detail="c"/>
+    <power Name="巧匠 II" Cost="200" Prereq="Tinkering_Tinker1" Attribute="Intelligence" Minimum="23" Class="Tinkering_Tinker2" Snippet="advanced tinkering" Description="你可以使用中级蓝图制造物品，并获得1个免费蓝图。" Tile="Abilities/sw_skill_tinker_2.png" Foreground="y" Detail="c"/>
+    <power Name="巧匠III" Cost="300" Prereq="Tinkering_Tinker2" Attribute="Intelligence" Minimum="29" Class="Tinkering_Tinker3" Snippet="masterful tinkering" Description="你可以根据高级蓝图制造物品，并获得1个免费蓝图。" Tile="Abilities/sw_skill_tinker_3.png" Foreground="y" Detail="c"/>
   </skill>
 
-  <skill Name="旅行" Class="Survival" Description="你擅长荒野生存。" Cost="100" Attribute="Intelligence" Snippet="wayfaring" Tile="Abilities/sw_skill_wayfaring.png" Foreground="y" Detail="w">
-    <power Name="扎营" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Camp" Snippet="making camp" Description="生起篝火来做饭和保存食物。" Tile="Items/sw_campfire.bmp" Foreground="y" Detail="w"></power>
-    <power Name="心灵的指南针" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Trailblazer" Snippet="the mind's compass" Description="当您迷路时重新找到方向的机会加倍。
-迷路的几率减少约 15%。
-你在世界地图上旅行的速度是原来的两倍。" Tile="Abilities/sw_skill_minds_compass.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 花田" Cost="25" Attribute="Intelligence" Minimum="15" Class="Survival_PlainsSurvival" Snippet="navigating the flower fields" Description="穿越世界地图上的花田时，有趣遭遇的机会加倍。
-将在花田中迷路的几率从 12% 降低到 1%。
-在世界地图上，你穿过花田的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 沼泽" Cost="50" Attribute="Intelligence" Minimum="15" Class="Survival_SaltmarshSurvival" Snippet="navigating the marshes" Description="在世界地图上的盐沼和水藤田中旅行时，遇到有趣遭遇的机会加倍。
-将盐沼和水藤田迷路的几率从 12% 降低到 1%。
-在世界地图上，你穿过盐沼和水藤田的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_marshes.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 丘陵和山脉" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_MountainsSurvival" Snippet="navigating the hills and mountains" Description="在世界地图上的丘陵和山脉中旅行时，遇到有趣遭遇的机会加倍。
-将在丘陵和山区迷路的几率从 12% 降低到 1%。
-在世界地图上，您穿越丘陵和山脉的速度是原来的两倍。" Tile="Abilities/sw_skill_hills.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 峡谷" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_DesertCanyonSurvival" Snippet="navigating the desert canyons" Description="在世界地图上的沙漠峡谷中旅行时，遇到有趣遭遇的机会加倍。
-将沙漠峡谷迷路的几率从 12% 降低到 1%。
-在世界地图上，您穿越沙漠峡谷的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_canyons.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 盐沙丘" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_SaltDesertSurvival" Snippet="navigating the salt desert" Description="在世界地图上的盐丘中旅行时，有趣遭遇的机会加倍。
-将在盐丘中迷路的几率从 10% 降低到 1%。
-在世界地图上，您穿过盐丘的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_dunes.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 丛林" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_JungleSurvival" Snippet="navigating the jungles" Description="在世界地图上的丛林中旅行时，遇到有趣遭遇的机会加倍。
-将丛林迷路的几率从 12% 降低至 1%。
-在世界地图上，你穿越丛林的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 河流和湖泊" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_RiversLakesSurvival" Snippet="navigating the rivers and lakes" Description="Doubles the chance of interesting encounters while traveling across rivers and lakes on the world map.
-Reduces the chance of getting lost in rivers and lakes from base 12% to 1%.
-On the world map, you travel across rivers and lakes twice as quickly." Tile="Abilities/sw_skill_wayfaring_rivers.png" Foreground="y" Detail="w"></power>
-    <power Name="荒野传说: 废墟" Cost="50" Attribute="Intelligence" Minimum="21" Class="Survival_RuinsSurvival" Snippet="navigating ruins" Description="在世界地图上的镀铬废墟中旅行时，有趣遭遇的机会加倍。
-将在废墟中迷路的几率从基础 12% 降低至 1%。
-在世界地图上，你穿过废墟的速度是原来的两倍。" Tile="Abilities/sw_skill_wayfaring_ruins.png" Foreground="y" Detail="w"></power>
+  <skill Name="流浪之道" Class="Survival" Description="你擅长荒野求生。" Cost="100" Attribute="Intelligence" Snippet="wayfaring" Tile="Abilities/sw_skill_wayfaring.png" Foreground="y" Detail="w">
+    <power Name="扎营" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Camp" Snippet="making camp" Description="点燃篝火，用于烹饪食物和保存食物。" Tile="Items/sw_campfire.bmp" Foreground="y" Detail="w"/>
+    <power Name="心灵罗盘" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Trailblazer" Snippet="the mind's compass" Description="当你迷失方向时，恢复方位感的机会翻倍。减少迷失方向的几率约15%。你在世界地图上的移动速度提高一倍。" Tile="Abilities/sw_skill_minds_compass.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 花田" Cost="25" Attribute="Intelligence" Minimum="15" Class="Survival_PlainsSurvival" Snippet="navigating the flower fields" Description="在世界地图上穿越花田时，使遭遇有趣事件的机会翻倍。将迷路的概率从基础的12%降低到1%。在世界地图上，你穿越花田的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 盐沼与水藤原" Cost="50" Attribute="Intelligence" Minimum="15" Class="Survival_SaltmarshSurvival" Snippet="navigating the marshes" Description="在世界地图上穿越盐沼和水藤原时，使有趣遭遇事件的概率翻倍。同时，迷路的概率从基础的12%降低到1%。在世界地图上，穿越盐沼和水藤原的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_marshes.png" Foreground="y" Detail="w"/>
+    <power Name="荒野学识: 丘陵与山脉" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_MountainsSurvival" Snippet="navigating the hills and mountains" Description="在世界地图上穿越丘陵与山脉时，使遭遇有趣事件的机会翻倍。将迷路的基础几率从12%降低到1%。在世界地图上，穿越丘陵与山脉的速度提高一倍。" Tile="Abilities/sw_skill_hills.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 峡谷" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_DesertCanyonSurvival" Snippet="navigating the desert canyons" Description="在世界地图上穿越沙漠峡谷时，使遭遇有趣事件的机会翻倍。将迷路的基础几率从12%降低到1%。在世界地图上，穿越沙漠峡谷的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_canyons.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 盐丘" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_SaltDesertSurvival" Snippet="navigating the salt desert" Description="在世界地图上穿越盐丘时，遭遇有趣事件的几率翻倍。将迷路的基本几率从10%降低到1%。在世界地图上，穿越盐丘的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_dunes.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 丛林" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_JungleSurvival" Snippet="navigating the jungles" Description="在世界地图上穿越丛林时，使遭遇有趣事件的机会翻倍。将迷路的基础概率从12%降低到1%。在世界地图上，穿越丛林的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 河流与湖泊" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_RiversLakesSurvival" Snippet="navigating the rivers and lakes" Description="在世界地图上穿越河流和湖泊时，遭遇有趣事件的机会翻倍。同时，将迷路的概率从基础的12%降低到1%。在世界地图上，穿越河流和湖泊的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_rivers.png" Foreground="y" Detail="w"/>
+    <power Name="荒野学识: 废墟" Cost="50" Attribute="Intelligence" Minimum="21" Class="Survival_RuinsSurvival" Snippet="navigating ruins" Description="在世界地图上穿越铬金废墟时，遭遇有趣事件的几率翻倍。将迷路的基础几率从12%降低到1%。在世界地图上，你穿越废墟的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_ruins.png" Foreground="y" Detail="w"/>
   </skill>
 
-  <skill Name="非线性" Class="Nonlinearity" Hidden="true" Description="You extend." Cost="0" Attribute="Ego" Snippet="nonlinearity" Tile="Mutations/precognition.bmp" Foreground="K" Detail="m">
-    <power Name="Tomorrowful" Cost="200" Attribute="Ego" Minimum="30" Class="Nonlinearity_Tomorrowful" Snippet="experiencing tomorrow today" Description="Your precognitive visions last twice as long." Tile="Mutations/precognition.bmp" Foreground="K" Detail="m"/>
+  <skill Name="非线性" Class="Nonlinearity" Hidden="true" Description="你延展" Cost="0" Attribute="Ego" Snippet="nonlinearity" Tile="Mutations/precognition.bmp" Foreground="K" Detail="m">
+    <power Name="明日预见" Cost="200" Attribute="Ego" Minimum="30" Class="Nonlinearity_Tomorrowful" Snippet="experiencing tomorrow today" Description="你的预知幻象持续时间延长一倍。" Tile="Mutations/precognition.bmp" Foreground="K" Detail="m"/>
   </skill>
 
 </skills>

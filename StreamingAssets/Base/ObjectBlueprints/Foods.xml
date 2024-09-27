@@ -1,0 +1,1293 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<objects>
+
+  <!--    
+    1 Base objects
+    2 Raw foods
+    3 Cooking ingredients (preservables)   
+  -->
+
+  <!--
+
+    ******************
+       Base objects
+    ******************
+
+  -->
+  
+  <object Name="Food" Inherits="Item">
+    <part Name="Render" Tile="items/sw_loaf.bmp" DisplayName="[食物]" RenderString="%" RenderLayer="5"/>
+    <part Name="MeleeWeapon" BaseDamage="1d2-1"/>
+    <part Name="Physics" Category="食物" Weight="1" Organic="true"/>
+    <part Name="Springy" Factor="0.8"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <part Name="Food" Satiation="Meal"/>
+    <tag Name="Breakable" Value="*delete"/>
+	  <tag Name="EquipSound" Value="sfx_equip_material_generic_organic"/>
+    <stag Name="Food"/>
+  </object>
+  <object Name="Organ" Inherits="Food">
+    <part Name="Render" Tile="items/sw_fireant_gaster.bmp" DisplayName="[器官]" RenderString="%" RenderLayer="5"/>
+    <part Name="Physics" Category="食物" Weight="1"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <part Name="Food" Satiation="Snack"/>
+    <tag Name="Meat"/>		
+  </object>
+  <object Name="Snack" Inherits="Food">
+    <part Name="Render" Tile="items/sw_loaf.bmp" DisplayName="[小吃]" RenderString="%" RenderLayer="5"/>
+    <part Name="Physics" Category="食物" Weight="1"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <part Name="Food" Satiation="Snack"/>
+  </object>
+  <object Name="Preservable" Inherits="Snack">
+    <part Name="Render" DisplayName="[可保存]" RenderString="%" ColorString="&amp;R" DetailColor="g" RenderLayer="5" Tile="Items/sw_apple.bmp"/>
+    <part Name="Commerce" Value="1"/>
+    <part Name="Description" Short="无"/>
+    <part Name="Physics" Weight="0"/>
+    <part Name="Food" Satiation="None"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="AlwaysStack"/>
+    <tag Name="Preservable"/>
+    <tag Name="ExcludeFromGameScore"/>
+    <tag Name="HasCustomStackerDisplay"/>
+    <tag Name="StackerSingularPrefix" Value="{{y|[{{C|"/>
+    <tag Name="StackerPluralPrefix" Value="{{y|[{{C|"/>
+    <tag Name="StackerSingularPostfix" Value="}} serving]}}"/>
+    <tag Name="StackerPluralPostfix" Value="}} servings]}}"/>
+    <xtagGrammar iArticle="some" adjunctNoun="portion" massNoun="true"/>		
+  </object>
+  
+  <!-- End base objects -->
+
+  <!--
+
+    ****************
+       Raw foods
+    ****************
+
+  -->
+
+  <!-- Butcherables -->
+  <object Name="Raw Meat" Inherits="Food">
+    <part Name="Render" DisplayName="[生肉]" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" Tile="Items/sw_rawmeat1.bmp"/>    
+    <part Name="Food" IllOnEat="true" Message="The meat is tough but the meal is filling."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="2"/>
+    <xtagGrammar massNoun="true"/>
+    <tag Name="Meat"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+  </object>
+  <object Name="Raw Bear Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生熊肉}}"/>
+    <part Name="Description" Short="生熊肉浸透了它自己的鲜血。"/>
+    <part Name="Food" Message="It tastes awful, but it meets the bare necessities."/>
+    <part Name="Physics" Weight="5"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="PreservableItem" Result="Bear Jerky" Number="5"/>
+  </object>
+  <object Name="Raw Pig Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生猪肉}}" Tile="Items/sw_rawmeat2.bmp"/>
+		<part Name="Description" Short="生猪肉浸染在其自身的鲜血中。"/>
+    <part Name="Food" Message="It would taste better salted."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="3"/>
+    <part Name="PreservableItem" Result="Boar Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Boar Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|野猪生肉}}" Tile="Items/sw_rawmeat2.bmp"/>
+		<part Name="Description" Short="野猪的生肉浸透了它自己的鲜血。"/>
+    <part Name="Food" Message="It would taste better salted."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="3"/>
+    <part Name="PreservableItem" Result="Boar Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Barkbiter Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生树皮咬者肉}}"/>
+		<part Name="Description" Short="生树皮咬者的肉浸透了它自己的鲜血。"/>
+		<part Name="Food" Message="It would taste better salted."/>
+    <part Name="Physics" Weight="5"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="PreservableItem" Result="Barkbiter Jerky" Number="5"/>
+  </object>
+  <object Name="Raw Beetle Meat" Inherits="Raw Meat">    
+    <part Name="Render" DisplayName="{{y|生甲虫肉}}" ColorString="&amp;y" TileColor="&amp;y" DetailColor="G"/>
+		<part Name="Description" Short="虫子的肌肉堆叠在破碎的壳上。"/>
+    <part Name="Food" Message="The taste is bitter and salty."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="3"/>
+    <part Name="PreservableItem" Result="Beetle Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Goat Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生山羊肉}}" Tile="Items/sw_rawmeat2.bmp"/>
+		<part Name="Description" Short="生山羊肉浸染着它自己的鲜血。"/>
+		<part Name="Food" Message="The meat strips dissolve into salt and fat."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="PreservableItem" Result="Goat Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Scorpiock Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|原始蝎虫肉}}" Tile="Items/sw_rawmeat3.bmp"/>
+		<part Name="Description" Short="破碎的外骨骼上堆叠着虫类肌肉。"/>
+    <part Name="Food" Message="It's tangy."/>
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="PreservableItem" Result="Scorpiock Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Frog Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生蛙肉}}"/>
+    <part Name="Description" Short="蛙腿浸染了自身的鲜血。"/>    
+    <part Name="Physics" Weight="5"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="PreservableItem" Result="Frog Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Fish Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{Y|生鱼肉}}"/>
+    <part Name="Description" Short="脸颊和腮部的肉带有海水的咸味。"/>
+    <part Name="Food" Message="It's flaky and tasty."/>
+    <part Name="Physics" Weight="5"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="PreservableItem" Result="Fish Jerky" Number="3"/>
+  </object>
+  <object Name="Raw Worm Meat" Inherits="Raw Meat">
+    <part Name="Render" DisplayName="{{r|生蠕虫肉}}" Tile="Items/sw_rawmeat3.bmp"/>
+		<part Name="Description" Short="蠕虫的肉浸透了它自身流出的滑腻液体。"/>    
+    <part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="PreservableItem" Result="Worm Jerky" Number="3"/>
+  </object>
+  <object Name="Dawnglider Tail" Inherits="Organ">
+    <part Name="Render" DisplayName="{{G|黎明滑翔者尾部}}" ColorString="&amp;G" TileColor="&amp;W" DetailColor="G" Tile="Items/sw_dawnglider_tail.bmp"/>
+    <part Name="Physics" Weight="8"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Description" Short="由棱鳞组成的马赛克状结构盘旋如缠绕的绳索。其表面覆盖着烧焦的痕迹，散发着烟熏的味道。"/>
+    <part Name="Food" Message="It tastes of spiced char with a swelling heat."/>
+    <part Name="TemperatureOnEat"/>
+    <tag Name="Meat"/>
+    <tag Name="SeveredLimbKeepAppearance"/>
+    <part Name="PreservableItem" Result="Cured Dawnglider Tail" Number="10"/>
+  </object>
+  <object Name="Albino Ape Heart" Inherits="Corpse">
+    <part Name="Render" DisplayName="{{r|白化猿心脏}}" Tile="Items/sw_ape_heart.bmp" ColorString="&amp;r" DetailColor="Y"/>
+		<part Name="Description" Short="一个四腔的湿漉漉的组织块在其自身的浸湿重量下塌陷。"/>
+    <part Name="Physics" Weight="0"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Food" Satiation="Meal" Message="It's chewy and tastes of warm rust."/>
+		<removebuilder Name="RandomTile"/>
+    <tag Name="Meat"/>
+    <tag Name="Tier" Value="3"/>
+		<stag Name="Food"/>
+  </object>
+  <object Name="Ogre Ape Heart" Inherits="Corpse">
+    <part Name="Render" DisplayName="{{r|巨猿心脏}}" Tile="Items/sw_ape_heart.bmp" ColorString="&amp;r" DetailColor="W"/>
+		<part Name="Description" Short="一个四腔的湿漉漉的组织块在其自身的浸湿重量下塌陷。"/>
+    <part Name="Physics" Weight="0"/>
+    <part Name="Commerce" Value="50"/>
+		<part Name="Food" Satiation="Meal" Message="It's chewy and tastes of warm rust."/>
+		<removebuilder Name="RandomTile"/>
+    <tag Name="Tier" Value="6"/>
+    <tag Name="Meat"/>
+		<stag Name="Food"/>
+  </object>
+  <object Name="Black Puma Haunch" Inherits="Corpse">
+    <part Name="Render" DisplayName="{{K|黑美洲豹}} 大腿" Tile="Items/sw_haunch.bmp" ColorString="&amp;r" DetailColor="K"/>
+		<part Name="Description" Short="几缕黑如蛋白石的毛发粘在湿润的腿肉上。"/>
+		<part Name="Food" Message="Smokey and tasty."/>
+    <part Name="Physics" Weight="20"/>
+    <part Name="Commerce" Value="250"/>
+		<removebuilder Name="RandomTile"/>
+    <tag Name="Tier" Value="3"/>
+		<stag Name="Food"/>
+  </object>
+  <object Name="Tongue Twist" Inherits="Organ">
+    <part Name="Render" DisplayName="{{r|舌缠}}" ColorString="&amp;r" TileColor="&amp;m" DetailColor="r" Tile="Items/sw_tongue_twist.bmp"/>
+		<part Name="Description" Short="三根舌头交织成一条纤维状的扭曲体。它们表面覆盖着一层唾液，闪闪发光。"/>
+		<part Name="Physics" Weight="2"/>
+    <part Name="Commerce" Value="70"/>
+    <part Name="Food" Message="The taste is familiar on your tongue."/>
+    <part Name="TongueOnEat" Tongues="3"/>    
+    <part Name="PreservableItem" Result="Fermented Tongue" Number="3"/>
+    <tag Name="Meat"/>
+    <tag Name="ChooseToPreserve"/>
+		<stag Name="Food"/>
+  </object>
+  <object Name="Eyeless Crab Legs" Inherits="Snack">
+    <part Name="Render" DisplayName="无目蟹腿" Tile="Items/sw_crab_legs.bmp" ColorString="&amp;Y" DetailColor="w"/>
+    <part Name="Description" Short="关节处布满棘刺的腿排列在骨胶质池中。"/>
+    <part Name="Commerce" Value="1"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="PreservableItem" Result="Crab Jerky" Number="1"/>
+		<tag Name="Meat"/>
+		<tag Name="Gender" Value="plural"/>
+  </object>
+	<object Name="Eyeless King Crab Legs" Inherits="Snack">
+		<part Name="Render" DisplayName="无眼王蟹腿" Tile="Items/sw_crab_legs.bmp" ColorString="&amp;Y" DetailColor="y"/>
+		<part Name="Description" Short="巨大的关节和带刺的腿排列在骨髓胶池中。"/>
+		<part Name="Commerce" Value="3"/>
+		<part Name="Physics" Weight="3"/>
+		<part Name="PreservableItem" Result="Crab Jerky" Number="3"/>
+		<tag Name="Gender" Value="plural"/>
+	</object>
+  <object Name="Fire Ant Gaster" Inherits="Organ">
+    <part Name="Render" DisplayName="{{R|火蚁加斯特}}" Tile="items/sw_fireant_gaster.bmp" ColorString="&amp;r" DetailColor="y"/>
+		<part Name="Description" Short="一层烟雾从钙化的球体上升起。"/>
+		<part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="50"/>    
+    <part Name="Food" IllOnEat="true" Message="It's a tough chew with red-hot spice."/>
+    <part Name="TemperatureOnEat"/>
+    <part Name="PreservableItem" Result="Fire Ant Gaster Paste" Number="10"/>
+		<stag Name="Food"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="Spark Tick Scutum" Inherits="Organ">
+    <part Name="Render" DisplayName="{{W|电火花盾虫}}" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_sparktick_scutum.bmp"/>
+		<part Name="Description" Short="一层薄如纸的骨质碗，上面刻有明亮而分叉的闪电痕迹。"/>
+		<part Name="Physics" Weight="3"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Food" Message="It crackles on your taste buds."/>    
+    <part Name="PreservableItem" Result="Spark Tick Plasma" Number="8"/>
+		<stag Name="Energy"/>
+  </object>
+  <object Name="Voider Gland" Inherits="Organ">
+    <part Name="Render" DisplayName="{{B|虚空腺}}" ColorString="&amp;B" DetailColor="r" Tile="Items/sw_voider_gland.bmp"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="TeleportOnEat" Controlled="true"/>
+    <part Name="Food" Message="It melts in your mouth."/>
+    <part Name="Description" Short="空间被划分为三个位移腔室，以在转移器官周围产生负压。"/>
+    <part Name="PreservableItem" Result="Voider Gland Paste" Number="10"/>
+    <tag Name="ChooseToPreserve"/>
+		<stag Name="Travel"/>
+  </object>
+  <object Name="Psychal Gland" Inherits="Organ">
+    <part Name="Render" DisplayName="{{m|精神腺}}" ColorString="&amp;m" DetailColor="r" Tile="Items/sw_psychal_gland.bmp"/>
+		<part Name="Description" Short="神经迷宫穿透了它们透明的组织包裹。"/>
+		<part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="90"/>
+    <part Name="Food" Message="The gland ruptures with a pop and fills your mouth with a cold fluid. Someone else's memories seep into your own"/>    
+    <part Name="PreservableItem" Result="Psychal Gland Paste" Number="5"/>
+    <part Name="SecretsOnEat" Number="2-3"/>
+    <tag Name="ChooseToPreserve"/>
+  </object>
+  <object Name="Compacted Bone Matter" Inherits="Snack">
+    <part Name="Render" DisplayName="{{Y|压缩骨质}}" ColorString="&amp;Y" TileColor="&amp;y" DetailColor="Y" RenderString="%" Tile="Items/sw_compacted_bone_matter.bmp"/>
+    <part Name="Description" Short="无尽岁月的骨头被粉碎并压缩在骨虫的疤痕肠道内。"/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="There's a satisfying crunch."/>
+    <part Name="PreservableItem" Result="Compacted Bone Meal" Number="3"/>
+    <xtagGrammar iArticle="some" adjunctNoun="chunk" massNoun="true"/>
+  </object>
+  
+  <object Name="BaseBreatherGland" Inherits="Organ">
+    <part Name="Render" DisplayName="[呼吸腺]" ColorString="&amp;B" DetailColor="y" Tile="Items/sw_breather_gland.bmp"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Food" Message="The gland ruptures with a pop and fills your mouth with its foul fluid."/>    
+    <part Name="PreservableItem" Result="BaseBreatherGlandPaste" Number="5"/>
+    <part Name="BreatheOnEat" Level="5"/>
+    <tag Name="ChooseToPreserve"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+  </object>
+	<object Name="BaseElderBreatherGland" Inherits="BaseBreatherGland">
+		<part Name="PreservableItem" Result="BaseElderBreatherGlandPaste" Number="5"/>
+		<part Name="BreatheOnEat" Level="10"/>
+		<part Name="Commerce" Value="80"/>
+		<tag Name="BaseObject" Value="*noinherit"/>
+	</object>
+  <object Name="FireBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{r|火焰胡子腺体}}" ColorString="&amp;r"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并灼烧周围的空气。"/>
+		<part Name="PreservableItem" Result="FireBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="FireBreather"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="ElderFireBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{R|长老火焰胡腺体}}" ColorString="&amp;R"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并灼烧周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderFireBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="FireBreather"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="IceBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{c|冰须腺}}" ColorString="&amp;c"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并冻结了周围的空气。"/>
+    <part Name="PreservableItem" Result="IceBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="IceBreather"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="ElderIceBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{c|长者雪须腺}}" ColorString="&amp;C"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并冻结了周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderIceBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="IceBreather"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="CorrosiveBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{g|塔特胡须腺}}" ColorString="&amp;g"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并刺激着周围的空气。"/>
+    <part Name="PreservableItem" Result="CorrosiveBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="CorrosiveBreather"/>
+		<stag Name="Corrosion"/>
+  </object>
+  <object Name="ElderCorrosiveBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{G|长者酸胡子腺体}}" ColorString="&amp;G"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并刺激着周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderCorrosiveBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="CorrosiveBreather"/>
+		<stag Name="Corrosion"/>
+  </object>
+  <object Name="NormalityBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{y|无须腺}}" ColorString="&amp;y"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并使周围空气极化。"/>
+    <part Name="PreservableItem" Result="NormalityBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="NormalityBreather"/>
+		<stag Name="Normality"/>
+  </object>
+  <object Name="ElderNormalityBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{Y|长老无须腺}}" ColorString="&amp;K"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并使周围空气极化。"/>
+    <part Name="PreservableItem" Result="ElderNormalityBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="NormalityBreather"/>
+		<stag Name="Normality"/>
+  </object>
+  <object Name="PoisonBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{g|加尔比德腺体}}" ColorString="&amp;g"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并刺激着周围的空气。"/>
+    <part Name="PreservableItem" Result="PoisonBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="PoisonBreather"/>
+		<stag Name="Poison"/>
+  </object>
+  <object Name="ElderPoisonBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{G|长老胆须腺}}" ColorString="&amp;G"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，并刺激着周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderPoisonBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="PoisonBreather"/>
+		<stag Name="Poison"/>
+  </object>
+  <object Name="SleepBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{w|梦幻胡须腺}}" ColorString="&amp;w"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，使周围空气变得湿润。"/>
+    <part Name="PreservableItem" Result="SleepBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="SleepBreather"/>
+		<stag Name="Sleep"/>
+  </object>
+  <object Name="ElderSleepBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{W|长老梦境胡腺}}" ColorString="&amp;W"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，使周围空气变得湿润。"/>
+    <part Name="PreservableItem" Result="ElderSleepBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="SleepBreather"/>
+		<stag Name="Sleep"/>
+  </object>
+  <object Name="StunBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{c|静须腺}}" ColorString="&amp;c"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，凝滞了周围的空气。"/>
+    <part Name="PreservableItem" Result="StunBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="StunBreather"/>
+  </object>
+  <object Name="ElderStunBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{C|长老静须腺}}" ColorString="&amp;C"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，凝滞了周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderStunBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="StunBreather"/>
+  </object>
+  <object Name="ConfusionBreatherGland" Inherits="BaseBreatherGland">
+    <part Name="Render" DisplayName="{{b|迷宫胡须腺}}" ColorString="&amp;b"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，模糊了周围的空气。"/>
+    <part Name="PreservableItem" Result="ConfusionBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="ConfusionBreather"/>
+    <stag Name="Confusion"/>
+  </object>
+  <object Name="ElderConfusionBreatherGland" Inherits="BaseElderBreatherGland">
+    <part Name="Render" DisplayName="{{B|长老迷胡须腺}}" ColorString="&amp;B"/>
+		<part Name="Description" Short="芳香的露水浸湿了萎缩的组织瓣，模糊了周围的空气。"/>
+    <part Name="PreservableItem" Result="ElderConfusionBreatherGlandPaste"/>
+    <part Name="BreatheOnEat" Class="ConfusionBreather"/>
+    <stag Name="Confusion"/>
+  </object>    
+  
+  <!-- Harvestables -->
+  <object Name="Yondercane" Inherits="Snack">
+    <part Name="Render" DisplayName="{{W|远行竹}}" ColorString="&amp;W" DetailColor="B" Tile="Items/sw_yondercane.bmp"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="100"/>
+    <part Name="Description" Short="缀有流苏的远行草茎秆弯曲，指向一个模糊的远方。"/>
+    <part Name="TeleportOnEat" Controlled="true"/>
+    <part Name="Food" Satiation="None" Message="It tastes like far away."/>
+    <part Name="PreservableItem" Result="Fermented Yondercane" Number="15"/>
+    <tag Name="ChooseToPreserve"/>
+		<stag Name="Travel"/>
+  </object>
+  <object Name="Vinewafer" Inherits="Snack">
+    <part Name="Render" DisplayName="藤片" RenderString="%" ColorString="&amp;g" TileColor="&amp;g" DetailColor="w" RenderLayer="5" Tile="Items/sw_vinewafer.bmp"/>
+		<part Name="Description" Short="一块小小的软木因湿润而膨胀。它在一个炎热的季节里，由一片展开的叶状体耐心地浇水，这片叶状体从百里之外的风中吸取了一滴雨水。"/>
+    <part Name="Commerce" Value="0.01"/>
+    <part Name="Food" Satiation="None" Thirst="500"/>    
+    <part Name="Physics" Weight="0"/>
+    <part Name="PreservableItem" Result="Vinewafer Sheaf" Number="3"/>
+  </object>
+  <object Name="Dreadroot Tuber" Inherits="Snack">    
+    <part Name="Render" DisplayName="{{K|恐惧根茎球}}" ColorString="&amp;w" DetailColor="K" Tile="Items/sw_tuber.bmp"/>
+    <part Name="Description" Short="大地的伤痕孕育了肉桂色的球茎，土壤和铬的压力将其扭曲成承载千年毁灭的形状。"/>
+		<part Name="Food"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Physics" Category="食物" Weight="1"/>
+    <part Name="FearOnEat" Strength="3d8" Duration="4d6"/>
+    <tag Name="Lah"/>
+  </object>
+  <object Name="Starapple" Inherits="Snack">
+    <part Name="Render" DisplayName="星果" RenderString="%" ColorString="&amp;R" DetailColor="g" RenderLayer="5" Tile="Items/sw_apple.bmp"/>
+    <part Name="Commerce" Value="0.1"/>
+    <part Name="Food" Satiation="Snack" Thirst="1500"/>
+    <part Name="Description" Short="果汁从包裹着五点核心的明亮表皮上滴落。对于饥渴的眼睛而言，它在火山盐中闪耀如红宝石。"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="PreservableItem" Result="Starapple Preserves" Number="5"/>
+  </object>
+  <object Name="Spine Fruit" Inherits="Snack">
+    <part Name="Render" DisplayName="脊果" RenderString="%" ColorString="&amp;M" TileColor="&amp;g" DetailColor="M" RenderLayer="5" Tile="Items/sw_spinefruit.bmp"/>
+    <part Name="Commerce" Value="0.1"/>
+    <part Name="Food" Satiation="Snack" Thirst="1500"/>
+    <part Name="Description" Short="弗拉克图斯的一根肋骨从其日晒膨胀的绿叶中射出一颗湿润而尖锐的梨形果实。"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="PreservableItem" Result="Spine Fruit Jam" Number="5"/>
+  </object>
+  <object Name="Plump Mushroom" Inherits="Mushroom">
+    <part Name="Render" DisplayName="圆润蘑菇" RenderString="%" ColorString="&amp;r" TileColor="&amp;r" DetailColor="y" RenderLayer="5" Tile="Items/sw_plump_mushroom.bmp"/>
+		<part Name="Description" Short="菌盖下展开的菌褶之下，菌柄轮廓收束至一个膨胀的腰身。这种真菌在其狭小的腐殖土上茁壮成长。"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="Food" Satiation="Snack"/>    
+    <part Name="Physics" Weight="0"/>
+    <part Name="PreservableItem" Result="Pickled Mushrooms" Number="10"/>
+    <tag Name="LiveFungus"/>
+  </object>
+  <object Name="Smoldered Mushroom" Inherits="Mushroom">
+    <part Name="Render" DisplayName="焦黑蘑菇" Tile="items/sw_mushroom.bmp" DetailColor="K"/>
+    <part Name="Description" Short="松露表面覆盖着一种葡萄酒色的焦炭残留物，这种物质由地表未知的气体形成。在地底深处和苍白之海的另一端，它被熏烤得异常鲜美。"/>
+    <part Name="Food" Satiation="Snack"/>
+    <part Name="PreservableItem" Result="Pickled Mushrooms" Number="5"/>
+    <part Name="Commerce" Value="4"/>
+  </object>
+  <object Name="Hoarshroom" Inherits="Mushroom">
+    <part Name="Render" DisplayName="{{C|发光}} 霜蘑菇" ColorString="&amp;C" DetailColor="Y" Tile="Items/sw_plump_mushroom.bmp"/>
+		<part Name="Description" Short="霜花点缀在灯罩般的菌盖上，散发着柔和的生物荧光。"/>
+		<part Name="Physics" Weight="0" Category="补药"/>		
+    <part Name="Commerce" Value="70"/>
+    <part Name="Hoarshroom_Tonic_Applicator"/>
+    <part Name="AITonicUse"/>
+    <tag Name="ChooseToPreserve"/>
+    <part Name="PreservableItem" Result="Freeze-Dried Hoarshrooms" Number="8"/>
+    <tag Name="LiveFungus"/>
+    <tag Name="SpecialCookingIngredient"/>    
+    <part Name="RulesDescription" Text="Duration: 180-220 rounds You cast light in radius 2. For the first 5 rounds after imbibing, you gain 0.6 hit points per level (minimum 3) each round. +20 cold resistance You cannot be poisoned."/>
+    <part Name="Tonic" Eat="true"/>
+		<stag Name="Cold"/>
+		<stag Name="LightSource"/>
+  </object>
+  <object Name="Godshroom Cap" Inherits="Mushroom">
+    <part Name="Food" Satiation="None"/>
+    <part Name="Render" DisplayName="{{o|食者之肉}}" Tile="Items/sw_eaters_flesh.bmp" ColorString="&amp;o" DetailColor="O"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Physics" Category="食物" Weight="1"/>
+    <part Name="GodshroomCap"/>
+    <tag Name="NoAutoget" Value="1"/>
+    <part Name="Description" Short="视觉感官在肿胀的珊瑚月球上的海绵状坑洞上模糊不清。这是神明的肉吗？"/>
+    <tag Name="NoClear"/>
+  </object>
+  <object Name="Lah Petals" Inherits="Snack">
+    <part Name="Render" DisplayName="{{lah|拉花瓣}}" ColorString="&amp;r" DetailColor="W" RenderString="'" Tile="Items/sw_lah_petals.bmp"/>
+    <part Name="Description" Short="浓烈的黄褐色花瓣看起来像一种芳香草药，但其浓郁的味道更接近肉汤而非茶饮。"/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="Savory, but not particularly satisfying."/>
+    <part Name="PreservableItem" Result="Dried Lah Petals" Number="3"/>
+    <tag Name="Lah"/>
+    <tag Name="Gender" Value="plural"/>
+		<xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Clump of Grave Moss" Inherits="Snack">
+    <part Name="Render" DisplayName="一团{{C|墓苔}}" ColorString="&amp;C" DetailColor="C" RenderString="%" Tile="Items/sw_grave_moss_clump.bmp"/>
+    <part Name="Description" Short="漂白的青色墓苔已长成罕见且柔韧的一团。"/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="It crunches into flakes in your mouth."/>
+    <part Name="PreservableItem" Result="Crushed Grave Moss" Number="3"/>
+  </object>
+  <object Name="Banana" Inherits="Snack">
+    <part Name="Render" DisplayName="{{W|香蕉}}" RenderString=")" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_banana.bmp"/>
+    <part Name="Description" Short="它的果肉色泽鲜亮，成熟饱满，果皮上点缀着细小的闪光。"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="Food" Satiation="Snack" Thirst="250"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="PreservableItem" Result="Sun-Dried Banana" Number="1"/>
+  </object>
+  <object Name="Yuckwheat Stem" Inherits="Snack">
+    <part Name="Render" DisplayName="{{w|恶麦茎}}" Tile="Items/sw_wheat_stem.bmp" ColorString="&amp;w" DetailColor="W" RenderString="'" RenderLayer="5"/>
+    <part Name="Commerce" Value="10"/>
+    <part Name="Food" Satiation="None" Thirst="0" Healing="0" Message="It tastes disgustingly bitter."/>
+    <part Name="Description" Short="孩子们会在恶麦茎被清脆地剪断时哭泣，这种景象已经持续了数百年。他们号啕大哭，挣扎不已，从母亲的怀抱中扭动，对植物的药效充耳不闻。剪下的茎被压碎后，酸涩的味道在他们的舌头上蔓延，脸庞因痛苦而扭曲。但母亲们说，他们晚上睡得更好。"/>
+    <part Name="Yuckwheat"/>		
+    <part Name="PreservableItem" Result="Fermented Yuckwheat Stem" Number="3"/>
+    <tag Name="ChooseToPreserve"/>
+		<tag Name="Medicinal"/>
+  </object>
+  <object Name="Lagroot Tuber" Inherits="Snack">
+    <part Name="Food"/>
+    <part Name="Render" DisplayName="拉格根块茎" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_tuber.bmp"/>
+    <part Name="Description" Short="从地里挖出并削成薄片的淀粉状树突。"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Physics" Category="食物" Weight="1"/>
+    <part Name="RefreshAllCooldownsOnEat" ChancePerAbility="25"/>
+    <part Name="PreservableItem" Result="Mashed Lag" Number="8"/>
+    <tag Name="ChooseToPreserve"/>
+  </object>
+  <object Name="Vanta Petals" Inherits="Snack">
+    <part Name="Render" DisplayName="{{K|万塔花瓣}}" ColorString="&amp;K" DetailColor="y" RenderString="'" Tile="Items/sw_lah_petals.bmp"/>
+    <part Name="Description" Short="光芒从月亮的影响边界滴落，渗入虚空。"/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="They're freezing with the absence of heat and light."/>
+    <part Name="PreservableItem" Result="Dried Vanta Petals" Number="3"/>
+    <tag Name="Gender" Value="plural"/>
+		<xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Urberry" Inherits="Food">
+    <part Name="Render" DisplayName="{{m|乌莓}}" ColorString="&amp;m" DetailColor="g" Tile="Items/sw_urberry.bmp" RenderString="'" RenderLayer="5"/>
+    <part Name="Physics" Category="药物"/>
+    <part Name="Food" Thirst="5000" Healing="100" Message="Prototypically delicious."/>
+    <part Name="Description" Short="土壤密度的果汁将莓果皮压制成一个完美且轻盈弯曲的球体。内部，一颗种子编码了百万倍的形状指令集。"/>
+    <part Name="Commerce" Value="65"/>
+    <tag Name="LivePlant"/>
+		<stag Name="Medical"/>
+		<tag Name="Tier" Value="6"/>
+  </object>
+  <object Name="Arsplice Seed" Inherits="Snack">
+    <part Name="Render" DisplayName="{{C-C-c-m-m-c-C-C 序列|arsplice}} 种子" Tile="Items/sw_arsplice_seed.bmp" ColorString="&amp;m" DetailColor="C"/>
+    <part Name="Description" Short="数千年来的化学城市滋养了草珊瑚真菌混合体在其内部分叉阴影，这些养分被重新吸收进生态块的种皮中。"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Springy" Factor="0.5"/>
+    <part Name="Commerce" Value="350"/>
+    <part Name="HealOnEat"/>
+    <part Name="Food" IllOnEat="false" Satiation="None" Message="Beams of snug warmth sprout like fractals inside your body."/>
+    <removebuilder Name="RandomTile"/>
+    <intproperty Name="Bleeds" Value="0"/>
+    <tag Name="Tier" Value="7"/>
+    <tag Name="TechTier" Value="7"/>
+  </object>
+  <object Name="Bop Cheek" Inherits="Snack">
+    <part Name="Render" DisplayName="{{B|波普面颊}}" ColorString="&amp;B" RenderString="'" Tile="Items/sw_bop_cheek.bmp"/>
+    <part Name="Description" Short="这是一块精选的层压海绵。触感摇曳生姿。"/>
+    <part Name="Commerce" Value="50"/>
+    <part Name="Food" Satiation="Snack" Message="It's chewier than anything you've eaten before."/>
+    <part Name="JumpOnEat" Hops="2" BonusRange="2"/>
+    <part Name="PreservableItem" Result="Sliced Bop Cheek" Number="4"/>
+    <xtagGrammar massNoun="true"/>
+    <tag Name="ChooseToPreserve"/>
+    <tag Name="Meat"/>
+		<stag Name="Movement"/>
+  </object>
+  <object Name="Mirror Shard" Inherits="Food">
+    <part Name="Render" DisplayName="{{Y|镜片碎片}}" ColorString="&amp;Y" TileColor="&amp;K" DetailColor="Y" Tile="Items/sw_shard.bmp"/>
+    <part Name="Description" Short="一块玻璃碎片在锋利的边缘上闪耀，其裂纹特征显示了地质压力淬火的痕迹。"/>
+    <part Name="Commerce" Value="80"/>
+    <part Name="Food" Satiation="Snack" Message="It's sharp and shimmering."/>
+    <part Name="Physics" Category="食物" Weight="1" Organic="false"/>
+    <part Name="PreservableItem" Result="Mirror Dust" Number="5"/>
+    <part Name="EffectOnEat" Effect="CookingDomainReflect_Reflect100_ProceduralCookingTriggeredAction_Effect"/>
+    <tag Name="ChooseToPreserve"/>
+  </object>
+	<object Name="Bundle of Noisegrass" Inherits="Snack">
+		<part Name="Render" DisplayName="噪音草束" ColorString="&amp;m" DetailColor="y" RenderString="%" Tile="Items/sw_grass_bundle.bmp"/>
+		<part Name="Description" Short="星光草在意义达到顶峰后被收割并捆扎成束。"/>
+		<part Name="Commerce" Value="50"/>
+		<part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="It tastes of fuzz."/>
+		<part Name="PreservableItem" Result="Wild Rice" Number="3"/>
+	</object>    
+  <object Name="Mushroom" Inherits="Food">
+    <part Name="Render" DisplayName="[蘑菇]" ColorString="&amp;y"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="70"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="Mushroom"/>
+    <tag Name="Fungus"/>
+		<tag Name="DynamicObjectsTable:Mushrooms"/>
+  </object>  
+  <object Name="Qudzu Stem" Inherits="Snack">
+    <part Name="Render" DisplayName="{{r|库德祖茎}}" Tile="Items/sw_stem.bmp" ColorString="&amp;r" DetailColor="w"/>
+    <part Name="Description" Short="一根红芹菜的茎上覆盖着数百年来的磨损尘土。"/>
+    <part Name="Commerce" Value="10"/>
+  </object>
+  <object Name="Lover's Blossom" Inherits="Snack">
+    <part Name="Food"/>
+    <part Name="Render" Tile="Items/lovers_blossom.bmp" DisplayName="{{R|恋人的花蕾}}" ColorString="&amp;R" TileColor="&amp;r" DetailColor="R"/>
+    <part Name="Description" Short="被抛弃的情人之心在余烬般的花瓣下燃烧，在金色的花药中被痛苦地捏紧，躺在泪流满目的翠绿萼片床上。"/>
+    <part Name="Commerce" Value="20"/>
+    <part Name="Physics" Category="食物" Weight="0"/>
+  </object>  
+  <object Name="Humble Pie" Inherits="Snack">
+    <part Name="Render" DisplayName="谦卑派" Tile="items/sw_pie.bmp" ColorString="&amp;w" DetailColor="W"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="Commerce" Value="25"/>
+    <part Name="StatOnEat" Stats="Ego:-1"/>
+    <part Name="AchievementOnConsume" AchievementID="ACH_ATE_HUMBLE_PIE"/>
+    <part Name="Description" Short="派底下的碎肉被调味，其中混入了一点点yyffur粉，这种粉末是从同名蘑菇的茎上刮下并精细研磨而成的。整个蘑菇对哺乳动物的精神来说太过强烈（食用一个会在瞬间摧毁自我意识），但一点点粉末撒在美味的派上可以让人意识到自己在宇宙中的位置。"/>
+    <part Name="RulesDescription" Text="-1 Ego permanently"/>
+    <xtagGrammar massNoun="true"/>
+    <part Name="Food" Message="It tastes bitter. Your {{Y|Ego}} is reduced by {{C|1}}"/>
+  </object>  
+  <object Name="Ripe Cucumber" Inherits="Snack">
+    <part Name="Render" DisplayName="{{G|成熟的黄瓜}}" Tile="Items/sw_cucumber.bmp" ColorString="&amp;G" DetailColor="g"/>
+    <part Name="Description" Short="一条长而多疣的薄荷绿色茎，在肥沃的藤蔓上结出了果实并被摘得清脆。"/>
+    <part Name="Food" Thirst="1000" Message="The bite is crisp, and then it bursts into water."/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Physics" Weight="1"/>
+    <part Name="PreservableItem" Result="Pickles" Number="5"/>
+    <tag Name="Plant"/>
+  </object> 
+  <object Name="Taco Suprema" Inherits="Food">
+    <part Name="Render" DisplayName="{{m|塔科至尊}}" Tile="Items/sw_taco.bmp" RenderString="%" RenderLayer="5" DetailColor="m"/>
+    <part Name="Food" Thirst="15000" Message="A divine crisp dissolves into salted manna."/>
+    <part Name="Physics" Weight="0"/>
+    <part Name="Commerce" Value="500"/>
+    <part Name="Description" Short="薄而古老的纸张，上面满是油脂的痕迹，包裹着脆皮炸饼的马鞍部分。七层凝固的蜜汁填充在脆皮缝隙中。"/>
+  </object>  
+  <object Name="Crystal of Eve" Inherits="Snack">
+    <part Name="Render" DisplayName="{{crystalline|伊芙之晶}}" Tile="Items/sw_eve_crystal.bmp" ColorString="&amp;b" DetailColor="M"/>
+		<part Name="Description" Short="心灵能量在接近零点时如同柔软的绒毛般微弱，但在四面体习性中达到顶峰。这颗水晶是在系统发展出钟声意识之前从根束上裂开的。它振动着，充满了初生的思想和情感。"/>
+		<part Name="Physics" Weight="1"/>
+		<part Name="Springy" Factor="0.1"/>
+    <part Name="Commerce" Value="475"/>
+    <part Name="RefreshCooldownsOnEat"/>
+    <part Name="Food" IllOnEat="false" Satiation="None" Message="The crystal shatters and concentrated thoughtstuff swells in tide and soaks your mind."/>    
+    <tag Name="Tier" Value="8"/>
+    <tag Name="TechTier" Value="8"/>
+  </object>  
+  <object Name="Hunk of Cheese" Inherits="Snack">
+    <part Name="Render" Tile="items/sw_cheese.bmp" ColorString="&amp;W" DetailColor="w" DisplayName="一块{{W|奶酪}}"/>
+    <part Name="Description" Short="纱布粘附在这块由猪塑造的立方体油腻的表面上。两年来，微生物在其表面繁衍生息，使其成熟至极品风味。"/>
+  </object>  
+  <object Name="Rubber Tree Seed" Inherits="Food">
+    <part Name="Render" DisplayName="{{r|橡胶树种子}}" Tile="Items/sw_seeds.bmp" ColorString="&amp;W" DetailColor="g" RenderString="'" RenderLayer="5"/>
+		<part Name="Description" Short="平滑且带有阳光条纹的外壳保护着即将爆发的树苗。"/>
+    <part Name="Commerce" Value="10"/>    
+    <part Name="Food" Satiation="None"/>
+  </object>
+    
+  <!-- End raw foods -->
+
+  <!--
+
+    ****************************************
+       Cooking ingredients (preservables)
+    ****************************************
+
+  -->
+  
+  <object Name="Starapple Preserves" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{R|星果果酱}}" RenderString="%" ColorString="&amp;R" TileColor="&amp;y" DetailColor="R" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="Description" Short="甜美的星果被捣碎，放在明火上加热，冷却后装入罐中以备后用。果肉中的纤维状果浆悬浮在果酱之中。"/>
+    <part Name="PreparedCookingIngredient" type="regenLowtier" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+  </object>
+  <object Name="Spine Fruit Jam" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{M|棘果酱}}" RenderString="%" ColorString="&amp;M" TileColor="&amp;y" DetailColor="M" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="分形棘果被捣碎，放在明火上加热，冷却后装瓶备用。果酱中悬浮着棘状果肉。"/>
+    <part Name="PreparedCookingIngredient" type="reflect" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+  </object>
+  <object Name="Vinewafer Sheaf" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{g|藤片束}}" RenderString="%" ColorString="&amp;g" DetailColor="w" RenderLayer="5" Tile="Items/sw_vinewafer_sheaf.bmp"/>
+    <part Name="Commerce" Value="0.01"/>
+    <part Name="Description" Short="从吸水藤植物上收割的成捆薄片，用细绳绑在一起。"/>
+    <part Name="PreparedCookingIngredient" type="thirst" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+  </object>
+  <object Name="Pickled Mushrooms" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{K|腌制蘑菇}}" RenderString="%" ColorString="&amp;y" DetailColor="w" RenderLayer="5" Tile="Items/sw_pickled_mushrooms.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="从泥土中拔出后，它们在盐水中开始了新的生活。"/>
+    <part Name="PreparedCookingIngredient" type="fungus" charges="1"/>
+    <tag Name="Mushroom"/>
+    <tag Name="Fungus"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Freeze-Dried Hoarshrooms" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{C|冻干霜菇}}" RenderString="%" ColorString="&amp;y" DetailColor="C" RenderLayer="5" Tile="Items/sw_pickled_mushrooms.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="皱缩的蘑菇在自身的霜冻中被冷却并脱水。"/>
+    <tag Name="Mushroom"/>
+    <tag Name="Fungus"/>
+    <part Name="PreparedCookingIngredient" type="cold,fungus" charges="1"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar massNoun="true"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="Pickles" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{g|泡菜}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="g" RenderLayer="5" Tile="Items/sw_pickles.bmp"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="Description" Short="长满疣的果实如同咸海中的岛屿，被封存于世界玻璃罐中。它们如今以盐的速度腐烂。"/>
+    <part Name="PreparedCookingIngredient" type="thirst" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Fire Ant Gaster Paste" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{R|火蚁囊浆}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="R" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="热力在研钵中研磨，于盐水中炖煮，最终凝固。"/>
+    <part Name="PreparedCookingIngredient" type="heat" charges="1"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="Meat"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="Cured Dawnglider Tail" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{W|治愈的黎明滑翔尾}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;W" DetailColor="y" Tile="Items/sw_dawnglider_tail.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="盐已经将盘绕肉块中的彩虹色褪去，但仍残留着一丝烟熏的味道。"/>
+    <part Name="PreparedCookingIngredient" type="heat" charges="1"/>
+    <tag Name="Meat"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="Salthopper Chip" Inherits="Preservable">
+    <part Name="Render" DisplayName="盐跳虫脆片" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Food"/>
+    <tag Name="Meat"/>
+    <part Name="Description" Short="从捕获的盐跳虫的外骨骼侧翼削下的几丁质被干燥并敲打成脆片。"/>
+    <part Name="PreparedCookingIngredient" type="tastyMinor" charges="1"/>
+    <part Name="Commerce" Value="0.5"/>
+    <xtagGrammar iArticle="a" adjunctNoun=""/>
+  </object>
+  <object Name="Phase Silk" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{Y|相位丝}}" RenderString="%" ColorString="&amp;Y" DetailColor="y" RenderLayer="5" Tile="Items/sw_phasesilk.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="从相位蜘蛛的二维炉网切割下来的线丝。"/>
+    <part Name="PreparedCookingIngredient" type="phase" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+    <tag Name="Plant"/>
+  </object>
+  <object Name="Fermented Yondercane" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{B|发酵远藤}}" RenderString="%" ColorString="&amp;w" DetailColor="b" RenderLayer="5" Tile="Items/sw_yondercane.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="几周大的盐晶覆盖在这根湿润茎秆的凹槽中。"/>
+    <part Name="PreparedCookingIngredient" type="teleport" charges="1"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:BananaGrove_Ingredients"/>
+    <tag Name="Plant"/>
+		<stag Name="Travel"/>
+  </object>
+  <object Name="Fermented Yuckwheat Stem" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{w|发酵恶麦茎}}" RenderString="%" ColorString="&amp;w" TileColor="&amp;y" DetailColor="w" RenderLayer="5" Tile="Creatures/sw_stem.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="几周大的盐晶簇拥在茎的弯曲分叉处。"/>
+    <part Name="PreparedCookingIngredient" type="medicinal" charges="1"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+    <tag Name="Plant"/>
+  </object>
+  <object Name="Voider Gland Paste" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{B|虚空腺膏}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="B" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="空气穿梭的弧形生物被研磨成粉，再在盐水中煮沸，最后凝固而成。"/>
+    <part Name="PreparedCookingIngredient" type="teleport" charges="1"/>
+    <tag Name="Meat"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+		<stag Name="Travel"/>
+  </object>
+  <object Name="Spark Tick Plasma" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{W|火花蜱等离子体}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="W" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="盾牌被刮得干干净净，砸碎并碾磨。蜱的一部分被挤出磁性生命之血，装入小瓶。"/>
+    <part Name="PreparedCookingIngredient" type="electric" charges="1"/>
+    <tag Name="Meat"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+		<stag Name="Energy"/>
+  </object>
+  <object Name="Dried Lah Petals" Inherits="Preservable">
+    <part Name="Render" DisplayName="干燥的{{lah|拉花瓣}}" Tile="Items/sw_lah_petals.bmp" RenderString="%" ColorString="&amp;r" DetailColor="w" RenderLayer="5"/>
+    <part Name="Commerce" Value="2"/>
+    <part Name="Description" Short="这些厚实的黄褐色花瓣干燥后更像肉干，而不像大多数其他花朵。"/>
+    <part Name="PreparedCookingIngredient" type="fear" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="Lah"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+    <tag Name="Gender" Value="plural"/>
+		<xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Dried Vanta Petals" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{K|干枯万塔花瓣}}" Tile="Items/sw_lah_petals.bmp" RenderString="%" ColorString="&amp;K" DetailColor="y" RenderLayer="5"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="Description" Short="光从干枯卢恩的影响边界滴落，渗入虚无。"/>
+    <part Name="PreparedCookingIngredient" type="darkness" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="Gender" Value="plural"/>
+		<xtagGrammar massNoun="true"/>
+  </object>
+  <object Name="Compacted Bone Meal" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{Y|骨粉}}" RenderString="%" ColorString="&amp;Y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="Description" Short="古老的骨头被碾碎并压缩在骨虫的疤痕肠内，然后磨成粉末。"/>
+    <part Name="PreparedCookingIngredient" type="armor" charges="1"/>
+  </object>
+  <object Name="Crushed Grave Moss" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{C|碎墓苔}}" RenderString="%" ColorString="&amp;C" TileColor="&amp;C" DetailColor="y" RenderLayer="5" Tile="Items/sw_grave_moss_crushed.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="墓苔生长成罕见而柔韧的一簇，然后被碾碎并放置在香料盘上。"/>
+    <part Name="PreparedCookingIngredient" type="plantHighTier" charges="1"/>
+  </object>
+  <object Name="Mashed Lag" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{W|捣碎的拉格}}" Tile="Items/sw_jar2.bmp" RenderString="%" ColorString="&amp;W" TileColor="&amp;y" DetailColor="W" RenderLayer="5"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="去皮的拉格根块茎被捣碎、加盐并装入罐中。"/>
+    <part Name="PreparedCookingIngredient" type="willpower" charges="1"/>
+    <tag Name="Plant"/>
+  </object>
+  <object Name="Sun-Dried Banana" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{W|晒干香蕉}}" Tile="Items/sw_dried_food.bmp" RenderString="%" ColorString="&amp;W" DetailColor="w" RenderLayer="5"/>
+    <part Name="Description" Short="盐太阳将水果中的水分烤干，但纺锤闪光仍点缀着圆片芯片。"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="PreparedCookingIngredient" type="artifacts" charges="1"/>
+    <tag Name="Plant"/>
+  </object>
+  <object Name="Psychal Gland Paste" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{m|精神腺膏}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="m" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="Description" Short="浸透记忆的神经被研磨成泥，再在盐水中煮沸，最后凝固成形。"/>
+    <part Name="PreparedCookingIngredient" type="secrets" charges="1"/>
+    <tag Name="Meat"/>
+  </object>
+  <object Name="Mirror Dust" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{Y|镜尘}}" RenderString="%" ColorString="&amp;Y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="Description" Short="来自镜像世界的遗物被粉碎成细尘。"/>
+    <part Name="PreparedCookingIngredient" type="reflectHighTier" charges="1"/>
+    <tag Name="Meat"/>
+  </object>
+  <object Name="Canned Have-It-All" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{w|罐装万能兽}}" Tile="Items/sw_can.bmp" ColorString="&amp;w" TileColor="&amp;y" DetailColor="w"/>
+    <part Name="Description" Short="罐头上的图案描绘了一种动物，它有爪子，还是蹄子？鼻梁和眉间长着肉瘤（或者角？鹿角？）。浓密纠结的毛发，或是皱褶的羽毛，包裹着它，抵御炎热（或寒冷）"/>
+    <part Name="Food" Satiation="Snack"/>
+    <tag Name="Meat"/>
+    <tag Name="Plant"/>
+    <tag Name="AlwaysStack" Value="*delete"/>
+    <part Name="PreparedCookingIngredient" type="random" charges="1"/>
+    <part Name="Commerce" Value="10"/>
+		<stag Name="Random"/>
+  </object>
+  <object Name="Crusty Loaf" Inherits="Preservable">
+    <part Name="Render" Tile="items/sw_loaf.bmp" DisplayName="硬壳面包" ColorString="&amp;w" DetailColor="W"/>
+    <part Name="Description" Short="每年秋天，许多峡谷居民会前往高脚地购买秋季葡萄酒。他们回到家中，将小麦麸浸泡在葡萄酒中，在陶土烤箱中发酵面团。有些人更幸运；真菌林居民只需出门即可采集酵母，而与真菌友好的居民只需摇动他们长满酵母的肢体。"/>
+    <part Name="PreparedCookingIngredient" type="tastyMinor" charges="1"/>
+    <part Name="Commerce" Value="0.5"/>
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="false"/>
+  </object>
+  <object Name="Ekuemekiyyen Greens" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{g|埃库梅基延绿植}}" ColorString="&amp;g" Tile="items/sw_greens.bmp" DetailColor="w"/>
+    <part Name="Description" Short="孔雀石色的叶子和开心果被星线绑在一起。这些绿植在空气中没有毒素的情况下自豪地膨胀起来。"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar massNoun="true"/>
+    <tag Name="Plant"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="PreparedCookingIngredient" type="plantMinor" charges="1"/>
+		<tag Name="NoSparkingQuest"/>
+  </object>
+  <object Name="Food Cube" Inherits="Preservable">
+    <part Name="Render" DisplayName="食物方块" Tile="items/sw_cube.bmp" DetailColor="g"/>
+    <part Name="Description" Short="松软的食物被塑造成比例完美的石板色立方体。究竟是什么力量将进食的杂乱与立方体的精确结合在一起？"/>
+    <part Name="Food" Satiation="Meal"/>
+    <tag Name="Meat"/>
+    <tag Name="Plant"/>
+    <tag Name="AlwaysStack" Value="*delete"/>
+    <part Name="PreparedCookingIngredient" type="random" charges="1"/>
+    <part Name="Commerce" Value="10"/>
+		<tag Name="NoSparkingQuest"/>
+  </object>
+  <object Name="Fermented Tongue" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{r|发酵舌头}}" RenderString="%" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" RenderLayer="5" Tile="Items/sw_fermented_tongue.bmp"/>
+    <part Name="Description" Short="一根被切下的舌头在其自身的唾液中发酵，并缠绕在一跟棍子上。"/>
+    <part Name="Commerce" Value="8"/>
+    <part Name="PreparedCookingIngredient" type="tongue" charges="1"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_Ingredients"/>
+    <tag Name="Meat"/>
+  </object>
+  <object Name="Sliced Bop Cheek" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{B|切片波普脸颊}}" RenderString="%" ColorString="&amp;B" DetailColor="B" RenderLayer="5" Tile="Items/sw_sliced_bop_cheek.bmp"/>
+    <part Name="Commerce" Value="7"/>
+    <part Name="Description" Short="精选的层压海绵被切成适口的片状。它们触感颤动。"/>
+    <part Name="PreparedCookingIngredient" type="rubberHighTier" charges="1"/>
+    <tag Name="DynamicObjectsTable:LakeHinnom_Ingredients"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_Ingredients"/>
+    <tag Name="Meat"/>
+    <stag Name="Movement"/>
+  </object>
+	<object Name="Wild Rice" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{m-M-m-M 序列|野生}} 米" Tile="Items/sw_wild_rice.bmp" ColorString="&amp;m" DetailColor="y"/>
+		<part Name="Description" Short="米壳呈淡白色，触碰时会发出噼啪声，芒刺发出不规则而富有韵律的声音。"/>		
+		<tag Name="Plant"/>		
+		<part Name="PreparedCookingIngredient" type="randomHighTier" charges="1"/>
+		<part Name="Commerce" Value="20"/>		
+		<stag Name="Random"/>
+	</object>
+	<object Name="Dream Smoke" Inherits="Preservable">
+		<part Name="Render" DisplayName="{{梦烟|梦烟}}" Tile="Items/sw_bottle_smoke.bmp" ColorString="&amp;b" TileColor="&amp;y" DetailColor="b"/>
+		<part Name="Description" Short="梦境物质被迅速凝聚成记忆，并在蒸发成情感湿度之前被装瓶。"/>
+		<part Name="PreparedCookingIngredient" type="dissociation" charges="1"/>
+		<part Name="Commerce" Value="8"/>
+		<stag Name="Dissociation"/>
+	</object>
+
+  <!-- Jerky -->
+  <object Name="Jerky" Inherits="Preservable">
+    <part Name="Render" DisplayName="[肉干]" RenderString="%" ColorString="&amp;w" DetailColor="r" RenderLayer="5" Tile="Items/sw_jerky1.bmp"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <part Name="PreparedCookingIngredient" type="HP" charges="1"/>
+    <part Name="Commerce" Value="1"/>
+    <part Name="Food" Satiation="Snack"/>
+    <tag Name="Meat"/>
+    <tag Name="AggregatedIngredient" Value="Jerky"/>
+  </object>
+  <object Name="Barkbiter Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{W|树咬干肉}}" Tile="Items/sw_jerky3.bmp"/>
+    <part Name="Description" Short="熊肉被切成整齐的条状，经过腌制和烟熏。"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+  </object>
+  <object Name="Bear Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{w|熊肉干}}" Tile="Items/sw_jerky3.bmp"/>
+		<part Name="Description" Short="熊肉被切成整齐的条状，经过腌制和烟熏。"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Mountains_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+  </object>
+  <object Name="Boar Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="野猪肉干" Tile="Items/sw_jerky2.bmp"/>
+		<part Name="Description" Short="野猪肉被切成整齐的条状，用盐腌制并烟熏。"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Mountains_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+  </object>
+  <object Name="Beetle Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{K|甲虫肉干}}" Tile="Items/sw_jerky1.bmp"/>
+		<part Name="Description" Short="碾碎的甲虫肉被切成整齐的条状，加盐并烟熏。"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+  </object>
+  <object Name="Croc Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{g|鳄肉干}}" Tile="Items/sw_jerky2.bmp"/>
+		<part Name="Description" Short="鳄鱼肉被切成整齐的条状，用盐腌制并熏烤。"/>
+    <tag Name="DynamicObjectsTable:Saltmarsh_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Water_Ingredients"/>
+  </object>
+  <object Name="Crab Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{Y|蟹肉干}}" Tile="Items/sw_jerky1.bmp"/>
+		<part Name="Description" Short="蟹腿被切成整齐的条状，经过腌制和熏烤。"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+  </object>
+  <object Name="Frog Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{w|青蛙肉干}}" Tile="Items/sw_jerky1.bmp"/>
+		<part Name="Description" Short="青蛙肉被切成整齐的条状，经过腌制和熏烤。"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+  </object>
+  <object Name="Goat Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{w|山羊肉干}}" Tile="Items/sw_jerky2.bmp"/>
+		<part Name="Description" Short="山羊肉被切成整齐的条状，用盐腌制并烟熏。"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Mountains_Ingredients"/>
+  </object>
+  <object Name="Worm Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="虫肉干" Tile="Items/sw_jerky3.bmp"/>
+		<part Name="Description" Short="虫肉被切成整齐的条状，经过腌制和烟熏处理。"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+  </object>
+  <object Name="Scorpiock Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{W|蝎虫肉干}}" Tile="Items/sw_jerky1.bmp"/>
+		<part Name="Description" Short="碾碎的蝎虫肉被切成整齐的条状，加盐并烟熏。"/>
+  </object>
+  <object Name="Fish Jerky" Inherits="Jerky">
+    <part Name="Render" DisplayName="{{Y|鱼肉干}}" Tile="Items/sw_jerky2.bmp" DetailColor="Y"/>
+		<part Name="Description" Short="鱼肉被切成整齐的条状，经过腌制和熏烤。"/>
+  </object>
+  
+  <!-- Breathbeard pastes -->
+  <object Name="BaseBreatherGlandPaste" Inherits="Preservable">
+    <part Name="Render" DisplayName="[呼吸腺膏]" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="B" RenderLayer="5" Tile="Items/sw_paste.bmp"/>
+    <part Name="Commerce" Value="5"/>
+    <part Name="Description" Short="雾湿组织被研磨成泥，浸煮在盐水中，然后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="teleport" charges="1"/>
+    <tag Name="Meat"/>
+    <tag Name="BreatherGland"/>
+    <tag Name="BaseObject" Value="*noinherit"/>		
+  </object>  
+  <object Name="BaseElderBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <tag Name="BaseObject" Value="*noinherit"/>
+  </object>
+  <object Name="FireBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{r|火焰胡子腺体膏}}" RenderString="%" ColorString="&amp;r" DetailColor="r"/>
+		<part Name="Description" Short="烧焦的组织被研磨成泥，用盐水炖煮，然后凝固。"/>
+		<part Name="PreparedCookingIngredient" type="fireBreath" charges="1"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="ElderFireBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{R|浓缩火焰胡子腺体膏}}" RenderString="%" ColorString="&amp;R" DetailColor="R"/>
+		<part Name="Description" Short="烧焦的组织被研磨成泥，用盐水炖煮，然后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderFireBreath" charges="1"/>
+		<stag Name="Heat"/>
+  </object>
+  <object Name="IceBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{c|霜毛腺膏}}" RenderString="%" ColorString="&amp;c" DetailColor="c"/>
+		<part Name="Description" Short="霜冻组织被研磨成粉末，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="iceBreath" charges="1"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="ElderIceBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{c|浓缩冰须腺膏}}" RenderString="%" ColorString="&amp;C" DetailColor="C"/>
+		<part Name="Description" Short="霜冻组织被研磨成粉末，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderIceBreath" charges="1"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="CorrosiveBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{g|酸胡子腺体膏}}" RenderString="%" ColorString="&amp;g" DetailColor="g"/>
+		<part Name="Description" Short="酸胡子组织被研磨成泥，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="corrosiveGasBreath" charges="1"/>
+		<stag Name="Cold"/>
+  </object>
+  <object Name="ElderCorrosiveBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{G|浓缩酸胡子腺体膏}}" RenderString="%" ColorString="&amp;G" DetailColor="G"/>
+		<part Name="Description" Short="酸胡子组织被研磨成泥，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderCorrosiveGasBreath" charges="1"/>
+  </object>
+  <object Name="NormalityBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{y|无须腺膏}}" RenderString="%" ColorString="&amp;y" DetailColor="y"/>
+		<part Name="Description" Short="六角形组织被研磨成粉末，再在盐水中煮沸并凝固。"/>
+    <part Name="PreparedCookingIngredient" type="normalityGasBreath" charges="1"/>
+		<stag Name="Normality"/>
+  </object>
+  <object Name="ElderNormalityBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{Y|浓缩虚无胡腺膏}}" RenderString="%" ColorString="&amp;K" DetailColor="K"/>
+		<part Name="Description" Short="六角形组织被研磨成粉末，再在盐水中煮沸并凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderNormalityGasBreath" charges="1"/>
+		<stag Name="Normality"/>
+  </object>
+  <object Name="PoisonBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{g|加尔比德腺体膏}}" RenderString="%" ColorString="&amp;g" DetailColor="g"/>
+		<part Name="Description" Short="有毒组织被研磨成泥，煮沸于盐水中，最后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="poisonGasBreath" charges="1"/>
+  </object>
+  <object Name="ElderPoisonBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{G|浓缩胆须腺膏}}" RenderString="%" ColorString="&amp;G" DetailColor="G"/>
+		<part Name="Description" Short="有毒组织被研磨成泥，煮沸于盐水中，最后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderPoisonGasBreath" charges="1"/>
+  </object>
+  <object Name="SleepBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{w|梦须腺膏}}" RenderString="%" ColorString="&amp;w" DetailColor="W"/>
+		<part Name="Description" Short="萎缩的组织被研磨成泥，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="sleepGasBreath" charges="1"/>
+		<stag Name="Sleep"/>
+  </object>
+  <object Name="ElderSleepBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{W|浓缩梦境胡须腺膏}}" RenderString="%" ColorString="&amp;W" DetailColor="W"/>
+		<part Name="Description" Short="萎缩的组织被研磨成泥，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderSleepGasBreath" charges="1"/>
+		<stag Name="Sleep"/>
+  </object>
+  <object Name="StunBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{c|静须腺膏}}" RenderString="%" ColorString="&amp;c" DetailColor="c"/>
+		<part Name="Description" Short="静组织被研磨成粉末，煮沸在盐水中，然后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="stunGasBreath" charges="1"/>
+  </object>
+  <object Name="ElderStunBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{C|浓缩静须腺膏}}" RenderString="%" ColorString="&amp;C" DetailColor="C"/>
+		<part Name="Description" Short="静组织被研磨成粉末，煮沸在盐水中，然后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderStunGasBreath" charges="1"/>
+  </object>
+  <object Name="ConfusionBreatherGlandPaste" Inherits="BaseBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{b|迷宫胡子腺体膏}}" RenderString="%" ColorString="&amp;b" DetailColor="b"/>
+		<part Name="Description" Short="奇怪的组织被研磨成粉末，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="confusionGasBreath" charges="1"/>
+  </object>
+  <object Name="ElderConfusionBreatherGlandPaste" Inherits="BaseElderBreatherGlandPaste">
+    <part Name="Render" DisplayName="{{B|浓缩迷宫胡须腺膏}}" RenderString="%" ColorString="&amp;B" DetailColor="B"/>
+		<part Name="Description" Short="奇怪的组织被研磨成粉末，用盐水煮沸后凝固。"/>
+    <part Name="PreparedCookingIngredient" type="elderConfusionGasBreath" charges="1"/>
+  </object>
+      
+  <!-- Grown-on-self -->
+  <object Name="Starch" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{Y|淀粉}}" RenderString="%" ColorString="&amp;Y" TileColor="&amp;y" DetailColor="G" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+    <part Name="Physics" Takeable="true" IsReal="false"/>
+    <part Name="Commerce" Value="0"/>
+    <part Name="Description" Short="无"/>
+    <part Name="PreparedCookingIngredient" type="starch" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="HiddenInInventory"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="Lignin" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{G|木质素}}" RenderString="%" ColorString="&amp;G" TileColor="&amp;y" DetailColor="w" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+    <part Name="Physics" Takeable="true" IsReal="false"/>
+    <part Name="Commerce" Value="0"/>
+    <part Name="Description" Short="无"/>
+    <part Name="PreparedCookingIngredient" type="lignin" charges="1"/>
+    <tag Name="Plant"/>
+    <tag Name="HiddenInInventory"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+
+  <!-- Congealed tonics -->
+  <object Name="Congealed Shade Oil" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{shade|暗影油}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="K" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="暗影油从其注射器中提取，在刺鼻的空气中凝结，并装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="phase" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Congealed Blaze" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{blaze|烈焰}}" RenderString="%" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="烈焰从其喷射器中提取出来，在刺鼻的空气中变得浓稠，并被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="heat" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+		<stag Name="Heat"/>
+  </object>
+  <object Name="Congealed Salve" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固药膏" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="药膏从注射器中提取出来，在刺鼻的空气中变稠，并被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="regenLowtier" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Soul Curd" Inherits="Preservable">
+    <part Name="Render" DisplayName="{{soul|灵魂凝乳}}" RenderString="%" ColorString="&amp;C" TileColor="&amp;C" DetailColor="W" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="10"/>
+    <part Name="Description" Short="从注射器中提取出优伯诺斯特拉姆，在刺鼻的空气中凝固，然后装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="regenHightier" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Drop of Nectar" Inherits="Preservable">
+    <part Name="Render" DisplayName="滴落的{{nectar|花蜜}}" RenderString="%" ColorString="&amp;M" TileColor="&amp;W" DetailColor="M" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="100"/>
+    <part Name="Description" Short="食者的花蜜从其注射器中提取出来，在刺鼻的空气中凝结，然后装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="attributes" charges="1"/>
+    <tag Name="ServingType" Value="drop"/>
+    <tag Name="ServingName" Value="&amp;Wn&amp;we&amp;gc&amp;Gt&amp;Wa&amp;wr"/>
+  </object>
+  <object Name="Congealed Hulk Honey" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{G|巨兽}} {{w|蜂蜜}}" RenderString="%" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="巨兽蜂蜜从其注射器中提取，在刺鼻的空气中变稠，并被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="strength" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Congealed Skulk" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{skulk|潜行者}}" RenderString="%" ColorString="&amp;b" TileColor="&amp;y" DetailColor="r" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="潜行者从注射器中被提取出来，在刺鼻的空气中变得浓稠，并被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="agility,darkness,burrowing" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Congealed Love" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{love|爱}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="R" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="爱从注射器中被提取出来，在刺鼻的空气中变得浓稠，然后被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="love" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+  <object Name="Congealed Rubbergum" Inherits="Preservable">
+    <part Name="Render" DisplayName="凝固的{{rubbergum|橡胶胶}}" RenderString="%" ColorString="&amp;W" TileColor="&amp;y" DetailColor="W" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Commerce" Value="4"/>
+    <part Name="Description" Short="橡胶胶从注射器中提取出来，在刺鼻的空气中变稠，并被装瓶用于烹饪。"/>
+    <part Name="PreparedCookingIngredient" type="rubberLowTier" charges="1"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>    
+  </object>
+
+  <!-- Liquid ingredients -->
+  <object Name="HoneyWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="honey-1000" StartVolume="1d2"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:Flowerfields_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="CiderWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="cider-1000" StartVolume="1d2"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:Hills_Ingredients"/>
+    <tag Name="DynamicObjectsTable:DesertCanyon_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Jungle_Ingredients"/>
+    <tag Name="DynamicObjectsTable:Water_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="SlimeWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="slime-1000" StartVolume="1d2"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="FluxWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="neutronflux-1000" StartVolume="1d2"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="SaltWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="salt-1000" StartVolume="2d16"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="CloningDraughtWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="cloning-1000" StartVolume="1"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="AsphaltWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="asphalt-1000" StartVolume="2d16"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="ConvalessenceWaterskin" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="convalessence-1000" StartVolume="1d4"/>
+    <tag Name="NoSparkingQuest"/>
+  </object>
+  <object Name="ConvalessenceWaterskin_Ingredient" Inherits="Waterskin">
+    <part Name="LiquidVolume" InitialLiquid="convalessence-1000" StartVolume="1d2"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:Ruins_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="LavaPhial_Ingredient" Inherits="Phial">
+    <part Name="LiquidVolume" InitialLiquid="lava-1000" StartVolume="1"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="AcidCanteen_Ingredient" Inherits="Canteen">
+    <part Name="LiquidVolume" InitialLiquid="acid-1000" StartVolume="1d4"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+  <object Name="AlgaeWaterskin_Ingredient" Inherits="Canteen">
+    <part Name="LiquidVolume" InitialLiquid="algae-1000" StartVolume="1d4"/>
+    <tag Name="LiquidCookingIngredient"/>
+    <tag Name="DynamicObjectsTable:PalladiumReef_Ingredients"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+
+	<!-- description waterline -->
+
+</objects>

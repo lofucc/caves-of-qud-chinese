@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<genders EnableSelection="false" EnableGeneration="false" GenerateGeneric="0">
+
+  <gender
+    Name="neuter"
+    Subjective="它"
+    Objective="它"
+    PossessiveAdjective="它的"
+    SubstantivePossessive="它的"
+    Reflexive="它自己"
+    UseBareIndicative="true"
+    DoNotReplicateAsPronounSet="true"
+  />
+
+  <gender
+    Name="nonspecific"
+    PseudoPlural="true"
+    Subjective="他们"
+    Objective="他们"
+    PossessiveAdjective="他们的"
+    SubstantivePossessive="他们的"
+    Reflexive="themself"
+  />
+
+  <gender
+    Name="male"
+    Subjective="他"
+    Objective="他"
+    PossessiveAdjective="他的"
+    SubstantivePossessive="他的"
+    Reflexive="他自己"
+    PersonTerm="man"
+    ImmaturePersonTerm="男孩"
+    FormalAddressTerm="朋友"
+    OffspringTerm="儿子"
+    SiblingTerm="兄弟"
+    ParentTerm="父亲"
+  />
+
+  <gender
+    Name="female"
+    Subjective="她"
+    Objective="她"
+    PossessiveAdjective="她"
+    SubstantivePossessive="她的"
+    Reflexive="她自己"
+    PersonTerm="woman"
+    ImmaturePersonTerm="女孩"
+    FormalAddressTerm="朋友"
+    OffspringTerm="女儿"
+    SiblingTerm="姐妹"
+    ParentTerm="母亲"
+  />
+
+  <gender
+    Name="plural"
+    Plural="true"
+    Subjective="他们"
+    Objective="他们"
+    PossessiveAdjective="他们的"
+    SubstantivePossessive="他们的"
+    Reflexive="他们自己"
+    PersonTerm="people"
+    ImmaturePersonTerm="孩子们"
+    FormalAddressTerm="朋友们"
+    OffspringTerm="孩子们"
+    SiblingTerm="同胞"
+    ParentTerm="祖先"
+    UseBareIndicative="true"
+    DoNotReplicateAsPronounSet="true"
+  />
+
+  <gender
+    Name="collective"
+    Plural="true"
+    Subjective="它们"
+    Objective="它们"
+    PossessiveAdjective="它们的"
+    SubstantivePossessive="它们的"
+    Reflexive="它们自己"
+    PersonTerm="humans"
+    ImmaturePersonTerm="孩子们"
+    FormalAddressTerm="朋友们"
+    OffspringTerm="孩子们"
+    SiblingTerm="同胞"
+    ParentTerm="祖先"
+  />
+
+  <gender
+    Name="males"
+    Plural="true"
+    Subjective="他们"
+    Objective="他们"
+    PossessiveAdjective="他们的"
+    SubstantivePossessive="他们的"
+    Reflexive="他们自己"
+    PersonTerm="men"
+    ImmaturePersonTerm="男孩们"
+    FormalAddressTerm="朋友们"
+    OffspringTerm="儿子们"
+    SiblingTerm="兄弟们"
+    ParentTerm="父亲们"
+    DoNotReplicateAsPronounSet="true"
+  />
+
+  <gender
+    Name="females"
+    Plural="true"
+    Subjective="她们"
+    Objective="她们"
+    PossessiveAdjective="她们的"
+    SubstantivePossessive="她们的"
+    Reflexive="她们自己"
+    PersonTerm="women"
+    ImmaturePersonTerm="女孩们"
+    FormalAddressTerm="朋友们"
+    OffspringTerm="女儿们"
+    SiblingTerm="姐妹们"
+    ParentTerm="母亲们"
+    DoNotReplicateAsPronounSet="true"
+  />
+
+  <gender
+    Name="hindren male"
+    Generic="false"
+    Subjective="他"
+    Objective="他"
+    PossessiveAdjective="他的"
+    SubstantivePossessive="他的"
+    Reflexive="他自己"
+    PersonTerm="man"
+    ImmaturePersonTerm="faun"
+    FormalAddressTerm="buck"
+    OffspringTerm="儿子"
+    SiblingTerm="兄弟"
+    ParentTerm="父亲"
+  />
+
+  <gender
+    Name="hindren female"
+    Generic="false"
+    Subjective="她"
+    Objective="她"
+    PossessiveAdjective="她"
+    SubstantivePossessive="她的"
+    Reflexive="她自己"
+    PersonTerm="woman"
+    ImmaturePersonTerm="faun"
+    FormalAddressTerm="my doe"
+    OffspringTerm="女儿"
+    SiblingTerm="姐姐"
+    ParentTerm="母亲"
+  />
+
+  <gender
+    Name="hartind"
+    Generic="false"
+    PseudoPlural="true"
+    Subjective="他们"
+    Objective="他们"
+    PossessiveAdjective="他们的"
+    SubstantivePossessive="他们的"
+    Reflexive="他们自己"
+    PersonTerm="hartind"
+    ImmaturePersonTerm="faun"
+    FormalAddressTerm="hartind"
+    OffspringTerm="孩子"
+    SiblingTerm="同胞"
+    ParentTerm="父母"
+  />
+
+  <gender
+    Name="elverson"
+    Generic="false"
+    PseudoPlural="false"
+    Subjective="ey"
+    Objective="em"
+    PossessiveAdjective="eir"
+    SubstantivePossessive="eirs"
+    Reflexive="emself"
+    PersonTerm="person"
+    ImmaturePersonTerm="child"
+    FormalAddressTerm="friend"
+    OffspringTerm="child"
+    SiblingTerm="sibling"
+    ParentTerm="parent"
+  />
+
+  <genderPronounGeneration AltVowelChance="30" StemVowelChance="20">
+
+    <stem Text="b" Weight="2" />
+    <stem Text="br" Weight="2" />
+    <stem Text="c" Weight="3" />
+    <stem Text="ch" Weight="4" />
+    <stem Text="cl" Weight="2" />
+    <stem Text="cth" Weight="1" />
+    <stem Text="d" Weight="2" />
+    <stem Text="dr" Weight="1" />
+    <stem Text="f" Weight="2" />
+    <stem Text="g" Weight="1" />
+    <stem Text="gh" Weight="3" />
+    <stem Text="h" Weight="5" />
+    <stem Text="j" Weight="1" />
+    <stem Text="jh" Weight="1" />
+    <stem Text="k" Weight="2" />
+    <stem Text="kl" Weight="2" />
+    <stem Text="l" Weight="1" />
+    <stem Text="m" Weight="2" />
+    <stem Text="mn" Weight="1" />
+    <stem Text="n" Weight="2" />
+    <stem Text="ng" Weight="1" />
+    <stem Text="p" Weight="1" />
+    <stem Text="q" Weight="1" />
+    <stem Text="r" Weight="2" />
+    <stem Text="s" Weight="4" />
+    <stem Text="sc" Weight="1" />
+    <stem Text="sh" Weight="3" />
+    <stem Text="sp" Weight="2" />
+    <stem Text="st" Weight="3" />
+    <stem Text="t" Weight="4" />
+    <stem Text="th" Weight="4" />
+    <stem Text="w" Weight="1" />
+    <stem Text="wr" Weight="1" />
+    <stem Text="x" Weight="4" />
+    <stem Text="xh" Weight="1" />
+    <stem Text="y" Weight="2" />
+    <stem Text="z" Weight="5" />
+    <stem Text="zh" Weight="5" />
+
+    <vowel Text="a" Weight="3" />
+    <vowel Text="ae" Weight="2" />
+    <vowel Text="ai" Weight="2" />
+    <vowel Text="ao" Weight="1" />
+    <vowel Text="au" Weight="1" />
+    <vowel Text="ay" Weight="1" />
+    <vowel Text="e" Weight="4" />
+    <vowel Text="ea" Weight="1" />
+    <vowel Text="ei" Weight="1" />
+    <vowel Text="eo" Weight="1" />
+    <vowel Text="eu" Weight="2" />
+    <vowel Text="ey" Weight="1" />
+    <vowel Text="i" Weight="3" />
+    <vowel Text="ia" Weight="1" />
+    <vowel Text="ie" Weight="1" />
+    <vowel Text="io" Weight="1" />
+    <vowel Text="iu" Weight="1" />
+    <vowel Text="o" Weight="3" />
+    <vowel Text="oa" Weight="1" />
+    <vowel Text="oe" Weight="1" />
+    <vowel Text="oi" Weight="1" />
+    <vowel Text="ou" Weight="2" />
+    <vowel Text="oy" Weight="2" />
+    <vowel Text="u" Weight="2" />
+    <vowel Text="ua" Weight="1" />
+    <vowel Text="ui" Weight="1" />
+    <vowel Text="uo" Weight="1" />
+    <vowel Text="y" Weight="2" />
+    <vowel Text="ya" Weight="1" />
+    <vowel Text="ye" Weight="1" />
+    <vowel Text="yi" Weight="1" />
+    <vowel Text="yo" Weight="1" />
+    <vowel Text="yu" Weight="1" />
+
+    <prefix Text="" Weight="100" />
+    <prefix Text="b" Weight="8" />
+    <prefix Text="d" Weight="10" />
+    <prefix Text="g" Weight="10" />
+    <prefix Text="k" Weight="10" />
+    <prefix Text="m" Weight="6" />
+    <prefix Text="n" Weight="6" />
+    <prefix Text="s" Weight="10" />
+    <prefix Text="t" Weight="10" />
+    <prefix Text="z" Weight="10" />
+
+    <subjectivesuffix Text="" Weight="100" />
+    <subjectivesuffix Text="h" Weight="10" />
+    <subjectivesuffix Text="n" Weight="5" />
+    <subjectivesuffix Text="w" Weight="10" />
+    <subjectivesuffix Text="y" Weight="20" />
+
+    <objectivesuffix Text="" Weight="1" />
+    <objectivesuffix Text="b" Weight="1" />
+    <objectivesuffix Text="j" Weight="5" />
+    <objectivesuffix Text="l" Weight="2" />
+    <objectivesuffix Text="m" Weight="10" />
+    <objectivesuffix Text="n" Weight="10" />
+    <objectivesuffix Text="p" Weight="2" />
+    <objectivesuffix Text="r" Weight="10" />
+    <objectivesuffix Text="t" Weight="2" />
+    <objectivesuffix Text="v" Weight="1" />
+    <objectivesuffix Text="w" Weight="1" />
+    <objectivesuffix Text="x" Weight="1" />
+    <objectivesuffix Text="z" Weight="2" />
+
+    <possessivesuffix Text="l" Weight="2" />
+    <possessivesuffix Text="m" Weight="3" />
+    <possessivesuffix Text="mn" Weight="2" />
+    <possessivesuffix Text="n" Weight="3" />
+    <possessivesuffix Text="r" Weight="10" />
+    <possessivesuffix Text="rl" Weight="2" />
+    <possessivesuffix Text="s" Weight="10" />
+    <possessivesuffix Text="sz" Weight="6" />
+    <possessivesuffix Text="v" Weight="3" />
+    <possessivesuffix Text="w" Weight="2" />
+    <possessivesuffix Text="z" Weight="10" />
+
+    <cullstring Text="brj" />
+    <cullstring Text="brw" />
+    <cullstring Text="cln" />
+    <cullstring Text="chv" />
+    <cullstring Text="klan" />
+    <cullstring Text="klw" />
+    <cullstring Text="nig" />
+    <cullstring Text="qm" />
+    <cullstring Text="qn" />
+    <cullstring Text="qp" />
+    <cullstring Text="qq" />
+    <cullstring Text="rr" />
+    <cullstring Text="shmn" />
+    <cullstring Text="spm" />
+    <cullstring Text="spnm" />
+    <cullstring Text="ssz" />
+    <cullstring Text="sx" />
+    <cullstring Text="uy" />
+    <cullstring Text="wyi" />
+    <cullstring Text="xhw" />
+    <cullstring Text="xj" />
+    <cullstring Text="xmn" />
+    <cullstring Text="yay" />
+    <cullstring Text="yey" />
+    <cullstring Text="yiy" />
+    <cullstring Text="yoy" />
+    <cullstring Text="yuy" />
+    <cullstring Text="yw" />
+    <cullstring Text="yy" />
+    <cullstring Text="zhp" />
+
+    <cullpattern Text="^be$" />
+    <cullpattern Text="^he$" />
+    <cullpattern Text="^her$" />
+    <cullpattern Text="^him$" />
+    <cullpattern Text="^his$" />
+    <cullpattern Text="^is$" />
+    <cullpattern Text="^it$" />
+    <cullpattern Text="^its$" />
+    <cullpattern Text="^me$" />
+    <cullpattern Text="^of$" />
+    <cullpattern Text="^on$" />
+    <cullpattern Text="^she$" />
+    <cullpattern Text="^the$" />
+    <cullpattern Text="^their$" />
+    <cullpattern Text="^them$" />
+    <cullpattern Text="^they$" />
+    <cullpattern Text="cn$" />
+    <cullpattern Text="dw$" />
+    <cullpattern Text="fv$" />
+    <cullpattern Text="lj$" />
+    <cullpattern Text="thj$" />
+    <cullpattern Text="tj$" />
+    <cullpattern Text="xv$" />
+    <cullpattern Text="xw$" />
+
+    <mapstring Search="bc" Replace="b'c" />
+    <mapstring Search="bd" Replace="b'd" />
+    <mapstring Search="bn" Replace="b'n" />
+    <mapstring Search="bk" Replace="b'k" />
+    <mapstring Search="bq" Replace="b'q" />
+    <mapstring Search="bt" Replace="b't" />
+    <mapstring Search="bx" Replace="b'x" />
+    <mapstring Search="dk" Replace="d'k" />
+    <mapstring Search="dn" Replace="d'n" />
+    <mapstring Search="dq" Replace="d'q" />
+    <mapstring Search="dx" Replace="d'x" />
+    <mapstring Search="gb" Replace="g'b" />
+    <mapstring Search="gq" Replace="g'q" />
+    <mapstring Search="gs" Replace="g's" />
+    <mapstring Search="gt" Replace="g't" />
+    <mapstring Search="gx" Replace="g'x" />
+    <mapstring Search="gz" Replace="g'z" />
+    <mapstring Search="fm" Replace="f'm" />
+    <mapstring Search="fq" Replace="f'q" />
+    <mapstring Search="kc" Replace="k'c" />
+    <mapstring Search="kd" Replace="k'd" />
+    <mapstring Search="kj" Replace="k'j" />
+    <mapstring Search="km" Replace="k'm" />
+    <mapstring Search="kq" Replace="k'q" />
+    <mapstring Search="kt" Replace="k't" />
+    <mapstring Search="kx" Replace="k'x" />
+    <mapstring Search="kz" Replace="k'z" />
+    <mapstring Search="mb" Replace="m'b" />
+    <mapstring Search="mj" Replace="m'j" />
+    <mapstring Search="mk" Replace="m'k" />
+    <mapstring Search="mq" Replace="m'q" />
+    <mapstring Search="mz" Replace="m'z" />
+    <mapstring Search="nb" Replace="n'b" />
+    <mapstring Search="nj" Replace="n'j" />
+    <mapstring Search="nk" Replace="n'k" />
+    <mapstring Search="nq" Replace="n'q" />
+    <mapstring Search="nx" Replace="n'x" />
+    <mapstring Search="nz" Replace="n'z" />
+    <mapstring Search="tb" Replace="t'b" />
+    <mapstring Search="tc" Replace="t'c" />
+    <mapstring Search="tg" Replace="t'g" />
+    <mapstring Search="tq" Replace="t'q" />
+    <mapstring Search="jq" Replace="k'q" />
+    <mapstring Search="jz" Replace="k'z" />
+    <mapstring Search="xm" Replace="x'm" />
+    <mapstring Search="xn" Replace="x'n" />
+    <mapstring Search="zc" Replace="z'c" />
+    <mapstring Search="zk" Replace="z'k" />
+    <mapstring Search="zq" Replace="z'q" />
+    <mapstring Search="zx" Replace="z'x" />
+
+    <mappattern Search="nr$" Replace="n'r" />
+    <mappattern Search="^bd" Replace="b'd" />
+    <mappattern Search="^dg" Replace="d'g" />
+    <mappattern Search="^gk" Replace="g'k" />
+    <mappattern Search="^tk" Replace="t'k" />
+
+  </genderPronounGeneration>
+
+</genders>
