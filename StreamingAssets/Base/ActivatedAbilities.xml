@@ -1,1727 +1,1721 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <activatedabilities>
 	<ability Command="CommandAmputateLimb">
-		<description>您截掉自己的肢体或受感染同伴的肢体。</description>
-		<UITile Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="Y" />
+		<description>你切除自己的一个肢体或受感染同伴的一个肢体。</description>
+		<UITile Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="Y"/>
 	</ability>
 	<ability Command="CommandFlyToggle">
 		<description>
-			<p>你经过地面地形，并且不会受到近战地面生物的攻击。</p>
-			<br />
-			<p>每一轮都有 <stat Name="CrashChance" />% 概率摔倒在地。</p>
-			<br />
-			<p>你只能在地面上飞行。</p>
-		</description>
-		<UITile Tile="Abilities/abil_fly_toggle_off.bmp" Foreground="y" Detail="b" /> 
+			<p>你飞越地面地形，不会被地面生物近战攻击。</p>
+<br/>
+			<p>每回合，有<stat Name="CrashChance"/>% 的几率你会坠落到地面。</p>
+<br/>
+			<p>你只能在地面上方飞行。</p>
+</description>
+		<UITile Tile="Abilities/abil_fly_toggle_off.bmp" Foreground="y" Detail="b"/> 
   </ability>
   <ability Command="CommandSwoopAttack">
 		<description>
-			<p>你俯冲攻击地面上的目标，一回合攻击，一回合返回空中。</p>
-			<br />
-			<p>有 <stat Name="SwoopCrashChance" />% 概率摔倒在地（如果你的攻击被盾牌阻挡，则翻倍）。</p>
-		</description>
-		<UITile Tile="Abilities/abil_swoop.bmp" Foreground="B" Detail="W" /> 
+			<p>你俯冲攻击地面上的目标，用一个回合进行攻击，再用一个回合返回空中。</p>
+<br/>
+			<p>有 <stat Name="SwoopCrashChance"/>% 的几率你会坠落到地面（如果你的攻击被盾牌阻挡，几率翻倍）。</p>
+</description>
+		<UITile Tile="Abilities/abil_swoop.bmp" Foreground="B" Detail="W"/> 
   </ability>
   <ability Command="CommandEndBurrowing">
-    <UITile Tile="Abilities/abil_stop_burrow.bmp" Foreground="w" Detail="W" />
-		<description>你从你的洞穴中出现。</description>
+    <UITile Tile="Abilities/abil_stop_burrow.bmp" Foreground="w" Detail="W"/>
+		<description>你从洞穴中钻出。</description>
   </ability>
   <ability Command="CommandEndDomination">
-    <UITile Tile="Abilities/abil_end_domination.bmp" Foreground="m" Detail="r" />
-		<description>你停止统治这个生物。</description>
+    <UITile Tile="Abilities/abil_end_domination.bmp" Foreground="m" Detail="r"/>
+		<description>你停止支配这个生物。</description>
   </ability>
   <ability Command="ShadeOilPhase">			
 		<description>
-			<p>你可以在短时间内穿越固体物体。</p>
-      <br />
-      <statline Name="Duration" />				
+			<p>你可以短时间穿透实体物体。</p>
+<br/>
+      <statline Name="Duration"/>				
 		</description>
-		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
-		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B"/>
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn"/>
   </ability>
   <ability Command="CommandEndSubmerged">
-    <UITile Tile="Abilities/abil_surface.bmp" Foreground="B" Detail="W" />
+    <UITile Tile="Abilities/abil_surface.bmp" Foreground="B" Detail="W"/>
 		<description>你从藏身之处出现。</description>
   </ability>
-  <!--困难-->
   <ability Command="ActivateFabricateFromSelf">
 		<description>
-			<p>你 <stat Name="FabricateVerb" /> <stat Name="An" /><stat Name="FabricateBlueprint" /> 从 <stat Name="FabricateSource" />.</p>
-      <br/>
-			<statline Name="BatchSize" DisplayName="批量大小" />
-			<statline Name="HitpointsPer" DisplayName="每批次的生命值" />
-			<statline Name="Cooldown" />
+			<p>你 <stat Name="FabricateVerb"/> <stat Name="An"/><stat Name="FabricateBlueprint"/> 从 <stat Name="FabricateSource"/>。</p>
+<br/>
+			<statline Name="BatchSize" DisplayName="批量大小"/>
+			<statline Name="HitpointsPer" DisplayName="每批次的生命值"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_fabricate.bmp" Foreground="C" Detail="W" /> 
+		<UITile Tile="Abilities/abil_fabricate.bmp" Foreground="C" Detail="W"/> 
   </ability>
-
   <ability Command="CommandPlaceMine">
 		<description>
-			<p>你放置 <stat Name="MineAn" /> <stat Name="MineDisplayName" /> 地雷。</p>
-      <br />
-      <statline Name="MineTimer" DisplayName="定时器" Unit="round" HideValue="-1" />
-			<statline Name="Cooldown" Unit="round" />
+			<p>你放置了<stat Name="MineAn"/><stat Name="MineDisplayName"/>地雷。</p>
+<br/>
+      <statline Name="MineTimer" DisplayName="计时器" Unit="round" HideValue="-1"/>
+			<statline Name="Cooldown" Unit="round"/>
 		</description>
-		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" /> 
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W"/> 
   </ability>
   <ability Command="CommandRunOver">
 		<description>
-			<p>你沿直线冲锋，碾压路径上的生物。</p>
-      <br />
-			<statline Name="Damage" />
-			<statline Name="Range" />
-			<statline Name="Knockdown" DisplayName="击倒豁免" />
-			<statline Name="Daze" DisplayName="眩晕豁免" />
+			<p>你沿直线冲锋，撞倒路径上的生物。</p>
+<br/>
+			<statline Name="Damage"/>
+			<statline Name="Range"/>
+			<statline Name="Knockdown" DisplayName="击倒豁免"/>
+			<statline Name="Daze" DisplayName="眩晕豁免"/>
 		</description>
-    <UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B" /> 
+    <UITile Tile="Abilities/abil_run_over.bmp" Foreground="W" Detail="B"/> 
   </ability>
   <ability Command="CommandClone">
-		<description>你复制一个有机生物。</description>
-		<UITile Tile="Abilities/abil_clone.bmp" Foreground="r" Detail="W" /> 
+		<description>你克隆了一个有机生物。</description>
+		<UITile Tile="Abilities/abil_clone.bmp" Foreground="r" Detail="W"/> 
   </ability>
   <ability Command="CommandTinkerTurret">
 		<description>
-      <p>你修理 <stat Name="An" /> <stat Name="TurretName" /> 在相邻空间</p>
-      <br/>
-      <statline Name="Cooldown" />
+      <p>你在相邻的空间中调整了<stat Name="An"/><stat Name="TurretName"/>。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W"/>
 	</ability>
   <ability Command="CommandEngulf">
-    <description>你吞噬了一个相邻的生物，活活地将其消耗掉，甚至可能更多</description>
-    <UITile Tile="Abilities/abil_engulf.bmp" Foreground="G" Detail="W" /> 
+    <description>你吞噬一个相邻的生物，将其活活吞下，可能还有更多。</description>
+    <UITile Tile="Abilities/abil_engulf.bmp" Foreground="G" Detail="W"/> 
   </ability>
   <ability Command="CommandToggleAnchorSpikes">
-		<description>你无法被物理手段强迫移动。</description>
-		<UITile Tile="Abilities/abil_anchor_spikes_toggle_off.bmp" Foreground="y" Detail="r" /> 
-    <UITile Tile="Abilities/abil_anchor_spikes_toggle_on.bmp" Foreground="Y" Detail="w" State="ToggleOn" />		
+		<description>你不能被物理手段强制移动。</description>
+		<UITile Tile="Abilities/abil_anchor_spikes_toggle_off.bmp" Foreground="y" Detail="r"/> 
+    <UITile Tile="Abilities/abil_anchor_spikes_toggle_on.bmp" Foreground="Y" Detail="w" State="ToggleOn"/>		
   </ability>
   <ability Command="CommandToggleAnomalyFumigator">
-		<description>你每回合都会释放出正常气体的云雾。</description>
-    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_off.bmp" Foreground="y" Detail="w" /> 
-    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" /> 
+		<description>你每回合都会释放正常气体的云团。</description>
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_off.bmp" Foreground="y" Detail="w"/> 
+    <UITile Tile="Abilities/abil_anomaly_fumigator_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn"/> 
   </ability>
   <ability Command="CommandCathedraBlackOpal"> 		
 		<description>
-			<p>你撕裂时空，传送到 Qud 的随机位置。</p>
-			<br />				
-			<statline Name="Cooldown" />
+			<p>你撕裂时空，传送到库德的随机位置。</p>
+<br/>				
+			<statline Name="Cooldown"/>
 		</description>						
-		<UITile Tile="Abilities/abil_wormhole.bmp" Foreground="r" Detail="B" /> 
+		<UITile Tile="Abilities/abil_wormhole.bmp" Foreground="r" Detail="B"/> 
   </ability>
   <ability Command="CommandCathedraRuby">
 		<description>
-			<p>你在自己周围产生一个火焰场，造成伤害并点燃物体，持续 3 回合。</p>
-			<br />				
-			<statline Name="Area" />
-			<statline Name="DamageRound1" DisplayName="回合 1 伤害" />
-			<statline Name="DamageRound2" DisplayName="回合 2 伤害" />
-			<statline Name="DamageRound3" DisplayName="回合 3 伤害" />
-			<statline Name="Cooldown" Unit="round" />
+			<p>你在自身周围生成一个热能动力场，造成伤害并使目标燃烧3回合。</p>
+<br/>				
+			<statline Name="Area"/>
+			<statline Name="DamageRound1" DisplayName="回合 1 伤害"/>
+			<statline Name="DamageRound2" DisplayName="回合 2 伤害"/>
+			<statline Name="DamageRound3" DisplayName="回合 3 伤害"/>
+			<statline Name="Cooldown" Unit="round"/>
 		</description>
-		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" /> 
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W"/> 
   </ability>
   <ability Command="CommandCathedraSapphire">
 		<description>
-			<p>你在周围召唤出冲击力场。生物会被从爆炸中心推开，晕倒，并受到最多 3 次重击伤害。</p>
-			<br />				
-			<statline Name="Area" />
-			<statline Name="DamageIncrement" DisplayName="伤害增量" />
-			<statline Name="Cooldown" Unit="round" />
+			<p>你召唤出围绕自身的震荡力。生物会被从爆炸中心推开，陷入眩晕状态，并受到最多3次的钝击伤害。</p>
+<br/>				
+			<statline Name="Area"/>
+			<statline Name="DamageIncrement" DisplayName="伤害增量"/>
+			<statline Name="Cooldown" Unit="round"/>
 		</description>
-		<UITile Tile="Mutations/stunning_force.bmp" Foreground="g" Detail="G" /> 
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="g" Detail="G"/> 
   </ability>
   <ability Command="CommandCathedraWhiteOpal"> 
 		<description>
-			<p>你在自己周围释放出一阵闪光。</p>
-			<br />				
-			<statline Name="Duration" Unit="turn" />				
-			<statline Name="Cooldown" Unit="round" />
+			<p>你释放出一阵光芒四射的闪光。</p>
+<br/>				
+			<statline Name="Duration" Unit="turn"/>				
+			<statline Name="Cooldown" Unit="round"/>
 		</description>
-    <UITile Tile="Items/sw_skin_glitter.bmp" Foreground="M" Detail="Y" />
+    <UITile Tile="Items/sw_skin_glitter.bmp" Foreground="M" Detail="Y"/>
   </ability>
   <ability Command="CommandToggleFireSuppressionSystem">
-		<description>每回合自动释放防火胶，当你着火时生效。</description>
-		<UITile Tile="Abilities/abil_fire_suppression_toggle_off.bmp" Foreground="y" Detail="r" />
-		<UITile Tile="Abilities/abil_fire_suppression_toggle_on.bmp" Foreground="y" Detail="R" />
+		<description>每回合自动释放阻燃凝胶，只要你处于燃烧状态。</description>
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_off.bmp" Foreground="y" Detail="r"/>
+		<UITile Tile="Abilities/abil_fire_suppression_toggle_on.bmp" Foreground="y" Detail="R"/>
   </ability>    
   <ability Command="CommandRecomposite">
 		<description>
-			<p>你可以传送到地图上任何已探索的区域。</p>		
-      <br />		
-			<statline Name="Cooldown" />				
+			<p>你传送到地图上任何已探索的空间。</p>
+<br/>		
+			<statline Name="Cooldown"/>				
 		</description>
-		<UITile Tile="Abilities/abil_recomposite.bmp" Foreground="m" Detail="M" />
+		<UITile Tile="Abilities/abil_recomposite.bmp" Foreground="m" Detail="M"/>
   </ability>
   <ability Command="CommandInflateAxons">
 		<description>			
-			<p>你获得 +<stat Name="QuicknessBonus" /> 速度值，持续 <stat Name="QuicknessDuration" /> 回合，然后变得迟钝，持续 10 回合（-10速度值）。</p>
-			<br />			
-			<statline Name="Cooldown" />
+			<p>你获得 +<stat Name="QuicknessBonus"/> 敏捷度，持续 <stat Name="QuicknessDuration"/> 回合，然后你会变得迟缓 10 回合。</p>
+<br/>			
+			<statline Name="Cooldown"/>
 		</description>
-    <UITile Tile="Items/sw_axions.bmp" Foreground="W" Detail="g" />
+    <UITile Tile="Items/sw_axions.bmp" Foreground="W" Detail="g"/>
   </ability>
   <ability Command="CommandEmergencyRecomposite">
 		<description>			
-			<p>你传送到地图上一个随机的已探索区域。</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>你随机传送到地图上一个已探索的空间。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_emergency_recomposite.bmp" Foreground="m" Detail="M" />
+		<UITile Tile="Abilities/abil_emergency_recomposite.bmp" Foreground="m" Detail="M"/>
   </ability>
   <ability Command="CommandToggleMedassistModule">
     <description>
-      <p>在适当的时候自动应用最多 8 个已装载的注射器。</p>
-      <br />
-      <statline Name="Loadout" />
+      <p>在适当的时候自动使用最多8个已装载的注射器。</p>
+<br/>
+      <statline Name="Loadout"/>
     </description>
-    <UITile Tile="Abilities/abil_medassist_module_toggle_off.bmp" Foreground="y" Detail="r" />
-    <UITile Tile="Abilities/abil_medassist_module_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_medassist_module_toggle_off.bmp" Foreground="y" Detail="r"/>
+    <UITile Tile="Abilities/abil_medassist_module_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn"/>
   </ability>
   <ability Command="CommandToggleCyberNightVision">
-    <description>你可以在黑暗中看见。</description>
-    <UITile Tile="Abilities/abil_night_vision_toggle_off.bmp" Foreground="y" Detail="g" />
-		<UITile Tile="Abilities/abil_night_vision_toggle_on.bmp" Foreground="Y" Detail="G" />
+    <description>你在黑暗中视物如常。</description>
+    <UITile Tile="Abilities/abil_night_vision_toggle_off.bmp" Foreground="y" Detail="g"/>
+		<UITile Tile="Abilities/abil_night_vision_toggle_on.bmp" Foreground="Y" Detail="G"/>
 	</ability>
   <ability Command="CommandToggleNocturnalApex">
     <description>
-      <p>获得 +<stat Name="AgilityBonus" /> 敏捷和 +<stat Name="MovespeedBonus" /> 移动速度，持续 <stat Name="Duration" /> 回合。</p>
-      <br />
-      <statline Name="Cooldown" />      
+      <p>获得 +<stat Name="AgilityBonus"/> 敏捷和 +<stat Name="MovespeedBonus"/> 移动速度，持续 <stat Name="Duration"/> 回合。</p>
+<br/>
+      <statline Name="Cooldown"/>      
     </description>
-    <UITile Tile="Items/sw_nocturnal.bmp" Foreground="b" Detail="C" />
+    <UITile Tile="Items/sw_nocturnal.bmp" Foreground="b" Detail="C"/>
   </ability>
   <ability Command="CommandActivateOnboardRecoilerImprinting">
     <description>
-      <p>带有回缩位置的印记载具。</p>
-      <br />
-      <statline Name="Location" DisplayName="当前位置" />
-      <statline Name="Cooldown" />
+      <p>在机载反弹器上印刻一个可返回的位置。</p>
+<br/>
+      <statline Name="Location" DisplayName="当前位置"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_imprint.bmp" Foreground="B" Detail="W" />
+    <UITile Tile="Abilities/abil_imprint.bmp" Foreground="B" Detail="W"/>
   </ability>
   <ability Command="CommandActivateOnboardRecoilerTeleporter">
     <description>
-      <p>你传送回预设位置。</p>
-      <br />
-      <statline Name="Location" DisplayName="当前位置" />
-      <statline Name="Cooldown" />
+      <p>你传送到已编程的位置。</p>
+<br/>
+      <statline Name="Location" DisplayName="当前位置"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+    <UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W"/>
   </ability>
   <ability Command="CommandTogglePenetratingRadar">
     <description>
-      <p>你在半径为 <stat Name="Radius" /> 的范围内获得完全视野，仅受力场和时空异常的阻碍。</p>
-      <br />
+      <p>你在半径为 <stat Name="Radius"/> 的范围内获得完全视野，仅被力场和时空异常阻挡。</p>
+<br/>
     </description>
-    <UITile Tile="Abilities/abil_penetrating_radar_toggle_off.bmp" Foreground="B" Detail="y" />
-		<UITile Tile="Abilities/abil_penetrating_radar_toggle_on.bmp" Foreground="B" Detail="Y" />
+    <UITile Tile="Abilities/abil_penetrating_radar_toggle_off.bmp" Foreground="B" Detail="y"/>
+		<UITile Tile="Abilities/abil_penetrating_radar_toggle_on.bmp" Foreground="B" Detail="Y"/>
   </ability>
   <ability Command="CommandTogglePhaseHarmonicModulator">
-    <description>你可以与同相和异相的物体和生物互动。</description>
-    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_off.bmp" Foreground="y" Detail="m" />
-    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_on.bmp" Foreground="Y" Detail="m" State="ToggleOn" />
+    <description>你可以与同相和异相的物体及生物互动。</description>
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_off.bmp" Foreground="y" Detail="m"/>
+    <UITile Tile="Abilities/abil_phase_harmonic_modulator_toggle_on.bmp" Foreground="Y" Detail="m" State="ToggleOn"/>
   </ability>
 	<ability Command="AlterHolographicVisage">
-		<description>你改变了你的外貌，获得了与所选阵营的 +200 声望。</description>
-		<UITile Tile="Abilities/abil_alter_visage.bmp" Foreground="C" Detail="B" />
+		<description>你改变了自己的面貌，并获得与所选阵营+200声望。</description>
+		<UITile Tile="Abilities/abil_alter_visage.bmp" Foreground="C" Detail="B"/>
 	</ability>
 	<ability Command="CommandStasisEntangler">		
 		<description>
-			<p>你选择视线中的一个生物。所有其他生物被置入静止场，持续时间为 <stat Name="Duration" />。</p>
-			<br />
-			<statline Name="Cooldown" />			
+			<p>你选择视线内的一个生物。所有其他生物将被置于静止场中，持续时间为 <stat Name="Duration"/>。</p>
+<br/>
+			<statline Name="Cooldown"/>			
 		</description>
-		<UITile Tile="Items/implant_stasis_entangler.bmp" Foreground="r" Detail="C" />
+		<UITile Tile="Items/implant_stasis_entangler.bmp" Foreground="r" Detail="C"/>
 	</ability>
 	<ability Command="CommandTogglePhaseAdaptiveScope">
-		<description>当你用远程武器射击或投掷物品时，你的投射物会转移相位，以穿透障碍物并抵达目标。</description>
-		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_off.bmp" Foreground="y" Detail="y" />
-		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_on.bmp" Foreground="Y" Detail="y" State="ToggleOn" />
+		<description>当你发射远程武器或投掷物品时，你的弹道会改变相位，以穿过障碍物并到达目标。</description>
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_off.bmp" Foreground="y" Detail="y"/>
+		<UITile Tile="Abilities/abil_phase_adaptive_projectiles_toggle_on.bmp" Foreground="Y" Detail="y" State="ToggleOn"/>
 	</ability>
 	<ability Command="CommandFabricateForceKnife">
-		<description>你制造了一把力量刀，造成 1d8 点伤害，其穿透值等于目标的护甲值，并且投掷范围增加 +6。</description>
-		<UITile Tile="Abilities/abil_fabricate_force_knife.bmp" Foreground="C" Detail="B" />
+		<description>你制造了一把力场刀，造成1d8伤害，穿透值等于目标的护甲值，并且投掷范围+6。</description>
+		<UITile Tile="Abilities/abil_fabricate_force_knife.bmp" Foreground="C" Detail="B"/>
 	</ability>
 	<ability Command="ProjectStasisField">
     <description>
-      <p>Creates up to <stat Name="Coverage" /> squares of stasis field that last for <stat Name="Duration" />.</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>生成最多 <stat Name="Coverage"/> 个方格的静止力场，持续时间为 <stat Name="Duration"/>。</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Items/sw_stasis_projector.bmp" Foreground="C" Detail="r" />
+    <UITile Tile="Items/sw_stasis_projector.bmp" Foreground="C" Detail="r"/>
   </ability>
   <ability Command="CommandActivateTetheredRecoilerTeleporter">
     <description>
-      <p>You teleport to the tethered location.</p>
-      <br />
-      <statline Name="Cooldown" />
-      <statline Name="Destination" />
-      <statline Name="TetherStatus" DisplayName="Tether status" />
+      <p>你传送到了绑定的位置。</p>
+<br/>
+      <statline Name="Cooldown"/>
+      <statline Name="Destination"/>
+      <statline Name="TetherStatus" DisplayName="连接状态"/>
     </description>
-		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W" />
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="B" Detail="W"/>
   </ability>
   <ability Command="ActivateAjiConch">
 		<description>
-			<p>You blow into the conch and produce a cone of random gas.</p>
-			<br />			
-			<statline Name="Cooldown" />
+			<p>你对着海螺吹气，产生了一股随机气体。</p>
+<br/>			
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Items/sw_shell_1.bmp" Foreground="r" Detail="K" />
+		<UITile Tile="Items/sw_shell_1.bmp" Foreground="r" Detail="K"/>
   </ability>
 	<ability Command="CommandRecoil">
-		<description>You teleport back to a programmed location.</description>
-		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="y" Detail="g" />
+		<description>你传送到一个已编程的位置。</description>
+		<UITile Tile="Abilities/abil_recoil.bmp" Foreground="y" Detail="g"/>
 	</ability>
   <ability Command="ToggleHologramEmitter">
 		<description>
-			<p>You generate <stat Name="DecoyNumber" /> holographic <stat Name="Decoys" /> of yourself.</p>
-			<br />
-			<p>Decoys move in reflection to you and draw aggro.</p>
-			<statline Name="Range" />
-			<p><stat Name="ChargeDraw" /> charge draw per round.</p>
-		</description>
-		<UITile Tile="Abilities/abil_activate_decoy.bmp" Foreground="B" Detail="b" />
+			<p>你生成 <stat Name="DecoyNumber"/> 个全息 <stat Name="Decoys"/> 分身。</p>
+<br/>
+			<p>分身会根据你的动作移动并吸引仇恨。</p>
+<statline Name="Range"/>
+			<p>每回合吸引 <stat Name="ChargeDraw"/> 点充能。</p>
+</description>
+		<UITile Tile="Abilities/abil_activate_decoy.bmp" Foreground="B" Detail="b"/>
   </ability>
   <ability Command="ToggleForceEmitter">
 		<description>
-			<p>You generate a forcefield around yourself.</p>
-			<br />
-			<p>Creates a 3x3 forcefield centered on yourself.</p>
-			<p>You may fire missile weapons through the forcefield.</p>
-			<p>High charge draw per round.</p>			
-		</description>
-		<UITile Tile="Abilities/abil_force_emitter.bmp" Foreground="B" Detail="C" />
+			<p>你在自己周围生成了一个力场。</p>
+<br/>
+			<p>创建一个以你为中心的3x3力场。</p>
+<p>你可以通过力场发射导弹武器。</p>
+<p>每回合消耗大量能量。</p>
+</description>
+		<UITile Tile="Abilities/abil_force_emitter.bmp" Foreground="B" Detail="C"/>
   </ability>
   <ability Command="CommandQuickenMind">
 		<description>
-			<p>You are quickened with creative energy.</p>
-			<br />
-			<p><stat Name="RefreshDescription" /></p>
-			<statline Name="Cooldown" />
+			<p>你被创造性的能量所激发。</p>
+<br/>
+			<p><stat Name="RefreshDescription"/></p>
+<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_quicken_mind.bmp" Foreground="M" Detail="Y" />
+		<UITile Tile="Abilities/abil_quicken_mind.bmp" Foreground="M" Detail="Y"/>
   </ability>
   <ability Command="ActivateTeleprojector">		
 		<description>
-			<p>You project your mind into an adjacent robot and control its actions while your own body lies dormant.</p>
-			<br />
-			<p>Technological attack vs. a robot.</p>
-			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
-			<p>High charge draw on activate.</p>
-			<p>Low charge draw per round.</p>
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>你将自己的意识投射到一个相邻的机器人中，并在其行动时控制它，而你自己的身体则处于休眠状态。</p>
+<br/>
+			<p>对机器人的科技攻击。</p>
+<p>攻击检定:  <stat Name="Attack"/> 对抗防御者MA + 等级</p>
+<p>激活时高充能消耗。</p>
+<p>每轮低充能消耗。</p>
+<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Items/sw_teleprojector.bmp" Foreground="C" Detail="M" />
+		<UITile Tile="Items/sw_teleprojector.bmp" Foreground="C" Detail="M"/>
   </ability>
   <ability Command="ConfigureTemperatureController">
 		<description>
-			<p>You set a target temperature and are heated or cooled each round until you reach it.</p>
-			<br />
-			<statline Name="TemperatureChange" DisplayName="Temperature change per round" />
-			<statline Name="ChargeUse" DisplayName="Charge use per round" />			
+			<p>你设定一个目标温度，每回合都会被加热或冷却，直到达到该温度。</p>
+<br/>
+			<statline Name="TemperatureChange" DisplayName="每轮温度变化"/>
+			<statline Name="ChargeUse" DisplayName="每轮费用使用"/>			
 		</description>
-		<UITile Tile="Abilities/abil_set_temperature.bmp" Foreground="y" Detail="R" />
+		<UITile Tile="Abilities/abil_set_temperature.bmp" Foreground="y" Detail="R"/>
   </ability>
   <ability Command="ActivatePaxInfection">
 		<description>
-			<p>You puff spore and spread Klanq.</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>你喷出孢子并传播克兰克。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Items/sw_klanq_infection.bmp" Foreground="O" Detail="C" /> 
+		<UITile Tile="Items/sw_klanq_infection.bmp" Foreground="O" Detail="C"/> 
   </ability>
   <ability Command="ActivateSkyshroud">
 		<description>
-			<p>You start dashing in a plume of flame and smoke.</p>
-			<br />
-			<p>While dashing, whenever you move in a direction, you dash toward the nearest enemy or obstacle and perform an attack.</p>
-			<br />
-			<p>For every three spaces you dash, you gain a +2 bonus to hit and a +2 penetration roll bonus to your dash attack.</p>
-			<br />
-			<p>If you do not encounter an enemy or obstacle after twenty spaces, you stop moving.</p>
-			<br />
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>你开始在火焰和烟雾中疾驰。</p>
+<br/>
+			<p>在疾驰过程中，每当你向一个方向移动时，你会冲向最近的敌人或障碍物并发起攻击。</p>
+<br/>
+			<p>每疾驰三个格子，你获得+2命中加值和+2穿透滚动加值，适用于你的疾驰攻击。</p>
+<br/>
+			<p>如果你在移动二十个格子后仍未遇到敌人或障碍物，你将停止移动。</p>
+<br/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Items/sw_jetbackpack.bmp" Foreground="M" Detail="m" />
+		<UITile Tile="Items/sw_jetbackpack.bmp" Foreground="M" Detail="m"/>
   </ability>
   <ability Command="ActivateStopsvalinn">
 		<description>
-			<p>You generate a wall of force that impedes the movement of robots.</p>
-			<br />
-			<p>Creates 3 contiguous spaces of mobile forcefield.</p>
-			<p>Robot movement save: Willpower 18</p>
-			<p>High charge draw per round.</p>
-		</description>
-		<UITile Tile="Items/sw_buckler2.bmp" Foreground="Y" Detail="r" />
+			<p>你生成了一道阻碍机器人移动的力场墙。</p>
+<br/>
+			<p>创建3个连续的空间力场。</p>
+<p>机器人移动豁免: 意志力 18</p>
+<p>每轮消耗大量能量。</p>
+</description>
+		<UITile Tile="Items/sw_buckler2.bmp" Foreground="Y" Detail="r"/>
   </ability>
   <ability Command="CommandBeguileCreature">
 		<description>
-			<p>You beguile an adjacent creature into serving you loyally.</p>
-			<br />
-			<p>Mental attack vs. a creature with a mind.</p>
-			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
-			<p>Beguiled creatures get <stat Name="BonusHP" /> bonus hit points.</p>
-			<statline Name="Cooldown" />
+			<p>你魅惑一个相邻的生物，使其忠心地为你服务。</p>
+<br/>
+			<p>精神攻击，目标为拥有心智的生物。</p>
+<p>攻击检定: <stat Name="Attack"/> vs. 防守者MA + 等级</p>
+<p>被魅惑的生物获得<stat Name="BonusHP"/>额外生命值。</p>
+<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/beguiling.bmp" Foreground="m" Detail="R" />
+		<UITile Tile="Mutations/beguiling.bmp" Foreground="m" Detail="R"/>
   </ability>
   <ability Command="CommandBurgeoning">
     <description>
-      <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
-      <br />
-			<p>Plants vary by mutation rank.</p>
-			<statline Name="Area" />
-			<statline Name="Range" />      
-      <statline Name="Cooldown" />
+      <p>你使附近的区域突然长出植物，阻碍敌人。</p>
+<br/>
+			<p>植物的种类因突变等级而异。</p>
+<statline Name="Area"/>
+			<statline Name="Range"/>      
+      <statline Name="Cooldown"/>
     </description>
-		<UITile Tile="Mutations/burgeoning.bmp" Foreground="g" Detail="G" />
+		<UITile Tile="Mutations/burgeoning.bmp" Foreground="g" Detail="G"/>
   </ability>
   <ability Command="CommandClairvoyance">			
 		<description>
-      <p>You briefly gain vision of a nearby area.</p>
-      <br />
-      <statline Name="VisionRadius" DisplayName="Vision radius"/>
-      <statline Name="VisionDuration" DisplayName="Vision duration" Unit="round" />
-      <statline Name="Cooldown" />
+      <p>你暂时获得附近区域的视野。</p>
+<br/>
+      <statline Name="VisionRadius" DisplayName="视野半径"/>
+      <statline Name="VisionDuration" DisplayName="视力持续时间" Unit="round"/>
+      <statline Name="Cooldown"/>
     </description>
-		<UITile Tile="Mutations/clairvoyance.bmp" Foreground="m" Detail="C" />
+		<UITile Tile="Mutations/clairvoyance.bmp" Foreground="m" Detail="C"/>
   </ability>
   <ability Command="CommandConfuse">
 		<description>
-			<p>You confuse nearby enemies.</p>
-			<br />
-			<p>Affected creatures act semi-randomly and receive a <stat Name="Penalty" /> penalty to their mental abilities.</p>
-			<statline Name="ConeAngle" DisplayName="Cone angle" />
-			<statline Name="ConeLength" DisplayName="Cone length" />
-			<statline Name="Duration" />			
-			<statline Name="Cooldown" />
+			<p>你使附近的敌人陷入混乱。</p>
+<br/>
+			<p>受影响的生物行为变得半随机，并且其精神能力受到<stat Name="Penalty"/>处罚。</p>
+<statline Name="ConeAngle" DisplayName="锥体角度"/>
+			<statline Name="ConeLength" DisplayName="锥体长度"/>
+			<statline Name="Duration"/>			
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/confusion.bmp" Foreground="r" Detail="B" />
+		<UITile Tile="Mutations/confusion.bmp" Foreground="r" Detail="B"/>
   </ability>
   <ability Command="CommandCryokinesis">
 		<description>
-			<p>You chill a nearby area with your mind, dealing damage and freezing things for 3 rounds.</p>
-			<br />
-			<statline Name="Range" />
-			<statline Name="Area" />
-			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
-			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
-			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
-			<statline Name="Cooldown" />
+			<p>你用心灵之力使附近区域变得寒冷，造成伤害并冻结物体3回合。</p>
+<br/>
+			<statline Name="Range"/>
+			<statline Name="Area"/>
+			<statline Name="DamageRound1" DisplayName="回合 1 伤害"/>
+			<statline Name="DamageRound2" DisplayName="回合 2 伤害"/>
+			<statline Name="DamageRound3" DisplayName="回合 3 伤害"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/cryokinesis.bmp" Foreground="b" Detail="B" />
+		<UITile Tile="Mutations/cryokinesis.bmp" Foreground="b" Detail="B"/>
   </ability>
   <ability Command="CommandDisintegration">
 		<description>
-			<p>You disintegrate nearby matter.</p>
-			<br />			
-			<statline Name="Area" />
-			<statline Name="DamageNonStructural" DisplayName="Damage to non-structural objects" />
-			<statline Name="DamageStructural" DisplayName="Damage to structural objects" />
-			<p>You are exhausted for 3 rounds after using this power.</p>
-			<statline Name="Cooldown" />
+			<p>你使附近的物质解体。</p>
+<br/>			
+			<statline Name="Area"/>
+			<statline Name="DamageNonStructural" DisplayName="非结构物体伤害"/>
+			<statline Name="DamageStructural" DisplayName="结构物体伤害"/>
+			<p>使用此能力后，你会在3轮内精疲力尽。</p>
+<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/disintergration.bmp" Foreground="r" Detail="W" />
+		<UITile Tile="Mutations/disintergration.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandDominateCreature">
 		<description>
-			<p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
-			<br />			
-			<p>Mental attack vs. a creature with a mind.</p>
-			<p>Attack roll: <stat Name="Attack" /> vs. defender MA + level</p>
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>你扼住一个相邻生物的心智并控制它的行动，而你自己的身体则处于休眠状态。</p>
+<br/>			
+			<p>对具有心智的生物发动精神攻击。</p>
+<p>攻击检定: <stat Name="Attack"/> 对抗防御者MA + 等级</p>
+<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/domination.bmp" Foreground="w" Detail="M" />
+		<UITile Tile="Mutations/domination.bmp" Foreground="w" Detail="M"/>
   </ability>
   <ability Command="CommandForceBubble">
     <description>
-			<p>You generate a forcefield around yourself.</p>
-			<br />			
-			<p>Creates a 3x3 forcefield centered on yourself.</p>
-			<p>You may fire missile weapons through the forcefield.</p>
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>你生成一个围绕自己的力场。</p>
+<br/>			
+			<p>在自己为中心创建一个3x3的力场。</p>
+<p>你可以通过力场发射导弹武器。</p>
+<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_force_bubble_toggle_off.bmp" Foreground="B" Detail="y" />
-		<UITile Tile="Abilities/abil_force_bubble_toggle_on.bmp" Foreground="B" Detail="Y" State="ToggleOn" />
+		<UITile Tile="Abilities/abil_force_bubble_toggle_off.bmp" Foreground="B" Detail="y"/>
+		<UITile Tile="Abilities/abil_force_bubble_toggle_on.bmp" Foreground="B" Detail="Y" State="ToggleOn"/>
   </ability>
   <ability Command="CommandForceWall">
 		<description>
-			<p>You generate a wall of force that protects you from your enemies.</p>
-			<br />
-			<p>Creates 9 contiguous squares of immobile forcefield.</p>
-			<p>You may fire missile weapons through the forcefield.</p>
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>你生成了一道力场墙，保护自己免受敌人的攻击。</p>
+<br/>
+			<p>创建9个连续的不可移动力场方块。</p>
+<p>你可以通过力场发射远程武器。</p>
+<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/force_wall.bmp" Foreground="B" Detail="y" />
+		<UITile Tile="Mutations/force_wall.bmp" Foreground="B" Detail="y"/>
   </ability>
   <ability Command="CommandKindle">
     <description>
-      <p>You ignite a small fire with your mind.</p>
-      <br />      
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你用意念点燃了一小团火焰。</p>
+<br/>      
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/kindle.bmp" Foreground="y" Detail="R" />
+    <UITile Tile="Mutations/kindle.bmp" Foreground="y" Detail="R"/>
   </ability>
   <ability Command="CommandLeyShift">
     <description>
-      <p>You shift spacetime in the local region.</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>你在局部区域扭曲了时空。</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_ley_shift.bmp" Foreground="m" Detail="G" />
+    <UITile Tile="Abilities/abil_ley_shift.bmp" Foreground="m" Detail="G"/>
   </ability>
   <ability Command="CommandLifeDrain">
     <description>
-      <p>You bond with a nearby organic creature and leech its life force.</p>
-      <br />
-      <p>Mental attack vs. a creature with a mind.</p>
-      <p>Drains <stat Name="HP" /> per round.</p>
-      <p>Target gets a mental save to resist damage each round.</p>
-      <br />
-      <statline Name="Duration" />
-      <statline Name="Cooldown" />
+      <p>你与附近的有机生物建立联系并吸取其生命力。</p>
+<br/>
+      <p>对具有心智的生物发动精神攻击。</p>
+<p>每回合吸取 <stat Name="HP"/> 生命值。</p>
+<p>目标每回合可进行一次精神豁免以抵抗伤害。</p>
+<br/>
+      <statline Name="Duration"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/syphon_vim.bmp" Foreground="m" Detail="M" />
+    <UITile Tile="Mutations/syphon_vim.bmp" Foreground="m" Detail="M"/>
   </ability>
   <ability Command="CommandLase">
     <description>
-      <p>You focus your ambient light into a laser beam.</p>      
-      <p>Temporarily reduces the radius of your ambient light by 1.</p>
-      <br />      
-      <statline Name="LaserDamageInc" DisplayName="Laser damage increment" />
-      <statline Name="LaserPen" DisplayName="Laser penetration" />
+      <p>你将周围的光线汇聚成一束激光。</p>
+<p>暂时减少你周围光线的半径1格。</p>
+<br/>      
+      <statline Name="LaserDamageInc" DisplayName="激光伤害增量"/>
+      <statline Name="LaserPen" DisplayName="激光穿透"/>
     </description>
-    <UITile Tile="Mutations/light_manipulation.bmp" Foreground="Y" Detail="C" />
+    <UITile Tile="Mutations/light_manipulation.bmp" Foreground="Y" Detail="C"/>
   </ability>
   <ability Command="CommandAmbientLight">
     <description>
-      <p>You produce ambient light within a radius of <stat Name="Radius" />.</p>
-      <p>You may focus the light into a laser beam, temporarily reducing the radius by 1.</p>
-      <br />
-      <statline Name="RechargeRate" DisplayName="Ambient light recharge rate" />
+      <p>你在半径为 <stat Name="Radius"/> 的范围内产生环境光。</p>
+<p>你可以将光线聚焦成激光束，暂时减少半径1。</p>
+<br/>
+      <statline Name="RechargeRate" DisplayName="环境光充电率"/>
     </description>
-    <UITile Tile="Abilities/abil_ambient_light_toggle_off.bmp" Foreground="y" Detail="C" />
-		<UITile Tile="Abilities/abil_ambient_light_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_ambient_light_toggle_off.bmp" Foreground="y" Detail="C"/>
+		<UITile Tile="Abilities/abil_ambient_light_toggle_on.bmp" Foreground="Y" Detail="C" State="ToggleOn"/>
   </ability>
   <ability Command="CommandMassMind">
     <description>
-      <p>Refreshes all mental mutations.</p>
-      <p>Each use attracts slightly more attention from psychic interlopers.</p>
-      <br />
-      <statline Name="CooldownNoWillpower" DisplayName="Cooldown" />
-      <p>Cooldown is not affected by Willpower.</p>
-    </description>
-    <UITile Tile="Mutations/mass_mind.bmp" Foreground="B" Detail="W" />
+      <p>刷新所有精神突变。</p>
+<p>每次使用都会稍微吸引更多心灵入侵者的注意。</p>
+<br/>
+      <statline Name="CooldownNoWillpower" DisplayName="冷却"/>
+      <p>冷却时间不受意志力影响。</p>
+</description>
+    <UITile Tile="Mutations/mass_mind.bmp" Foreground="B" Detail="W"/>
   </ability>
   <ability Command="CommandMentalMirror">
     <description>
-      <p>When you suffer a mental attack while Mental Mirror is off cooldown, you gain +<stat Name="BonusMA" /> MA. If the attack then fails to penetrate your MA, it's reflected back at your attacker.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>当你在精神镜像未处于冷却状态时遭受精神攻击，你将获得 +<stat Name="BonusMA"/> 精神抗性 (MA)。如果该攻击未能穿透你的精神抗性 (MA)，它将被反射回攻击者。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/mental_mirror.bmp" Foreground="g" Detail="y" />
+    <UITile Tile="Mutations/mental_mirror.bmp" Foreground="g" Detail="y"/>
   </ability>
   <ability Command="CommandPrecognition">
     <description>
-      <p>You peer into your near future.</p>
-      <br />
-      <p>You may activate this power and then later revert to the point in time when you activated it.</p>
-      <br />
-      <statline Name="Duration" DisplayName="Duration between use and reversion" />
-      <statline Name="Cooldown" />
+      <p>你窥视自己的近期未来。</p>
+<br/>
+      <p>你可以激活这项能力，然后稍后回到激活时的时间点。</p>
+<br/>
+      <statline Name="Duration" DisplayName="使用和恢复之间的持续时间"/>
+      <statline Name="Cooldown"/>
     </description>    
-    <UITile Tile="Mutations/precognition.bmp" Foreground="Y" Detail="M" />
+    <UITile Tile="Mutations/precognition.bmp" Foreground="Y" Detail="M"/>
   </ability>
   <ability Command="CommandPrecognitionRevert">
     <description>
-      <p>Reverts an active precognitive vision to the point in time when the vision began.</p>      
-    </description>
-    <UITile Tile="Abilities/abil_end_vision.bmp" Foreground="y" Detail="M" />
+      <p>将一个活跃的预知幻象回溯到幻象开始的时间点。</p>
+</description>
+    <UITile Tile="Abilities/abil_end_vision.bmp" Foreground="y" Detail="M"/>
   </ability>
   <ability Command="CommandPsychometryMenu">
     <description>
-      <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
-      <br />
-      <p>Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
-      <p>Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" />.</p>
-      <br />
-      <p>To use Psychometry, interact with an artifact and then choose 'read history with Psychometry'.</p>
-    </description>
-    <UITile Tile="Mutations/psychometry.bmp" Foreground="C" Detail="W" />    
+      <p>你通过触摸文物来阅读它们的历史，了解它们的功能和制作方法。</p>
+<br/>
+      <p>准确地识别出复杂度等级达<stat Name="IdentifyComplexity"/>的文物。</p>
+<p>学习如何构建已识别的文物，最高可达复杂度等级<stat Name="ConstructComplexity"/>。</p>
+<br/>
+      <p>要使用灵视，与文物互动后选择‘用灵视读取历史’。</p>
+</description>
+    <UITile Tile="Mutations/psychometry.bmp" Foreground="C" Detail="W"/>    
   </ability>
   <ability Command="CommandPyrokinesis">
 		<description>
-			<p>You heat a nearby area with your mind, dealing damage and setting things on fire for 3 rounds.</p>
-			<br />
-			<statline Name="Range" />
-			<statline Name="Area" />
-			<statline Name="DamageRound1" DisplayName="Round 1 damage" />
-			<statline Name="DamageRound2" DisplayName="Round 2 damage" />
-			<statline Name="DamageRound3" DisplayName="Round 3 damage" />
-			<statline Name="Cooldown" Unit="round" />
+			<p>你用心灵加热附近区域，造成伤害并使物体燃烧3轮。</p>
+<br/>
+			<statline Name="Range"/>
+			<statline Name="Area"/>
+			<statline Name="DamageRound1" DisplayName="回合 1 伤害"/>
+			<statline Name="DamageRound2" DisplayName="回合 2 伤害"/>
+			<statline Name="DamageRound3" DisplayName="回合 3 伤害"/>
+			<statline Name="Cooldown" Unit="round"/>
 		</description>
-		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W" />
+		<UITile Tile="Mutations/pyrokinesis.bmp" Foreground="R" Detail="W"/>
   </ability>  
   <ability Command="CommandSpaceTimeVortex">
     <description>
-      <p>You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.</p>
-      <br />
-      <p>Summons a vortex that swallows everything in its path.</p>
-      <p>You may enter the vortex to teleport to a random location in Qud.<stat Name="BonusDuration" /></p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>你撕裂了时空，使附近的事物通过宇宙结构的裂缝飞散。</p>
+<br/>
+      <p>召唤一个漩涡，吞噬其路径上的一切。</p>
+<p>你可以进入漩涡，传送到Qud的随机位置。<stat Name="BonusDuration"/></p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/spacetime_vortex.bmp" Foreground="B" Detail="m" />
+    <UITile Tile="Mutations/spacetime_vortex.bmp" Foreground="B" Detail="m"/>
   </ability>
   <ability Command="CommandStunningForce">
 		<description>
-			<p>You invoke a concussive force in a nearby area. Creatures are pushed away from the center of blast, stunned, and dealt crushing damage in up to 3 increments.</p>
-			<br />
-			<statline Name="Range" />
-			<statline Name="Area" />
-			<statline Name="DamageIncrement" DisplayName="Damage increment" />				
-			<statline Name="Cooldown" />
+			<p>你在附近区域召唤出一股震荡力。生物被从爆炸中心推开，陷入眩晕状态，并受到最多3次的钝击伤害。</p>
+<br/>
+			<statline Name="Range"/>
+			<statline Name="Area"/>
+			<statline Name="DamageIncrement" DisplayName="伤害增量"/>				
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/stunning_force.bmp" Foreground="w" Detail="W" />
+		<UITile Tile="Mutations/stunning_force.bmp" Foreground="w" Detail="W"/>
   </ability>
   <ability Command="CommandSunderMind">
     <description>
-      <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
-      <br />
-      <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
-      <p>Taking any action other than passing the turn will break the connection.</p>
-      <p>Each round you make a mental attack vs MA.</p>
-      <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
-      <br />
-      <statline Name="DamageIncrement" DisplayName="Damage increment" />
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你摧毁敌人的意识，让他们痛苦不堪。</p>
+<br/>
+      <p>最多持续10轮，你与对手进行心灵战斗，每轮造成伤害。</p>
+<p>除了放弃回合外的任何行动都会中断连接。</p>
+<p>每轮你进行一次精神攻击对抗MA。</p>
+<p>第十轮后，你造成的额外伤害等于迄今为止你所造成的总伤害量。</p>
+<br/>
+      <statline Name="DamageIncrement" DisplayName="伤害增量"/>
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
-    <UITile Tile="Mutations/sunder_mind.bmp" Foreground="w" Detail="R" />
+    <UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B"/>
+    <UITile Tile="Mutations/sunder_mind.bmp" Foreground="w" Detail="R"/>
   </ability>        
   <ability Command="CommandTelepathy">
 		<description>
-			<p>You may communicate with others through the psychic aether.</p>
-			<br />
-			<p>Chat with anyone in vision.</p>
-			<p>Takes you much less time to issue orders to companions.</p>
-		</description>
-		<UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B" />
+			<p>你可以通过心灵以太与其他生物交流。</p>
+<br/>
+			<p>与视野内的任何人聊天。</p>
+<p>向同伴发布命令所需的时间大大减少。</p>
+</description>
+		<UITile Tile="Mutations/telepathy.bmp" Foreground="w" Detail="B"/>
   </ability>
   <ability Command="CommandTeleport">
 		<description>
-			<p>You teleport to a nearby location.</p>
-			<br />
-			<p>Teleport to a random location within a designated area.</p>
-			<statline Name="UncertaintyRadius" DisplayName="Uncertainty radius" />
-			<statline Name="Cooldown" />			
+			<p>你传送到附近的一个位置。</p>
+<br/>
+			<p>传送到指定区域内一个随机位置。</p>
+<statline Name="UncertaintyRadius" DisplayName="不确定度半径"/>
+			<statline Name="Cooldown"/>			
 		</description>
-		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B"/>
   </ability>
 	<ability Command="CommandLeaderTeleport">
 		<description>
-			<p>You teleport to a nearby location near your leader.</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>你传送到领袖附近的一个位置。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B" />
+		<UITile Tile="Mutations/teleportation.bmp" Foreground="b" Detail="B"/>
 	</ability>
   <ability Command="CommandTeleportOther">
 		<description>
-			<p>You teleport an adjacent creature to a random nearby location.</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>你将一个相邻的生物传送到附近的一个随机位置。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/teleport_other.bmp" Foreground="B" Detail="Y" />
+		<UITile Tile="Mutations/teleport_other.bmp" Foreground="B" Detail="Y"/>
   </ability>
   <ability Command="CommandTemporalFugue">
 		<description>
-			<p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
-			<br />
-			<statline Name="Copies" />
-			<statline Name="Duration" />		
-			<statline Name="Cooldown" />
+			<p>你迅速地在时间中来回穿梭，创造出多个自己的分身。</p>
+<br/>
+			<statline Name="Copies"/>
+			<statline Name="Duration"/>		
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="G" />
+		<UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="G"/>
   </ability>
   <ability Command="CommandQuantumFugue">
     <!-- todo:jason -->
     <description>
-      <p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
-      <br />
-      <p>Inhabit the body of the healthiest copy when the effect expires.</p>
-      <statline Name="Copies" />
-      <statline Name="Duration" />
-      <statline Name="Cooldown" />
+      <p>你迅速穿梭于时间之中，创造出多个自己的分身。</p>
+<br/>
+      <p>当效果结束时，占据最健康的分身的身体。</p>
+<statline Name="Copies"/>
+      <statline Name="Duration"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="M" />
+    <UITile Tile="Mutations/temporal_fugue.bmp" Foreground="y" Detail="M"/>
   </ability>
   <ability Command="CommandTimeDilation">
 		<description>
-			<p>You distort time around your person in order to slow down your enemies.</p>
-			<br />
-			<p>Creatures within <stat Name="Range" /> spaces are slowed according to how close they are to you.</p>
-			<p>Distance 1: creatures receive a <stat Name="QuicknessPenalty1" />% Quickness penalty</p>
-			<p>Distance 4: creatures receive a <stat Name="QuicknessPenalty4" />% Quickness penalty</p>
-			<p>Distance 7: creatures receive a <stat Name="QuicknessPenalty7" />% Quickness penalty</p>
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />			
+			<p>你扭曲了周围的时间，以减缓敌人的速度。</p>
+<br/>
+			<p>在<stat Name="Range"/>范围内的生物会根据它们与你的距离而减速。</p>
+<p>距离1: 生物受到<stat Name="QuicknessPenalty1"/>% 敏捷惩罚</p>
+<p>距离4: 生物受到<stat Name="QuicknessPenalty4"/>% 敏捷惩罚</p>
+<p>距离7: 生物受到<stat Name="QuicknessPenalty7"/>% 敏捷惩罚</p>
+<statline Name="Duration"/>
+			<statline Name="Cooldown"/>			
 		</description>
-		<UITile Tile="Mutations/time_dilation.bmp" Foreground="y" Detail="m" />
+		<UITile Tile="Mutations/time_dilation.bmp" Foreground="y" Detail="m"/>
   </ability>
   <ability Command="CommandWillForceStrength">
 		<description>
-			<p>Through sheer force of will, you perform uncanny physical feats.</p>
-			<br />
-			<p>Augment your Strength attribute by an amount equal to twice your Ego bonus.</p>
-      <br />
-			<statline Name="Bonus" DisplayName="Strength bonus" />
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>凭借纯粹的意志力，你完成了不可思议的物理壮举。</p>
+<br/>
+			<p>将你的力量属性提升，提升值等于你自尊奖励的两倍。</p>
+<br/>
+			<statline Name="Bonus" DisplayName="力量加成"/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_boost_strength.bmp" Foreground="C" Detail="R" />
+		<UITile Tile="Abilities/abil_boost_strength.bmp" Foreground="C" Detail="R"/>
   </ability>
   <ability Command="CommandWillForceAgility">
 		<description>
-			<p>Through sheer force of will, you perform uncanny physical feats.</p>
-			<br />
-			<p>Augment your Agility attribute by an amount equal to twice your Ego bonus.</p>
-      <br />
-			<statline Name="Bonus" DisplayName="Agility bonus" />
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>凭借纯粹的意志力，你完成不可思议的物理壮举。</p>
+<br/>
+			<p>将你的敏捷属性提升到等于你的自我值两倍的数量。</p>
+<br/>
+			<statline Name="Bonus" DisplayName="敏捷加成"/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_boost_agility.bmp" Foreground="C" Detail="G" />
+		<UITile Tile="Abilities/abil_boost_agility.bmp" Foreground="C" Detail="G"/>
   </ability>
   <ability Command="CommandWillForceToughness">
 		<description>
-			<p>Through sheer force of will, you perform uncanny physical feats.</p>
-			<br />
-			<p>Augment your Toughness attribute by an amount equal to twice your Ego bonus.</p>
-      <br />
-			<statline Name="Bonus" DisplayName="Toughness bonus" />
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>凭借纯粹的意志力，你能够完成不可思议的物理壮举。</p>
+<br/>
+			<p>增强你的体质属性，增幅等于你自我价值加成的两倍。</p>
+<br/>
+			<statline Name="Bonus" DisplayName="体质加成"/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_boost_toughness.bmp" Foreground="C" Detail="B" />
+		<UITile Tile="Abilities/abil_boost_toughness.bmp" Foreground="C" Detail="B"/>
   </ability>
   <ability Command="CommandSpitAcid">
 		<description>
-			<p>You spit a puddle of corrosive acid.</p>
-			<br />
-			<p>Covers the area in acidic slime.</p>
-			<statline Name="Area" />
-			<statline Name="Range" />
-			<statline Name="Cooldown" />
+			<p>你吐出一滩腐蚀性酸液。</p>
+<br/>
+			<p>该区域被酸性粘液覆盖。</p>
+<statline Name="Area"/>
+			<statline Name="Range"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="G" />
+		<UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="G"/>
   </ability>
   <ability Command="CommandBelchUrchins">
 		<description>
-			<p>You belch forth various urchins in a nearby area.</p>
-			<br />			
-			<statline Name="Amount" DisplayName="Number of urchins" />
-			<statline Name="Range" />
-			<statline Name="Radius" />
-			<statline Name="Cooldown" />
+			<p>你在附近区域喷出各种海胆。</p>
+<br/>			
+			<statline Name="Amount" DisplayName="海胆数量"/>
+			<statline Name="Range"/>
+			<statline Name="Radius"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_belch.bmp" Foreground="g" Detail="W" />
+		<UITile Tile="Abilities/abil_belch.bmp" Foreground="g" Detail="W"/>
   </ability>
   <ability Command="CommandBurrow">
     <description>
-      <p>You can travel underground by burrowing.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>你可以通过挖掘在地下穿行。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_burrow.bmp" Foreground="w" Detail="W" />
+    <UITile Tile="Abilities/abil_burrow.bmp" Foreground="w" Detail="W"/>
   </ability>
   <ability Command="CommandDecarbonizer">
     <description>
-      <p>You extract carbon from living material.</p>
-      <br />
-      <p>Shoots a beam after a 3-round warmup that dismembers the limbs of its targets.</p>
-      <br />
-      <statline Name="BeamDistance" DisplayName="Beam distance" Unit="space" />   
-      <statline Name="Cooldown" />
+      <p>你从活体物质中提取碳元素。</p>
+<br/>
+      <p>在3回合预热后发射一束光束，肢解目标的肢体。</p>
+<br/>
+      <statline Name="BeamDistance" DisplayName="光束距离" Unit="空间"/>   
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_decarbonize.bmp" Foreground="r" Detail="R" />
+    <UITile Tile="Abilities/abil_decarbonize.bmp" Foreground="r" Detail="R"/>
   </ability>
   <ability Command="CommandScintillate">
     <description>
-      <p>You confuse nearby hostile creatures per Confusion rank <stat Name="ConfusionRank"/>.</p>
-      <br />
-      <p>You can't act while scintillating.</p>
-      <br />
-      <statline Name="ConfusionRank" DisplayName="Confusion rank" />
-      <statline Name="Cooldown" />
+      <p>你根据混乱等级<stat Name="ConfusionRank"/>使附近的敌对生物陷入混乱。</p>
+<br/>
+      <p>在闪烁期间你无法行动。</p>
+<br/>
+      <statline Name="ConfusionRank" DisplayName="混乱等级"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_scintillate.bmp" Foreground="W" Detail="Ma" />
+    <UITile Tile="Abilities/abil_scintillate.bmp" Foreground="W" Detail="Ma"/>
   </ability>  
   <ability Command="CommandFearAura">
     <description>
-      <p>You scare creatures around you.</p>
-      <br />
-      <p>You cause adjacent creatures to flee in terror.</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>你使周围的生物感到恐惧。</p>
+<br/>
+      <p>你使相邻的生物因恐惧而逃跑。</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_fear.bmp" Foreground="w" Detail="G" />
+    <UITile Tile="Abilities/abil_fear.bmp" Foreground="w" Detail="G"/>
   </ability>
   <ability Command="CommandStoneGaze">
     <description>
-      <p>You turn things to stone with your gaze.</p>
-      <br />
-      <p>Shoots a beam after a 3-round warmup that tourns your target to stone.</p>
-      <br />
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你用目光将事物石化。</p>
+<br/>
+      <p>经过3回合的准备后发射一束光线，将目标石化。</p>
+<br/>
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="y" Detail="Y" />
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="y" Detail="Y"/>
   </ability>
   <ability Command="CommandCrungleGaze">
     <description>
-      <p>You provoke waking dreams with your gaze.</p>
-      <br />
-      <p>Shoots a beam after a 3-round warmup that sends your target to a waking dream.</p>
-      <br />
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你用目光引发清醒的梦境。</p>
+<br/>
+      <p>经过3回合的准备后发射一道光束，使目标陷入清醒的梦境。</p>
+<br/>
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="b" Detail="B" />
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="b" Detail="B"/>
   </ability>
   <ability Command="CommandIrisdualBeam">
     <description>
-      <p>You molt power beams across the spectrum of light and matter.</p>
-      <br />
-      <p>Fires <stat Name="Beams" /> beams at random enemies every round for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放出横跨光谱和物质的能量束。</p>
+<br/>
+      <p>每回合向随机敌人发射<stat Name="Beams"/>道能量束，持续<stat Name="Duration"/>回合。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="m" Detail="W" />
+    <UITile Tile="Abilities/abil_gaze.bmp" Foreground="m" Detail="W"/>
   </ability>
   <ability Command="CommandInfiltrate">
     <description>      
-      <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>你传送到附近的一个位置，并将半径<stat Name="TeleportRadius"/>内的所有人一起带过去</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_infiltrate.bmp" Foreground="r" Detail="W" />
+    <UITile Tile="Abilities/abil_infiltrate.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandMagneticPulse">
     <description>      
-      <p>After a one-round warmup, you emit a pulse with radius <stat Name="Radius" /> that attempts to pull metal objects toward you, including gear equipped on creatures.</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>经过一轮准备后，你释放一个半径为<stat Name="Radius"/>的脉冲，尝试将金属物体拉向你，包括生物装备的物品。</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_magnetic_pulse.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_magnetic_pulse.bmp" Foreground="y" Detail="r"/>
   </ability>
   <ability Command="CommandMassiveCharge">
     <description>      
-      <p>After a one-round warmup, you launch into a destructive charge, destroying walls and pushing creatures in your path.</p>
-      <br />
-      <statline Name="Distance" DisplayName="Charge distance" />
-      <statline Name="Cooldown" />
+      <p>经过一轮热身之后，你发起破坏性的冲锋，摧毁沿途的墙壁并将生物推开。</p>
+<br/>
+      <statline Name="Distance" DisplayName="冲锋距离"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_charge.bmp" Foreground="R" Detail="Y" />
+    <UITile Tile="Abilities/abil_charge.bmp" Foreground="R" Detail="Y"/>
   </ability>
 	<ability Command="CommandSlog">
 		<description>
-      <p>You spew a pool of liquid from your space into a nearby area.</p>
-      <br />            
-      <statline Name="Range" />
-      <statline Name="Area" />
-      <statline Name="KnockdownChance" DisplayName="Chance to knock opponents down" />
-      <statline Name="Cooldown" />
+      <p>你从自己的空间喷出一池液体到附近区域。</p>
+<br/>            
+      <statline Name="Range"/>
+      <statline Name="Area"/>
+      <statline Name="KnockdownChance" DisplayName="击倒对手概率"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="G" />
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="G"/>
 	</ability>
   <ability Command="CommandSpinWeb">        
     <description>
-      <p>You spin sticky silk webs.</p>
-      <br />
-      <p>While spinning, you leave webs in your wake as you move.</p>
-      <br />
-      <statline Name="SpinDuration" Unit="move action" />
-      <statline Name="Cooldown" />
+      <p>你旋转并吐出黏性的蛛丝。</p>
+<br/>
+      <p>在旋转过程中，你移动时会在身后留下蛛丝。</p>
+<br/>
+      <statline Name="SpinDuration" Unit="move action"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
-		<UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M"/>
+		<UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn"/>
   </ability>
   <ability Command="CommandSpinSimpleWeb">
     <description>
-      <p>You spin sticky silk webs.</p>
-      <br />
-      <p>While spinning, you leave webs in your wake as you move.</p>
-      <br />
-      <statline Name="SpinDuration" Unit="move action" />
-      <statline Name="Cooldown" />
+      <p>你旋转并吐出黏性的蛛丝。</p>
+<br/>
+      <p>在旋转过程中，你移动时会在身后留下蛛丝。</p>
+<br/>
+      <statline Name="SpinDuration" Unit="move action"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M" />
-    <UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_spin_webs_toggle_off.bmp" Foreground="y" Detail="M"/>
+    <UITile Tile="Abilities/abil_spin_webs_toggle_on.bmp" Foreground="Y" Detail="M" State="ToggleOn"/>
   </ability>
   <ability Command="CommandStickyTongue">
     <description>
-      <p>After a one-round warmup, you pull the nearest creature toward you with your tongue.</p>
-      <br />      
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>经过一轮准备后，你用舌头将最近的生物拉向自己。</p>
+<br/>      
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_tongue.bmp" Foreground="r" Detail="W" />
+    <UITile Tile="Abilities/abil_tongue.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandWaveformWorm">
     <description>
-      <p>You dash in a direction, dealing damage to creatures you pass through.</p>
-      <br />
-      <statline Name="Range" />
-      <statline Name="Damage" />
-      <statline Name="Cooldown" />
+      <p>你向一个方向冲刺，对穿过的生物造成伤害。</p>
+<br/>
+      <statline Name="Range"/>
+      <statline Name="Damage"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_waveform_dash.bmp" Foreground="g" Detail="G" />
+    <UITile Tile="Abilities/abil_waveform_dash.bmp" Foreground="g" Detail="G"/>
   </ability>
   <ability Command="CommandBreatherBase">
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_ConfusionBreather">
     <description>
-      <p>You breathe confusion gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出混乱气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="b" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="b" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_CorrosiveBreather">
     <description>
-      <p>You breathe corrosive gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出腐蚀性气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="g" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_FireBreather">
     <description>
-      <p>You breathe fire.</p>
-      <br />
-      <statline Name="Damage" />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你喷出火焰。</p>
+<br/>
+      <statline Name="Damage"/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="R" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="R" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_IceBreather">
     <description>
-      <p>You breathe ice.</p>
-      <br />
-      <statline Name="Damage" />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出寒冰。</p>
+<br/>
+      <statline Name="Damage"/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="C" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="C" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_NormalityBreather">
     <description>
-      <p>You breathe normality gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出常态气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="K" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="K" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_PoisonBreather">
     <description>
-      <p>You breathe poison gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出毒气。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="G" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="G" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_ShameBreather">
     <description>
-      <p>You breathe shame gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出羞愧气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="y" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="y" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_SleepBreather">
     <description>
-      <p>You breathe sleep gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出催眠气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="w" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="w" Detail="W"/>
   </ability>
   <ability Command="CommandBreathe_StunBreather">
     <description>
-      <p>You breathe stun gas.</p>
-      <br />
-      <statline Name="ConeLength" DisplayName="Cone length" Unit="tile" />
-      <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-      <statline Name="Cooldown" />
+      <p>你呼出眩晕气体。</p>
+<br/>
+      <statline Name="ConeLength" DisplayName="锥体长度" Unit="tile"/>
+      <statline Name="ConeAngle" DisplayName="锥体角度" Unit="degree"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="c" Detail="W" />
+    <UITile Tile="Abilities/abil_breathe.bmp" Foreground="c" Detail="W"/>
   </ability> 
   <ability Command="CommandReleaseAdrenaline">
     <description>
-      <p>You increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-      <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" /> rank.</p>
-      <br />      
-      <statline Name="Cooldown" />
+      <p>你增加体内肾上腺素的流动，持续 <stat Name="Duration"/>。</p>
+<p>在此期间，你获得 +<stat Name="QuicknessBonus"/> 敏捷度，并且其他物理变异等级提升 +<stat Name="MutationBonus"/> 级。</p>
+<br/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/adrenal_control.bmp" Foreground="w" Detail="W" />
+    <UITile Tile="Mutations/adrenal_control.bmp" Foreground="w" Detail="W"/>
   </ability>
   <ability Command="CommandDigUp">
-    <description>You dig a passage up.</description>
-    <UITile Tile="Tiles2/sw_stairsup.bmp" Foreground="r" Detail="W" />
+    <description>你挖掘了一条向上的通道。</description>
+    <UITile Tile="Tiles2/sw_stairsup.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandDigDown">
-    <description>You dig a passage down.</description>
-    <UITile Tile="Tiles2/sw_stairsdown.bmp" Foreground="r" Detail="W" />
+    <description>你挖掘了一条向下的通道。</description>
+    <UITile Tile="Tiles2/sw_stairsdown.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandToggleBurrowingClaws">
     <description>
-      <p>You bear spade-like claws that can burrow through the earth.</p>
-      <br />
-      <statline Name="WallPenetration" DisplayName="Claw penetration vs. walls" />
-      <p>Claws destroy walls after 4 penetrating hits.</p>      
-    </description>
-    <UITile Tile="Abilities/abil_burrowing_claws_toggle_off.bmp" Foreground="r" Detail="y" />
-		<UITile Tile="Abilities/abil_burrowing_claws_toggle_on.bmp" Foreground="R" Detail="Y" State="ToggleOn" />
+      <p>你拥有铲形的爪子，可以挖掘穿过大地。</p>
+<br/>
+      <statline Name="WallPenetration" DisplayName="爪穿透 vs. 墙壁"/>
+      <p>爪子在4次穿透攻击后可以摧毁墙壁。</p>
+</description>
+    <UITile Tile="Abilities/abil_burrowing_claws_toggle_off.bmp" Foreground="r" Detail="y"/>
+		<UITile Tile="Abilities/abil_burrowing_claws_toggle_on.bmp" Foreground="R" Detail="Y" State="ToggleOn"/>
   </ability>
   <ability Command="CommandTightenCarapace">
-    <description>You can tighten your <stat Name="CarapaceName" /> to double its AV bonus at a -2 DV penalty as long as you remain still.</description>
-    <UITile Tile="Mutations/carapace.bmp" Foreground="y" Detail="g" />
+    <description>你可以收紧你的<stat Name="CarapaceName"/> to double its AV bonus at a -2 DV penalty as long as you remain still.</description>
+    <UITile Tile="Mutations/carapace.bmp" Foreground="y" Detail="g"/>
   </ability>
   <ability Command="CommandDischarge">
     <description>
-      <p>Discharges all held electrical charge for 1d4 damage per <stat Name="DischargeChunk" /> charge.</p>
-      <p>Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge.</p>
-      <p>Must have at least <stat Name="DischargeChunk" /> charge to activate.</p>
-      <statline Name="CurrentCharge" DisplayName="Current charge" />      
+      <p>释放所有储存的电荷，每 <stat Name="DischargeChunk"/> 个电荷造成 1d4 点伤害。</p>
+<p>电荷可以跳向相邻的目标，造成减少的伤害，最多每个 <stat Name="DischargeChunk"/> 个电荷跳向 1 个目标。</p>
+<p>激活此技能至少需要 <stat Name="DischargeChunk"/> 个电荷。</p>
+<statline Name="CurrentCharge" DisplayName="当前电荷量"/>      
     </description>
-    <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W" />
+    <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W"/>
   </ability>
   <ability Command="CommandToggleProvideCharge">
-    <description>You power equipped devices that have integrated power systems.</description>
-    <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W" />
-		<UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn" />
+    <description>您为配备了集成动力系统的装置提供能量。</description>
+    <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W"/>
+		<UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn"/>
   </ability>
   <ability Command="CommandElectromagneticPulse">
     <description>
-      <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
-      <br />
-      <statline Name="Area" Unit="centered around yourself" />
-      <statline Name="Duration" DisplayName="Disabled duration" Unit="rounds" />
-      <statline Name="Cooldown" />
+      <p>你生成一个电磁脉冲，使附近的文物和机器失效。</p>
+<br/>
+      <statline Name="Area" Unit="以你自己为中心"/>
+      <statline Name="Duration" DisplayName="失效时间" Unit="rounds"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/electromagnetic_pulse.bmp" Foreground="W" Detail="b" />
+    <UITile Tile="Mutations/electromagnetic_pulse.bmp" Foreground="W" Detail="b"/>
   </ability>
   <ability Command="CommandFlamingRay">
     <description>
-      <p><stat Name="EmitText" /></p>
-      <br />
-      <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
-      <statline Name="Damage" />
-      <statline Name="Cooldown" />
+      <p><stat Name="EmitText"/></p>
+<br/>
+      <p>释放一条范围为<stat Name="Range"/>的火焰射线，方向由你选择。</p>
+<statline Name="Damage"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/flaming_ray.bmp" Foreground="w" Detail="R" />
+    <UITile Tile="Mutations/flaming_ray.bmp" Foreground="w" Detail="R"/>
   </ability>
   <ability Command="CommandFrostWebs">
     <description>
-      <p>You fill a nearby area with frosty webs.</p>
-      <br />      
-      <statline Name="Range" />
-      <statline Name="Area" />
-      <statline Name="Cooldown" />
+      <p>你用冰冷的蛛网覆盖了附近区域。</p>
+<br/>      
+      <statline Name="Range"/>
+      <statline Name="Area"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/spinnerets.bmp" Foreground="C" Detail="B" />
+    <UITile Tile="Mutations/spinnerets.bmp" Foreground="C" Detail="B"/>
   </ability>  
   <ability Command="GasGenerationCommandSleepGas">
     <description>
-      <p>You release a burst of sleep gas around yourself</p>
-      <br />
-      <p>Releases sleep gas for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放了一波睡眠气体环绕自身</p>
+<br/>
+      <p>释放睡眠气体持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="w" Detail="Y" />
-		<UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />		
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="w" Detail="Y"/>
+		<UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn"/>		
   </ability>
   <ability Command="GasGenerationCommandNormalityGas">
     <description>
-      <p>You release a burst of normality gas around yourself</p>
-      <br />
-      <p>Releases normality gas for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放了一波常态气体环绕自身</p>
+<br/>
+      <p>释放常态气体持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="K" Detail="y" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="K" Detail="y" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="K" Detail="y"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="K" Detail="y" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandAcidGas">
     <description>
-      <p>You release a burst of corrosive gas around yourself</p>
-      <br />
-      <p>Releases corrosive gas for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放一圈腐蚀气体环绕自己</p>
+<br/>
+      <p>释放腐蚀气体，持续时间为 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="G" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="G" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="G"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="G" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandPlasma">
     <description>
-      <p>You release a burst of plasma around yourself</p>
-      <br />
-      <p>Releases plasma for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放一圈等离子体环绕自身</p>
+<br/>
+      <p>释放等离子体持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="G" Detail="Y" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="G" Detail="Y" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="G" Detail="Y"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="G" Detail="Y" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandDefoliantGas">
     <description>
-      <p>You release a burst of defoliant around yourself</p>
-      <br />
-      <p>Releases defoliant for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放了一波除叶剂环绕自身</p>
+<br/>
+      <p>释放除叶剂持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="W" Detail="w" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="W" Detail="w" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="W" Detail="w"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="W" Detail="w" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandPoisonGas">
     <description>
-      <p>You release a burst of poison gas around yourself</p>
-      <br />
-      <p>Releases poison gas for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放出一团环绕自身的毒气</p>
+<br/>
+      <p>释放毒气，持续时间为 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="k" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="k" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="g" Detail="k"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="g" Detail="k" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandFungicideGas">
     <description>
-      <p>You release a burst of fungicide around yourself</p>
-      <br />
-      <p>Releases fungicide for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放了一波杀菌剂环绕自身</p>
+<br/>
+      <p>释放杀菌剂持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="M" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="M" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="M"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="M" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandConfusionGas">
     <description>
-      <p>You release a burst of confusion gas around yourself</p>
-      <br />
-      <p>Releases confusion gas for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放了一波混乱气体环绕自身</p>
+<br/>
+      <p>释放混乱气体，持续时间为 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="b" Detail="c" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="b" Detail="c" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="b" Detail="c"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="b" Detail="c" State="ToggleOn"/>
   </ability>
   <ability Command="GasGenerationCommandGlitterGas">
     <description>
-      <p>You release a burst of glitter around yourself</p>
-      <br />
-      <p>Releases glitter for <stat Name="Duration" />.</p>
-      <statline Name="Cooldown" />
+      <p>你释放出一阵光芒围绕自己</p>
+<br/>
+      <p>释放光芒持续 <stat Name="Duration"/>。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="C" />
-    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="C" State="ToggleOn" />
+    <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="C"/>
+    <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="C" State="ToggleOn"/>
   </ability>
   
   <ability Command="CommandSpitLiquid">
     <description>
-      <p>You spit a puddle of <stat Name="Liquid" />.</p>
-      <br />
-      <statline Name="Range" />
-      <statline Name="Area" />
-      <statline Name="Cooldown" />
+      <p>你吐出一滩<stat Name="液体"/>。</p>
+<br/>
+      <statline Name="Range"/>
+      <statline Name="Area"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="W" />
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="w" Detail="W"/>
   </ability>
   <ability Command="CommandMetamorphosis">
     <description>
-      <p>You assume the form of any creature you touch.</p>
-      <br />
-      <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>      
-      <statline Name="Cooldown" />
+      <p>你将化身为触碰的任何生物。</p>
+<br/>
+      <p>只能化身等级<stat Name="MaxLevel"/>或更低的生物。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/metamorphosis.bmp" Foreground="w" Detail="G" />
+    <UITile Tile="Mutations/metamorphosis.bmp" Foreground="w" Detail="G"/>
   </ability>  
 	<ability Command="CommandEndMetamorphosis">
-    <description>You stop assuming this creature's form.</description>
-    <UITile Tile="Abilities/abil_end_metamorphosis.bmp" Foreground="w" Detail="r" />
+    <description>你停止假扮这种生物的形态。</description>
+    <UITile Tile="Abilities/abil_end_metamorphosis.bmp" Foreground="w" Detail="r"/>
   </ability>    
   <ability Command="CommandTogglePhase">              
 		<description>
-			<p>You may phase through solid objects for brief periods of time.</p>
-      <br />
-			<statline Name="Duration"></statline>
-			<statline Name="Cooldown"></statline>
+			<p>你可以短时间穿透实体物体。</p>
+<br/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B" />
-		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn" />
+		<UITile Tile="Abilities/abil_phase_toggle_off.bmp" Foreground="y" Detail="B"/>
+		<UITile Tile="Abilities/abil_phase_toggle_on.bmp" Foreground="Y" Detail="B" State="ToggleOn"/>
   </ability>
   <ability Command="CommandBask">
     <description>
-      <p>You bask in sunlight and absort the sun's nourishing rays instead of eating a meal.</p>
-      <br />
-      <p>You gain a special metabolizing effect for <stat Name="DurationDay" />.</p>
-      <br />
-      <statline Name="BonusRegen" DisplayName="Bonus to natural healing rate"/>
-      <statline Name="BonusQuickness" DisplayName="Quickness bonus" />
+      <p>你沐浴在阳光下，吸收太阳滋养的光线，代替进食。</p>
+<br/>
+      <p>你获得一个特殊的代谢效果，持续时间为 <stat Name="DurationDay"/>。</p>
+<br/>
+      <statline Name="BonusRegen" DisplayName="自然治愈率加成"/>
+      <statline Name="BonusQuickness" DisplayName="速度加成"/>
     </description>  
-    <UITile Tile="Mutations/photosynthetic_skin.bmp" Foreground="g" Detail="W" />
+    <UITile Tile="Mutations/photosynthetic_skin.bmp" Foreground="g" Detail="W"/>
   </ability>
   <ability Command="CommandQuillFling">
     <description>
-      <p>You expel 10% of your <stat Name="Quills" /> in a burst around yourself.</p>
-      <p>You regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round.</p>
-      <p>If you drop below half your <stat Name="Quills" />, you lose <stat Name="AVPenalty"/> AV.</p>
-      <br />
-      <p><stat Name="QuillPen" /></p>
-      <p><stat Name="QuillDamage" /></p>
-    </description>  
-    <UITile Tile="Mutations/quills.bmp" Foreground="r" Detail="W" />
+      <p>你以自身为中心向外释放10%的<stat Name="Quills"/>。</p>
+<p>你以每回合大约<stat Name="RegenRate"/>的速度再生<stat Name="Quills"/>。</p>
+<p>如果你的<stat Name="Quills"/>低于一半，你会失去<stat Name="AVPenalty"/>的AV值。</p>
+<br/>
+      <p><stat Name="QuillPen"/></p>
+<p><stat Name="QuillDamage"/></p>
+</description>  
+    <UITile Tile="Mutations/quills.bmp" Foreground="r" Detail="W"/>
   </ability>
   <ability Command="CommandSpitSlime">
     <description>
-      <p>You produce a viscous slime that you can spit at things.</p>
-      <br />
-      <p>Covers an area with slime.</p>
-      <statline Name="Range" />
-      <statline Name="Area" />
-      <statline Name="Cooldown" />
+      <p>你产生了一种粘稠的黏液，可以将其吐向目标。</p>
+<br/>
+      <p>用黏液覆盖一片区域。</p>
+<statline Name="Range"/>
+      <statline Name="Area"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="W" />
+    <UITile Tile="Mutations/slime_glands.bmp" Foreground="g" Detail="W"/>
   </ability>    
   <ability Command="CommandSting">
     <description>
-      <p>You strike with your stinger, automatically hitting, penetrating, and applying your <stat Name="VenomType" /> venom.</p>      
-      <br />
-      <statline Name="StingerPen" DisplayName="Stinger penetration" />
-      <statline Name="StingerDamage" DisplayName="Stinger damage" />
-      <p><switch Name="VenomType">
-        <case Value="paralyzing">Venom paralyzes opponents for <stat Name="Duration" />.</case>
-        <case Value="confusing">Venom confuses opponents for <stat Name="Duration" />.</case>
-        <case Value="poisonous">Venom poisons opponents for <stat Name="Duration" />.</case>
-      </switch></p>
-      <statline Name="Cooldown" />
+      <p>你用尾刺攻击，自动命中，穿透并施加你的<stat Name="VenomType"/>毒液。</p>
+<br/>
+      <statline Name="StingerPen" DisplayName="毒刺穿透力"/>
+      <statline Name="StingerDamage" DisplayName="毒刺伤害"/>
+      <p><switch Name="VenomType">    <case Value="paralyzing">毒液使对手瘫痪<stat Name="Duration"/>。</case>    <case Value="confusing">毒液使对手混乱<stat Name="Duration"/>。</case>    <case Value="poisonous">毒液使对手中毒<stat Name="Duration"/>。</case>   </switch></p>
+<statline Name="Cooldown"/>
     </description>  
-    <UITile Tile="Mutations/stinger.bmp" Foreground="w" Detail="W" />
+    <UITile Tile="Mutations/stinger.bmp" Foreground="w" Detail="W"/>
   </ability>
 	<ability Command="CommandRepellingForce">
     <description>
-      <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
-      <br />
-      <p>Creatures are pushed away from center of blast.</p>      
-      <statline Name="Area" />
-      <statline Name="Cooldown" />
+      <p>你在周围区域召唤出一股排斥力，将敌人推开。</p>
+<br/>
+      <p>生物被从爆炸中心推开。</p>
+<statline Name="Area"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_repel.bmp" Foreground="W" Detail="g" />
+    <UITile Tile="Abilities/abil_repel.bmp" Foreground="W" Detail="g"/>
 	</ability>    
   <ability Command="CommandFreezingRay">
     <description>
-      <p><stat Name="EmitText" /></p>
-      <br />
-      <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
-      <statline Name="Damage" />
-      <statline Name="Cooldown" />
+      <p><stat Name="EmitText"/></p>
+<br/>
+      <p>发出一道范围为<stat Name="Range"/>的霜冻射线，方向由你选择。</p>
+<statline Name="Damage"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B"/>
   </ability>
   <ability Command="CommandPowerSwitch">
 	<!-- UITile is set by code to be the tile of the item the switch is on. -->
-	<description>
-		<stat Name="ItemDescription" />
+	<description><stat Name="ItemDescription"/>
 	</description>
   </ability>
 	<ability Command="CommandFreezeBreath">
 		<description>
-      <p><stat Name="EmitText" /></p>
-      <br />
-      <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
-      <statline Name="Damage" />
-      <statline Name="Cooldown" />
+      <p><stat Name="EmitText"/></p>
+<br/>
+      <p>发出一道范围为<stat Name="Range"/>的霜冻射线，方向由你选择。</p>
+<statline Name="Damage"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B" />
+    <UITile Tile="Mutations/freezing_ray.bmp" Foreground="y" Detail="B"/>
 	</ability>
   <ability Command="CommandDig">
-    <description>Automatically digs from your location to a target location.</description>
-    <UITile Tile="Abilities/abil_dig.bmp" Foreground="w" Detail="Y" />
+    <description>自动从你的位置挖掘到目标位置。</description>
+    <UITile Tile="Abilities/abil_dig.bmp" Foreground="w" Detail="Y"/>
   </ability>
   <ability Command="CommandToggleRunning">
 		<description>
-      <p>You move fast <switch Name="PowerSkate"><case Value="true">and leave behind a fiery exhaust</case><default>for a short duration</default></switch>.</p>  
-      <br />
-      <p><switch Name="Multipler"><case Value="100">Double</case><case Value="200">Triple</case><default>+<stat Name="Multiplier" />%</default></switch> your move speed for <switch Name="PowerSkate"><case Value="true">until you run out of fuel</case><default><stat Name="Duration" /></default></switch>.</p>
-      <switch Name="DV"><case Value="0"></case><default><p><stat Name="DV" /> DV</p></default></switch>
-      <p>-10 to hit in melee combat.</p>
-      <switch Name="MissileAccuracy">
-        <case Value="Pistol"><p>Reduced accuracy with missile weapons, except pistols.</p></case>
-        <case Value=""><p>Reduced accuracy with missile weapons.</p></case>
+      <p>你快速移动<switch Name="PowerSkate"><case Value="true">并留下火焰尾迹</case><default>持续短暂时间</default></switch>。</p>
+<br/>
+      <p><switch Name="Multipler"><case Value="100">双倍</case><case Value="200">三倍</case><default>+<stat Name="Multiplier"/>%</default></switch>你的移动速度<switch Name="PowerSkate"><case Value="true">直到燃料耗尽</case><default><stat Name="Duration"/></default></switch>。</p>
+<switch Name="DV"><case Value="0"/><default><p><stat Name="DV"/> DV</p>
+</default></switch>
+      <p>近战攻击命中率-10。</p>
+<switch Name="MissileAccuracy">
+        <case Value="Pistol"><p>远程武器（手枪除外）的精度降低。</p>
+</case>
+        <case Value=""><p>远程武器的精度降低。</p>
+</case>
       </switch>
-      <p>Sprinting ends early if you take a physical action other than move or pass.</p>			
-      <br />
-			<statline Name="Cooldown" />
+      <p>如果你进行了除移动或等待之外的物理动作，冲刺会提前结束。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_sprint_toggle_off.bmp" Foreground="w" Detail="y" />
-    <UITile Tile="Abilities/abil_sprint_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn" />
+		<UITile Tile="Abilities/abil_sprint_toggle_off.bmp" Foreground="w" Detail="y"/>
+    <UITile Tile="Abilities/abil_sprint_toggle_on.bmp" Foreground="w" Detail="Y" State="ToggleOn"/>
     <tag Name="Skill">Tactics</tag>
   </ability>
   <ability Command="CommandToggleTrashRifling">
 		<description>
-      <p>You rifle through trash, with a <switch Name="RiflingSkills">
-        <case Value="TrashDivining"><stat Name="Chance" />% chance to piece together clues and learn a random secret</case>
-        <case Value="Scavenger">chance to scavenge scrap from the pile</case>
-        <case Value="Scavenger,TrashDivining">chance to scavenge scrap from the pile and a <stat Name="Chance" />% chance to piece together clues and learn a random secret</case>
-        </switch>.</p>
-    </description>
-		<UITile Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="b" Detail="y" />
-		<UITile Tile="Abilities/abil_trash_toggle_on.bmp" Foreground="b" Detail="Y" State="ToggleOn" />
-    <tag Name="Skill">Tinkering</tag>
+      <p>你在垃圾堆里翻找，<switch Name="RiflingSkills">    <case Value="TrashDivining"><stat Name="Chance"/>% 的机会拼凑线索并学习一个随机秘密</case>    <case Value="Scavenger">有机会从垃圾堆中搜刮到废料</case>    <case Value="Scavenger,TrashDivining">有机会从垃圾堆中搜刮到废料，并有 <stat Name="Chance"/>% 的机会拼凑线索并学习一个随机秘密</case>    </switch>。</p>
+</description>
+		<UITile Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="b" Detail="y"/>
+		<UITile Tile="Abilities/abil_trash_toggle_on.bmp" Foreground="b" Detail="Y" State="ToggleOn"/>
+    <tag Name="Skill">Tinker</tag>
   </ability>
   <ability Command="CommandAcrobaticsJump">
-    <UITile Tile="Abilities/abil_jump.bmp" Foreground="g" Detail="G" />
+    <UITile Tile="Abilities/abil_jump.bmp" Foreground="g" Detail="G"/>
 		<description>
-			<p><switch Name="IsRangeIncreased"><case Value="true">You <switch Name="Rocket"><case Value="true">rocket </case></switch>jump into an unoccupied space within range <stat Name="MinimumRange" />-<stat Name="Range" />.</case>
-      <default>You <switch Name="Rocket"><case Value="true">rocket </case></switch>jump into an unoccupied space <stat Name="Range" /> spaces away.</default></switch></p>
-      <switch Name="CanJumpOverCreatures">
-        <case Value="true"><p>You can jump over creatures.</p></case>
-        <default><p>You cannot jump over creatures.</p></default>
+			<p><switch Name="IsRangeIncreased"><case Value="true">你<switch Name="Rocket"><case Value="true">用火箭</case></switch>跳跃到一个未被占据的空间，距离在<stat Name="MinimumRange"/>-<stat Name="Range"/>之间。</case><default>你<switch Name="Rocket"><case Value="true">用火箭</case></switch>跳跃到一个未被占据的空间，距离为<stat Name="Range"/>格。</default></switch></p>
+<switch Name="CanJumpOverCreatures">
+        <case Value="true"><p>你可以跳过生物。</p>
+</case>
+        <default><p>你不能跳过生物。</p>
+</default>
       </switch>      
 		</description>
     <tag Name="Skill">Acrobatics</tag>
   </ability>
   <ability Command="CommandAxeBerserk">
     <description>
-      <p>You enter a blood frenzy, and for <stat Name="Duration" /> your chance to dismember with axe attacks is 100%.</p>
-      <p>Cannot use if Dismember is on cooldown, and using Berserk puts Dismember on cooldown.</p>
-      <p>Must be wielding an axe to activate.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>你进入狂暴状态，在<stat Name="Duration"/>时间内，使用斧头攻击时肢解敌人的几率为100%。</p>
+<p>如果肢解技能处于冷却中，则无法使用此技能，而使用狂暴技能会使肢解技能进入冷却。</p>
+<p>必须手持斧头才能激活此技能。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_berserk.bmp" Foreground="r" Detail="R" />
+    <UITile Tile="Abilities/abil_berserk.bmp" Foreground="r" Detail="R"/>
     <tag Name="Skill">Axe</tag>
   </ability>
   <ability Command="CommandToggleDecapitate">
     <description>
-      <p>Heads are added to the list of possible limbs you can dismember.</p>
-      <p>Chopping off the only head of a creature kills them instantly.</p>
-      <p>If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn; Toughness 35 save).</p>
-    </description>
-    <UITile Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R" />
+      <p>头部被添加到你可以肢解的身体部位列表中。</p>
+<p>斩断生物唯一的头部会立刻杀死它们。</p>
+<p>如果生物有多个头部，它们会开始大量出血（每回合2-3点伤害；韧性35检定）。</p>
+</description>
+    <UITile Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R"/>
     <tag Name="Skill">Axe</tag>
   </ability>
   <ability Command="CommandDismember">
     <description>
-      <p>You make an axe attack against an opponent. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding.</p>
-      <br />
-      <statline Name="BleedDamage" DisplayName="Bleed damage" />
-      <statline Name="BleedSave" DisplayName="Bleed save" />
-      <statline Name="Cooldown" />
+      <p>你对敌人发动一次斧头攻击。如果你命中并穿透了防御，你会随机砍断他们的一个肢体，并使他们开始流血。</p>
+<br/>
+      <statline Name="BleedDamage" DisplayName="流血伤害"/>
+      <statline Name="BleedSave" DisplayName="豁免"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_dismember.bmp" Foreground="W" Detail="r" />
+    <UITile Tile="Abilities/abil_dismember.bmp" Foreground="W" Detail="r"/>
     <tag Name="Skill">Axe</tag>
   </ability>
   <ability Command="CommandAxeHookAndDrag">
     <description>
-      <p>You grab an opponent's limb with the heel of your axe.</p>
-      <p>If successful, whenever you move, you pull your opponent with you and you make a free attack with your axe.</p>
-      <p>Your opponent gets a chance to resist the move and a chance to break free at the start of their turn.</p>      
-      <br />
-      <statline Name="DurationSpecial" />
-      <statline Name="ResistSave" DisplayName="Resist movement / break free save" />
-      <statline Name="Cooldown" />
+      <p>你用斧头的后跟抓住对手的肢体。</p>
+<p>如果成功，无论何时你移动，你都会拉着对手一起移动，并且你会用斧头进行一次免费攻击。</p>
+<p>对手有机会抵抗移动，并且在他们回合开始时有机会挣脱。</p>
+<br/>
+      <statline Name="DurationSpecial"/>
+      <statline Name="ResistSave" DisplayName="抵抗移动/突破自由豁免"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_hook_and_drag.bmp" Foreground="W" Detail="G" />
+    <UITile Tile="Abilities/abil_hook_and_drag.bmp" Foreground="W" Detail="G"/>
     <tag Name="Skill">Axe</tag>
   </ability>
   <ability Command="CommandButcherToggle">
-    <description>You butcher corpses you move over.</description>
-    <UITile Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r" />
-    <UITile Tile="Abilities/abil_butcher_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn" />
+    <description>你屠宰你经过的尸体。</description>
+    <UITile Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r"/>
+    <UITile Tile="Abilities/abil_butcher_toggle_on.bmp" Foreground="Y" Detail="r" State="ToggleOn"/>
     <tag Name="Skill">CookingAndGathering</tag>
   </ability>
   <ability Command="CommandHarvestToggle">
-    <description>You harvest plants you move over.</description>
-    <UITile Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="g" />
-    <UITile Tile="Abilities/abil_harvest_toggle_on.bmp" Foreground="Y" Detail="g" State="ToggleOn" />
+    <description>你采集经过的植物。</description>
+    <UITile Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="g"/>
+    <UITile Tile="Abilities/abil_harvest_toggle_on.bmp" Foreground="Y" Detail="g" State="ToggleOn"/>
     <tag Name="Skill">CookingAndGathering</tag>
   </ability>
   <ability Command="CommandFloorSmash">
     <description>
-      <p>After a 3-round warmup, you launch a slab of fulcrete at the ground, dealing damage and creating a pit in the target square, with a chance for additional pits in adjacent squares.</p>      
-      <br />
-      <statline Name="Range" />            
-      <statline Name="Damage" />
-      <statline Name="AdditionalDirectHitDamage" DisplayName="Additional direct hit damage" />
-      <statline Name="Cooldown" />
+      <p>经过3回合的准备后，你向地面投掷一块富勒克石板，对目标方格造成伤害并制造一个坑洞，同时有几率在相邻方格中生成额外的坑洞。</p>
+<br/>
+      <statline Name="Range"/>            
+      <statline Name="Damage"/>
+      <statline Name="AdditionalDirectHitDamage" DisplayName="额外直接伤害"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_catapult.bmp" Foreground="C" Detail="R" />
+    <UITile Tile="Abilities/abil_catapult.bmp" Foreground="C" Detail="R"/>
   </ability>
   <ability Command="CommandSnapjawHowl">
     <description>
-      <p>You howl and send nearby snapjaws into a frenzy.</p>
-      <br />
-      <statline Name="Radius" DisplayName="Radius of effect" />
-      <statline Name="Duration" />      
-      <statline Name="Cooldown" />
+      <p>你发出咆哮，使附近的咬合颚陷入狂热。</p>
+<br/>
+      <statline Name="Radius" DisplayName="作用半径"/>
+      <statline Name="Duration"/>      
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_howl.bmp" Foreground="w" Detail="C" />
+    <UITile Tile="Abilities/abil_howl.bmp" Foreground="w" Detail="C"/>
   </ability>
   <ability Command="CommandSubmerge">
-    <description>You submerge yourself in a body of water.</description>
-    <UITile Tile="Abilities/abil_submerge.bmp" Foreground="B" Detail="W" />
+    <description>你将自己沉浸在水中。</description>
+    <UITile Tile="Abilities/abil_submerge.bmp" Foreground="B" Detail="W"/>
   </ability>
   <ability Command="CommandConk">
     <description>
-      <p>You make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds.</p>
-      <p>Dazing a dazed opponent stuns them.</p>
-      <p>Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage).</p>      
-      <br />            
-      <statline Name="Cooldown" />
+      <p>你用棍棒攻击相邻的敌人。如果你击中了，你会自动使他们眩晕3-4回合。</p>
+<p>使已经眩晕的敌人再次眩晕会使他们昏迷。</p>
+<p>使已经昏迷的敌人再次昏迷会使他们失去意识30-40回合（失去意识的敌人受到伤害时会醒来并处于眩晕状态）。</p>
+<br/>            
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_conk.bmp" Foreground="W" Detail="B" />
+    <UITile Tile="Abilities/abil_conk.bmp" Foreground="W" Detail="B"/>
     <tag Name="Skill">Cudgel</tag>
   </ability>
   <ability Command="CommandCudgelSlam">
     <description>
-      <p>You make an attack with a cudgel at an adjacent opponent with +1 to your penetration roll.</p>
-      <p>If you hit, you slam your opponent backwards up to <stat Name="Distance" /> spaces, pushing other creatures and breaking through walls if their AVs are less than 5 times your strength modifier.</p>
-      <p>Opponents who get pushed are stunned for 1 round plus an additional round for each space pushed.</p>
-      <p>Opponents who are pushed through or against walls take extra weapon damage for each wall.</p>
-      <p>Gigantic opponents don't get pushed but are still stunned for 1 round.</p>
-      <p>Destroys a wall or door if its AV is under 5 times your Strength modifier.</p>      
-      <br />
-      <statline Name="Cooldown" />
+      <p>你对相邻的对手使用棍棒发动攻击，穿透检定获得+1加值。</p>
+<p>若命中，你会将对手向后击退最多<stat Name="Distance"/>格，推开其他生物并突破墙壁，前提是它们的AV小于你的力量修正值的5倍。</p>
+<p>被击退的对手会被昏迷1轮，每被击退一格额外昏迷1轮。</p>
+<p>被推过或撞到墙壁的对手每撞到一堵墙就会受到额外的武器伤害。</p>
+<p>巨型对手不会被击退，但仍会昏迷1轮。</p>
+<p>若墙壁或门的AV低于你的力量修正值的5倍，则会被摧毁。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_slam.bmp" Foreground="W" Detail="w" />
+    <UITile Tile="Abilities/abil_slam.bmp" Foreground="W" Detail="w"/>
     <tag Name="Skill">Cudgel</tag>
   </ability>
   <ability Command="CommandSmashUp">
     <description>
-      <p>For <stat Name="Duration" />, your chance to daze with cudgel attacks is 100% and Slam has no cooldown.</p>
-      <p>Cannot use if Slam is on cooldown, and using Demolish puts Slam on cooldown.</p>
-      <p>Must be wielding a cudgel to activate.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>在 <stat Name="Duration"/> 内，你使用棍棒攻击使目标眩晕的概率为 100%，并且猛砸没有冷却时间。</p>
+<p>如果猛砸处于冷却状态，则无法使用此技能，且使用摧毁会使猛砸进入冷却状态。</p>
+<p>必须手持棍棒才能激活此技能。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_demolish.bmp" Foreground="w" Detail="R" />
+    <UITile Tile="Abilities/abil_demolish.bmp" Foreground="w" Detail="R"/>
     <tag Name="Skill">Cudgel</tag>
   </ability>
   <ability Command="CommandFlurry">
     <description>
-      <p>You make an attack with every weapon-wielding limb, including extra limbs granted by mutation or technology.</p>      
-      <br />
-      <statline Name="Cooldown" />
+      <p>你用每个持武器的肢体发动攻击，包括因变异或科技获得的额外肢体。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_flurry.bmp" Foreground="W" Detail="g" />
+    <UITile Tile="Abilities/abil_flurry.bmp" Foreground="W" Detail="g"/>
     <tag Name="Skill">Multiweapon_Fighting</tag>
   </ability>  
   <ability Command="CommandStaunchWounds">
-      <UITile Tile="Abilities/abil_staunch_wounds.bmp" Foreground="y" Detail="R" />
+      <UITile Tile="Abilities/abil_staunch_wounds.bmp" Foreground="y" Detail="R"/>
   </ability>
   <ability Command="CommandSingleWeaponFighting">
-		<description>You don't make offhand attacks in exchange for mastery with a single weapon.</description>
-		<UITile Tile="Abilities/abil_single_weapon_fighting_toggle_off.bmp" Foreground="W" Detail="y" />
-    <UITile Tile="Abilities/abil_single_weapon_fighting_toggle_on.bmp" Foreground="W" Detail="Y" State="ToggleOn" />
+		<description>你放弃副手攻击以换取对单一武器的精通。</description>
+		<UITile Tile="Abilities/abil_single_weapon_fighting_toggle_off.bmp" Foreground="W" Detail="y"/>
+    <UITile Tile="Abilities/abil_single_weapon_fighting_toggle_on.bmp" Foreground="W" Detail="Y" State="ToggleOn"/>
     <tag Name="Skill">SingleWeaponFighting</tag>
   </ability>
   <ability Command="CommandHeavyWeaponsSweep">
     <description>
-      <p>You fire <stat Name="Shots" /> shots with your heavy weapon, sweeping over a <stat Name="ConeWidth" /> degree cone. Your heavy weapon is reloaded before each shot.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>你用重型武器发射 <stat Name="Shots"/> 发子弹，覆盖一个 <stat Name="ConeWidth"/> 度的锥形区域。每次射击前都会重新装填重型武器。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_sweep.bmp" Foreground="C" Detail="r" />
+    <UITile Tile="Abilities/abil_sweep.bmp" Foreground="C" Detail="r"/>
     <tag Name="Skill">HeavyWeapons</tag>
   </ability>
   <ability Command="CommandAggressiveStance">    
     <description>
-      <p>While wielding a long blade in your primary hand, you gain +<stat Name="PenBonus" /> to your penetration rolls but -<stat Name="HitPenalty" /> to hit.</p>
-      <br />
-      <p>Stances may also affect other skills.</p>
-    </description>
-    <UITile Tile="Abilities/abil_aggressive_stance_toggle_off.bmp" Foreground="y" Detail="r" />
+      <p>当你在主手装备长刃武器时，你的穿透检定获得+<stat Name="PenBonus"/>加值，但命中检定受到-<stat Name="HitPenalty"/>减值。</p>
+<br/>
+      <p>姿态也可能影响其他技能。</p>
+</description>
+    <UITile Tile="Abilities/abil_aggressive_stance_toggle_off.bmp" Foreground="y" Detail="r"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandDefensiveStance">
     <description>
-      <p>While wielding a long blade in your primary hand, you gain +<stat Name="DVBonus" /> DV.</p>
-      <br />
-      <p>Stances may also affect other skills.</p>
-    </description>
-    <UITile Tile="Abilities/abil_defensive_stance_toggle_off.bmp" Foreground="y" Detail="b" />
+      <p>当你主手装备长刃武器时，你获得 +<stat Name="DVBonus"/> 动态值(DV)。</p>
+<br/>
+      <p>姿态也可能影响其他技能。</p>
+</description>
+    <UITile Tile="Abilities/abil_defensive_stance_toggle_off.bmp" Foreground="y" Detail="b"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandDeathblow">
     <description>
-      <p>For the next <stat Name="Duration" />, Lunge and Swipe have no cooldown.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>在接下来的 <stat Name="Duration"/> 时间内，冲刺和挥砍没有冷却时间。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_engarde.bmp" Foreground="Y" Detail="W" />
+    <UITile Tile="Abilities/abil_engarde.bmp" Foreground="Y" Detail="W"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandDuelingStance">
     <description>
-      <p>While wielding a long blade in your primary hand, you gain +<stat Name="HitBonus" /> to hit.</p>
-      <br />
-      <p>Stances may also affect other skills.</p>
-    </description>
-    <UITile Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="g" />
+      <p>当你主手装备长刃武器时，命中率获得 +<stat Name="HitBonus"/> 的加成。</p>
+<br/>
+      <p>姿态也可能影响其他技能。</p>
+</description>
+    <UITile Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="g"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandLunge">
     <description>      
-      <p>{{W|Aggressive stance}}: Lunges through an empty space at an opponent and attacks with +2 to your penetration roll. You must must through the empty space.</p>
-      <br />
-      <p>{{W|Defensive stance}}: Attacks an opponent then lunges backward 2 spaces.</p>
-      <br />
-      <p>{{W|Dueling stance}}: Attacks an opponent with +1 to your penetration roll. The attack is guaranteed to hit and penetrate at least once.</p>
-      <br />
-      <p>Must be wielding a long blade in your primary hand to use Lunge.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>{{W|攻击姿态}}: 向对手冲刺穿过一个空位并以+2的穿透值进行攻击。你必须穿过这个空位。</p>
+<br/>
+      <p>{{W|防御姿态}}: 攻击对手然后向后退2个格子。</p>
+<br/>
+      <p>{{W|决斗姿态}}: 以+1的穿透值攻击对手。攻击必定命中且至少穿透一次。</p>
+<br/>
+      <p>必须在主手中装备长剑才能使用冲刺。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_lunge.bmp" Foreground="W" Detail="C" />
+    <UITile Tile="Abilities/abil_lunge.bmp" Foreground="W" Detail="C"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandSwipe">
     <description>
-      <p>{{W|Aggressive stance}}: Makes an attack against all adjacent opponents.</p>
-      <br />
-      <p>{{W|Defensive stance}}: Pushes all adjacent creatures back 1 space and attempts to trip oponents. (Strength / Agility save; difficulty 30)</p>
-      <br />
-      <p>{{W|Dueling stance}}: Attacks an opponent and attempts to disarm them (Strength save; difficulty 25 + Agility modifier). The attack is guaranteed to hit and penetrate at least once.</p>
-      <br />
-      <p>Must be wielding a long blade in your primary hand to use Lunge.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>{{W|攻击姿态}}: 对所有相邻的敌人发起攻击。</p>
+<br/>
+      <p>{{W|防御姿态}}: 将所有相邻的生物推开1格并尝试绊倒对手。（力量/敏捷豁免；难度30）</p>
+<br/>
+      <p>{{W|决斗姿态}}: 攻击一个敌人并尝试解除他们的武装（力量豁免；难度25 + 敏捷修正）。攻击必定命中并至少穿透一次。</p>
+<br/>
+      <p>必须在主手中持有一把长剑才能使用突刺。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_swipe.bmp" Foreground="W" Detail="m" />
+    <UITile Tile="Abilities/abil_swipe.bmp" Foreground="W" Detail="m"/>
     <tag Name="Skill">LongBlades</tag>
   </ability>
   <ability Command="CommandPersuasionBerate">
     <description>
-      <p>You shame a nearby creature, giving it -4 to DV, to-hit, Ego, and Willpower, and -10% to Quickness.</p>
-      <br />
-      <statline Name="Duration" />
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你羞辱了附近的一个生物，使其DV、命中、自尊和意志力降低4点，敏捷度降低10%。</p>
+<br/>
+      <statline Name="Duration"/>
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="r" />
+    <UITile Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="r"/>
     <tag Name="Skill">Persuasion</tag>
   </ability>
   <ability Command="CommandIntimidate">
     <description>
-      <p>You terrify adjacent, hostile creatures into fleeing from you for <stat Name="Duration" />.</p>
-      <br />
-      <p>Mental attack vs. creatures with mind.</p>
-      <br />
-      <statline Name="Cooldown" />
+      <p>你使周围的敌对生物因恐惧而逃离你 <stat Name="Duration"/>。</p>
+<br/>
+      <p>精神攻击，针对有意识的生物。</p>
+<br/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m" />
+    <UITile Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"/>
     <tag Name="Skill">Persuasion</tag>
   </ability>
   <ability Command="CommandPersuasionMenacingStare">
     <description>
-      <p>You stare down an opponent and send them fleeing in terror.</p>
-      <br />
-      <p>Mental attack vs. creatures with mind.</p>
-      <br />
-      <statline Name="Range" />
-      <statline Name="Cooldown" />
+      <p>你盯着一个对手，使他们因恐惧而逃跑。</p>
+<br/>
+      <p>精神攻击，对有心智的生物有效。</p>
+<br/>
+      <statline Name="Range"/>
+      <statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_menacing_stare.bmp" Foreground="w" Detail="M" />
+    <UITile Tile="Abilities/abil_menacing_stare.bmp" Foreground="w" Detail="M"/>
     <tag Name="Skill">Persuasion</tag>
   </ability>
   <ability Command="CommandProselytize">
     <description>
-      <p>You persuade an intelligent creature to join you.</p>
-      <br />
-      <p>Ego + character level attack vs. MA + character level</p>
-      <statline Name="Cooldown" />
+      <p>你说服了一个智慧生物加入你。</p>
+<br/>
+      <p>自我 + 角色等级 攻击 vs. 精神防御 + 角色等级</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="G" />
+    <UITile Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="G"/>
     <tag Name="Skill">Persuasion</tag>
   </ability>
   <ability Command="CommandRebukeRobot">
 		<description>
-			<p>You rebuke a robot into wandering away or joining you.</p>
-			<br />			
-			<p>Ego-based attack vs. a robot.</p>			
-			<statline Name="Cooldown" />
+			<p>你斥责一个机器人，使其游荡离开或加入你。</p>
+<br/>			
+			<p>基于自我的攻击，目标为机器人。</p>
+<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_rebuke_robot.bmp" Foreground="y" Detail="C" />
+		<UITile Tile="Abilities/abil_rebuke_robot.bmp" Foreground="y" Detail="C"/>
     <tag Name="Skill">Persuasion</tag>
   </ability>
   <ability Command="CommandToggleAkimbo">
-		<description>Whenever you make a ranged attack while wielding multiple guns, you fire a shot with each of them.</description>
-		<UITile Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="C" />
+		<description>当你持有多把枪械进行远程攻击时，每把枪都会发射一发子弹。</description>
+		<UITile Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="C"/>
     <tag Name="Skill">Pistol</tag>
   </ability>
   <ability Command="CommandPistolEmptyTheClips">
 		<description>
-			<p>Firing a pistol only takes half a round instead of a full round.</p>			
-			<br />
-			<statline Name="Duration" />
-			<statline Name="Cooldown" />
+			<p>使用手枪射击只需半回合，而不是一整个回合。</p>
+<br/>
+			<statline Name="Duration"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_empty_the_clips.bmp" Foreground="C" Detail="W" />
+		<UITile Tile="Abilities/abil_empty_the_clips.bmp" Foreground="C" Detail="W"/>
     <tag Name="Skill">Pistol</tag>
   </ability>
   <ability Command="CommandMarkTarget">
 		<description>
-			<p>You spend a turn to draw a bead on a target and mark it.</p>
-			<br />
-			<p>Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy.</p>
-			<br />
-			<p>You may only mark one target at a time.</p>
-			<br />
-			<p>Targets get unmarked if you lose vision of them.</p>			
-		</description>
-		<UITile Tile="Abilities/abil_mark_target.bmp" Foreground="r" Detail="R" />
+			<p>你花费一个回合瞄准并标记一个目标。</p>
+<br/>
+			<p>当你用弓或步枪射击被标记的目标时，你的敏捷值被视为提高了2点，以确定你的命中率。</p>
+<br/>
+			<p>你一次只能标记一个目标。</p>
+<br/>
+			<p>如果你失去了对目标的视线，目标的标记将消失。</p>
+</description>
+		<UITile Tile="Abilities/abil_mark_target.bmp" Foreground="r" Detail="R"/>
     <tag Name="Skill">Rifles</tag>
   </ability>
   <ability Command="CommandDisciplineMeditate">
 		<description>
-			<p>While meditating, you regenerate three times as fast, and negative status effects wear out three times as fast.</p>
-			<br />
-			<p>The only action you can take while meditating is Wait.</p>
-			<br />
-			<p>You stop meditating if you take damage in a single round exceeding <stat Name="DamageThreshold" />.</p>
-			<br />
-			<p>If you rest for 10 or more turns, you automatically begin meditating.</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>冥想期间，你的恢复速度提高三倍，负面状态效果的持续时间也会缩短三倍。</p>
+<br/>
+			<p>冥想时，你唯一能采取的行动是等待。</p>
+<br/>
+			<p>如果你在单轮中受到的伤害超过<stat Name="DamageThreshold"/>，则会停止冥想。</p>
+<br/>
+			<p>如果你休息10回合或更长时间，你会自动开始冥想。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_meditate.bmp" Foreground="w" Detail="b" />
+		<UITile Tile="Abilities/abil_meditate.bmp" Foreground="w" Detail="b"/>
     <tag Name="Skill">Discipline</tag>
   </ability>
   <ability Command="CommandShieldWall">
     <description>
-			<p>For the next three rounds, you automatically block all incoming melee attacks.</p>
-			<br />
-			<p>Cannot be used with bucklers.</p>
-      <statline Name="Cooldown" />
+			<p>接下来的三轮中，你将自动阻挡所有近战攻击。</p>
+<br/>
+			<p>不能与小圆盾一起使用。</p>
+<statline Name="Cooldown"/>
     </description>
-    <UITile Tile="Abilities/abil_shield_wall.bmp" Foreground="C" Detail="W" />
+    <UITile Tile="Abilities/abil_shield_wall.bmp" Foreground="C" Detail="W"/>
     <tag Name="Skill">Shield</tag>
   </ability>
   <ability Command="CommandShieldSlam">					
 		<description>
-			<p>You knock an opponent down with your shield and deal them damage.</p>
-      <br />
-      <p>Whenever you charge an opponent with a shield equipped, you get a free Shield Slam attack against them.</p>
-			<br />			
-			<statline Name="Damage" />
-			<statline Name="KnockdownSave" DisplayName="Knockdown save" />
-			<statline Name="Cooldown" />			
+			<p>你用盾牌击倒对手并对其造成伤害。</p>
+<br/>
+      <p>当你装备盾牌并对对手发动冲锋时，你可以对它们进行一次免费的盾牌猛击攻击。</p>
+<br/>			
+			<statline Name="Damage"/>
+			<statline Name="KnockdownSave" DisplayName="击倒豁免"/>
+			<statline Name="Cooldown"/>			
 		</description>
-		<UITile Tile="Abilities/abil_shield_slam.bmp" Foreground="C" Detail="R" />
+		<UITile Tile="Abilities/abil_shield_slam.bmp" Foreground="C" Detail="R"/>
     <tag Name="Skill">Shield</tag>
   </ability>
   <ability Command="CommandHobble">
 		<description>
-			<p>You make an attack with a short blade in your primary hand, looking for a weak spot in your opponent's armor. If you hit, you penetrate exactly once and hobble them.</p>
-			<br />
-			<statline Name="HobbleEffect" DisplayName="Hobble effect" />
-			<statline Name="HobbleDuration" DisplayName="Hobble duration" Unit="round" />			
-			<statline Name="Cooldown" />
+			<p>你使用主手的短刃发起攻击，寻找对手盔甲上的弱点。如果你命中，你会穿透一次并使他们蹒跚。</p>
+<br/>
+			<statline Name="HobbleEffect" DisplayName="蹒跚效应"/>
+			<statline Name="HobbleDuration" DisplayName="蹒跚持续时间" Unit="round"/>			
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_hobble.bmp" Foreground="g" Detail="W" />
+		<UITile Tile="Abilities/abil_hobble.bmp" Foreground="g" Detail="W"/>
     <tag Name="Skill">ShortBlades</tag>
   </ability>
   <ability Command="CommandToggleRejoinder">
-		<description>Once per round, when an opponent misses you with a melee attack, there's a 40% chance you make a free attack with a short blade you're wielding.</description>
-		<UITile Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="w" />
+		<description>每回合一次，当对手用近战攻击你时若未命中，你有40%的几率使用手中持有的短刃进行一次免费攻击。</description>
+		<UITile Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="w"/>
     <tag Name="Skill">ShortBlades</tag>
   </ability>
   <ability Command="CommandShank">
 		<description>
-			<p>You make a melee attack with a short blade in either your primary hand (preferred) or offhand. If you hit, the attack gets +2 to penetration rolls for each negative status effect your opponent suffers from.</p>
-			<br />			
-			<statline Name="PrimaryHandCooldown" DisplayName="Primary hand cooldown" Unit="round" />
-			<statline Name="OffhandCooldown" DisplayName="Offhand cooldown" Unit="round" />			
+			<p>你使用主手（优先）或副手的短刃进行近战攻击。如果命中，每次对手处于负面状态都会使攻击的穿透力+2。</p>
+<br/>			
+			<statline Name="PrimaryHandCooldown" DisplayName="主手冷却时间" Unit="round"/>
+			<statline Name="OffhandCooldown" DisplayName="副手冷却时间" Unit="round"/>			
 		</description>
-		<UITile Tile="Abilities/abil_shank.bmp" Foreground="W" Detail="m" />
+		<UITile Tile="Abilities/abil_shank.bmp" Foreground="W" Detail="m"/>
     <tag Name="Skill">ShortBlades</tag>
   </ability>
   <ability Command="CommandSurvivalCamp">
 		<description>
-			<p>You start a campfire for cooking meals and preserving foods.</p>
-			<br />
-			<p>You can't make camp while in combat.</p>
-		</description>
-		<UITile Tile="Items/sw_campfire.bmp" Foreground="w" Detail="R" />
+			<p>你生起了一堆篝火，用于烹饪食物和保存食物。</p>
+<br/>
+			<p>在战斗中无法扎营。</p>
+</description>
+		<UITile Tile="Items/sw_campfire.bmp" Foreground="w" Detail="R"/>
     <tag Name="Skill">Survival</tag>
   </ability>
   <ability Command="CommandMeleeCharge">
 		<description>
-			<p>You charge forward and make a melee attack with +1 to your penetration roll.</p>
-			<br />
-			<statline Name="Range" Unit="spaces" />
-			<statline Name="Cooldown" />
+			<p>你向前冲锋并进行一次近战攻击，穿甲检定+1。</p>
+<br/>
+			<statline Name="Range" Unit="spaces"/>
+			<statline Name="Cooldown"/>
 		</description>
-		<UITile Tile="Abilities/abil_charge.bmp" Foreground="W" Detail="r" />
+		<UITile Tile="Abilities/abil_charge.bmp" Foreground="W" Detail="r"/>
     <tag Name="Skill">Tactics</tag>
   </ability>
   <ability Command="CommandTacticsJuke">		
 		<description>
-			<p>You move one space at no action cost, swapping spaces if there's a creature in the target space. </p>
-			<br />
-			<p>You can swap spaces with hostile creatures.</p>
-			<br />
-			<statline Name="Cooldown" />
+			<p>你无需消耗行动点即可移动一个格子，如果有生物在目标格子，则会交换位置。</p>
+<br/>
+			<p>你可以与敌对生物交换位置。</p>
+<br/>
+			<statline Name="Cooldown"/>
 		</description>		
-		<UITile Tile="Abilities/abil_juke.bmp" Foreground="b" Detail="B" />
+		<UITile Tile="Abilities/abil_juke.bmp" Foreground="b" Detail="B"/>
     <tag Name="Skill">Tactics</tag>
   </ability>
   <ability Command="CommandDeployTurret">
-		<description>You deploy a missile weapon as a static turret and supply it with ammo.</description>
-		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W" />
+		<description>你部署了一个导弹武器作为静态炮台，并为其提供弹药。</description>
+		<UITile Tile="Abilities/abil_deploy_turret.bmp" Foreground="g" Detail="W"/>
     <tag Name="Skill">Tinkering</tag>
   </ability>
   <ability Command="CommandLayMine">
-		<description>You deploy a grenade as a mine.</description>
-		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W" />
+		<description>你部署了一颗手雷作为地雷。</description>
+		<UITile Tile="Abilities/abil_lay_mine.bmp" Foreground="R" Detail="W"/>
     <tag Name="Skill">Tinkering</tag>
 	</ability>
   <ability Command="CommandLayMineTimed">
-		<description>You deploy a grenade as a timed bomb.</description>
-		<UITile Tile="Abilities/abil_set_bomb.bmp" Foreground="B" Detail="W" />
+		<description>你部署了一颗定时炸弹。</description>
+		<UITile Tile="Abilities/abil_set_bomb.bmp" Foreground="B" Detail="W"/>
     <tag Name="Skill">Tinkering</tag>
 	</ability>
   <ability Command="CommandRechargeObject">
-		<description>You recharge an energy cell or capacitor with tinkering bits.</description>
-		<UITile Tile="Abilities/abil_recharge.bmp" Foreground="C" Detail="W" />
+		<description>您使用修补组件为能量电池或电容器充电。</description>
+		<UITile Tile="Abilities/abil_recharge.bmp" Foreground="C" Detail="W"/>
     <tag Name="Skill">Tinkering</tag>
   </ability>
   <ability Command="CommandReleaseVehicle">
-		<description>You exit the pilot seat of the vehicle you're in.</description>
-		<UITile Tile="Abilities/abil_exit_seat.bmp" Foreground="w" Detail="W" />
+		<description>你从所驾驶的载具的驾驶员座位上离开。</description>
+		<UITile Tile="Abilities/abil_exit_seat.bmp" Foreground="w" Detail="W"/>
   </ability>
 	<ability Command="CommandSeatEject">
-		<description>You and your seated companions are forcefully ejected out of the vehicle you're in.</description>
-		<UITile Tile="Abilities/abil_eject.bmp" Foreground="r" Detail="W" />
+		<description>你和你的乘坐同伴被强行从你们所在的车辆中弹出。</description>
+		<UITile Tile="Abilities/abil_eject.bmp" Foreground="r" Detail="W"/>
 	</ability>
 
 </activatedabilities>

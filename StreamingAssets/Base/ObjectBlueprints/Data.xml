@@ -227,7 +227,7 @@
     <tag Name="Units" Value="CookingDomainArtifact_UnitPsychometry"/>
     <tag Name="Triggers" Value="CookingDomainArtifact_OnIdentify"/>
     <tag Name="Actions" Value="CookingDomainArtifact_IdentifyAllInZone_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="artifact-based"/>
+    <tag Name="Description" Value="基于文物的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -236,13 +236,13 @@
     <tag Name="Units" Value="ProceduralCookingEffectUnit_LessThirst"/>
     <tag Name="Triggers" Value="OnDrinkWaterProceduralCookingTrigger"/>
     <tag Name="Actions" Value="NoThirst_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="water and thirst-based"/>
+    <tag Name="Description" Value="水和基于口渴的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_secrets" Inherits="IngredientMapping">
-    <tag Name="Description" Value="secret-based"/>
+    <tag Name="Description" Value="基于秘密的"/>
     <tag Name="Units" Value="CookingDomainSecrets_RevealSecrets"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
@@ -250,7 +250,7 @@
 
   <object Name="ProceduralCookingIngredient_darkness" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainDarkness_UnitDV"/>
-    <tag Name="Description" Value="darkness-based"/>
+    <tag Name="Description" Value="基于黑暗的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -259,14 +259,14 @@
     <tag Name="Units" Value="CookingDomainArmor_UnitAV"/>
     <tag Name="Triggers" Value="CookingDomainArmor_OnPenetration"/>
     <tag Name="Actions" Value="CookingDomainArmor_LargeAVBuff_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="armor-based"/>
+    <tag Name="Description" Value="基于护甲的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_plantMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationLowTier,CookingDomainPlant_UnitBurgeoningLowTier"/>
-    <tag Name="Description" Value="simple plant-based"/>
+    <tag Name="Description" Value="简单的植物基"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
@@ -275,7 +275,7 @@
     <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationHighTier,CookingDomainPlant_UnitBurgeoningHighTier"/>
     <tag Name="Triggers" Value="CookingDomainPlant_OnDamageByPlant"/>
     <tag Name="Actions" Value="CookingDomainPlant_BurgeoningHighTier_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="powerful plant-based"/>
+    <tag Name="Description" Value="强大的植物基"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -284,7 +284,7 @@
     <tag Name="Units" Value="CookingDomainElectric_ElectricalGenerationUnit,CookingDomainElectric_EMPUnit,CookingDomainElectric_ResistUnit"/>
     <tag Name="Triggers" Value="CookingDomainElectric_OnDealingElectricDamage"/>
     <tag Name="Actions" Value="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction,CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction,CookingDomainElectric_SmallElectricResist_ProceduralCookingTriggeredAction,CookingDomainElectric_LargeElectricResist_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="electric-based"/>
+    <tag Name="Description" Value="基于电能的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="2"/>
   </object>
@@ -293,7 +293,7 @@
     <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitResist"/>
     <tag Name="Triggers" Value="CookingDomainCold_OnSlowedByCold,CookingDomainCold_OnDealingColdDamage"/>
     <tag Name="Actions" Value="CookingDomainCold_FreezingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainCold_CryokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainCold_ColdResist_ProceduralCookingTriggeredAction,CookingDomainCold_LargeColdResist_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="cold-based"/>
+    <tag Name="Description" Value="基于寒冷的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="2"/>
   </object>
@@ -302,7 +302,7 @@
     <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitResist"/>
     <tag Name="Triggers" Value="CookingDomainHeat_OnEnflamed,CookingDomainHeat_OnDealingHeatDamage"/>
     <tag Name="Actions" Value="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_PyrokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_HeatResist_ProceduralCookingTriggeredAction,CookingDomainHeat_LargeHeatResist_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="heat and fire-based"/>
+    <tag Name="Description" Value="热能和火焰基础的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="2"/>
   </object>
@@ -311,7 +311,7 @@
     <tag Name="Units" Value="CookingDomainLove_UnitEgo,CookingDomainLove_UnitBeguiling"/>
     <tag Name="Triggers" Value="CookingDomainLove_OnGainFollower"/>
     <tag Name="Actions" Value="CookingDomainLove_BeguilingCharge_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="love and loyalty-based"/>
+    <tag Name="Description" Value="基于爱与忠诚"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -320,7 +320,7 @@
     <tag Name="Units" Value="CookingDomainTeleport_UnitBlink,CookingDomainTeleport_UnitTeleportOther"/>
     <tag Name="Triggers" Value="CookingDomainTeleport_OnTeleport"/>
     <tag Name="Actions" Value="CookingDomainTeleport_Teleport_ProceduralCookingTriggeredAction,CookingDomainTeleport_MassTeleportOther_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="teleport-based"/>
+    <tag Name="Description" Value="基于传送的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="2"/>
   </object>
@@ -329,7 +329,7 @@
     <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit"/>
     <tag Name="Triggers" Value="CookingDomainRegenLowtier_OnDamaged,CookingDomainRegenLowtier_OnSalve"/>
     <tag Name="Actions" Value="CookingDomainLowtierRegen_HealToFull_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_StopBleeding_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_RemoveDebuff_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="regeneration and healing-based"/>
+    <tag Name="Description" Value="再生和治疗为基础的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
@@ -338,7 +338,7 @@
     <tag Name="Units" Value="CookingDomainRegenHightier_RegenerationUnit"/>
     <tag Name="Triggers" Value="CookingDomainRegenHightier_OnDamaged,CookingDomainRegenLowtier_OnSalve"/>
     <tag Name="Actions" Value="CookingDomainHightierRegen_Heal40to50_ProceduralCookingTriggeredAction,CookingDomainHightierRegen_RemoveDebuff_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="powerful regeneration and healing-based"/>
+    <tag Name="Description" Value="强大的再生和治疗能力"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -347,14 +347,14 @@
     <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit"/>
     <tag Name="Triggers" Value="CookingDomainMedicinal_OnEatYuckwheat,CookingDomainMedicinal_OnDrinkHoney"/>
     <tag Name="Actions" Value="CookingDomainMedicinal_RemoveIll_ProceduralCookingTriggeredAction,CookingDomainMedicinal_RemoveDiseaseOnset_ProceduralCookingTriggeredAction,CookingDomainMedicinal_DiseaseImmunity_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="disease prevention and curing-based"/>
+    <tag Name="Description" Value="基于疾病预防和治疗的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_acid" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas"/>
-    <tag Name="Description" Value="acid-based"/>
+    <tag Name="Description" Value="酸基"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -363,7 +363,7 @@
     <tag Name="Units" Value="CookingDomainFungus_FungusReputationUnit,CookingDomainFungus_FungusResistUnit"/>
     <tag Name="Triggers" Value="CookingDomainFungus_OnItchy,CookingDomainFungus_OnEatFungus"/>
     <tag Name="Actions" Value="CookingDomainFungus_SporeImmunity_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="fungus-based"/>
+    <tag Name="Description" Value="基于真菌的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -372,7 +372,7 @@
     <tag Name="Units" Value="CookingDomainPhase_UnitPhasing,CookingDomainPhase_UnitPhaseOnDamage,CookingDomainPhase_UnitDoublePhaseDuration"/>
     <tag Name="Triggers" Value="CookingDomainPhase_OnPhaseIn,CookingDomainPhase_OnPhaseOut"/>
     <tag Name="Actions" Value="CookingDomainPhase_Phase_ProceduralCookingTriggeredAction,CookingDomainPhase_NoPhase_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="phasing-based"/>
+    <tag Name="Description" Value="基于相位的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="2"/>
   </object>
@@ -381,7 +381,7 @@
     <tag Name="Units" Value="CookingDomainHP_UnitHP"/>
     <tag Name="Triggers" Value="CookingDomainHP_OnDamaged,CookingDomainHP_OnLowHealth"/>
     <tag Name="Actions" Value="CookingDomainHP_HealToFull_ProceduralCookingTriggeredAction,CookingDomainHP_IncreaseHP_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="HP-based"/>
+    <tag Name="Description" Value="基于HP"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -390,7 +390,7 @@
     <tag Name="Units" Value="CookingDomainReflect_UnitReflectDamageHighTier"/>
     <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamageHighTier,CookingDomainReflect_OnDamagedHighTier"/>
     <tag Name="Actions" Value="CookingDomainReflect_Reflect100HighTier_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="powerful damage reflection-based"/>
+    <tag Name="Description" Value="强大的伤害反射型"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -399,14 +399,14 @@
     <tag Name="Units" Value="CookingDomainReflect_UnitQuills,CookingDomainReflect_UnitReflectDamage"/>
     <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamage,CookingDomainReflect_OnDamaged"/>
     <tag Name="Actions" Value="CookingDomainReflect_QuillBurst_ProceduralCookingTriggeredAction,CookingDomainReflect_Reflect100_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="damage reflection-based"/>
+    <tag Name="Description" Value="基于反射伤害的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_willpower" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainWillpower_UnitWillpower"/>
-    <tag Name="Description" Value="simple Willpower-based"/>
+    <tag Name="Description" Value="简单的意志力基础"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -415,14 +415,14 @@
     <tag Name="Units" Value="CookingDomainStrength_UnitStrength,CookingDomainFear_UnitIntimidate"/>
     <tag Name="Triggers" Value="CookingDomainHP_OnDamagedMidTier,CookingDomainHP_OnLowHealthMidTier"/>
     <tag Name="Actions" Value="CookingDomainStrength_LargeStrengthBuff_ProceduralCookingTriggeredAction,CookingDomainStrength_DismemberOrSlam_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="Strength-based"/>
+    <tag Name="Description" Value="力量型"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_burrowing" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBurrowing_UnitBurrowingClaws"/>
-    <tag Name="Description" Value="burrowing-based"/>
+    <tag Name="Description" Value="基于挖掘的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -431,7 +431,7 @@
     <tag Name="Units" Value="CookingDomainAgility_UnitAgility"/>
     <tag Name="Triggers" Value="CookingDomainAgility_OnPerformCriticalHit"/>
     <tag Name="Actions" Value="CookingDomainAgility_LargeAgilityBuff_ProceduralCookingTriggeredAction,CookingDomainAgility_Shank_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="Agility-based"/>
+    <tag Name="Description" Value="基于敏捷性"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -440,230 +440,230 @@
     <tag Name="Units" Value="CookingDomainFear_UnitBonusMA,CookingDomainFear_UnitIntimidate"/>
     <tag Name="Actions" Value="CookingDomainFear_Intimidate_ProceduralCookingTriggeredAction,CookingDomainFear_FearImmunity_ProceduralCookingTriggeredAction"/>
     <tag Name="Triggers" Value="CookingDomainFear_OnFeared,CookingDomainFear_OnEatLah"/>
-    <tag Name="Description" Value="fear-based"/>
+    <tag Name="Description" Value="基于恐惧的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_fireBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire5"/>
-    <tag Name="Description" Value="fire-breathing"/>
+    <tag Name="Description" Value="喷火"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderFireBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire10"/>
-    <tag Name="Description" Value="powerful fire-breathing"/>
+    <tag Name="Description" Value="强大的喷火"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_iceBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce5"/>
-    <tag Name="Description" Value="ice-breathing"/>
+    <tag Name="Description" Value="冰息"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderIceBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce10"/>
-    <tag Name="Description" Value="powerful ice-breathing"/>
+    <tag Name="Description" Value="强大的冰息"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_corrosiveGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas5"/>
-    <tag Name="Description" Value="corrosive gas-breathing"/>
+    <tag Name="Description" Value="腐蚀气体呼吸者"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderCorrosiveGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas10"/>
-    <tag Name="Description" Value="powerful corrosive gas-breathing"/>
+    <tag Name="Description" Value="强大的腐蚀性气体呼吸"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_sleepGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas5"/>
-    <tag Name="Description" Value="sleep gas-breathing"/>
+    <tag Name="Description" Value="睡眠气体-呼吸"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderSleepGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas10"/>
-    <tag Name="Description" Value="powerful sleep gas-breathing"/>
+    <tag Name="Description" Value="强大的睡眠气体呼吸"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_normalityGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas5"/>
-    <tag Name="Description" Value="normality gas-breathing"/>
+    <tag Name="Description" Value="普通气体呼吸"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderNormalityGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas10"/>
-    <tag Name="Description" Value="powerful normality gas-breathing"/>
+    <tag Name="Description" Value="强大的常态气体呼吸"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_poisonGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas5"/>
-    <tag Name="Description" Value="poison gas-breathing"/>
+    <tag Name="Description" Value="毒气呼吸"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderPoisonGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas10"/>
-    <tag Name="Description" Value="powerful poison gas-breathing"/>
+    <tag Name="Description" Value="强大的毒气喷吐"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_stunGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas5"/>
-    <tag Name="Description" Value="stun gas-breathing"/>
+    <tag Name="Description" Value="麻醉气体呼吸"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderStunGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas10"/>
-    <tag Name="Description" Value="powerful stun gas-breathing"/>
+    <tag Name="Description" Value="强大的眩晕气体呼吸"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_confusionGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas5"/>
-    <tag Name="Description" Value="confusion gas-breathing"/>
+    <tag Name="Description" Value="混乱气体呼吸器"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
   <object Name="ProceduralCookingIngredient_elderConfusionGasBreath" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas10"/>
-    <tag Name="Description" Value="powerful confusion gas-breathing"/>
+    <tag Name="Description" Value="强大的混乱气体喷射"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="3"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_starch" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_UnitQuickness"/>
-    <tag Name="Description" Value="special Quickness-based"/>
+    <tag Name="Description" Value="特殊的基于敏捷性"/>
     <tag Name="RandomWeight" Value="4"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_lignin" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_RegenerationUnit"/>
-    <tag Name="Description" Value="special regeneration-based"/>
+    <tag Name="Description" Value="特殊的再生基"/>
     <tag Name="RandomWeight" Value="4"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_quicknessMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainQuickness_UnitQuickness"/>
-    <tag Name="Description" Value="simple Quickness-based"/>
+    <tag Name="Description" Value="简单的基于迅捷的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_density" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainDensity_UnitPermanentAV"/>
-    <tag Name="Description" Value="volatile density-based"/>
+    <tag Name="Description" Value="易变密度型"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_dissociation" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainDissociation_UnitOtherBodyBonus"/>
-    <tag Name="Description" Value="dissociation-based"/>
+    <tag Name="Description" Value="解离性"/>
     <tag Name="RandomWeight" Value="0"/>
     <tag Name="RandomHighTierWeight" Value="10"/>
   </object>
   
   <object Name="ProceduralCookingIngredient_attributes" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainAttributes_UnitPermanentAllStats_25Percent"/>
-    <tag Name="Description" Value="uncertain attribute-based"/>
+    <tag Name="Description" Value="不确定的属性基础"/>
     <tag Name="RandomWeight" Value="5"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_slimeSpitting" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainLiquidSpitting_UnitSlimeGlands"/>
-    <tag Name="Description" Value="slime-spitting"/>
+    <tag Name="Description" Value="喷射黏液"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_regenLowtierMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit"/>
-    <tag Name="Description" Value="simple regeneration and healing-based"/>
+    <tag Name="Description" Value="简单的再生和基于治疗的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_coldMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitResist"/>
-    <tag Name="Description" Value="simple cold-based"/>
+    <tag Name="Description" Value="简单的基于寒冷的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_heatMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitResist"/>
-    <tag Name="Description" Value="simple heat and fire-based"/>
+    <tag Name="Description" Value="简单的热能和火焰基础"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_medicinalMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit"/>
-    <tag Name="Description" Value="simple disease prevention-based"/>
+    <tag Name="Description" Value="简单的疾病预防措施"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_acidMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas"/>
-    <tag Name="Description" Value="simple acid-based"/>
+    <tag Name="Description" Value="简单的酸基"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_tastyMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainTaste_UnitDoNothing"/>
-    <tag Name="Description" Value="simple taste-based"/>
+    <tag Name="Description" Value="简单的基于口味的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_cloningMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainCloning_UnitMultipleClones"/>
-    <tag Name="Description" Value="simple cloning"/>
+    <tag Name="Description" Value="简单的克隆"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_stabilityMinor" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainStability_MoveResistUnit"/>
-    <tag Name="Description" Value="simple stability-based"/>
+    <tag Name="Description" Value="基于简单的稳定性"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
 	</object>
 
   <object Name="ProceduralCookingIngredient_selfPoison" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfPoison"/>
-    <tag Name="Description" Value="self-poisoning"/>
+    <tag Name="Description" Value="自体中毒"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
   <object Name="ProceduralCookingIngredient_selfGlotrot" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfGlotrot"/>
-    <tag Name="Description" Value="self-diseasing"/>
+    <tag Name="Description" Value="自体疾病"/>
     <tag Name="RandomWeight" Value="1"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
@@ -672,7 +672,7 @@
     <tag Name="Units" Value="CookingDomainRubber_ExtraJump,CookingDomainElectric_ResistUnit,CookingDomainRubber_ReducedFallDamage"/>
     <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump"/>
     <tag Name="Actions" Value="CookingDomainRubber_JumpTwice_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="rubber-based"/>
+    <tag Name="Description" Value="基于橡胶的"/>
     <tag Name="RandomWeight" Value="5"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
@@ -681,7 +681,7 @@
     <tag Name="Units" Value="CookingDomainElectric_ExtraResistUnit,CookingDomainRubber_Extra2Jumps,CookingDomainRubber_ExtraReducedFallDamage"/>
     <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump"/>
     <tag Name="Actions" Value="CookingDomainRubber_JumpThrice_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="powerful rubber-based"/>
+    <tag Name="Description" Value="强大的橡胶基"/>
     <tag Name="RandomWeight" Value="5"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
@@ -690,25 +690,25 @@
     <tag Name="Units" Value="CookingDomainTongue_UnitStickyTongue"/>
     <tag Name="Triggers" Value="CookingDomainTongue_OnStuck"/>
     <tag Name="Actions" Value="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction"/>
-    <tag Name="Description" Value="tongue-based"/>
+    <tag Name="Description" Value="基于舌头的"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
 	<object Name="ProceduralCookingIngredient_dissociation" Inherits="IngredientMapping">
 		<tag Name="Units" Value="CookingDomainDissociation_UnitOtherBodyBonus"/>
-		<tag Name="Description" Value="dissociative"/>
+		<tag Name="Description" Value="解离性"/>
 		<tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
 	</object>
 
   <object Name="ProceduralCookingIngredient_random" Inherits="IngredientMapping">
-    <tag Name="Description" Value="random"/>
+    <tag Name="Description" Value="随机"/>
     <tag Name="RandomWeight" Value="0"/>
   </object>
 
 	<object Name="ProceduralCookingIngredient_randomHighTier" Inherits="IngredientMapping">
-		<tag Name="Description" Value="random, usually powerful"/>
+		<tag Name="Description" Value="随机，通常强大"/>
 		<tag Name="RandomWeight" Value="0"/>
 	</object>
 

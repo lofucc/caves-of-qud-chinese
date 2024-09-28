@@ -73,7 +73,7 @@
     <tag Name="NeverStack"/>
     <tag Name="Creature"/>    
     <tag Name="PetResponse" Value="=subject.T= =verb:stare= at =object.t= blankly."/>
-    <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=."/>
+    <tag Name="SimpleConversation" Value="月亮和太阳。智慧和意志。~愿地球在这个季节为我们屈服。~和平，=player.formalAddressTerm=。"/>
     <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,coarse hair,sunken eyes" YounglingNoise="*heh*" Activity="roaming around idly" VillageActivity="sleeping in our homes" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating" ArableLand="arable land" ValuedOre="precious metals"/>
     <stag Name="HardMaterial" Value="bone"/>
   </object>
@@ -108,7 +108,7 @@
     <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,hispid skin,spheric hooves" YounglingNoise="*whine*" Activity="roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="sleeping in our homes,eating our food" GuestActivity="breaking bread" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="grazeland" ValuedOre="shade and vittle"/>
     <tag Name="Class" Value="grazer"/>
     <tag Name="Culture" Value="Animal"/>
-    <tag Name="SimpleConversation" Value="&amp;w*soft growling*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*轻柔的咆哮*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:growl= softly."/>
   </object>
   <object Name="BaseGrazingAnimal" Inherits="BaseAnimal">
@@ -127,7 +127,7 @@
     <tag Name="HeroStrBoost" Value="2"/>
     <tag Name="BaseObject" Value="*noinherit"/>
     <part Name="ConversationScript" ConversationID="Antelopes"/>
-    <tag Name="SimpleConversation" Value="&amp;w*idly grazes*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*悠闲地吃草*&amp;y"/>
   </object>
 	<object Name="BaseBat" Inherits="BaseAnimal">
 		<part Name="Brain" Factions="Winged Mammals-100"/>
@@ -135,7 +135,7 @@
 		<tag Name="Species" Value="bat"/>		
 		<mutation Name="Wings" Level="10" CapOverride="10"/>
 		<tag Name="BaseObject" Value="*noinherit"/>		
-		<tag Name="SimpleConversation" Value="{{emote|*idly flaps wings*}}"/>
+		<tag Name="SimpleConversation" Value="{{emote|*懒洋洋地拍动翅膀*}}"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_bats"/>
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_die"/>
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_hurt"/>
@@ -244,7 +244,7 @@
     <xtagTextFragments Skin="shell" PoeticFeatures="dazzling pearls,geometric beauty,ageless bearing" YounglingNoise="*shloop*" Activity="sitting open invitingly" VillageActivity="sitting open invitingly" SacredThing="pocket dimensions,the safety of enclosure"/>
     <stag Name="HardMaterial" Value="shell"/>
     <tag Name="Culture" Value="Clam"/>
-    <tag Name="SimpleConversation" Value="{{emote|*sitting open invitingly*}}"/>
+    <tag Name="SimpleConversation" Value="{{emote|*邀请地开放地坐着*}}"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:shloop=."/>
     <tag Name="PrimaryLimbType" Value="Body"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -281,7 +281,7 @@
     <tag Name="HeroNameTitleMayorSynCap" Value="King,Mayor,Elder"/>
     <xtagTextFragments Skin="chitin" PoeticFeatures="ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="*click*,*croak*" Activity="scuttling without purpose" VillageActivity="reinforcing the walls of our homes" SacredThing="the art of pinching"/>
     <stag Name="HardMaterial" Value="chitin"/>
-    <tag Name="SimpleConversation" Value="&amp;w*raucous croaking*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*沙哑的叫声*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=."/>    
     <tag Name="PrimaryLimbType" Value="Hand"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_crab"/>
@@ -330,7 +330,7 @@
 		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_attack"/>
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_die"/>
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_hurt"/>
-    <tag Name="SimpleConversation" Value="&amp;w*stares at you unblinking*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*一眨不眨地盯着你*&amp;y"/>
     <part Name="SpawnWithLiquid"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:gurgle=."/>    
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_fish"/>
@@ -357,7 +357,7 @@
     <stag Name="HardMaterial" Value="chitin"/>
     <tag Name="Class" Value="insect"/>
     <tag Name="Culture" Value="Insect"/>
-    <tag Name="SimpleConversation" Value="&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*尖锐的咔哒声*&amp;y~&amp;w*soft buzzing*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:buzz=."/>
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die"/>
     <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
@@ -402,7 +402,7 @@
     <tag Name="Class" Value="ooze"/>
     <tag Name="Species" Value="ooze"/>
     <tag Name="Culture" Value="Ooze"/>
-    <tag Name="SimpleConversation" Value="&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*大声地散发着*&amp;y~&amp;w*柔和的涌出*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:spurt=."/>
     <tag Name="PrimaryLimbType" Value="Hand"/>
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_die"/>
@@ -458,7 +458,7 @@
     <stag Name="HardMaterial" Value="scale"/>
     <tag Name="Class" Value="reptile"/>
     <tag Name="Culture" Value="Reptile"/>
-    <tag Name="SimpleConversation" Value="{{w|*soft hissing*}}"/>
+    <tag Name="SimpleConversation" Value="{{w|*轻柔的嘶嘶声*}}"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:hiss=."/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_reptile"/>
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_reptile_vo_die"/>
@@ -491,7 +491,7 @@
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_die"/>
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_hurt"/>
     <tag Name="SecretAdjectives" Value="frog"/>
-    <tag Name="SimpleConversation" Value="{{emote|*ribbits*}}"/>
+    <tag Name="SimpleConversation" Value="{{emote|*兔子*}}"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=."/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_frog"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -538,7 +538,7 @@
     <stag Name="HardMaterial" Value="chitin"/>
     <tag Name="Class" Value="spider"/>
     <tag Name="Culture" Value="Arachnid"/>
-    <tag Name="SimpleConversation" Value="&amp;w*idly weaving*&amp;y"/>    
+    <tag Name="SimpleConversation" Value="&amp;w*闲织*&amp;y"/>    
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_spider"/>
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die"/>
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
@@ -569,7 +569,7 @@
     <tag Name="Class" Value="star"/>
     <tag Name="Species" Value="star"/>
     <tag Name="Culture" Value="Star"/>
-    <tag Name="SimpleConversation" Value="{{emote|*inscrutably being*}}"/>
+    <tag Name="SimpleConversation" Value="{{emote|*不可思议地存在*}}"/>
     <tag Name="PetResponse" Value="{{emote|*xxxff*}}"/>
     <tag Name="PrimaryLimbType" Value="Arm"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -589,7 +589,7 @@
     <tag Name="Class" Value="tortoise"/>		
     <tag Name="Species" Value="tortoise"/>
     <tag Name="Culture" Value="Tortoise"/>
-    <tag Name="SimpleConversation" Value="&amp;w*sniffles and sneezes*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*流鼻涕和打喷嚏*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=."/>
     <mutation Name="Carapace" Level="5"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tortoise"/>
@@ -626,7 +626,7 @@
     <tag Name="HeroNameTitleMayorSynCap" Value="Urchin God,Urchin Mayor,Elder Urchin"/>
     <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*undulate*" Activity="undulating serenely" VillageActivity="bathing in our stews,undulating near our stews" SacredThing="having neither arms nor legs nor a head"/>
     <stag Name="HardMaterial" Value="spines"/>
-    <tag Name="SimpleConversation" Value="{{w|*idly undulating*}}"/>
+    <tag Name="SimpleConversation" Value="{{w|*悠闲地起伏*}}"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:undulate=."/>
     <tag Name="PrimaryLimbType" Value="Body"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_nest_urchin"/>
@@ -660,7 +660,7 @@
     <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews, making worm stews of our stews" SacredThing="having neither arms nor legs"/>
     <stag Name="HardMaterial" Value="cocoon"/>
     <tag Name="Culture" Value="Worm"/>
-    <tag Name="SimpleConversation" Value="&amp;w*idly undulating*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*悠闲地起伏*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:slither=."/>
     <tag Name="PrimaryLimbType" Value="Body"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_worm"/>
@@ -732,7 +732,7 @@
     <tag Name="NonMutant"/>
     <tag Name="Class" Value="humanoid robot"/>
     <tag Name="Culture" Value="Robot"/>
-    <tag Name="SimpleConversation" Value="&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*嘟嘟声*&amp;y~&amp;w*嘟嘟声*&amp;y~&amp;w*嘟嘟嘟*&amp;y~&amp;w*噗噗噗噗*&amp;y"/>
     <tag Name="PrimaryLimbType" Value="Hand"/>
     <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_idle"/>
     <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_attack"/>
@@ -798,7 +798,7 @@
     <part Name="ConversationScript" ConversationID="Humanoids" ClearLost="true"/>
     <tag Name="Humanoid"/>
     <xtagTextFragments Skin="skin" PoeticFeatures="tall forehead,outstretched legs,eyes full of wonder" Activity="going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters"/>
-    <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=."/>
+    <tag Name="SimpleConversation" Value="月亮和太阳。智慧和意志。~愿地球在这个季节为我们屈服。~和平，=player.formalAddressTerm=。"/>
     <tag Name="PrimaryLimbType" Value="Hand"/>    		
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_humanoid_generic"/>        
   </object>
@@ -824,7 +824,7 @@
     <tag Name="HeroNameTitleMayorSyn" Value="king,queen,mayor,elder"/>
     <tag Name="HeroNameTitleMayorSynCap" Value="King,Queen,Mayor,Elder"/>
     <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,gentle countenance,musing eyes" YounglingNoise="*hoot*" Activity="bludgeoning things to death" VillageActivity="sitting in a ruminative pose" SacredThing="berries and twigs"/>
-    <tag Name="SimpleConversation" Value="&amp;w*pounds chest*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*磅胸*&amp;y"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:gibber=."/>
     <tag Name="PrimaryLimbType" Value="Hand"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_ape"/>
@@ -971,7 +971,7 @@
     <part Name="Render" DisplayName="莫潘戈尸体" ColorString="&amp;w"/>
     <part Name="Description" Short="划痕遍布的鳞片盘成一堆。
 "/>    
-    <part Name="Food" Message="The meat is mildly gamey."/>    
+    <part Name="Food" Message="肉有轻微的野味。"/>    
     <part Name="Physics" Weight="80"/>
     <part Name="Commerce" Value="2"/>
     <tag Name="Tier" Value="6"/>    
@@ -1083,7 +1083,7 @@
     <stag Name="Plank" Value="plank"/>
     <stag Name="HardMaterial" Value="wood"/>
     <tag Name="Culture" Value="Plant"/>
-    <tag Name="SimpleConversation" Value="{{emote|*The plant gives no indication of understanding*.}}"/>
+    <tag Name="SimpleConversation" Value="{{emote|*植物没有表示理解*。}}"/>
     <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently."/>
     <tag Name="Gender" Value="neuter"/>
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant"/>
@@ -1655,7 +1655,7 @@
   </object>
   <object Name="Bat Corpse" Inherits="Small Animal Corpse">
     <part Name="Render" DisplayName="蝙蝠尸体"/>
-    <part Name="Food" Message="It tastes like rat meat."/>    
+    <part Name="Food" Message="尝起来像老鼠肉。"/>    
   </object>
   <object Name="Bear" Inherits="BaseBear">
     <part Name="Render" DisplayName="熊" Tile="creatures/sw_angrybear.bmp" RenderString="u" ColorString="&amp;w" DetailColor="y"/>
@@ -1677,7 +1677,7 @@
   <object Name="Bear Corpse" Inherits="Animal Corpse">
     <part Name="Butcherable" OnSuccess="Raw Bear Meat"/>
     <part Name="Render" DisplayName="熊尸"/>
-    <part Name="Food" Message="It made for a grisly meal."/>    
+    <part Name="Food" Message="这是一顿​​可怕的饭菜。"/>    
     <part Name="Physics" Weight="100"/>
     <part Name="Commerce" Value="5"/>
     <tag Name="Tier" Value="2"/>
@@ -1702,7 +1702,7 @@
   <object Name="Pig Corpse" Inherits="Animal Corpse">
     <part Name="Render" DisplayName="猪尸体" ColorString="&amp;r"/>
     <part Name="Butcherable" OnSuccess="Raw Pig Meat"/>
-    <part Name="Food" Message="The meat is tough but the meal is filling."/>		    
+    <part Name="Food" Message="肉很硬，但饭很饱。"/>		    
     <part Name="Commerce" Value="5"/>    
   </object>
 	<object Name="Farm Pig" Inherits="Pig">
@@ -1736,7 +1736,7 @@
   <object Name="Boar Corpse" Inherits="Animal Corpse">
     <part Name="Render" DisplayName="野猪尸体"/>
     <part Name="Butcherable" OnSuccess="Raw Boar Meat"/>
-    <part Name="Food" Message="The meat is tough but the meal is filling."/>		    
+    <part Name="Food" Message="肉很硬，但饭很饱。"/>		    
     <part Name="Commerce" Value="5"/>
     <tag Name="Tier" Value="1"/>    
   </object>  
@@ -1860,7 +1860,7 @@
     <part Name="Render" DisplayName="{{r|生鳄肉}}" Tile="Items/sw_rawmeat3.bmp"/>
     <part Name="Description" Short="瘦削而粘稠的肋肉从鳞片包裹的骨头上被撕下。
 "/>
-    <part Name="Food" Message="It's oily but satisfying."/>
+    <part Name="Food" Message="虽然很油腻，但是很满足。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="2"/>
     <part Name="PreservableItem" Result="Croc Jerky" Number="3"/>
@@ -1942,7 +1942,7 @@
     <part Name="Description" Short="细丝般的毛发从它皱巴巴的腿状物上呈直角散开。
 "/>
     <part Name="Physics" Weight="40"/>    
-    <part Name="Food" Message="It's shockingly delicious."/>
+    <part Name="Food" Message="真是美味得令人震惊。"/>
     <tag Name="Tier" Value="2"/>    
   </object>
   <object Name="GiantAmoeba" Inherits="BaseOoze">
@@ -2142,7 +2142,7 @@
   <object Name="Goat Corpse" Inherits="Animal Corpse">
     <part Name="Butcherable" OnSuccess="Raw Goat Meat"/>
     <part Name="Render" DisplayName="山羊尸体"/>
-    <part Name="Food" Message="It's raw with blood and gamey."/>    
+    <part Name="Food" Message="它充满鲜血和野味。"/>    
     <part Name="Physics" Weight="40"/>
     <part Name="Commerce" Value="2"/>
     <tag Name="Tier" Value="1"/>    
@@ -2179,7 +2179,7 @@
   </object>
   <object Name="Horned Chameleon Corpse" Inherits="Scaled Reptile Corpse">
     <part Name="Render" DisplayName="带角变色龙尸体"/>
-    <part Name="Food" Message="It tastes bright and fruity."/>    
+    <part Name="Food" Message="味道明亮，果香浓郁。"/>    
     <part Name="Commerce" Value="2"/>
     <tag Name="Tier" Value="1"/>    
   </object>
@@ -2479,7 +2479,7 @@
     <part Name="Render" DisplayName="颚骨兽尸体"/>
     <part Name="Description" Short="一团湿漉漉的毛皮和腐烂的血肉使地面略微隆起。
 "/>
-    <part Name="Food" Message="The bite burst into so many strands of sinew."/>
+    <part Name="Food" Message="被咬破了这么多筋。"/>
     <part Name="Physics" Weight="40"/>
     <tag Name="Tier" Value="1"/>
   </object>  
@@ -2900,7 +2900,7 @@
   <object Name="Projectile_GlowmothGaze" Inherits="TemporaryEnergyProjectile">
     <part Name="Render" DisplayName="{{G|霓虹闪光}}" ColorString="&amp;G"/>
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d6" ColorString="&amp;G" PassByVerb="flicker"/>
-    <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
   </object>
   <object Name="Glowmoth Corpse" Inherits="Winged Arthropod Corpse">
     <part Name="Render" DisplayName="发光蛾尸体" ColorString="&amp;G"/>
@@ -4171,7 +4171,7 @@
   <object Name="Chitinous Puma Corpse" Inherits="Animal Corpse">
     <part Name="Butcherable" OnSuccess="Puma Chitin Vest"/>
     <part Name="Render" DisplayName="几丁质美洲狮尸体" ColorString="&amp;w"/>
-    <part Name="Food" Message="The meat is touch and crunchy with chipped plating."/>
+    <part Name="Food" Message="肉质触感松脆，镀层有缺口。"/>
     <part Name="Physics" Weight="150"/>
     <part Name="Commerce" Value="10"/>
     <tag Name="Tier" Value="3"/>    
@@ -4273,7 +4273,7 @@
     <skill Name="Cudgel"/>
     <tag Name="Role" Value="Brute"/>
     <tag Name="Class" Value="equine"/>    
-    <tag Name="SimpleConversation" Value="&amp;w*soft nickering*&amp;y"/>
+    <tag Name="SimpleConversation" Value="&amp;w*软刻痕*&amp;y"/>
     <tag Name="DynamicObjectsTable:DesertCanyon_Creatures"/>
     <tag Name="DynamicObjectsTable:Flowerfields_Creatures"/>
   </object>
@@ -4316,7 +4316,7 @@
     <part Name="Render" DisplayName="{{r|火蚁}} 尸体" ColorString="&amp;R"/>
     <part Name="Description" Short="它的躯干倒置，长出一束皱巴巴、冒烟的腿。
 "/>
-    <part Name="Food" Message="It tastes like sweeten charcoal."/>
+    <part Name="Food" Message="尝起来像甜木炭。"/>
     <part Name="Physics" Weight="15"/>
     <part Name="Commerce" Value="5"/>    
     <part Name="Butcherable" OnSuccess="Fire Ant Gaster"/>
@@ -4345,7 +4345,7 @@
   </object>
   <object Name="Fire Snout Corpse" Inherits="Animal Corpse">
     <part Name="Render" DisplayName="火焰鼻尸体" ColorString="&amp;r"/>
-    <part Name="Food" Message="The pig meat is self-roasted and delicious."/>
+    <part Name="Food" Message="猪肉是自烤的，味道鲜美。"/>
 		<part Name="Description" Short="一堆烧焦的毛发和腐烂的血肉使地面稍微隆起。
 "/>
     <tag Name="Tier" Value="3"/>    
@@ -4502,7 +4502,7 @@
 		<part Name="Description" Short="湿润的青蛙皮肤紧贴着地面。
 "/>
 		<part Name="Butcherable" OnSuccess="Raw Frog Meat" OnSuccessAmount="1"/>    
-    <part Name="Food" Message="The cold slime clings."/>
+    <part Name="Food" Message="冰冷的粘液粘在上面。"/>
     <part Name="Physics" Weight="25"/>
     <part Name="Commerce" Value="10"/>    
     <tag Name="Tier" Value="3"/>    
@@ -4705,7 +4705,7 @@
 		<part Name="Description" Short="它的躯干倒置，长出一束皱巴巴的腿。
 伏特残留物滴落并发出嘶嘶声。
 "/>
-    <part Name="Food" Message="It crackles and pops."/>
+    <part Name="Food" Message="它发出噼啪声和爆裂声。"/>
     <part Name="Physics" Weight="20"/>   
     <part Name="Butcherable" OnSuccess="Spark Tick Scutum"/>
     <part Name="Commerce" Value="20"/>
@@ -4771,7 +4771,7 @@
     <part Name="Commerce" Value="20"/>
     <part Name="TeleportOnEat"/>
 		<part Name="Butcherable" OnSuccess="Voider Gland"/>
-		<part Name="Food" Message="Your mouth starts to fizz."/>
+		<part Name="Food" Message="你的嘴开始嘶嘶作响。"/>
     <tag Name="Tier" Value="3"/>    
     <tag Name="Role" Value="Rare"/>
   </object>
@@ -4846,14 +4846,14 @@
 一根断掉的角从这团混乱中像真菌一样卷曲而出。
 "/>
 		<part Name="Butcherable" OnSuccess="Raw Goat Meat"/>
-		<part Name="Food" Message="It's raw with blood and gamey."/>
+		<part Name="Food" Message="它充满鲜血和野味。"/>
 		<part Name="Physics" Weight="250"/>
     <part Name="Commerce" Value="5"/>
     <tag Name="Tier" Value="3"/>    
   </object>
   <object Name="Flayed Goatfolk Corpse" Inherits="Humanoid Corpse">
     <part Name="Render" DisplayName="剥皮山羊人尸体" ColorString="&amp;R"/>
-    <part Name="Food" Message="It's putrid!"/>
+    <part Name="Food" Message="已经腐烂了！"/>
     <part Name="Description" Short="一个皱缩且长角的肌腱和肌肉框架在污秽的黑血中腐烂。
 "/>
     <part Name="Physics" Weight="200"/>
@@ -4862,7 +4862,7 @@
   </object>
   <object Name="Charred Goatfolk Corpse" Inherits="Humanoid Corpse">
     <part Name="Render" DisplayName="焦黑的山羊人尸体" Tile="creatures/sw_goathead.bmp" ColorString="&amp;K"/>
-    <part Name="Food" Message="Putrid!"/>
+    <part Name="Food" Message="腐烂！"/>
     <part Name="Description" Short="肉被烧成了黑色的烂泥，从宽大的骨头上剥落。
 一对冒着烟的角从中伸出。
 "/>
@@ -5283,7 +5283,7 @@
   <object Name="Electric Snail Corpse" Inherits="Snail Corpse">
     <part Name="Butcherable" OnSuccess="Electric Snail Shell"/>
     <part Name="Render" DisplayName="电蜗牛尸体"/>    
-		<part Name="Food" Message="You crunch the shell to pieces and your mouth fills with crackling slime."/>
+		<part Name="Food" Message="你把贝壳咬成碎片，嘴里充满了噼啪作响的粘液。"/>
 		<part Name="Physics" Weight="400"/>
     <part Name="Commerce" Value="20"/>
     <tag Name="Tier" Value="4"/>    
@@ -5808,7 +5808,7 @@
     <part Name="Render" DisplayName="[呼吸者尸体]" ColorString="&amp;w" RenderLayer="6"/>
     <part Name="Description" Short="雾气从它干燥的鳞片之间的裂隙中升起。
 "/>
-    <part Name="Food" Message="It crack and fills your mouth with mist."/>
+    <part Name="Food" Message="它破裂了，你的嘴里充满了雾气。"/>
     <part Name="Physics" Weight="120"/>
     <part Name="Commerce" Value="15"/>
     <part Name="Butcherable" OnSuccess="[gland]"/>
@@ -5935,7 +5935,7 @@
     <part Name="Render" DisplayName="巨魔尸体"/>
 		<part Name="Description" Short="一团湿漉漉的头发和腐烂的肉块给地面增添了一些高度。
 "/>
-		<part Name="Food" Message="The meat is tough and draped in hair."/>		
+		<part Name="Food" Message="肉质坚韧，披着毛发。"/>		
     <part Name="Physics" Weight="500"/>    
     <tag Name="Tier" Value="4"/>    
   </object>
@@ -6247,7 +6247,7 @@
 "/>
 		<part Name="Butcherable" OnSuccess="Raw Frog Meat" OnSuccessAmount="1-3"/>
     <part Name="Render" DisplayName="膨胀的珍珠蛙尸体"/>
-    <part Name="Food" Message="The meat tastes of ageless sawdust."/>    
+    <part Name="Food" Message="肉的味道像永恒的锯末。"/>    
     <part Name="Physics" Weight="200"/>
     <part Name="Commerce" Value="10"/>    
     <tag Name="Tier" Value="5"/>
@@ -6552,7 +6552,7 @@
   </object>
   <object Name="Mimic Corpse" Inherits="Scaled Reptile Corpse">
     <part Name="Render" DisplayName="拟态尸"/>
-    <part Name="Food" Message="It dissolves into a melange of taste."/>
+    <part Name="Food" Message="它溶解成一种味道的混合物。"/>
     <part Name="Physics" Weight="40"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Mimic" CopyColor="true" CopyString="false"/>
@@ -6728,7 +6728,7 @@
   <object Name="Quartz Baboon Corpse" Inherits="Animal Corpse">
     <part Name="Render" DisplayName="石英狒狒尸体"/>
     <part Name="Butcherable" OnSuccess="@Quartz Baboon Corpse"/>
-    <part Name="Food" Message="The meat is stone tough."/>
+    <part Name="Food" Message="肉坚如磐石。"/>
     <tag Name="Tier" Value="5"/>
     <part Name="Physics" Weight="160"/>
     <part Name="Commerce" Value="100"/>    
@@ -6904,7 +6904,7 @@
 		<part Name="Description" Short="一堆湿漉漉的鳞片躺在一个膨胀的死亡花环中。
 "/>
 		<part Name="Render" DisplayName="刺猬喷吐者尸体"/>
-    <part Name="Food" Message="The moistened fat dissolves slowly."/>    
+    <part Name="Food" Message="湿润的脂肪慢慢溶解。"/>    
     <part Name="Physics" Weight="400"/>
     <part Name="Commerce" Value="30"/>    
     <tag Name="Tier" Value="5"/>
@@ -7471,7 +7471,7 @@
   <object Name="ProjectileLightLock" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{W|光子球}}" ColorString="&amp;W"/>
     <part Name="Projectile" BasePenetration="9" BaseDamage="2d6" Attributes="Light" ColorString="&amp;W" PenetrateCreatures="true" PassByVerb="crackle"/>
-    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
     <tag Name="NoDodging"/>
     <tag Name="IgnoresForceWall"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/medium_blaster"/>
@@ -7706,7 +7706,7 @@
     <part Name="Commerce" Value="20"/>
     <part Name="TeleportOnEat"/>
     <part Name="Butcherable" OnSuccess="Voider Gland"/>
-    <part Name="Food" Message="Your mouth starts to fizz."/>    
+    <part Name="Food" Message="你的嘴开始嘶嘶作响。"/>    
     <tag Name="Tier" Value="6"/>
     <tag Name="Role" Value="Rare"/>
   </object>  
@@ -7764,7 +7764,7 @@
     <stat Name="HeatResistance" Value="30"/>
     <stat Name="ColdResistance" Value="30"/>
     <stat Name="AcidResistance" Value="30"/>
-    <part Name="Impaler" BleedSave="35" BleedDamage="4-7" Damage="25-35" DestroyOnStrike="true" NeedsToBeHidden="false" Message="{{R|You hear a crunch, and then =subject.t==subject.directionIfAny= =verb:explode=!}}" DamageMessage="from %t shrapnel."/>
+    <part Name="Impaler" BleedSave="35" BleedDamage="4-7" Damage="25-35" DestroyOnStrike="true" NeedsToBeHidden="false" Message="{{R|你听到嘎吱声，然后 =subject.t==subject.directionIfAny= =verb:explode=!}}" DamageMessage="from %t shrapnel."/>
     <removepart Name="Combat"/>
     <builder Name="RandomTile" Tiles="Creatures/sw_reef_urchin_1.bmp,Creatures/sw_reef_urchin_2.bmp,Creatures/sw_reef_urchin_3.bmp,Creatures/sw_reef_urchin_4.bmp"/>
     <tag Name="NoXP"/>
@@ -7943,7 +7943,7 @@
     <part Name="Render" DisplayName="犀牛兽尸体" ColorString="&amp;y"/>
     <part Name="Description" Short="一具巨大的腐烂铁肉堆给地面增添了一些高度。
 "/>
-    <part Name="Food" Message="The meat is crusted with adamantine char."/>
+    <part Name="Food" Message="肉上结满了金刚砂。"/>
     <part Name="Physics" Weight="1000"/>
     <part Name="Commerce" Value="200"/>
     <part Name="Butcherable" OnSuccess="Rhinox-Skull Maul"/>
@@ -8434,7 +8434,7 @@
   <object Name="ProjectileLaserColumn" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{Y|激光柱}}" ColorString="&amp;Y"/>
     <part Name="Projectile" BasePenetration="10" BaseDamage="2d8" Attributes="Light Laser" ColorString="&amp;Y" PassByVerb="thrum"/>
-    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
     <tag Name="NoDodging"/>
     <tag Name="IgnoresForceWall"/>
     <tag Name="Light"/>
@@ -8562,7 +8562,7 @@
   </object>
   <object Name="Great Saltback Corpse" Inherits="Animal Corpse">
     <part Name="Render" DisplayName="巨大的盐背尸体"/>
-    <part Name="Food" Message="Out of the mountain of shell a few strips of salt-coffined meat preserve."/>
+    <part Name="Food" Message="从贝壳山里出来了几条盐棺肉。"/>
     <part Name="Description" Short="这里，一个骨化的世界壳为地表上热腾腾的生命提供了阴凉。
 酵母菌在它那横跨云层的边缘上滋生并发出嘶嘶声。
 "/>
@@ -8619,7 +8619,7 @@
 细小的刚毛刮擦着地面。
 "/>
     <part Name="Butcherable" OnSuccess="@Kaleidoslug Corpse"/>
-    <part Name="Food" Message="It tastes like a prism as it diffuses light in the full spectrum."/>
+    <part Name="Food" Message="它尝起来像棱镜，因为它可以漫射全光谱的光。"/>
     <tag Name="Tier" Value="7"/>
     <part Name="Physics" Weight="300"/>
     <part Name="Commerce" Value="300"/>    
@@ -8654,7 +8654,7 @@
   <object Name="ProjectileStoneGaze" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{K|怨毒凝视}}" ColorString="&amp;K"/>
     <part Name="Projectile" Attributes="Light" ColorString="&amp;K" PassByVerb="crackle"/>
-    <part Name="TreatAsSolid" GazeBased="true" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" GazeBased="true" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
     <tag Name="Light"/>		
   </object>
 
@@ -8686,7 +8686,7 @@
   </object>
   <object Name="Memory Eater Corpse" Inherits="Worm Corpse">
     <part Name="Render" DisplayName="记忆吞噬者尸体" ColorString="&amp;y"/>
-    <part Name="Food" Message="You don't remember what it tastes like."/>    
+    <part Name="Food" Message="你不记得它是什么味道。"/>    
     <part Name="Commerce" Value="100"/>
     <part Name="Physics" Weight="50"/>    
     <tag Name="Tier" Value="7"/>
@@ -9322,7 +9322,7 @@
 	<object Name="ProjectileCrungleGaze" Inherits="TemporaryProjectile">
 		<part Name="Render" DisplayName="{{B|克鲁宁凝视}}" ColorString="&amp;B"/>
 		<part Name="Projectile" Attributes="Dream" ColorString="&amp;B" PassByVerb="flutter"/>
-        <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+        <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
 		<tag Name="Dream"/>
 	</object>
 	<object Name="Sated Dreamcrungle" Inherits="Corpse">
@@ -9390,7 +9390,7 @@
   <object Name="ProjectileNaserCannon" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{K|纳瑟光束}}" ColorString="&amp;K"/>
     <part Name="Projectile" BasePenetration="11" BaseDamage="1d12" Attributes="Light Laser Normality" ColorString="&amp;K" PenetrateCreatures="true" PassByVerb="thrum"/>
-    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
     <part Name="GroundOnHit" ChargeUse="0" Chance="100" Duration="20-30" SaveTarget="40" SaveStat="Agility" SaveVs="Normality Naser Grounding" FlyingLevelAidsSave="true"/>
     <part Name="RealityStabilizeOnHit" ChargeUse="0" Chance="100" Strength="100" Duration="20-30" Linked="true"/>
     <part Name="OmniphaseProjectile"/>
@@ -9428,7 +9428,7 @@
   <object Name="ProjectileGammaMothGaze" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{M|闪光}}" ColorString="&amp;M"/>
     <part Name="Projectile" BasePenetration="8" BaseDamage="1d12" Attributes="Mutagenic" ColorString="&amp;M" PenetrateCreatures="true" PassByVerb="flicker"/>
-    <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+    <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
     <part Name="MutateOnHit" Chance="100" IncubationTime="100" ResultTable="MutatingResults"/>
   </object>
 	<object Name="Grand Newfather" Inherits="Templar">
@@ -9626,7 +9626,7 @@
   </object>
   <object Name="Saltwurm Corpse" Inherits="Worm Corpse">
     <part Name="Render" DisplayName="盐乌贼尸体"/>
-    <part Name="Food" Message="Delicious!"/>
+    <part Name="Food" Message="美味!"/>
     <part Name="Description" Short="巨大的海绵状虫体环已经泄气并静止不动。
 剑般大小的刚毛刮擦着地面。
 "/>
@@ -9696,7 +9696,7 @@
 		<tag Name="Class" Value="equine"/>
 		<tag Name="Role" Value="Brute"/>
 		<tag Name="Species" Value="horse"/>
-		<tag Name="SimpleConversation" Value="&amp;w*soft nickering*&amp;y"/>
+		<tag Name="SimpleConversation" Value="&amp;w*软刻痕*&amp;y"/>
 		<tag Name="DynamicObjectsTable:MoonStair_Creatures"/>
 	</object>
 	<object Name="Unimax_Kick" Inherits="NaturalWeapon">
@@ -9883,7 +9883,7 @@
 	<object Name="ProjectileShoulderMountedLightCannon" Inherits="TemporaryProjectile">
 		<part Name="Render" DisplayName="{{Y|质子束}}" ColorString="&amp;W"/>
 		<part Name="Projectile" BasePenetration="10" BaseDamage="7d6" Attributes="Vorpal" ColorString="&amp;W" PenetrateCreatures="true" PassByVerb="crackle"/>
-		<part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+		<part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
 		<tag Name="NoDodging"/>
 		<tag Name="IgnoresForceWall"/>
 		<tag Name="ProjectileVFX" Value="MissileWeaponsEffects/small_laser"/>
@@ -9978,7 +9978,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
 	<object Name="ProjectileVerticalLauncher" Inherits="TemporaryEnergyProjectile">
 		<part Name="Render" DisplayName="{{b|瞄准光束}}" ColorString="&amp;b"/>
 		<part Name="Projectile" BasePenetration="5" BaseDamage="1d8" Attributes="Light Laser" ColorString="&amp;b" PassByVerb="streak"/>
-		<part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+		<part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
 		<tag Name="Light"/>
 		<tag Name="ProjectileVFX" Value="MissileWeaponsEffects/vls_laser"/>
 		<tag Name="ProjectileVFXConfiguration" Value="duration::1;;beamColor0::#0000FF;;beamColor1::#0000FF"/>
@@ -11948,7 +11948,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
 	<object Name="ProjectileIrisdualBeam" Inherits="TemporaryProjectile">
 		<part Name="Render" DisplayName="{{rainbow|霓虹闪烁}}" ColorString="&amp;m"/>
 		<part Name="Projectile" BasePenetration="15" BaseDamage="1d5+7" ColorString="&amp;m" PassByVerb="flicker"/>
-		<part Name="TreatAsSolid" GazeBased="false" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+		<part Name="TreatAsSolid" GazeBased="false" Hits="false" RequiresPhaseMatch="false" Message="黑暗吞噬=subject.t=！"/>
 		<tag Name="ProjectileVFX" Value="MissileWeaponsEffects/gradient_laser"/>
 		<tag Name="ProjectileVFXConfiguration" Value="duration::2"/>
 	</object>
@@ -15100,7 +15100,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <part Name="Description" Short="黏滑的海绵状虫体环已经扁平且静止。
 小刚毛刮擦着地面。
 "/>
-    <part Name="Food" Message="It's sickening!"/>
+    <part Name="Food" Message="真恶心！"/>
     <part Name="Physics" Weight="300"/>
     <part Name="Commerce" Value="100"/>
     <part Name="Butcherable" OnSuccess="SlogTrophy"/>
@@ -16137,7 +16137,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
 		<tag Name="ExcludeFromDynamicEncounters"/>
 	</object>
 	<object Name="Dreamer" Inherits="Crystal Chime">
-		<part Name="Render" DisplayName="_" Tile="Terrain/sw_chavvah_chime_8.bmp" ColorString="&amp;B" DetailColor="b"/>
+		<part Name="Render" DisplayName="Dreamer" Tile="Terrain/sw_chavvah_chime_8.bmp" ColorString="&amp;B" DetailColor="b"/>
 		<part Name="Description" Short="炽热的灰烬和闪烁的光芒在小钟的血管中散发出不可能的颜色，尘埃围绕着=pronouns.possessive=心理磁轨道旋转。
 =pronouns.Subjective=在梦的频率中鸣响。
 "/>

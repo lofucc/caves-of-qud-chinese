@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pronounsets EnableSelection="false" EnableGeneration="false" EnableConversationalExchange="false" GenerateGeneric="0" ReplicateGenders="true">
+
+  <pronounset
+    Name="player"
+    Subjective="你"
+    Objective="你"
+    PossessiveAdjective="你的"
+    SubstantivePossessive="你的"
+    Reflexive="你自己"
+    Abstract="true"
+  />
+
+  <pronounset
+    Name="plural/player"
+    Subjective="你"
+    Objective="你"
+    PossessiveAdjective="你的"
+    SubstantivePossessive="你的"
+    Reflexive="你自己"
+    Plural="true"
+    Abstract="true"
+  />
+
+  <pronounset
+    Subjective="sie"
+    Objective="hir"
+    PossessiveAdjective="hir"
+    SubstantivePossessive="hirs"
+    Reflexive="hirself"
+  />
+
+  <pronounset
+    Subjective="xe"
+    Objective="xem"
+    PossessiveAdjective="xyr"
+    SubstantivePossessive="xyrs"
+    Reflexive="xemself"
+  />
+
+  <pronounset
+    Subjective="ze"
+    Objective="zir"
+    PossessiveAdjective="zir"
+    SubstantivePossessive="zirs"
+    Reflexive="zirself"
+  />
+
+</pronounsets>
