@@ -6802,7 +6802,7 @@
     <stat Name="Hitpoints" Value="500"/>
     <part Name="SkybearShroud"/>
     <part Name="Description" Short="两个充满燃烧气体的导光铬帽圆柱，横跨在一个由铲形金属格架环绕的某种公会标志上。这艘飞行器的星引擎特有的6螺旋烟雾，向天空旋转上升。"/>
-    <part Name="RulesDescription" Text="您可以激活此物品开始冲刺。在冲刺状态下，每当您向某个方向移动时，您会朝最近的敌人或障碍物冲刺最多20格并发起攻击。每冲刺3格，您的命中率和穿透率各提高+2。"/>
+    <part Name="RulesDescription" Text="你可以激活此物品开始冲刺。在冲刺状态下，每当你向某个方向移动时，你会朝最近的敌人或障碍物冲刺最多20格并发起攻击。每冲刺3格，你的命中率和穿透率各提高+2。"/>
     <part Name="Physics" Weight="8"/>
     <part Name="EquippedAchievement" AchievementID="ACH_EQUIP_FLUMEFLIER"/>
     <tag Name="Tier" Value="6"/>
@@ -10375,7 +10375,7 @@
     <part Name="ShadeOil_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <tag Name="SpecialCookingIngredient"/>
-    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +8 DV 每回合有 25% 的几率使你脱离空间维度 1-3 回合。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 41-50 回合 +8 DV 您获得能力可以在空间维度中消失 7-9 回合。"/>
+    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +8 DV 每回合有 25% 的几率使你脱离空间维度 1-3 回合。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 41-50 回合 +8 DV 你获得能力可以在空间维度中消失 7-9 回合。"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Voider Gland"/>
     <part Name="PreservableItem" Result="Congealed Shade Oil" Number="5"/>
     <tag Name="Gift" Value="*noinherit"/>

@@ -135,7 +135,7 @@
     <power Name="盾击" Cost="100" Attribute="Strength" Minimum="17" Class="Shield_Slam" Snippet="shield slamming" Description="激活技能；冷却时间40回合。你尝试将对手击倒并造成（力量修正值）d2 + 盾牌AV加值的伤害。对手有机会抵抗（力量豁免；难度20 + 你的力量修正值）。当你装备盾牌冲锋对手时，你可以对其发动一次免费的盾击攻击。" Tile="Abilities/abil_shield_slam.bmp" Foreground="y" Detail="b"/>
     <power Name="灵巧格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_DeftBlocking" Snippet="blocking deftly" Description="使用盾牌格挡的概率提升至75%。" Tile="Abilities/sw_skill_deft_blocking.png" Foreground="y" Detail="b"/>
     <power Name="迅捷格挡" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_SwiftBlocking" Snippet="blocking swiftly" Description="每轮每盾牌可额外格挡一次攻击。" Tile="Abilities/sw_skill_swift_blocking.png" Foreground="y" Detail="b"/>
-    <power Name="震慑格挡" Cost="200" Attribute="Strength" Minimum="21" Class="Shield_StaggeringBlock" Snippet="staggering blocks" Description="每当您格挡对手的攻击时，有 (力量*2)-35% 的几率使对手在 1d2 回合内昏迷。" Tile="Abilities/sw_skill_staggering_block.png" Foreground="y" Detail="b"/>
+    <power Name="震慑格挡" Cost="200" Attribute="Strength" Minimum="21" Class="Shield_StaggeringBlock" Snippet="staggering blocks" Description="每当你格挡对手的攻击时，有 (力量*2)-35% 的几率使对手在 1d2 回合内昏迷。" Tile="Abilities/sw_skill_staggering_block.png" Foreground="y" Detail="b"/>
     <power Name="护盾壁垒" Cost="200" Attribute="Willpower" Minimum="25" Class="Shield_ShieldWall" Snippet="forming a wall with your shield" Description="在接下来的三轮中，你将自动阻挡所有近战攻击（不能与小圆盾一起使用）" Tile="Abilities/abil_shield_wall.bmp" Foreground="y" Detail="b"/>
   </skill>
 

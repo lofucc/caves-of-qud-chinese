@@ -1019,7 +1019,7 @@
     <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W"/>
   </ability>
   <ability Command="CommandToggleProvideCharge">
-    <description>您为配备了集成动力系统的装置提供能量。</description>
+    <description>你为配备了集成动力系统的装置提供能量。</description>
     <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W"/>
 		<UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn"/>
   </ability>
@@ -1705,7 +1705,7 @@
     <tag Name="Skill">Tinkering</tag>
 	</ability>
   <ability Command="CommandRechargeObject">
-		<description>您使用修补组件为能量电池或电容器充电。</description>
+		<description>你使用修补组件为能量电池或电容器充电。</description>
 		<UITile Tile="Abilities/abil_recharge.bmp" Foreground="C" Detail="W"/>
     <tag Name="Skill">Tinkering</tag>
   </ability>
