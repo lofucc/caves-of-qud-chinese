@@ -582,7 +582,7 @@
   <object Name="MonoCyberStation_4E" Inherits="Widget">
     <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
-  <!-- Tomb of the Eaters presets -->
+  <!-- 食者之墓 presets -->
   <object Name="TombPillarPlacement" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombPillar.rpm" Width="11" Height="8" />
   </object>
@@ -727,7 +727,7 @@
 
   -->
   <object Name="Finish_TombOfTheEaters_EnterTheTombOfTheEaters" Inherits="Widget">
-    <part Name="QuestStepFinisher" Trigger="Created" Quest="Tomb of the Eaters" Step="Enter the Tomb of the Eaters" />
+    <part Name="QuestStepFinisher" Trigger="Created" Quest="食者之墓" Step="进入食者之墓" />
   </object>
   <object Name="Finish_ExploringRedrock_TravelToRedrock" Inherits="Widget">
     <part Name="QuestStepFinisher" Trigger="Created" Quest="什么在吃水藤？" Step="前往红岩" />

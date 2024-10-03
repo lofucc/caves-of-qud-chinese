@@ -206,169 +206,169 @@
       <text>前往隐藏的贝拉村庄并调查那里的问题。</text>
     </step>
   </quest>
-  <quest Name="Find Eskhind" 
-         Accomplishment="You found the hindren pariah Eskhind and her sisters inside a hollowed out tree."
-         Hagiograph="Remember! =name= admonished the pariah Eskhind for fleeing her destiny. Thenceforth she was known as Eskhind the Meek."
+  <quest Name="寻找埃斯欣德" 
+         Accomplishment="你在一棵挖空的树里发现了落后贱民埃斯欣德和她的姐妹们。"
+         Hagiograph="记住！ =name= 告诫贱民埃斯欣德逃离了自己的命运。从那时起，她被称为“温顺的埃斯欣德”。"
          HagiographCategory="Slays">
-    <step Name="Find Eskhind" XP="250">
-      <text>Find Eskhind and retrieve Kindrish.</text>
+    <step Name="寻找埃斯欣德" XP="250">
+      <text>找到埃斯欣德并找回金德里什。</text>
     </step>
-    <step Name="Speak to Warden Neelahind" XP="0" Optional="true">
-      <text>Speak to Warden Neelahind, who was close friends with Eskhind.</text>
+    <step Name="与典狱长尼拉欣德交谈" XP="0" Optional="true">
+      <text>与埃斯欣德的好友尼拉欣德典狱长交谈。</text>
     </step>
-    <step Name="Deliver News of Eskhind" XP="250">
-      <text>Speak to Keh with news of Eskhind.</text>
+    <step Name="传递埃斯欣德消息" XP="250">
+      <text>与凯交谈，告知埃斯欣德的消息。</text>
     </step>
   </quest>
-  <quest Name="Love and Fear"
-         Accomplishment="You found and returned a discarded love poem."
+  <quest Name="爱与恐惧"
+         Accomplishment="你发现并归还了一首被遗弃的情诗。"
 		 Achievement="ACH_BEY_LAH_SONNET"
-         Hagiograph="How inspiring is the presence of =name=, who so redeemed Eskhind the Meek that she sought the hand of Bey Lah's greatest champion!"
+         Hagiograph="=name= 的出现是多么鼓舞人心，她如此救赎了温顺的埃斯欣德，以至于她寻求贝拉最伟大的冠军的帮助！"
          HagiographCategory="Trysts">
-    <step Name="Rescue an Imperiled Love" XP="250" Optional="true">
-      <text>Intervene before the fate of the lovers is sealed.</text>
+    <step Name="拯救岌岌可危的爱情" XP="250" Optional="true">
+      <text>在这对恋人的命运被注定之前进行干预。</text>
     </step>
-    <step Name="Return the Love Sonnet" XP="50">
-      <text>Give the crumpled sheet of paper to its author or intended recipient.</text>
+    <step Name="交还爱情十四行诗" XP="50">
+      <text>将皱巴巴的纸交给其作者或预期的收件人。</text>
     </step>
   </quest>
-  <quest Name="Kith and Kin" 
-         Accomplishment="For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice."
-         Hagiograph="Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow."
+  <quest Name="基斯和金" 
+         Accomplishment="无论贝拉的命运是好是坏，你解开了金德里什失踪之谜，并帮助典狱长尼拉欣德主持正义。"
+         Hagiograph="神圣的救世主！ =name=给贝拉草甸上陷入困境的鹿人们带来了和平与繁荣。"
          HagiographCategory="BecomesLoved">
-    <step Name="Brief Warden Neelahind" XP="250">
-      <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>
+    <step Name="信件典狱长尼拉欣德" XP="250">
+      <text>告诉 Bey Lah 的典狱长有关 金德里什 盗窃案的争议性质。</text>
     </step>
-    <step Name="Discover all the evidence" XP="250" Optional="true">
-      <text>Discover all evidence that might lead to the thief.</text>
+    <step Name="发现所有证据" XP="250" Optional="true">
+      <text>找出所有可能找到小偷的证据。</text>
     </step>
-    <step Name="Accuse the thief" XP="1000">
-      <text>Speak to Warden Neelahind with evidence of the event and accuse the thief that took Kindrish.</text>
+    <step Name="指责小偷" XP="1000">
+      <text>与典狱长尼拉欣德交谈并提供事件证据并指控带走金德里什的小偷。</text>
     </step>
   </quest>
-  <quest Name="The Buried Watchers" 
-         Accomplishment="You visited a coterie of Tomb-dwelling mopango."
-         Hagiograph="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the sultan into eir fold and taught =them= eir secrets."
+  <quest Name="被埋葬的守望者" 
+         Accomplishment="你参观了墓穴莫潘戈的小圈子。"
+         Hagiograph="在奥蒙门廊的食者之墓深处，=name=偶然发现莫潘戈氏族正在进行秘密仪式。他们接受了苏丹并教导了他们他们的秘密。"
          HagiographCategory="Treats">
-    <step Name="Visit the Mopango Settlement in the Tomb of the Eaters" XP="2000">
-      <text>Find Vivira, a friendly turret in the Northwest catacombs, and tell em that Zothom sent you.</text>
+    <step Name="参观食者之墓中的莫潘戈定居点" XP="2000">
+      <text>找到西北地下墓穴中的友好炮塔 Vivira，并告诉他们是 Zothom 派你来的。</text>
     </step>
   </quest>
-  <quest Name="Fraying Favorites" 
+  <quest Name="磨损的最爱" 
          System="FrayingFavoritesSystem"
-         Accomplishment="You restored functionality to one of the four strange entities in the Tomb."
-         Hagiograph="Remember the kindness of =name=, who absolved =their= treacherous brother of sin and steered him to salvation!"
+         Accomplishment="您恢复了古墓中四个奇怪实体之一的功能。"
+         Hagiograph="记住=name=的仁慈，他赦免了=their=奸诈的兄弟的罪孽并引导他走向救赎！"
          HagiographCategory="DoesSomethingHumble">
     <step Name="Talk to Lebah" XP="500">
-      <text>Ask Lebah about eir encounter with the repulsive device.</text>
+      <text>向 Lebah 询问他与排斥装置的遭遇。</text>
     </step>
-    <step Name="Recover the Repulsive Device" XP="4000">
-      <text>Locate k-Goninon in the Folk Catacombs and recover the repulsive device.</text>
+    <step Name="找回排斥装置" XP="4000">
+      <text>在民间地下墓穴中找到 k-Goninon 并收回排斥装置。</text>
     </step>
-    <step Name="Speak with the Watchers" XP="0" Optional="true">
-      <text>Ask the mopango watchers Dadogom, Doyoba, Gyamyo, and Yona about the repulsive device.</text>
+    <step Name="与观察者交谈" XP="0" Optional="true">
+      <text>向 mopango 观察者 Dadogom、Doyoba、Gyamyo 和 Yona 询问有关排斥装置的情况。</text>
     </step>
-    <step Name="Use the Repulsive Device" XP="4000">
-      <text>Choose how to best apply the repulsive device.</text>
+    <step Name="使用排斥装置" XP="4000">
+      <text>选择如何最好地应用排斥装置。</text>
     </step>
   </quest>
-  <quest Name="Tomb of the Eaters" Level="30" Factions="Barathrumites" Reputation="100"
-         Accomplishment="You returned from the Tomb of the Eaters after successfully disabling the Spindle's magnetic field."
+  <quest Name="食者之墓" Level="30" Factions="Barathrumites" Reputation="100"
+         Accomplishment="成功禁用纺锤的磁场后，你从食者之墓返回。"
 		 Achievement="ACH_EATER_TOMB"
   >
-    <step Name="Recover the Mark of Death" XP="2500">
-      <text>Recover the lost sigil used by the Eaters to mark their dead.</text>
+    <step Name="恢复死亡印记" XP="2500">
+      <text>找回食者用来标记死者的丢失印记。</text>
     </step>
-    <step Name="Inscribe the Mark" XP="2500">
-      <text>Tattoo the mark on your body.</text>
+    <step Name="刻上标记" XP="2500">
+      <text>将标记纹身在你的身上。</text>
     </step>
-    <step Name="Enter the Tomb of the Eaters" XP="2500">
-      <text>Gain entrance to the sealed Tomb.</text>
+    <step Name="进入食者之墓" XP="2500">
+      <text>进入密封的坟墓。</text>
     </step>
-    <step Name="Ascend the Tomb and Cross into Brightsheol" XP="2500">
-      <text>Ascend the Tomb and find Resheph's burial chamber. From there, discover a way to travel to Brightsheol.</text>
+    <step Name="登上坟墓并穿过光明地狱" XP="2500">
+      <text>登上坟墓并找到雷谢夫的墓室。从那里，探索前往 Brightsheol 的方式。</text>
     </step>
-    <step Name="Disable the Spindle's Magnetic Field" XP="2500">
-      <text>Access the Spindle's control unit and turn off the field.</text>
+    <step Name="禁用主轴磁场" XP="2500">
+      <text>访问主轴的控制单元并关闭现场。</text>
     </step>
     <step Name="返回砂砾门" XP="7500">
-      <text>返回砂砾门 and speak to Barathrum.</text>
+      <text>返回砂砾门与巴拉瑟鲁姆交谈。</text>
     </step>
   </quest>
-  <quest Name="Landing Pads" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="LandingPadsSystem"
-         Accomplishment="You found a new home for a young people." Achievement="ACH_SLYNTH_HOME"
-         Hagiograph="Inwith Maqqom Yd, =name= created a new people from lilypads and coral-stuff, and sent them to live throughout wider Qud."
+  <quest Name="停机坪" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="LandingPadsSystem"
+         Accomplishment="你为年轻人找到了新家。" Achievement="ACH_SLYNTH_HOME"
+         Hagiograph="在 Maqqom Yd 中，=name= 用睡莲和珊瑚材料创造了一个新民族，并将他们送到更广阔的古德地区居住。"
          HagiographCategory="BecomesLoved">
-    <step Name="Consult Settlements">
-      <text>Convince the leaders of at least three settlements to provide sanctuary for the slynth.</text>
+    <step Name="咨询和解">
+      <text>说服至少三个定居点的领导人为狡猾的人提供庇护所。</text>
     </step>
-    <step Name="Sanctuary Candidates">
-      <text>These factions have agreed to host the slynth.</text>
+    <step Name="庇护所候选人">
+      <text>这些派系已同意接待斯林斯。</text>
     </step>
-    <step Name="Bid the Slynth to Choose">
-      <text>Tell Thah to convene the slynth and make a decision.</text>
+    <step Name="让斯林斯做出选择">
+      <text>告诉 Thah 召集 slynth 并做出决定。</text>
     </step>
   </quest>
-  <quest Name="Return to the Hydropon" Level="35"
-         Accomplishment="Thah gifted you a miraculous sculpture for helping the slynth."
-         Hagiograph="In a chivalric rite of thanks to their creator, the first slynth transformed into a star and gifted itself to =name=."
+  <quest Name="返回水培池" Level="35"
+         Accomplishment="Thah 送给你一座神奇的雕塑，以表彰你帮助了狡猾的人。"
+         Hagiograph="为了感谢他们的创造者，第一个 slynth 变成了一颗星星，并将自己赠予了 =name=。"
          HagiographCategory="CreatesSomething">
-    <step Name="Return to the Hydropon">
-      <text>Once the slynth have arrived at their new home, speak to Thah at the hydropon.</text>
+    <step Name="返回水培池">
+      <text>一旦狡猾的动物到达了他们的新家，就可以在水池里与 Thah 交谈。</text>
     </step>
   </quest>
-  <quest Name="If, Then, Else" Level="40" Factions="Chavvah" Reputation="200"
-         Accomplishment="You helped Chavvah, the Tree of Life, complete the ritual of -elseing and sever one of its entity-chimes forever."
-				 Hagiograph="Beauty in subtraction! Pruner =name= cut the Tree of Life to a more aesthetic form."
+  <quest Name="如果、那么、否则" Level="40" Factions="Chavvah" Reputation="200"
+         Accomplishment="你帮助生命之树Chavvah完成了-elseing仪式并永远切断了它的一个实体-编钟。"
+				 Hagiograph="美在减法！修剪器=name=将生命之树修剪成更美观的形式。"
 			   HagiographCategory="DoesSomethingRad">
-    <step Name="Gather Tau's Chime" XP="2500">
-      <text>Retrieve Tau's chime from her branch in the keter.</text>
+    <step Name="收集塔乌的钟声" XP="2500">
+      <text>从塔乌的科特树枝上取回她的铃声。</text>
     </step>
-    <step Name="Go to the Bottom of Taproot" XP="5000">
-      <text>Travel down Chavvah's taproot to its terminus, 40 strata deep.</text>
+    <step Name="转到主根的底部" XP="5000">
+      <text>沿着 Chavvah 的主根向下行进，到达 40 层深的终点。</text>
     </step>
-    <step Name="Reunite Tau with Her Chime" XP="5000">
-      <text>Touch her chime to Taproot and finish the ritual of -elseing.</text>
+    <step Name="让塔乌与她的钟声重聚" XP="5000">
+      <text>将她的铃声触碰 Taproot 并完成 -else 的仪式。</text>
     </step>
-    <step Name="Return to the Keter" XP="15000">
-      <text>Return to the keter and speak with Dyvvrach.</text>
-    </step>
-  </quest>
-  <quest Name="The Golem" Level="40" Accomplishment="" Achievement="ACH_GOLEM">
-    <step ID="Soup" Name="Procure the Sanguine Fluid">
-      <text>Bring 20 drams of primordial soup to Pax Klanq.</text>
-    </step>
-    <step ID="Body" Name="Choose a Body">
-      <text>Provide a follower level 30 or higher.</text>
-    </step>
-    <step ID="Catalyst" Name="Choose a Catalyst">
-      <text>Provide 3 drams of a pure liquid.</text>
-    </step>
-    <step ID="Atzmus" Name="Choose an Atzmus">
-      <text>Provide the limb of a creature.</text>
-    </step>
-    <step ID="Armament" Name="Choose an Armament">
-      <text>Provide one zetachrome weapon.</text>
-    </step>
-    <step ID="Incantation" Name="Choose an Incantation">
-      <text>Provide an entry from your chronology.</text>
-    </step>
-    <step ID="Hamsa" Name="Choose a Hamsa">
-      <text>Provide an item that weights 5 lbs. or less.</text>
-    </step>
-    <step ID="Power" Name="Acquire an Ascension Power Source">
-      <text>Provide 3 drams of neutron flux or find another power source.</text>
+    <step Name="回到科特" XP="15000">
+      <text>返回科特并与戴夫拉赫交谈。</text>
     </step>
   </quest>
-  <quest Name="We Are Starfreight" Level="40" Accomplishment="" System="StarfreightSystem">
+  <quest Name="魔像" Level="40" Accomplishment="" Achievement="ACH_GOLEM">
+    <step ID="Soup" Name="获取血色液体">
+      <text>将 20 德兰原始汤带给帕克斯·克兰克。</text>
+    </step>
+    <step ID="Body" Name="选择身体">
+      <text>提供 30 级或更高等级的追随者。</text>
+    </step>
+    <step ID="Catalyst" Name="选择催化剂">
+      <text>提供 3 打兰的纯液体。</text>
+    </step>
+    <step ID="Atzmus" Name="选择一个 Atzmus">
+      <text>提供生物的肢体。</text>
+    </step>
+    <step ID="Armament" Name="选择武器">
+      <text>提供一把泽塔铬武器。</text>
+    </step>
+    <step ID="Incantation" Name="选择一个咒语">
+      <text>提供您年表中的一个条目。</text>
+    </step>
+    <step ID="Hamsa" Name="选择一个 Hamsa">
+      <text>提供重 5 磅的物品。或更少。</text>
+    </step>
+    <step ID="Power" Name="获得扬升能量源">
+      <text>提供 3 德拉姆的中子通量或寻找另一个电源。</text>
+    </step>
+  </quest>
+  <quest Name="我们是星航" Level="40" Accomplishment="" System="StarfreightSystem">
     <step ID="Barathrum" Name="Prepare to Ascend">
-      <text>Get Barathrum in the golem.</text>
+      <text>Get Barathrum in 魔像.</text>
     </step>
-    <step ID="Ascend" Name="Ascend (UNFINISHED)">
-      <text>Engage the ascension mechanisms of the Spindle.</text>
+    <step ID="Ascend" Name="上升（未完成）">
+      <text>接合主轴的提升机构。</text>
     </step>
   </quest>
-  <quest Name="Reclamation" Level="40" System="ReclamationSystem" Achievement="ACH_RECLAMATION">
+  <quest Name="开垦" Level="40" System="ReclamationSystem" Achievement="ACH_RECLAMATION">
     <!-- System Properties -->
     <intproperty Name="MinorBattles" Value="2"/>
     <intproperty Name="HealDelay" Value="2400"/>
@@ -387,14 +387,14 @@
     <property Name="ArrivalSound" Value="grenade_heat,Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle" />
     <property Name="NephalRetryZone" Value="JoppaWorld.53.4.1.0.10" />
     <property Name="MessageLeaving">
-      Leaving the battlefield may give the Templar time to regroup and result in more Barathrumite casualties. Proceed?
+      离开战场可能会给圣殿骑士重新集结的时间，并导致更多巴拉瑟鲁姆派伤亡。继续？
     </property>
     <property Name="MessageArrival">
       {{m|ULLLLLLLLLLLLQ!}}
 			
-			The aching world-moan of the Nephilim resounds, and your body throbs in the electric air!
+			拿非利人痛苦的世界呻吟声响起，你的身体在电空气中颤动！
 			
-			It has arrived, {{R|=direction=}}.
+			已经到了，{{R|=direction=}}.
     </property>
     <property Name="FixedSpawnLocations">
       <entry Key="JoppaWorld.53.4.1.0.10">Major</entry>
@@ -411,20 +411,20 @@
       <entry Key="Ezra">OmonporchBattle_Reinforcements_Ezra</entry>
     </property>
     <!-- Quest Steps -->
-    <step ID="Warleader1" Name="Defeat =name=" Value="OmonporchBattle_Major_KnightCommander">
-      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    <step ID="Warleader1" Name="击败 =name=" Value="OmonporchBattle_Major_KnightCommander">
+      <text>消除奥蒙门廊周边圣殿骑士领袖的威胁。</text>
     </step>
-    <step ID="Warleader2" Name="Defeat =name=" Value="OmonporchBattle_Major_KnightCommander">
-      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    <step ID="Warleader2" Name="击败 =name=" Value="OmonporchBattle_Major_KnightCommander">
+      <text>消除奥蒙门廊周边圣殿骑士领袖的威胁。</text>
     </step>
-    <step ID="Warleader3" Name="Defeat =name=" Value="OmonporchBattle_Major_GrandNewfather">
-      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    <step ID="Warleader3" Name="击败 =name=" Value="OmonporchBattle_Major_GrandNewfather">
+      <text>消除奥蒙门廊周边圣殿骑士领袖的威胁。</text>
     </step>
-    <step ID="Warleader4" Name="Defeat =name=" Value="OmonporchBattle_Major_TemplarMech">
-      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    <step ID="Warleader4" Name="击败 =name=" Value="OmonporchBattle_Major_TemplarMech">
+      <text>消除奥蒙门廊周边圣殿骑士领袖的威胁。</text>
     </step>
-    <step ID="Nephal" Name="Beast Slouching" Hidden="true">
-      <text>Remove the threat of =name=.</text>
+    <step ID="Nephal" Name="野兽无精打采" Hidden="true">
+      <text>消除=name=的威胁。</text>
     </step>
   </quest>
 </quests>

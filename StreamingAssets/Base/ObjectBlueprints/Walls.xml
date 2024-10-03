@@ -1516,7 +1516,7 @@
     <part Name="Render" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y"/>
   </object>
 
-  <!-- Tomb of the Eaters -->
+  <!-- 食者之墓 -->
   <object Name="CatacombWall" Inherits="BaseWallBone">
     <part Name="Render" ColorString="&amp;y^Y" TileColor="&amp;y" DetailColor="Y" DisplayName="压缩骨墙"/>
     <part Name="Description" Short="人类形态的骨骼形状被重新排列以完美镶嵌。圆形头骨需要用尺骨结节填充其序列中的空隙。这世界的边界呈米白色，充满了存在感。"/>

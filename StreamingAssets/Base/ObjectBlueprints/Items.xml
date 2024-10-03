@@ -6890,7 +6890,7 @@
     <part Name="QuickenMind" Cooldown="100" IsBootSensitive="true"/>
     <part Name="Commerce" Value="555"/>
     <part Name="ConversationScript" ConversationID="TauChime"/>
-    <part Name="CompleteQuestOnTaken" Quest="If, Then, Else" QuestStep="Gather Tau's Chime"/>
+    <part Name="CompleteQuestOnTaken" Quest="如果、那么、否则" QuestStep="收集塔乌的钟声"/>
     <part Name="Interesting" Radius="1"/>
     <part Name="Unreplicable"/>
     <part Name="GameUnique" DeathState="TauLostInSoft"/>
@@ -7132,7 +7132,7 @@
     <part Name="Commerce" Value="15"/>
     <stat Name="Hitpoints" Value="2500"/>
     <part Name="Unreplicable"/>
-    <part Name="CompleteQuestOnTaken" Quest="Fraying Favorites" QuestStep="Recover the Repulsive Device"/>
+    <part Name="CompleteQuestOnTaken" Quest="磨损的最爱" QuestStep="找回排斥装置"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     <stag Name="Repulsive"/>
     <tag Name="QuestItem"/>
@@ -9501,7 +9501,7 @@
     <part Name="Render" DisplayName="{{Y|皱巴巴的纸张}}" ColorString="&amp;w" DetailColor="W" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp"/>
     <part Name="Description" Short="由盐茎浆制成的纸张上覆盖着颤抖的墨迹。看起来这张纸已经被揉皱和展开过很多次了。"/>
     <part Name="Book" ID="@EskhindSonnetBook"/>
-    <part Name="QuestStarter" Quest="Love and Fear" Trigger="Taken"/>
+    <part Name="QuestStarter" Quest="爱与恐惧" Trigger="Taken"/>
     <part Name="Commerce" Value="10"/>
     <xtagGrammar Proper="false" adjunctNoun=""/>
     <tag Name="NoSparkingQuest"/>

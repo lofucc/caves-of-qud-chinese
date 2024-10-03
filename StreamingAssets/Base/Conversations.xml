@@ -119,7 +119,7 @@
       <text>基础斯林斯定居文本</text>
       <choice Target="Start">再次感谢。</choice>
     </node>
-    <choice Target="SlynthRequest" Priority="10" IfNotHaveState="SlynthSettlementFaction" IfHaveQuest="Landing Pads" IfNotSlynthCandidate="Mayor" IfSpeakerHaveTagOrProperty="Mayor">
+    <choice Target="SlynthRequest" Priority="10" IfNotHaveState="SlynthSettlementFaction" IfHaveQuest="停机坪" IfNotSlynthCandidate="Mayor" IfSpeakerHaveTagOrProperty="Mayor">
       <text>在我的旅途中，我遇到了一个种族，斯林斯，他们正在寻找新的家园。</text>
     </choice>
     <choice Target="SlynthAbout" Priority="10" IfNotHaveState="SlynthSettlementFaction" IfSlynthCandidate="Mayor">
@@ -1862,7 +1862,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <text>你应该在这里吗，=player.offspringTerm=？</text>
       <choice GotoID="End">我的歉意，巴拉瑟姆。</choice>
     </start>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field" IfNotFinishedQuest="Tomb of the Eaters">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场" IfNotFinishedQuest="食者之墓">
       <text>那是你吗，幼雏 =name=? 你是从大门和墓地回来了吗？过来点，我说。</text>
       <choice GotoID="RecameMe">它是，Barathrum。我回来了。</choice>
     </start>
@@ -1904,7 +1904,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
     </node>
     <node ID="TombReward">
       <text>拿上这个。这是我私人收藏的一管变形凝胶。你已经装备了时间的遗物，所以我们能给你的已经不多了。但即便如此，这也许会有用。</text>
-      <choice GotoID="GolemPreface" GiveItem="Metamorphic Polygel" FinishQuest="Tomb of the Eaters">*继续聆听*</choice>
+      <choice GotoID="GolemPreface" GiveItem="Metamorphic Polygel" FinishQuest="食者之墓">*继续聆听*</choice>
     </node>
     <node ID="GolemPreface">
       <text>现在，事情已经……发展了……在你不在的时候。你现在选择了解更多吗？</text>
@@ -1927,14 +1927,14 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <text>Pax Klanq 将使用原始生物电气材料塑造这个生物。你必须收集这些内脏: 身体作为模型，催化剂为血液充能，atzmus 作为神学方向，武器用于保护，以及 hamsa 用于个性。你也将与这个生物结合，成为它的驾驶员。因此，你必须念诵咒语以铭刻这种联系。
 你还需要获取猩红体液本身。同时，也需要一个能够抵御电磁攻击的电源。
 </text>
-      <choice GotoID="Entrails" IfNotHaveQuest="The Golem">这些内脏，它们是什么？我在哪里可以找到它们？</choice>
-      <choice GotoID="EntrailsAlternate" IfHaveQuest="The Golem">这些内脏，它们是什么？我在哪里可以找到它们？</choice>
+      <choice GotoID="Entrails" IfNotHaveQuest="魔像">这些内脏，它们是什么？我在哪里可以找到它们？</choice>
+      <choice GotoID="EntrailsAlternate" IfHaveQuest="魔像">这些内脏，它们是什么？我在哪里可以找到它们？</choice>
       <choice GotoID="Pilot">我要驾驶这生物？并与它建立联系？</choice>
       <choice GotoID="Fluid">猩红流体？</choice>
       <choice GotoID="Power">一个动力源？</choice>
-      <choice GotoID="AcceptGolem" IfNotHaveQuest="The Golem">让我们开始吧。</choice>
-      <choice GotoID="End" IfNotHaveQuest="The Golem">我需要时间和空间远离这一切。</choice>
-      <choice GotoID="Start" IfHaveQuest="The Golem">我想询问其他事情。</choice>
+      <choice GotoID="AcceptGolem" IfNotHaveQuest="魔像">让我们开始吧。</choice>
+      <choice GotoID="End" IfNotHaveQuest="魔像">我需要时间和空间远离这一切。</choice>
+      <choice GotoID="Start" IfHaveQuest="魔像">我想询问其他事情。</choice>
     </node>
     <node ID="Entrails" Inherits="Golem4">
       <text>它们是我们将要培育、塑形并焊接成升灵体的组件。一旦你开始，我们可以深入具体细节，那时Pax Klanq也可以作为知识的来源。
@@ -1963,7 +1963,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <text>是的，=name=! 开始收集吧，随后便是塑造。你选择的材料将会影响我们创造的生命体，但任何这样的生命体都适合升华。
 这是我们进行历史性攀登之前的最后一个任务，=name=。执行任务时务必小心。如果你还有更多问题，可以回来这里找我们。Klanq 和我会在这里等你。
 </text>
-      <choice GotoID="End" StartQuest="The Golem">好的。</choice>
+      <choice GotoID="End" StartQuest="魔像">好的。</choice>
     </node>
     <node ID="GolemQuestDone">
       <text>这生物诞生了，而你与它结缘？真是了不起！你是世界塑造的佼佼者，=name=，除了赞美之外我已无物可赠。</text>
@@ -1992,7 +1992,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <text>我...
 无关紧要。意志也能打破轮回。我们出发吧。愿上升的减负对我有益。穿过世界的外壳，我将明白，重担再也不能将人压垮...
 </text>
-      <choice Target="End" StartQuest="We Are Starfreight">...</choice>
+      <choice Target="End" StartQuest="我们是星航">...</choice>
     </node>
     <node ID="GolemInfo" Inherits="Welcome">
       <text>Klanq 可以回答你的问题。你也收到了操作手册，不是吗？也许你可以参考一下。</text>
@@ -2005,13 +2005,13 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <choice GotoID="Signal" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？">请再告诉我关于信号的事。</choice>
       <choice GotoID="Signal" IfFinishedQuest="我猜是帕克斯·克兰克吧？">请再告诉我关于信号的事。</choice>
       <choice GotoID="PaxComplete" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？" IfFinishedQuestStep="我猜是帕克斯·克兰克吧？~说服帕克斯·克兰克建造登山者">我说服了Pax Klanq建造了攀爬者。</choice>
-      <choice GotoID="TombIntro" IfFinishedQuest="我猜是帕克斯·克兰克吧？" IfNotHaveQuest="Tomb of the Eaters">帕克斯·克兰克同意建造攀爬者。接下来怎么办？</choice>
-      <choice GotoID="TombExplain1" IfHaveActiveQuest="Tomb of the Eaters">你能再告诉我一次关于食者之墓的事情吗？</choice>
-      <choice GotoID="Golem" IfFinishedQuest="Tomb of the Eaters" IfNotHaveQuest="The Golem">磁力场已经失效，纺锤可以自由上升了。接下来怎么办？</choice>
-      <choice GotoID="Golem4" IfHaveActiveQuest="The Golem">再次告诉我关于塑造一只巨大生物以攀登纺锤的计划。</choice>
-      <choice GotoID="GolemQuestDone" IfFinishedQuest="The Golem" IfNotHaveState="BarathrumGolemDone">生物已经被创造。接下来呢？</choice>
-      <choice GotoID="GolemInfo" IfFinishedQuest="The Golem">再告诉我一次那个巨大生物是如何运作的。</choice>
-      <choice GotoID="Ascend" IfHaveState="BarathrumGolemDone" IfNotHaveQuest="We Are Starfreight">我准备好登上纺锤了，Barathrum。</choice>
+      <choice GotoID="TombIntro" IfFinishedQuest="我猜是帕克斯·克兰克吧？" IfNotHaveQuest="食者之墓">帕克斯·克兰克同意建造攀爬者。接下来怎么办？</choice>
+      <choice GotoID="TombExplain1" IfHaveActiveQuest="食者之墓">你能再告诉我一次关于食者之墓的事情吗？</choice>
+      <choice GotoID="Golem" IfFinishedQuest="食者之墓" IfNotHaveQuest="魔像">磁力场已经失效，纺锤可以自由上升了。接下来怎么办？</choice>
+      <choice GotoID="Golem4" IfHaveActiveQuest="魔像">再次告诉我关于塑造一只巨大生物以攀登纺锤的计划。</choice>
+      <choice GotoID="GolemQuestDone" IfFinishedQuest="魔像" IfNotHaveState="BarathrumGolemDone">生物已经被创造。接下来呢？</choice>
+      <choice GotoID="GolemInfo" IfFinishedQuest="魔像">再告诉我一次那个巨大生物是如何运作的。</choice>
+      <choice GotoID="Ascend" IfHaveState="BarathrumGolemDone" IfNotHaveQuest="我们是星航">我准备好登上纺锤了，Barathrum。</choice>
       <choice GotoID="End">活着并畅饮吧，最年长的Barathrum。</choice>
     </start>
     <node ID="Questions" Inherits="Welcome">
@@ -2019,7 +2019,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
     </node>
     <node ID="TombComplete">
       <text>你看起来……精神焕发。谢谢你，=name=! 拿上这瓶我们最近从钯礁回收的多聚胶。</text>
-      <choice GotoID="End" CompleteQuestStep="Tomb of the Eaters~返回砂砾门" FinishQuest="Tomb of the Eaters" GiveItem="Metamorphic Polygel">活着并畅饮，巴拉瑟姆。</choice>
+      <choice GotoID="End" CompleteQuestStep="食者之墓~返回砂砾门" FinishQuest="食者之墓" GiveItem="Metamorphic Polygel">活着并畅饮，巴拉瑟姆。</choice>
     </node>
     <node ID="PaxComplete">
       <text>多么令人欢迎的消息，=factionaddress:Barathrumites=! 请收下这作为我的感激之情。</text>
@@ -2046,7 +2046,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
     </node>
     <node ID="TombBody3">
       <text>正如我所希望的那样，=name=。拿上这个编码信号的磁盘，以防万一。还有这台纹身枪，当你找回死亡印记时会用得上。你最好也带上一把镐，或者其他用于挖掘石块的工具。并且要小心: 陵墓是一个庞大而古老的空间，对许多人来说都是圣地。我无法预知你在那里的经历。</text>
-      <choice GotoID="End" StartQuest="Tomb of the Eaters">
+      <choice GotoID="End" StartQuest="食者之墓">
         <text>我听从你的警告。再见，Barathrum。</text>
         <part Name="ReceiveItem" Blueprints="Decrypted Signal Data Disk,Tattoo Gun Barathrum" Identify="Tattoo Gun Barathrum" />
       </choice>
@@ -2149,8 +2149,8 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <choice ID="BethesdaSpara" GotoID="SparaSusa" IfHaveActiveQuest="解码信号">你知道关于贝塞斯达·苏萨的任何事情吗？</choice>
       <choice ID="RumbleSpara" GotoID="GrimNod" IfHaveActiveQuest="深沉的思念">你感觉到那阵震动了吗，斯帕拉富西勒？</choice>
       <choice ID="KlanqSpara" GotoID="ShroomPal" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？">你见过帕克斯·克兰克吗？</choice>
-      <choice ID="TombSpara" GotoID="Sparagon" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
-      <choice ID="GolemSpara" GotoID="SparaStumped" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">你认为Klanq的存在如何？</choice>
+      <choice ID="TombSpara" GotoID="Sparagon" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
+      <choice ID="GolemSpara" GotoID="SparaStumped" IfFinishedQuestStep="食者之墓~禁用主轴磁场">你认为Klanq的存在如何？</choice>
       <choice ID="CarbineSpara" GotoID="PraiseCarbine" IfHaveBlueprint="MasterworkCarbine">你的卡宾枪是我所使用过的最精良的武器。</choice>
       <choice ID="PistolSpara" GotoID="PraiseCarbine" IfHaveBlueprint="MasterworkChainPistol">你的手枪是我用过的最精良的武器之一。</choice>
       <choice ID="FewWordsSpara" GotoID="QuietBear">你是一只话不多的熊。</choice>
@@ -2278,7 +2278,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <text>这真的是它吗？我好奇。</text>
       <choice GotoID="End">今天不行。</choice>
     </node>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场">
       <text>你回来了，我看到。
 我想布赖特谢尔可能并不那么有趣吧？或者也许你是想我了？
 {{emote|*伊塞帕眨眼*}}
@@ -2294,11 +2294,11 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
 </text>
       <choice GotoID="End">好吧，我该走了。活着，喝吧。</choice>
     </node>
-    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="Tomb of the Eaters">
+    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="食者之墓">
       <text>这些是这个故事的最后篇章，=name=，也可能是许多其他故事的最后篇章。
 无论如何，看看这一切的另一面将会很有益。
 </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
       <choice GotoID="Greetings">让我们谈谈，伊塞帕。</choice>
       <choice GotoID="End">它会。活着并饮用。</choice>
     </start>
@@ -2484,7 +2484,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <text>创新的死敌已经到来，=name=。让我们回应他们。</text>
       <choice GotoID="End">小心。</choice>
     </node>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场">
       <text>=name=. 进来。吃吧。</text>
       <choice GotoID="GuestKlanq">你看起来比平时更加烦躁。</choice>
       <choice GotoID="Greetings">关于你的工坊...</choice>
@@ -2496,9 +2496,9 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
 </text>
       <choice GotoID="End">好吧，我该走了。活着，喝吧。</choice>
     </node>
-    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="Tomb of the Eaters">
+    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="食者之墓">
       <text>死亡降临所有敢于面对我们的征服者。</text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
       <choice GotoID="Greetings">关于你的工坊...</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
@@ -2645,7 +2645,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <text>不像这样。毕竟我们已经完成了这么多...</text>
       <choice GotoID="End">不要失去希望。</choice>
     </node>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场">
       <text>啊。又是你，从那些更加无法回归的地方回来了。还活着，来找这个不讨人喜欢的乌尔希布麻烦。</text>
       <choice GotoID="GuestKlanq">你对Klanq的来访有什么看法？</choice>
       <choice GotoID="Greetings">我们能谈谈吗，阿洛伊修斯？</choice>
@@ -2661,7 +2661,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <text>我花了很长时间准备应对我的家可能被入侵的情况。
 我还没有准备好。这种被侵犯的感觉就像电烙铁烧灼一般。
 </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
       <choice GotoID="Greetings">我们能谈谈吗，阿洛伊修斯？</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
@@ -2774,7 +2774,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <text>保重，=name=. 请。</text>
       <choice GotoID="End">活着并畅饮吧，霍滕萨。</choice>
     </node>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field" IfNotHaveState="HortensaReplied">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场" IfNotHaveState="HortensaReplied">
       <text>=name=，你回来了！我还担心你会在陵墓中迷失，但你现在看起来比以往任何时候都要好。也许我应该更加信任你，至少少一些担忧。
 你去过巴拉瑟伦的工作室吗？克兰克和Q女孩在那里等你。
 </text>
@@ -2789,9 +2789,9 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <text>得知还有其他视角看待这项工作，我更加释怀了。克兰克的存在至关重要，但这也让我感到不安: 我无法不认为，在已经混乱的努力中引入更多的混乱是一种……火上浇油的策略。</text>
       <choice GotoID="End">我将发挥我的最佳判断。活着并畅饮。</choice>
     </node>
-    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="Tomb of the Eaters">
+    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="食者之墓">
       <text>我贪婪地注视着你，幼崽。谢谢你保护好自己。</text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
       <choice GotoID="Greetings">尽情享受生命吧，霍滕萨。我们来聊聊。</choice>
       <choice GotoID="End">你也是。活着，畅饮。</choice>
     </start>
@@ -3110,7 +3110,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
 'Immaculate Chrome' 是我的最爱。
 </text>
       <choice ID="ShemSafe" GotoID="YouAreSafe" IfFinishedQuest="战斗的号角">我很高兴你平安无事，Shem。</choice>
-      <choice ID="ShemPax" GotoID="Klanq" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">你对Klanq的来访有什么看法？</choice>
+      <choice ID="ShemPax" GotoID="Klanq" IfFinishedQuestStep="食者之墓~禁用主轴磁场">你对Klanq的来访有什么看法？</choice>
       <choice ID="ShemSpeak" GotoID="Speak">你是一只色变龙……还会说话？你能听懂我说的话吗？</choice>
       <choice ID="Shem-1" GotoID="-1">为什么你叫 Shem -1？</choice>
       <choice ID="ShemFriend" GotoID="Friend">我是你的朋友，Shem。</choice>
@@ -3175,7 +3175,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
 </text>
       <choice GotoID="End">我必须走了。</choice>
     </node>
-    <start ID="Recame" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">
+    <start ID="Recame" IfFinishedQuestStep="食者之墓~禁用主轴磁场">
       <text>为什么，=name=，Brightsheol 对你很好。你身上有一种新的威严；你的谚语之靴在每一步中都更加响亮地回荡在编年史中。
 我想你这是要去蒂奇的研究室吧？他们已经在下面工作了。
 </text>
@@ -3189,11 +3189,11 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
 </text>
       <choice GotoID="End">所以他们确实如此。活着并畅饮吧，雅各布。</choice>
     </node>
-    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="Tomb of the Eaters">
+    <start ID="Post Arms" IfFinishedQuest="战斗的号角" IfNotFinishedQuest="食者之墓">
       <text>从未有过圣殿骑士如此深入地突破我们的防线。我们现在生活在一个新的现实中，一个更难以应对的现实。
 有什么需要的吗，=name=？
 </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
       <choice GotoID="Greetings">光芒穿透你，雅各布。我们谈谈吧。</choice>
       <choice GotoID="End">不。活着并畅饮。</choice>
     </start>
@@ -3363,7 +3363,7 @@ Klanq 的不透明性既吸引人又令人沮丧，还很危险。就像 Klanq �
       <choice GotoID="Omonporch" IfHaveActiveQuest="奥蒙门廊伯爵">关于奥蒙波奇伯爵你知道些什么？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="深沉的思念">那是什么震动？</choice>
       <choice GotoID="Klanq" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？">你知道关于Pax Klanq的什么？</choice>
-      <choice GotoID="GoingOn" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">你觉得现在发生的一切怎么样？</choice>
+      <choice GotoID="GoingOn" IfFinishedQuestStep="食者之墓~禁用主轴磁场">你觉得现在发生的一切怎么样？</choice>
       <choice GotoID="Do">你在这儿通常做些什么，Neek？</choice>
       <choice GotoID="Hair">你的头发真... 方方正正的。</choice>
       <choice GotoID="GritGate">你能告诉我关于砂门的事情吗？</choice>
@@ -3523,8 +3523,8 @@ Qud 不是 =villageZeroName=。你需要证明自己的价值，以免浪费我�
       <text>我们所处的时代多么有趣，=name=!
 见到你安然无恙真是太好了。你需要什么吗？
 </text>
-      <choice GotoID="TombQuest" IfHaveActiveQuest="Tomb of the Eaters">我必须通过食者之墓进入光明冥界。</choice>
-      <choice GotoID="GuestKlanq" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">你觉得情况怎么样？</choice>
+      <choice GotoID="TombQuest" IfHaveActiveQuest="食者之墓">我必须通过食者之墓进入光明冥界。</choice>
+      <choice GotoID="GuestKlanq" IfFinishedQuestStep="食者之墓~禁用主轴磁场">你觉得情况怎么样？</choice>
       <choice GotoID="End">不是现在。活着，喝酒。</choice>
     </start>
     <node ID="GuestKlanq">
@@ -3894,7 +3894,7 @@ Qud 不是 =villageZeroName=。你需要证明自己的价值，以免浪费我�
     <start ID="Welcome">
       <text>克兰克向你喷气？</text>
       <choice Target="Die" IfTestState="KlanqDied">你不是死了吗？</choice>
-      <choice Target="BarathrumStudy" IfHaveQuest="The Golem">你不应该在巴拉瑟伦的研究室里帮忙吗？</choice>
+      <choice Target="BarathrumStudy" IfHaveQuest="魔像">你不应该在巴拉瑟伦的研究室里帮忙吗？</choice>
       <choice ID="ChoiceWhat" GotoID="What">不好意思？</choice>
       <choice ID="ChoicePlace" GotoID="Place">为什么你的颜色像珊瑚？还有，为什么外面的砖路是在我吃了吞噬者的肉帽后才出现的？</choice>
       <choice ID="ChoicePresume" GotoID="Presume" IfHaveQuest="我猜是帕克斯·克兰克吧？" IfNotFinishedQuestStep="我猜是帕克斯·克兰克吧？~说服帕克斯·克兰克建造登山者">我是来为巴拉图姆人讨债的。</choice>
@@ -3974,14 +3974,14 @@ Klanq 向你喷气，然后 Klanq 制造了一辆破车。
       <choice Target="IsGolemReady" IfHaveState="GolemBuilding">
         <text>生物准备好了吗？</text>
       </choice>
-      <choice Target="BuildGolem" IfHaveActiveQuest="The Golem">
+      <choice Target="BuildGolem" IfHaveActiveQuest="魔像">
         <text>我已准备好让生物被塑造和催化。</text>
       </choice>
       <choice Target="Die" IfTestState="KlanqDied">你不是死了吗？</choice>
-      <choice Target="GolemComponentQuestions" IfHaveActiveQuest="The Golem">你能告诉我我必须收集的组件吗？</choice>
-      <choice Target="GolemOtherQuestions" IfHaveActiveQuest="The Golem">关于这种生物我应该了解些什么？</choice>
+      <choice Target="GolemComponentQuestions" IfHaveActiveQuest="魔像">你能告诉我我必须收集的组件吗？</choice>
+      <choice Target="GolemOtherQuestions" IfHaveActiveQuest="魔像">关于这种生物我应该了解些什么？</choice>
       <choice Target="BarathrumsStudy">你现在住在砾石门吗？</choice>
-      <choice Target="GolemOtherQuestions" IfFinishedQuest="The Golem">我想问一些关于那个大型生物的问题。</choice>
+      <choice Target="GolemOtherQuestions" IfFinishedQuest="魔像">我想问一些关于那个大型生物的问题。</choice>
       <choice Target="End">活着，畅饮。</choice>
     </start>
     <node ID="Die" Inherits="Welcome">
@@ -4049,8 +4049,8 @@ Klanq 向你喷气，然后 Klanq 制造了一辆破车。
     </node>
     <node ID="GolemOtherQuestions">
       <text>问什么！克兰克说。</text>
-      <choice Target="Work" IfHaveActiveQuest="The Golem">我将与这生物缔结契约。这是如何运作的？</choice>
-      <choice Target="Work" IfFinishedQuest="The Golem">我与生物建立了联系。这是怎么运作的？</choice>
+      <choice Target="Work" IfHaveActiveQuest="魔像">我将与这生物缔结契约。这是如何运作的？</choice>
+      <choice Target="Work" IfFinishedQuest="魔像">我与生物建立了联系。这是怎么运作的？</choice>
       <choice Target="Spindle">Barathrum 和我将进入生物体内的纺锤？</choice>
       <choice Target="Equip">生物可以穿戴装备吗？</choice>
       <choice Target="Damage">如果它受损或被摧毁了怎么办？</choice>
@@ -4564,7 +4564,7 @@ Grh.~
       <choice Target="End">...</choice>
     </node>
     <node ID="SlynthAbout">斯林斯？他们怎么了？</node>
-    <node ID="Start" IfNotHaveQuest="Find Eskhind">
+    <node ID="Start" IfNotHaveQuest="寻找埃斯欣德">
       <text>活着并畅饮吧，肯德伦。我是辛德里亚克·凯；欢迎来到贝拉赫。
 像你这样的人能够未经拦截就通过我们的哨兵，这几乎是前所未有的，但如今的情况也是前所未有的。我有一个任务要交给你。你感兴趣吗？
 </text>
@@ -4584,7 +4584,7 @@ Grh.~
 虽然她现在对我来说如同嘴中的沙子，但那个偷走金德里什的流放者名叫埃辛德。她几周前离开了，还带走了她的妹妹和弟弟。我不知道她去了哪里，但狱长尼拉欣德可能知道，因为她们小时候是亲密的朋友。
 找到被流放者艾辛德，从她那里取回金德里什，即使……即使代价是她和她兄弟姐妹的生命。金德里什传承了无数代，它属于我的人民，而不是任何个人。去吧，肯德伦。去找看守尼拉欣德，打听艾辛德藏身之处。
 </text>
-      <choice CompleteQuestStep="风中的花瓣~调查贝拉" StartQuest="Find Eskhind" GotoID="End">如你所说。</choice>
+      <choice CompleteQuestStep="风中的花瓣~调查贝拉" StartQuest="寻找埃斯欣德" GotoID="End">如你所说。</choice>
     </node>
     <node ID="No.">
       <text>然后我会感谢你尽快离开。我不想让福恩德伦习惯我们的边界变得如此脆弱。</text>
@@ -4602,7 +4602,7 @@ Grh.~
 </text>
       <choice GotoID="End" IfHaveBlueprint="Kindrish" TakeItem="Kindrish" SetBooleanState="KindrishReturned,true" Execute="XRL.World.Parts.KindrishProperties:ReturnAward">活着并畅饮吧，Hindriarch。</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Find Eskhind" IfNotHaveQuest="Kith and Kin">
+    <node ID="Start" IfNotFinishedQuest="寻找埃斯欣德" IfNotHaveQuest="基斯和金">
       <text>你回来了。你找到那个流放者并取回我们的财宝了吗？</text>
       <choice IfHaveBlueprint="Kindrish" IfNotHaveState="KindrishReturned" GotoID="KindrishReturnBefore">我找到了金德里什，但没有找到埃辛德。</choice>
       <choice IfHaveState="EskhindSlain" GotoID="Dead">伊斯金德死了，但她的身上没有金德里什。</choice>
@@ -4614,13 +4614,13 @@ Grh.~
     </node>
     <node ID="Dead">
       <text>艾娃。她一定是卖掉了。请不要告诉任何人。请理解我无法奖励你，因为你没有完成我交给你的任务。</text>
-      <choice CompleteQuestStep="Find Eskhind~Deliver News of Eskhind" GotoID="End">明白。活着，畅饮。</choice>
-      <choice CompleteQuestStep="Find Eskhind~Deliver News of Eskhind" GotoID="End">
+      <choice CompleteQuestStep="寻找埃斯欣德~传递埃斯欣德消息" GotoID="End">明白。活着，畅饮。</choice>
+      <choice CompleteQuestStep="寻找埃斯欣德~传递埃斯欣德消息" GotoID="End">
         <text>不可接受。准备好去死吧。</text>
         <part Name="StartFight" />
       </choice>
     </node>
-    <node ID="Start" IfHaveQuest="Kith and Kin" IfNotFinishedQuest="Find Eskhind">
+    <node ID="Start" IfHaveQuest="基斯和金" IfNotFinishedQuest="寻找埃斯欣德">
       <text>为什么一个流放者站在我村子里？你是想把我当傻子耍吗？</text>
       <choice IfHaveBlueprint="Kindrish" IfNotHaveState="KindrishReturned" GotoID="KindrishReturnBefore">Hindriarch，我找到了Kindrish，但Eskhind并没有它。</choice>
       <choice GotoID="Accused">Eskhind 声称自己被冤枉了。</choice>
@@ -4635,9 +4635,9 @@ Grh.~
       <text>好的！去找典狱长吧，让她来解决这个谜团。
 但是你要知道: 在找到盗贼并夺回金德里什之前，我无法奖励你。你什么都得不到。活下去，喝吧，=player.formalAddressTerm=。
 </text>
-      <choice CompleteQuestStep="Find Eskhind~Deliver News of Eskhind" GotoID="End">...活着并畅饮。）</choice>
+      <choice CompleteQuestStep="寻找埃斯欣德~传递埃斯欣德消息" GotoID="End">...活着并畅饮。）</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Kith and Kin">
+    <node ID="Start" IfNotFinishedQuest="基斯和金">
       <text>你为什么和我说话？你还有工作要做。</text>
       <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">这首诗属于你吗？</choice>
       <choice GotoID="Kehstions">我有话要问你。</choice>
@@ -4699,13 +4699,13 @@ Grh.~
 </text>
       <choice GotoID="End">如果你这么说。活着并畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>他们密谋对付我。这是唯一的解释。
 你！别管我。
 </text>
       <choice GotoID="End">你会找到办法的。活下去，喝下去。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHindriarch="Esk">
       <text>我应该让他们分开。
 我本应该让你们都分开的。
 </text>
@@ -4721,14 +4721,14 @@ Grh.~
       <text>你做了那些事后还敢和我说话，真是胆大包天。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <start ID="MocksFate" IfFinishedQuest="Love and Fear" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <start ID="MocksFate" IfFinishedQuest="爱与恐惧" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>又是你？
 这只是时间问题，直到我们被敌对的肯德伦所吞没。你的存在嘲笑着我们的命运。
 </text>
       <choice IfHaveBlueprint="Kindrish" IfNotHaveState="KindrishReturned" GotoID="KindrishReturnAfter">Hindriarch，我找到了Kindrish。</choice>
       <choice GotoID="End">你会找到办法的。活下去，喝下去。</choice>
     </start>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHindriarch="Keh">
       <text>你这帮倒忙！现在我们村庄连守卫都没有了。
 我们该如何保护自己？
 </text>
@@ -4749,19 +4749,19 @@ faundren 可能会产生一些想法。
     </node>
   </conversation>
   <conversation ID="Neelahind">
-    <start ID="Distant" IfNotHaveQuest="Find Eskhind">
+    <start ID="Distant" IfNotHaveQuest="寻找埃斯欣德">
       <text>{{emote|*看守的目光显得遥远.*}} Esk...</text>
       <choice GotoID="End">*别管她*</choice>
     </start>
-    <start ID="Direct" IfHaveQuest="Find Eskhind" IfNotHaveQuest="Kith and Kin" IfFinishedQuestStep="Find Eskhind~Speak to Warden Neelahind" IfNotHaveState="EskhindSlain">
+    <start ID="Direct" IfHaveQuest="寻找埃斯欣德" IfNotHaveQuest="基斯和金" IfFinishedQuestStep="寻找埃斯欣德~与典狱长尼拉欣德交谈" IfNotHaveState="EskhindSlain">
       <text>沿着 =EskhindRoadDirection= 的路找到那棵空心树，那里曾是艾斯克和我玩耍的地方。</text>
       <choice GotoID="End">谢谢你。</choice>
     </start>
-    <start ID="Ruminating" IfHaveQuest="Find Eskhind" IfNotHaveQuest="Kith and Kin" IfNotFinishedQuestStep="Find Eskhind~Speak to Warden Neelahind">
+    <start ID="Ruminating" IfHaveQuest="寻找埃斯欣德" IfNotHaveQuest="基斯和金" IfNotFinishedQuestStep="寻找埃斯欣德~与典狱长尼拉欣德交谈">
       <text>{{emote|*看守者陷入了沉思.*}} 不可能。这绝对不可能。</text>
       <choice GotoID="Warden Neelahind?">看守者尼拉欣德？</choice>
     </start>
-    <start ID="Dead" IfHaveQuest="Find Eskhind" IfHaveState="EskhindSlain">
+    <start ID="Dead" IfHaveQuest="寻找埃斯欣德" IfHaveState="EskhindSlain">
       <text>肯德伦，你...有关于埃斯金德和金德里什的消息吗？</text>
       <choice GotoID="Eskhind is dead.">Eskhind 已死。</choice>
       <choice GotoID="End">不。</choice>
@@ -4801,7 +4801,7 @@ faundren 可能会产生一些想法。
       <text>哦。Esk 和我，我们曾有一个地方……有一条通往=EskhindRoadDirection=的小路，通向一棵被雷击毁的树的残骸，树心被天上的火焰烧空了。这是我们俩离村庄最远的地方，直到我参加了第一次守卫者的集会。
 她和我那时常在那里度过时光。也许她现在还在那里，但我不敢去确认。
 </text>
-      <choice CompleteQuestStep="Find Eskhind~Speak to Warden Neelahind" GotoID="End">我会去那里看看，谢谢。</choice>
+      <choice CompleteQuestStep="寻找埃斯欣德~与典狱长尼拉欣德交谈" GotoID="End">我会去那里看看，谢谢。</choice>
     </node>
     <Node ID="Eskhind is dead.">
       <text>哦。
@@ -4841,13 +4841,13 @@ faundren 可能会产生一些想法。
 </text>
       <choice GotoID="End" IfHaveBlueprint="Kindrish" TakeItem="Kindrish" SetBooleanState="KindrishReturned,true" Execute="XRL.World.Parts.KindrishProperties:ReturnAward">明白了。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfHaveQuest="Kith and Kin" IfNotFinishedQuest="Find Eskhind">
+    <node ID="Start" IfHaveQuest="基斯和金" IfNotFinishedQuest="寻找埃斯欣德">
       <text>怎么回事？Esk 在这里，而且 Grand-Doe 看起来非常生气。
 你能和她谈谈吗，肯德伦？
 </text>
       <choice GotoID="End">我会的。</choice>
     </node>
-    <node ID="Start" IfHaveQuest="Kith and Kin" IfNotFinishedQuestStep="Kith and Kin~Brief Warden Neelahind">
+    <node ID="Start" IfHaveQuest="基斯和金" IfNotFinishedQuestStep="基斯和金~信件典狱长尼拉欣德">
       <text>等等，为什么……为什么艾斯克会在这里？发生什么事了？你有金德里什吗？</text>
       <choice IfHaveBlueprint="Kindrish" IfNotHaveState="KindrishReturned" GotoID="KindrishReturn">是的，我有，但艾辛德没有。</choice>
       <choice GotoID="No. Eskhind claims to be wrongfully accused.">不。Eskhind 声称自己被冤枉了。</choice>
@@ -4859,23 +4859,23 @@ faundren 可能会产生一些想法。
 </text>
       <choice GotoID="You're the Warden. You tell me.">你是看守者。你告诉我。</choice>
       <choice GotoID="We will investigate and find the truth.">我们将调查并找出真相。</choice>
-      <choice CompleteQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="End">你毫无用处。我会查清楚这件事。</choice>
+      <choice CompleteQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="End">你毫无用处。我会查清楚这件事。</choice>
     </node>
     <node ID="You're the Warden. You tell me.">
       <text>我... 我不知道。通常由大公羊解决贝拉赫的争端。我在这里是为了平息暴力，或者通过威胁来维持和平。
 你觉得呢？
 </text>
       <choice GotoID="We will investigate and find the truth.">我们将调查并找出真相。</choice>
-      <choice CompleteQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="End">你毫无用处。我会查清楚这件事。</choice>
+      <choice CompleteQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="End">你毫无用处。我会查清楚这件事。</choice>
     </node>
     <node ID="We will investigate and find the truth.">
       <text>哦。嗯，是的，那……那是个好主意。你会帮忙吧？我的斧臂和决心都很坚定，但推理从来不是我的强项。
 我可以回答有关镇上居民的问题，如果这会有帮助的话。
 </text>
-      <choice CompleteQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="Questioning Neelahind">它可以。你现在能回答一些问题吗？</choice>
-      <choice CompleteQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="End">我将在有疑问……或者指控时回来。</choice>
+      <choice CompleteQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="Questioning Neelahind">它可以。你现在能回答一些问题吗？</choice>
+      <choice CompleteQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="End">我将在有疑问……或者指控时回来。</choice>
     </node>
-    <start ID="Fate" IfNotFinishedQuest="Kith and Kin" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" IfFinishedQuest="Love and Fear">
+    <start ID="Fate" IfNotFinishedQuest="基斯和金" IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" IfFinishedQuest="爱与恐惧">
       <text>啊，=name=，活着并畅饮吧！
 你的调查得出结论了吗？我们的命运掌握在你手中。
 </text>
@@ -4891,7 +4891,7 @@ faundren 可能会产生一些想法。
 </text>
       <choice GotoID="End">愿你的旅途顺利。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfHaveQuest="Kith and Kin" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" IfNotHaveState="FoundClue">
+    <node ID="Start" IfHaveQuest="基斯和金" IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" IfNotHaveState="FoundClue">
       <text>哦天哪，真是个谜。
 也许我应该接受安戈辛德的教导。
 </text>
@@ -4900,7 +4900,7 @@ faundren 可能会产生一些想法。
       <choice GotoID="Questioning Neelahind">我可以问一些关于嫌疑犯的问题吗？</choice>
       <choice GotoID="End">耐心点，看守者。我会查清楚这件事的。</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Kith and Kin" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" IfHaveState="FoundClue">
+    <node ID="Start" IfNotFinishedQuest="基斯和金" IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" IfHaveState="FoundClue">
       <text>活着并畅饮吧，肯德伦。你...已经做出决定了吗？</text>
       <choice IfHaveBlueprint="Sonnet" GotoID="SonnetOffer">我相信这首诗是为你而作的。</choice>
       <choice Inherits="Fate.KindrishReturnChoice" />
@@ -5055,7 +5055,7 @@ Eskhind 帮助我们坚守正义之道。她可以自由离开，她的名字不
       <text>给我？你确定？
 但是……这是一首诗。用艾斯克的手迹写的。你确定这是给我的吗？
 </text>
-      <choice GotoID="SonnetDelivered" CompleteQuestStep="Love and Fear~Rescue an Imperiled Love" TakeItem="Sonnet">是。请阅读它。</choice>
+      <choice GotoID="SonnetDelivered" CompleteQuestStep="爱与恐惧~拯救岌岌可危的爱情" TakeItem="Sonnet">是。请阅读它。</choice>
       <choice GotoID="End">也许是我错了。活着并畅饮。</choice>
     </node>
     <node ID="SonnetDelivered" AllowEscape="false">
@@ -5064,7 +5064,7 @@ Ayvah，她--Eskhind 写了这些关于……我？这些华丽的言辞让我�
 但是不可能吧。是吗？
 </text>
       <choice GotoID="NeelaLovesEsk">（不能吗？）</choice>
-      <choice GotoID="End" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">这是。活着并畅饮。</choice>
+      <choice GotoID="End" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">这是。活着并畅饮。</choice>
     </node>
     <node ID="NeelaLovesEsk" AllowEscape="false">
       <text>肯德伦，你必须理解。我花了这么多年徒劳地试图不再爱埃辛德。我以为这是唯一能让我们度过青春期的方式，看着她拙劣地与其他兴伦尝试恋爱。
@@ -5072,14 +5072,14 @@ Ayvah，她--Eskhind 写了这些关于……我？这些华丽的言辞让我�
 谢谢你。
 </text>
       <choice GotoID="Investigation">这会影响调查吗？</choice>
-      <choice GotoID="End" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">活着并畅饮吧，尼利辛德。</choice>
+      <choice GotoID="End" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">活着并畅饮吧，尼利辛德。</choice>
     </node>
     <node ID="Investigation" AllowEscape="false">
       <text>不。你是调查者，所以我无需将偏见带入其中。如果你认定艾辛德有罪，我会遵从你的判断并执行公正的判决。
 之后，我不确定。
 </text>
-      <choice GotoID="Questioning Neelahind" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">在这种情况下，我还有更多问题。</choice>
-      <choice GotoID="End" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">活着，畅饮。</choice>
+      <choice GotoID="Questioning Neelahind" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">在这种情况下，我还有更多问题。</choice>
+      <choice GotoID="End" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">活着，畅饮。</choice>
     </node>
     <node ID="Questioning Neelahind">
       <text>当然，肯德伦。请问吧。</text>
@@ -5135,21 +5135,21 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <choice IfHaveBlueprint="Kindrish" IfNotHaveState="KindrishReturned" GotoID="KindrishReturnAfter">看守者，我发现了一位金德里什。</choice>
       <choice GotoID="End">好吧。活着并畅饮。</choice>
     </start>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>肯德伦！我是说，=name=! 见到你我的心脏都在歌唱。
 感谢你为Esk正名。感谢你让我们重聚。你随时都欢迎来这里。
 </text>
       <choice Inherits="Doomed.KindrishReturnAfterChoice" />
       <choice GotoID="End">不客气。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHindriarch="Esk">
       <text>啊！肯德伦！=name=! 我太高兴了！活着真好，让我们畅饮吧。</text>
       <choice Inherits="Doomed.KindrishReturnAfterChoice" />
       <choice GotoID="End">活着并畅饮吧，看守。</choice>
     </node>
     <node ID="Start" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>=name=，很高兴见到你。在继续前行之前，先休息并补充体力。</text>
-      <choice GotoID="BetterLate" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">我相信这首诗是为你而作的。</choice>
+      <choice GotoID="BetterLate" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">我相信这首诗是为你而作的。</choice>
       <choice Inherits="Doomed.KindrishReturnAfterChoice" />
       <choice GotoID="End">活着并畅饮吧，看守。</choice>
     </node>
@@ -5157,7 +5157,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>肯德伦，谢谢你为埃斯克洗清了名誉！
 你真果断。我希望自己也有那样的勇气。
 </text>
-      <choice GotoID="BetterLate" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet">我相信这首诗是为你而作的。</choice>
+      <choice GotoID="BetterLate" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗">我相信这首诗是为你而作的。</choice>
       <choice Inherits="Doomed.KindrishReturnAfterChoice" />
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
@@ -5166,15 +5166,15 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 我本可以多年不知她也爱着我。但这是她的剧本，这些话语描述了我。
 艾娃，我必须和她说话！非常感谢你，肯德伦。
 </text>
-      <choice GotoID="End" FinishQuest="Love and Fear">不客气。活着，畅饮。</choice>
+      <choice GotoID="End" FinishQuest="爱与恐惧">不客气。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>再次感谢你为我打开了眼界，肯德伦。
 我因悲伤和失去而难以展露笑容。然而，因为有你，我和Eskhind有了更加光明的未来，我们在一起了。前方的道路充满危险，但我们终将携手前行。
 </text>
       <choice GotoID="End">我的哀悼。活着并畅饮吧。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHindriarch="Keh">
       <text>肯德伦...
 我对所发生的一切充满愤怒，但你让我看到了真相。谢谢你。
 </text>
@@ -5199,7 +5199,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 诗歌。流放者的笔迹。赞美对……我的爱，或是对一个非常像我的人的爱。
 这是……这是个残酷的玩笑吗？这不可能是真的。
 </text>
-      <choice GotoID="WhyNow" TakeItem="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">它是真的。拿走这首诗。</choice>
+      <choice GotoID="WhyNow" TakeItem="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">它是真的。拿走这首诗。</choice>
       <choice GotoID="End">我一定是弄错了。活着，然后畅饮。</choice>
     </node>
     <node ID="WhyNow">
@@ -5232,11 +5232,11 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>{{emote|时间流逝了数百个瞬间，充满了尘土和喧嚣。声音此起彼伏，蹄声踏过压实的大地，一个雏形的民主进程迈出了它最初的蹒跚步伐。}}</text>
       <choice Target="SlynthRequestAccept">...</choice>
     </node>
-    <node ID="Start" IfNotHaveQuest="Find Eskhind">
+    <node ID="Start" IfNotHaveQuest="寻找埃斯欣德">
       <text>站住！你是谁？你想要什么？</text>
       <choice GotoID="End">我要离开了。</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Find Eskhind" IfNotHaveQuest="Kith and Kin">
+    <node ID="Start" IfNotFinishedQuest="寻找埃斯欣德" IfNotHaveQuest="基斯和金">
       <text>站住！你是谁？你想要什么？</text>
       <choice GotoID="Hindriarch Keh sent me.">我是=name=。Hindriarch Keh 派我来的。</choice>
       <choice GotoID="Give back what you stole.">我是正义。把你们偷走的东西还回来。</choice>
@@ -5325,14 +5325,14 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 如果你找到证据，守卫尼拉欣德会支持你。去和她谈谈。她忠于大鹿，但更忠于真相。
 我将返回村庄，我们会把这件事理清楚。在洗清我的罪名之前，辛德里亚克必须容忍我的存在。
 </text>
-      <choice CompleteQuestStep="Find Eskhind~Find Eskhind" GotoID="End" StartQuest="Kith and Kin">我会调查这件事，但你最好不要失踪。</choice>
-      <choice CompleteQuestStep="Find Eskhind~Find Eskhind" GotoID="End" StartQuest="Kith and Kin">我会。活着并畅饮。</choice>
+      <choice CompleteQuestStep="寻找埃斯欣德~寻找埃斯欣德" GotoID="End" StartQuest="基斯和金">我会调查这件事，但你最好不要失踪。</choice>
+      <choice CompleteQuestStep="寻找埃斯欣德~寻找埃斯欣德" GotoID="End" StartQuest="基斯和金">我会。活着并畅饮。</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Find Eskhind">
+    <node ID="Start" IfNotFinishedQuest="寻找埃斯欣德">
       <text>去告诉凯赫，我会留在贝拉直到这件事解决。</text>
       <choice GotoID="End">很好。活着并畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfNotFinishedQuest="Kith and Kin">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfNotFinishedQuest="基斯和金">
       <text>月亮和太阳，=name=.</text>
       <choice GotoID="EskHappyEnd">Neelahind 的情况怎么样？</choice>
       <choice GotoID="Questions">我有话要问你。</choice>
@@ -5345,7 +5345,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 </text>
       <choice GotoID="End">愿它更加光明。活着并畅饮。</choice>
     </node>
-    <node ID="Start" IfNotFinishedQuest="Kith and Kin">
+    <node ID="Start" IfNotFinishedQuest="基斯和金">
       <text>怎么了，肯德伦？</text>
       <choice GotoID="Questions">我有话要问你。</choice>
       <choice IfHaveBlueprint="Sonnet" GotoID="SonnetPrompt">这张皱巴巴的纸是你的吗？</choice>
@@ -5446,7 +5446,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>我原本尽量不去想这些事情，直到你发现了我的诗，所以……我无法说。
 但我不能忽视这个懦弱的标志，尤其是在你发现了它之后。
 </text>
-      <choice GotoID="SonnetGiven" TakeItem="Sonnet" CompleteQuestStep="Love and Fear~Rescue an Imperiled Love">拿上这首诗。勇敢些。</choice>
+      <choice GotoID="SonnetGiven" TakeItem="Sonnet" CompleteQuestStep="爱与恐惧~拯救岌岌可危的爱情">拿上这首诗。勇敢些。</choice>
       <choice GotoID="SonnetDelivery">要我为你朗诵这首诗吗？</choice>
       <choice GotoID="End">我会进一步考虑这件事。</choice>
     </node>
@@ -5454,27 +5454,27 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>肯德伦... =name=. 我会尝试的。
 我... 谢谢你。活着，畅饮。
 </text>
-      <choice GotoID="End" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">活着并畅饮吧，Eskhind。</choice>
+      <choice GotoID="End" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">活着并畅饮吧，Eskhind。</choice>
     </node>
     <node ID="SonnetDelivery" AllowEscape="false">
       <text>送过去？但你怎么知道我是谁--
 嗯。算了。我的头在眩晕。我想如果……这首诗落入看守手中，那也许会是一件好事。也许。
 </text>
       <choice GotoID="End">那么也许会。活着并畅饮。</choice>
-      <choice GotoID="SonnetGiven" TakeItem="Sonnet" CompleteQuestStep="Love and Fear~Rescue an Imperiled Love">不，Eskhind。拿上这首诗。勇敢点。</choice>
+      <choice GotoID="SonnetGiven" TakeItem="Sonnet" CompleteQuestStep="爱与恐惧~拯救岌岌可危的爱情">不，Eskhind。拿上这首诗。勇敢点。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text>我没能救他们。
 我尽力了。我尽力去救他们。
 </text>
-      <choice GotoID="Insult" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">我想这首诗是你的。</choice>
+      <choice GotoID="Insult" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">我想这首诗是你的。</choice>
       <choice GotoID="End">慰问。活着并畅饮。</choice>
     </node>
     <node ID="Start" IfHaveState="HindrenVillageDoomed">
       <text>我不安。这种日益增长的恐惧是什么？我现在不能说话。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <start ID="StayLong" IfFinishedQuest="Love and Fear" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <start ID="StayLong" IfFinishedQuest="爱与恐惧" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>如果这不是英雄肯德伦，=name=。
 欢迎回到贝拉！你可以随意停留。
 </text>
@@ -5482,7 +5482,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <choice GotoID="EskHindriarch">作为欣德里亚克的生活怎么样？</choice>
       <choice GotoID="End">不客气。活着，畅饮。</choice>
     </start>
-    <node ID="Start" IfFinishedQuest="Love and Fear" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="爱与恐惧" IfHindriarch="Esk">
       <text>哈！真正的正义？我从没想过会在这里见到。干得漂亮！
 我承认，我本不想成为辛德里亚尔，但我希望能带领我的人民走向更加民主的治理形式。然后我就可以投票让自己下台。
 </text>
@@ -5491,7 +5491,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
     <node ID="Start" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>欢迎回到贝拉，=name=。你可以随意逗留。</text>
-      <choice GotoID="MessageReceived" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet">我相信这首诗是你的。</choice>
+      <choice GotoID="MessageReceived" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗">我相信这首诗是你的。</choice>
       <choice Inherits="StayLong.KindrishReturnChoice" />
       <choice GotoID="EskHindriarch">作为欣德里亚克的生活怎么样？</choice>
       <choice GotoID="End">活着并畅饮吧，Hindriarch。</choice>
@@ -5500,7 +5500,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>你对我的赦免让我感激不尽，肯德伦。多亏了你，事情比我预期的要好得多。
 我承认，我本不想成为辛德里亚尔，但我希望能带领我的人民走向更加民主的治理形式。然后我就可以投票让自己下台。
 </text>
-      <choice GotoID="MessageReceived" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet">我相信这首诗是你的。</choice>
+      <choice GotoID="MessageReceived" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗">我相信这首诗是你的。</choice>
       <choice Inherits="StayLong.KindrishReturnChoice" />
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
@@ -5510,15 +5510,15 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 收到消息，=name=。如果我希望我的族人能够面对未知的恐惧，我就必须先面对自己的恐惧。
 我将向尼拉欣德坦白我的感情，把写给她的诗送给她，并接受她给我的任何答复。再次感谢。
 </text>
-      <choice GotoID="End" FinishQuest="Love and Fear">不客气。活着，畅饮。</choice>
+      <choice GotoID="End" FinishQuest="爱与恐惧">不客气。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>肯德伦！见到你真高兴。
 再次感谢你把尼拉带来，也请原谅她的保留。她哀悼那些她以为认识的人，但我们的未来将一起变得更加光明。
 </text>
       <choice GotoID="End">当然。活着并畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHindriarch="Keh">
       <text>肯德伦，谢谢你。
 局势或许看似严峻，但尼拉在我身边给了我新的力量。
 </text>
@@ -5528,7 +5528,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>哦，是你啊。需要在火边休息吗？
 没关系，我的怒火已经平息。你从来都不是问题。活着，畅饮吧。
 </text>
-      <choice GotoID="Insult" IfHaveBlueprint="Sonnet" TakeItem="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">我想这首诗是你的。</choice>
+      <choice GotoID="Insult" IfHaveBlueprint="Sonnet" TakeItem="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">我想这首诗是你的。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="SlynthRequest">
@@ -5577,11 +5577,11 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>{{emote|*后裔贱民无视了你。*}}</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Keh">
       <text>你不是还有其他人可以去烦吗？
 活着并喝尿。
 </text>
-      <choice GotoID="Insult" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="Love and Fear~Return the Love Sonnet" FinishQuest="Love and Fear">我想这首诗是你的。</choice>
+      <choice GotoID="Insult" TakeItem="Sonnet" IfHaveBlueprint="Sonnet" CompleteQuestStep="爱与恐惧~交还爱情十四行诗" FinishQuest="爱与恐惧">我想这首诗是你的。</choice>
       <choice GotoID="End">（粗鲁。）</choice>
     </node>
     <node ID="KindrishReturn">
@@ -5603,19 +5603,19 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
   </conversation>
   <conversation ID="Meyehind">
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text>贝拉走了。我希望你满意了。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageDoomed">
       <text>我们的世界即将终结...</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>活着并畅饮吧，=name=.</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHindriarch="Keh">
       <text>或许希望贝拉会改变，这本身就是奢望。
 但是Esk又开心了。这让我也感到很开心。
 </text>
@@ -5629,14 +5629,14 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>别管我们。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Esk">
       <text>谢谢你为我们姐妹所做的一切。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="Start">
       <text>如果你没有什么需要我的，肯德伦，我宁愿保持沉默。</text>
-      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="ShowSonnet">这首诗属于你吗？</choice>
-      <choice IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="Meyequeries">我可以问你一些问题吗？</choice>
+      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="ShowSonnet">这首诗属于你吗？</choice>
+      <choice IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="Meyequeries">我可以问你一些问题吗？</choice>
       <choice GotoID="End">很好。活着并畅饮。</choice>
     </node>
     <node ID="Meyequeries">
@@ -5688,39 +5688,39 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
   </conversation>
   <conversation ID="Liihart">
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text />
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageDoomed">
       <text>....</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>嘿，=name=. 活着并畅饮。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuestStep="Love and Fear~Rescue an Imperiled Love" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuestStep="爱与恐惧~拯救岌岌可危的爱情" IfHindriarch="Keh">
       <text>这真糟糕。
 ……但你也不算太坏。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>..................</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Keh">
       <text>（……真是浪费。）</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>哦！=name=.
 看到你让我很开心。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Esk">
       <text>嗯... 谢谢。
 活着并饮酒。
 </text>
@@ -5730,8 +5730,8 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
       <text>{{emote|*Liihart 凝视着你，几秒的沉默。*}}
 活着并饮酒。
 </text>
-      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="ShowSonnet">这首诗属于你吗？</choice>
-      <choice IfFinishedQuestStep="Kith and Kin~Brief Warden Neelahind" GotoID="StoneQuery">我可以问你一些问题吗？</choice>
+      <choice IfHaveBlueprint="Sonnet" IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="ShowSonnet">这首诗属于你吗？</choice>
+      <choice IfFinishedQuestStep="基斯和金~信件典狱长尼拉欣德" GotoID="StoneQuery">我可以问你一些问题吗？</choice>
       <choice GotoID="End">活着并畅饮吧，沉默者。</choice>
     </node>
     <node ID="StoneQuery">
@@ -5774,29 +5774,29 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
   </conversation>
   <conversation ID="Isahind">
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text>我宁愿不说话。抱歉。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageDoomed">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageDoomed">
       <text>贝拉哈遭遇了奇怪而多石的时代。
 但是我相信我们能够度过难关，就像我们一直以来所做的那样。我们交易吗？
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageProspers">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageProspers">
       <text>我的朋友！非常感谢你帮助我们的村庄！
 我们的繁荣意味着我有新的商品供你浏览，如果你感兴趣的话。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>仿佛新的Hindriarch还不够，我听说我们可能会成为一个民主政体！多么令人兴奋。
 这是贝拉赫历史的新篇章，肯德伦。你愿意交易吗？
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Esk">
       <text>太棒了！贝拉赫保存的历史中最年轻的后裔领袖，即使这只是暂时的。
 有兴趣买个纪念品来纪念这个历史性的时刻吗？
 </text>
@@ -5815,7 +5815,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
   </conversation>
   <conversation ID="Kesehind">
-    <node ID="Start" IfFinishedQuest="Kith and Kin">
+    <node ID="Start" IfFinishedQuest="基斯和金">
       <text>你为什么和我说话？</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
@@ -5852,7 +5852,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 </text>
       <choice GotoID="End">我会小心的，谢谢。</choice>
     </node>
-    <node ID="Start" IfNotHaveQuest="风中的花瓣" IfNotFinishedQuest="Find Eskhind">
+    <node ID="Start" IfNotHaveQuest="风中的花瓣" IfNotFinishedQuest="寻找埃斯欣德">
       <text>稍等一下，=player.formalAddressTerm=。你在找工作吗？</text>
       <choice GotoID="Job seeker">我是。</choice>
       <choice GotoID="Refuse">我不是。</choice>
@@ -5947,19 +5947,19 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
 </text>
       <choice GotoID="End" StartQuest="风中的花瓣" GiveItem="Yondercane">谢谢你，Lulihart。活着并畅饮吧。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Keh">
       <text>我听说贝拉的地位再次恢复原状。我曾希望会有更多的改变，但数千年的传统并非那么容易就能动摇。
 感谢你帮助我的愚蠢族人。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Esk">
       <text>我听说历史上最年轻的Hindriarch现在领导着Bey Lah，他们的狱长打算加入Quetzal Caucus。你已经创造了奇迹，kendren。
 我已经迫不及待想看看接下来会发生什么了。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text>每一团火焰终有燃尽之时，但我族的故事依旧温暖着我前行。
 贝拉赫未能在加入库德后幸存下来，但后代仍在延续，我们的遗产永远不会完全消失。
 我在想金德里什后来怎么样了。
@@ -5972,7 +5972,7 @@ Esk 对细节有着敏锐的观察力。她非常厌恶水藤，以至于避开�
     </node>
   </conversation>
   <conversation ID="Angohind">
-    <node ID="Start" IfFinishedQuest="Find Eskhind" IfNotFinishedQuest="Kith and Kin">
+    <node ID="Start" IfFinishedQuest="寻找埃斯欣德" IfNotFinishedQuest="基斯和金">
       <text>肯德伦！请稍等一下。你是=name=，对吗？你来这里是为了调查村庄里的一个谜团，对吗？</text>
       <choice IfHaveBlueprint="Sonnet" GotoID="ShowSonnet">这首诗属于你吗？</choice>
       <choice GotoID="Introductions">我是，没错。</choice>
@@ -6093,29 +6093,29 @@ Neelahind 非常了解村里的每一个人。如果你提供的证据与卫士�
       <choice GotoID="Evidence exceptions">如果我指控错了人怎么办？</choice>
       <choice GotoID="End">仅此而已。活着并畅饮吧，法恩德伦。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Keh">
       <text>欢迎回来，侦探=name=。
 这里一切还算顺利。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Keh">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Keh">
       <text>你应该感到自豪，警探 =name=。
 正义之手可能严苛，但它公正。你在这里成为了它的代理人。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenQuestFullyResolved" IfHindriarch="Esk">
       <text>这么多变化！我一直在研究Hindriarch Esk推崇的‘民主’，我觉得它充满了对恶意行为者的漏洞。也许它可以被改进。</text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHindriarch="Esk">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHindriarch="Esk">
       <text>令人震惊！Eskhind 成为了 Hindriarch？
 那些我教给她的诗歌课程一定激发了她的公民责任感。
 </text>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Kith and Kin" IfHaveState="HindrenVillageRavaged">
+    <node ID="Start" IfFinishedQuest="基斯和金" IfHaveState="HindrenVillageRavaged">
       <text>这真的是我们生活的世界吗？
 多么残忍。
 </text>
@@ -6149,7 +6149,7 @@ Neelahind 非常了解村里的每一个人。如果你提供的证据与卫士�
     </node>
   </conversation>
   <conversation ID="IQuestKithAndKin">
-    <choice Target="AskRumor" Transient="true" IfHaveActiveQuest="Kith and Kin" IfSpeakerNotHaveProperty="AskedKithKin">你有没有看到或听到什么奇怪的事情？</choice>
+    <choice Target="AskRumor" Transient="true" IfHaveActiveQuest="基斯和金" IfSpeakerNotHaveProperty="AskedKithKin">你有没有看到或听到什么奇怪的事情？</choice>
     <node ID="AskRumor" SetSpeakerIntProperty="AskedKithKin,1">
       <part Name="KithAndKinRumor">
         <text>那是希德伦毛皮吗？上面有血...</text>
@@ -6466,7 +6466,7 @@ W-w-w-w-你在……你在说什么……~
       <text>如果你在坟墓中找到=player.reflexive=，mopango聚落就位于西北地窟的墙壁中。入口由一台名为Vivira的链式炮塔守卫，这台炮塔被涂成鲜艳的颜色，以便与同类区分开来。
 抵制你那战斗或逃跑的本能冲动，因为薇薇拉是友好的，并愿意与你交谈。如果你见到她，告诉她是我派你来的。
 </text>
-      <choice GotoID="End" IfNotHaveQuest="The Buried Watchers" StartQuest="The Buried Watchers">和...炮塔说话？我想我还是这么做吧；活著并畅饮。</choice>
+      <choice GotoID="End" IfNotHaveQuest="被埋葬的守望者" StartQuest="被埋葬的守望者">和...炮塔说话？我想我还是这么做吧；活著并畅饮。</choice>
       <choice GotoID="End">与...炮塔交谈？不了，活着并畅饮吧。</choice>
     </node>
     <node ID="ZothomKnowsRebekah">
@@ -6683,7 +6683,7 @@ W-w-w-w-你在……你在说什么……~
 借着她的光芒，=player.formalAddressTerm=。
 若汝欲安息，汝可在此歇息。
 </text>
-      <choice GotoID="ViviQuest" IfHaveActiveQuest="The Buried Watchers" CompleteQuestStep="The Buried Watchers~Visit the Mopango Settlement in the Tomb of the Eaters">你是薇薇拉吗？佐瑟姆派我来的。</choice>
+      <choice GotoID="ViviQuest" IfHaveActiveQuest="被埋葬的守望者" CompleteQuestStep="被埋葬的守望者~参观食者之墓中的莫潘戈定居点">你是薇薇拉吗？佐瑟姆派我来的。</choice>
       <choice GotoID="ViviFriendly">你比大多数炮塔友好得多。</choice>
       <choice GotoID="ViviWelcome">这是什么地方？</choice>
       <choice GotoID="End">再见，光明吐息者。</choice>
@@ -6792,8 +6792,8 @@ Better ridiculous than rude, which =ifplayerplural:ye plainly are:thou plainly a
       <text>问候，=player.formalAddressTerm=. =ifplayerplural:汝等是:汝是= 欢迎来到这里。
 若有任何问题，吾愿为其解答。
 </text>
-      <choice GotoID="Agoninon" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah">你能告诉我关于k-Goninon的事情吗？</choice>
-      <choice GotoID="AgyraDevice" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我已恢复了一种令人厌恶的装置。</choice>
+      <choice GotoID="Agoninon" IfFinishedQuestStep="磨损的最爱~Talk to Lebah">你能告诉我关于k-Goninon的事情吗？</choice>
+      <choice GotoID="AgyraDevice" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我已恢复了一种令人厌恶的装置。</choice>
       <choice GotoID="AgyraGreet">问候。我是=name=。你是谁？</choice>
       <choice GotoID="AgyraLeader">你在这里负责吗？</choice>
       <choice GotoID="AgyraWelcome">这个聚落真...温馨。</choice>
@@ -6904,7 +6904,7 @@ k-Goninon，古老而受人尊敬的凝胶穹顶，巡逻着地窟。在我们�
       <text>食者之墓由十二层组成，或者说十层，一旦=ifplayerplural:你们计入:你计入=过渡层: 人民墓穴（=ifplayerplural:你们目前所在:你目前所在=），火葬场和骨灰堂，两座地穴，以及上方奎德六位苏丹的陵墓。
 若 =ifplayerplural:汝等:汝= 在此寻求财富，=ifplayerplural:汝等:汝= 将遭遇失望。这座陵墓既是奇妙之物的寄主，也是污秽之物的栖息地，但其中少有地表居民视为宝藏之物。
 </text>
-      <choice GotoID="WondrousAndProfane" IfNotHaveQuest="Fraying Favorites">'奇妙而亵渎？' 现在我很好奇。</choice>
+      <choice GotoID="WondrousAndProfane" IfNotHaveQuest="磨损的最爱">'奇妙而亵渎？' 现在我很好奇。</choice>
       <choice GotoID="AgyraQuestions">我明白了。我还有更多问题。</choice>
       <choice GotoID="End">我感谢你。活着，畅饮。</choice>
     </node>
@@ -6955,21 +6955,21 @@ k-Goninon，古老而受人尊敬的凝胶穹顶，巡逻着地窟。在我们�
       <text>我们这里的小小避难所内墙上有一条裂缝。找到那个缺口，=ifplayerplural:你们会:你会=找到Lebah。
 请温柔一些。=pronouns.possessive=一直是我们的读者中最富有洞察力的一位，但承受着焦虑心灵的重担。
 </text>
-      <choice GotoID="End" StartQuest="Fraying Favorites">我会。活着并畅饮。</choice>
+      <choice GotoID="End" StartQuest="磨损的最爱">我会。活着并畅饮。</choice>
     </node>
   </conversation>
   <conversation ID="Lebah">
     <node ID="Start">
       <text>{{emote|*小观察者盯着你看。*}}</text>
-      <choice GotoID="LebahHides" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">（看，Lebah。我已经找回了那台令人厌恶的装置。）</choice>
+      <choice GotoID="LebahHides" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">（看，Lebah。我已经找回了那台令人厌恶的装置。）</choice>
       <choice GotoID="HelloLebah">你好？</choice>
       <choice GotoID="End">活着并饮酒，安静者。</choice>
     </node>
     <node ID="HelloLebah">
       <text>... 嗯。</text>
-      <choice GotoID="LebahQuest" IfHaveQuest="Fraying Favorites" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah">阿吉拉告诉我你发现了一种令人反感的装置。</choice>
-      <choice GotoID="LebahReminder" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfNotFinishedQuestStep="Fraying Favorites~Recover the Repulsive Device">斥力装置在哪里，再说一遍？</choice>
-      <choice GotoID="Freed" IfFinishedQuest="Fraying Favorites">我已经解救了一个孩子。</choice>
+      <choice GotoID="LebahQuest" IfHaveQuest="磨损的最爱" IfNotFinishedQuestStep="磨损的最爱~Talk to Lebah">阿吉拉告诉我你发现了一种令人反感的装置。</choice>
+      <choice GotoID="LebahReminder" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfNotFinishedQuestStep="磨损的最爱~找回排斥装置">斥力装置在哪里，再说一遍？</choice>
+      <choice GotoID="Freed" IfFinishedQuest="磨损的最爱">我已经解救了一个孩子。</choice>
       <choice GotoID="LebahGreet">我是=name=。你叫什么名字？</choice>
       <choice GotoID="LebahCredo">你的信条是什么？</choice>
       <choice GotoID="End">活着并饮酒，安静者。</choice>
@@ -7024,22 +7024,22 @@ k-Goninon，古老而受人尊敬的凝胶穹顶，巡逻着地窟。在我们�
 我们监视的孩子们已被束缚，锁已吞下钥匙。=ifplayerplural:你们解放了一个:你解放了一个=，还有三个将永远留下。
 k-Goninon 现在拥有它。=ifplayerplural:你们寻找:你寻找=。
 </text>
-      <choice GotoID="LebahHides" IfNotFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device" CompleteQuestStep="Fraying Favorites~Talk to Lebah">哦，你是说这东西？</choice>
-      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">我将会去取回它。</choice>
+      <choice GotoID="LebahHides" IfNotFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device" CompleteQuestStep="磨损的最爱~Talk to Lebah">哦，你是说这东西？</choice>
+      <choice GotoID="Curl" CompleteQuestStep="磨损的最爱~Talk to Lebah">我将会去取回它。</choice>
       <choice GotoID="OozeThat">谁或什么是k-Goninon？</choice>
     </node>
     <node ID="OozeThat">
       <text>一位年长的粘液。我们的交流如此令我困扰，以至于我让他们靠得太近了。
 k-Goninon 吞噬了装置，但我逃走了。
 </text>
-      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">我将会去取回它。</choice>
+      <choice GotoID="Curl" CompleteQuestStep="磨损的最爱~Talk to Lebah">我将会去取回它。</choice>
       <choice GotoID="WhatsGoninon">告诉我更多关于k-贡诺农的事。</choice>
     </node>
     <node ID="WhatsGoninon">
       <text>我对黏液生物不太在意，但尽量远离它们。
 请，不要再说了。我已经累了。去找阿吉拉谈谈吧。
 </text>
-      <choice GotoID="Curl" CompleteQuestStep="Fraying Favorites~Talk to Lebah">我感谢你。</choice>
+      <choice GotoID="Curl" CompleteQuestStep="磨损的最爱~Talk to Lebah">我感谢你。</choice>
     </node>
     <node ID="LebahReminder">
       <text>k-贡尼农有它。
@@ -7086,13 +7086,13 @@ k-Goninon 吞噬了装置，但我逃走了。
 </text>
       <choice GotoID="End">不客气。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+    <node ID="Start" IfFinishedQuest="磨损的最爱">
       <text>=factionaddress:Mopango|capitalize=, 我听说 =ifplayerplural:你们已经:你已经= 解救了一个孩子！我迫不及待地想和它交谈，但现在我必须观察纳查姆，看看这一事件是否对它产生了影响。=ifplayerplural:你们可以:你可以= 一起观看。</text>
       <choice GotoID="End">活着并畅饮吧，多约巴。</choice>
     </node>
     <node ID="Start">
       <text>欢迎，=factionaddress:Mopango=。生活并畅饮吧。=ifplayerplural:Need ye:Needest thou= 需要一个休息和用餐的地方吗？=ifplayerplural:Would ye:Wouldst= 想要交易吗？</text>
-      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
+      <choice GotoID="Device" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
       <choice ID="Who" GotoID="WhoAreYou">我是=name=。你是谁？</choice>
       <choice ID="Why" GotoID="WhyAreYouHere">你为什么在这里？</choice>
       <choice ID="Credo" GotoID="YourCredo">你有信条吗？</choice>
@@ -7164,13 +7164,13 @@ k-Goninon 吞噬了装置，但我逃走了。
 </text>
       <choice GotoID="End">不客气。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+    <node ID="Start" IfFinishedQuest="磨损的最爱">
       <text>=factionaddress:Mopango|capitalize=. =ifplayerplural:汝等:汝=唤醒了一名孩童。做得好。</text>
       <choice GotoID="End">谢谢你。活下来，喝一杯吧，达多戈姆。</choice>
     </node>
     <node ID="Start">
       <text>活着，畅饮。</text>
-      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
+      <choice GotoID="Device" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
       <choice ID="Who" GotoID="WhoAreYou">我是=name=。你是谁？</choice>
       <choice ID="Why" GotoID="WhyAreYouHere">你为什么在这里？</choice>
       <choice ID="Credo" GotoID="YourCredo">你有信条吗？</choice>
@@ -7240,7 +7240,7 @@ k-Goninon 吞噬了装置，但我逃走了。
 </text>
       <choice GotoID="End">不客气，吉亚米奥。活着并畅饮吧。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+    <node ID="Start" IfFinishedQuest="磨损的最爱">
       <text>=ifplayerplural:你们确实:你确实=释放了一个孩子？我看到=ifplayerplural:你们做到了:你做到了=。恭喜。
         有朝一日，我希望能见到卡自由。我得先活下来，找到方法。
 </text>
@@ -7248,7 +7248,7 @@ k-Goninon 吞噬了装置，但我逃走了。
     </node>
     <node ID="Start">
       <text>=factionaddress:Mopango|capitalize=, 欢迎。=ifplayerplural:你们已经:你已经= 在这个奇特的地方存活了这么久，做得很好。</text>
-      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
+      <choice GotoID="Device" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
       <choice ID="Who" GotoID="WhoAreYou">我是=name=。你是谁？</choice>
       <choice ID="Why" GotoID="WhyAreYouHere">你为什么在这里？</choice>
       <choice ID="Credo" GotoID="YourCredo">你有信条吗？</choice>
@@ -7324,7 +7324,7 @@ k-Goninon 吞噬了装置，但我逃走了。
 </text>
       <choice GotoID="End">谢谢你，尤娜。活着，畅饮。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Fraying Favorites">
+    <node ID="Start" IfFinishedQuest="磨损的最爱">
       <text>啊，=factionaddress:Mopango=，=ifplayerplural:你们是:你是=苦乐参半的景象。真希望=ifplayerplural:你们:你=选择了Dagasha，但我的光芒照耀在别处。
 不过，我还是希望能在未来的日子里再次见到=ifplayerplural:ye:thee=。=ifplayerplural:Ye are:Thou'rt=随时欢迎回来，只要=ifplayerplural:ye survive:thou surviveth=。
 </text>
@@ -7332,7 +7332,7 @@ k-Goninon 吞噬了装置，但我逃走了。
     </node>
     <node ID="Start">
       <text>我们这是发现了什么？走近一些，=player.formalAddressTerm=，让我认识你。</text>
-      <choice GotoID="Device" IfFinishedQuestStep="Fraying Favorites~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
+      <choice GotoID="Device" IfFinishedQuestStep="磨损的最爱~Talk to Lebah" IfHaveBlueprint="Repulsive Device">我正在寻找这种令人厌恶的装置的用途。</choice>
       <choice ID="Who" GotoID="WhoAreYou">我是=name=。你是谁？</choice>
       <choice ID="Why" GotoID="WhyAreYouHere">你为什么在这里？</choice>
       <choice ID="Credo" GotoID="YourCredo">你有信条吗？</choice>
@@ -7430,8 +7430,8 @@ k-Goninon 吞噬了装置，但我逃走了。
       <text>莫帕ngo照顾了我，当我无法自顾之时给了我唯一知晓的名字。我会留下来帮助他们。这具身躯不再是一座牢笼，或许更深层次的真相仍可在此发现。
 新朋友，我向你/你们提供这块曾经的监狱的一部分，你/你们可能会觉得有用，同时也表达我的感谢。
 </text>
-      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">活下去并保持自由，Nacham。</choice>
-      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，Nacham。</choice>
+      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfHaveQuest="磨损的最爱" FinishQuest="磨损的最爱">活下去并保持自由，Nacham。</choice>
+      <choice GotoID="End" GiveItem="Nacham's Ribbon" IfNotHaveQuest="磨损的最爱" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，Nacham。</choice>
     </node>
   </conversation>
   <conversation ID="Dagasha">
@@ -7467,8 +7467,8 @@ k-Goninon 吞噬了装置，但我逃走了。
 他们很善良，但也很弱小。也许我可以教导他们。激励他们变得更强大。
 但是为了 =ifplayerplural:你们:你=，我必须平衡我们的恩怨。拿去这块我的外壳吧。带着它，自信地行动。以我的名义发号施令。
 </text>
-      <choice GotoID="End" GiveItem="Dagasha's Spur" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">活下去并保持自由，达加沙。</choice>
-      <choice GotoID="End" GiveItem="Dagasha's Spur" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，达加沙。</choice>
+      <choice GotoID="End" GiveItem="Dagasha's Spur" IfHaveQuest="磨损的最爱" FinishQuest="磨损的最爱">活下去并保持自由，达加沙。</choice>
+      <choice GotoID="End" GiveItem="Dagasha's Spur" IfNotHaveQuest="磨损的最爱" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，达加沙。</choice>
     </node>
   </conversation>
   <conversation ID="Vaam">
@@ -7504,8 +7504,8 @@ k-Goninon 吞噬了装置，但我逃走了。
       <text>我尚未找到我的目标。我可以思考和说话，因此这个躯壳几乎让我感到舒适。
 然而，有一件东西仍让我感到不适。=ifplayerplural:你们愿意:你愿意=接受它吗？也许=ifplayerplural:你们可以:你可以=赋予它一些用途。
 </text>
-      <choice GotoID="End" GiveItem="Vaam's Lens" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">活下去并保持自由，瓦安。</choice>
-      <choice GotoID="End" GiveItem="Vaam's Lens" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，瓦安。</choice>
+      <choice GotoID="End" GiveItem="Vaam's Lens" IfHaveQuest="磨损的最爱" FinishQuest="磨损的最爱">活下去并保持自由，瓦安。</choice>
+      <choice GotoID="End" GiveItem="Vaam's Lens" IfNotHaveQuest="磨损的最爱" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活下去并保持自由，瓦安。</choice>
     </node>
   </conversation>
   <conversation ID="Kah">
@@ -7540,8 +7540,8 @@ k-Goninon 吞噬了装置，但我逃走了。
       <text>我将自由地享受我的自由行动，一段时间。之后，我就不知道了。我可能会与那些给我命名的莫潘戈生物交谈，并在他们那里找到一个目标。我永远无法报答他们的关怀，但也许我可以报答=ifplayerplural:yours:thine=。
 我愿意将这具躯体上脱落的一块碎片赠予=ifplayerplural:你们:你=。愿=ifplayerplural:你们:你=永远自由奔跑。
 </text>
-      <choice GotoID="End" GiveItem="Kah's Loop" IfHaveQuest="Fraying Favorites" FinishQuest="Fraying Favorites">活着并保持自由，Kah。</choice>
-      <choice GotoID="End" GiveItem="Kah's Loop" IfNotHaveQuest="Fraying Favorites" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活着并保持自由，Kah。</choice>
+      <choice GotoID="End" GiveItem="Kah's Loop" IfHaveQuest="磨损的最爱" FinishQuest="磨损的最爱">活着并保持自由，Kah。</choice>
+      <choice GotoID="End" GiveItem="Kah's Loop" IfNotHaveQuest="磨损的最爱" CallScript="XRL.World.ZoneBuilders.ChildrenOfTheTombQuestHandler.FinishFrayingFavorites">活着并保持自由，Kah。</choice>
     </node>
   </conversation>
   <conversation ID="Shomer">
@@ -7670,8 +7670,8 @@ Saad，塞拉芬之言。Saad，你询问，守护者应允。Saad，你愿意�
     <node ID="Start">
       <text>.....哦... 哦？愿和平降临于所有踏入盘羊之屋的人。</text>
       <choice ID="BiographerWho" GotoID="Who">你是谁？</choice>
-      <choice ID="BiographerMark" GotoID="Mark" IfHaveQuest="Tomb of the Eaters">你知道死亡印记吗？</choice>
-      <choice ID="BiographerBrightsheol" GotoID="Brightsheol" IfHaveQuest="Tomb of the Eaters">我怎么去光明地狱？</choice>
+      <choice ID="BiographerMark" GotoID="Mark" IfHaveQuest="食者之墓">你知道死亡印记吗？</choice>
+      <choice ID="BiographerBrightsheol" GotoID="Brightsheol" IfHaveQuest="食者之墓">我怎么去光明地狱？</choice>
       <choice ID="BiographerUnfinished" GotoID="Unfinished">为什么这座陵墓没有完工？</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
@@ -7717,7 +7717,7 @@ Saad，塞拉芬之言。Saad，你询问，守护者应允。Saad，你愿意�
 开始分解。你必须... 你必须已经死了。死了并被埋葬。身体还在，但心智已游荡...
 </text>
       <choice GotoID="OnlyWay">你必须得死？这真的是唯一的办法吗？</choice>
-      <choice GotoID="BearTheMark" IfHaveActiveQuest="Tomb of the Eaters" IfHaveState="MarkOfDeath">我带着印记。将我安葬吧。</choice>
+      <choice GotoID="BearTheMark" IfHaveActiveQuest="食者之墓" IfHaveState="MarkOfDeath">我带着印记。将我安葬吧。</choice>
       <choice UseID="BiographerWho" />
       <choice UseID="BiographerMark" />
       <choice UseID="BiographerUnfinished" />
@@ -8567,7 +8567,7 @@ Yd 可以通过建立一些等级制度和更多的基础设施来吸引那些�
     </node>
   </conversation>
   <conversation ID="Thah">
-    <node ID="Start" IfNotHaveQuest="Landing Pads">
+    <node ID="Start" IfNotHaveQuest="停机坪">
       <text>啊，陌生人。欢迎来到水培室。我是Thah。</text>
       <choice ID="Greet" GotoID="GreetThah">月亮与太阳，塔赫。我是=name=。</choice>
       <choice ID="Slynth" GotoID="SlynthWhat">你是什么样的存在？</choice>
@@ -8626,7 +8626,7 @@ Yd 可以通过建立一些等级制度和更多的基础设施来吸引那些�
     </node>
     <node ID="Helping4">
       <text>当然，如果你能为我们出面说情，或许会有人欢迎我们？如果，啊，假设三个定居点愿意收留我们，这将赋予我们方向和自主权。你是否愿意担任我们的大使？不是无偿的。</text>
-      <choice StartQuest="Landing Pads" GotoID="Accept">我会帮忙。</choice>
+      <choice StartQuest="停机坪" GotoID="Accept">我会帮忙。</choice>
       <choice GotoID="End">我拒绝。活着并畅饮。</choice>
     </node>
     <node ID="Accept">
@@ -8635,15 +8635,15 @@ Yd 可以通过建立一些等级制度和更多的基础设施来吸引那些�
 </text>
       <choice GotoID="End">活着并畅饮。我会带着消息回来。</choice>
     </node>
-    <node ID="Start" IfHaveActiveQuest="Landing Pads" IfNotHaveQuest="Return to the Hydropon" IfHaveState="SlynthCandidatesReady">
+    <node ID="Start" IfHaveActiveQuest="停机坪" IfNotHaveQuest="返回水培池" IfHaveState="SlynthCandidatesReady">
       <text>来吧，=name=。时候到了。</text>
       <choice GotoID="SlynthDecision">...</choice>
     </node>
-    <node ID="Start" IfHaveActiveQuest="Landing Pads">
+    <node ID="Start" IfHaveActiveQuest="停机坪">
       <text>啊，=name=，月亮和太阳。
 有关我们未来家园的消息吗？
 </text>
-      <choice IfHaveQuest="Landing Pads" GotoID="LandingPadsCommentary">是的，我有关于斯林斯庇护所的消息。</choice>
+      <choice IfHaveQuest="停机坪" GotoID="LandingPadsCommentary">是的，我有关于斯林斯庇护所的消息。</choice>
       <choice GotoID="End">无。活着并畅饮吧，Thah。</choice>
     </node>
     <node ID="LandingPadsCommentary">
@@ -8702,7 +8702,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <text>流浪者，谢谢你！我会将这些地方告知我的族人。我们会聚集讨论，并会，啊，做出选择。在此期间请耐心等待。</text>
       <choice GotoID="End" SetIntState="SlynthCandidatesReady,1">如你所言，Thah。我会回来的。</choice>
     </node>
-    <node ID="Start" IfFinishedQuest="Landing Pads">
+    <node ID="Start" IfFinishedQuest="停机坪">
       <text>月亮和太阳，=name=.</text>
       <choice IfHaveState="LandingPadsSlynthLeft" GotoID="SlynthLeave">看到你还在这里，真是令人好奇，毕竟你已经帮助你的族人移民了。</choice>
       <choice ID="ChoiceGetStar" GotoID="GiveStar" IfHaveState="LandingPadsSlynthArrived" IfNotHaveState="SlynthStarGiven">你为什么让我回来？</choice>
@@ -8710,7 +8710,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
     </node>
     <node ID="GiveStar">
       <text>我一直在制作一件遗物，一件既有用途又能随身携带的艺术品。在我外出期间，我终于完成了它的制作，而你为我们提供的机会启发了最后的润色。我想把它送给你。</text>
-      <choice GotoID="End" SetIntState="SlynthStarGiven,1" GiveItem="n-Pointed Asterisk" FinishQuest="Return to the Hydropon">我会珍惜它。活着，畅饮。</choice>
+      <choice GotoID="End" SetIntState="SlynthStarGiven,1" GiveItem="n-Pointed Asterisk" FinishQuest="返回水培池">我会珍惜它。活着，畅饮。</choice>
     </node>
     <node ID="SlynthDecision">
       <text IfSlynthChosen="Joppa">经过一番讨论和商议，我们达成了共识: 乔帕将成为斯林斯的新家园。长久和平的生活，啊，有目标的生活……这吸引了我们许多人，还有什么地方比亚伯拉姆的水藤沼泽更好呢？
@@ -8760,7 +8760,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <text>啊，还有一件小事，=name=。关于你的奖励……它还没完全准备好，但现在我知道它还需要什么了。
 请在我亲族安全抵达新家后返回水培室，我会把它给你。我不会离开摇篮。
 </text>
-      <choice GotoID="End" FinishQuest="Landing Pads" AwardXP="20000" StartQuest="Return to the Hydropon">我会。活着并畅饮。</choice>
+      <choice GotoID="End" FinishQuest="停机坪" AwardXP="20000" StartQuest="返回水培池">我会。活着并畅饮。</choice>
     </node>
     <node ID="SlynthLeave">
       <text IfSlynthChosen="Joppa">是的，我决定留下来。这并不是说，呃，这并不是说我不喜欢务农的生活。但是想到要在看了几十年的摇篮之后离开……我做不到。
@@ -8860,7 +8860,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
 啊？~
 问候，=player.formalAddressTerm=。
 </text>
-      <choice GotoID="Who" IfNotFinishedQuest="Landing Pads" IfNotHaveQuest="Landing Pads">你是谁？</choice>
+      <choice GotoID="Who" IfNotFinishedQuest="停机坪" IfNotHaveQuest="停机坪">你是谁？</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="Who">
@@ -8963,12 +8963,12 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <text>我们共享光明与当下，旅者=name=。</text>
       <choice GotoID="Chavvah">这是什么地方？</choice>
       <choice GotoID="Name">你是谁？</choice>
-      <choice GotoID="Chime" IfTestState="AttunedToChavvah" IfNotHaveQuest="If, Then, Else" IfNotFinishedQuest="If, Then, Else">我在艾恩罗什交谈过的实体提到了一块鸣响的石头...</choice>
-      <choice GotoID="ActiveQuest" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">请再次解释我应该如何使用陶的钟声。</choice>
-      <choice GotoID="DoneQuest" IfHaveActiveQuest="If, Then, Else" IfFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">我让Tau和她的铃声重聚了。</choice>
-      <choice GotoID="DoneQuest" IfHaveActiveQuest="If, Then, Else" IfFinishedQuestStep="If, Then, Else~Go to the Bottom of Taproot" IfTestState="TauLostInSoft">我已经摧毁了钟声，迪夫拉克。</choice>
-      <choice GotoID="BarathrumChavvahDone" IfHaveQuest="The Golem" IfFinishedQuest="If, Then, Else" IfTestState="GyredreamKnown">我已经完成了-elseing仪式。你愿意像你说的那样为巴拉瑟伦的星界攀登提供力量吗？</choice>
-      <choice GotoID="Barathrum" IfHaveQuest="The Golem">我以需求之名而来。巴拉瑟姆请求你心灵的力量来驱动我们的星际攀登。</choice>
+      <choice GotoID="Chime" IfTestState="AttunedToChavvah" IfNotHaveQuest="如果、那么、否则" IfNotFinishedQuest="如果、那么、否则">我在艾恩罗什交谈过的实体提到了一块鸣响的石头...</choice>
+      <choice GotoID="ActiveQuest" IfHaveQuest="如果、那么、否则" IfNotFinishedQuestStep="如果、那么、否则~让塔乌与她的钟声重聚">请再次解释我应该如何使用陶的钟声。</choice>
+      <choice GotoID="DoneQuest" IfHaveActiveQuest="如果、那么、否则" IfFinishedQuestStep="如果、那么、否则~让塔乌与她的钟声重聚">我让Tau和她的铃声重聚了。</choice>
+      <choice GotoID="DoneQuest" IfHaveActiveQuest="如果、那么、否则" IfFinishedQuestStep="如果、那么、否则~转到主根的底部" IfTestState="TauLostInSoft">我已经摧毁了钟声，迪夫拉克。</choice>
+      <choice GotoID="BarathrumChavvahDone" IfHaveQuest="魔像" IfFinishedQuest="如果、那么、否则" IfTestState="GyredreamKnown">我已经完成了-elseing仪式。你愿意像你说的那样为巴拉瑟伦的星界攀登提供力量吗？</choice>
+      <choice GotoID="Barathrum" IfHaveQuest="魔像">我以需求之名而来。巴拉瑟姆请求你心灵的力量来驱动我们的星际攀登。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="Chavvah" Inherits="Welcome">
@@ -8992,7 +8992,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <text>取下Tau的铃铛，静默无声。将它带到Taproot的最深处，我的树干之下，她将在那里让铃铛成为她的过渡之身，永远离去。完成-elseing仪式。
 在Taproot的底部，Tau显现了。她还告诉我们，另一个人正在那里等待她。
 </text>
-      <choice GotoID="Accept" StartQuest="If, Then, Else" GiveItem="CrystalKey">我将按你的要求行事。</choice>
+      <choice GotoID="Accept" StartQuest="如果、那么、否则" GiveItem="CrystalKey">我将按你的要求行事。</choice>
       <choice GotoID="Welcome">我还有更多问题要问，先别急。</choice>
     </node>
     <node ID="ActiveQuest" Inherits="Welcome">
@@ -9005,7 +9005,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
 我在旋梦中感受到了你的到来，=name=。我预感到了这一刻。现在我依然能感受到。
 仪式已经完成，水手。你已经完成了任务，我们对你表示感谢。
 </text>
-      <choice GotoID="End" CompleteQuestStep="If, Then, Else~Return to the Keter" FinishQuest="If, Then, Else">
+      <choice GotoID="End" CompleteQuestStep="如果、那么、否则~回到科特" FinishQuest="如果、那么、否则">
         <text>活着，畅饮。</text>
         <part Name="IfThenElseAchievement" />
       </choice>
@@ -9064,8 +9064,8 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
     </node>
     <node ID="GyredreamMore" Inherits="Welcome">
       <text>对我的小妖精Tau来说，这太过沉重了。她喘息着，她的铃声静止了。她现在离开了我们，去成为-else。这是她的选择。</text>
-      <choice GotoID="WillYouHelp" IfNotFinishedQuest="If, Then, Else" Priority="99">我很抱歉。但你会帮助巴拉瑟伦做他所要求的事吗？</choice>
-      <choice GotoID="WillYouHelp_ChavvahFinished" IfFinishedQuest="If, Then, Else" Priority="99">我很抱歉。但你会帮助巴拉瑟伦做他所要求的事吗？</choice>
+      <choice GotoID="WillYouHelp" IfNotFinishedQuest="如果、那么、否则" Priority="99">我很抱歉。但你会帮助巴拉瑟伦做他所要求的事吗？</choice>
+      <choice GotoID="WillYouHelp_ChavvahFinished" IfFinishedQuest="如果、那么、否则" Priority="99">我很抱歉。但你会帮助巴拉瑟伦做他所要求的事吗？</choice>
     </node>
     <node ID="WillYouHelp">
       <text>{{emote|*迪夫拉克钟声*}}</text>
@@ -9073,7 +9073,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
     </node>
     <node ID="WillYouHelp2">
       <text>我将赋予他星辰之升的力量。如果你将陶的铃铛带至根茎，她便能离开。如果你完成了-elseing仪式。</text>
-      <choice GotoID="Work" IfNotHaveQuest="If, Then, Else">异界仪式？</choice>
+      <choice GotoID="Work" IfNotHaveQuest="如果、那么、否则">异界仪式？</choice>
       <choice GotoID="Welcome">我明白了。</choice>
     </node>
     <node ID="WillYouHelp_ChavvahFinished">
@@ -9152,7 +9152,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice GotoID="Black">你的钟声裂纹斑驳，内部布满了无星的云朵。为什么？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">你受到螺旋梦的影响了吗？</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
     <node ID="PostQuestions" Inherits="Welcome">
@@ -9290,7 +9290,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice GotoID="Upset">有什么问题吗？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">这一切都是关于旋梦吗？</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="Tau">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="Tau">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="PostQuestions" Inherits="Welcome">
@@ -9421,7 +9421,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice GotoID="Light">你的钟声闪耀着如此刺眼的光芒。</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">你受到螺旋梦的影响了吗？</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
     <node ID="PostQuestions" Inherits="Welcome">
@@ -9507,7 +9507,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <choice GotoID="Silent">...</choice>
       <choice GotoID="Name">你的名字就像两个词之间的停顿，朋友。我是怎么知道的？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">告诉我关于螺旋梦。</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
     <node ID="Silent" Inherits="Welcome">
@@ -9585,7 +9585,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice GotoID="Feel">你... 感受到我了吗？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">你体验过旋梦吗？</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </start>
     <node ID="PostQuestions" Inherits="Welcome">
@@ -9685,7 +9685,7 @@ Grit Gate 是，啊……那是 Q 女士居住的地方，对吧？她写了我�
       <text>[空节点；仅用于选项重用]</text>
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">你体验过旋梦吗？</choice>
-      <choice IfHaveActiveQuest="If, Then, Else" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
+      <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
     <node ID="PostQuestions" Inherits="Choices">
@@ -9897,13 +9897,13 @@ B-Bright，她。她还向T-Tammuz的火花唱诵。通过她，人们几乎能�
 </text>
       <choice GotoID="End">...</choice>
     </start>
-    <start ID="WelcomeHub" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+    <start ID="WelcomeHub" IfHaveQuest="如果、那么、否则" IfNotFinishedQuestStep="如果、那么、否则~让塔乌与她的钟声重聚">
       <text>器具已到。你，去修剪命运根茎，解放我们的女孩。现在去执行吧。</text>
       <choice Target="Seeker">你是在寻找盲视之道吗？</choice>
       <choice Target="Taking">你要带Tau去哪儿？</choice>
       <choice GotoID="End">...</choice>
     </start>
-    <start ID="Welcome" IfHaveQuest="If, Then, Else" Inherits="WelcomeHub">
+    <start ID="Welcome" IfHaveQuest="如果、那么、否则" Inherits="WelcomeHub">
       <text>给她你的临别赠言吧，器具。我们的心已在他处。</text>
       <choice GotoID="End">...</choice>
     </start>
@@ -9932,7 +9932,7 @@ B-Bright，她。她还向T-Tammuz的火花唱诵。通过她，人们几乎能�
   <conversation ID="TauSoft">
     <start ID="Welcome">
       <text>{{emote|*钟声静默无声。*}}</text>
-      <choice GotoID="End" IfHaveQuest="If, Then, Else" IfNotFinishedQuestStep="If, Then, Else~Reunite Tau with Her Chime" CompleteQuestStep="If, Then, Else~Reunite Tau with Her Chime">
+      <choice GotoID="End" IfHaveQuest="如果、那么、否则" IfNotFinishedQuestStep="如果、那么、否则~让塔乌与她的钟声重聚" CompleteQuestStep="如果、那么、否则~让塔乌与她的钟声重聚">
         <text>[轻触 Tau 的铃铛以软化]</text>
         <part Name="TakeItem" Blueprints="TauChime" Require="true" Remove="true" />
       </choice>

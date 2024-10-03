@@ -14389,7 +14389,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <inventoryobject Blueprint="Borderlands Revolver" Number="2"/>
     <inventoryobject Blueprint="Lead Slug" Number="16"/>
     <inventoryobject Blueprint="LeatherBracer" Number="2"/>
-    <part Name="FinishQuestStepWhenSlain" Quest="Find Eskhind" Step="Find Eskhind" GameState="EskhindSlain"/>
+    <part Name="FinishQuestStepWhenSlain" Quest="寻找埃斯欣德" Step="寻找埃斯欣德" GameState="EskhindSlain"/>
     <part Name="ConversationScript" ConversationID="Eskhind"/>
     <part Name="Brain" Wanders="false" Factions="Pariahs-100"/>
     <xtagWaterRitual NoJoin="true" SellSkill="Multiweapon_Fighting"/>
@@ -15438,7 +15438,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <xtagGrammar Proper="true"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
-  <!-- Tomb of the Eaters -->
+  <!-- 食者之墓 -->
   <object Name="k-Goninon" Inherits="Gelatinous Cupola">
     <part Name="Render" DisplayName="k-戈尼农" Tile="Creatures/sw_cupola.bmp" RenderString="J" ColorString="&amp;M" DetailColor="G"/>
     <part Name="DisplayNameColor" Color="M"/>
