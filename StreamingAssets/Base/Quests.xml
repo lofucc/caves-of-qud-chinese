@@ -32,7 +32,7 @@
          Accomplishment="你为一位老人拿了一件饰品。"
          Hagiograph="在水与藤蔓的神殿内，=name= 向一位老人传授了铬的价值。"
          HagiographCategory="Trysts">
-    <step Name="找到一个Knickknack" XP="0">
+    <step Name="找到一个遗物" XP="0">
       <text>在约帕周边地区搜寻遗物。</text>
     </step>
     <step Name="回去找阿尔吉夫" XP="75">
@@ -43,7 +43,7 @@
          Accomplishment="你又给一位老人拿了一件小饰品。"
          Hagiograph="在高盐阳光下的钢铁阴影下，=name= 教会了一位老人铬的价值。"
          HagiographCategory="Trysts">
-    <step Name="找到另一个Knickknack" XP="0">
+    <step Name="找到另一个遗物" XP="0">
       <text>在约帕周边地区搜寻另一件遗物。</text>
     </step>
     <step Name="回去找阿尔吉夫" XP="150">

@@ -6473,7 +6473,7 @@
   <!-- Floating nearby, Tier 6 -->
   <object Name="Quantum Mote" Inherits="Floating Glowsphere">
     <part Name="Armor" AV="1" DV="1" Elec="6" Cold="6" Heat="6" Acid="6" WornOn="Floating Nearby"/>
-    <part Name="Render" DisplayName="{{量子|量子微粒}}" RenderString="*" RenderLayer="5" Tile="Items/sw_mote.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m"/>
+    <part Name="Render" DisplayName="{{quantum|量子微粒}}" RenderString="*" RenderLayer="5" Tile="Items/sw_mote.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m"/>
     <part Name="LightSource" Lit="true" Radius="8"/>
     <part Name="Commerce" Value="500"/>
     <part Name="Description" Short="粒子从概率核心闪烁而出，在能量的离散壳层上留下轨迹。"/>
