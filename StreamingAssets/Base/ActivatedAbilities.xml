@@ -153,7 +153,7 @@
   </ability>
   <ability Command="CommandInflateAxons">
 		<description>			
-			<p>你获得 +<stat Name="QuicknessBonus"/> 敏捷度，持续 <stat Name="QuicknessDuration"/> 回合，然后你会变得迟缓 10 回合。</p>
+			<p>你获得 +<stat Name="QuicknessBonus"/> 速度值，持续 <stat Name="QuicknessDuration"/> 回合，然后你会变得迟缓 10 回合。</p>
 <br/>			
 			<statline Name="Cooldown"/>
 		</description>
@@ -200,7 +200,7 @@
   </ability>
   <ability Command="CommandActivateOnboardRecoilerTeleporter">
     <description>
-      <p>你传送到已编程的位置。</p>
+      <p>你传送回设定的位置。</p>
 <br/>
       <statline Name="Location" DisplayName="当前位置"/>
       <statline Name="Cooldown"/>
@@ -305,7 +305,7 @@
 			<p>你将自己的意识投射到一个相邻的机器人中，并在其行动时控制它，而你自己的身体则处于休眠状态。</p>
 <br/>
 			<p>对机器人的科技攻击。</p>
-<p>攻击检定:  <stat Name="Attack"/> 对抗防御者MA + 等级</p>
+<p>攻击检定: <stat Name="Attack"/> 对抗防御者MA + 等级</p>
 <p>激活时高充能消耗。</p>
 <p>每轮低充能消耗。</p>
 <statline Name="Duration"/>
@@ -981,7 +981,7 @@
   <ability Command="CommandReleaseAdrenaline">
     <description>
       <p>你增加体内肾上腺素的流动，持续 <stat Name="Duration"/>。</p>
-<p>在此期间，你获得 +<stat Name="QuicknessBonus"/> 敏捷度，并且其他物理变异等级提升 +<stat Name="MutationBonus"/> 级。</p>
+<p>在此期间，你获得 +<stat Name="QuicknessBonus"/> 速度值，并且其他物理变异等级提升 +<stat Name="MutationBonus"/> 级。</p>
 <br/>      
       <statline Name="Cooldown"/>
     </description>
@@ -1006,7 +1006,7 @@
 		<UITile Tile="Abilities/abil_burrowing_claws_toggle_on.bmp" Foreground="R" Detail="Y" State="ToggleOn"/>
   </ability>
   <ability Command="CommandTightenCarapace">
-    <description>你可以收紧你的<stat Name="CarapaceName"/> to double its AV bonus at a -2 DV penalty as long as you remain still.</description>
+    <description>你可以收紧你的<stat Name="CarapaceName"/>，只要你保持不动，它的 AV 奖励就会加倍，但 DV 惩罚将是 -2。</description>
     <UITile Tile="Mutations/carapace.bmp" Foreground="y" Detail="g"/>
   </ability>
   <ability Command="CommandDischarge">
@@ -1458,7 +1458,7 @@
   </ability>
   <ability Command="CommandDefensiveStance">
     <description>
-      <p>当你主手装备长刃武器时，你获得 +<stat Name="DVBonus"/> 动态值(DV)。</p>
+      <p>当你主手装备长刃武器时，你获得 +<stat Name="DVBonus"/> DV。</p>
 <br/>
       <p>姿态也可能影响其他技能。</p>
 </description>
@@ -1515,7 +1515,7 @@
   </ability>
   <ability Command="CommandPersuasionBerate">
     <description>
-      <p>你羞辱了附近的一个生物，使其DV、命中、自尊和意志力降低4点，敏捷度降低10%。</p>
+      <p>你羞辱了附近的一个生物，使其DV、命中、自尊和意志力降低4点，速度值降低10%。</p>
 <br/>
       <statline Name="Duration"/>
       <statline Name="Range"/>

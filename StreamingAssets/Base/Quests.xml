@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <quests>
-  <quest Name="什么在吃水藤？" DisplayName="123" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE"
+  <quest Name="什么在吃水藤？" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE"
          Accomplishment="你解开了被啃食的水藤之谜，并警告了乔帕村的村民关于吉尔什。" 
          Hagiograph="在 =month= 月 =year= 年，=name= 走在铬合金拱门下，击退了成群的吉尔什灵，并治愈了枯萎的庄稼。"
          HagiographCategory="DoesSomethingRad">

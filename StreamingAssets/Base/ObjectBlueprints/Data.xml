@@ -171,43 +171,43 @@
 		<tag Name="ExaminerRandom" Value="*delete"/>
 	</object>
 	<object Name="UnknownSmallMilkyTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{Y|乳白色}} 管状物" ColorString="&amp;Y"/>		
+		<part Name="Render" DisplayName="{{Y|乳白色}}管状物" ColorString="&amp;Y"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallSmokeyTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{K|烟熏}} 管道" ColorString="&amp;K"/>		
+		<part Name="Render" DisplayName="{{K|烟熏}}管道" ColorString="&amp;K"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallRoseyTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{R|玫瑰色}} 管状生物" ColorString="&amp;R"/>		
+		<part Name="Render" DisplayName="{{R|玫瑰色}}管状生物" ColorString="&amp;R"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallTurquoiseTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{C|青绿色}} 管状物" ColorString="&amp;C"/>		
+		<part Name="Render" DisplayName="{{C|青绿色}}管状物" ColorString="&amp;C"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallCobaltTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{b|钴}} 管" ColorString="&amp;b"/>		
+		<part Name="Render" DisplayName="{{b|钴}}管" ColorString="&amp;b"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallMossyTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{g|苔藓}} 管" ColorString="&amp;g"/>		
+		<part Name="Render" DisplayName="{{g|苔藓}}管" ColorString="&amp;g"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallGoldFleckedTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{W|金色斑点}} 管状物" ColorString="&amp;W"/>		
+		<part Name="Render" DisplayName="{{W|金色斑点}}管状物" ColorString="&amp;W"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallMuddyTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{w|泥泞的}} 管道" ColorString="&amp;w"/>		
+		<part Name="Render" DisplayName="{{w|泥泞的}}管道" ColorString="&amp;w"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallVioletTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{m|紫色}} 管状物" ColorString="&amp;m"/>		
+		<part Name="Render" DisplayName="{{m|紫色}}管状物" ColorString="&amp;m"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownSmallPlatinumTube" Inherits="UnknownMed">
-		<part Name="Render" DisplayName="{{y|铂金}} 管道" ColorString="&amp;y"/>		
+		<part Name="Render" DisplayName="{{y|铂金}}管道" ColorString="&amp;y"/>		
 		<tag Name="ExaminerUnknownMeds"/>
 	</object>
 

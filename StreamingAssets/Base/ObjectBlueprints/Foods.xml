@@ -52,8 +52,8 @@
     <tag Name="HasCustomStackerDisplay"/>
     <tag Name="StackerSingularPrefix" Value="{{y|[{{C|"/>
     <tag Name="StackerPluralPrefix" Value="{{y|[{{C|"/>
-    <tag Name="StackerSingularPostfix" Value="}} serving]}}"/>
-    <tag Name="StackerPluralPostfix" Value="}} servings]}}"/>
+    <tag Name="StackerSingularPostfix" Value="}}份]}}"/>
+    <tag Name="StackerPluralPostfix" Value="}}份]}}"/>
     <xtagGrammar iArticle="some" adjunctNoun="portion" massNoun="true"/>		
   </object>
   
@@ -70,7 +70,7 @@
   <!-- Butcherables -->
   <object Name="Raw Meat" Inherits="Food">
     <part Name="Render" DisplayName="[生肉]" ColorString="&amp;r" TileColor="&amp;r" DetailColor="w" Tile="Items/sw_rawmeat1.bmp"/>    
-    <part Name="Food" IllOnEat="true" Message="The meat is tough but the meal is filling."/>
+    <part Name="Food" IllOnEat="true" Message="肉很硬，但饭很饱。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="2"/>
     <xtagGrammar massNoun="true"/>
@@ -80,7 +80,7 @@
   <object Name="Raw Bear Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|生熊肉}}"/>
     <part Name="Description" Short="生熊肉浸透了它自己的鲜血。"/>
-    <part Name="Food" Message="It tastes awful, but it meets the bare necessities."/>
+    <part Name="Food" Message="虽然味道很糟糕，但也能满足最基本的需求。"/>
     <part Name="Physics" Weight="5"/>
     <part Name="Commerce" Value="4"/>
     <part Name="PreservableItem" Result="Bear Jerky" Number="5"/>
@@ -88,7 +88,7 @@
   <object Name="Raw Pig Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|生猪肉}}" Tile="Items/sw_rawmeat2.bmp"/>
 		<part Name="Description" Short="生猪肉浸染在其自身的鲜血中。"/>
-    <part Name="Food" Message="It would taste better salted."/>
+    <part Name="Food" Message="加盐的话味道会更好。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="3"/>
     <part Name="PreservableItem" Result="Boar Jerky" Number="3"/>
@@ -96,7 +96,7 @@
   <object Name="Raw Boar Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|野猪生肉}}" Tile="Items/sw_rawmeat2.bmp"/>
 		<part Name="Description" Short="野猪的生肉浸透了它自己的鲜血。"/>
-    <part Name="Food" Message="It would taste better salted."/>
+    <part Name="Food" Message="加盐的话味道会更好。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="3"/>
     <part Name="PreservableItem" Result="Boar Jerky" Number="3"/>
@@ -104,7 +104,7 @@
   <object Name="Raw Barkbiter Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|生树皮咬者肉}}"/>
 		<part Name="Description" Short="生树皮咬者的肉浸透了它自己的鲜血。"/>
-		<part Name="Food" Message="It would taste better salted."/>
+		<part Name="Food" Message="加盐的话味道会更好。"/>
     <part Name="Physics" Weight="5"/>
     <part Name="Commerce" Value="4"/>
     <part Name="PreservableItem" Result="Barkbiter Jerky" Number="5"/>
@@ -120,7 +120,7 @@
   <object Name="Raw Goat Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|生山羊肉}}" Tile="Items/sw_rawmeat2.bmp"/>
 		<part Name="Description" Short="生山羊肉浸染着它自己的鲜血。"/>
-		<part Name="Food" Message="The meat strips dissolve into salt and fat."/>
+		<part Name="Food" Message="肉条溶解成盐和脂肪。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="2"/>
     <part Name="PreservableItem" Result="Goat Jerky" Number="3"/>
@@ -128,7 +128,7 @@
   <object Name="Raw Scorpiock Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{r|原始蝎虫肉}}" Tile="Items/sw_rawmeat3.bmp"/>
 		<part Name="Description" Short="破碎的外骨骼上堆叠着虫类肌肉。"/>
-    <part Name="Food" Message="It's tangy."/>
+    <part Name="Food" Message="味道很浓烈。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="2"/>
     <part Name="PreservableItem" Result="Scorpiock Jerky" Number="3"/>
@@ -143,7 +143,7 @@
   <object Name="Raw Fish Meat" Inherits="Raw Meat">
     <part Name="Render" DisplayName="{{Y|生鱼肉}}"/>
     <part Name="Description" Short="脸颊和腮部的肉带有海水的咸味。"/>
-    <part Name="Food" Message="It's flaky and tasty."/>
+    <part Name="Food" Message="它是片状的，味道鲜美。"/>
     <part Name="Physics" Weight="5"/>
     <part Name="Commerce" Value="4"/>
     <part Name="PreservableItem" Result="Fish Jerky" Number="3"/>
@@ -160,7 +160,7 @@
     <part Name="Physics" Weight="8"/>
     <part Name="Commerce" Value="50"/>
     <part Name="Description" Short="由棱鳞组成的马赛克状结构盘旋如缠绕的绳索。其表面覆盖着烧焦的痕迹，散发着烟熏的味道。"/>
-    <part Name="Food" Message="It tastes of spiced char with a swelling heat."/>
+    <part Name="Food" Message="它尝起来有五香焦的味道，带有膨胀的热量。"/>
     <part Name="TemperatureOnEat"/>
     <tag Name="Meat"/>
     <tag Name="SeveredLimbKeepAppearance"/>
@@ -171,7 +171,7 @@
 		<part Name="Description" Short="一个四腔的湿漉漉的组织块在其自身的浸湿重量下塌陷。"/>
     <part Name="Physics" Weight="0"/>
     <part Name="Commerce" Value="50"/>
-    <part Name="Food" Satiation="Meal" Message="It's chewy and tastes of warm rust."/>
+    <part Name="Food" Satiation="Meal" Message="它很有嚼劲，有温暖的铁锈味。"/>
 		<removebuilder Name="RandomTile"/>
     <tag Name="Meat"/>
     <tag Name="Tier" Value="3"/>
@@ -182,16 +182,16 @@
 		<part Name="Description" Short="一个四腔的湿漉漉的组织块在其自身的浸湿重量下塌陷。"/>
     <part Name="Physics" Weight="0"/>
     <part Name="Commerce" Value="50"/>
-		<part Name="Food" Satiation="Meal" Message="It's chewy and tastes of warm rust."/>
+		<part Name="Food" Satiation="Meal" Message="它很有嚼劲，有温暖的铁锈味。"/>
 		<removebuilder Name="RandomTile"/>
     <tag Name="Tier" Value="6"/>
     <tag Name="Meat"/>
 		<stag Name="Food"/>
   </object>
   <object Name="Black Puma Haunch" Inherits="Corpse">
-    <part Name="Render" DisplayName="{{K|黑美洲豹}} 大腿" Tile="Items/sw_haunch.bmp" ColorString="&amp;r" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|黑美洲豹}}大腿" Tile="Items/sw_haunch.bmp" ColorString="&amp;r" DetailColor="K"/>
 		<part Name="Description" Short="几缕黑如蛋白石的毛发粘在湿润的腿肉上。"/>
-		<part Name="Food" Message="Smokey and tasty."/>
+		<part Name="Food" Message="烟熏味美。"/>
     <part Name="Physics" Weight="20"/>
     <part Name="Commerce" Value="250"/>
 		<removebuilder Name="RandomTile"/>
@@ -203,7 +203,7 @@
 		<part Name="Description" Short="三根舌头交织成一条纤维状的扭曲体。它们表面覆盖着一层唾液，闪闪发光。"/>
 		<part Name="Physics" Weight="2"/>
     <part Name="Commerce" Value="70"/>
-    <part Name="Food" Message="The taste is familiar on your tongue."/>
+    <part Name="Food" Message="舌头上的味道很熟悉。"/>
     <part Name="TongueOnEat" Tongues="3"/>    
     <part Name="PreservableItem" Result="Fermented Tongue" Number="3"/>
     <tag Name="Meat"/>
@@ -232,7 +232,7 @@
 		<part Name="Description" Short="一层烟雾从钙化的球体上升起。"/>
 		<part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="50"/>    
-    <part Name="Food" IllOnEat="true" Message="It's a tough chew with red-hot spice."/>
+    <part Name="Food" IllOnEat="true" Message="这是一种带有红热香料的难嚼的东西。"/>
     <part Name="TemperatureOnEat"/>
     <part Name="PreservableItem" Result="Fire Ant Gaster Paste" Number="10"/>
 		<stag Name="Food"/>
@@ -243,7 +243,7 @@
 		<part Name="Description" Short="一层薄如纸的骨质碗，上面刻有明亮而分叉的闪电痕迹。"/>
 		<part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="50"/>
-    <part Name="Food" Message="It crackles on your taste buds."/>    
+    <part Name="Food" Message="它会刺激你的味蕾。"/>    
     <part Name="PreservableItem" Result="Spark Tick Plasma" Number="8"/>
 		<stag Name="Energy"/>
   </object>
@@ -252,7 +252,7 @@
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="50"/>
     <part Name="TeleportOnEat" Controlled="true"/>
-    <part Name="Food" Message="It melts in your mouth."/>
+    <part Name="Food" Message="它在你嘴里融化。"/>
     <part Name="Description" Short="空间被划分为三个位移腔室，以在转移器官周围产生负压。"/>
     <part Name="PreservableItem" Result="Voider Gland Paste" Number="10"/>
     <tag Name="ChooseToPreserve"/>
@@ -263,7 +263,7 @@
 		<part Name="Description" Short="神经迷宫穿透了它们透明的组织包裹。"/>
 		<part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="90"/>
-    <part Name="Food" Message="The gland ruptures with a pop and fills your mouth with a cold fluid. Someone else's memories seep into your own"/>    
+    <part Name="Food" Message="腺体发出“砰”的一声破裂，嘴里充满了冰冷的液体。别人的记忆渗入你自己的记忆"/>    
     <part Name="PreservableItem" Result="Psychal Gland Paste" Number="5"/>
     <part Name="SecretsOnEat" Number="2-3"/>
     <tag Name="ChooseToPreserve"/>
@@ -271,7 +271,7 @@
   <object Name="Compacted Bone Matter" Inherits="Snack">
     <part Name="Render" DisplayName="{{Y|压缩骨质}}" ColorString="&amp;Y" TileColor="&amp;y" DetailColor="Y" RenderString="%" Tile="Items/sw_compacted_bone_matter.bmp"/>
     <part Name="Description" Short="无尽岁月的骨头被粉碎并压缩在骨虫的疤痕肠道内。"/>
-    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="There's a satisfying crunch."/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="有令人满意的嘎吱声。"/>
     <part Name="PreservableItem" Result="Compacted Bone Meal" Number="3"/>
     <xtagGrammar iArticle="some" adjunctNoun="chunk" massNoun="true"/>
   </object>
@@ -280,7 +280,7 @@
     <part Name="Render" DisplayName="[呼吸腺]" ColorString="&amp;B" DetailColor="y" Tile="Items/sw_breather_gland.bmp"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="50"/>
-    <part Name="Food" Message="The gland ruptures with a pop and fills your mouth with its foul fluid."/>    
+    <part Name="Food" Message="腺体发出“砰”的一声破裂，恶臭的液体充满了你的嘴。"/>    
     <part Name="PreservableItem" Result="BaseBreatherGlandPaste" Number="5"/>
     <part Name="BreatheOnEat" Level="5"/>
     <tag Name="ChooseToPreserve"/>
@@ -410,7 +410,7 @@
     <part Name="Commerce" Value="100"/>
     <part Name="Description" Short="缀有流苏的远行草茎秆弯曲，指向一个模糊的远方。"/>
     <part Name="TeleportOnEat" Controlled="true"/>
-    <part Name="Food" Satiation="None" Message="It tastes like far away."/>
+    <part Name="Food" Satiation="None" Message="味道好像很遥远。"/>
     <part Name="PreservableItem" Result="Fermented Yondercane" Number="15"/>
     <tag Name="ChooseToPreserve"/>
 		<stag Name="Travel"/>
@@ -465,7 +465,7 @@
     <part Name="Commerce" Value="4"/>
   </object>
   <object Name="Hoarshroom" Inherits="Mushroom">
-    <part Name="Render" DisplayName="{{C|发光}} 霜蘑菇" ColorString="&amp;C" DetailColor="Y" Tile="Items/sw_plump_mushroom.bmp"/>
+    <part Name="Render" DisplayName="{{C|发光}}霜蘑菇" ColorString="&amp;C" DetailColor="Y" Tile="Items/sw_plump_mushroom.bmp"/>
 		<part Name="Description" Short="霜花点缀在灯罩般的菌盖上，散发着柔和的生物荧光。"/>
 		<part Name="Physics" Weight="0" Category="补药"/>		
     <part Name="Commerce" Value="70"/>
@@ -493,7 +493,7 @@
   <object Name="Lah Petals" Inherits="Snack">
     <part Name="Render" DisplayName="{{lah|拉花瓣}}" ColorString="&amp;r" DetailColor="W" RenderString="'" Tile="Items/sw_lah_petals.bmp"/>
     <part Name="Description" Short="浓烈的黄褐色花瓣看起来像一种芳香草药，但其浓郁的味道更接近肉汤而非茶饮。"/>
-    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="Savory, but not particularly satisfying."/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="味道不错，但不是特别令人满意。"/>
     <part Name="PreservableItem" Result="Dried Lah Petals" Number="3"/>
     <tag Name="Lah"/>
     <tag Name="Gender" Value="plural"/>
@@ -502,7 +502,7 @@
   <object Name="Clump of Grave Moss" Inherits="Snack">
     <part Name="Render" DisplayName="一团{{C|墓苔}}" ColorString="&amp;C" DetailColor="C" RenderString="%" Tile="Items/sw_grave_moss_clump.bmp"/>
     <part Name="Description" Short="漂白的青色墓苔已长成罕见且柔韧的一团。"/>
-    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="It crunches into flakes in your mouth."/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="它在你嘴里嘎吱作响。"/>
     <part Name="PreservableItem" Result="Crushed Grave Moss" Number="3"/>
   </object>
   <object Name="Banana" Inherits="Snack">
@@ -516,7 +516,7 @@
   <object Name="Yuckwheat Stem" Inherits="Snack">
     <part Name="Render" DisplayName="{{w|恶麦茎}}" Tile="Items/sw_wheat_stem.bmp" ColorString="&amp;w" DetailColor="W" RenderString="'" RenderLayer="5"/>
     <part Name="Commerce" Value="10"/>
-    <part Name="Food" Satiation="None" Thirst="0" Healing="0" Message="It tastes disgustingly bitter."/>
+    <part Name="Food" Satiation="None" Thirst="0" Healing="0" Message="其味道苦涩得令人作呕。"/>
     <part Name="Description" Short="孩子们会在恶麦茎被清脆地剪断时哭泣，这种景象已经持续了数百年。他们号啕大哭，挣扎不已，从母亲的怀抱中扭动，对植物的药效充耳不闻。剪下的茎被压碎后，酸涩的味道在他们的舌头上蔓延，脸庞因痛苦而扭曲。但母亲们说，他们晚上睡得更好。"/>
     <part Name="Yuckwheat"/>		
     <part Name="PreservableItem" Result="Fermented Yuckwheat Stem" Number="3"/>
@@ -536,7 +536,7 @@
   <object Name="Vanta Petals" Inherits="Snack">
     <part Name="Render" DisplayName="{{K|万塔花瓣}}" ColorString="&amp;K" DetailColor="y" RenderString="'" Tile="Items/sw_lah_petals.bmp"/>
     <part Name="Description" Short="光芒从月亮的影响边界滴落，渗入虚空。"/>
-    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="They're freezing with the absence of heat and light."/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="由于没有热量和光，它们变得寒冷。"/>
     <part Name="PreservableItem" Result="Dried Vanta Petals" Number="3"/>
     <tag Name="Gender" Value="plural"/>
 		<xtagGrammar massNoun="true"/>
@@ -544,7 +544,7 @@
   <object Name="Urberry" Inherits="Food">
     <part Name="Render" DisplayName="{{m|乌莓}}" ColorString="&amp;m" DetailColor="g" Tile="Items/sw_urberry.bmp" RenderString="'" RenderLayer="5"/>
     <part Name="Physics" Category="药物"/>
-    <part Name="Food" Thirst="5000" Healing="100" Message="Prototypically delicious."/>
+    <part Name="Food" Thirst="5000" Healing="100" Message="原型美味。"/>
     <part Name="Description" Short="土壤密度的果汁将莓果皮压制成一个完美且轻盈弯曲的球体。内部，一颗种子编码了百万倍的形状指令集。"/>
     <part Name="Commerce" Value="65"/>
     <tag Name="LivePlant"/>
@@ -552,13 +552,13 @@
 		<tag Name="Tier" Value="6"/>
   </object>
   <object Name="Arsplice Seed" Inherits="Snack">
-    <part Name="Render" DisplayName="{{C-C-c-m-m-c-C-C 序列|arsplice}} 种子" Tile="Items/sw_arsplice_seed.bmp" ColorString="&amp;m" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{C-C-c-m-m-c-C-C sequence|arsplice}}种子" Tile="Items/sw_arsplice_seed.bmp" ColorString="&amp;m" DetailColor="C"/>
     <part Name="Description" Short="数千年来的化学城市滋养了草珊瑚真菌混合体在其内部分叉阴影，这些养分被重新吸收进生态块的种皮中。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Springy" Factor="0.5"/>
     <part Name="Commerce" Value="350"/>
     <part Name="HealOnEat"/>
-    <part Name="Food" IllOnEat="false" Satiation="None" Message="Beams of snug warmth sprout like fractals inside your body."/>
+    <part Name="Food" IllOnEat="false" Satiation="None" Message="舒适的温暖光束像分形一样在你的体内萌芽。"/>
     <removebuilder Name="RandomTile"/>
     <intproperty Name="Bleeds" Value="0"/>
     <tag Name="Tier" Value="7"/>
@@ -568,7 +568,7 @@
     <part Name="Render" DisplayName="{{B|波普面颊}}" ColorString="&amp;B" RenderString="'" Tile="Items/sw_bop_cheek.bmp"/>
     <part Name="Description" Short="这是一块精选的层压海绵。触感摇曳生姿。"/>
     <part Name="Commerce" Value="50"/>
-    <part Name="Food" Satiation="Snack" Message="It's chewier than anything you've eaten before."/>
+    <part Name="Food" Satiation="Snack" Message="它比你以前吃过的任何东西都更有嚼劲。"/>
     <part Name="JumpOnEat" Hops="2" BonusRange="2"/>
     <part Name="PreservableItem" Result="Sliced Bop Cheek" Number="4"/>
     <xtagGrammar massNoun="true"/>
@@ -580,7 +580,7 @@
     <part Name="Render" DisplayName="{{Y|镜片碎片}}" ColorString="&amp;Y" TileColor="&amp;K" DetailColor="Y" Tile="Items/sw_shard.bmp"/>
     <part Name="Description" Short="一块玻璃碎片在锋利的边缘上闪耀，其裂纹特征显示了地质压力淬火的痕迹。"/>
     <part Name="Commerce" Value="80"/>
-    <part Name="Food" Satiation="Snack" Message="It's sharp and shimmering."/>
+    <part Name="Food" Satiation="Snack" Message="它锋利且闪闪发光。"/>
     <part Name="Physics" Category="食物" Weight="1" Organic="false"/>
     <part Name="PreservableItem" Result="Mirror Dust" Number="5"/>
     <part Name="EffectOnEat" Effect="CookingDomainReflect_Reflect100_ProceduralCookingTriggeredAction_Effect"/>
@@ -590,7 +590,7 @@
 		<part Name="Render" DisplayName="噪音草束" ColorString="&amp;m" DetailColor="y" RenderString="%" Tile="Items/sw_grass_bundle.bmp"/>
 		<part Name="Description" Short="星光草在意义达到顶峰后被收割并捆扎成束。"/>
 		<part Name="Commerce" Value="50"/>
-		<part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="It tastes of fuzz."/>
+		<part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="尝起来有绒毛的味道。"/>
 		<part Name="PreservableItem" Result="Wild Rice" Number="3"/>
 	</object>    
   <object Name="Mushroom" Inherits="Food">
@@ -623,12 +623,12 @@
     <part Name="Description" Short="派底下的碎肉被调味，其中混入了一点点yyffur粉，这种粉末是从同名蘑菇的茎上刮下并精细研磨而成的。整个蘑菇对哺乳动物的精神来说太过强烈（食用一个会在瞬间摧毁自我意识），但一点点粉末撒在美味的派上可以让人意识到自己在宇宙中的位置。"/>
     <part Name="RulesDescription" Text="-1 Ego permanently"/>
     <xtagGrammar massNoun="true"/>
-    <part Name="Food" Message="It tastes bitter. Your {{Y|Ego}} is reduced by {{C|1}}"/>
+    <part Name="Food" Message="味道很苦。你的{{Y|自我}}减少了{{C|1}}"/>
   </object>  
   <object Name="Ripe Cucumber" Inherits="Snack">
     <part Name="Render" DisplayName="{{G|成熟的黄瓜}}" Tile="Items/sw_cucumber.bmp" ColorString="&amp;G" DetailColor="g"/>
     <part Name="Description" Short="一条长而多疣的薄荷绿色茎，在肥沃的藤蔓上结出了果实并被摘得清脆。"/>
-    <part Name="Food" Thirst="1000" Message="The bite is crisp, and then it bursts into water."/>
+    <part Name="Food" Thirst="1000" Message="咬一口脆脆的，然后就爆开成水了。"/>
     <part Name="Commerce" Value="5"/>
     <part Name="Physics" Weight="1"/>
     <part Name="PreservableItem" Result="Pickles" Number="5"/>
@@ -636,7 +636,7 @@
   </object> 
   <object Name="Taco Suprema" Inherits="Food">
     <part Name="Render" DisplayName="{{m|塔科至尊}}" Tile="Items/sw_taco.bmp" RenderString="%" RenderLayer="5" DetailColor="m"/>
-    <part Name="Food" Thirst="15000" Message="A divine crisp dissolves into salted manna."/>
+    <part Name="Food" Thirst="15000" Message="神圣的脆片溶解在咸甘露中。"/>
     <part Name="Physics" Weight="0"/>
     <part Name="Commerce" Value="500"/>
     <part Name="Description" Short="薄而古老的纸张，上面满是油脂的痕迹，包裹着脆皮炸饼的马鞍部分。七层凝固的蜜汁填充在脆皮缝隙中。"/>
@@ -648,7 +648,7 @@
 		<part Name="Springy" Factor="0.1"/>
     <part Name="Commerce" Value="475"/>
     <part Name="RefreshCooldownsOnEat"/>
-    <part Name="Food" IllOnEat="false" Satiation="None" Message="The crystal shatters and concentrated thoughtstuff swells in tide and soaks your mind."/>    
+    <part Name="Food" IllOnEat="false" Satiation="None" Message="水晶碎裂，浓缩的思绪如潮水般膨胀，浸透你的心灵。"/>    
     <tag Name="Tier" Value="8"/>
     <tag Name="TechTier" Value="8"/>
   </object>  
@@ -931,7 +931,7 @@
     <stag Name="Movement"/>
   </object>
 	<object Name="Wild Rice" Inherits="Preservable">
-        <part Name="Render" DisplayName="{{m-M-m-M 序列|野生}} 米" Tile="Items/sw_wild_rice.bmp" ColorString="&amp;m" DetailColor="y"/>
+        <part Name="Render" DisplayName="{{m-M-m-M sequence|野生}}米" Tile="Items/sw_wild_rice.bmp" ColorString="&amp;m" DetailColor="y"/>
 		<part Name="Description" Short="米壳呈淡白色，触碰时会发出噼啪声，芒刺发出不规则而富有韵律的声音。"/>		
 		<tag Name="Plant"/>		
 		<part Name="PreparedCookingIngredient" type="randomHighTier" charges="1"/>
@@ -1190,7 +1190,7 @@
     <tag Name="ServingName" Value="&amp;Wn&amp;we&amp;gc&amp;Gt&amp;Wa&amp;wr"/>
   </object>
   <object Name="Congealed Hulk Honey" Inherits="Preservable">
-    <part Name="Render" DisplayName="凝固的{{G|巨兽}} {{w|蜂蜜}}" RenderString="%" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
+    <part Name="Render" DisplayName="凝固的{{G|巨兽}}{{w|蜂蜜}}" RenderString="%" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp"/>
     <part Name="Commerce" Value="4"/>
     <part Name="Description" Short="巨兽蜂蜜从其注射器中提取，在刺鼻的空气中变稠，并被装瓶用于烹饪。"/>
     <part Name="PreparedCookingIngredient" type="strength" charges="1"/>

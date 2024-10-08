@@ -1835,7 +1835,7 @@
   </object>
   <object Name="Croc Corpse" Inherits="Scaled Reptile Corpse">
     <part Name="Butcherable" OnSuccess="Raw Croc Meat"/>
-    <part Name="Render" DisplayName="{{g|鳄鱼}} 尸体"/>
+    <part Name="Render" DisplayName="{{g|鳄鱼}}尸体"/>
     <part Name="Physics" Weight="80"/>
     <part Name="Commerce" Value="3"/>
     <tag Name="Tier" Value="1"/>
@@ -2853,7 +2853,7 @@
     <stat Name="Hitpoints" Value="20"/>
     <tag Name="Role" Value="Summoner"/>
     <tag Name="NoAskName"/>
-    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="A giant centipede crawls out of the nest." SpawnParticle="&amp;w." BlueprintSpawned="Giant Centipede"/>
+    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="一只巨大的蜈蚣从巢中爬出。" SpawnParticle="&amp;w." BlueprintSpawned="Giant Centipede"/>
   </object>
   <object Name="Glowmoth" Inherits="BaseInsect">
     <part Name="Render" DisplayName="发光蛾" Tile="creatures/sw_glowmoth.bmp" RenderString="i" ColorString="&amp;G"/>
@@ -3223,9 +3223,9 @@
     <part Name="Metal"/>
   </object>
   <object Name="Scrapbot Mechanimist" Inherits="Scrapbot">
-    <part Name="Render" DisplayName="重新编程的 {{c|废料铲运工}}" RenderString="3" ColorString="&amp;c" Tile="Creatures/sw_scrapbot.bmp" DetailColor="W"/>
+    <part Name="Render" DisplayName="重新编程的{{c|废料铲运工}}" RenderString="3" ColorString="&amp;c" Tile="Creatures/sw_scrapbot.bmp" DetailColor="W"/>
     <part Name="Brain" Hostile="false" Calm="True" Factions="Mechanimists-100"/>
-    <part Name="RulesDescription" Text="{{y|Reprogrammed by}} the Mechanimists"/>
+    <part Name="RulesDescription" Text="{{y|Reprogrammed by}}the Mechanimists"/>
     <tag Name="Culture" Value="Mechanimist"/>
   </object>
   <object Name="Scrapbot_Junkshovel" Inherits="NaturalWeapon">
@@ -3453,7 +3453,7 @@
     <part Name="MeleeWeapon" BaseDamage="1d6" Skill="ShortBlades" Slot="Arm"/>
   </object>
   <object Name="Girshling Corpse" Inherits="Arthropod Corpse">
-    <part Name="Render" DisplayName="{{m|小吉尔什林}} 尸体" ColorString="&amp;m" RenderLayer="6"/>
+    <part Name="Render" DisplayName="{{m|小吉尔什林}}尸体" ColorString="&amp;m" RenderLayer="6"/>
     <part Name="Description" Short="苍白的腿状物因生命活力而抽搐，一对獠牙无目的地乱戳。
 "/>
     <part Name="Physics" Weight="20"/>
@@ -3497,7 +3497,7 @@
     <tag Name="DynamicObjectsTable:Jungle_Creatures"/>
   </object>
   <object Name="RankGirshling_Bite" Inherits="Girshling_Bite">
-    <part Name="Render" DisplayName="{{g|等级}} 牙齿"/>
+    <part Name="Render" DisplayName="{{g|等级}}牙齿"/>
     <part Name="PoisonOnHit" Chance="50"/>
     <part Name="DiseaseOnHit" Chance="50"/>
     <part Name="RustOnHit" Chance="50"/>
@@ -3517,7 +3517,7 @@
     <part Name="Description" Short="星兰的唾液在=pronouns.possessive=连体獠牙的尖端汇聚，滴落到苍白的腿状物上。
 =pronouns.Subjective= 在某种超越时空的纯净极乐中颤抖，=pronouns.subjective= 发出一声自豪而尖锐的哀鸣。
 "/>
-    <part Name="SplitOnDeath" Blueprint="Girshling" Amount="2" Message="=subject.T= =verb:split= in two!"/>
+    <part Name="SplitOnDeath" Blueprint="Girshling" Amount="2" Message="=subject.T= =verb:split= 成两个!"/>
     <tag Name="Gender" Value="plural"/>
     <tag Name="DynamicObjectsTable:Mountains_Creatures"/>
   </object>
@@ -3541,7 +3541,7 @@
     <tag Name="DynamicObjectsTable:PalladiumReef_Creatures"/>
   </object>
   <object Name="PlasmaticGirshling_Bite" Inherits="Girshling_Bite">
-    <part Name="Render" DisplayName="{{G|炽热}} 犬齿"/>
+    <part Name="Render" DisplayName="{{G|炽热}}犬齿"/>
     <part Name="ElementalDamage" Damage="1d6+4" Attributes="Electric"/>
   </object>
   <object Name="Plasmatic Girshling Cresh" Inherits="BaseGirshCresh">
@@ -3579,7 +3579,7 @@
     <tag Name="DynamicObjectsTable:MoonStair_Creatures"/>
   </object>
   <object Name="CrypticGirshling_Bite" Inherits="Girshling_Bite">
-    <part Name="Render" DisplayName="{{b|锯齿}} 蛇牙"/>
+    <part Name="Render" DisplayName="{{b|锯齿}}蛇牙"/>
     <part Name="ConfuseOnHit" Chance="100"/>
   </object>
   <object Name="Cryptic Girshling Cresh" Inherits="BaseGirshCresh">
@@ -3649,14 +3649,14 @@
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Girshling Fangs" Inherits="BaseFangs">
-    <part Name="Render" DisplayName="{{m|吉尔什林}} 尖牙"/>
+    <part Name="Render" DisplayName="{{m|吉尔什林}}尖牙"/>
     <part Name="Description" Short="一对钙化的刺棒被血统磨砺，穿透了皮肤的多层结构。
 "/>
     <tag Name="AggregateWith" Value="GirshlingFangs"/>
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="Rank Fangs" Inherits="Girshling Fangs">
-    <part Name="Render" DisplayName="{{g|等级}} 牙齿" ColorString="&amp;g" DetailColor="g"/>
+    <part Name="Render" DisplayName="{{g|等级}}牙齿" ColorString="&amp;g" DetailColor="g"/>
     <part Name="Description" Short="一对钙化的刺棒因血统而磨砺，穿透了皮肤的多层结构。
 它们表面覆盖着一层冒着泡的死亡污泥。
 "/>
@@ -3666,7 +3666,7 @@
     <part Name="RulesDescription" Text="5% chance to poison on hit&#10;5% chance to disease on hit&#10;5% chance to rust on hit"/>
   </object>
   <object Name="Incandescent Fangs" Inherits="Girshling Fangs">
-    <part Name="Render" DisplayName="{{G|炽热}} 犬齿" ColorString="&amp;G" DetailColor="G"/>
+    <part Name="Render" DisplayName="{{G|炽热}}犬齿" ColorString="&amp;G" DetailColor="G"/>
     <part Name="Description" Short="一对钙化的刺棒被血统磨砺，穿透了皮肤的多层结构。
 它们表面覆盖着一层凝结的星云气体。
 "/>
@@ -3674,7 +3674,7 @@
     <part Name="ElementalDamage" Damage="4-6" Attributes="Electric"/>
   </object>
   <object Name="Zigzag Fangs" Inherits="Girshling Fangs">
-    <part Name="Render" DisplayName="{{b|锯齿}} 蛇牙" ColorString="&amp;b" DetailColor="b"/>
+    <part Name="Render" DisplayName="{{b|锯齿}}蛇牙" ColorString="&amp;b" DetailColor="b"/>
     <part Name="Description" Short="一对钙化的刺棒被血统磨砺，以穿透皮肤的层次。
 它们表面覆盖着一层凝结的梦境气体。
 "/>
@@ -4032,7 +4032,7 @@
   </object>
   <object Name="Albino ape corpse" Inherits="Animal Corpse">
     <part Name="Butcherable" OnSuccess="@Albino ape corpse"/>
-    <part Name="Render" DisplayName="{{Y|白化猿}} 尸体" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|白化猿}}尸体" ColorString="&amp;Y"/>
     <part Name="Physics" Weight="400"/>
     <part Name="Commerce" Value="100"/>
     <tag Name="Tier" Value="3"/>
@@ -4284,7 +4284,7 @@
     <part Name="DiggingTool"/>
   </object>
   <object Name="Fire ant corpse" Inherits="Arthropod Corpse">
-    <part Name="Render" DisplayName="{{r|火蚁}} 尸体" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{r|火蚁}}尸体" ColorString="&amp;R"/>
     <part Name="Description" Short="它的躯干倒置，长出一束皱巴巴、冒烟的腿。
 "/>
     <part Name="Food" Message="尝起来像甜木炭。"/>
@@ -4389,7 +4389,7 @@
     <stat Name="Hitpoints" Value="25"/>
     <tag Name="Role" Value="Summoner"/>
     <tag Name="NoAskName"/>
-    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="A giant beetle crawls out of the nest." SpawnParticle="&amp;K." BlueprintSpawned="Giant Beetle"/>
+    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="一只巨大的甲虫从巢中爬出。" SpawnParticle="&amp;K." BlueprintSpawned="Giant Beetle"/>
   </object>
   <object Name="Girshworm" Inherits="BaseWorm">
     <part Name="Render" DisplayName="吉尔什虫" Tile="Creatures/sw_girshworm.bmp" RenderString="w" ColorString="&amp;m"/>
@@ -4469,7 +4469,7 @@
     <part Name="MeleeWeapon" BaseDamage="1d10" Skill="LongBlades"/>
   </object>
   <object Name="Ice frog corpse" Inherits="Scaled Reptile Corpse">
-    <part Name="Render" DisplayName="{{C|冰蛙}} 尸体" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{C|冰蛙}}尸体" ColorString="&amp;C"/>
     <part Name="Description" Short="湿润的青蛙皮肤紧贴着地面。
 "/>
     <part Name="Butcherable" OnSuccess="Raw Frog Meat" OnSuccessAmount="1"/>
@@ -4672,7 +4672,7 @@
     <part Name="DischargeOnHit" ChargeUse="0" Voltage="1d4" DamageRange="1d2"/>
   </object>
   <object Name="Spark Tick Corpse" Inherits="Arthropod Corpse">
-    <part Name="Render" DisplayName="{{W|火花蜱}} 尸体" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="{{W|火花蜱}}尸体" ColorString="&amp;W"/>
     <part Name="Description" Short="它的躯干倒置，长出一束皱巴巴的腿。
 伏特残留物滴落并发出嘶嘶声。
 "/>
@@ -5454,7 +5454,7 @@
     <part Name="Swarmer"/>
   </object>
   <object Name="Hyrkhound_Bite" Inherits="Bite">
-    <part Name="Render" DisplayName="{{G|酸湿}} 犬齿"/>
+    <part Name="Render" DisplayName="{{G|酸湿}}犬齿"/>
     <part Name="MeleeWeapon" BaseDamage="2d2"/>
     <part Name="ElementalDamage" Damage="1d6+9" Attributes="Acid"/>
     <tag Name="Gender" Value="plural"/>
@@ -6036,7 +6036,7 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="HagHands" Inherits="NaturalWeapon">
-    <part Name="Render" DisplayName="{{K|幽影}} 手" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|幽影}}手" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="0" Skill="Cudgel" Stat="Strength"/>
     <part Name="ElementalDamage" Damage="1d7+11" Attributes="Umbral"/>
   </object>
@@ -7599,7 +7599,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures"/>
   </object>
   <object Name="Amaranthine Ashes" Inherits="Ashes">
-    <part Name="Render" DisplayName="{{R|紫罗兰色}} 灰烬" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{R|紫罗兰色}}灰烬" ColorString="&amp;R"/>
     <part Name="Description" Short="梦境物质被碾碎、焚烧并研磨成一种柔软的星界粉末。
 "/>
     <removepart Name="RandomColors"/>
@@ -7844,7 +7844,7 @@
     <part Name="LiquidBurst" EelChance="0" Liquid="LushAcidPuddle"/>
     <tag Name="BleedLiquid" Value="wine-400,acid-600"/>
     <tag Name="BleedColor" Value="&amp;m"/>
-    <tag Name="BleedPrefix" Value="{{m|lush}} and {{G|acidic}}"/>
+    <tag Name="BleedPrefix" Value="{{m|lush}}and{{G|acidic}}"/>
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures"/>
     <tag Name="DynamicObjectsTable:BaroqueRuins_Creatures"/>
   </object>
@@ -8672,7 +8672,7 @@
     <tag Name="Role" Value="Summoner"/>
     <tag Name="NoAskName"/>
     <part Name="RefractLight" Chance="100"/>
-    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="A mirror bug crawls out of the mirror." SpawnParticle="&amp;Y." BlueprintSpawned="Mirror Bug" CollapseMessage="The mirror shatters."/>
+    <part Name="Nest" TurnsPerSpawn="15-20" NumberSpawned="1-3" SpawnMessage="一只镜子虫从镜子里爬出来。" SpawnParticle="&amp;Y." BlueprintSpawned="Mirror Bug" CollapseMessage="镜子碎了。"/>
     <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_glass"/>
     <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_glass"/>
     <tag Name="PunchSound" Value="Sounds/Damage/sfx_damage_glass"/>
@@ -8727,7 +8727,7 @@
     <tag Name="DynamicObjectsTable:PalladiumReef_Creatures"/>
   </object>
   <object Name="PlasmaJelly_Sting" Inherits="NaturalWeapon">
-    <part Name="Render" DisplayName="{{极光|离子化}} 触手" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{auroral|离子化}}触手" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;G"/>
     <part Name="MeleeWeapon" HitBonus="6" BaseDamage="0" Slot="Hand"/>
     <part Name="ElementalDamage" Damage="5d4" Attributes="Heat"/>
   </object>
@@ -8753,7 +8753,7 @@
   </object>
   <object Name="Reef Hermit" Inherits="BaseHumanoid">
     <part Name="Render" Tile="creatures/sw_reef_hermit.bmp" DisplayName="礁石隐居者" RenderString="h" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r"/>
-    <part Name="Description" Short="息肉像塔里特一样生长在 =pronouns.possessive= 胸部和肩膀上；{{K|fullerite}} 和铬和玻璃像鳍一样突出。
+    <part Name="Description" Short="息肉像塔里特一样生长在 =pronouns.possessive= 胸部和肩膀上；{{K|fullerite}}和铬和玻璃像鳍一样突出。
 隐士是一块行走的珊瑚礁。
 "/>
     <part Name="Brain" Factions="Hermits-100"/>
@@ -8938,7 +8938,7 @@
   </object>
   <object Name="Sultan Croc Corpse" Inherits="Scaled Reptile Corpse">
     <part Name="Butcherable" OnSuccess="Raw Croc Meat"/>
-    <part Name="Render" DisplayName="苏丹 {{g|鳄鱼}} 尸体"/>
+    <part Name="Render" DisplayName="苏丹{{g|鳄鱼}}尸体"/>
     <part Name="Physics" Weight="600"/>
     <part Name="Commerce" Value="20"/>
     <tag Name="Tier" Value="7"/>
@@ -9526,7 +9526,7 @@
     <tag Name="DynamicObjectsTable:MoonStair_Creatures"/>
   </object>
   <object Name="Starshell_Bite" Inherits="Bite">
-    <part Name="Render" DisplayName="{{K|暗影}} 咬击"/>
+    <part Name="Render" DisplayName="{{K|暗影}}咬击"/>
     <part Name="MeleeWeapon" HitBonus="6" BaseDamage="0" Skill="LongBlades"/>
     <part Name="ElementalDamage" Damage="20-30" Attributes="Umbral"/>
   </object>
@@ -10169,7 +10169,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="DynamicObjectsTable:TechTurrets"/>
   </object>
   <object Name="ChaingunTurret" Inherits="HostileTurret">
-    <part Name="Render" DisplayName="{{c|机枪炮塔}} 机枪炮塔" RenderString="3" ColorString="&amp;R" Tile="Creatures/sw_chaingun_turret.bmp" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{c|机枪炮塔}}机枪炮塔" RenderString="3" ColorString="&amp;R" Tile="Creatures/sw_chaingun_turret.bmp" DetailColor="c"/>
     <part Name="HostileTurretBuilder"/>
     <part Name="PowerSwitch" SecurityClearance="-3"/>
     <inventoryobject Blueprint="Chaingun"/>
@@ -10360,148 +10360,148 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <stat Name="Level" Value="15"/>
   </object>
   <object Name="honeyLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{w|蜂蜜}} 泪滴" RenderString="231" ColorString="&amp;w"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{w|蜂蜜}}泪滴" RenderString="231" ColorString="&amp;w"/>
     <mutation Name="LiquidFont" Liquid="honey"/>
-    <part Name="SecretObject" text="A giant {{w|honey}} weep" message="You spot a giant {{w|honey}} weep." adjectives="honey,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="一个巨型{{w|蜂蜜}}泪滴" message="你发现了巨型{{w|蜂蜜}}泪滴。" adjectives="honey,weep" category="Natural Features"/>
   </object>
   <object Name="honeyLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{w|蜂蜜}} 泪水" RenderString="231" ColorString="&amp;w"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{w|蜂蜜}}泪水" RenderString="231" ColorString="&amp;w"/>
     <mutation Name="LiquidFont" Liquid="honey"/>
-    <part Name="SecretObject" text="A {{w|honey}} weep" message="You spot a {{w|honey}} weep." adjectives="honey,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="一个{{w|蜂蜜}}泪水" message="你发现{{w|蜂蜜}}泪水" adjectives="honey,weep" category="Natural Features"/>
   </object>
   <object Name="waxLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{Y|蜡}} 泪滴" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|蜡}}泪滴" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="wax"/>
-    <part Name="SecretObject" text="A giant {{Y|wax}} weep" message="You spot a giant {{Y|wax}} weep." adjectives="wax,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{Y|蜡}}泪滴" message="你发现了巨型{{Y|蜡}}泪滴" adjectives="wax,weep" category="Natural Features"/>
   </object>
   <object Name="waxLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|蜡}} 泪" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|蜡}}泪" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="wax"/>
-    <part Name="SecretObject" text="A {{Y|wax}} weep" message="You spot a {{Y|wax}} weep." adjectives="wax,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|蜡}}泪" message="你发现了{{Y|蜡}}泪。" adjectives="wax,weep" category="Natural Features"/>
   </object>
   <object Name="inkLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的 {{K|墨水}} 泪滴" RenderString="231" ColorString="&amp;K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|墨水}}泪滴" RenderString="231" ColorString="&amp;K"/>
     <mutation Name="LiquidFont" Liquid="ink"/>
-    <part Name="SecretObject" text="A giant {{K|ink}} weep" message="You spot a giant {{K|ink}} weep." adjectives="ink,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{K|墨水}}泪滴" message="你发现了巨大的{{K|墨水}}泪滴。" adjectives="ink,weep" category="Natural Features"/>
   </object>
   <object Name="inkLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|墨水}} 泣者" RenderString="231" ColorString="&amp;K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|墨水}}泣者" RenderString="231" ColorString="&amp;K"/>
     <mutation Name="LiquidFont" Liquid="ink"/>
-    <part Name="SecretObject" text="An {{K|ink}} weep" message="You spot an {{K|ink}} weep." adjectives="ink,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|墨水}}泣者" message="你发现了{{K|墨水}}泣者" adjectives="ink,weep" category="Natural Features"/>
   </object>
   <object Name="sapLichen" Inherits="LiquidLichen">
     <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{W|树液}}滴落" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="sap"/>
-    <part Name="SecretObject" text="A giant {{W|sap}} weep" message="You spot a giant {{W|sap}} weep." adjectives="sap,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{W|树液}}滴落" message="你发现了巨大的{{W|树液}}滴落。" adjectives="sap,weep" category="Natural Features"/>
   </object>
   <object Name="sapLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{W|树液}} 涕泣" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{W|树液}}涕泣" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="sap"/>
-    <part Name="SecretObject" text="A {{W|sap}} weep" message="You spot a {{W|sap}} weep." adjectives="sap,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{W|树液}}涕泣" message="你发现了{{W|树液}}涕泣。" adjectives="sap,weep" category="Natural Features"/>
   </object>
   <object Name="lavaLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{lava|熔岩}} 泪滴" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{lava|熔岩}}泪滴" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="lava"/>
-    <part Name="SecretObject" text="A giant {{lava|lava}} weep" message="You spot a giant {{lava|lava}} weep." adjectives="lava,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{lava|熔岩}}泪滴" message="你发现了巨型{{lava|熔岩}}泪滴。" adjectives="lava,weep" category="Natural Features"/>
   </object>
   <object Name="lavaLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{lava|岩浆}} 岩浆" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{lava|岩浆}}岩浆" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="lava"/>
-    <part Name="SecretObject" text="A {{lava|lava}} weep" message="You spot a {{lava|lava}} weep." adjectives="lava,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{lava|岩浆}}岩浆" message="你发现了{{lava|岩浆}}岩浆。" adjectives="lava,weep" category="Natural Features"/>
   </object>
   <object Name="acidLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{G|酸液}} 泪滴" RenderString="231" ColorString="&amp;G"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{G|酸液}}泪滴" RenderString="231" ColorString="&amp;G"/>
     <mutation Name="LiquidFont" Liquid="acid"/>
-    <part Name="SecretObject" text="A giant {{G|acid}} weep" message="You spot a giant {{G|acid}} weep." adjectives="acid,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{G|酸液}}泪滴" message="你发现了巨型{{G|酸液}}泪滴。" adjectives="acid,weep" category="Natural Features"/>
   </object>
   <object Name="acidLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{G|酸液}} 泪滴" RenderString="231" ColorString="&amp;G"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{G|酸液}}泪滴" RenderString="231" ColorString="&amp;G"/>
     <mutation Name="LiquidFont" Liquid="acid"/>
-    <part Name="SecretObject" text="A {{G|acid}} weep" message="You spot an {{G|acid}} weep." adjectives="acid,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{G|酸液}}泪滴" message="你发现了{{G|酸液}}泪滴。" adjectives="acid,weep" category="Natural Features"/>
   </object>
   <object Name="wineLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{m|葡萄酒}} 泪滴" RenderString="231" ColorString="&amp;m"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{m|葡萄酒}}泪滴" RenderString="231" ColorString="&amp;m"/>
     <mutation Name="LiquidFont" Liquid="wine"/>
-    <part Name="SecretObject" text="A giant {{m|wine}} weep" message="You spot a giant {{m|wine}} weep." adjectives="wine,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{m|葡萄酒}}泪滴" message="你发现了巨型{{m|葡萄酒}}泪滴。" adjectives="wine,weep" category="Natural Features"/>
   </object>
   <object Name="wineLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{m|葡萄酒}} 哭泣" RenderString="231" ColorString="&amp;m"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{m|葡萄酒}}哭泣" RenderString="231" ColorString="&amp;m"/>
     <mutation Name="LiquidFont" Liquid="wine"/>
-    <part Name="SecretObject" text="A {{m|wine}} weep" message="You spot a {{m|wine}} weep." adjectives="wine,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="A{{m|wine}}weep" message="你发现了{{m|葡萄酒}}哭泣。" adjectives="wine,weep" category="Natural Features"/>
   </object>
   <object Name="slimeLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{g|史莱姆}} 泪滴" RenderString="231" ColorString="&amp;g"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{g|史莱姆}}泪滴" RenderString="231" ColorString="&amp;g"/>
     <mutation Name="LiquidFont" Liquid="slime"/>
-    <part Name="SecretObject" text="A giant {{g|slime}} weep" message="You spot a giant {{g|slime}} weep." adjectives="slime,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{g|史莱姆}}泪滴" message="你发现了巨型{{g|史莱姆}}泪滴。" adjectives="slime,weep" category="Natural Features"/>
   </object>
   <object Name="slimeLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{g|黏液}} 泪水" RenderString="231" ColorString="&amp;g"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{g|黏液}}泪水" RenderString="231" ColorString="&amp;g"/>
     <mutation Name="LiquidFont" Liquid="slime"/>
-    <part Name="SecretObject" text="A {{g|slime}} weep" message="You spot a {{g|slime}} weep." adjectives="slime,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{g|黏液}}泪水" message="你发现了{{g|黏液}}泪水。" adjectives="slime,weep" category="Natural Features"/>
   </object>
   <object Name="ciderLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的 {{R|苹果酒}} 泪水" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{R|苹果酒}}泪水" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="cider"/>
-    <part Name="SecretObject" text="A giant {{R|cider}} weep" message="You spot a giant {{R|cider}} weep." adjectives="cider,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{R|苹果酒}}泪水" message="你发现了巨大的{{R|苹果酒}}泪水。" adjectives="cider,weep" category="Natural Features"/>
   </object>
   <object Name="ciderLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{R|苹果酒}} 泪水" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{R|苹果酒}}泪水" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="cider"/>
-    <part Name="SecretObject" text="A {{R|cider}} weep" message="You spot a {{R|cider}} weep." adjectives="cider,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{R|苹果酒}}泪水" message="你发现了{{R|苹果酒}}泪水。" adjectives="cider,weep" category="Natural Features"/>
   </object>
   <object Name="waterLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{B|水}} 泣者" RenderString="231" ColorString="&amp;B"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{B|水}}泣者" RenderString="231" ColorString="&amp;B"/>
     <mutation Name="LiquidFont" Liquid="water"/>
-    <part Name="SecretObject" text="A giant {{B|water}} weep" message="You spot a giant {{B|water}} weep." adjectives="water,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{B|水}}泣者" message="你发现了巨型{{B|水}}泣者。" adjectives="water,weep" category="Natural Features"/>
   </object>
   <object Name="waterLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{B|水}} 泣" RenderString="231" ColorString="&amp;B"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{B|水}}泣" RenderString="231" ColorString="&amp;B"/>
     <mutation Name="LiquidFont" Liquid="water"/>
-    <part Name="SecretObject" text="A {{B|water}} weep" message="You spot a {{B|water}} weep." adjectives="water,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{B|水}}泣" message="你发现了{{B|水}}泣。" adjectives="water,weep" category="Natural Features"/>
   </object>
   <object Name="gelLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的 {{Y|胶质}} 泪滴" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{Y|胶质}}泪滴" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="gel"/>
-    <part Name="SecretObject" text="A giant {{Y|gel}} weep" message="You spot a giant {{Y|gel}} weep." adjectives="gel,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{Y|胶质}}泪滴" message="你发现了巨大的{{Y|胶质}}泪滴。" adjectives="gel,weep" category="Natural Features"/>
   </object>
   <object Name="gelLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|凝胶}} 泣泪" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|凝胶}}泣泪" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="gel"/>
-    <part Name="SecretObject" text="A {{Y|gel}} weep" message="You spot a {{Y|gel}} weep." adjectives="gel,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|凝胶}}泣泪" message="你发现了{{Y|凝胶}}泣泪。" adjectives="gel,weep" category="Natural Features"/>
   </object>
   <object Name="asphaltLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{K|沥青}} 泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{K|沥青}}泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
     <mutation Name="LiquidFont" Liquid="asphalt"/>
-    <part Name="SecretObject" text="A giant {{K|asphalt}} weep" message="You spot a giant {{K|asphalt}} weep." adjectives="asphalt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{K|沥青}}泪滴" message="你发现了巨型{{K|沥青}}泪滴。" adjectives="asphalt,weep" category="Natural Features"/>
   </object>
   <object Name="asphaltLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|沥青}} 泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|沥青}}泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
     <mutation Name="LiquidFont" Liquid="asphalt"/>
-    <part Name="SecretObject" text="An {{K|asphalt}} weep" message="You spot an {{K|asphalt}} weep." adjectives="asphalt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|沥青}}泪滴" message="你发现了{{K|沥青}}泪滴。" adjectives="asphalt,weep" category="Natural Features"/>
   </object>
   <object Name="saltLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型 {{Y|盐}} 泪" RenderString="231" ColorString="&amp;y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|盐}}泪" RenderString="231" ColorString="&amp;y"/>
     <mutation Name="LiquidFont" Liquid="salt"/>
-    <part Name="SecretObject" text="A giant {{Y|salt}} weep" message="You spot a giant {{Y|salt}} weep." adjectives="salt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{Y|盐}}泪" message="你发现了巨型{{Y|盐}}泪。" adjectives="salt,weep" category="Natural Features"/>
   </object>
   <object Name="saltLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|盐}} 泪" RenderString="231" ColorString="&amp;y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|盐}}泪" RenderString="231" ColorString="&amp;y"/>
     <mutation Name="LiquidFont" Liquid="salt"/>
-    <part Name="SecretObject" text="A {{Y|salt}} weep" message="You spot a {{Y|salt}} weep." adjectives="salt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|盐}}泪" message="你发现了{{Y|盐}}泪。" adjectives="salt,weep" category="Natural Features"/>
   </object>
   <object Name="oilLichen" Inherits="LiquidLichen">
     <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|石油}}滴落者" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="oil"/>
-    <part Name="SecretObject" text="A giant {{K|oil}} weep" message="You spot a giant {{K|oil}} weep." adjectives="oil,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{K|石油}}滴落者" message="你发现了巨大的{{K|石油}}滴落者。" adjectives="oil,weep" category="Natural Features"/>
   </object>
   <object Name="oilLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|油}} 泪" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|油}}泪" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="oil"/>
-    <part Name="SecretObject" text="An {{K|oil}} weep" message="You spot an {{K|oil}} weep." adjectives="oil,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|油}}泪" message="你发现了{{K|油}}泪。" adjectives="oil,weep" category="Natural Features"/>
   </object>
   <!-- Soup sludges -->
   <object Name="SoupSludge" Inherits="BaseOoze">
-    <part Name="Render" DisplayName="{{c|浓汤状}} 污泥" RenderString="J" ColorString="&amp;c" DetailColor="C" Tile="Creatures/sw_sludge.bmp"/>
+    <part Name="Render" DisplayName="{{c|浓汤状}}污泥" RenderString="J" ColorString="&amp;c" DetailColor="C" Tile="Creatures/sw_sludge.bmp"/>
     <part Name="Description" Short="通过超反应原始汤与其液态近亲淤泥之间的离子交换而被赋予了生命，或者某种类似生命的状态，这一过程在万亿颗绕星旋转的岩石星球上不断重演。
 "/>
     <part Name="Corpse" CorpseChance="0"/>
@@ -10611,22 +10611,22 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <part Name="TemperatureOnHit" Amount="-20-30" Max="false" OnWielderHit="true"/>
   </object>
   <object Name="Neutronic Pseudopod" Inherits="Base Pseudopod">
-    <part Name="Render" DisplayName="{{neutronic|中子}} 假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;y"/>
+    <part Name="Render" DisplayName="{{neutronic|中子}}假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;y"/>
     <part Name="BoomOnHit" Chance="100"/>
   </object>
   <object Name="Homogenized Pseudopod" Inherits="Base Pseudopod">
     <part Name="Render" DisplayName="{{Y|同质伪足}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;Y"/>
   </object>
   <object Name="Nervous Pseudopod" Inherits="Base Pseudopod">
-    <part Name="Render" DisplayName="{{nervous|紧张的}} 假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="{{nervous|紧张的}}假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;W"/>
     <part Name="ConfuseOnHit" Chance="100"/>
   </object>
   <object Name="Algal Pseudopod" Inherits="Base Pseudopod">
-    <part Name="Render" DisplayName="{{g|藻类}} 假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{g|藻类}}假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;g"/>
     <part Name="BurgeonOnHit" Chance="100" Level="4-6"/>
   </object>
   <object Name="Radiant Pseudopod" Inherits="Base Pseudopod">
-    <part Name="Render" DisplayName="{{radiant|辉耀}} 假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{radiant|辉耀}}假足" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;Y"/>
   </object>
   <!-- Cherubim spawners -->
   <object Name="BaseCherubimSpawn" Inherits="Creature">
@@ -12019,7 +12019,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <stat Name="Hitpoints" Value="6"/>
     <stat Name="XPValue" Value="55"/>
     <stat Name="Speed" Value="75"/>
-    <part Name="SpawnVessel" SpawnBlueprint="Girshling" SpawnMessage="The crystalline eggs of =subject.t= swell and pop!" SlimesplatterOnSpawn="true" SpawnAmount="4-6" SpawnTime="10-15" SpawnSound="sfx_creature_appear_eggCrack"/>
+    <part Name="SpawnVessel" SpawnBlueprint="Girshling" SpawnMessage="=subject.t= 的水晶蛋膨胀并爆开！" SlimesplatterOnSpawn="true" SpawnAmount="4-6" SpawnTime="10-15" SpawnSound="sfx_creature_appear_eggCrack"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
@@ -12037,7 +12037,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <part Name="Vehicle" Type="Golem" Passengers="2" Autonomous="true"/>
     <part Name="Unreplicable" AllowTemporary="true"/>
     <part Name="TetheredOnboardRecoilerTeleporter" TetheredBlueprint="Reshaping Pad" DestinationZone="JoppaWorld.53.4.1.1.10" Sound="Sounds/Interact/sfx_interact_recoiler_activate"/>
-    <part Name="CannotBeInfluenced" Messages="Beguiling::The place where a mind should be is blank and smooth in =subject.t=.;;Persuasion_Proselytize::=subject.T's= commitment to =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments."/>
+    <part Name="CannotBeInfluenced" Messages="Beguiling::头脑应该在的地方是空白和光滑的 =subject.t=.;;Persuasion_Proselytize::=subject.T's= 对 =pronouns.possessive= 事业的承诺是坚定不移的。;;LoveTonicApplicator::补品有对 =subject.t=.;;default::=subject.T= 没有影响 =verb:are= 对你的甜言蜜语不敏感。"/>
     <removepart Name="Corpse" Depth="1"/>
     <removepart Name="MentalShield" Depth="1"/>
     <mutation Name="DarkVision" Level="1"/>
@@ -12440,156 +12440,156 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
   <!-- Golem natural weapons -->
   <!-- Used if no matching body part variant can be found below -->
   <object Name="Metachrome Weapon" Inherits="NaturalWeapon">
-    <part Name="Render" DisplayName="{{metachrome|超色}} 武器"/>
+    <part Name="Render" DisplayName="{{metachrome|超色}}武器"/>
     <part Name="MeleeWeapon" Slot="" HitBonus="10" PenBonus="0" MaxStrengthBonus="1000" Stat="Strength"/>
     <part Name="ModGigantic"/>
     <tag Name="ModGiganticNoDisplayName"/>
   </object>
   <object Name="Metachrome Cudgel" Inherits="Metachrome Weapon">
-    <part Name="Render" DisplayName="{{metachrome|变色合金}} 棍棒"/>
+    <part Name="Render" DisplayName="{{metachrome|变色合金}}棍棒"/>
     <part Name="MeleeWeapon" BaseDamage="4d6" Skill="Cudgel"/>
   </object>
   <object Name="Metachrome Axe" Inherits="Metachrome Weapon">
-    <part Name="Render" DisplayName="{{metachrome|译文}} 斧头"/>
+    <part Name="Render" DisplayName="{{metachrome|变色合金}}斧头"/>
     <part Name="MeleeWeapon" BaseDamage="1d8+8" Skill="Axe"/>
   </object>
   <object Name="Metachrome LongBlades" Inherits="Metachrome Weapon">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 长刃"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}长刃"/>
     <part Name="MeleeWeapon" BaseDamage="2d12" Skill="LongBlades"/>
   </object>
   <object Name="Metachrome ShortBlades" Inherits="Metachrome Weapon">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 匕首"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}匕首"/>
     <part Name="MeleeWeapon" BaseDamage="1d12+5" Skill="ShortBlades"/>
   </object>
   <!-- Golem natural weapons - hand -->
   <object Name="Metachrome Hand Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|金属色}} 手套" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|金属色}}手套" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Hand"/>
   </object>
   <object Name="Metachrome Hand Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="{{metachrome|译文}} 译文" Tile="Creatures/natural-weapon-drill.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|变色合金}}手斧" Tile="Creatures/natural-weapon-drill.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Hand"/>
   </object>
   <object Name="Metachrome Hand LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 刀刃" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}刀刃" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Hand"/>
   </object>
   <object Name="Metachrome Hand ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色金属}} 尖端" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|变色金属}}尖端" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Hand"/>
   </object>
   <!-- Golem natural weapons - face -->
   <object Name="Metachrome Face Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|变色合金}} 磨牙"/>
+    <part Name="Render" DisplayName="{{metachrome|变色合金}}磨牙"/>
     <part Name="MeleeWeapon" Slot="Face"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Face Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="{{metachrome|超色体}} 三叉戟"/>
+    <part Name="Render" DisplayName="{{metachrome|超色体}}三叉戟"/>
     <part Name="MeleeWeapon" Slot="Face"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Face LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 象牙"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}象牙"/>
     <part Name="MeleeWeapon" Slot="Face"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Face ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 变色龙獠牙"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}变色龙獠牙"/>
     <part Name="MeleeWeapon" Slot="Face"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <!-- Golem natural weapons - head -->
   <object Name="Metachrome Head Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|超色}} 花苞"/>
+    <part Name="Render" DisplayName="{{metachrome|超色}}花苞"/>
     <part Name="MeleeWeapon" Slot="Head"/>
   </object>
   <object Name="Metachrome Head Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="{{metachrome|变色}} 岭"/>
+    <part Name="Render" DisplayName="{{metachrome|变色}}岭"/>
     <part Name="MeleeWeapon" Slot="Head"/>
   </object>
   <object Name="Metachrome Head LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 猎手"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}猎手"/>
     <part Name="MeleeWeapon" Slot="Head"/>
   </object>
   <object Name="Metachrome Head ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="{{metachrome|超色}} 角"/>
+    <part Name="Render" DisplayName="{{metachrome|超色}}角"/>
     <part Name="MeleeWeapon" Slot="Head"/>
   </object>
   <!-- Golem natural weapons - foot -->
   <object Name="Metachrome Foot Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|金属色}} 金属色鳞茎"/>
+    <part Name="Render" DisplayName="{{metachrome|金属色}}棍棒"/>
     <part Name="MeleeWeapon" Slot="Foot"/>
   </object>
   <object Name="Metachrome Foot Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="{{metachrome|译文}} 译文"/>
+    <part Name="Render" DisplayName="{{metachrome|变色合金}}斧"/>
     <part Name="MeleeWeapon" Slot="Foot"/>
   </object>
   <object Name="Metachrome Foot LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 刀刃"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}长刀"/>
     <part Name="MeleeWeapon" Slot="Foot"/>
   </object>
   <object Name="Metachrome Foot ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色金属}} 尖端"/>
+    <part Name="Render" DisplayName="{{metachrome|变色金属}}短刀"/>
     <part Name="MeleeWeapon" Slot="Foot"/>
   </object>
   <!-- Golem natural weapons - arm -->
   <object Name="Metachrome Arm Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|变色金属}} 圆盘"/>
+    <part Name="Render" DisplayName="{{metachrome|变色金属}}棍棒"/>
     <part Name="MeleeWeapon" Slot="Arm"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Arm Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 峭壁"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}斧子"/>
     <part Name="MeleeWeapon" Slot="Arm"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Arm LongBlade" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="{{metachrome|变色龙}} 鳞片"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}长刀"/>
     <part Name="MeleeWeapon" Slot="Arm"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Arm ShortBlade" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="{{metachrome|译文}} 译文" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|变色龙}}短刀片" Tile="Creatures/natural-weapon-thorns.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Arm"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <!-- Golem natural weapons - body -->
   <object Name="Metachrome Body Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|超色}} 带" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|超色}}棍棒" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Body"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Body Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="有棱的 {{metachrome|变色}} 带" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="有棱的{{metachrome|变色}}斧" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Body"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Body LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="刃状 {{metachrome|变色金属}} 带" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="刃状{{metachrome|变色金属}}长刀" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Body"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <object Name="Metachrome Body ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="尖锐的 {{metachrome|变色}} 带" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="尖锐的{{metachrome|变色}}短刀" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Body"/>
     <tag Name="Gender" Value="plural"/>
   </object>
   <!-- Golem natural weapons - tail -->
   <object Name="Metachrome Tail Cudgel" Inherits="Metachrome Cudgel">
-    <part Name="Render" DisplayName="{{metachrome|变色}} 尾巴" Tile="Creatures/natural-weapon-tail.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{metachrome|变色}}棍棒" Tile="Creatures/natural-weapon-tail.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Tail"/>
   </object>
   <object Name="Metachrome Tail Axe" Inherits="Metachrome Axe">
-    <part Name="Render" DisplayName="有棱的 {{metachrome|变色金属}} 尾巴" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="有棱的{{metachrome|变色金属}}斧子" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Tail"/>
   </object>
   <object Name="Metachrome Tail LongBlades" Inherits="Metachrome LongBlades">
-    <part Name="Render" DisplayName="刃状 {{metachrome|变色}} 尾巴" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="刃状{{metachrome|变色}}长刀" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Tail"/>
   </object>
   <object Name="Metachrome Tail ShortBlades" Inherits="Metachrome ShortBlades">
-    <part Name="Render" DisplayName="尖锐的 {{metachrome|金属色}} 尾巴" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="尖锐的{{metachrome|金属色}}短刀" Tile="Creatures/natural-weapon-finned-tail.bmp" ColorString="&amp;C"/>
     <part Name="MeleeWeapon" Slot="Tail"/>
   </object>
   <!-- End tier X creatures -->
@@ -12944,8 +12944,8 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="LairDepth" Value="2"/>
     <tag Name="LairName" Value="workshop"/>
     <tag Name="LairNameContext" Value="the workshop of %o"/>
-    <tag Name="LairPulldownMessage" Value="You discover a secluded workshop. Do you want to investigate?"/>
-    <tag Name="LairDiscoveredMessage" Value="You discover the workshop of %o."/>
+    <tag Name="LairPulldownMessage" Value="你发现了一个僻静的工作室。你想调查一下吗？"/>
+    <tag Name="LairDiscoveredMessage" Value="你发现了 %o 的工作室。"/>
     <tag Name="HeroHasGuards" Value="2-4"/>
     <tag Name="HeroAddMakersMark"/>
     <tag Name="HeroLevelMultiplier" Value="1"/>
@@ -13008,8 +13008,8 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="StaticHateReason" Value="refusing to illuminate their manuscripts"/>
     <tag Name="LairName" Value="scriptorium"/>
     <tag Name="LairNameContext" Value="the scriptorium of %o"/>
-    <tag Name="LairPulldownMessage" Value="You discover a secluded scriptorium. Do you want to investigate?"/>
-    <tag Name="LairDiscoveredMessage" Value="You discover the scriptorium of %o."/>
+    <tag Name="LairPulldownMessage" Value="你发现了一个僻静的写字间。你想调查一下吗？"/>
+    <tag Name="LairDiscoveredMessage" Value="你发现了 %o 的写字间。"/>
     <part Name="HasGuards" NumberOfGuards="2"/>
   </object>
   <object Name="Beekeeper" Inherits="BaseMerchant">
@@ -13148,8 +13148,8 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="StaticHateReason" Value="refusing to cook for them"/>
     <tag Name="LairName" Value="kitchen"/>
     <tag Name="LairNameContext" Value="the kitchen of %o"/>
-    <tag Name="LairPulldownMessage" Value="You discover a secluded domicile. Sweet and savory wafts of air bellow from inside. Do you want to investigate?"/>
-    <tag Name="LairDiscoveredMessage" Value="You discover the kitchen of %o."/>
+    <tag Name="LairPulldownMessage" Value="你发现了一个僻静的住所。甜甜可口的空气从里面飘来。你想调查吗?"/>
+    <tag Name="LairDiscoveredMessage" Value="你发现了 %o 的厨房。"/>
     <tag Name="Role" Value="Brute"/>
   </object>
   <object Name="StiltChef" Inherits="Chef">
@@ -13253,8 +13253,8 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="LairAdjectives" Value="ichormerchant"/>
     <tag Name="LairName" Value="distillery"/>
     <tag Name="LairNameContext" Value="the distillery of %o"/>
-    <tag Name="LairPulldownMessage" Value="You discover a secluded distillery. Do you want to investigate?"/>
-    <tag Name="LairDiscoveredMessage" Value="You discover the distillery of %o."/>
+    <tag Name="LairPulldownMessage" Value="您发现了一家僻静的酿酒厂。你想调查一下吗？"/>
+    <tag Name="LairDiscoveredMessage" Value="你发现了 %o 的酿酒厂。"/>
     <tag Name="StaticLikeReason" Value="distilling a rare liquid"/>
     <tag Name="StaticHateReason" Value="refusing to distill a rare liquid"/>
     <part Name="HasGuards" NumberOfGuards="2"/>
@@ -13337,8 +13337,8 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="LairAdjectives" Value="gutsmonger"/>
     <tag Name="LairName" Value="organ market"/>
     <tag Name="LairNameContext" Value="the organ market of %o"/>
-    <tag Name="LairPulldownMessage" Value="You discover a secluded organ market. Do you want to investigate?"/>
-    <tag Name="LairDiscoveredMessage" Value="You discover the organ market of %o."/>
+    <tag Name="LairPulldownMessage" Value="你发现了一个僻静的器官市场。你想调查一下吗？"/>
+    <tag Name="LairDiscoveredMessage" Value="你发现了%o的器官市场。"/>
     <tag Name="StaticLikeReason" Value="stocking a rare implant"/>
     <tag Name="StaticHateReason" Value="refusing to sell a rare implant"/>
     <part Name="HasGuards" NumberOfGuards="2"/>
@@ -15433,7 +15433,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <part Name="HasGuards" NumberOfGuards="3"/>
     <part Name="GiganticInventory" Chance="100" WaresChance="85"/>
     <tag Name="InventoryPopulationTable" Value="HamilcrabInventory"/>
-    <part Name="SecretObjectTalk" id="$hamilcrab" text="Hamilcrab's shop" message="You now know the location of {{M|Hamilcrab's shop}}." adjectives="oddity,merchant" category="Merchants"/>
+    <part Name="SecretObjectTalk" id="$hamilcrab" text="Hamilcrab's shop" message="你现在知道{{M|Hamilcrab 商店}}的位置。" adjectives="oddity,merchant" category="Merchants"/>
     <tag Name="Merchant"/>
     <xtagGrammar Proper="true"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>

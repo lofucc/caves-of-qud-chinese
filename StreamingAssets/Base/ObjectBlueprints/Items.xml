@@ -298,7 +298,7 @@
     <stag Name="Contemporary"/>
   </object>
   <object Name="Mace2" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{w|青铜}} 晨星锤" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{w|青铜}}晨星锤" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;w"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="10"/>
     <part Name="Description" Short="一个钟形青铜块螺旋固定在一根伤痕累累的木柄上。"/>
@@ -323,7 +323,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light"/>
   </object>
   <object Name="Steel War Hammer" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{Y|钢铁}} 战锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢铁}}战锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;Y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="手柄上涂抹了润滑油，一端装有打磨光滑的钢铁锤头。"/>
@@ -345,7 +345,7 @@
     <part Name="Physics" UsesTwoSlots="true" Weight="9"/>
   </object>
   <object Name="Steel Hammer" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{Y|钢}} 棍" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}棍" Tile="Items/sw_cudgel_1.bmp" ColorString="&amp;Y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一根经过战斗磨砺的钢棍，其头部被打磨得光滑如 Corm。"/>
@@ -398,7 +398,7 @@
     <part Name="Physics" Weight="9"/>
   </object>
   <object Name="Cudgel3" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{b|碳化物}} 锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;b"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="2d3" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="锤柄扩展成一个坚固的蓝色金属多边形。其表面布满了划痕和刻痕。"/>
@@ -418,7 +418,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light"/>
   </object>
   <object Name="Cudgel4" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{B|碳化物}} 折叠锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|碳化物}}折叠锤" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="2d4" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="80"/>
     <part Name="Description" Short="锤柄顶部是一颗明亮的蓝色金属锤头。其表面和颈部的暗条纹记录了它曾撞击和敲打较软的碳化物的痕迹。"/>
@@ -438,7 +438,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light"/>
   </object>
   <object Name="Cudgel5" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|富勒烯}} 榔头" Tile="Items/sw_cudgel_4.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|富勒烯}}榔头" Tile="Items/sw_cudgel_4.bmp" ColorString="&amp;K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="2d4+1" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="160"/>
     <part Name="Description" Short="一团沉甸甸的金属，如同陨石般晦暗，被焊接在一根钢制杆上。"/>
@@ -462,7 +462,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_heavy"/>
   </object>
   <object Name="Cudgel6" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 战锤}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}战锤}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="2d6" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
@@ -475,7 +475,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
   </object>
   <object Name="Cudgel6th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
@@ -488,7 +488,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
   </object>
   <object Name="Cudgel7" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} 晶钢权杖}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶钢}}权杖}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="3d4" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -502,7 +502,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
   </object>
   <object Name="Cudgel7th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}} 战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}战锤}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="3d6" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -516,7 +516,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
   </object>
   <object Name="Cudgel8" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 锤" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}锤" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
@@ -530,7 +530,7 @@
     <stag Name="Historical"/>
   </object>
   <object Name="Cudgel8th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 战锤" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}战锤" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="4d6" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
@@ -559,7 +559,7 @@
     <tag Name="Tier" Value="5"/>
   </object>
   <object Name="Rhinox-Skull Maul" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{g|犀牛头骨}} 榔头" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{g|犀牛头骨}}榔头" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="320"/>
     <part Name="Description" Short="厚实且坚硬如钻石的头骨上有三个角孔，作为钝器的巨大头部。一根长长的闪亮钢杆穿过嘴巴并焊接在内部。"/>
@@ -567,7 +567,7 @@
     <part Name="Physics" Weight="25" UsesTwoSlots="true"/>
   </object>
   <object Name="Stun Rod" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{c|眩晕}} 杆" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{c|眩晕}}杆" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="y"/>
     <part Name="Examiner" Complexity="1"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="50"/>
@@ -584,7 +584,7 @@
     <tag Name="Tier" Value="1"/>
   </object>
   <object Name="Prayer Rod" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{c|祈祷}} 杆" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{c|祈祷}}杆" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W"/>
     <part Name="Examiner" Complexity="1"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="ElementalDamage" Damage="1d5+5" Attributes="Electric" ChargeUse="5"/>
@@ -603,7 +603,7 @@
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="Syphon Baton" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{syphon|虹吸}} 棍棒" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{syphon|虹吸}}棍棒" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="150"/>
     <part Name="Description" Short="环形磁铁形成一个圆柱形的重锤头，可以敲击物体并虹吸其电子汁液到手柄上的电池中。"/>
@@ -701,7 +701,7 @@
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Steel Butcher Knife" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{Y|钢}} 屠夫刀" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}屠夫刀" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d4"/>
     <part Name="Commerce" Value="28"/>
     <part Name="Description" Short="宽阔明亮的刀刃上涂满了内脏。"/>
@@ -725,7 +725,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Obsidian Kris" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|黑曜石}} 克里斯刀" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|黑曜石}}克里斯刀" Tile="Items/sw_shortblade_9.bmp" ColorString="&amp;K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="从喷烟神海中捞取的火山玻璃，在冰焰山脉上被精心打磨成形。"/>
@@ -744,7 +744,7 @@
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="ArmDagger4" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{B|折叠碳化物}} 手腕刀" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|折叠碳化物}}手腕刀" Tile="Items/sw_shortblade_11.bmp" ColorString="&amp;B"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d8" Slot="Arm"/>
     <part Name="Commerce" Value="75"/>
     <part Name="Description" Short="一条皮革带穿过明亮刀刃的柄部。"/>
@@ -782,7 +782,7 @@
     <tag Name="Tier" Value="6"/>
   </object>
   <object Name="Dagger7" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} {{crysteel|晶体钢}}匕首}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}匕首}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1"/>
     <part Name="ThrownWeapon" Penetration="8" Damage="1d12+1" Attributes="ShortBlades"/>
     <part Name="Commerce" Value="690"/>
@@ -798,7 +798,7 @@
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="Dagger8" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 匕首" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}匕首" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d12+2"/>
     <part Name="ThrownWeapon" Penetration="9" Damage="1d12+2" Attributes="ShortBlades"/>
     <part Name="Commerce" Value="1390"/>
@@ -836,7 +836,7 @@
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Gaslight Dagger" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{gaslight|煤气灯}} 克里斯剑" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g"/>
+    <part Name="Render" DisplayName="{{gaslight|煤气灯}}克里斯剑" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="g"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades"/>
     <part Name="ThrownWeapon" Penetration="0" Damage="1d4" Attributes="ShortBlades"/>
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4"/>
@@ -848,7 +848,7 @@
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
     <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="4"/>
     <part Name="Metal"/>
-    <part Name="Gaslight" ChargeUse="100" ChargedSkill="ShortBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d6" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}} kris" UnchargedName="gaslight kris"/>
+    <part Name="Gaslight" ChargeUse="100" ChargedSkill="ShortBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d6" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}}kris" UnchargedName="gaslight kris"/>
     <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_gaslightKris_swing"/>
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_artifact"/>
     <tag Name="NoAIEquipAsThrownWeapon"/>
@@ -858,7 +858,7 @@
     <tag Name="WeaponIgnoreStrength"/>
   </object>
   <object Name="Gaslight Sword" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{gaslight|荧光}} 飞莎" Tile="Items/sw_longblade_9.bmp" ColorString="&amp;W" DetailColor="g"/>
+    <part Name="Render" DisplayName="{{gaslight|荧光}}飞莎" Tile="Items/sw_longblade_9.bmp" ColorString="&amp;W" DetailColor="g"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d6" Skill="LongBlades"/>
     <part Name="Examiner" Alternate="UnknownSword" Complexity="4"/>
     <part Name="Commerce" Value="120"/>
@@ -869,7 +869,7 @@
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
     <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="4"/>
     <part Name="Metal"/>
-    <part Name="Gaslight" ChargeUse="100" ChargedSkill="LongBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d8" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}} flyssa" UnchargedName="gaslight flyssa"/>
+    <part Name="Gaslight" ChargeUse="100" ChargedSkill="LongBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d8" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}}flyssa" UnchargedName="gaslight flyssa"/>
     <tag Name="Mods" Value="WeaponMods,CommonMods,ElectronicsMods"/>
     <tag Name="Tier" Value="4"/>
     <tag Name="WeaponIgnoreStrength"/>
@@ -878,7 +878,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact"/>
   </object>
   <object Name="Gaslight Chisel" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{gaslight|煤气灯}} 凿子" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{gaslight|煤气灯}}凿子" Tile="Items/sw_shortblade_7.bmp" ColorString="&amp;W" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades"/>
     <part Name="Examiner" Alternate="UnknownKnife" Complexity="4"/>
     <part Name="Commerce" Value="120"/>
@@ -890,7 +890,7 @@
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
     <part Name="LightSource" OnlyIfCharged="true" Radius="4"/>
     <part Name="Metal"/>
-    <part Name="Gaslight" ChargeUse="100" ChargedSkill="ShortBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d6" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}} chisel" UnchargedName="gaslight chisel"/>
+    <part Name="Gaslight" ChargeUse="100" ChargedSkill="ShortBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d6" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}}chisel" UnchargedName="gaslight chisel"/>
     <tag Name="Mods" Value="WeaponMods,CommonMods,ElectronicsMods"/>
     <tag Name="Tier" Value="4"/>
     <tag Name="WeaponIgnoreStrength"/>
@@ -965,7 +965,7 @@
     <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_axe_twoHanded_metal_swing"/>
   </object>
   <object Name="Steel Hand Axe" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{Y|钢}} 手斧" Tile="Items/sw_axe_9.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}手斧" Tile="Items/sw_axe_9.bmp" ColorString="&amp;Y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d3+1"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="一块明亮的钢被磨成锋利的刃。"/>
@@ -990,7 +990,7 @@
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Battle Axe3" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{b|碳化物}} 战斧" Tile="Items/sw_axe_3.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}战斧" Tile="Items/sw_axe_3.bmp" ColorString="&amp;b"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d4+1"/>
     <part Name="Commerce" Value="55"/>
     <part Name="Description" Short="蓝色刃缘的光泽在斧刃底部逐渐消逝成阴影，而背部的尖刺则平衡了整个刀片的体积。"/>
@@ -1009,7 +1009,7 @@
     <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_axe_twoHanded_metal_swing"/>
   </object>
   <object Name="Battle Axe4" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{B|折叠碳化物}} 战斧" Tile="Items/sw_axe_3.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|折叠碳化物}}战斧" Tile="Items/sw_axe_3.bmp" ColorString="&amp;B"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d6+1"/>
     <part Name="Commerce" Value="95"/>
     <part Name="Description" Short="明亮的天蓝色金属边缘形成一个优雅的半圆，固定在钢制斧柄上。"/>
@@ -1050,7 +1050,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_metal_heavy"/>
   </object>
   <object Name="Battle Axe6" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 战斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}战斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d8+2"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999"/>
@@ -1062,7 +1062,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass"/>
   </object>
   <object Name="Battle Axe6th" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 长柄战斧}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}长柄战斧}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="1d8+4"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
@@ -1074,7 +1074,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass"/>
   </object>
   <object Name="Battle Axe7" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} 战斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体刚}}战斧}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d8+3"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -1087,7 +1087,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass"/>
   </object>
   <object Name="Battle Axe7th" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}}战戟}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}战戟}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="1d8+5"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -1100,7 +1100,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass"/>
   </object>
   <object Name="Battle Axe8" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 战斧" Tile="Items/sw_axe_7.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|译文}}战斧" Tile="Items/sw_axe_7.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d8+4"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
@@ -1114,7 +1114,7 @@
     <stag Name="Historical"/>
   </object>
   <object Name="Battle Axe8th" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}} 长柄战斧" Tile="Items/sw_axe_8.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}长柄战斧" Tile="Items/sw_axe_8.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="1d8+6"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
@@ -1144,7 +1144,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Leather Whip" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{w|皮革}} 鞭子" Tile="items/sw_whip_1.bmp" ColorString="&amp;w" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{w|皮革}}鞭子" Tile="items/sw_whip_1.bmp" ColorString="&amp;w" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d4" Skill="Whip"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="皮革通过环结编织成卷曲的鞭身。鞭梢上有血迹。"/>
@@ -1166,7 +1166,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_metal_light"/>
   </object>
   <object Name="Long Sword" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{w|青铜}} 长剑" Tile="items/sw_longblade_1.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{w|青铜}}长剑" Tile="items/sw_longblade_1.bmp" ColorString="&amp;w"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d3" Skill="LongBlades"/>
     <part Name="Commerce" Value="15"/>
     <part Name="Description" Short="剑刃上布满了划痕，青铜的边缘显得斑驳，皮革握把因皮肤油脂而变得湿润。"/>
@@ -1204,7 +1204,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_metal_light"/>
   </object>
   <object Name="Steel Long Sword" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{Y|钢}} 长剑" Tile="items/sw_longblade_1.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}长剑" Tile="items/sw_longblade_1.bmp" ColorString="&amp;Y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="1d6" Skill="LongBlades"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="长刃明亮且光滑。"/>
@@ -1222,7 +1222,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_metal_light"/>
   </object>
   <object Name="Long Sword3" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{b|碳化物}} 长剑" Tile="items/sw_longblade_14.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}长剑" Tile="items/sw_longblade_14.bmp" ColorString="&amp;b"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="4" BaseDamage="1d8" Skill="LongBlades"/>
     <part Name="Commerce" Value="55"/>
     <part Name="Description" Short="盐粒和伤痕沿着蓝色刀刃的边缘形成彗星的尾巴。"/>
@@ -1259,7 +1259,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_metal_light"/>
   </object>
   <object Name="Long Sword5" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{K|富勒烯}} 长剑" Tile="items/sw_longblade_14.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|富勒烯}}长剑" Tile="items/sw_longblade_14.bmp" ColorString="&amp;K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="6" BaseDamage="1d12" Skill="LongBlades"/>
     <part Name="Commerce" Value="195"/>
     <part Name="Metal"/>
@@ -1283,7 +1283,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_metal_heavy"/>
   </object>
   <object Name="Long Sword6" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{K|{{crysteel|结晶钢}} 长剑}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|结晶钢}}长剑}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="2d6" Skill="LongBlades"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
@@ -1296,7 +1296,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
   </object>
   <object Name="Long Sword6th" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}} 大剑}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}}大剑}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="2d8" Skill="LongBlades"/>
     <part Name="Commerce" Value="390"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
@@ -1309,7 +1309,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
   </object>
   <object Name="Long Sword7" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} 长剑}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体刚}}长剑}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="2d6+1" Skill="LongBlades"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -1323,7 +1323,7 @@
     <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
   </object>
   <object Name="Long Sword7th" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} 大剑}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="完美{{K|{{crysteel|晶体刚}}大剑}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="2d10" Skill="LongBlades"/>
     <part Name="Commerce" Value="720"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
@@ -1365,7 +1365,7 @@
     <stag Name="Historical"/>
   </object>
   <object Name="Long Sword8" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 长剑" Tile="items/sw_longblade_7.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}长剑" Tile="items/sw_longblade_7.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="2d8" Skill="LongBlades"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
@@ -1487,7 +1487,7 @@
     <xtagGrammar Proper="false"/>
   </object>
   <object Name="Fist of the Ape God" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{r|拳}} of the {{Y|猿神}}" ColorString="&amp;M" Tile="Items/sw_first_ape_god.bmp" DetailColor="r"/>
+    <part Name="Render" DisplayName="{{Y|猿神}}之{{r|拳}}" ColorString="&amp;M" Tile="Items/sw_first_ape_god.bmp" DetailColor="r"/>
     <part Name="MeleeWeapon" HitBonus="3" PenBonus="1" MaxStrengthBonus="9999" Ego="4" BaseDamage="6d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="2000"/>
     <part Name="Description" Short="生命之血如紫茉莉般鲜红，经月光晒干后，涂满了死森林萨德紧握的巨大拳头。这一景象展开了一条时间的丝带: 这是一件几乎在所有未来中都存在的遗物，而持有者或许就是=pronouns.possessive=化石伴侣和秘密共享者。"/>
@@ -1501,7 +1501,7 @@
     <tag Name="EquipmentFrameColors" Value="Yryr"/>
   </object>
   <object Name="La Jeunesse" Inherits="BaseLongBlade">
-    <part Name="Render" DisplayName="{{r|拉}} {{r-R-R-W-W-w-w 序列|青春}}" Tile="Items/sw_longblade_11.bmp" ColorString="&amp;r" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{r|拉}}{{r-R-R-W-W-w-w sequence|青春}}" Tile="Items/sw_longblade_11.bmp" ColorString="&amp;r" DetailColor="Y"/>
     <stat Name="Hitpoints" Value="300"/>
     <part Name="Physics" Weight="20" UsesTwoSlots="true"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="2d8" Skill="LongBlades"/>
@@ -1647,7 +1647,7 @@
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d8"/>
   </object>
   <object Name="Laser Rifle" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{C|激光}} 步枪" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp"/>
+    <part Name="Render" DisplayName="{{C|激光}}步枪" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp"/>
     <part Name="Physics" Weight="9" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
     <part Name="Commerce" Value="750"/>
@@ -1716,7 +1716,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Freeze Ray" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{冻结|freeze}} 射线" Tile="items/sw_raygun.bmp" ColorString="&amp;C" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{freeze|冻结}}射线" Tile="items/sw_raygun.bmp" ColorString="&amp;C" DetailColor="y"/>
     <part Name="Physics" UsesTwoSlots="true" Weight="28"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="FR" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
     <part Name="Commerce" Value="750"/>
@@ -1768,7 +1768,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_hypertractor_hit"/>
   </object>
   <object Name="Light Rail" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{W|光}} 轨道" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp"/>
+    <part Name="Render" DisplayName="{{W|光}}轨道" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp"/>
     <part Name="Description" Short="手工雕刻的木制城堡上排列着六条平行导轨和一个滑动的光子结构。枪托上的木纹被烧成了黑色。"/>
     <part Name="Physics" Weight="16" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
@@ -1793,7 +1793,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Spaser Rifle" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{spaser|等离子激光}} 步枪" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp"/>
+    <part Name="Render" DisplayName="{{spaser|等离子激光}}步枪" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="items/sw_techrifle_4.bmp"/>
     <part Name="Description" Short="色散结晶钢包裹着金/水机制，该机制将光从波长压缩到波短。等离子体残渣像超高温的污泥一样在枪管顶部冒泡。"/>
     <part Name="Physics" Weight="16" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4"/>
@@ -1959,7 +1959,7 @@
     <part Name="Projectile" StrengthPenetration="2" BaseDamage="1d4" ColorString="&amp;w"/>
   </object>
   <object Name="Steel Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{Y|钢}} 箭" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}箭" ColorString="&amp;Y"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileSteelArrow"/>
     <part Name="Description" Short="一支细长的箭杆，用鸟羽装饰，箭头由钢制成。"/>
     <part Name="MissileStatusColor" Color="Y"/>
@@ -1967,13 +1967,13 @@
     <tag Name="TurretStockWeight" Value="9"/>
   </object>
   <object Name="ProjectileSteelArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{Y|钢}} 箭" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}箭" ColorString="&amp;Y"/>
     <part Name="Projectile" StrengthPenetration="3" BaseDamage="1d3+1" ColorString="&amp;Y"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#FFFFFF;;trailColor::#808080"/>
   </object>
   <object Name="Boomrose Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{R|爆花箭}} 箭矢" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{R|爆花箭}}箭矢" ColorString="&amp;R"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileExplosiveArrow"/>
     <part Name="Description" Short="红橙色在箭头的膨大部分旋涡般交织。点燃只需轻轻一拨。"/>
     <part Name="MissileStatusColor" Color="R"/>
@@ -1981,7 +1981,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit"/>
   </object>
   <object Name="ProjectileExplosiveArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{R|爆花箭}} 箭矢" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{R|爆花箭}}箭矢" ColorString="&amp;R"/>
     <part Name="Projectile" StrengthPenetration="1" BaseDamage="1d2" ColorString="&amp;R"/>
     <part Name="HEGrenade" Force="1200" Damage="1d6"/>
     <tag Name="ProjectileHitSound" Value="Sounds/Missile/Hits/sfx_missile_explosiveArrow_hit"/>
@@ -1990,7 +1990,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#d74200;;trailColor::#808080"/>
   </object>
   <object Name="Carbide Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{b|碳化物}} 箭" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}箭" ColorString="&amp;b"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileCarbideArrow"/>
     <part Name="Description" Short="一根细长的箭杆，用鸟羽装饰，箭头由碳化物制成。"/>
     <part Name="MissileStatusColor" Color="b"/>
@@ -1999,13 +1999,13 @@
     <tag Name="TurretStockWeight" Value="3"/>
   </object>
   <object Name="ProjectileCarbideArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{b|碳化物}} 箭" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}箭" ColorString="&amp;b"/>
     <part Name="Projectile" StrengthPenetration="4" BaseDamage="1d4+1" ColorString="&amp;b"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#0048bd;;trailColor::#808080"/>
   </object>
   <object Name="Folded Carbide Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{B|折叠碳化物}} 箭" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|折叠碳化物}}箭" ColorString="&amp;B"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileFoldedCarbideArrow"/>
     <part Name="Description" Short="一根细长的箭杆，用鸟羽装饰，箭头由折叠碳化物制成。"/>
     <part Name="MissileStatusColor" Color="B"/>
@@ -2014,7 +2014,7 @@
     <tag Name="TurretStockWeight" Value="2"/>
   </object>
   <object Name="ProjectileFoldedCarbideArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{B|折叠碳化物}} 箭" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|折叠碳化物}}箭" ColorString="&amp;B"/>
     <part Name="Projectile" StrengthPenetration="5" BaseDamage="1d4+2" ColorString="&amp;B"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#0096ff;;trailColor::#808080"/>
@@ -2027,13 +2027,13 @@
     <part Name="Commerce" Value="0.4"/>
   </object>
   <object Name="ProjectileFulleriteArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{K|富勒烯}} 箭" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|富勒烯}}箭" ColorString="&amp;K"/>
     <part Name="Projectile" StrengthPenetration="6" BaseDamage="1d4+3" ColorString="&amp;K"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#155352;;trailColor::#808080"/>
   </object>
   <object Name="Crysteel Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 箭}}" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}箭}}" ColorString="&amp;g"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileCrysteelArrow"/>
     <part Name="Description" Short="一支细长的箭杆，用鸟羽装饰，箭头由晶体钢制成。"/>
     <part Name="MissileStatusColor" Color="g"/>
@@ -2041,13 +2041,13 @@
     <part Name="Crysteel"/>
   </object>
   <object Name="ProjectileCrysteelArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 箭}}" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}箭}}" ColorString="&amp;g"/>
     <part Name="Projectile" StrengthPenetration="7" BaseDamage="1d4+4" ColorString="&amp;g"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#009403;;trailColor::#808080"/>
   </object>
   <object Name="Flawless Crysteel Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}} 箭}}" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}箭}}" ColorString="&amp;G"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileFlawlessCrysteelArrow"/>
     <part Name="Description" Short="一根细长的箭杆，羽翼由鸟羽制成，箭头由完美的晶体钢制成。"/>
     <part Name="MissileStatusColor" Color="G"/>
@@ -2056,13 +2056,13 @@
     <tag Name="Flawless"/>
   </object>
   <object Name="ProjectileFlawlessCrysteelArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}} 箭}}" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}箭}}" ColorString="&amp;G"/>
     <part Name="Projectile" StrengthPenetration="8" BaseDamage="1d4+5" ColorString="&amp;G"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#00c420;;trailColor::#808080"/>
   </object>
   <object Name="Zetachrome Arrow" Inherits="BaseArrow">
-    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}} 箭" ColorString="&amp;m"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}箭" ColorString="&amp;m"/>
     <part Name="AmmoArrow" ProjectileObject="ProjectileZetachromeArrow"/>
     <part Name="Description" Short="一根细长的箭杆，尾部装饰着鸟羽，箭头由泽塔铬制成。"/>
     <part Name="MissileStatusColor" Color="m"/>
@@ -2070,7 +2070,7 @@
     <part Name="Zetachrome"/>
   </object>
   <object Name="ProjectileZetachromeArrow" Inherits="BaseArrowProjectile">
-    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}} 箭" ColorString="&amp;m"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}箭" ColorString="&amp;m"/>
     <part Name="Projectile" StrengthPenetration="9" BaseDamage="1d4+6" ColorString="&amp;m"/>
     <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/arrow"/>
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;shaftColor::#b1c9c3;;headColor::#b154cf;;trailColor::#808080"/>
@@ -2179,7 +2179,7 @@
     <part Name="TemperatureOnEntering" Amount="8d20" Max="false" OnWielderHit="true"/>
   </object>
   <object Name="Defoliant Gas Pump" Inherits="BaseHeavyWeapon">
-    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{defoliant|除叶剂}} 泵" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W"/>
+    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{defoliant|除叶剂}}泵" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" ShowShotsPerAction="false" NoWildfire="true" MaxRange="12" AnimationDelay="20" AmmoChar="~" ShotsPerAction="5" AmmoPerAction="3" ShotsPerAnimation="5" WeaponAccuracy="10"/>
     <part Name="Commerce" Value="130"/>
@@ -2198,14 +2198,14 @@
     <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_pump_reload"/>
   </object>
   <object Name="ProjectileDefoliantGasStream" Inherits="TemporaryProjectile">
-    <part Name="Render" DisplayName="{{defoliant|除叶剂}} 气流" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="{{defoliant|除叶剂}}气流" ColorString="&amp;W"/>
     <part Name="Projectile" BasePenetration="0" BaseDamage="0" Quiet="true" Attributes="Defoliant" ColorString="&amp;W" PassByVerb="flicker"/>
     <part Name="GasOnHit" Blueprint="DefoliantGas" Density="8d10" OnWielderHit="true"/>
     <part Name="GasOnEntering" Blueprint="DefoliantGas" Density="4d10"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Fungicide Gas Pump" Inherits="BaseHeavyWeapon">
-    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{fungicide|杀菌剂}} 泵" ColorString="&amp;m" TileColor="&amp;r" DetailColor="m"/>
+    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{fungicide|杀菌剂}}泵" ColorString="&amp;m" TileColor="&amp;r" DetailColor="m"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" ShowShotsPerAction="false" NoWildfire="true" MaxRange="12" AnimationDelay="20" AmmoChar="~" ShotsPerAction="5" AmmoPerAction="3" ShotsPerAnimation="5" WeaponAccuracy="10"/>
     <part Name="Commerce" Value="130"/>
@@ -2249,7 +2249,7 @@
     <part Name="ExplodeOnHit" Force="2000" Damage="2d6"/>
   </object>
   <object Name="Normality Gas Pump" Inherits="BaseHeavyWeapon">
-    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{正常|常态气体}} 泵" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K"/>
+    <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{normal|常态气体}}泵" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="true" MaxRange="12" AnimationDelay="20" AmmoChar="~" ShotsPerAction="5" AmmoPerAction="1" ShotsPerAnimation="5" WeaponAccuracy="10"/>
     <part Name="Commerce" Value="180"/>
@@ -2319,7 +2319,7 @@
     <part Name="Projectile" BasePenetration="0" BaseDamage="2d12" Attributes="Vorpal" ColorString="&amp;B" PassByVerb="dart"/>
   </object>
   <object Name="Blast Cannon" Inherits="BaseHeavyWeapon">
-    <part Name="Render" DisplayName="{{R|爆破}} 炮" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp"/>
+    <part Name="Render" DisplayName="{{R|爆破}}炮" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp"/>
     <part Name="Physics" UsesTwoSlots="true" Weight="70"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12"/>
     <part Name="Commerce" Value="2000"/>
@@ -2448,7 +2448,7 @@
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d6"/>
   </object>
   <object Name="Laser Pistol" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{C|激光}} 手枪" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w"/>
+    <part Name="Render" DisplayName="{{C|激光}}手枪" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4"/>
     <part Name="Commerce" Value="400"/>
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserPistol"/>
@@ -2554,7 +2554,7 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#0f3b3a;;beamColor1::#0f3b3a;;beamColor2::#0f3b3a"/>
   </object>
   <object Name="Hand Rail" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{W|手}} 护栏" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp"/>
+    <part Name="Render" DisplayName="{{W|手}}护栏" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp"/>
     <part Name="Description" Short="手工雕刻的木制护拦上排列着六条平行导体和一个滑动光子结构。枪托上的木纹被烧成黑色。"/>
     <part Name="Physics" Weight="8"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
@@ -2579,7 +2579,7 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Di-Thermo Beam" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{R|双温}} 射线" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{R|双温}}射线" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C"/>
     <part Name="Description" Short="冷却管和防冻管以对称几何形状锁定在一起。拇指翻转可以旋转机制并反转它们的方向。"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="f" AnimationDelay="15" ShotsPerAction="2" AmmoPerAction="1" ShotsPerAnimation="2" WeaponAccuracy="4"/>
     <part Name="Physics" Weight="6"/>
@@ -2588,7 +2588,7 @@
     <part Name="CooldownAmmoLoader" Cooldown="2" Readout="true"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="Examiner" Complexity="7"/>
-    <part Name="DiThermoBeam" HeatName="{{R|di-thermo}} beam" ColdName="{{C|di-thermo}} beam" ProjectileObject="ProjectileDiThermoBeamCold"/>
+    <part Name="DiThermoBeam" HeatName="{{R|di-thermo}}beam" ColdName="{{C|di-thermo}}beam" ProjectileObject="ProjectileDiThermoBeamCold"/>
     <part Name="TinkerItem" Bits="0246" CanDisassemble="true" CanBuild="true"/>
     <part Name="Metal"/>
     <tag Name="TurretName" Value="di-thermo beam turret"/>
@@ -2642,7 +2642,7 @@
     <part Name="TreatAsSolid" RealityDistortionBased="true" Message="=subject.T= =verb:collapse=在常态的压力下。"/>
   </object>
   <object Name="Spaser Pistol" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{spaser|等离子子波枪}} 手枪" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp"/>
+    <part Name="Render" DisplayName="{{spaser|等离子子波枪}}手枪" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp"/>
     <part Name="Description" Short="色散结晶钢包裹着金/水机制，该机制将光从波长压缩到波短。等离子体残渣像超高温的污泥一样在枪管顶部冒泡。"/>
     <part Name="Physics" Weight="8"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="8"/>
@@ -2689,7 +2689,7 @@
     <stag Name="Travel"/>
   </object>
   <object Name="High-Voltage Arc Winder" Inherits="Arc Winder">
-    <part Name="Render" DisplayName="{{W|高压}} 弧线卷绕器" ColorString="&amp;Y" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{W|高压}}弧线卷绕器" ColorString="&amp;Y" DetailColor="Y"/>
     <part Name="Description" Short="螺旋曲柄闭合一个铬壳电路，并通过两个接触尖端释放大量电荷。烟雾在它们的白炽光芒中旋转。"/>
     <part Name="Commerce" Value="1250"/>
     <part Name="ElectricalDischargeLoader" ChargeUse="425"/>
@@ -2971,7 +2971,7 @@
   </object>
   <!-- Grenades -->
   <object Name="SleepGasGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{w|睡眠}} 气体手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{w|睡眠}}气体手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="40" GasObject="SleepGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。它的凹槽湿润着梦露。"/>
@@ -2983,7 +2983,7 @@
     <stag Name="Sleep"/>
   </object>
   <object Name="SleepGasGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{w|睡眠}} 气体手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{w|睡眠}}气体手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="80" GasObject="SleepGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一簇金属蜂窝状的波纹六边形被一个铬制杠杆夹住。它的凹槽湿润着梦露之露。"/>
@@ -2994,7 +2994,7 @@
     <stag Name="Sleep"/>
   </object>
   <object Name="SleepGasGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{w|睡眠}} 气体手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{w|睡眠}}气体手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="120" GasObject="SleepGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并夹在一个快速释放杠杆上。它的凸耳上沾满了梦露。"/>
@@ -3007,7 +3007,7 @@
     <stag Name="Sleep"/>
   </object>
   <object Name="PoisonGasGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{g|毒气}} 毒气手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{g|毒气}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;g"/>
     <part Name="GasGrenade" Density="40" GasObject="PoisonGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。其上刻有危险的骷髅交叉骨标志。"/>
@@ -3019,7 +3019,7 @@
     <stag Name="Poison"/>
   </object>
   <object Name="PoisonGasGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[毒气手雷]}} 毒气手雷 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{c|毒气}}手榴弹 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;g"/>
     <part Name="GasGrenade" Density="80" GasObject="PoisonGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="一个金属蜂巢状的六角形被一个镀铬杠杆夹住。其上刻有危险的骷髅标志。"/>
@@ -3030,7 +3030,7 @@
     <stag Name="Poison"/>
   </object>
   <object Name="PoisonGasGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{g|毒气}} 燃烧弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{g|毒气}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;g"/>
     <part Name="GasGrenade" Density="120" GasObject="PoisonGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有危险的骷髅标志。"/>
@@ -3079,7 +3079,7 @@
     <stag Name="Stun"/>
   </object>
   <object Name="AcidGasGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{G|酸性}} 气体手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{G|酸性}}气体手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="40" GasObject="AcidGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。内部发出嘶嘶声。"/>
@@ -3091,7 +3091,7 @@
     <stag Name="Corrosion"/>
   </object>
   <object Name="AcidGasGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{G|酸性}} 气体手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{G|酸性}}气体手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="80" GasObject="AcidGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="一个由铬制杠杆固定的六角蜂窝状金属壳。内部发出嘶嘶声。"/>
@@ -3102,7 +3102,7 @@
     <stag Name="Corrosion"/>
   </object>
   <object Name="AcidGasGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{G|酸性}} 气体手雷 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{G|酸性}}气体手雷 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="120" GasObject="AcidGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。内部发出嘶嘶声。"/>
@@ -3151,7 +3151,7 @@
     <stag Name="Confusion"/>
   </object>
   <object Name="HeatGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{R|热能}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{R|热能}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;R"/>
     <part Name="ThermalGrenade" TemperatureDelta="500"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。摸起来很热。"/>
@@ -3174,7 +3174,7 @@
     <stag Name="Heat"/>
   </object>
   <object Name="HeatGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{R|热能}} 炸弹 mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;R"/>
+    <part Name="Render" DisplayName="{{R|热能}}炸弹 mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;R"/>
     <part Name="ThermalGrenade" TemperatureDelta="2000"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。摸起来很热。"/>
@@ -3187,7 +3187,7 @@
     <stag Name="Heat"/>
   </object>
   <object Name="ColdGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{C|冷冻}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{C|冷冻}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;C"/>
     <part Name="ThermalGrenade" TemperatureDelta="-400"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。摸起来很冷。"/>
     <part Name="MissileStatusColor" Color="C"/>
@@ -3198,7 +3198,7 @@
     <stag Name="Cold"/>
   </object>
   <object Name="ColdGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{C|冷冻}} 燃爆弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{C|冷冻}}燃爆弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;C"/>
     <part Name="ThermalGrenade" TemperatureDelta="-2000"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="一簇波纹六边形金属被一个镀铬杠杆夹住。触摸时感觉冰冷。"/>
@@ -3209,7 +3209,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_highExplosive_explode"/>
   </object>
   <object Name="ColdGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{C|冷冻}} 燃爆弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{C|冷冻}}燃爆弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;C"/>
     <part Name="ThermalGrenade" TemperatureDelta="-6000"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。摸起来很冷。"/>
@@ -3222,7 +3222,7 @@
     <stag Name="Cold"/>
   </object>
   <object Name="HEGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{W|高爆炸药}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="{{W|高爆炸药}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;W"/>
     <part Name="HEGrenade" Force="2000" Damage="4d6"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。其表面刻有一束向外指向的箭头。"/>
     <part Name="MissileStatusColor" Color="W"/>
@@ -3243,7 +3243,7 @@
     <stag Name="Explosive"/>
   </object>
   <object Name="HEGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{W|高爆炸药}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="{{W|高爆炸药}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;W"/>
     <part Name="HEGrenade" Force="15000" Damage="6d6"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着炸药，并固定在一个快速释放的杠杆上。其表面刻有一束向外指向的箭头。"/>
@@ -3255,7 +3255,7 @@
     <stag Name="Explosive"/>
   </object>
   <object Name="EMPGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{B|电磁脉冲}} 手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|电磁脉冲}}手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;B"/>
     <part Name="EMPGrenade" Radius="2" Duration="1d2+4"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。其表面刻有锯齿形图案。"/>
     <part Name="MissileStatusColor" Color="B"/>
@@ -3265,7 +3265,7 @@
     <stag Name="Electromagnetic"/>
   </object>
   <object Name="EMPGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{B|电磁脉冲}} 炸弹 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|电磁脉冲}}炸弹 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;B"/>
     <part Name="EMPGrenade" Radius="4" Duration="2d2+5"/>
     <part Name="Description" Short="由波纹六边形组成的金属壳被一个镀铬杠杆夹住。其表面刻有锯齿状图案。"/>
     <part Name="MissileStatusColor" Color="B"/>
@@ -3276,7 +3276,7 @@
     <stag Name="Electromagnetic"/>
   </object>
   <object Name="EMPGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{B|电磁脉冲}} 手榴弹 mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;B"/>
+    <part Name="Render" DisplayName="{{B|电磁脉冲}}手榴弹 mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;B"/>
     <part Name="EMPGrenade" Radius="6" Duration="3d2+6"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有锯齿形图案。"/>
     <part Name="MissileStatusColor" Color="B"/>
@@ -3288,7 +3288,7 @@
     <stag Name="Electromagnetic"/>
   </object>
   <object Name="NormalityGasGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[普通气体]}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{c|普通气体}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;K"/>
     <part Name="GasGrenade" Density="40" GasObject="NormalityGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。外壳上刻有格子图案。"/>
@@ -3300,7 +3300,7 @@
     <stag Name="Normality"/>
   </object>
   <object Name="NormalityGasGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{normal|常态气体}} 手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{normal|普通气体}}手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;K"/>
     <part Name="GasGrenade" Density="80" GasObject="NormalityGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="由金属波纹六边形组成的鱼群被一个镀铬杠杆夹住。外壳上刻有格子图案。"/>
@@ -3313,7 +3313,7 @@
     <stag Name="Normality"/>
   </object>
   <object Name="NormalityGasGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{normal|常态气体}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{normal|常态气体}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;K"/>
     <part Name="GasGrenade" Density="120" GasObject="NormalityGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并通过快速释放杠杆固定。弹壳上刻有格子花纹。"/>
@@ -3326,7 +3326,7 @@
     <stag Name="Normality"/>
   </object>
   <object Name="StasisGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{m|静止}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{m|静止}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;C"/>
     <part Name="DeploymentGrenade" Blueprint="Stasisfield" Radius="1" Duration="1d3+3" ActivationVerb="detonate" BlockedBySolid="false" BlockedByNonEmpty="false" DustPuff="false" DustPuffEach="false" IsRealityDistortionBased="true"/>
     <part Name="MissileStatusColor" Color="m"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。上面刻有停止符号。"/>
@@ -3335,7 +3335,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_resonance_explode"/>
   </object>
   <object Name="StasisGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{m|静止}} 手雷 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{m|静止}}手雷 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;C"/>
     <part Name="DeploymentGrenade" Blueprint="Stasisfield" Radius="1" Duration="2d3+3" ActivationVerb="detonate" BlockedBySolid="false" BlockedByNonEmpty="false" DustPuff="false" DustPuffEach="false" IsRealityDistortionBased="true"/>
     <part Name="Description" Short="一簇金属六边形波纹被一个铬制杠杆夹紧。其表面刻有停止符号。"/>
     <part Name="MissileStatusColor" Color="m"/>
@@ -3346,7 +3346,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="StasisGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{m|静止}} 燃爆弹 MK III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{m|静止}}燃爆弹 MK III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;C"/>
     <part Name="DeploymentGrenade" Blueprint="Stasisfield" Radius="1" Duration="3d3+3" ActivationVerb="detonate" BlockedBySolid="false" BlockedByNonEmpty="false" DustPuff="false" DustPuffEach="false" IsRealityDistortionBased="true"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有停止符号。"/>
     <part Name="MissileStatusColor" Color="m"/>
@@ -3357,7 +3357,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="SunderGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{resonance|共振}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;r"/>
+    <part Name="Render" DisplayName="{{resonance|共振}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;r"/>
     <part Name="SunderGrenade" Radius="3" Level="2"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。它发出独特的噼啪声。&amp;C2d100+20 对结构物体的伤害。&amp;C2d10+4 对非结构物体的伤害。"/>
     <part Name="MissileStatusColor" Color="r"/>
@@ -3366,7 +3366,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_resonance_explode"/>
   </object>
   <object Name="SunderGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{resonance|共鸣}} 手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;r"/>
+    <part Name="Render" DisplayName="{{resonance|共鸣}}手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;r"/>
     <part Name="SunderGrenade" Radius="3" Level="4"/>
     <part Name="Description" Short="由波纹六边形金属片组成的鱼群状结构被一个镀铬杠杆夹住。它发出特有的噼啪声。&amp;C4d100+20 损伤对结构物体。&amp;C4d10+8 损伤对非结构物体。"/>
     <part Name="MissileStatusColor" Color="r"/>
@@ -3376,7 +3376,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_resonance_explode"/>
   </object>
   <object Name="SunderGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{resonance|共振}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;r"/>
+    <part Name="Render" DisplayName="{{resonance|共振}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;r"/>
     <part Name="SunderGrenade" Radius="3" Level="6"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并通过快速释放杠杆固定。它发出独特的噼啪声。对结构物体造成&amp;6d100+20伤害。对非结构物体造成&amp;6d10+12伤害。"/>
     <part Name="MissileStatusColor" Color="r"/>
@@ -3387,7 +3387,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_resonance_explode"/>
   </object>
   <object Name="PlasmaGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[等离子手榴弹]}} 等离子手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{c|等离子}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="40" GasObject="Plasma" Level="10"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。内部发出嘶嘶声并膨胀。"/>
@@ -3398,7 +3398,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="PlasmaGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[等离子手雷]}} 等离子手雷 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{c|等离子手雷}}手雷 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="80" GasObject="Plasma" Level="10"/>
     <part Name="Commerce" Value="80"/>
     <part Name="Description" Short="由波纹六边形金属板组成的壳体被一个铬制杠杆固定。内部发出嘶嘶声并不断膨胀。"/>
@@ -3410,7 +3410,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="PlasmaGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[等离子手榴弹]}} 等离子手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;G"/>
+    <part Name="Render" DisplayName="{{c|等离子}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;G"/>
     <part Name="GasGrenade" Density="120" GasObject="Plasma" Level="10"/>
     <part Name="Commerce" Value="120"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。内部发出嘶嘶声并膨胀。"/>
@@ -3422,7 +3422,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="DefoliantGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{defoliant|落叶剂}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{defoliant|落叶剂}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="200" GasObject="DefoliantGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。其表面刻有植物枯萎的图案。"/>
@@ -3432,7 +3432,7 @@
     <tag Name="Tier" Value="1"/>
   </object>
   <object Name="DefoliantGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{defoliant|落叶剂}} 手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{defoliant|落叶剂}}手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="400" GasObject="DefoliantGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="一簇金属波纹六边形被一个铬制杠杆夹住。其上刻有植物枯萎的图案。"/>
@@ -3443,7 +3443,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="DefoliantGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[落叶剂]}} 落叶剂手雷 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;w"/>
+    <part Name="Render" DisplayName="{{c|落叶剂}}手雷 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;w"/>
     <part Name="GasGrenade" Density="800" GasObject="DefoliantGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有植物枯萎的图案。"/>
@@ -3454,7 +3454,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="FungicideGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{fungicide|杀菌剂}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;m"/>
+    <part Name="Render" DisplayName="{{fungicide|杀菌剂}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;m"/>
     <part Name="GasGrenade" Density="200" GasObject="FungicideGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。其表面刻有枯萎的真菌图案。"/>
@@ -3464,7 +3464,7 @@
     <tag Name="Tier" Value="1"/>
   </object>
   <object Name="FungicideGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{fungicide|杀真菌剂}} 燃烧弹 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;m"/>
+    <part Name="Render" DisplayName="{{fungicide|杀真菌剂}}燃烧弹 mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;m"/>
     <part Name="GasGrenade" Density="400" GasObject="FungicideGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="一簇金属六边形被一个铬制杠杆夹紧。其上刻有枯萎真菌的图案。"/>
@@ -3475,7 +3475,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="FungicideGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{fungicide|杀菌剂}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;m"/>
+    <part Name="Render" DisplayName="{{fungicide|杀菌剂}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;m"/>
     <part Name="GasGrenade" Density="800" GasObject="FungicideGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有枯萎真菌的图案。"/>
@@ -3486,7 +3486,7 @@
     <tag Name="ExcludeFromTurretStock"/>
   </object>
   <object Name="FireSupportGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}} 手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;c"/>
+    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}}手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;c"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="30"/>
     <part Name="DeploymentGrenade" Blueprint="Microturret" Count="1" Radius="2" RealRadius="true" LoyalToThrower="true" ActivationVerb="deploy" BlockedBySolid="true" BlockedByNonEmpty="true" DustPuff="true" DustPuffEach="true"/>
@@ -3499,7 +3499,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="FireSupportGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}} 手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;c"/>
+    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}}手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;c"/>
     <part Name="Physics" Weight="2"/>
     <part Name="Commerce" Value="40"/>
     <part Name="DeploymentGrenade" Blueprint="Microturret" Count="2" Radius="2" RealRadius="true" LoyalToThrower="true" ActivationVerb="deploy" BlockedBySolid="true" BlockedByNonEmpty="true" DustPuff="true" DustPuffEach="true"/>
@@ -3512,7 +3512,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="FireSupportGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}} 炸弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;c"/>
+    <part Name="Render" DisplayName="{{spring-turret|弹簧炮塔}}炸弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;c"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="50"/>
     <part Name="DeploymentGrenade" Blueprint="Microturret" Count="3" Radius="2" RealRadius="true" LoyalToThrower="true" ActivationVerb="deploy" BlockedBySolid="true" BlockedByNonEmpty="true" DustPuff="true" DustPuffEach="true"/>
@@ -3525,7 +3525,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="GravityGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{K|重力}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|重力}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;K"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。其表面刻有一束向内的箭头。"/>
     <part Name="Commerce" Value="40"/>
     <part Name="GravityGrenade" Force="4000" Radius="4" ForceDropoff="750"/>
@@ -3537,7 +3537,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Misc/sfx_gravityPull"/>
   </object>
   <object Name="GravityGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{K|重力}} 手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|重力}}手榴弹 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;K"/>
     <part Name="Description" Short="一簇波纹六边形金属被铬制杠杆夹住。其上刻有一束向内的箭头。"/>
     <part Name="Commerce" Value="60"/>
     <part Name="GravityGrenade" Force="8000" Radius="5" ForceDropoff="1250"/>
@@ -3549,7 +3549,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Misc/sfx_gravityPull"/>
   </object>
   <object Name="GravityGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{K|重力}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;K"/>
+    <part Name="Render" DisplayName="{{K|重力}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;K"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其表面刻有一束向内的箭头。"/>
     <part Name="Commerce" Value="80"/>
     <part Name="GravityGrenade" Force="17500" Radius="6" ForceDropoff="2000"/>
@@ -3562,7 +3562,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Misc/sfx_gravityPull"/>
   </object>
   <object Name="TimeDilationGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{b|时间膨胀}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|时间膨胀}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;b"/>
     <part Name="Commerce" Value="30"/>
     <part Name="TimeDilationGrenade" Level="3"/>
     <part Name="Description" Short="一个铸铁球体被一个带拉环的杠杆夹住。它的凸耳上环绕着刻度标记。"/>
@@ -3575,7 +3575,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_timeDilation_explode"/>
   </object>
   <object Name="TimeDilationGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{b|时间膨胀}} 手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|时间膨胀}}手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;b"/>
     <part Name="Commerce" Value="40"/>
     <part Name="TimeDilationGrenade" Level="5"/>
     <part Name="Description" Short="一个由波纹六边形组成的金属阵列被一个铬制杠杆夹紧。其插槽周围标有刻度。"/>
@@ -3588,7 +3588,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_timeDilation_explode"/>
   </object>
   <object Name="TimeDilationGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{b|时间膨胀}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;b"/>
+    <part Name="Render" DisplayName="{{b|时间膨胀}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;b"/>
     <part Name="Commerce" Value="50"/>
     <part Name="TimeDilationGrenade" Level="8"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放杠杆上。其拉环周围刻有刻度标记。"/>
@@ -3602,7 +3602,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_timeDilation_explode"/>
   </object>
   <object Name="GlitterGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{glittering|闪光}} 手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="{{glittering|闪光}}手榴弹 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;M"/>
     <part Name="GasGrenade" Density="200" GasObject="GlitterGas"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。它在柔和的光线下闪闪发光。"/>
@@ -3615,7 +3615,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_glitter_explode"/>
   </object>
   <object Name="GlitterGrenade2" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{c|[闪光手雷]}} 闪光手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="{{c|闪光}}手雷 Mk II" Tile="Items/sw_grenade_mkii.bmp" ColorString="&amp;M"/>
     <part Name="GasGrenade" Density="400" GasObject="GlitterGas"/>
     <part Name="Commerce" Value="30"/>
     <part Name="Description" Short="由波纹六边形组成的金属群被一个铬制杠杆固定。在柔和的光线下闪烁。"/>
@@ -3628,7 +3628,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_glitter_explode"/>
   </object>
   <object Name="GlitterGrenade3" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{glittering|闪耀}} 手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="{{glittering|闪耀}}手榴弹 Mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;M"/>
     <part Name="GasGrenade" Density="800" GasObject="GlitterGas"/>
     <part Name="Commerce" Value="40"/>
     <part Name="Description" Short="厚重的金属外壳包裹着爆炸物，并固定在一个快速释放的杠杆上。在柔和的光线下闪闪发光。"/>
@@ -3641,7 +3641,7 @@
     <tag Name="DetonatedSound" Value="Sounds/Grenade/sfx_grenade_glitter_explode"/>
   </object>
   <object Name="PhaseGrenade1" Inherits="Grenade">
-    <part Name="Render" DisplayName="{{M-M-M-m-m-m-K-K-K-m-m 序列|相位偏移}} 手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="{{M-M-M-m-m-m-K-K-K-m-m sequence|相位偏移}}手雷 Mk I" Tile="Items/sw_grenade_mki.bmp" ColorString="&amp;M"/>
     <part Name="PhaseGrenade" Radius="2" Duration="10-12"/>
     <part Name="Description" Short="一个铸铁球体被一个带有拉环的杠杆夹住。在低光照条件下改变视角。"/>
     <part Name="MissileStatusColor" Color="m"/>
@@ -3696,7 +3696,7 @@
     <part Name="NoBreak"/>
     <part Name="NoDamage"/>
     <part Name="Armor" AV="0" DV="0" WornOn="Body"/>
-    <part Name="Render" DisplayName="棘刺" RenderString="*" Tile="items/sw_quills.bmp" TileColor="&amp;y" DetailColor="w"/>
+    <part Name="Render" DisplayName="羽刺" RenderString="*" Tile="items/sw_quills.bmp" TileColor="&amp;y" DetailColor="w"/>
     <part Name="Commerce" Value="50"/>
     <part Name="Description" Short="成百上千的化石化的毛发构成了保护身体的盔甲。"/>
     <part Name="NaturalEquipment"/>
@@ -3708,7 +3708,7 @@
     <tag Name="NoDefaultBehavior"/>
     <tag Name="NoSparkingQuest"/>
     <tag Name="Gender" Value="plural"/>
-    <tag Name="AbilityName" Value="Quill Fling"/>
+    <tag Name="AbilityName" Value="发射羽刺"/>
     <tag Name="DisplayNameSingular" Value="quill"/>
     <tag Name="ShowAsPhysicalFeature"/>
   </object>
@@ -3904,7 +3904,7 @@
   </object>
   <object Name="Ghostly Flames" Inherits="Armor">
     <part Name="Armor" AV="0" DV="0" WornOn="Hands"/>
-    <part Name="Render" DisplayName="{{鬼魅|鬼魅}} {{火焰|火焰}}" RenderString="]" Tile="items/sw_flaming_ray.bmp" TileColor="&amp;R" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{ghostly|鬼魅}}{{fiery|火焰}}" RenderString="]" Tile="items/sw_flaming_ray.bmp" TileColor="&amp;R" DetailColor="W"/>
     <part Name="Commerce" Value="0"/>
     <part Name="Description" Short="结晶火焰在闪烁的空气中噼啪作响并舔舐着。"/>
     <part Name="Physics" Weight="0" IsReal="false"/>
@@ -4095,7 +4095,7 @@
   </object>
   <object Name="Vine-Weave Tunic" Inherits="BaseArmor">
     <part Name="Armor" AV="1" DV="2" WornOn="Body"/>
-    <part Name="Render" DisplayName="{{y-g-g-y-y 序列|藤编}} 衣袍" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;g" DetailColor="G"/>
+    <part Name="Render" DisplayName="{{y-g-g-y-y sequence|藤编}}衣袍" RenderString="]" Tile="Items/sw_chainmail.bmp" ColorString="&amp;g" DetailColor="G"/>
     <part Name="Commerce" Value="5"/>
     <part Name="Description" Short="从常春藤丛中撕扯出的芦苇状茎蔓被编织并用刺绣腰带装饰。"/>
     <part Name="Physics" Weight="15" Organic="true"/>
@@ -4196,7 +4196,7 @@
   </object>
   <object Name="Elastyne Skin Suit" Inherits="BaseArmor">
     <part Name="Armor" AV="1" DV="3" WornOn="Body"/>
-    <part Name="Render" DisplayName="{{K|弹性纤维}} 皮肤套装" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp"/>
+    <part Name="Render" DisplayName="{{K|弹性纤维}}皮肤套装" RenderString="]" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_skinsuit.bmp"/>
     <part Name="Commerce" Value="70"/>
     <part Name="Description" Short="一段伸缩性极强的编织布料被裁剪成紧身衣，用于潜行。"/>
     <part Name="Physics" Weight="5" Conductivity="0"/>
@@ -4255,7 +4255,7 @@
   </object>
   <object Name="Plastifer Jerkin" Inherits="BaseArmor">
     <part Name="Armor" AV="3" DV="-3" Elec="8" Cold="8" Heat="8" Acid="8" WornOn="Body"/>
-    <part Name="Render" DisplayName="{{plastifer|塑化泡沫}} 皮甲" ColorString="&amp;y" RenderString="]"/>
+    <part Name="Render" DisplayName="{{plastifer|塑化泡沫}}皮甲" ColorString="&amp;y" RenderString="]"/>
     <part Name="Commerce" Value="650"/>
     <part Name="Description" Short="一件由气体捕获泡沫制成的胸甲，在受到压力时会瞬间硬化。其喀斯特表面覆盖着千年的彩色磨损痕迹及其产生的化学反应；这种材料已经超出了预期的使用寿命，进入了未知的虚无之中。"/>
     <part Name="Physics" Weight="20"/>
@@ -4265,7 +4265,7 @@
   </object>
   <object Name="Plastifer Chem Vest" Inherits="BaseArmor">
     <part Name="Armor" AV="3" DV="-3" Elec="8" Cold="8" Heat="8" Acid="8" WornOn="Body"/>
-    <part Name="Render" DisplayName="{{plastifer|塑化剂}} 化学背心" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" Tile="Items/sw_vest.bmp"/>
+    <part Name="Render" DisplayName="{{plastifer|塑化剂}}化学背心" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" Tile="Items/sw_vest.bmp"/>
     <part Name="Commerce" Value="750"/>
     <part Name="Description" Short="一种由气体捕捉泡沫制成的胸甲，在受到压力时会立即硬化。其喀斯特表面布满了管状袖子，并覆盖着千年的磨损痕迹和化学反应产生的彩色磨痕；这种材料已经超越了其预期寿命的外环，进入了未知的虚空。"/>
     <part Name="Physics" Weight="20"/>
@@ -4323,7 +4323,7 @@
   </object>
   <!-- Body, Tier 6 -->
   <object Name="Crysteel Shardmail" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 碎片甲}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;g" DetailColor="K" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}碎片甲}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;g" DetailColor="K" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Armor" AV="6" DV="-3" Heat="9" Cold="9" Acid="9" Elec="9" WornOn="Body"/>
     <part Name="Physics" Weight="40"/>
@@ -4343,7 +4343,7 @@
     <tag Name="Tier" Value="6"/>
   </object>
   <object Name="Thermo Cask" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{热能|热能}} 桶" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]"/>
+    <part Name="Render" DisplayName="{{thermo|热能}}桶" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]"/>
     <part Name="Description" Short="冷却液和防冻剂通过四玻璃管蜿蜒穿过邮件桶的压缩机，冷凝器和蒸发器线圈像祖父树一样从绝缘灌木上方延伸而出。"/>
     <part Name="Armor" AV="4" DV="-4" Heat="25" Cold="25" WornOn="Body"/>
     <part Name="Physics" Weight="40"/>
@@ -4380,7 +4380,7 @@
   </object>
   <!-- Body, Tier 7 -->
   <object Name="Flawless Crysteel Shardmail" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}} 碎片甲}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;G" DetailColor="K" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}碎片甲}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;G" DetailColor="K" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
     <part Name="Armor" AV="7" DV="-3" Heat="9" Cold="9" Acid="9" Elec="9" WornOn="Body"/>
     <part Name="Physics" Weight="40"/>
@@ -4392,7 +4392,7 @@
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="High-Energy Thermo Cask" Inherits="Thermo Cask">
-    <part Name="Render" DisplayName="高能 {{thermo|热}} 桶" Tile="Items/sw_cask.bmp" ColorString="&amp;R" DetailColor="C" RenderString="]"/>
+    <part Name="Render" DisplayName="高能{{thermo|热}}桶" Tile="Items/sw_cask.bmp" ColorString="&amp;R" DetailColor="C" RenderString="]"/>
     <part Name="Description" Short="密集的膨胀四玻璃管网输送冷却液和防冻液到桶甲的巨大压缩机上。鼓风机电机发出低沉的嗡嗡声，冷凝器和蒸发器线圈像祖父树一样从绝缘灌木上方旋转而出。"/>
     <part Name="Armor" AV="4" DV="-4" Heat="50" Cold="50" WornOn="Body"/>
     <part Name="ThermalAmp" HeatDamage="50" ColdDamage="50" ModifyHeat="50" ModifyCold="50"/>
@@ -4406,7 +4406,7 @@
     <stag Name="Cold"/>
   </object>
   <object Name="Enigma Cone" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{B|谜团}} 锥体" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp"/>
+    <part Name="Render" DisplayName="{{B|谜团}}锥体" ColorString="&amp;B" DetailColor="W" RenderString="]" Tile="Items/sw_enigma_cone_mail.bmp"/>
     <part Name="Description" Short="一个钙质外壳被雕琢成环状裙。其螺旋纹路起初以悦目的几何形状吸引眼球，随后却转向令人不适的眩晕不和谐。"/>
     <part Name="Armor" AV="4" DV="-4"/>
     <part Name="Physics" Weight="28" Organic="true"/>
@@ -4418,7 +4418,7 @@
   </object>
   <!-- Body, Tier 8 -->
   <object Name="Zetachrome Lune" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 月亮石" Tile="Items/sw_chest_hightier2.bmp" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" RenderString="]"/>
+    <part Name="Render" DisplayName="{{zetachrome|译文}}月亮石" Tile="Items/sw_chest_hightier2.bmp" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" RenderString="]"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
     <part Name="Armor" AV="8" DV="-2" Heat="11" Cold="11" Acid="11" Elec="11" WornOn="Body"/>
     <part Name="Physics" Weight="35"/>
@@ -4462,7 +4462,7 @@
   <!-- Back, Tier 1 -->
   <object Name="Quilted Shawl" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="-1" Cold="10" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{W-w sequence|织锦}} {{C-c sequence|披肩}}" RenderString="]" Tile="items/sw_shawl.bmp" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{W-w sequence|织锦}}{{C-c sequence|披肩}}" RenderString="]" Tile="items/sw_shawl.bmp" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Commerce" Value="4"/>
     <part Name="Description" Short="多色羊毛从驼龙那里用马匹交易而来，源自苍白之海及其广阔的盐滩之外。一旦伊萨查尔人将其纺成纱线，沼泽居民便手工打结了流苏。"/>
     <part Name="Physics" Weight="1" Organic="true" Category="衣服"/>
@@ -4480,7 +4480,7 @@
   </object>
   <object Name="Albino Monkey Braid" Inherits="Armor">
     <part Name="Armor" AV="0" DV="1" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{Y|白化}} 猴辫" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{Y|白化}}猴辫" RenderString="]" ColorString="&amp;Y" Tile="Items/sw_braid.bmp" DetailColor="y"/>
     <part Name="Commerce" Value="12"/>
     <part Name="Description" Short="从神圣的狐猴背部剪下的毛发，编织成先知辫。"/>
     <part Name="Physics" Weight="1" Organic="true"/>
@@ -4490,7 +4490,7 @@
   </object>
   <object Name="Scarlet Shawl" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="0" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{R|猩红}} 披肩" RenderString="]" ColorString="&amp;R" Tile="items/sw_shawl.bmp" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{R|猩红}}披肩" RenderString="]" ColorString="&amp;R" Tile="items/sw_shawl.bmp" DetailColor="Y"/>
     <part Name="Commerce" Value="18"/>
     <part Name="Description" Short="这是一件用丝绸制成的肩披，经过裁剪并用从虹之碗的橡树上刮下的昆虫研磨成的染料染色。"/>
     <part Name="Physics" Weight="1" Organic="true" Category="衣服"/>
@@ -4521,7 +4521,7 @@
   </object>
   <object Name="Issachari Banner" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="1" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{issachari|伊萨查里}} 旗帜" RenderString="]" Tile="Items/sw_banner.bmp" ColorString="&amp;Y" DetailColor="R"/>
+    <part Name="Render" DisplayName="{{issachari|伊萨查里}}旗帜" RenderString="]" Tile="Items/sw_banner.bmp" ColorString="&amp;Y" DetailColor="R"/>
     <part Name="Commerce" Value="5"/>
     <part Name="Description" Short="在盐白色的背景下，铂金缝线只有经过幻象训练的伊萨查里之眼才能辨认。这面旗帜被缝制成了一个猩红色的项圈。"/>
     <part Name="Physics" Weight="3" Organic="true"/>
@@ -4558,7 +4558,7 @@
   </object>
   <object Name="Grassy Yurtmat" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="1" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{leafy|草质}} 尤尔特垫" ColorString="&amp;g" DetailColor="G" Tile="Items/sw_yurtmat.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{leafy|草质}}尤尔特垫" ColorString="&amp;g" DetailColor="G" Tile="Items/sw_yurtmat.bmp" RenderString="]"/>
     <part Name="Commerce" Value="5"/>
     <part Name="Description" Short="这种编织的叶子和苔藓块原本铺在山羊人热气腾腾的尤尔特帐篷里，现在被缝制到皮革项圈上，让佩戴者看起来像一丛爬行的灌木。"/>
     <part Name="Physics" Weight="3" Organic="true"/>
@@ -4570,7 +4570,7 @@
   </object>
   <object Name="Ape Fur Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="1" Cold="15" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{Y|猿毛皮}} 斗篷" ColorString="&amp;y" RenderString="]" Tile="items/sw_cloak.bmp" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{Y|猿毛皮}}斗篷" ColorString="&amp;y" RenderString="]" Tile="items/sw_cloak.bmp" DetailColor="Y"/>
     <part Name="Commerce" Value="100"/>
     <part Name="Description" Short="柔软的毛皮从白化猿的象牙色皮毛上裁剪下来，制成了一件宽肩斗篷。"/>
     <part Name="Physics" Weight="6" Organic="true"/>
@@ -4582,7 +4582,7 @@
   <object Name="Portable Beehive" Inherits="Armor">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
     <part Name="Physics" Weight="5" Organic="true"/>
-    <part Name="Render" DisplayName="便携式 {{bee|蜂巢}}" ColorString="&amp;w" DetailColor="K" RenderString="]" Tile="items/sw_beehive.bmp"/>
+    <part Name="Render" DisplayName="便携式{{bee|蜂巢}}" ColorString="&amp;w" DetailColor="K" RenderString="]" Tile="items/sw_beehive.bmp"/>
     <part Name="Commerce" Value="95"/>
     <part Name="LiquidVolume" MaxVolume="8" StartVolume="1-8" InitialLiquid="honey-1000"/>
     <part Name="LeakWhenBroken"/>
@@ -4597,7 +4597,7 @@
   <!-- Back, Tier 4 -->
   <object Name="Chrome Mantle" Inherits="BaseCloak">
     <part Name="Armor" Ego="1" AV="0" DV="2" Elec="8" Cold="8" Heat="8" Acid="8" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{c|铬}} 披风" Tile="Items/sw_cloak_fancy.bmp" ColorString="&amp;c" DetailColor="C" RenderString="]"/>
+    <part Name="Render" DisplayName="{{c|铬}}披风" Tile="Items/sw_cloak_fancy.bmp" ColorString="&amp;c" DetailColor="C" RenderString="]"/>
     <part Name="Commerce" Value="300"/>
     <part Name="Description" Short="电路风格的闪亮缝线沿着肩部织物延伸。"/>
     <part Name="Physics" Weight="3"/>
@@ -4624,7 +4624,7 @@
   </object>
   <object Name="Praetorian's Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{w|护民官的}} 斗篷" RenderString="]" Tile="items/sw_burnoose.bmp" ColorString="&amp;b" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{w|护民官的}}斗篷" RenderString="]" Tile="items/sw_burnoose.bmp" ColorString="&amp;b" DetailColor="Y"/>
     <part Name="Commerce" Value="200"/>
     <part Name="Description" Short="千丝斗篷由蓝化矿石和大沙漠东侧异域高原的强烈光线赋予其炽热的色彩。"/>
     <part Name="Physics" Weight="3"/>
@@ -4694,7 +4694,7 @@
     <stag Name="Travel"/>
   </object>
   <object Name="Quartzfur Cloak" Inherits="BaseCloak">
-    <part Name="Render" DisplayName="{{Y|石英毛皮}} 斗篷" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_cloak.bmp"/>
+    <part Name="Render" DisplayName="{{Y|石英毛皮}}斗篷" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_cloak.bmp"/>
     <part Name="Description" Short="从一只死去的猴子身上剥下的棱镜镶嵌的皮肤，被裁剪成了一件斗篷。"/>
     <part Name="Armor" AV="1" DV="-1" Elec="6" Cold="6" Heat="6" Acid="6"/>
     <part Name="Physics" Weight="10" Organic="true"/>
@@ -4708,7 +4708,7 @@
   </object>
   <!-- Back, Tier 6 -->
   <object Name="Strength Exo" Inherits="Armor">
-    <part Name="Render" DisplayName="{{W-W-W-W-W-R 序列|激活}} {{K-y-K-K-K-K-K-K-K-K 序列|外骨骼}}" Tile="Items/sw_exoskeleton.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="]"/>
+    <part Name="Render" DisplayName="{{W-W-W-W-W-R sequence|激活}}{{K-y-K-K-K-K-K-K-K-K sequence|外骨骼}}" Tile="Items/sw_exoskeleton.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="]"/>
     <part Name="Armor" AV="0" DV="-2" WornOn="Back"/>
     <part Name="BootSequence" BootTime="5" VerbOnBootInitialized="whine" VerbOnBootAborted="thunk" VerbOnBootDone="hum" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_whine" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_thunk" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_hum"/>
     <part Name="EquipStatBoost" Boosts="Strength:2" ChargeUse="1" IsEMPSensitive="true" IsBootSensitive="true" IsPowerLoadSensitive="true" NameForStatus="ServoAssist"/>
@@ -4729,7 +4729,7 @@
   </object>
   <object Name="Rainboweave Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{彩虹|rainboweave}} 斗篷" RenderString="]" Tile="items/sw_cloak_fancy.bmp" ColorString="&amp;m" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{彩虹|rainboweave}}斗篷" RenderString="]" Tile="items/sw_cloak_fancy.bmp" ColorString="&amp;m" DetailColor="W"/>
     <part Name="Commerce" Value="535"/>
     <part Name="Description" Short="不连续的物质点聚集呈新月形，随虚幻的风飘动。它们共同弯曲光线，覆盖整个光谱，使穿戴者的躯干变得模糊，呈现出五彩斑斓的混乱景象。"/>
     <part Name="RefractLight" Chance="50" RetroVariance="1d241-121" ShowInShortDescription="true"/>
@@ -4740,7 +4740,7 @@
   </object>
   <object Name="Ogre Fur Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="1" DV="0" Toughness="1" Cold="10" Heat="10" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{W|巨猿毛皮}} 斗篷" ColorString="&amp;w" RenderString="]" Tile="items/sw_cloak.bmp" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{W|巨猿毛皮}}斗篷" ColorString="&amp;w" RenderString="]" Tile="items/sw_cloak.bmp" DetailColor="W"/>
     <part Name="Commerce" Value="300"/>
     <part Name="Description" Short="粗糙的毛皮从巨猿厚实的皮毛上切割下来，制成一件宽肩斗篷。"/>
     <part Name="Physics" Weight="15" Organic="true"/>
@@ -4770,7 +4770,7 @@
   -->
   <!-- Back, Tier 7 -->
   <object Name="Kaleidocera Cape" Inherits="BaseCloak">
-    <part Name="Render" DisplayName="{{kaleidoslug|万花筒虫}} 斗篷" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_cape.bmp"/>
+    <part Name="Render" DisplayName="{{kaleidoslug|万花筒虫}}斗篷" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_cape.bmp"/>
     <part Name="Description" Short="斗篷上的触角像风中的棱镜草一样摇曳。它们反射出丰富的色彩，包括天蓝色、红宝石色、星兰色和虚空色；这些颜色共同闪耀出辉煌的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
@@ -4783,7 +4783,7 @@
   </object>
   <object Name="Palladium Mesh Tabard" Inherits="BaseCloak">
     <part Name="Armor" AV="1" DV="1" MA="1"/>
-    <part Name="Render" DisplayName="{{palladium mesh|钯网}} 披风" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{palladium mesh|钯网}}披风" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W"/>
     <part Name="Commerce" Value="925"/>
     <part Name="Description" Short="电极在uuflax编织的网格上闪耀。袖子按照时尚加宽，展示出金色和青色的纹章电路。"/>
     <part Name="Physics" Weight="9"/>
@@ -4832,7 +4832,7 @@
   <!-- Head, Tier 1 -->
   <object Name="Witchwood Wreath" Inherits="BaseHat">
     <part Name="Armor" AV="0"/>
-    <part Name="Render" DisplayName="{{W|巫木}} 花环" RenderString="]" Tile="Items/sw_wreath.bmp" ColorString="&amp;w" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{W|巫木}}花环" RenderString="]" Tile="Items/sw_wreath.bmp" ColorString="&amp;w" DetailColor="W"/>
     <part Name="Commerce" Value="2"/>
     <part Name="Description" Short="来自巫树的细枝被削切并扭曲成一个用于辛阳节的花环。"/>
     <part Name="Physics" Weight="1" Organic="true" Category="衣服"/>
@@ -4897,7 +4897,7 @@
   <!-- Head, Tier 3 -->
   <object Name="Steel Helmet" Inherits="BaseHelmet">
     <part Name="Armor" AV="2" DV="-3" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{Y|钢铁}} 头盔" ColorString="&amp;Y" RenderString="]" Tile="Items/sw_metal_helmet.bmp" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{Y|钢铁}}头盔" ColorString="&amp;Y" RenderString="]" Tile="Items/sw_metal_helmet.bmp" DetailColor="y"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="第二颗头骨从脱硫金属板上被制成锥形。上面刻有微小的首字母。"/>
     <part Name="Physics" Weight="12"/>
@@ -4908,7 +4908,7 @@
   </object>
   <object Name="Elastyne Skull Cap" Inherits="BaseHat">
     <part Name="Armor" Cold="5" AV="1" DV="1" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{K|弹性烯}} 头盔" RenderString="]" Tile="Items/sw_skullcap.bmp" ColorString="&amp;K" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{K|弹性烯}}头盔" RenderString="]" Tile="Items/sw_skullcap.bmp" ColorString="&amp;K" DetailColor="y"/>
     <part Name="Commerce" Value="15"/>
     <part Name="Description" Short="一种由被称为黑色拉伸的黏稠材料制成的帽子，这种材料从橡胶洞穴中采集并贴在头皮上。"/>
     <part Name="Physics" Weight="1" Conductivity="0"/>
@@ -4930,7 +4930,7 @@
   </object>
   <object Name="Ape Fur Hat" Inherits="BaseHat">
     <part Name="Armor" AV="1" DV="0" Cold="10" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{Y|猿毛}} 帽" Tile="Items/sw_apefur_hat.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="]"/>
+    <part Name="Render" DisplayName="{{Y|猿毛}}帽" Tile="Items/sw_apefur_hat.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="]"/>
     <part Name="Commerce" Value="95"/>
     <part Name="Description" Short="柔软的毛皮从白化猿的象牙色皮毛上裁剪下来，制成带有耳罩的圆顶帽。"/>
     <part Name="Physics" Weight="3" Organic="true"/>
@@ -5015,7 +5015,7 @@
   <!-- Head, Tier 4 -->
   <object Name="Plastifer Bonnet" Inherits="BaseHat">
     <part Name="Armor" AV="1" DV="1" Elec="5" Cold="5" Heat="5" Acid="5" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{plastifer|塑化泡沫}} 蘑菇帽" Tile="Items/sw_bonnet.bmp" ColorString="&amp;y" DetailColor="K" RenderString="]"/>
+    <part Name="Render" DisplayName="{{plastifer|塑化泡沫}}蘑菇帽" Tile="Items/sw_bonnet.bmp" ColorString="&amp;y" DetailColor="K" RenderString="]"/>
     <part Name="Commerce" Value="350"/>
     <part Name="Description" Short="这顶由气体捕获泡沫制成的兜帽在受到压力时会立即硬化。其喀斯特表面覆盖着千年的彩色磨损痕迹以及这些磨损产生的化学反应；这种材料已经超越了其预期寿命的外环，进入了未知的虚空。"/>
     <part Name="Physics" Weight="4"/>
@@ -5026,7 +5026,7 @@
   </object>
   <object Name="Leafy Helm" Inherits="BaseHelmet">
     <part Name="Armor" AV="0" DV="1" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{叶状|叶状}} 头盔" Tile="Items/sw_leafy_helm.bmp" ColorString="&amp;g" DetailColor="G" RenderString="]"/>
+    <part Name="Render" DisplayName="{{leafy|叶状}}头盔" Tile="Items/sw_leafy_helm.bmp" ColorString="&amp;g" DetailColor="G" RenderString="]"/>
     <part Name="Commerce" Value="85"/>
     <part Name="Description" Short="叶子覆盖在可穿戴的圆顶表土层上。"/>
     <part Name="Physics" Weight="3" Organic="true"/>
@@ -5057,7 +5057,7 @@
   <!-- Head, Tier 5 -->
   <object Name="Fullerite Armet" Inherits="BaseHelmet">
     <part Name="Armor" AV="3" DV="-4" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{K|富勒烯}} 阿梅特头盔" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_metal_helmet.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|富勒烯}}阿梅特头盔" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_metal_helmet.bmp" RenderString="]"/>
     <part Name="Commerce" Value="95"/>
     <part Name="Description" Short="黄昏的岁月在金属上留下了石痕，这第二层颅骨包裹着大脑。"/>
     <part Name="Physics" Weight="25"/>
@@ -5066,7 +5066,7 @@
     <tag Name="DynamicObjectsTable:Headwear"/>
   </object>
   <object Name="Quartzfur Hat" Inherits="BaseHat">
-    <part Name="Render" DisplayName="{{Y|石英毛皮}} 帽子" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_hat.bmp"/>
+    <part Name="Render" DisplayName="{{Y|石英毛皮}}帽子" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_hat.bmp"/>
     <part Name="Description" Short="从一只死去的猴子身上剥下的棱镜镶嵌的皮肤被裁剪成了一顶帽子。"/>
     <part Name="Armor" AV="2" DV="-1" Elec="6" Cold="6" Heat="6" Acid="6" WornOn="Head"/>
     <part Name="Physics" Weight="10" Organic="true"/>
@@ -5080,7 +5080,7 @@
   </object>
   <!-- Head, Tier 6 -->
   <object Name="Crysteel Coronet" Inherits="BaseHelmet">
-    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}} 王冠}}" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_helm_hightier1.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}}王冠}}" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_helm_hightier1.bmp" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Armor" AV="3" DV="-1" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Head"/>
     <part Name="Commerce" Value="400"/>
@@ -5092,7 +5092,7 @@
   </object>
   <object Name="Ogre Fur Hat" Inherits="BaseHat">
     <part Name="Armor" AV="3" DV="-3" Toughness="1" Cold="10" Heat="10" WornOn="Head"/>
-    <part Name="Render" DisplayName="{{W|巨魔毛皮}} 帽" Tile="Items/sw_apefur_hat.bmp" ColorString="&amp;W" DetailColor="w" RenderString="]"/>
+    <part Name="Render" DisplayName="{{W|巨魔毛皮}}帽" Tile="Items/sw_apefur_hat.bmp" ColorString="&amp;W" DetailColor="w" RenderString="]"/>
     <part Name="Commerce" Value="300"/>
     <part Name="Description" Short="粗糙的毛皮从一只壮硕的巨魔猿的厚皮上切割下来，制成了一顶带有耳罩的无边便帽。"/>
     <part Name="Physics" Weight="8" Organic="true"/>
@@ -5123,7 +5123,7 @@
   -->
   <!-- Head, Tier 7 -->
   <object Name="Flawless Crysteel Coronet" Inherits="BaseHelmet">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶钢}}王冠}}" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_helm_hightier1.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶钢}}王冠}}" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_helm_hightier1.bmp" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
     <part Name="Armor" AV="4" DV="-1" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Head"/>
     <part Name="Commerce" Value="650"/>
@@ -5160,7 +5160,7 @@
   </object>
   <!-- Head, Tier 8 -->
   <object Name="Zetachrome Apex" Inherits="BaseHelmet">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 顶点" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}顶点" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_helm_hightier2.bmp" RenderString="]"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
     <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Head"/>
     <part Name="Commerce" Value="1500"/>
@@ -5229,7 +5229,7 @@
   <!-- Face, Tier 1 -->
   <object Name="Issachari Sun Veil" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" Heat="10" WornOn="Face"/>
-    <part Name="Render" DisplayName="{{issachari|伊萨查里}} {{r-R-W sequence|太阳}}面纱" RenderString="]" Tile="Items/sw_veil.bmp" ColorString="&amp;Y" DetailColor="R"/>
+    <part Name="Render" DisplayName="{{issachari|伊萨查里}}{{r-R-W sequence|太阳}}面纱" RenderString="]" Tile="Items/sw_veil.bmp" ColorString="&amp;Y" DetailColor="R"/>
     <part Name="Commerce" Value="9"/>
     <part Name="Description" Short="盐视的晒色布料紧密地贴合头部和颈部。"/>
     <part Name="Physics" Weight="2" Organic="true"/>
@@ -5250,7 +5250,7 @@
   </object>
   <object Name="Frowning Moon Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
-    <part Name="Render" DisplayName="皱眉 {{月球|moon}} 面具" RenderString="]" Tile="items/sw_mask3.bmp" ColorString="&amp;Y" DetailColor="K"/>
+    <part Name="Render" DisplayName="皱眉{{moon|月亮}}面具" RenderString="]" Tile="items/sw_mask3.bmp" ColorString="&amp;Y" DetailColor="K"/>
     <part Name="Commerce" Value="8"/>
     <part Name="Description" Short="月亮在一片看不见的丛林上皱眉，眉间的陨石坑被动物的灰烬遮蔽，被神祇的毒气侵蚀成天然的山脊线。"/>
     <part Name="Physics" Weight="1"/>
@@ -5260,7 +5260,7 @@
   </object>
   <object Name="Sun and Moon Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
-    <part Name="Render" DisplayName="{{日|太阳}} 和 {{月|月亮}} 面具" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp"/>
+    <part Name="Render" DisplayName="{{sun|太阳}}和{{moon|月亮}}面具" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp"/>
     <part Name="Commerce" Value="8"/>
     <part Name="Description" Short="热火在皂石上渗入潮湿的夜晚，在血色黄昏的尽头交汇。佩戴此面具者将承担这一切二元性。"/>
     <part Name="Physics" Weight="1"/>
@@ -5387,7 +5387,7 @@
     <stag Name="Scholarly"/>
   </object>
   <object Name="Polyhedral Rings" Inherits="BaseFaceJewelry">
-    <part Name="Render" DisplayName="{{Y-y-m-M-m-y-Y-M-m-y 序列|多面体}} 戒指" RenderString="236" Tile="Items/sw_poly_rings.bmp" ColorString="&amp;m" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{Y-y-m-M-m-y-Y-M-m-y sequence|多面体}}戒指" RenderString="236" Tile="Items/sw_poly_rings.bmp" ColorString="&amp;m" DetailColor="Y"/>
     <part Name="Commerce" Value="150"/>
     <part Name="Description" Short="这些环形物具有菱形切面，反射出介于李子色和石英色之间的光线。"/>
     <part Name="Physics" Weight="1" Category="交易物品"/>
@@ -5411,7 +5411,7 @@
   <!-- Face, Tier 5 -->
   <object Name="Telemetric Visor" Inherits="BaseEyewear">
     <part Name="Armor" AV="0" DV="0" WornOn="Face"/>
-    <part Name="Render" DisplayName="{{telemetric|遥测}} {{C|护目镜}}" RenderString="]" Tile="Items/sw_visor.bmp" ColorString="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{telemetric|遥测}}{{C|护目镜}}" RenderString="]" Tile="Items/sw_visor.bmp" ColorString="&amp;c" DetailColor="W"/>
     <part Name="Commerce" Value="60"/>
     <part Name="Description" Short="玻璃弯月上布满了电磁频段的信息。"/>
     <part Name="Physics" Weight="1" Category="遗物"/>
@@ -5531,17 +5531,17 @@
     <tag Name="AggregateWith" Value="BeadedBracelet"/>
   </object>
   <object Name="Bracelet1" Inherits="BaseBeadBracelet">
-    <part Name="Render" DisplayName="{{R-W-w-r sequence|珠状}} 手链" ColorString="&amp;R" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{R-W-w-r sequence|珠状}}手链" ColorString="&amp;R" DetailColor="W"/>
     <tag Name="Tier" Value="1"/>
     <tag Name="DynamicObjectsTable:TradeGoods"/>
   </object>
   <object Name="Bracelet2" Inherits="BaseBeadBracelet">
-    <part Name="Render" DisplayName="{{C-B-b-c sequence|珠状}} 手链" ColorString="&amp;b" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{C-B-b-c sequence|珠状}}手链" ColorString="&amp;b" DetailColor="C"/>
     <tag Name="Tier" Value="1"/>
     <tag Name="DynamicObjectsTable:TradeGoods"/>
   </object>
   <object Name="Bracelet3" Inherits="BaseBeadBracelet">
-    <part Name="Render" DisplayName="{{m-M 序列|珠状}} 手链" ColorString="&amp;m" DetailColor="M"/>
+    <part Name="Render" DisplayName="{{m-M 序列|珠状}}手链" ColorString="&amp;m" DetailColor="M"/>
     <tag Name="Tier" Value="1"/>
     <tag Name="DynamicObjectsTable:TradeGoods"/>
   </object>
@@ -5588,7 +5588,7 @@
   </object>
   <object Name="Snakeskin Armlet" Inherits="BaseArmlet">
     <part Name="Armor" AV="0" DV="2" WornOn="Arm"/>
-    <part Name="Render" DisplayName="{{snakeskin|蛇皮}} 手镯" RenderString="]" Tile="Items/sw_armlet.bmp" ColorString="&amp;g" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{snakeskin|蛇皮}}手镯" RenderString="]" Tile="Items/sw_armlet.bmp" ColorString="&amp;g" DetailColor="C"/>
     <part Name="Commerce" Value="35"/>
     <part Name="Description" Short="一截细长的黄铜在蛇形熔炉中锻造而成，并涂上了自然界令人不安的条纹。"/>
     <part Name="Physics" Weight="1"/>
@@ -5608,7 +5608,7 @@
   </object>
   <!-- Arm, Tier 4 -->
   <object Name="Bio-Scanning Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{bio|生物扫描}} 手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g"/>
+    <part Name="Render" DisplayName="{{bio|生物扫描}}手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="这是一张不断变化的微型生命信号图，通过附近动物的热能和声音特征捕捉到的生命电压。"/>
     <part Name="Physics" Weight="1"/>
@@ -5627,7 +5627,7 @@
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
   </object>
   <object Name="Structural Scanning Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{structural|结构}} {{Y-y-y-K-K-y-y-Y sequence|扫描}} 手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{structural|结构}}{{Y-y-y-K-K-y-y-Y sequence|扫描}}手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y"/>
     <part Name="Commerce" Value="20"/>
     <part Name="Description" Short="在腕部装置上，三维回声模型揭示了附近简单无生命物体的结构不规则性。"/>
     <part Name="Physics" Weight="1"/>
@@ -5647,7 +5647,7 @@
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
   </object>
   <object Name="Hologram Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{hologram|全息图}} 手镯" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
+    <part Name="Render" DisplayName="{{hologram|全息图}}手镯" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
     <part Name="Commerce" Value="125"/>
     <part Name="Description" Short="手镯扣上有一个明亮的钴蓝色按钮。"/>
     <part Name="Physics" Weight="1"/>
@@ -5732,7 +5732,7 @@
   </object>
   <!-- Arm, Tier 6 -->
   <object Name="Displacer Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{displacer|位移者}} 手镯" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B"/>
+    <part Name="Render" DisplayName="{{displacer|位移者}}手镯" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B"/>
     <part Name="Commerce" Value="90"/>
     <part Name="Description" Short="这个闪亮的金属圆环内表面刻有波动的象形文字。"/>
     <part Name="Physics" Weight="1"/>
@@ -5798,7 +5798,7 @@
   </object>
   <!-- Arm, Tier 8 -->
   <object Name="Transkinetic Cuffs" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{transkinetic|超动力}} 手铐" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R"/>
+    <part Name="Render" DisplayName="{{transkinetic|超动力}}手铐" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R"/>
     <part Name="Description" Short="金属手镯上的旋钮定时发出咔哒声，水银般的银色液体在塑料袖管中的管道中流动。"/>
     <part Name="Physics" Weight="6"/>
     <part Name="Commerce" Value="2100"/>
@@ -5890,7 +5890,7 @@
   </object>
   <object Name="Ape Fur Gloves" Inherits="BaseGlove">
     <part Name="Armor" Cold="10" Agility="0" AV="1" DV="0" WornOn="Hands"/>
-    <part Name="Render" DisplayName="{{Y|猿毛}} 手套" ColorString="&amp;Y" DetailColor="y" Tile="Items/sw_leather_gloves.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{Y|猿毛}}手套" ColorString="&amp;Y" DetailColor="y" Tile="Items/sw_leather_gloves.bmp" RenderString="]"/>
     <part Name="Commerce" Value="95"/>
     <part Name="Description" Short="柔软的毛皮从白化猿的象牙色皮毛上裁剪下来，制成厚实的手指手套。"/>
     <part Name="Physics" Weight="4" Organic="true"/>
@@ -5923,7 +5923,7 @@
   <!-- Hands, Tier 4 -->
   <object Name="Carbide Gauntlets" Inherits="BaseGauntlet">
     <part Name="Armor" AV="3" DV="-5" WornOn="Hands"/>
-    <part Name="Render" DisplayName="{{b|碳化物}} 手套" RenderString="]" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_metal_gloves.bmp"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}手套" RenderString="]" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_metal_gloves.bmp"/>
     <part Name="Commerce" Value="150"/>
     <part Name="Description" Short="暗蓝色的折叠金属被手工切割并缝制到一对填充山羊皮制成的内衬手套上。"/>
     <part Name="Physics" Weight="18"/>
@@ -5965,7 +5965,7 @@
   </object>
   <!-- Hands, Tier 6 -->
   <object Name="Crysteel Gauntlets" Inherits="BaseGauntlet">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 手套}}" RenderString="]" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_gauntlets_hightier1.bmp"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}手套}}" RenderString="]" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_gauntlets_hightier1.bmp"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Armor" AV="3" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Hands"/>
     <part Name="Commerce" Value="400"/>
@@ -5989,7 +5989,7 @@
   </object>
   <!-- Hands, Tier 7 -->
   <object Name="Flawless Crysteel Gauntlets" Inherits="BaseGauntlet">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美}} {{crysteel|晶体钢}}拳套}}" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gauntlets_hightier1.bmp"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}拳套}}" RenderString="]" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_gauntlets_hightier1.bmp"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
     <part Name="Armor" AV="4" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Hands"/>
     <part Name="Commerce" Value="650"/>
@@ -6001,7 +6001,7 @@
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="Kaleidocera Muffs" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}} 手套" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_muffs.bmp"/>
+    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}}手套" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_muffs.bmp"/>
     <part Name="Description" Short="手套上的触角像树年轮上的水晶霉一样垂下。它们映射出丰富的天蓝色、红宝石色、星兰色和虚空色；共同闪耀出璀璨的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
@@ -6013,7 +6013,7 @@
     <tag Name="EquipmentFrameColors" Value="KCmy"/>
   </object>
   <object Name="Precision Nanon Fingers" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="精密 {{Y|纳米}} 手指" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="精密{{Y|纳米}}手指" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]"/>
     <part Name="Description" Short="富勒烯手指伸展如同时尚宫廷指甲。它们的粗细通过嵌入指蹼中的微小伺服电机根据任务需求进行调整。"/>
     <part Name="RulesDescription" Text="你的武器基于百分比的效果发生的几率提高3倍，包括暴击的基础几率。"/>
     <part Name="Armor" AV="1" DV="1" WornOn="Hands"/>
@@ -6035,7 +6035,7 @@
   <!-- Floating nearby, Tier 7 -->
   <!-- Hands, Tier 8 -->
   <object Name="Zetachrome Gloves" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="{{zetachrome|译文}} 手套" RenderString="]" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_gauntlets_hightier2.bmp"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}手套" RenderString="]" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_gauntlets_hightier2.bmp"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
     <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Hands"/>
     <part Name="Physics" Weight="10"/>
@@ -6173,7 +6173,7 @@
   </object>
   <object Name="Elastyne Slippers" Inherits="BaseBoot">
     <part Name="Armor" AV="0" DV="2" WornOn="Feet"/>
-    <part Name="Render" DisplayName="{{K|弹性烯}} 拖鞋" Tile="Items/sw_slippers.bmp" ColorString="&amp;K" DetailColor="y" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|弹性烯}}拖鞋" Tile="Items/sw_slippers.bmp" ColorString="&amp;K" DetailColor="y" RenderString="]"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="一种从橡胶洞穴中提取并粘贴在脚上的黑色拉伸材料，宇航员称之为黑弹胶。"/>
     <part Name="Physics" Weight="1" Conductivity="0"/>
@@ -6186,7 +6186,7 @@
   <!-- Feet, Tier 4 -->
   <object Name="Carbide Boots" Inherits="BaseBoot">
     <part Name="Armor" AV="3" DV="-5" WornOn="Feet"/>
-    <part Name="Render" DisplayName="{{b|碳化物}} 靴子" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}靴子" ColorString="&amp;b" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]"/>
     <part Name="Commerce" Value="150"/>
     <part Name="Description" Short="带有暗蓝色条纹的折叠金属制成的一对湖中捕获的靴子。"/>
     <part Name="Physics" Weight="15"/>
@@ -6245,7 +6245,7 @@
   <!-- Feet, Tier 5 -->
   <object Name="Fullerite Boots" Inherits="BaseBoot">
     <part Name="Armor" AV="3" DV="-4" WornOn="Feet"/>
-    <part Name="Render" DisplayName="{{K|富勒烯}} 靴子" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|富勒烯}}靴子" ColorString="&amp;K" DetailColor="y" Tile="Items/sw_boots_midtier_metal.bmp" RenderString="]"/>
     <part Name="Commerce" Value="195"/>
     <part Name="Description" Short="焊接的老化黄昏带保护双腿，但像矿石一样使穿戴者沉重地贴在地面上。"/>
     <part Name="Physics" Weight="35"/>
@@ -6271,7 +6271,7 @@
   </object>
   <object Name="Rocket Skates" Inherits="BaseBoot">
     <part Name="Armor" AV="0" DV="1"/>
-    <part Name="Render" DisplayName="{{火箭|rocket}} {{K|滑轮}}" RenderString="]" Tile="Items/sw_rocketskates.bmp" ColorString="&amp;K" DetailColor="R"/>
+    <part Name="Render" DisplayName="{{火箭|rocket}}{{K|滑轮}}" RenderString="]" Tile="Items/sw_rocketskates.bmp" ColorString="&amp;K" DetailColor="R"/>
     <part Name="Commerce" Value="400"/>
     <part Name="Physics" Weight="6"/>
     <part Name="MoveCostMultiplier" Amount="-5"/>
@@ -6293,7 +6293,7 @@
   </object>
   <!-- Feet, Tier 6 -->
   <object Name="Crysteel Boots" Inherits="BaseBoot">
-    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}} 靴子}}" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_boots_hightier1.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|晶体钢}}靴子}}" ColorString="&amp;g" DetailColor="K" Tile="Items/sw_boots_hightier1.bmp" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Physics" Weight="20"/>
     <part Name="Springy" Factor="0.5"/>
@@ -6305,7 +6305,7 @@
   </object>
   <object Name="Ninefold Boots" Inherits="BaseBoot">
     <part Name="Armor" AV="1" DV="-1" WornOn="Feet"/>
-    <part Name="Render" DisplayName="{{九重|九重}} 靴" RenderString="]" ColorString="&amp;B" TileColor="&amp;b" DetailColor="B" Tile="Items/sw_tech_boots.bmp"/>
+    <part Name="Render" DisplayName="{{ninefold|九重}}靴" RenderString="]" ColorString="&amp;B" TileColor="&amp;b" DetailColor="B" Tile="Items/sw_tech_boots.bmp"/>
     <part Name="Commerce" Value="400"/>
     <part Name="Description" Short="书法图案以错落有致的行列蜿蜒于靴子的侧面和后跟。这些字符似乎围绕着一个中心声明: &quot;道路被压缩。&quot; 其余的文字则以多种符号和风格刻写，提供了对这一神秘宣言的相互竞争和综合解释。"/>
     <part Name="Physics" Weight="9"/>
@@ -6323,7 +6323,7 @@
   </object>
   <!-- Feet, Tier 7 -->
   <object Name="Flawless Crysteel Boots" Inherits="BaseBoot">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶体钢}}靴子}}" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_boots_hightier1.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶体钢}}靴子}}" ColorString="&amp;G" DetailColor="K" Tile="Items/sw_boots_hightier1.bmp" RenderString="]"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具中。用于取出铸件的绿宝石钳子在过程中原子化并释放钒——绿色的光泽——进入管道，使金属变得不完美并赋予其特有的色泽。带有尘埃颗粒的铸件被剔除并喂给石食者，只剩下完美的六角棱柱。"/>
     <part Name="Physics" Weight="20"/>
     <part Name="Springy" Factor="0.5"/>
@@ -6372,7 +6372,7 @@
     <stag Name="Flight"/>
   </object>
   <object Name="Kaleidocera Krakows" Inherits="BaseBoot">
-    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}} 克拉科夫斯" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_krakows.bmp"/>
+    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}}克拉科夫斯" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_krakows.bmp"/>
     <part Name="Description" Short="鞋尖上的角状物如同雾中的甲虫月般卷曲。它们反射出天蓝色、红宝石色、星兰色和虚空色的丰富色调，共同闪耀出辉煌的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
@@ -6385,7 +6385,7 @@
   </object>
   <!-- Feet, Tier 8 -->
   <object Name="Zetachrome Pumps" Inherits="BaseBoot">
-    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}} 泵" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_boots_hightier2.bmp" RenderString="]"/>
+    <part Name="Render" DisplayName="{{zetachrome|泽塔铬}}泵" ColorString="&amp;m" TileColor="&amp;C" DetailColor="m" Tile="Items/sw_boots_hightier2.bmp" RenderString="]"/>
     <part Name="Description" Short="夸克-胶子等离子体在早期宇宙的虚空峰上迅速冷却并熄灭，除了那些被困在六维时空扭曲中的小球。它们在那里滑行了数十亿年，直到生物发现它们，建造机器提取和冷却它们，并在恒星熔炉中重新加热。"/>
     <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Feet"/>
     <part Name="Physics" Weight="10"/>
@@ -6417,7 +6417,7 @@
   </object>
   <object Name="Light-Obfuscating Lens" Inherits="Armor">
     <part Name="Armor" AV="0" DV="1" WornOn="Floating Nearby"/>
-    <part Name="Render" DisplayName="{{starry|遮光}} 透镜" RenderString="]" Tile="Items/sw_lens.bmp" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{starry|遮光}}透镜" RenderString="]" Tile="Items/sw_lens.bmp" DetailColor="K"/>
     <part Name="Commerce" Value="35"/>
     <part Name="Description" Short="一具悬浮在半空中的躯干长度透镜，周围环绕着折射波纹。"/>
     <part Name="Physics" Weight="1"/>
@@ -6443,7 +6443,7 @@
   </object>
   <!-- Floating nearby, Tier 3 -->
   <object Name="Luminous Mote" Inherits="LightSource">
-    <part Name="Render" DisplayName="{{W|发光}} {{W-Y-y-K 序列|微粒}}" RenderString="." ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" Tile="Items/sw_mote.bmp" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{W|发光}}{{W-Y-y-K sequence|微粒}}" RenderString="." ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" Tile="Items/sw_mote.bmp" RenderLayer="5"/>
     <part Name="Armor" AV="0" DV="0" WornOn="Floating Nearby"/>
     <part Name="LightSource" Lit="false" Radius="4"/>
     <part Name="MoteProperties"/>
@@ -6538,7 +6538,7 @@
   <object Name="Black Mote" Inherits="BaseFloat">
     <part Name="Armor" AV="0" DV="0"/>
     <part Name="Physics" Weight="0"/>
-    <part Name="Render" DisplayName="{{K|黑色}} 微粒" RenderString="*" RenderLayer="5" Tile="Items/sw_black_mote.bmp" ColorString="&amp;K" DetailColor="M"/>
+    <part Name="Render" DisplayName="{{K|黑色}}微粒" RenderString="*" RenderLayer="5" Tile="Items/sw_black_mote.bmp" ColorString="&amp;K" DetailColor="M"/>
     <part Name="Commerce" Value="1666"/>
     <part Name="Description" Short="一个黑色微粒在充满光明的世界中逆光而行，绘制出螺旋轨道。"/>
     <part Name="ZeroPointEnergyCollector" ChargeRate="20" World="JoppaWorld,OrbWorld"/>
@@ -6630,7 +6630,7 @@
   </object>
   <!-- Shields, Tier 2 -->
   <object Name="Steel Buckler" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{Y|钢}} 圆盾" Tile="items/sw_buckler3.bmp" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}圆盾" Tile="items/sw_buckler3.bmp" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Shield" AV="2" DV="-1" WornOn="Arm"/>
     <part Name="Description" Short="一段抛光的钢片从倒下的金属冲压机上冲裁下来，并装上了握把。"/>
     <part Name="Commerce" Value="50"/>
@@ -6640,7 +6640,7 @@
     <stag Name="Contemporary"/>
   </object>
   <object Name="Steel Shield" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{Y|钢}} 盾牌" Tile="Items/sw_shield5.bmp" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{Y|钢}}盾牌" Tile="Items/sw_shield5.bmp" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Shield" AV="3" DV="-2" WornOn="Hand"/>
     <part Name="Description" Short="一面钢制盾牌上装饰着牙与爪的象形文字。"/>
     <part Name="Commerce" Value="50"/>
@@ -6650,7 +6650,7 @@
   </object>
   <!-- Shields, Tier 3 -->
   <object Name="Carbide Shield" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{b|碳化物}} 盾牌" Tile="Items/sw_shield4.bmp" ColorString="&amp;b" TileColor="&amp;y" DetailColor="b"/>
+    <part Name="Render" DisplayName="{{b|碳化物}}盾牌" Tile="Items/sw_shield4.bmp" ColorString="&amp;b" TileColor="&amp;y" DetailColor="b"/>
     <part Name="Shield" AV="4" DV="-3" WornOn="Hand"/>
     <part Name="Description" Short="一面蓝色的风筝盾上炫耀着齿爪的象形文字。"/>
     <part Name="Commerce" Value="50"/>
@@ -6661,7 +6661,7 @@
   <!-- Shields, Tier 4 -->
   <!-- Shields, Tier 5 -->
   <object Name="Fullerite Shield" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{K|富勒体}} 艾吉斯" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" Tile="Items/sw_shield_templar.bmp"/>
+    <part Name="Render" DisplayName="{{K|富勒体}}艾吉斯" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" Tile="Items/sw_shield_templar.bmp"/>
     <part Name="Shield" AV="5" DV="-4" WornOn="Hand"/>
     <part Name="Description" Short="宽大的艾吉斯如同被切半的风筝，一面是阳光，一面是无星的黄昏，其剑痕斑斑的平面上绘有圣殿的神圣菱形。"/>
     <part Name="Commerce" Value="200"/>
@@ -6671,7 +6671,7 @@
   </object>
   <!-- Shields, Tier 6 -->
   <object Name="Crysteel Shield" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}} 艾吉斯}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|{{crysteel|克里斯特尔}}艾吉斯}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="Shield" AV="6" DV="-2" WornOn="Hand"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Commerce" Value="300"/>
@@ -6683,7 +6683,7 @@
   </object>
   <!-- Shields, Tier 7 -->
   <object Name="Flawless Crysteel Shield" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{K|{{crysteel|完美晶钢}} 盾牌}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;G" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|完美{{crysteel|晶钢}}盾牌}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;G" DetailColor="K"/>
     <part Name="Shield" AV="7" DV="-2" WornOn="Hand"/>
     <part Name="Description" Short="熔炉吸取了星球的潮汐能量，将碳加热到太阳的温度，并将其倒入六角模具。用于取出铸件的翠绿色钳子在过程中原子化并释放钒——这种绿色的闪光——进入管道，使金属变得不完美，赋予其特有的色泽。"/>
     <part Name="Commerce" Value="450"/>
@@ -6797,7 +6797,7 @@
   </object>
   <object Name="SkybearJetpack" Inherits="Armor">
     <part Name="Armor" AV="0" Ego="1" DV="2" WornOn="Back"/>
-    <part Name="Render" Tile="items/sw_jetbackpack.bmp" RenderLayer="5" DisplayName="{{R-r-w-W-Y-y 序列|流水飞翼}} of the {{b-B-C-c 序列|天空熊}}" RenderString="]" ColorString="&amp;M"/>
+    <part Name="Render" Tile="items/sw_jetbackpack.bmp" RenderLayer="5" DisplayName="{{b-B-C-c sequence|天空熊}}的{{R-r-w-W-Y-y sequence|流水飞翼}}" RenderString="]" ColorString="&amp;M"/>
     <part Name="Commerce" Value="500"/>
     <stat Name="Hitpoints" Value="500"/>
     <part Name="SkybearShroud"/>
@@ -6819,7 +6819,7 @@
     <stag Name="Travel"/>
   </object>
   <object Name="MurmurMask" Inherits="Gentling Mask">
-    <part Name="Render" DisplayName="{{K-C-K 序列|低语}} {{Y-y-y-Y 序列|面具}}" RenderString="]" Tile="Items/sw_mask_mummer.bmp" ColorString="&amp;y" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{K-C-K sequence|低语}}{{Y-y-y-Y sequence|面具}}" RenderString="]" Tile="Items/sw_mask_mummer.bmp" ColorString="&amp;y" DetailColor="C"/>
     <part Name="Description" Short="曾经熟悉的纸张、颜料和珠子被重新排列成兽形。眼窝中闪烁着纺锤色的微光，一个邪恶的喙在静谧中张开，令人畏惧。面具上，黄铜链固定着那些撕裂的无辜碎片，构成了低语。"/>
     <part Name="Armor" AV="1" DV="0" Ego="-1"/>
     <stat Name="Hitpoints" Value="100"/>
@@ -6830,7 +6830,7 @@
     <tag Name="EquipmentFrameColors" Value="KCKC"/>
   </object>
   <object Name="Blackboard" Inherits="Fullerite Shield">
-    <part Name="Render" DisplayName="磨光的 {{K|富勒烯}} 盾牌" Tile="Items/sw_shield1.bmp"/>
+    <part Name="Render" DisplayName="磨光的{{K|富勒烯}}盾牌" Tile="Items/sw_shield1.bmp"/>
     <part Name="Description" Short="这块黑色金属板已经被磨光，任何曾经铭刻在其哑光表面的符号都已消失。"/>
     <stat Name="Hitpoints" Value="100"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -6861,7 +6861,7 @@
   </object>
   <object Name="Cyclopean Prism" Inherits="BaseFloat">
     <part Name="Armor" AV="0" DV="0" Ego="+8" Willpower="-8" WornOn="Floating Nearby"/>
-    <part Name="Render" DisplayName="{{K|紫罗兰色}} 棱镜" ColorString="&amp;M" RenderString="^" Tile="Items/sw_prism.bmp" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|紫罗兰色}}棱镜" ColorString="&amp;M" RenderString="^" Tile="Items/sw_prism.bmp" DetailColor="K"/>
     <part Name="Commerce" Value="335"/>
     <part Name="Description" Short="一个无星的黑色玻璃三棱镜静止不动。"/>
     <part Name="Physics" Weight="1" FlameTemperature="8550"/>
@@ -6915,7 +6915,7 @@
     <tag Name="EquipmentFrameColors" Value="YmBb"/>
   </object>
   <object Name="TauDagger" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{crystalline|结晶}} 刺" Tile="Items/sw_chime_dagger.bmp" ColorString="&amp;m" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{crystalline|结晶}}刺" Tile="Items/sw_chime_dagger.bmp" ColorString="&amp;m" DetailColor="y"/>
     <part Name="Description" Short="破碎的水晶在裂片处锐化成仇恨的剃刀。它在痛苦的共鸣曲率下裂开，从宿主岩石中坠落，如同破碎的誓言。"/>
     <part Name="Physics" Weight="3"/>
     <part Name="Commerce" Value="1666"/>
@@ -6930,7 +6930,7 @@
   <!-- Unique armor, Tomb children rewards -->
   <object Name="Nacham's Ribbon" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{K-K-K-K-K-c-C-Y sequence|纳查姆的}} {{C-c-K-K-K-K sequence|丝带}}" RenderString="]" Tile="items/sw_nacham_mantle.bmp" ColorString="&amp;M" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{K-K-K-K-K-c-C-Y sequence|纳查姆的}}{{C-c-K-K-K-K sequence|丝带}}" RenderString="]" Tile="items/sw_nacham_mantle.bmp" ColorString="&amp;M" DetailColor="c"/>
     <part Name="Physics" Weight="8"/>
     <part Name="Commerce" Value="1500"/>
     <stat Name="Hitpoints" Value="1000"/>
@@ -6950,7 +6950,7 @@
   </object>
   <object Name="Vaam's Lens" Inherits="BaseShield">
     <part Name="Shield" AV="6" DV="-2" WornOn="Hand"/>
-    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y sequence|瓦姆的}} {{C-c-K-K sequence|透镜}}" Tile="Items/sw_vaam_aegis.bmp" ColorString="&amp;M" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y sequence|瓦姆的}}{{C-c-K-K sequence|透镜}}" Tile="Items/sw_vaam_aegis.bmp" ColorString="&amp;M" DetailColor="c"/>
     <part Name="Physics" Weight="15"/>
     <part Name="Commerce" Value="1500"/>
     <stat Name="Hitpoints" Value="1000"/>
@@ -6972,7 +6972,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Dagasha's Spur" Inherits="BaseHat">
-    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y-C-c 序列|达加沙的}} {{K 序列|刺}}" Tile="Items/sw_dagasha_coronet.bmp" ColorString="&amp;M" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y-C-c sequence|达加沙的}}{{K sequence|刺}}" Tile="Items/sw_dagasha_coronet.bmp" ColorString="&amp;M" DetailColor="c"/>
     <part Name="Description" Short="由晶体以特定灵能角度排列而成的荆棘冠冕，在灵能之海中成为了一个标志。"/>
     <part Name="Armor" AV="3" DV="-1"/>
     <part Name="FollowersGetTeleport" BehaviorDescription="同伴获得技能 瞬移 1。"/>
@@ -6990,7 +6990,7 @@
     <stag Name="Travel"/>
   </object>
   <object Name="Kah's Loop" Inherits="BaseArmlet">
-    <part Name="Render" DisplayName="{{K-K-c-C-Y 序列|Kah's}} {{C-c-K-K 序列|循环}}" Tile="Items/sw_kah_loop.bmp" DetailColor="c" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="{{K-K-c-C-Y sequence|Kah's}}{{C-c-K-K sequence|循环}}" Tile="Items/sw_kah_loop.bmp" DetailColor="c" ColorString="&amp;M"/>
     <part Name="Description" Short="一条带有肋状纹路的电缆，由相切的针尖组成，挤压肢体并使其生物物质以超乎预期的速度加速。"/>
     <part Name="Armor" AV="0" DV="1" WornOn="Arm"/>
     <part Name="Physics" Weight="1"/>
@@ -7009,7 +7009,7 @@
   </object>
   <!-- Unique armor, Sultan Faces -->
   <object Name="The Kesil Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{kesil|克西尔}} 面容" RenderString="]" Tile="items/sw_mask_kesil.bmp" ColorString="&amp;M" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{kesil|克西尔}}面容" RenderString="]" Tile="items/sw_mask_kesil.bmp" ColorString="&amp;M" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="3" SpeedBonus="10" Strength="1" Toughness="1" Agility="1" Ego="1" Willpower="1" Intelligence="1" Heat="10" Cold="10" Acid="10" Elec="10" WornOn="Face"/>
     <part Name="Commerce" Value="10000"/>
     <stat Name="Hitpoints" Value="1500"/>
@@ -7031,7 +7031,7 @@
     <tag Name="EquipmentFrameColors" Value="mMYy"/>
   </object>
   <object Name="The Shemesh Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{shemesh|舍梅什}} 面具" RenderString="]" Tile="items/sw_mask_shemesh.bmp" ColorString="&amp;W" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{shemesh|舍梅什}}面具" RenderString="]" Tile="items/sw_mask_shemesh.bmp" ColorString="&amp;W" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="3" SpeedBonus="10" Strength="1" Toughness="1" Agility="1" Ego="1" Willpower="1" Intelligence="1" Heat="10" Cold="10" Acid="10" Elec="10" WornOn="Face"/>
     <part Name="Commerce" Value="8000"/>
     <stat Name="Hitpoints" Value="1500"/>
@@ -7051,7 +7051,7 @@
     <tag Name="EquipmentFrameColors" Value="rRWY"/>
   </object>
   <object Name="The Earth Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{earth|地球}} 面容" RenderString="]" Tile="items/sw_mask_earth.bmp" ColorString="&amp;B" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{earth|地球}}面容" RenderString="]" Tile="items/sw_mask_earth.bmp" ColorString="&amp;B" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="2" Strength="1" Toughness="1" Agility="1" Ego="1" Willpower="1" Intelligence="1" Heat="10" Cold="10" Acid="10" Elec="10" WornOn="Face"/>
     <part Name="Commerce" Value="6500"/>
     <stat Name="Hitpoints" Value="1500"/>
@@ -7071,7 +7071,7 @@
     <tag Name="EquipmentFrameColors" Value="bBWg"/>
   </object>
   <object Name="The Levant Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{levant|利万特}} 面具" RenderString="]" Tile="items/sw_mask_levant.bmp" ColorString="&amp;r" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{levant|利万特}}面具" RenderString="]" Tile="items/sw_mask_levant.bmp" ColorString="&amp;r" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="1" Strength="1" Toughness="1" Agility="1" Ego="1" Willpower="1" Intelligence="1" WornOn="Face"/>
     <part Name="Commerce" Value="5000"/>
     <stat Name="Hitpoints" Value="1500"/>
@@ -7090,7 +7090,7 @@
     <tag Name="EquipmentFrameColors" Value="yrYr"/>
   </object>
   <object Name="The Olive Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{橄榄|橄榄}} 面具" RenderString="]" Tile="items/sw_mask_olive.bmp" ColorString="&amp;g" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{olive|橄榄}}面具" RenderString="]" Tile="items/sw_mask_olive.bmp" ColorString="&amp;g" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="1" Strength="1" Toughness="1" Agility="1" WornOn="Face"/>
     <part Name="Commerce" Value="4000"/>
     <stat Name="Hitpoints" Value="1500"/>
@@ -7109,7 +7109,7 @@
     <tag Name="EquipmentFrameColors" Value="gGWw"/>
   </object>
   <object Name="The Nil Face" Inherits="BaseMask">
-    <part Name="Render" DisplayName="{{K|虚无}} 面庞" RenderString="]" Tile="items/sw_mask_null.bmp" ColorString="&amp;y" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|虚无}}面庞" RenderString="]" Tile="items/sw_mask_null.bmp" ColorString="&amp;y" DetailColor="K"/>
     <part Name="Armor" AV="0" DV="0" WornOn="Face"/>
     <part Name="AddsRep" Faction="*allvisiblefactions:70"/>
     <part Name="Commerce" Value="4000"/>
@@ -9154,7 +9154,7 @@
     <tag Name="CyberneticsOneOnly"/>
   </object>
   <object Name="ForceKnife" Inherits="BaseDagger">
-    <part Name="Render" DisplayName="{{C|力场}} 刀" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp"/>
+    <part Name="Render" DisplayName="{{C|力场}}刀" RenderString="\" ColorString="&amp;C" DetailColor="c" Tile="Items/force_knife.bmp"/>
     <part Name="Physics" Weight="0" Category="投掷武器"/>
     <part Name="Description" Short="一段原始空间被动能化并磨尖成刀刃。"/>
     <part Name="MeleeWeapon" BaseDamage="1d8"/>
@@ -9884,7 +9884,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Fidget Cell" Inherits="Energy Cell">
-    <part Name="Render" DisplayName="{{w|摆弄}} {{c|细胞}}" ColorString="&amp;w" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_fidget.bmp"/>
+    <part Name="Render" DisplayName="{{w|摆弄}}{{c|细胞}}" ColorString="&amp;w" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_fidget.bmp"/>
     <part Name="EnergyCell" Charge="2500" MaxCharge="2500"/>
     <part Name="Description" Short="围绕其任何旋转轴旋转锡制立方体时会产生轻微的阻力。腕带和陀螺仪框架使细胞能够吸收并储存佩戴者的动能。"/>
     <part Name="Metal"/>
@@ -9899,7 +9899,7 @@
     <tag Name="TinkerCategory" Value="ammo and energy cells"/>
   </object>
   <object Name="Solar Cell" Inherits="Energy Cell">
-    <part Name="Render" DisplayName="{{W|太阳能}} {{c|电池}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_solar.bmp"/>
+    <part Name="Render" DisplayName="{{W|太阳能}}{{c|电池}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_solar.bmp"/>
     <part Name="EnergyCell" Charge="2500" MaxCharge="2500"/>
     <part Name="Description" Short="光伏立方体在高盐太阳的温暖下烘烤，并将其储存为加速汁液。"/>
     <part Name="Metal"/>
@@ -9913,7 +9913,7 @@
     <tag Name="TinkerCategory" Value="ammo and energy cells"/>
   </object>
   <object Name="Nuclear Cell" Inherits="Energy Cell">
-    <part Name="Render" DisplayName="{{m|核}} {{c|电池}}" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_nuclear.bmp"/>
+    <part Name="Render" DisplayName="{{m|核}}{{c|电池}}" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_nuclear.bmp"/>
     <part Name="EnergyCell" Charge="100000" MaxCharge="100000"/>
     <part Name="Description" Short="数百万年前的地球岩石在电池盒内衰变，其中的伽马粒子通过结二极管被引导并储存，用于爆炸性能量释放。"/>
     <part Name="Metal"/>
@@ -9925,7 +9925,7 @@
     <tag Name="TinkerCategory" Value="ammo and energy cells"/>
   </object>
   <object Name="Antimatter Cell" Inherits="Energy Cell">
-    <part Name="Render" DisplayName="{{K|反物质}} {{c|细胞}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_antimatter.bmp"/>
+    <part Name="Render" DisplayName="{{K|反物质}}{{c|细胞}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_antimatter.bmp"/>
     <part Name="EnergyCell" Charge="200000" MaxCharge="200000"/>
     <part Name="Description" Short="一个乌尔钢棺材封闭了维持正电子悬浮的磁场。当电流形成时，成对的粒子湮灭，并将宇宙破裂的全部力量通过通道传递到设备中。"/>
     <part Name="TinkerItem" Bits="008" CanDisassemble="true" CanBuild="true"/>
@@ -9951,7 +9951,7 @@
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Lead-Acid Cell" Inherits="Liquid Fueled Energy Cell">
-    <part Name="Render" DisplayName="{{G|铅酸}} {{c|电池单元}}" ColorString="&amp;G" TileColor="&amp;c" DetailColor="G" RenderString="'" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{G|铅酸}}{{c|电池单元}}" ColorString="&amp;G" TileColor="&amp;c" DetailColor="G" RenderString="'" RenderLayer="5"/>
     <part Name="LiquidFueledEnergyCell" Liquid="acid" ChargePerDram="500"/>
     <part Name="LiquidVolume" MaxVolume="8" Volume="0" StartVolume="0-8" InitialLiquid="acid-1000"/>
     <part Name="Description" Short="在电池的绝缘罐内，电动力装置从酸中提取能量并将其转化为电荷。"/>
@@ -9964,7 +9964,7 @@
     <tag Name="TinkerCategory" Value="ammo and energy cells"/>
   </object>
   <object Name="Combustion Cell" Inherits="Liquid Fueled Energy Cell">
-    <part Name="Render" DisplayName="{{K|燃烧}} {{c|细胞}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_liquid.bmp"/>
+    <part Name="Render" DisplayName="{{K|燃烧}}{{c|细胞}}" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_liquid.bmp"/>
     <part Name="LiquidFueledEnergyCell" Liquid="oil" ChargePerDram="750"/>
     <part Name="LiquidVolume" MaxVolume="8" Volume="0" StartVolume="0-8" InitialLiquid="oil-1000"/>
     <part Name="Description" Short="在电池绝缘罐内，电动力装置从油中裂解出能量并将其转换为电荷。"/>
@@ -9983,7 +9983,7 @@
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
   </object>
   <object Name="Thermoelectric Cell" Inherits="Liquid Fueled Energy Cell">
-    <part Name="Render" DisplayName="{{R|热电}} {{c|电池}}" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" RenderString="'" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{R|热电}}{{c|电池}}" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" RenderString="'" RenderLayer="5"/>
     <part Name="LiquidFueledEnergyCell" Liquid="lava" ChargePerDram="5000"/>
     <part Name="LiquidVolume" MaxVolume="8" Volume="0" StartVolume="0-8" InitialLiquid="lava-1000"/>
     <part Name="Description" Short="在电池的绝缘罐内，电磁装置从熔岩中提取能量并将其转化为电荷。"/>
@@ -9997,7 +9997,7 @@
     <tag Name="TinkerCategory" Value="ammo and energy cells"/>
   </object>
   <object Name="Biodynamic Cell" Inherits="Liquid Fueled Energy Cell">
-    <part Name="Render" DisplayName="{{r|生物动力}} {{c|细胞}}" ColorString="&amp;r" TileColor="&amp;c" DetailColor="r" RenderString="'" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{r|生物动力}}{{c|细胞}}" ColorString="&amp;r" TileColor="&amp;c" DetailColor="r" RenderString="'" RenderLayer="5"/>
     <part Name="LiquidFueledEnergyCell" Liquid="blood" ChargePerDram="7500"/>
     <part Name="LiquidVolume" MaxVolume="8" Volume="0" StartVolume="0-8" InitialLiquid="blood-1000"/>
     <part Name="Description" Short="在电池绝缘罐内部，电磁装置从血液中提取能量并将其转化为电荷。"/>
@@ -10091,7 +10091,7 @@
     <xtagProjectileVFX Effect="MissileWeaponsEffects/3cprojectile" Tile="Inherit" Foreground="Inherit" Detail="Inherit" TrailStartColor="Inherit" TrailEndColor="#AAA0" TrailStartWidth="2" TrailLife="0.075" Orientation="135" Speed="540" Scale="0.8"/>
   </object>
   <object Name="Empty Booster" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{K|空}} 注射器"/>
+    <part Name="Render" DisplayName="{{K|空}}注射器"/>
     <part Name="Description" Short="一支玻璃管和针头可以将药剂直接输送到血液中。这个注射器是空的。"/>
     <part Name="Examiner" Complexity="1" Unknown="UnknownEmptyMed" Alternate="UnknownEmptyMed"/>
     <part Name="Empty_Tonic_Applicator"/>
@@ -10295,7 +10295,7 @@
     <stag Name="Tonic"/>
   </object>
   <object Name="LoveTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{love|爱}} 注射器"/>
+    <part Name="Render" DisplayName="{{love|爱}}注射器"/>
     <part Name="LoveTonicApplicator"/>
     <part Name="RulesDescription" Text="你感到异常地充满爱意，持续大约半天的时间，在这段时间里，你会爱上你看到的第一样东西。如果你给其他人注射，他们会爱上你并跟随你3000-3600回合。每比你高一个等级，失败率增加1%。"/>
     <tag Name="Tier" Value="2"/>
@@ -10306,7 +10306,7 @@
     <tag Name="ChooseToPreserve"/>
   </object>
   <object Name="BlazeTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{fire|火焰}} 注射器"/>
+    <part Name="Render" DisplayName="{{fire|火焰}}注射器"/>
     <part Name="Blaze_Tonic_Applicator"/>
     <part Name="RulesDescription" Text="持续时间: 41-50 回合 +100 耐热性 你不会被冻结。你造成的热伤害增加 25%。-50 冷抗性 +10 敏捷 你的温度不会因外部热源而升高。你必须移动以避免燃烧并失去这种药剂的效果。"/>
     /&gt;
@@ -10319,7 +10319,7 @@
     <tag Name="ChooseToPreserve"/>
   </object>
   <object Name="HulkHoneyTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{G|巨兽}} {{w|蜂蜜}} 注射器"/>
+    <part Name="Render" DisplayName="{{G|巨兽}}{{w|蜂蜜}}注射器"/>
     <part Name="HulkHoney_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 41-50 回合 +6 力量 +2 每等级临时生命值 -25 移动速度 你不会感到疼痛。你对恐惧免疫。你每回合受到最大生命值 1% 的伤害（此伤害不会
@@ -10333,7 +10333,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="SalveTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{Y|药膏}} 注射器"/>
+    <part Name="Render" DisplayName="{{Y|药膏}}注射器"/>
     <part Name="Salve_Tonic_Applicator"/>
     <part Name="AIHealingTonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 5 回合 每回合恢复 0.6 生命值（最低 3）" AltForGenotype="True Kin" GenotypeAlt="持续时间: 5回合 每回合你将恢复每等级0.9点生命值（最低5点）"/>
@@ -10347,7 +10347,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="SkulkTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{skulk|潜行者}} 注射器"/>
+    <part Name="Render" DisplayName="{{skulk|潜行者}}注射器"/>
     <part Name="Skulk_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 1001-1200 回合 在夜间和地下，你的移动速度增加 25%，但在白天减少 20%。夜间和地下时 +3 敏捷，在白天时 -3 敏捷。你可以在黑暗中视物（半径 8）。你会长出掘地爪。你受到光基攻击的伤害翻倍。"/>
@@ -10360,7 +10360,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="SphynxSaltTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{sphynx|斯芬克斯}} {{Y|盐}} 注射器"/>
+    <part Name="Render" DisplayName="{{sphynx|斯芬克斯}}{{Y|盐}}注射器"/>
     <part Name="SphynxSalt_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 18-22 回合 你对混乱攻击免疫。你的激活精神变异冷却速度加快一倍。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 18-22 回合 你对混乱攻击免疫。你可以预见自己不久的将来（在药效结束时，你可以回到首次使用该药物的时间点）。"/>
@@ -10371,7 +10371,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="ShadeOilTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{shade|暗影油}} 注射器"/>
+    <part Name="Render" DisplayName="{{shade|暗影油}}注射器"/>
     <part Name="ShadeOil_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <tag Name="SpecialCookingIngredient"/>
@@ -10386,7 +10386,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="UbernostrumTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{ubernostrum|乌贝诺斯特鲁姆}} 注射器"/>
+    <part Name="Render" DisplayName="{{ubernostrum|乌贝诺斯特鲁姆}}注射器"/>
     <part Name="Ubernostrum_Tonic_Applicator"/>
     <part Name="AIHealingTonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 10回合 每回合恢复0.6点生命值（最低3点）。在第十回合结束时，你将清除所有短期生物减益效果，并且可以再生一个被切断的肢体。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 10轮 每轮你将恢复0.9点生命值（最低5点）。在第十轮结束时，你将清除所有短期生物减益效果，并且可以再生一个被切断的肢体。"/>
@@ -10399,7 +10399,7 @@
     <part Name="Commerce" Value="75"/>
   </object>
   <object Name="RubbergumTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{rubbergum|橡胶糖}} 注射器"/>
+    <part Name="Render" DisplayName="{{rubbergum|橡胶糖}}注射器"/>
     <part Name="Rubbergum_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
     <part Name="RulesDescription" Text="持续时间: 41-50 回合 +100 耐电 +25 耐寒 -1 AV +5 对抵抗被束缚的豁免 -5 对抵抗流血的豁免。你只会受到钝器攻击一半的伤害。你只会受到坠落一半的伤害。你不能被抓住。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 41-50 回合 +100 耐电 +50 耐寒 -1 AV +5 对抵抗束缚的豁免 -5 对抵抗流血的豁免。你只会受到钝击攻击 25% 的伤害。你只会受
@@ -10413,7 +10413,7 @@
     <tag Name="DynamicObjectsTable:Tonics_NonRare"/>
   </object>
   <object Name="NectarTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{eater|吞噬者}} {{nectar|花蜜}}注射器"/>
+    <part Name="Render" DisplayName="{{eater|吞噬者}}{{nectar|花蜜}}注射器"/>
     <part Name="Nectar_Tonic_Applicator"/>
     <part Name="RulesDescription" Text="你将获得一个随机属性的永久+1加成或一个突变点." AltForGenotype="True Kin" GenotypeAlt="你获得一个属性点。"/>
     <part Name="TinkerItem" Bits="06" Ingredient="Arsplice Seed"/>
@@ -10543,7 +10543,7 @@
     <part Name="TinkerItem" Bits="0034" CanDisassemble="true" CanBuild="true"/>
   </object>
   <object Name="Tattoo Gun" Inherits="Tool">
-    <part Name="Render" DisplayName="{{b-B-C-c-y-Y 序列|纹身}} 枪" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{b-B-C-c-y-Y sequence|纹身}}枪" RenderString=")" Tile="Items/sw_tattoo_gun.bmp" ColorString="&amp;K" DetailColor="c"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Description" Short="墨水通过针头和旋转电机喷射到皮肤表面及其下方。"/>
     <part Name="Physics" Weight="1" Category="工具"/>
@@ -10582,7 +10582,7 @@
     <tag Name="DynamicObjectsTable:Trinkets"/>
   </object>
   <object Name="Neuro Animator" Inherits="Tool">
-    <part Name="Render" DisplayName="{{纳米神经|nano-neuro}} {{Y|激活器}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp"/>
+    <part Name="Render" DisplayName="{{nanoneuro|纳米神经}}{{Y|激活器}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp"/>
     <part Name="AnimateObject"/>
     <tag Name="Tier" Value="7"/>
     <part Name="Physics" Weight="12" Category="工具"/>
@@ -10638,49 +10638,49 @@
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Grit Gate Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{c|砂砾之门}} 弹射器" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{c|砂砾之门}}弹射器" DetailColor="C"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.22.14.1.0.13" DestinationX="37" DestinationY="23"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="35"/>
     <tag Name="Tier" Value="3"/>
   </object>
   <object Name="Golgotha Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{g|戈耳贡塔}} 弹射器"/>
+    <part Name="Render" DisplayName="{{g|戈耳贡塔}}弹射器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.23.9.1.1.10" DestinationX="38" DestinationY="9"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="45"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Kyakukya Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{R|卡尤库亚}} 反冲器"/>
+    <part Name="Render" DisplayName="{{R|卡尤库亚}}反冲器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.27.20.1.1.10" DestinationX="32" DestinationY="15"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="45"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Six Day Stilt Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{Y|六日高跷}} 弹射器"/>
+    <part Name="Render" DisplayName="{{Y|六日高跷}}弹射器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.5.2.1.2.10" DestinationX="38" DestinationY="12"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="80"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Bethesda Susa Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{C|贝塞斯达苏萨}} 反冲器"/>
+    <part Name="Render" DisplayName="{{C|贝塞斯达苏萨}}反冲器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.25.3.1.1.10" DestinationX="38" DestinationY="19"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="55"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Ezra Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{W|以斯拉}} 反冲器"/>
+    <part Name="Render" DisplayName="{{W|以斯拉}}反冲器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.53.4.0.0.10" DestinationX="40" DestinationY="18"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="65"/>
     <tag Name="Tier" Value="5"/>
   </object>
   <object Name="Yd Freehold Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{W|译文}} 退缩者"/>
+    <part Name="Render" DisplayName="{{W|译文}}退缩者"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.67.17.1.1.10" DestinationX="37" DestinationY="23"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="100"/>
@@ -11020,67 +11020,67 @@
     <stag Name="Figurine"/>
   </object>
   <object Name="Random Copper Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{w|铜}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{w|铜}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
     <part Name="Commerce" Value="60"/>
     <part Name="RandomFigurine" Material="copper"/>
     <tag Name="Tier" Value="1"/>
   </object>
   <object Name="Rhinox figure" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{w|铜}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{w|铜}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
     <part Name="Commerce" Value="60"/>
     <part Name="RandomFigurine" Material="copper" Creature="Rhinox"/>
     <tag Name="Tier" Value="1"/>
   </object>
   <object Name="Random Silver Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{银色|银}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;Y" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{silvery|银}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;Y" RenderLayer="5"/>
     <part Name="Commerce" Value="100"/>
     <part Name="RandomFigurine" Material="silver"/>
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Random Gold Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{W|黄金}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{W|黄金}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
     <part Name="Commerce" Value="200"/>
     <part Name="RandomFigurine" Material="gold"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Random Agate Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{K|玛瑙}} 生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;K" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{K|玛瑙}}生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;K" RenderLayer="5"/>
     <part Name="Commerce" Value="100"/>
     <part Name="RandomFigurine" Material="agate"/>
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Random Topaz Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{W|黄玉}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{W|黄玉}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
     <part Name="Commerce" Value="150"/>
     <part Name="RandomFigurine" Material="topaz"/>
     <tag Name="Tier" Value="3"/>
   </object>
   <object Name="Random Jasper Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{R|红玉髓}} 生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;R" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{R|红玉髓}}生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;R" RenderLayer="5"/>
     <part Name="Commerce" Value="200"/>
     <part Name="RandomFigurine" Material="jasper"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Random Amethyst Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{M|紫水晶}} 生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;M" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{M|紫水晶}}生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;M" RenderLayer="5"/>
     <part Name="Commerce" Value="250"/>
     <part Name="RandomFigurine" Material="amethyst"/>
     <tag Name="Tier" Value="5"/>
   </object>
   <object Name="Random Sapphire Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{B|蓝宝石}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;B" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{B|蓝宝石}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;B" RenderLayer="5"/>
     <part Name="Commerce" Value="300"/>
     <part Name="RandomFigurine" Material="sapphire"/>
     <tag Name="Tier" Value="6"/>
   </object>
   <object Name="Random Emerald Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{G|翡翠}} {{|*生物*}} 小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{G|翡翠}}{{|*生物*}}小雕像" Tile="Items/sw_nugget.bmp" DetailColor="y" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
     <part Name="Commerce" Value="350"/>
     <part Name="RandomFigurine" Material="emerald"/>
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="Random Peridot Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{peridot|橄榄石}} 生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="W" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{peridot|橄榄石}}生物雕像" Tile="Items/sw_nugget.bmp" DetailColor="W" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
     <part Name="Commerce" Value="350"/>
     <part Name="RandomFigurine" Material="peridot"/>
     <tag Name="Tier" Value="7"/>
@@ -11576,7 +11576,7 @@
     <part Name="Commerce" Value="500"/>
   </object>
   <object Name="Copper Trollking Key" Inherits="Security Card">
-    <part Name="Render" DisplayName="{{w|青铜}} 钥匙" RenderString="-" ColorString="&amp;w" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp"/>
+    <part Name="Render" DisplayName="{{w|青铜}}钥匙" RenderString="-" ColorString="&amp;w" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp"/>
     <part Name="Commerce" Value="50"/>
     <stat Name="AV" Value="25"/>
     <stat Name="Hitpoints" Value="300"/>
@@ -11592,7 +11592,7 @@
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="Gold Trollking Key" Inherits="Security Card">
-    <part Name="Render" DisplayName="{{W|黄金}} 钥匙" RenderString="-" ColorString="&amp;W" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp"/>
+    <part Name="Render" DisplayName="{{W|黄金}}钥匙" RenderString="-" ColorString="&amp;W" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp"/>
     <part Name="Commerce" Value="200"/>
     <stat Name="AV" Value="25"/>
     <stat Name="Hitpoints" Value="300"/>
@@ -11600,7 +11600,7 @@
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="BarathrumKey" Inherits="Security Card">
-    <part Name="Render" DisplayName="{{c|铬}} 钥匙" ColorString="&amp;C" Tile="Items/sw_key.bmp"/>
+    <part Name="Render" DisplayName="{{c|铬}}钥匙" ColorString="&amp;C" Tile="Items/sw_key.bmp"/>
     <part Name="Commerce" Value="50"/>
     <stat Name="AV" Value="25"/>
     <stat Name="Hitpoints" Value="300"/>
@@ -11609,14 +11609,14 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="GritGateGridKey" Inherits="Security Card">
-    <part Name="Render" DisplayName="{{c|铬}} 安全卡" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{c|铬}}安全卡" ColorString="&amp;C"/>
     <part Name="Commerce" Value="50"/>
     <part Name="Description" Short="一种编码的纸金属矩形，可以滑入锁机制中打开某些类型的门。"/>
     <tag Name="NoSparkingQuest"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="CrystalKey" Inherits="Security Card">
-    <part Name="Render" DisplayName="{{m|水晶}} 钥匙" ColorString="&amp;m" DetailColor="y" Tile="Items/sw_key.bmp"/>
+    <part Name="Render" DisplayName="{{m|水晶}}钥匙" ColorString="&amp;m" DetailColor="y" Tile="Items/sw_key.bmp"/>
     <part Name="Description" Short="水晶上的齿状缺陷是秘密钥匙的咬痕。"/>
     <part Name="Commerce" Value="50"/>
     <stat Name="AV" Value="25"/>
@@ -11800,13 +11800,13 @@
     <stag Name="Scrap"/>
   </object>
   <object Name="Argyve's Data Disk Encoded" Inherits="Argyve's Data Disk">
-    <part Name="Render" DisplayName="{{Y|刻印数据盘}} [带有{{m|Q女孩的}}指令编码]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{Y|刻印数据盘}}[带有{{m|Q女孩的}}指令编码]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5"/>
   </object>
   <object Name="ClimberBlueprints" Inherits="Argyve's Data Disk">
-    <part Name="Render" DisplayName="{{Y|译文}} 蓝图" ColorString="&amp;Y" RenderString="004" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{Y|{{m|Q Girl}}登山者设计蓝图}}" ColorString="&amp;Y" RenderString="004" RenderLayer="5"/>
   </object>
   <object Name="Decrypted Signal Data Disk" Inherits="Argyve's Data Disk">
-    <part Name="Render" DisplayName="{{Y|刻印数据盘}} [带有 {{C|信号}} 编码]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{Y|刻印数据盘}}[带有{{C|信号}}编码]" Tile="items/sw_data_disc.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="004" RenderLayer="5"/>
   </object>
   <object Name="Scrapped Waydroid" Inherits="Item">
     <part Name="Physics" Category="任务物品"/>

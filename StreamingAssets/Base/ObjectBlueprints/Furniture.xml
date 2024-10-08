@@ -1046,7 +1046,7 @@
   <!-- Grid-enabled tech furniture, Tier 1 -->
   <!-- Grid-enabled tech furniture, Tier 2 -->
   <object Name="Wooden Wind Turbine" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="{{w|木质}} 风力涡轮机" ColorString="&amp;w" DetailColor="y" RenderString="21" Tile="Items/sw_windmill_1.bmp" Occluding="false" RenderIfDark="true"/>
+    <part Name="Render" DisplayName="{{w|木质}}风力涡轮机" ColorString="&amp;w" DetailColor="y" RenderString="21" Tile="Items/sw_windmill_1.bmp" Occluding="false" RenderIfDark="true"/>
     <part Name="Physics" Organic="true" Weight="1000"/>
     <part Name="Description" Short="帆布固定在腌制过的木质臂上，随风歌旋转，带动中央轴。
 "/>
@@ -1117,7 +1117,7 @@
 		<stag Name="Contemporary"/>
   </object>
   <object Name="Wooden Water Wheel" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="{{w|木质}} 水车" ColorString="&amp;w" DetailColor="y" RenderString="21" Tile="Items/sw_waterwheel_1.bmp" Occluding="false" RenderIfDark="true"/>
+    <part Name="Render" DisplayName="{{w|木质}}水车" ColorString="&amp;w" DetailColor="y" RenderString="21" Tile="Items/sw_waterwheel_1.bmp" Occluding="false" RenderIfDark="true"/>
     <part Name="Physics" Organic="true" Weight="600"/>
     <part Name="Description" Short="被湿腐染黑的木桨捕捉到潺潺小溪的力量，使水车缓缓转动，仿佛经历了数个世纪。
 "/>
@@ -1306,7 +1306,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Clockthing_QGirl" Inherits="Clockthing">
-    <part Name="Render" DisplayName="巴拉瑟姆钟（带有{{M|Q女孩}} {{Y|摆锤}}）" ColorString="&amp;c"/>
+    <part Name="Render" DisplayName="巴拉瑟姆钟（带有{{M|Q女孩}}{{Y|摆锤}}）" ColorString="&amp;c"/>
     <part Name="Physics" Weight="18" Takeable="true"/>
     <part Name="Description" Short="Q女孩用一个摆锤替换了这台巴拉瑟姆钟的老式振荡器。
 现在，时间每天从观察者那里偷走的几个小时被减少到了几分钟。
@@ -1456,7 +1456,7 @@
     <stag Name="DeepHydraulicPowerConsumer"/>
   </object>
   <!--<object Name="Combustion Turbine" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{K|combustion}} {{c|turbine}}" ColorString="&amp;c" DetailColor="K" RenderString="158" Tile="Items/sw_combustion_turbine.png" />
+    <part Name="Render" DisplayName="{{K|combustion}}{{c|turbine}}" ColorString="&amp;c" DetailColor="K" RenderString="158" Tile="Items/sw_combustion_turbine.png" />
     <part Name="Description" Short="A massive, stationary metal fuel tank and engine with heavy-duty power conduits." />
     <part Name="Commerce" Value="1200" />
     <part Name="LiquidFueledPowerPlant" Liquid="oil" ChargePerDram="1000" ChargeRate="1500" />
@@ -1519,7 +1519,7 @@
 
   <!-- Grid-enabled tech furniture, Tier 4 -->
   <object Name="Solar Power Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{W|太阳能}} 发电站" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="157" Tile="Items/sw_solar_power_station.png"/>
+    <part Name="Render" DisplayName="{{W|太阳能}}发电站" ColorString="&amp;K" TileColor="&amp;c" DetailColor="K" RenderString="157" Tile="Items/sw_solar_power_station.png"/>
     <part Name="Description" Short="光伏板排列在两个插槽状的新月形结构上。
 它们旋转以获得最佳范围，并将太阳能传递给真空封装的飞轮。
 "/>
@@ -1548,7 +1548,7 @@
 		<stag Name="Historical"/>
   </object>
   <object Name="Solar Pumping Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{W|太阳能}} {{c|泵站}}" ColorString="&amp;K" TileColor="&amp;K" DetailColor="C" RenderString="232" Tile="Items/sw_solar_pumping_station.bmp"/>
+    <part Name="Render" DisplayName="{{W|太阳能}}{{c|泵站}}" ColorString="&amp;K" TileColor="&amp;K" DetailColor="C" RenderString="232" Tile="Items/sw_solar_pumping_station.bmp"/>
     <part Name="Description" Short="光子板捕捉到的阳光热量被用于推动水通过管道进行分配。
 "/>
     <part Name="SolarArray" ChargeRate="10"/>
@@ -1654,7 +1654,7 @@
     <stag Name="Charging"/>
   </object>
   <object Name="Hydraulic Turbine" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{B|液压}} 涡轮机" ColorString="&amp;c" DetailColor="B" RenderString="158" Tile="Items/sw_thermoelectric_turbine.png"/>
+    <part Name="Render" DisplayName="{{B|液压}}涡轮机" ColorString="&amp;c" DetailColor="B" RenderString="158" Tile="Items/sw_thermoelectric_turbine.png"/>
     <part Name="Description" Short="完美切割的铬合金转子沿发电机轴堆叠，宽大的鳍片叶片捕捉流体推力并旋转发电线圈。
 "/>
     <part Name="Physics" Weight="6000"/>
@@ -2047,7 +2047,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Fusion Power Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{C|聚变}} 发电站" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="232" Tile="Items/sw_fusion_power_station.png"/>
+    <part Name="Render" DisplayName="{{C|聚变}}发电站" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="232" Tile="Items/sw_fusion_power_station.png"/>
     <part Name="Description" Short="微小的物质碎片在铬合金圆柱的月牙形内部被撞击融合，产生的热量用于向下输送电力。
 "/>
     <part Name="FusionReactor" ChargeRate="1000"/>
@@ -2091,7 +2091,7 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Fusion Pumping Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{C|聚变}} 泵站" ColorString="&amp;c" DetailColor="C" RenderString="232" Tile="Items/sw_fusion_pumping_station.bmp"/>
+    <part Name="Render" DisplayName="{{C|聚变}}泵站" ColorString="&amp;c" DetailColor="C" RenderString="232" Tile="Items/sw_fusion_pumping_station.bmp"/>
     <part Name="Description" Short="微小的物质在玻璃圆柱的弯月形后被粉碎，产生的热量用于将水泵入管道进行分配。
 "/>
     <part Name="FusionReactor" ChargeRate="1000"/>
@@ -2211,7 +2211,7 @@
   </object>
   <!--
   <object Name="Solar Broadcast Power Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{W|solar}} {{c|broadcast power station}}" ColorString="&amp;c" DetailColor="K" RenderString="157" Tile="Items/sw_solar_broadcast_power_station.png" />
+    <part Name="Render" DisplayName="{{W|solar}}{{c|broadcast power station}}" ColorString="&amp;c" DetailColor="K" RenderString="157" Tile="Items/sw_solar_broadcast_power_station.png" />
     <part Name="Description" Short="A cylindrical installation bearing curved photovoltaic arrays and spiraling transmission vanes. It collects the sun's energy, stores it in a frictionless flywheel, and retransmits it as broadcast power." />
     <part Name="SolarArray" ChargeRate="10" />
     <part Name="Flywheel" Charge="10000" MaxCharge="10000" ChargeRate="10" StartCharge="0-10000" />
@@ -2236,7 +2236,7 @@
     <stag Name="SurfaceBroadcastPower" />
   </object>-->
   <!--<object Name="Thermoelectric Turbine" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{R|thermoelectric}} {{c|turbine}}" ColorString="&amp;c" DetailColor="R" RenderString="158" Tile="Items/sw_thermoelectric_turbine.png" />
+    <part Name="Render" DisplayName="{{R|thermoelectric}}{{c|turbine}}" ColorString="&amp;c" DetailColor="R" RenderString="158" Tile="Items/sw_thermoelectric_turbine.png" />
     <part Name="Description" Short="A massive, stationary metal containment tank and engine with heavy-duty power conduits." />
     <part Name="Commerce" Value="1500" />
     <part Name="LiquidFueledPowerPlant" Liquid="lava" ChargePerDram="5000" ChargeRate="2500" />
@@ -2320,7 +2320,7 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <!--<object Name="Biodynamic Turbine" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{r|biodynamic}} {{c|turbine}}" ColorString="&amp;c" DetailColor="r" RenderString="158" Tile="Items/sw_biodynamic_turbine.png" />
+    <part Name="Render" DisplayName="{{r|biodynamic}}{{c|turbine}}" ColorString="&amp;c" DetailColor="r" RenderString="158" Tile="Items/sw_biodynamic_turbine.png" />
     <part Name="Description" Short="A massive, stationary metal storage tank and engine with heavy-duty power conduits." />
     <part Name="Commerce" Value="1800" />
     <part Name="LiquidFueledPowerPlant" Liquid="blood" ChargePerDram="7500" ChargeRate="3000" />
@@ -2350,7 +2350,7 @@
     <stag Name="DeepElectricalPower" />
   </object>-->
   <!--<object Name="Broadcast Power Plant" Inherits="Plant">
-    <part Name="Render" DisplayName="{{c|broadcast power}} {{leafy|plant}}" RenderString="244" ColorString="&amp;c" DetailColor="G" Tile="Tiles/sw_broadcast_power_plant.png" Occluding="false" />
+    <part Name="Render" DisplayName="{{c|broadcast power}}{{leafy|plant}}" RenderString="244" ColorString="&amp;c" DetailColor="G" Tile="Tiles/sw_broadcast_power_plant.png" Occluding="false" />
     <part Name="Harvestable" OnSuccess="Scrap Energy" OnSuccessAmount="1" StartRipeChance="1:10" RipeColor="&amp;C" RipeDetailColor="G" UnripeColor="&amp;c" UnripeDetailColor="G" />
     <part Name="Description" Short="Curvilinear metallic striations in this biosculpted plant's photovoltaic leaves send the energy it collects from the sun back out again as broadcast power." />
     <part Name="SolarArray" ChargeRate="5" IsEMPSensitive="false" IsBioScannable="true" />
@@ -2372,7 +2372,7 @@
     <stag Name="SurfaceBroadcastPower" />
   </object>-->
   <!--<object Name="Fusion Broadcast Power Station" Inherits="SolidHighTechInstallation">
-    <part Name="Render" DisplayName="{{C|fusion}} {{c|broadcast power station}}" ColorString="&amp;c" DetailColor="C" RenderString="157" Tile="Items/sw_fusion_broadcast_power_station.png" />
+    <part Name="Render" DisplayName="{{C|fusion}}{{c|broadcast power station}}" ColorString="&amp;c" DetailColor="C" RenderString="157" Tile="Items/sw_fusion_broadcast_power_station.png" />
     <part Name="Description" Short="A cylindrical installation bearing spiraling transmission vanes. It retransmits the energy of the fusion reactor in its heart as broadcast power." />
     <part Name="FusionReactor" ChargeRate="1000" />
     <part Name="Circuitry" StartCharge="1000" />
@@ -3556,7 +3556,7 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Gravchair" Inherits="BaseChair">
-    <part Name="Render" DisplayName="{{K|重力}} 椅" ColorString="&amp;C" DetailColor="c" Tile="Items/sw_chair_grav.bmp"/>
+    <part Name="Render" DisplayName="{{K|重力}}椅" ColorString="&amp;C" DetailColor="c" Tile="Items/sw_chair_grav.bmp"/>
     <part Name="Physics" Organic="false" Weight="80"/>
     <part Name="Description" Short="塑料在热车床上平滑后，被塑造成一种设计，唤起了吞噬者对完美球体如何扭曲周围时空的直觉。
 "/>
@@ -5984,7 +5984,7 @@
 "/>
     <part Name="HologramMaterial"/>
     <part Name="HologramInvulnerability"/>
-    <part Name="Chat" Says="[Shekhinah turns toward you, His arms wide.]"/>
+    <part Name="Chat" Says="[Shekhinah 转向你，张开双臂。]"/>
 		<part Name="Shrine"/>
 		<part Name="SmartuseTwiddles"/>
 		<tag Name="IgnoresGravity"/>
@@ -6124,7 +6124,7 @@
     <part Name="Render" RenderString="=" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r"/>
     <part Name="Description" Short="一块陶土板上涂有赭石和研磨铁粉。
 "/>
-    <part Name="Chat" Says="[indistinct scribbling.]" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="[模糊的潦草字迹。]" ShowInShortDescription="true"/>
     <tag Name="NoSparkingQuest"/>
 		<part Name="SmartuseLooks"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
@@ -6136,305 +6136,305 @@
   <!-- Merchant signs -->
   <object Name="AppleSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_apple.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Starapples and Cider" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="星苹果和苹果酒" ShowInShortDescription="true"/>
   </object>
   <object Name="AppleSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_apple.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Spiced Cider" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="五香苹果酒" ShowInShortDescription="true"/>
   </object>
   <object Name="AppleSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_apple.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Apples. Yum." ShowInShortDescription="true"/>
+    <part Name="Chat" Says="苹果。嗯。" ShowInShortDescription="true"/>
   </object>
   <object Name="BookSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_book.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Books" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="图书" ShowInShortDescription="true"/>
   </object>
   <object Name="BookSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_book.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Wisdom and Knowledge" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="智慧与知识" ShowInShortDescription="true"/>
   </object>
   <object Name="BookSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_book.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Inkblots" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="墨迹" ShowInShortDescription="true"/>
   </object>
   <object Name="BottleSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_honey_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Sweet Honey" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="甜甜的蜂蜜" ShowInShortDescription="true"/>
   </object>
   <object Name="BottleSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_honey_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Beejuice" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="蜂汁" ShowInShortDescription="true"/>
   </object>
   <object Name="BottleSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_honey_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Sticky Honey" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="粘蜂蜜" ShowInShortDescription="true"/>
   </object>
   <object Name="BootSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_boot.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Boots Here!" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="靴子在这里！" ShowInShortDescription="true"/>
   </object>
   <object Name="BootSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_boot.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Boot and Shoe" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="靴子和鞋子" ShowInShortDescription="true"/>
   </object>
   <object Name="BootSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_boot.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Shoemaker" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="鞋匠" ShowInShortDescription="true"/>
   </object>
   <object Name="HatSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_hat.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Hats and Caps" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="帽子" ShowInShortDescription="true"/>
   </object>
   <object Name="HatSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_hat.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Cover Your Frail Heads" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="遮住你脆弱的头" ShowInShortDescription="true"/>
   </object>
   <object Name="HatSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_hat.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Stylish Hats" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="时尚帽子" ShowInShortDescription="true"/>
   </object>
   <object Name="GloveSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_glove.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Gloves and Mittens" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="手套和连指手套" ShowInShortDescription="true"/>
   </object>
   <object Name="GloveSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_glove.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Fingercoats" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="指套" ShowInShortDescription="true"/>
   </object>
   <object Name="GloveSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_glove.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Wear Gloves Now" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="现在戴手套" ShowInShortDescription="true"/>
   </object>
   <object Name="CloakSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_cloak.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Cloaks and Capes" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="斗篷和斗篷" ShowInShortDescription="true"/>
   </object>
   <object Name="CloakSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_cloak.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Shawls, Mantles, and More" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="披肩、斗篷等" ShowInShortDescription="true"/>
   </object>
   <object Name="CloakSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_cloak.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Stylish Cloaks" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="时尚斗篷" ShowInShortDescription="true"/>
   </object>
   <object Name="ArmorSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_body.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Vests and Mail" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="背心和邮件" ShowInShortDescription="true"/>
   </object>
   <object Name="ArmorSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_body.bmp" Occluding="false"/>
-    <part Name="Chat" Says="All Sorts of Armor" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="各种盔甲" ShowInShortDescription="true"/>
   </object>
   <object Name="ArmorSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_body.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Chestpieces" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="胸甲" ShowInShortDescription="true"/>
   </object>
   <object Name="GunSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gun.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Guns and Ammo" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="枪支和弹药" ShowInShortDescription="true"/>
   </object>
   <object Name="GunSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gun.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Pistols, Rifles, and More" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="手枪、步枪等" ShowInShortDescription="true"/>
   </object>
   <object Name="GunSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gun.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Guns!" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="枪！" ShowInShortDescription="true"/>
   </object>
   <object Name="DiscSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_datadisc.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Data Disks" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="数据盘" ShowInShortDescription="true"/>
   </object>
   <object Name="DiscSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_datadisc.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Schematics" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="原理图" ShowInShortDescription="true"/>
   </object>
   <object Name="DiscSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_datadisc.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Build Your Own Artifacts" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="构建你自己的工件" ShowInShortDescription="true"/>
   </object>
   <object Name="LiquidSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_liquid.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Exotic Liquids" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="奇异液体" ShowInShortDescription="true"/>
   </object>
   <object Name="LiquidSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_liquid.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Exotic Liquids" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="奇异液体" ShowInShortDescription="true"/>
   </object>
   <object Name="LiquidSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_liquid.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Exotic Liquids" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="奇异液体" ShowInShortDescription="true"/>
   </object>
   <object Name="JewelSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_jeweler.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Jewels and Jewelry" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="珠宝与珠宝" ShowInShortDescription="true"/>
   </object>
   <object Name="JewelSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_jeweler.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Bejeweled Wares" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="宝石迷阵" ShowInShortDescription="true"/>
   </object>
   <object Name="JewelSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_jeweler.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Gemstones and Jewelry" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="宝石和珠宝" ShowInShortDescription="true"/>
   </object>
   <object Name="HookahSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_hookah_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Mint Smoke and Wine" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="薄荷烟与酒" ShowInShortDescription="true"/>
   </object>
   <object Name="HookahSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_hookah_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Waterpipe and Rest" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="水烟和休息" ShowInShortDescription="true"/>
   </object>
   <object Name="HookahSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_hookah_sign.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Smoke Lounge" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="烟酒廊" ShowInShortDescription="true"/>
   </object>
   <object Name="GrenadeSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bombs.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Explosives" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="炸药" ShowInShortDescription="true"/>
   </object>
   <object Name="GrenadeSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bombs.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Boomspheres" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="繁荣球" ShowInShortDescription="true"/>
   </object>
   <object Name="GrenadeSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bombs.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Grenades and More" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="手榴弹及更多" ShowInShortDescription="true"/>
   </object>
   <object Name="PepperSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Apothecary" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="药剂师" ShowInShortDescription="true"/>
   </object>
   <object Name="PepperSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Herbs and Tonics" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="草药和补品" ShowInShortDescription="true"/>
   </object>
   <object Name="PepperSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Simples" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="简单的" ShowInShortDescription="true"/>
   </object>
   <object Name="FoodSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Foodstuffs" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="食品" ShowInShortDescription="true"/>
   </object>
   <object Name="FoodSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Sweet and Savory" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="香甜可口" ShowInShortDescription="true"/>
   </object>
   <object Name="FoodSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Spicy Foods" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="辛辣食物" ShowInShortDescription="true"/>
   </object>
   <object Name="PreserveSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bottle.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Preserved Foods" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="腌制食品" ShowInShortDescription="true"/>
   </object>
   <object Name="PreserveSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bottle.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Foods and Spices" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="食品和香料" ShowInShortDescription="true"/>
   </object>
   <object Name="PreserveSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_bottle.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Cooking Preparation" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="烹饪准备" ShowInShortDescription="true"/>
   </object>
   <object Name="PigSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pig.bmp" Occluding="false"/>
-    <part Name="Chat" Says="[indistinct scribbling.]" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="[模糊的潦草字迹。]" ShowInShortDescription="true"/>
   </object>
   <object Name="WineSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_wine.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Wine" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="葡萄酒" ShowInShortDescription="true"/>
   </object>
   <object Name="WineSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_wine.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Grapewitch Brew" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="葡萄女巫啤酒" ShowInShortDescription="true"/>
   </object>
   <object Name="WineSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_wine.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Winemaker" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="酿酒师" ShowInShortDescription="true"/>
   </object>
   <object Name="ImplantSign1" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gutsmonger.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Cybernetics" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="赛博插件" ShowInShortDescription="true"/>
   </object>
   <object Name="ImplantSign2" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gutsmonger.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Chrome Guts" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="铬胆量" ShowInShortDescription="true"/>
   </object>
   <object Name="ImplantSign3" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gutsmonger.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Organs for Machine and Folk" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="机器和民谣管风琴" ShowInShortDescription="true"/>
   </object>
 
   <!-- Village signs -->
   <object Name="ArgyveSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_datadisc.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Go Away" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="离开" ShowInShortDescription="true"/>
   </object>
   <object Name="JoppaNorthSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_graveyard.bmp" Occluding="false"/>
-    <part Name="Chat" Says="To graveyard and shrine" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="前往墓地和神社" ShowInShortDescription="true"/>
   </object>
   <object Name="EzraSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_west.bmp" Occluding="false"/>
-    <part Name="Chat" Says=" To Ezra" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="致以斯拉" ShowInShortDescription="true"/>
   </object>
   <object Name="TamSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_goods.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Salt Sundries" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="盐杂货" ShowInShortDescription="true"/>
   </object>
   <object Name="YurlSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_sword.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Fine Wares from the Consortium of Phyta" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="Phyta 联盟的精品" ShowInShortDescription="true"/>
   </object>
   <object Name="YlaSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_datadisc.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Omonporch Gadget Repair" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="Omonporch 小工具维修" ShowInShortDescription="true"/>
   </object>
   <object Name="SixshrewSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_goods.bmp" Occluding="false"/>
-    <part Name="Chat" Says="Consortium Tradepost" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="贸易邮政联盟" ShowInShortDescription="true"/>
   </object>
   <object Name="JoppaMillSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Common Mill" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="普通磨坊" ShowInShortDescription="true"/>
   </object>
   <object Name="YdColumbariumSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_urn.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Columbarium" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="骨灰安置所" ShowInShortDescription="true"/>
   </object>
   <object Name="YdLivingQuartersSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_living_quarters.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Living Quarters" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="宿舍" ShowInShortDescription="true"/>
   </object>
   <object Name="YdMedicalSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_medical.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Convalescence" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="恢复期" ShowInShortDescription="true"/>
   </object>
   <object Name="YdKitchenSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_pepper.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Kitchen" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="厨房" ShowInShortDescription="true"/>
   </object>
   <object Name="YdLibrarySign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_book.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Library" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="图书馆" ShowInShortDescription="true"/>
   </object>
   <object Name="YdMarketSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_goods.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Market" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="市场" ShowInShortDescription="true"/>
   </object>
   <object Name="YdWorkshopSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_sign_gear.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Workshop" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="车间" ShowInShortDescription="true"/>
   </object>
   <object Name="YdManyEyesSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_eye_sign.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Many Eyes" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="许多眼睛" ShowInShortDescription="true"/>
   </object>
   <object Name="YdSalonSign" Inherits="Sign">
     <part Name="Render" DisplayName="标志牌" Tile="Items/sw_hookah_sign.bmp" RenderString="=" ColorString="&amp;y" DetailColor="r" Occluding="false"/>
-    <part Name="Chat" Says="Salon" ShowInShortDescription="true"/>
+    <part Name="Chat" Says="沙龙" ShowInShortDescription="true"/>
   </object>
 
   <!-- Crypt plaques -->
