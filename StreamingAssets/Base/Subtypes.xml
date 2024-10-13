@@ -2,7 +2,7 @@
 <!--种族职业选择-->
 <subtypes>
 
-  <class ID="Castes" ChargenTitle="选择种族" SingularTitle="caste" StatBoxDisplay="true">
+  <class ID="Castes" ChargenTitle="选择种族" SingularTitle="种族" StatBoxDisplay="true">
 
     <category Name="Ekuemekiyye" DisplayName="{{G|圣城埃克米的毒树}}">
 
@@ -177,7 +177,7 @@
 
   </class>
 
-  <class ID="Callings" ChargenTitle="选择职业" SingularTitle="calling">
+  <class ID="Callings" ChargenTitle="选择职业" SingularTitle="职业">
 
     <subtype Name="传教士" Gear="StartingGear_Apostle" Tile="creatures/caste_13.bmp" DetailColor="m">
       <stat Name="Ego" Bonus="2" />

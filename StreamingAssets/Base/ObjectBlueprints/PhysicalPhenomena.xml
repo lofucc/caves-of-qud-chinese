@@ -55,8 +55,8 @@
   -->
   
   <object Name="Water" Inherits="Object">
-    <part Name="Render" DisplayName="液池" Tile="Liquids/Water/puddle_1.png" RenderString="~" ColorString="&amp;b" RenderLayer="2" RenderIfDark="true"/>
-    <part Name="LiquidVolume" MaxVolume="-1" Volume="0" InitialLiquid="" NamePreposition="of"/>
+    <part Name="Render" DisplayName="池子" Tile="Liquids/Water/puddle_1.png" RenderString="~" ColorString="&amp;b" RenderLayer="2" RenderIfDark="true"/>
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="0" InitialLiquid="" NamePreposition="的"/>
     <part Name="Physics" Category="Liquids" Takeable="false" FreezeTemperature="0" Weight="0" BrittleTemperature="-100" FlameTemperature="99999" VaporTemperature="100"/>
     <part Name="Inorganic"/>
     <part Name="MentalShield"/>

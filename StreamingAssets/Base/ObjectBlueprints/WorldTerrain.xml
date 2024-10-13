@@ -1,0 +1,1271 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<objects>
+
+  <!--    
+    1 Regions
+    2 Locations
+    3 Multi-tile water features
+    4 Dimensions
+    5 Historic site templates
+  -->
+
+  <object Name="Terrain" Inherits="Object">
+    <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999" Weight="1" Solid="false" IsReal="true" Takeable="false"/>
+    <part Name="Render" Occluding="false" DisplayName="[地形]" RenderString="?" RenderLayer="1" RenderIfDark="true"/>
+    <part Name="TerrainTravel" Segments="1000"/>
+    <part Name="TerrainNotes"/>
+    <xtagGrammar massNoun="true"/>
+    <tag Name="NoSparkingQuest"/>
+    <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="ExcludeFromDynamicEncounters"/>
+		<tag Name="IncludeInDynamicSemanticTables"/>
+    <tag Name="NoDamageReadout"/>
+    <tag Name="Immutable"/>
+  </object>
+
+  <!--
+
+    *************
+       Regions
+    *************
+
+  -->
+  
+  <object Name="TerrainDesertCanyon" Inherits="Terrain">
+    <part Name="Render" DisplayName="沙漠峡谷" RenderString="239" ColorString="&amp;w^k" Tile="Terrain/sw_canyon.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival"/>.
+    <part Name="Description" Short="很久以前，河流本身是贪婪的，它们吞噬了页岩和石灰石，然后在大盐海中饱食休息。如今，这些裂痕般的伤口已腐烂成猩红和盐晶。"/>
+    <tag Name="Gender" Value="plural"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_DesertCanyon"/>
+    <tag Name="Terrain" Value="DesertCanyon"/>
+    <tag Name="RegionTier" Value="1"/>
+		<stag Name="Geological"/>
+		<tag Name="AggregateWith" Value="DesertCanyon"/>
+  </object>
+  <object Name="TerrainDesertCanyon2" Inherits="TerrainDesertCanyon">
+    <part Name="Render" DisplayName="沙漠峡谷" RenderString="110" ColorString="&amp;w^k" Tile="Terrain/sw_hills2.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival"/>.
+    <part Name="Description" Short="很久以前，河流本身是贪婪的，它们吞噬了页岩和石灰石，然后在大盐海中饱食休息。如今，这些裂痕般的伤口已腐烂成猩红和盐晶。"/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainDesertCanyon3" Inherits="TerrainDesertCanyon">
+    <part Name="Render" DisplayName="沙漠峡谷" RenderString="239" ColorString="&amp;w^k" Tile="Terrain/sw_canyon.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival"/>.
+    <part Name="Description" Short="很久以前，河流本身是贪婪的，它们吞噬了页岩和石灰石，然后在大盐海中饱食休息。如今，这些裂痕般的伤口已腐烂成猩红和盐晶。"/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainDesertCanyon4" Inherits="TerrainDesertCanyon">
+    <part Name="Render" DisplayName="沙漠峡谷" RenderString="110" ColorString="&amp;w^k" Tile="Terrain/sw_hills2.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_DesertCanyonSurvival"/>.
+    <part Name="Description" Short="很久以前，河流本身是贪婪的，它们吞噬了页岩和石灰石，然后在大盐海中饱食休息。如今，这些裂痕般的伤口已腐烂成猩红和盐晶。"/>
+    <tag Name="Gender" Value="plural"/>
+  </object>
+  <object Name="TerrainSaltmarsh" Inherits="Terrain">
+    <part Name="Render" DisplayName="盐沼" RenderString="~" ColorString="&amp;g^k" Tile="terrain/tile_swamp1.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_SaltmarshSurvival"/>
+    <part Name="Description" Short="在停滞的池塘中，发光的百合花与夜空中星河的带状光芒竞相争艳。然而，在盐阳之下，它们却缩进了盐藻的阴影之中。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_marsh_worldmap_1.bmp,Terrain/sw_marsh_worldmap_2.bmp,Terrain/sw_marsh_worldmap_3.bmp,Terrain/sw_marsh_worldmap_4.bmp"/>
+    <part Name="RandomColors" DetailColor="b,g"/>
+    <tag Name="DungeonAttributes" Value="Marsh"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Saltmarsh"/>
+    <tag Name="Terrain" Value="Saltmarsh"/>
+    <tag Name="RegionTier" Value="0"/>
+  </object>
+  <object Name="TerrainSaltmarsh2" Inherits="TerrainSaltmarsh">
+    <part Name="Render" DisplayName="盐沼" RenderString="~" ColorString="&amp;g^k" Tile="terrain/tile_swamp1.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_SaltmarshSurvival"/>
+    <part Name="Description" Short="在停滞的池塘中，发光的百合花与夜空中星河的带状光芒竞相争艳。然而，在盐阳之下，它们却缩进了盐藻的阴影之中。"/>
+    <tag Name="DungeonAttributes" Value="Marsh"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+  </object>
+  <object Name="TerrainWatervine" Inherits="TerrainSaltmarsh">
+    <part Name="Render" DisplayName="盐沼" RenderString="244" ColorString="&amp;g^k" Tile="terrain/tile_swamp1.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_SaltmarshSurvival"/>
+    <part Name="Description" Short="在停滞的池塘中，发光的百合花与夜空中星河的带状光芒竞相争艳。然而，在盐阳之下，它们却缩进了盐藻的阴影之中。"/>
+    <tag Name="DungeonAttributes" Value="Marsh"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Watervine"/>
+    <tag Name="Terrain" Value="Saltmarsh"/>
+  </object>
+  <object Name="TerrainSaltdunes" Inherits="Terrain">
+    <part Name="Render" DisplayName="盐丘" RenderString="247" ColorString="&amp;Y^k" Tile="Terrain/sw_desert.bmp"/>
+    <part Name="TerrainTravel" Segments="2500" LostChance="10" TravelClass="Survival_SaltDesertSurvival"/>
+    <part Name="AnimatedMaterialSaltDunes"/>
+    <part Name="Description" Short="象牙海的沙丘如同凝固的波浪。地表被宝石般的太阳炙烤，盐地上裂开了缝隙。在这片广袤的莫格拉伊大盐漠上，地平线将天空与大地融为一体。"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="UnityPrefabImposterChance" Chance="10" PrefabID="Prefabs/Particles/DesertWinds"/>
+    <tag Name="DungeonAttributes" Value="Desert"/>
+    <tag Name="DefaultWall" Value="Halite"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Saltdunes"/>
+    <tag Name="Terrain" Value="Saltdunes"/>
+    <tag Name="RegionTier" Value="2"/>
+  </object>
+  <object Name="TerrainSaltdunes2" Inherits="TerrainSaltdunes">
+    <part Name="Render" DisplayName="盐丘" RenderString="~" ColorString="&amp;Y^k" Tile="Terrain/sw_plains.bmp"/>
+    <part Name="TerrainTravel" Segments="3000" LostChance="10" TravelClass="Survival_SaltDesertSurvival"/>
+    <part Name="AnimatedMaterialSaltDunes"/>
+    <part Name="Description" Short="象牙海的沙丘如同凝固的波浪。地表被宝石般的太阳炙烤，盐地上裂开了缝隙。在这片广袤的莫格拉伊大盐漠上，地平线将天空与大地融为一体。"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="UnityPrefabImposterChance" Chance="10" PrefabID="Prefabs/Particles/DesertWinds"/>
+    <tag Name="DungeonAttributes" Value="Desert"/>
+    <tag Name="DefaultWall" Value="Halite"/>
+  </object>
+  <object Name="TerrainTremblezone" Inherits="TerrainSaltdunes">
+    <part Name="Render" DisplayName="盐丘" RenderString="247" ColorString="&amp;Y^k" Tile="Terrain/sw_desert.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_SaltDesertSurvival"/>
+    <part Name="AnimatedMaterialSaltDunes"/>
+    <part Name="Description" Short="象牙海的沙丘如同凝固的波浪。地表被宝石般的太阳炙烤，盐地上裂开了缝隙。在这片广袤的莫格拉伊大盐漠上，地平线将天空与大地融为一体。"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/DesertWinds"/>
+  </object>
+  <object Name="TerrainFlowerfields" Inherits="Terrain">
+    <part Name="Render" DisplayName="花田" RenderString="'" ColorString="&amp;C^k" DetailColor="g" Tile="Terrain/tile_flowers2.bmp"/>
+    <part Name="TerrainTravel" Segments="1000" TravelClass="Survival_PlainsSurvival"/>
+    <part Name="Description" Short="棱彩丝线在盐化的腐土裂隙间蔓延。她曾说，这里曾是草原。"/>
+    <part Name="RandomFlower"/>
+    <tag Name="Gender" Value="plural"/>
+    <tag Name="DefaultWall" Value="Sandstone"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Flowerfields"/>
+    <tag Name="Terrain" Value="Flowerfields"/>
+    <tag Name="RegionTier" Value="2"/>
+  </object>
+  <object Name="TerrainJungle" Inherits="Terrain">
+    <part Name="Render" DisplayName="丛林" RenderString="005" ColorString="&amp;G^k" Tile="Terrain/tile_jungleleft1.bmp" HFlip="false"/>
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_JungleSurvival"/>
+    <part Name="Description" Short="根须交织，蕨叶如带，赋予了平坦泥土以维度。一片被遗弃的叶子成为了某个生物的家园。"/>
+    <part Name="RandomJungle"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Jungle"/>
+    <tag Name="Terrain" Value="Jungle"/>
+    <tag Name="RegionTier" Value="3"/>
+  </object>
+  <object Name="TerrainDeepJungle" Inherits="Terrain">
+    <part Name="Render" DisplayName="深邃丛林" RenderString="005" ColorString="&amp;G^k" Tile="Terrain/tile_jungleleft1.bmp" HFlip="false"/>
+    <part Name="TerrainTravel" Segments="3000" TravelClass="Survival_JungleSurvival"/>
+    <part Name="Description" Short="茂盛的植物根系密布，形成迷宫般的网络，而高耸的树冠遮挡了最后一缕光线。"/>
+    <part Name="RandomDeepJungle"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_DeepJungle"/>
+    <tag Name="Terrain" Value="DeepJungle"/>
+    <tag Name="RuinWalls" Value="HighTierRegionRuinWalls"/>
+    <tag Name="RegionTier" Value="6"/>
+  </object>
+  <object Name="TerrainFungalBase" Inherits="Terrain">
+    <part Name="Render" DisplayName="彩虹林" RenderString="005" ColorString="&amp;O^k" Tile="Terrain/sw_mushroom_terrain1.bmp"/>
+    <part Name="RandomRenderString" Strings="005,006"/>
+    <part Name="TerrainTravel" Segments="2500"/>
+    <part Name="Description" Short="孢子在旋涡中舞动，跨越多彩的菌盖。原始汤河在熔岩的光芒下潺潺流淌，奏出加速的旋律。"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_worldmap_rainbowwood_1.bmp,Terrain/sw_worldmap_rainbowwood_2.bmp,Terrain/sw_worldmap_rainbowwood_3.bmp,Terrain/sw_worldmap_rainbowwood_4.bmp"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="DefaultWall" Value="Quartzite"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Fungal"/>
+    <tag Name="Terrain" Value="Fungal"/>
+    <!--<tag Name="VillageRegionalFarmPlantChance" Value="30" />-->
+    <tag Name="RegionTier" Value="5"/>
+    <intproperty Name="NavigationWeight" Value="5"/>
+    <tag Name="NoAutowalk"/>
+    <tag Name="VillageDefaultLiquid" Value="ProteanDeepPool"/>
+    <tag Name="VillageClearBehavior" Value="circles:10"/>
+  </object>
+  <object Name="TerrainFungal" Inherits="TerrainFungalBase">
+    <part Name="TerrainTravelFungal"/>
+  </object>
+  <object Name="TerrainFungalOuter" Inherits="TerrainFungalBase">
+  </object>
+  <object Name="TerrainFungalCenter" Inherits="TerrainFungal">
+    <part Name="Render" Tile="Terrain/sw_worldmap_rainbowwood_center.bmp" ColorString="&amp;c" DetailColor="C"/>
+    <removebuilder Name="RandomTile"/>
+  </object>
+  <object Name="TerrainFungalR" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;r" DetailColor="R"/>
+  </object>
+  <object Name="TerrainFungalB" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;b" DetailColor="B"/>
+  </object>
+  <object Name="TerrainFungalG" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;g" DetailColor="G"/>
+  </object>
+  <object Name="TerrainFungalcG" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;c" DetailColor="G"/>
+  </object>
+  <object Name="TerrainFungalGw" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;G" DetailColor="w"/>
+  </object>
+  <object Name="TerrainFungalW" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;w" DetailColor="W"/>
+  </object>
+  <object Name="TerrainFungalM" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;m" DetailColor="M"/>
+  </object>
+  <object Name="TerrainFungalC" Inherits="TerrainFungal">
+    <part Name="Render" ColorString="&amp;c" DetailColor="C"/>
+  </object>
+  <object Name="TerrainFungalOuterR" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;r" DetailColor="R"/>
+  </object>
+  <object Name="TerrainFungalOuterB" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;b" DetailColor="B"/>
+  </object>
+  <object Name="TerrainFungalOuterG" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;g" DetailColor="G"/>
+  </object>
+  <object Name="TerrainFungalOutercG" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;c" DetailColor="G"/>
+  </object>
+  <object Name="TerrainFungalOuterGw" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;G" DetailColor="w"/>
+  </object>
+  <object Name="TerrainFungalOuterW" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;w" DetailColor="W"/>
+  </object>
+  <object Name="TerrainFungalOuterM" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;m" DetailColor="M"/>
+  </object>
+  <object Name="TerrainFungalOuterC" Inherits="TerrainFungalOuter">
+    <part Name="Render" ColorString="&amp;c" DetailColor="C"/>
+  </object>
+  <object Name="TerrainMoonStair" Inherits="Terrain">
+    <part Name="Render" DisplayName="月阶" RenderString="005" ColorString="&amp;y" DetailColor="M" Tile="Terrain/sw_moonstair_worldmap_1.bmp" HFlip="true"/>
+    <part Name="TerrainTravel" Segments="2000"/>
+    <part Name="Description" Short="六角棱柱从黑色大理石床中迸发而出，边缘在温暖的静电露水中逐渐消散。阶梯发出低频的轻鸣。"/>
+		<part Name="Physics" Solid="true"/>
+		<part Name="RandomRenderString" Strings="220,221,222,223"/>
+		<part Name="RandomWorldTile" Tiles="Terrain/sw_moonstair_c_worldmap_~1-8~.bmp" DoubleTiles="Terrain/sw_moonstair_c_worldmap_double_~1-2~_[DIR].bmp" DoubleChance="20"/>
+    <part Name="RandomColors" MainColor="K,y,m,M,m,K,y,M,m,M" DetailColor="y,Y,y,Y,y,y,Y,Y,y,Y" PairDetailWithForeground="true"/>    
+		<tag Name="IndefiniteArticle" Value=""/>
+		<tag Name="DefiniteArticle" Value=""/>
+		<xtagGrammar Proper="true" massNoun="false"/>
+		<tag Name="OverlandBlockMessage" Value="The Moon Stair's geometry is too disorienting to traverse via the world map. You'll have to find your way on the surface."/>
+		<tag Name="DefaultWall" Value="Black Marble"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_MoonStair"/>
+		<tag Name="RuinWalls" Value="HighTierRegionRuinWalls"/>
+    <tag Name="Terrain" Value="MoonStair"/>
+    <tag Name="RegionTier" Value="8"/>
+  </object>
+  <object Name="TerrainCraters" Inherits="Terrain">
+    <part Name="Render" DisplayName="陨石坑" RenderString="o" ColorString="&amp;y^k" Tile="Terrain/sw_craters1.bmp"/>
+    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival"/>.
+    <part Name="Description" Short="无"/>
+    <tag Name="DefaultWall" Value="Basalt"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Hills"/>
+    <tag Name="Terrain" Value="Hills"/>
+    <tag Name="RegionTier" Value="2"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="RandomCraters"/>
+  </object>
+  <object Name="RandomCrater" Inherits="Terrain">
+    <part Name="Render" DisplayName="陨石坑" RenderString="o" ColorString="&amp;y^k" Tile="Terrain/sw_craters1.bmp"/>
+    <part Name="Description" Short="无"/>
+    <tag Name="DefaultWall" Value="Basalt"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Hills"/>
+    <tag Name="Terrain" Value="Hills"/>
+    <tag Name="RegionTier" Value="2"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="RandomCrater"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_craters1.bmp,Terrain/sw_craters2.bmp,Terrain/sw_craters3.bmp,Terrain/sw_craters4.bmp"/>
+  </object>
+  <object Name="TerrainHills" Inherits="Terrain">
+    <part Name="Render" DisplayName="丘陵" RenderString="127" ColorString="&amp;y^k" Tile="Terrain/sw_hills.bmp"/>
+    <part Name="TerrainTravel" Segments="1500" TravelClass="Survival_MountainsSurvival"/>.
+    <part Name="Description" Short="时间波形图中的石质起伏"/>
+    <tag Name="DefaultWall" Value="Marl"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Hills"/>
+    <tag Name="Terrain" Value="Hills"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_hills.bmp,Terrain/sw_hills_2.bmp"/>
+    <tag Name="RegionTier" Value="2"/>
+    <tag Name="Gender" Value="plural"/>
+		<stag Name="Geological"/>
+		<tag Name="DynamicSemanticTable:Geological:Weight" Value="5"/>
+  </object>
+  <object Name="TerrainMountains" Inherits="Terrain">
+    <part Name="Physics" Solid="true"/>
+    <part Name="Render" DisplayName="山脉" RenderString="030" ColorString="&amp;Y^k" Tile="Terrain/sw_mountains.bmp"/>
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_MountainsSurvival"/>
+    <part Name="RandomWorldTile" Tiles="Terrain/sw_mountains.bmp,Terrain/sw_mountains_2.bmp" DoubleTiles="Terrain/tile_mountain[DIR]~#1-2~.bmp"/>
+    <part Name="Description" Short="在这片石浪图谱中，曾经板块相互争斗不休，如今却已归于平静。"/>
+    <tag Name="DefaultWall" Value="Limestone"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Mountains"/>
+    <tag Name="Terrain" Value="Mountains"/>
+    <tag Name="RegionTier" Value="4"/>
+    <tag Name="Gender" Value="plural"/>
+		<stag Name="Geological"/>
+		<tag Name="DynamicSemanticTable:Geological:Weight" Value="10"/>
+  </object>
+  <object Name="TerrainMountainsSpindleShadow" Inherits="TerrainMountains">
+    <part Name="Render" Tile="terrain/sw_spindle_top.bmp" RenderString="179" DetailColor="Y" ColorString="&amp;C^k"/>
+    <removepart Name="RandomWorldTile"/>
+		<stag Name="Geological" Value="*delete"/>
+  </object>
+  <object Name="TerrainBananaGrove" Inherits="Terrain">
+    <part Name="Render" DisplayName="香蕉林" RenderString="244" ColorString="&amp;W^k" DetailColor="g" Tile="Terrain/sw_ruins1.bmp"/>
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_JungleSurvival"/>
+    <part Name="Description" Short="这片林地的百万根交织手指在温柔的奢华中摇曳。翠绿的叶丛依偎在从山间凹处延伸出的纺锤底部。"/>
+    <tag Name="DefaultWall" Value="Oolite"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_BananaGrove"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_worldmap_musa_1.bmp,Terrain/sw_worldmap_musa_2.bmp,Terrain/sw_worldmap_musa_3.bmp"/>
+    <xtagGrammar massNoun="false"/>
+    <tag Name="Terrain" Value="BananaGrove"/>
+    <tag Name="RegionTier" Value="5"/>
+  </object>
+  <object Name="TerrainBananaGroveSpindleShadow" Inherits="TerrainBananaGrove">
+    <part Name="Render" Tile="terrain/sw_spindle_mid.bmp" RenderString="179" DetailColor="Y" ColorString="&amp;C^k"/>
+    <removebuilder Name="RandomTile"/>
+  </object>  
+  <object Name="TerrainWater" Inherits="Terrain">
+    <part Name="Render" DisplayName="水" Tile="Tiles/Tile-Water.png" RenderString="247" ColorString="&amp;B^b" TileColor="&amp;b" DetailColor="B"/>
+    <part Name="Description" Short="水"/>
+    <part Name="AnimatedMaterialOverlandWater" Rushing="true"/>
+    <tag Name="DefaultWall" Value="Gypsum"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Water"/>
+    <tag Name="Terrain" Value="Water"/>
+    <part Name="TerrainTravel" Segments="2500" TravelClass="Survival_RiversLakesSurvival"/>
+    <tag Name="RegionTier" Value="4"/>
+    <tag Name="VillageClearBehavior" Value="circles:10"/>
+  </object>
+  <object Name="TerrainRiverSvy" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="斯维河"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <part Name="Description" Short="斯维河从盐帽覆盖的山峰奔流而下，汇入藤蔓交织的沃土。河岸被巨人的铬合金遗骸所遮蔽。"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <tag Name="AlternateTerrainName" Value="RiverSvy"/>
+  </object>
+  <object Name="TerrainRiverOpal" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="河之欧泊"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <part Name="Description" Short="她的表面闪烁着水样的光芒，仿佛纺锤在水中舞动。她将破碎的花岗岩运过山口，送入她那叶丛密布的海湾。"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <tag Name="AlternateTerrainName" Value="RiverOpal"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="欧泊幽水"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar Proper="true"/>    
+    <part Name="Description" Short="枝条的阴翳榨干了欧泊之水的温暖，留下一片阴凉的池塘。"/>
+    <tag Name="AlternateTerrainName" Value="OpalDuskwaters"/>
+  </object>
+  <object Name="TerrainRiverYonth" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="约恩河"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <part Name="Description" Short="约恩河穿过了通往奇异东方的大山，并将其无名的水流带入了库德。鱼形生物以她的玄武岩碎片为食。"/>
+    <tag Name="AlternateTerrainName" Value="RiverYonth"/>
+  </object>
+  <object Name="TerrainMountainStream" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="山溪"/>
+    <part Name="Description" Short="古老阿尔卑斯山在无尽的过去裂开，充满了清凉的盐水。"/>
+    <xtagGrammar massNoun="false"/>
+    <tag Name="AlternateTerrainName" Value="MountainStream"/>
+  </object>
+  <object Name="TerrainLakeHinnom" Inherits="TerrainWater">
+    <part Name="Render" DisplayName="欣诺姆湖" Tile="Terrain/terrainlakehinnom_1i.bmp" RenderString="247" ColorString="&amp;g^c" TileColor="&amp;c" DetailColor="g"/>
+    <part Name="TerrainTravel" Segments="2500" TravelClass="Survival_RiversLakesSurvival"/>
+    <part Name="Description" Short="珊瑚指从海绵床中伸出，刺穿藻类繁茂的水域，数百只白色的艾什在此聚集。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="DefaultWall" Value="Porous Coral Rag"/>
+    <tag Name="IgnoreLiquidBlueprint"/>
+    <tag Name="SvardymStorm"/>
+    <tag Name="Terrain" Value="LakeHinnom"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_LakeHinnom"/>
+    <tag Name="RegionTier" Value="6"/>
+    <tag Name="RuinWalls" Value="HighTierRegionRuinWalls"/>
+    <tag Name="VillageDefaultLiquid" Value="AlgalWaterDeepPool"/>
+  </object>
+  <object Name="TerrainPalladiumReef" Inherits="Terrain">
+    <part Name="Render" DisplayName="钯礁" RenderString="005" ColorString="&amp;r^c" TileColor="&amp;c" DetailColor="r" Tile="Terrain/sw_reef_worldmap_1.bmp"/>
+    <part Name="RandomRenderString" Strings="15,42,9,248"/>
+    <part Name="TerrainTravel" Segments="2000"/>
+    <part Name="Description" Short="明亮的珊瑚状生物构成的弧形建筑横跨古老的焊接格架，丰富的生命形态在这里繁衍生息。"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="DefaultWall" Value="Coral Rag"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_PalladiumReef"/>
+    <tag Name="Terrain" Value="PalladiumReef"/>
+    <tag Name="RegionTier" Value="7"/>
+    <tag Name="SvardymStorm"/>
+    <tag Name="RuinWalls" Value="HighTierRegionRuinWalls"/>
+    <tag Name="VillageDefaultLiquid" Value="AlgalWaterDeepPool"/>
+    <tag Name="VillageClearBehavior" Value="circles:10"/>
+  </object>
+  <object Name="TerrainRuins" Inherits="Terrain">
+    <part Name="Render" DisplayName="废墟" RenderString="204" ColorString="&amp;Y^k" Tile="Terrain/sw_ruins2.bmp"/>
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_RuinsSurvival"/>
+    <part Name="Description" Short="这里，神秘的吞噬者们在无尽的过去，在巨大的车床上编织的藤蔓缠绕的作品已成废墟。铬制尖塔和雉堞从页岩的束缚中升起，暗示着其下的迷宫。"/>
+    <tag Name="RegionTier" Value="4"/>
+    <tag Name="Terrain" Value="Ruins"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Ruins"/>
+    <tag Name="Gender" Value="plural"/>
+    <tag Name="DefaultWall" Value="Mudroot"/>
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218"/>
+    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
+    <builder Name="RandomTile" Tiles="Terrain/sw_ruins_9.bmp,Terrain/sw_ruins_10.bmp,Terrain/sw_ruins_11.bmp,Terrain/sw_ruins_12.bmp,Terrain/sw_ruins_13.bmp,Terrain/sw_ruins_14.bmp,Terrain/sw_ruins_15.bmp,Terrain/sw_ruins_16.bmp,Terrain/sw_ruins_17.bmp,Terrain/sw_ruins_18.bmp,Terrain/sw_ruins_19.bmp,Terrain/sw_ruins_20.bmp"/>
+    <part Name="RandomColors" MainColor="Y" DetailColor="y"/>
+		<stag Name="Historical"/>
+		<tag Name="DynamicSemanticTable:Historical:Weight" Value="10"/>
+  </object>
+  <object Name="TerrainBaroqueRuins" Inherits="Terrain">
+    <part Name="Render" DisplayName="巴洛克废墟" RenderString="204" ColorString="&amp;Y^k" Tile="Terrain/sw_ruins2.bmp"/>
+    <part Name="TerrainTravel" Segments="3000" TravelClass="Survival_RuinsSurvival"/>
+    <part Name="Description" Short="肆意生长的绿植覆盖了食者最富丽堂皇的作品，形成一片星爆般的景象。丛林的边缘被撕裂，水晶钢栏杆和星辰兰花尖刺从中露出。"/>
+    <tag Name="Terrain" Value="BaroqueRuins"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_BaroqueRuins"/>
+    <tag Name="Gender" Value="plural"/>
+    <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215"/>
+    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
+    <builder Name="RandomTile" Tiles="Terrain/sw_ruins_deep_1.bmp,Terrain/sw_ruins_deep_2.bmp,Terrain/sw_ruins_deep_3.bmp,Terrain/sw_ruins_deep_4.bmp,Terrain/sw_ruins_deep_5.bmp,Terrain/sw_ruins_deep_6.bmp,Terrain/sw_ruins_deep_7.bmp,Terrain/sw_ruins_deep_8.bmp,Terrain/sw_ruins_deep_9.bmp,Terrain/sw_ruins_deep_10.bmp,Terrain/sw_ruins_deep_11.bmp,Terrain/sw_ruins_deep_12.bmp"/>
+    <part Name="RandomColors" MainColor="Y" DetailColor="y"/>
+		<tag Name="DefaultWall" Value="Mudroot"/>
+		<tag Name="RuinWalls" Value="HighTierRegionRuinWalls"/>
+    <tag Name="RegionTier" Value="7"/>
+		<stag Name="Historical"/>
+		<tag Name="DynamicSemanticTable:Historical:Weight" Value="10"/>
+  </object>  
+  
+  <!-- End regions -->
+
+  <!--
+
+    ***************
+       Locations
+    ***************
+
+  -->
+  <object Name="TerrainJoppa" Inherits="Terrain">
+    <part Name="Render" DisplayName="乔帕" RenderString="216" Tile="Terrain/sw_joppa.bmp" ColorString="&amp;w^k" DetailColor="y"/>
+    <part Name="Description" Short="绿屑中的蚂蚁，农夫们从盐斑遍布的土地中榨取最后一滴纯净的水分。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="Terrain" Value="Saltmarsh"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainJoppaRuins" Inherits="Terrain">
+    <part Name="Render" DisplayName="盐沼" RenderString="244" ColorString="&amp;g^k" Tile="terrain/tile_swamp1.bmp"/>
+    <part Name="TerrainTravel" Segments="1250" TravelClass="Survival_SaltmarshSurvival"/>
+    <part Name="Description" Short="在停滞的池塘中，发光的百合花与夜空中星河的带状光芒竞相争艳。然而，在盐阳之下，它们却缩进了盐藻的阴影之中。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="DungeonAttributes" Value="Marsh"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_Watervine"/>
+    <tag Name="Terrain" Value="Saltmarsh"/>
+  </object>
+  <object Name="TerrainTheSpindle" Inherits="Terrain">
+    <part Name="Render" DisplayName="纺锤" RenderString="202" Tile="terrain/sw_spindle_bottom.bmp" TileColor="&amp;C^k" DetailColor="Y" ColorString="&amp;C^k"/>
+    <part Name="Description" Short="这里是神圣之地，纺锤——一根无尽的玛雅蓝针，穿透了墓地般的大地，直刺苍穹。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="5"/>
+    <part Name="Physics" Solid="true"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_TheSpindle"/>
+    <tag Name="Terrain" Value="TheSpindle"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainOmonporch" Inherits="Terrain">
+    <part Name="Render" DisplayName="奥蒙波奇" Tile="terrain/sw_omonporch.bmp" DetailColor="Y" RenderString="234" ColorString="&amp;C"/>
+    <part Name="Description" Short="在窒息的树荫下，一百座拱门和扶壁飞越了葬礼纪念碑。它们俯瞰着覆盖墓穴的大理石拱廊，墓穴中安息着食土者。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="5"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="LairOwnerTable" Value="LairOwners_BananaGrove"/>
+    <tag Name="Terrain" Value="BananaGrove"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainKyakukya" Inherits="Terrain">
+    <part Name="Render" DisplayName="卡库基亚" RenderString="006" Tile="terrain/tile_kya.bmp" ColorString="&amp;R^k" DetailColor="R" TileColor="&amp;Y"/>
+    <part Name="Description" Short="这里是崇拜猿神的丛林村落，以及他们巨大的蘑菇居所。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="Terrain" Value="Jungle"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainRedRock" Inherits="Terrain">
+    <part Name="Render" DisplayName="红岩" RenderString="030" Tile="terrain/tile_location7.bmp" DetailColor="R" ColorString="&amp;r^k"/>
+    <part Name="Description" Short="一片天然泛红的石块从盐化的峭壁中突兀而出。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="Terrain" Value="DesertCanyon"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Geological"/>
+  </object>
+  <object Name="TerrainJoppaRedrockChannel" Inherits="Terrain">
+    <part Name="Render" DisplayName="盐沼" RenderString="239" ColorString="&amp;g^k" Tile="terrain/tile_swamp1.bmp"/>
+    <part Name="Description" Short="在停滞的池塘中，发光的百合花与夜空中星河的带状光芒竞相争艳。然而，在盐阳之下，它们却缩进了盐藻的阴影之中。"/>
+    <tag Name="Terrain" Value="Saltmarsh"/>
+  </object>
+  <object Name="TerrainSixDayStilt" Inherits="Terrain">
+    <part Name="Render" DisplayName="六日高跷" Tile="terrain/sw_six_day_stilt.bmp" TileColor="&amp;C^k" DetailColor="Y" RenderString="254" ColorString="&amp;k^K"/>
+    <part Name="Description" Short="六日高跷如同石化了的巨型乌贼尸体般从沙丘中升起，俯瞰着空旷的平原。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="Terrain" Value="Saltdunes"/>
+		<tag Name="RegionTier" Value="2"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainEynRogel" Inherits="Terrain">
+    <part Name="Render" DisplayName="艾因-罗格尔" RenderString="254" ColorString="&amp;K^R"/>
+    <part Name="Description" Short="艾因-罗格尔"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+  </object>
+  <object Name="TerrainGritGate" Inherits="Terrain">
+    <part Name="Render" DisplayName="砂砾之门" Tile="terrain/tile_location8.bmp" TileColor="&amp;W^k" DetailColor="C" RenderString="254" ColorString="&amp;K^y"/>
+    <part Name="Description" Short="巨大的城门上刻有百种无法解读的符文，其上半部分依然矗立。城门下方的铬制栅栏下，一条宽阔的通道通向丛林的土壤。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="Terrain" Value="Ruins"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainRustWell" Inherits="Terrain">
+    <part Name="Render" DisplayName="锈井" Tile="terrain/tile_location3.bmp" DetailColor="R" RenderString="007" ColorString="&amp;r^k"/>
+    <part Name="Description" Short="红色奎兹藤蔓缠绕在钻入地下的铬井上。"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar iArticle="the"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="2"/>
+    <tag Name="Terrain" Value="Ruins"/>
+    <tag Name="AlternateTerrainName" Value="RustWell"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainGolgotha" Inherits="Terrain">
+    <part Name="Render" DisplayName="髑髅地" Tile="terrain/tile_location5.bmp" DetailColor="C" TileColor="&amp;G^k" RenderString="030" ColorString="&amp;R^k"/>
+    <part Name="Description" Short="在腐烂的丛林中，隐藏着髑髅地的锈洞入口，这里是铬金的墓场。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="3"/>
+    <tag Name="Terrain" Value="Ruins"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainBethesdaSusa" Inherits="Terrain">
+    <part Name="Render" DisplayName="贝塞斯达苏萨" Tile="terrain/tile_location.bmp" TileColor="&amp;Y^k" DetailColor="R" RenderString="206" ColorString="&amp;R^k"/>
+    <part Name="Description" Short="时光错位的石块包裹着贝塞赛德巢穴那无棱角的建筑。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="4"/>
+    <tag Name="Terrain" Value="Mountains"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainAsphaltMines" Inherits="Terrain">
+    <part Name="Render" DisplayName="沥青矿" Tile="terrain/tile_location9.bmp" TileColor="&amp;y^k" DetailColor="w" RenderString="247" ColorString="&amp;k^w"/>
+    <part Name="Description" Short="碎石包围着这座废弃的矿井，古代部落曾在这里抽取黑色血液，用于他们不可捉摸的目的。"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="Gender" Value="plural"/>
+    <xtagGrammar iArticle="the"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="3"/>
+    <tag Name="Terrain" Value="Hills"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainRustedArchway" Inherits="Terrain">
+    <part Name="Render" DisplayName="锈蚀拱门" Tile="terrain/sw_rusted_archway.bmp" RenderString="239" ColorString="&amp;r" DetailColor="y"/>
+    <part Name="Description" Short="一道锈迹斑斑的弧线划过天空，环绕着曾被巨大铬合金生物踏过的路径。"/>
+    <xtagGrammar massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="RegionTier" Value="2"/>
+    <tag Name="Terrain" Value="Ruins"/>
+    <tag Name="MinimapColor" Value="g"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="TerrainEynRoj" Inherits="TerrainMoonStair">
+    <part Name="Render" DisplayName="艾因-罗吉" RenderString="005" ColorString="&amp;M" TileColor="&amp;m" DetailColor="Y" Tile="Terrain/sw_chavvah_worldmap.bmp" HFlip="false"/>
+    <part Name="Description" Short="在大理石林间隐匿着查瓦，生命之树的分叉树干。它的落叶如同镜面地毯般铺展，梦境鹪鹩则吟唱着心灵颂歌。"/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <removepart Name="RandomRenderString"/>
+    <removepart Name="RandomWorldTile"/>
+    <removepart Name="RandomColors"/>
+    <tag Name="IndefiniteArticle" Value="*delete"/>
+    <tag Name="DefiniteArticle" Value="*delete"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  
+  <!-- End locations -->
+
+  <!--
+
+    *******************************
+       Multi-tile water features
+    *******************************
+
+  -->
+  
+  <!-- River Svy -->  
+  <object Name="TerrainRiverSvy WE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_14a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_14a.bmp,Terrain/sw_river_worldmap_14b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NS" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_8a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_8a.bmp,Terrain/sw_river_worldmap_8b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NSW" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_7a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_7a.bmp,Terrain/sw_river_worldmap_7b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_9a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_9a.bmp,Terrain/sw_river_worldmap_9b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy SW" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_3a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_3a.bmp,Terrain/sw_river_worldmap_3b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NW" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_11a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_11a.bmp,Terrain/sw_river_worldmap_11b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NSE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_5a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_5a.bmp,Terrain/sw_river_worldmap_5b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NWE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_10a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_10a.bmp,Terrain/sw_river_worldmap_10b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy SE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_1a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_1a.bmp,Terrain/sw_river_worldmap_1b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy SWE" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_2a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_2a.bmp,Terrain/sw_river_worldmap_2b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy NtoEnd" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_12a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_12a.bmp,Terrain/sw_river_worldmap_12b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy EtoEnd" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_13a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_13a.bmp,Terrain/sw_river_worldmap_13b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 1i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_1i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 1j" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_1j.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2h" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_2h.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_2i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 2j" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_2j.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3e" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3e.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3f" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3f.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3g" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3g.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3h" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3h.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 3j" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_3j.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4d" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_4d.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4e" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_4e.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4f" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_4f.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4g" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_4g.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 4i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_4i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5c" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_5c.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5d" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_5d.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5h" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_5h.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 5i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_5i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6c" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_6c.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6f" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_6f.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6h" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_6h.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 6i" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_6i.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7a" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7a.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7b" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7c" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7c.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7d" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7d.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7e" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7e.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 7f" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_7f.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8b" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_8b.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8c" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_8c.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake 8d" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_8d.bmp"/>
+  </object>
+  <object Name="TerrainRiverSvy Lake Blank" Inherits="TerrainRiverSvy">
+    <part Name="Render" Tile="Terrain/sw_svylake_worldmap_blank.bmp"/>
+  </object>
+
+  <!-- River Opal -->    
+  <object Name="TerrainRiverOpal WE" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_14a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_14a.bmp,Terrain/sw_river_worldmap_14b.bmp"/>
+  </object>
+  <object Name="TerrainRiverOpal NS" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_8a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_8a.bmp,Terrain/sw_river_worldmap_8b.bmp"/>
+  </object>
+  <object Name="TerrainRiverOpal NE" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_9a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_9a.bmp,Terrain/sw_river_worldmap_9b.bmp"/>
+  </object>
+  <object Name="TerrainRiverOpal SW" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_3a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_3a.bmp,Terrain/sw_river_worldmap_3b.bmp"/>
+  </object>
+  <object Name="TerrainRiverOpal SE" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_1a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_1a.bmp,Terrain/sw_river_worldmap_1b.bmp"/>
+  </object>
+  <object Name="TerrainRiverOpal NW" Inherits="TerrainRiverOpal">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_11a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_11a.bmp,Terrain/sw_river_worldmap_11b.bmp"/>
+  </object>    
+  <object Name="TerrainOpalDuskwaters 1" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_1.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 2" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_2.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 3" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_3.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 4" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_4.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 5" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_5.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 6" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_6.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 7" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_7.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 8" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_8.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 9" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_9.bmp"/>
+  </object>
+  <object Name="TerrainOpalDuskwaters 10" Inherits="TerrainOpalDuskwaters">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_duskwaters_10.bmp"/>
+  </object>
+  
+  <!-- River Yonth -->  
+  <object Name="TerrainRiverYonth WE" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_14a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_14a.bmp,Terrain/sw_river_worldmap_14b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NS" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_8a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_8a.bmp,Terrain/sw_river_worldmap_8b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NSW" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_7a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_7a.bmp,Terrain/sw_river_worldmap_7b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NE" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_9a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_9a.bmp,Terrain/sw_river_worldmap_9b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SW" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_3a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_3a.bmp,Terrain/sw_river_worldmap_3b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NW" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_11a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_11a.bmp,Terrain/sw_river_worldmap_11b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NSE" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_5a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_5a.bmp,Terrain/sw_river_worldmap_5b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NWE" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_10a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_10a.bmp,Terrain/sw_river_worldmap_10b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SE" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_1a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_1a.bmp,Terrain/sw_river_worldmap_1b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NtoEnd" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_12a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_12a.bmp,Terrain/sw_river_worldmap_12b.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 1" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_we_1.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 2" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_we_2.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 3" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_we_3.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 4" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_we_4.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth SouthLake 5" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_we_5.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 1" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_nw_1.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 2" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_nw_2.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 3" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_nw_3.bmp"/>
+  </object>
+  <object Name="TerrainRiverYonth NorthLake 4" Inherits="TerrainRiverYonth">
+    <part Name="Render" Tile="Terrain/sw_river_lake_nw_4.bmp"/>
+  </object>
+  
+  <!-- Mountain Stream -->  
+  <object Name="TerrainMountainStream WE" Inherits="TerrainMountainStream">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_14a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_14a.bmp,Terrain/sw_river_worldmap_14b.bmp"/>
+  </object>
+  <object Name="TerrainMountainStream NS" Inherits="TerrainMountainStream">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_8a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_8a.bmp,Terrain/sw_river_worldmap_8b.bmp"/>
+  </object>
+  <object Name="TerrainMountainStream NSW" Inherits="TerrainMountainStream">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_7a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_7a.bmp,Terrain/sw_river_worldmap_7b.bmp"/>
+  </object>
+  <object Name="TerrainMountainStream NE" Inherits="TerrainMountainStream">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_9a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_9a.bmp,Terrain/sw_river_worldmap_9b.bmp"/>
+  </object>
+  <object Name="TerrainMountainStream SW" Inherits="TerrainMountainStream">
+    <part Name="Render" Tile="Terrain/sw_river_worldmap_3a.bmp"/>
+    <builder Name="RandomTile" Tiles="Terrain/sw_river_worldmap_3a.bmp,Terrain/sw_river_worldmap_3b.bmp"/>
+  </object>
+  
+  <!-- Lake Hinnom -->    
+  <object Name="TerrainLakeHinnom 1i" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_1i.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 1j" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_1j.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2l" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2l.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2m" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2m.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 2n" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_2n.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3e" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3e.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3f" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3f.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 3o" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_3o.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_4c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_4d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4e" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_4e.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4f" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_4f.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 4m" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_4m.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 5b" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_5b.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 5c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_5c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6a" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6a.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6b" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6b.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6h" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6h.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6i" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6i.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 6m" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_6m.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7a" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7a.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7b" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7b.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7e" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7e.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7f" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7f.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7i" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7i.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7j" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7j.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7k" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7k.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 7l" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_7l.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8a" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8a.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8b" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8b.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8e" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8e.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8f" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8f.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 8g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_8g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9c" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9c.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9d" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9d.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9e" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9e.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9f" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9f.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9g" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9g.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom 9h" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_9h.bmp"/>
+  </object>
+  <object Name="TerrainLakeHinnom blank" Inherits="TerrainLakeHinnom">
+    <part Name="Render" Tile="Terrain/terrainlakehinnom_blank.bmp"/>
+  </object>
+
+  <!-- Palladium Reef -->  
+  <object Name="TerrainPalladiumReef 1k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_1k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 1l" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_1l.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 1o" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_1o.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2h" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_2h.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2i" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_2i.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2j" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_2j.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 2k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_2k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3j" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_3j.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_3k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3l" Inherits="TerrainPalladiumReef">
+    <part Name="Render" DisplayName="伊德自由领" RenderString="239" ColorString="&amp;W^c" TileColor="&amp;c" DetailColor="W" Tile="Terrain/terrainpalladiumreef_3l.bmp"/>
+    <part Name="Description" Short="安装在海绵床中的染色管道拓扑结构是抒情社群的导航灯塔。"/>
+    <removepart Name="RandomRenderString"/>
+    <tag Name="IndefiniteArticle" Value=""/>
+    <tag Name="DefiniteArticle" Value=""/>
+    <xtagGrammar Proper="true" massNoun="false"/>
+    <tag Name="OverlayColor" Value="&amp;W"/>
+    <part Name="AlternateOverlayRender" ColorString="&amp;k"/>
+    <tag Name="SvardymStorm" Value="*delete"/>
+    <tag Name="NoBiomes" Value="1"/>
+    <tag Name="MinimapColor" Value="g"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3m" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_3m.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3n" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_3n.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 3p" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_3p.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4h" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4h.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4j" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4j.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4l" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4l.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4n" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4n.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4o" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4o.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 4q" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_4q.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5h" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5h.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5i" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5i.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5j" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5j.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5l" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5l.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5m" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5m.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 5n" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_5n.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6j" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_6j.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6k" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_6k.bmp"/>
+  </object>
+  <object Name="TerrainPalladiumReef 6l" Inherits="TerrainPalladiumReef">
+    <part Name="Render" Tile="Terrain/terrainpalladiumreef_6l.bmp"/>
+  </object>
+
+  <!--
+
+    ****************
+       Dimensions
+    ****************
+
+  -->
+  <object Name="TerrainBrightsheol" Inherits="Terrain">
+    <part Name="Render" DisplayName="光界冥土"/>
+    <tag Name="Terrain" Value="Brightsheol"/>
+    <tag Name="Immutable"/>
+  </object>
+  <object Name="TerrainTzimtzlum" Inherits="Terrain">
+    <part Name="Render" DisplayName="茨姆茨卢姆"/>
+    <tag Name="Terrain" Value="Tzimtzlum"/>
+    <tag Name="Immutable"/>
+  </object>
+  
+  <!-- End dimenions -->
+
+  <!--
+
+    ******************************
+       Historic site templates
+    ******************************
+
+  -->
+  
+  <object Name="HistoricHills" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;c" DetailColor="y" Tile="Terrain/sw_historic_hills.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricHuts" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;w" DetailColor="r" Tile="Terrain/sw_historic_huts.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricHouse" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_house.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricHouses" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;R" DetailColor="Y" Tile="Terrain/sw_historic_houses.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricGrid" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;C" DetailColor="r" Tile="Terrain/sw_historic_grid.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricCastle" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;y" DetailColor="r" Tile="Terrain/sw_historic_castle.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricPantheon" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_pantheon.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricBuilding" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_building.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricArch" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;W" DetailColor="r" Tile="Terrain/sw_historic_arch.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricArms" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_arms.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricBuilding2" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_building2.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricBuilding3" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_building3.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricPond" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_pond.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricPools" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;B" DetailColor="r" Tile="Terrain/sw_historic_pools.bmp"/>		
+  </object>
+  <object Name="HistoricRing" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_ring.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricTower" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_tower.bmp"/>
+		<stag Name="Historical"/>
+  </object>
+  <object Name="HistoricGardens" Inherits="Terrain">
+    <part Name="Render" RenderString="212" ColorString="&amp;Y" DetailColor="r" Tile="Terrain/sw_historic_gardens.bmp"/>		
+  </object>
+  
+  <!-- End historic site templates -->
+  
+</objects>

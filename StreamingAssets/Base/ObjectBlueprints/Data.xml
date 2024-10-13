@@ -264,7 +264,7 @@
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_plantMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型植物" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationLowTier,CookingDomainPlant_UnitBurgeoningLowTier"/>
     <tag Name="Description" Value="简单的植物基"/>
     <tag Name="RandomWeight" Value="10"/>
@@ -563,14 +563,14 @@
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_quicknessMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型速度值" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainQuickness_UnitQuickness"/>
     <tag Name="Description" Value="简单的基于迅捷的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_density" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_密度" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainDensity_UnitPermanentAV"/>
     <tag Name="Description" Value="易变密度型"/>
     <tag Name="RandomWeight" Value="0"/>
@@ -591,77 +591,77 @@
 		<tag Name="RandomHighTierWeight" Value="10"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_slimeSpitting" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_喷粘液" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainLiquidSpitting_UnitSlimeGlands"/>
     <tag Name="Description" Value="喷射黏液"/>
     <tag Name="RandomWeight" Value="10"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_regenLowtierMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型再生" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit"/>
     <tag Name="Description" Value="简单的再生和基于治疗的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_coldMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型寒冷" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitResist"/>
     <tag Name="Description" Value="简单的基于寒冷的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_heatMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型炎热" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitResist"/>
     <tag Name="Description" Value="简单的热能和火焰基础"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_medicinalMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型药用" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit"/>
     <tag Name="Description" Value="简单的疾病预防措施"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_acidMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_弱酸" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas"/>
     <tag Name="Description" Value="简单的酸基"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_tastyMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型美味" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainTaste_UnitDoNothing"/>
     <tag Name="Description" Value="简单的基于口味的"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_cloningMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型克隆" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainCloning_UnitMultipleClones"/>
     <tag Name="Description" Value="简单的克隆"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_stabilityMinor" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_小型稳定性" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainStability_MoveResistUnit"/>
     <tag Name="Description" Value="基于简单的稳定性"/>
     <tag Name="RandomWeight" Value="0"/>
 		<tag Name="RandomHighTierWeight" Value="0"/>
 	</object>
 
-  <object Name="ProceduralCookingIngredient_selfPoison" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_自我中毒" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfPoison"/>
     <tag Name="Description" Value="自体中毒"/>
     <tag Name="RandomWeight" Value="2"/>
 		<tag Name="RandomHighTierWeight" Value="1"/>
   </object>
 
-  <object Name="ProceduralCookingIngredient_selfGlotrot" Inherits="IngredientMapping">
+  <object Name="ProceduralCookingIngredient_自我腐烂" Inherits="IngredientMapping">
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfGlotrot"/>
     <tag Name="Description" Value="自体疾病"/>
     <tag Name="RandomWeight" Value="1"/>

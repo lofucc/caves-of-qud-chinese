@@ -180,7 +180,7 @@
     <power Name="荒野知识: 盐丘" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_SaltDesertSurvival" Snippet="navigating the salt desert" Description="在世界地图上穿越盐丘时，遭遇有趣事件的几率翻倍。将迷路的基本几率从10%降低到1%。在世界地图上，穿越盐丘的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_dunes.png" Foreground="y" Detail="w"/>
     <power Name="荒野知识: 丛林" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_JungleSurvival" Snippet="navigating the jungles" Description="在世界地图上穿越丛林时，使遭遇有趣事件的机会翻倍。将迷路的基础概率从12%降低到1%。在世界地图上，穿越丛林的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"/>
     <power Name="荒野知识: 河流与湖泊" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_RiversLakesSurvival" Snippet="navigating the rivers and lakes" Description="在世界地图上穿越河流和湖泊时，遭遇有趣事件的机会翻倍。同时，将迷路的概率从基础的12%降低到1%。在世界地图上，穿越河流和湖泊的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_rivers.png" Foreground="y" Detail="w"/>
-    <power Name="荒野学识: 废墟" Cost="50" Attribute="Intelligence" Minimum="21" Class="Survival_RuinsSurvival" Snippet="navigating ruins" Description="在世界地图上穿越铬金废墟时，遭遇有趣事件的几率翻倍。将迷路的基础几率从12%降低到1%。在世界地图上，你穿越废墟的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_ruins.png" Foreground="y" Detail="w"/>
+    <power Name="荒野知识: 废墟" Cost="50" Attribute="Intelligence" Minimum="21" Class="Survival_RuinsSurvival" Snippet="navigating ruins" Description="在世界地图上穿越铬金废墟时，遭遇有趣事件的几率翻倍。将迷路的基础几率从12%降低到1%。在世界地图上，你穿越废墟的速度提高一倍。" Tile="Abilities/sw_skill_wayfaring_ruins.png" Foreground="y" Detail="w"/>
   </skill>
 
   <skill Name="非线性" Class="Nonlinearity" Hidden="true" Description="你延展" Cost="0" Attribute="Ego" Snippet="nonlinearity" Tile="Mutations/precognition.bmp" Foreground="K" Detail="m">

@@ -759,7 +759,7 @@
     <part Name="Food"/>
     <tag Name="Meat"/>
     <part Name="Description" Short="从捕获的盐跳虫的外骨骼侧翼削下的几丁质被干燥并敲打成脆片。"/>
-    <part Name="PreparedCookingIngredient" type="tastyMinor" charges="1"/>
+    <part Name="PreparedCookingIngredient" type="小型美味" charges="1"/>
     <part Name="Commerce" Value="0.5"/>
     <xtagGrammar iArticle="a" adjunctNoun=""/>
   </object>
@@ -887,7 +887,7 @@
   <object Name="Crusty Loaf" Inherits="Preservable">
     <part Name="Render" Tile="items/sw_loaf.bmp" DisplayName="硬壳面包" ColorString="&amp;w" DetailColor="W"/>
     <part Name="Description" Short="每年秋天，许多峡谷居民会前往高脚地购买秋季葡萄酒。他们回到家中，将小麦麸浸泡在葡萄酒中，在陶土烤箱中发酵面团。有些人更幸运；真菌林居民只需出门即可采集酵母，而与真菌友好的居民只需摇动他们长满酵母的肢体。"/>
-    <part Name="PreparedCookingIngredient" type="tastyMinor" charges="1"/>
+    <part Name="PreparedCookingIngredient" type="小型美味" charges="1"/>
     <part Name="Commerce" Value="0.5"/>
     <xtagGrammar iArticle="" adjunctNoun="" massNoun="false"/>
   </object>
@@ -898,7 +898,7 @@
     <xtagGrammar massNoun="true"/>
     <tag Name="Plant"/>
     <part Name="Commerce" Value="4"/>
-    <part Name="PreparedCookingIngredient" type="plantMinor" charges="1"/>
+    <part Name="PreparedCookingIngredient" type="小型植物" charges="1"/>
 		<tag Name="NoSparkingQuest"/>
   </object>
   <object Name="Food Cube" Inherits="Preservable">
