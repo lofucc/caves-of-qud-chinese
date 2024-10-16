@@ -10360,144 +10360,144 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <stat Name="Level" Value="15"/>
   </object>
   <object Name="honeyLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{w|蜂蜜}}泪滴" RenderString="231" ColorString="&amp;w"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{w|蜂蜜}}泣菌" RenderString="231" ColorString="&amp;w"/>
     <mutation Name="LiquidFont" Liquid="honey"/>
-    <part Name="SecretObject" text="一个巨型{{w|蜂蜜}}泪滴" message="你发现了巨型{{w|蜂蜜}}泪滴。" adjectives="honey,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="一个巨型{{w|蜂蜜}}泣菌" message="你发现了巨型{{w|蜂蜜}}泣菌。" adjectives="honey,weep" category="Natural Features"/>
   </object>
   <object Name="honeyLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{w|蜂蜜}}泪水" RenderString="231" ColorString="&amp;w"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{w|蜂蜜}}泣菌" RenderString="231" ColorString="&amp;w"/>
     <mutation Name="LiquidFont" Liquid="honey"/>
-    <part Name="SecretObject" text="一个{{w|蜂蜜}}泪水" message="你发现{{w|蜂蜜}}泪水" adjectives="honey,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="一个{{w|蜂蜜}}泣菌" message="你发现{{w|蜂蜜}}泣菌" adjectives="honey,weep" category="Natural Features"/>
   </object>
   <object Name="waxLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|蜡}}泪滴" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|蜡}}泣菌" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="wax"/>
-    <part Name="SecretObject" text="巨型{{Y|蜡}}泪滴" message="你发现了巨型{{Y|蜡}}泪滴" adjectives="wax,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{Y|蜡}}泣菌" message="你发现了巨型{{Y|蜡}}泣菌" adjectives="wax,weep" category="Natural Features"/>
   </object>
   <object Name="waxLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|蜡}}泪" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|蜡}}泣菌" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="wax"/>
-    <part Name="SecretObject" text="{{Y|蜡}}泪" message="你发现了{{Y|蜡}}泪。" adjectives="wax,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|蜡}}泣菌" message="你发现了{{Y|蜡}}泣菌。" adjectives="wax,weep" category="Natural Features"/>
   </object>
   <object Name="inkLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|墨水}}泪滴" RenderString="231" ColorString="&amp;K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|墨水}}泣菌" RenderString="231" ColorString="&amp;K"/>
     <mutation Name="LiquidFont" Liquid="ink"/>
-    <part Name="SecretObject" text="巨大的{{K|墨水}}泪滴" message="你发现了巨大的{{K|墨水}}泪滴。" adjectives="ink,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{K|墨水}}泣菌" message="你发现了巨大的{{K|墨水}}泣菌。" adjectives="ink,weep" category="Natural Features"/>
   </object>
   <object Name="inkLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|墨水}}泣者" RenderString="231" ColorString="&amp;K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|墨水}}泣菌" RenderString="231" ColorString="&amp;K"/>
     <mutation Name="LiquidFont" Liquid="ink"/>
-    <part Name="SecretObject" text="{{K|墨水}}泣者" message="你发现了{{K|墨水}}泣者" adjectives="ink,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|墨水}}泣菌" message="你发现了{{K|墨水}}泣菌" adjectives="ink,weep" category="Natural Features"/>
   </object>
   <object Name="sapLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{W|树液}}滴落" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{W|树液}}泣菌" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="sap"/>
-    <part Name="SecretObject" text="巨大的{{W|树液}}滴落" message="你发现了巨大的{{W|树液}}滴落。" adjectives="sap,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{W|树液}}泣菌" message="你发现了巨大的{{W|树液}}泣菌。" adjectives="sap,weep" category="Natural Features"/>
   </object>
   <object Name="sapLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{W|树液}}涕泣" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{W|树液}}泣菌" RenderString="231" ColorString="&amp;W" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="sap"/>
-    <part Name="SecretObject" text="{{W|树液}}涕泣" message="你发现了{{W|树液}}涕泣。" adjectives="sap,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{W|树液}}泣菌" message="你发现了{{W|树液}}泣菌。" adjectives="sap,weep" category="Natural Features"/>
   </object>
   <object Name="lavaLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{lava|熔岩}}泪滴" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{lava|熔岩}}泣菌" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="lava"/>
-    <part Name="SecretObject" text="巨型{{lava|熔岩}}泪滴" message="你发现了巨型{{lava|熔岩}}泪滴。" adjectives="lava,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{lava|熔岩}}泣菌" message="你发现了巨型{{lava|熔岩}}泣菌。" adjectives="lava,weep" category="Natural Features"/>
   </object>
   <object Name="lavaLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{lava|岩浆}}岩浆" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{lava|岩浆}}泣菌" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="lava"/>
-    <part Name="SecretObject" text="{{lava|岩浆}}岩浆" message="你发现了{{lava|岩浆}}岩浆。" adjectives="lava,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{lava|岩浆}}泣菌" message="你发现了{{lava|岩浆}}泣菌。" adjectives="lava,weep" category="Natural Features"/>
   </object>
   <object Name="acidLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{G|酸液}}泪滴" RenderString="231" ColorString="&amp;G"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{G|酸液}}泣菌" RenderString="231" ColorString="&amp;G"/>
     <mutation Name="LiquidFont" Liquid="acid"/>
-    <part Name="SecretObject" text="巨型{{G|酸液}}泪滴" message="你发现了巨型{{G|酸液}}泪滴。" adjectives="acid,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{G|酸液}}泣菌" message="你发现了巨型{{G|酸液}}泣菌。" adjectives="acid,weep" category="Natural Features"/>
   </object>
   <object Name="acidLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{G|酸液}}泪滴" RenderString="231" ColorString="&amp;G"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{G|酸液}}泣菌" RenderString="231" ColorString="&amp;G"/>
     <mutation Name="LiquidFont" Liquid="acid"/>
-    <part Name="SecretObject" text="{{G|酸液}}泪滴" message="你发现了{{G|酸液}}泪滴。" adjectives="acid,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{G|酸液}}泣菌" message="你发现了{{G|酸液}}泣菌。" adjectives="acid,weep" category="Natural Features"/>
   </object>
   <object Name="wineLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{m|葡萄酒}}泪滴" RenderString="231" ColorString="&amp;m"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{m|葡萄酒}}泣菌" RenderString="231" ColorString="&amp;m"/>
     <mutation Name="LiquidFont" Liquid="wine"/>
-    <part Name="SecretObject" text="巨型{{m|葡萄酒}}泪滴" message="你发现了巨型{{m|葡萄酒}}泪滴。" adjectives="wine,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{m|葡萄酒}}泣菌" message="你发现了巨型{{m|葡萄酒}}泣菌。" adjectives="wine,weep" category="Natural Features"/>
   </object>
   <object Name="wineLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{m|葡萄酒}}哭泣" RenderString="231" ColorString="&amp;m"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{m|葡萄酒}}泣菌" RenderString="231" ColorString="&amp;m"/>
     <mutation Name="LiquidFont" Liquid="wine"/>
-    <part Name="SecretObject" text="A{{m|wine}}weep" message="你发现了{{m|葡萄酒}}哭泣。" adjectives="wine,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="A{{m|wine}}weep" message="你发现了{{m|葡萄酒}}泣菌。" adjectives="wine,weep" category="Natural Features"/>
   </object>
   <object Name="slimeLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{g|史莱姆}}泪滴" RenderString="231" ColorString="&amp;g"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{g|史莱姆}}泣菌" RenderString="231" ColorString="&amp;g"/>
     <mutation Name="LiquidFont" Liquid="slime"/>
-    <part Name="SecretObject" text="巨型{{g|史莱姆}}泪滴" message="你发现了巨型{{g|史莱姆}}泪滴。" adjectives="slime,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{g|史莱姆}}泣菌" message="你发现了巨型{{g|史莱姆}}泣菌。" adjectives="slime,weep" category="Natural Features"/>
   </object>
   <object Name="slimeLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{g|黏液}}泪水" RenderString="231" ColorString="&amp;g"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{g|黏液}}泣菌" RenderString="231" ColorString="&amp;g"/>
     <mutation Name="LiquidFont" Liquid="slime"/>
-    <part Name="SecretObject" text="{{g|黏液}}泪水" message="你发现了{{g|黏液}}泪水。" adjectives="slime,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{g|黏液}}泣菌" message="你发现了{{g|黏液}}泣菌。" adjectives="slime,weep" category="Natural Features"/>
   </object>
   <object Name="ciderLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{R|苹果酒}}泪水" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{R|苹果酒}}泣菌" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="cider"/>
-    <part Name="SecretObject" text="巨大的{{R|苹果酒}}泪水" message="你发现了巨大的{{R|苹果酒}}泪水。" adjectives="cider,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{R|苹果酒}}泣菌" message="你发现了巨大的{{R|苹果酒}}泣菌。" adjectives="cider,weep" category="Natural Features"/>
   </object>
   <object Name="ciderLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{R|苹果酒}}泪水" RenderString="231" ColorString="&amp;R"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{R|苹果酒}}泣菌" RenderString="231" ColorString="&amp;R"/>
     <mutation Name="LiquidFont" Liquid="cider"/>
-    <part Name="SecretObject" text="{{R|苹果酒}}泪水" message="你发现了{{R|苹果酒}}泪水。" adjectives="cider,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{R|苹果酒}}泣菌" message="你发现了{{R|苹果酒}}泣菌。" adjectives="cider,weep" category="Natural Features"/>
   </object>
   <object Name="waterLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{B|水}}泣者" RenderString="231" ColorString="&amp;B"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{B|水}}泣菌" RenderString="231" ColorString="&amp;B"/>
     <mutation Name="LiquidFont" Liquid="water"/>
-    <part Name="SecretObject" text="巨型{{B|水}}泣者" message="你发现了巨型{{B|水}}泣者。" adjectives="water,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{B|水}}泣菌" message="你发现了巨型{{B|水}}泣菌。" adjectives="water,weep" category="Natural Features"/>
   </object>
   <object Name="waterLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{B|水}}泣" RenderString="231" ColorString="&amp;B"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{B|水}}泣菌" RenderString="231" ColorString="&amp;B"/>
     <mutation Name="LiquidFont" Liquid="water"/>
-    <part Name="SecretObject" text="{{B|水}}泣" message="你发现了{{B|水}}泣。" adjectives="water,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{B|水}}泣菌" message="你发现了{{B|水}}泣菌。" adjectives="water,weep" category="Natural Features"/>
   </object>
   <object Name="gelLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{Y|胶质}}泪滴" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{Y|胶质}}泣菌" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="gel"/>
-    <part Name="SecretObject" text="巨大的{{Y|胶质}}泪滴" message="你发现了巨大的{{Y|胶质}}泪滴。" adjectives="gel,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{Y|胶质}}泣菌" message="你发现了巨大的{{Y|胶质}}泣菌。" adjectives="gel,weep" category="Natural Features"/>
   </object>
   <object Name="gelLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|凝胶}}泣泪" RenderString="231" ColorString="&amp;Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|凝胶}}泣菌" RenderString="231" ColorString="&amp;Y"/>
     <mutation Name="LiquidFont" Liquid="gel"/>
-    <part Name="SecretObject" text="{{Y|凝胶}}泣泪" message="你发现了{{Y|凝胶}}泣泪。" adjectives="gel,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|凝胶}}泣菌" message="你发现了{{Y|凝胶}}泣菌。" adjectives="gel,weep" category="Natural Features"/>
   </object>
   <object Name="asphaltLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{K|沥青}}泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{K|沥青}}泣菌" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
     <mutation Name="LiquidFont" Liquid="asphalt"/>
-    <part Name="SecretObject" text="巨型{{K|沥青}}泪滴" message="你发现了巨型{{K|沥青}}泪滴。" adjectives="asphalt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{K|沥青}}泣菌" message="你发现了巨型{{K|沥青}}泣菌。" adjectives="asphalt,weep" category="Natural Features"/>
   </object>
   <object Name="asphaltLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|沥青}}泪滴" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|沥青}}泣菌" RenderString="231" ColorString="&amp;K" DetailColor="K"/>
     <mutation Name="LiquidFont" Liquid="asphalt"/>
-    <part Name="SecretObject" text="{{K|沥青}}泪滴" message="你发现了{{K|沥青}}泪滴。" adjectives="asphalt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|沥青}}泣菌" message="你发现了{{K|沥青}}泣菌。" adjectives="asphalt,weep" category="Natural Features"/>
   </object>
   <object Name="saltLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|盐}}泪" RenderString="231" ColorString="&amp;y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨型{{Y|盐}}泣菌" RenderString="231" ColorString="&amp;y"/>
     <mutation Name="LiquidFont" Liquid="salt"/>
-    <part Name="SecretObject" text="巨型{{Y|盐}}泪" message="你发现了巨型{{Y|盐}}泪。" adjectives="salt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨型{{Y|盐}}泣菌" message="你发现了巨型{{Y|盐}}泣菌。" adjectives="salt,weep" category="Natural Features"/>
   </object>
   <object Name="saltLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|盐}}泪" RenderString="231" ColorString="&amp;y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{Y|盐}}泣菌" RenderString="231" ColorString="&amp;y"/>
     <mutation Name="LiquidFont" Liquid="salt"/>
-    <part Name="SecretObject" text="{{Y|盐}}泪" message="你发现了{{Y|盐}}泪。" adjectives="salt,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{Y|盐}}泣菌" message="你发现了{{Y|盐}}泣菌。" adjectives="salt,weep" category="Natural Features"/>
   </object>
   <object Name="oilLichen" Inherits="LiquidLichen">
-    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|石油}}滴落者" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="巨大的{{K|石油}}泣菌" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="oil"/>
-    <part Name="SecretObject" text="巨大的{{K|石油}}滴落者" message="你发现了巨大的{{K|石油}}滴落者。" adjectives="oil,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="巨大的{{K|石油}}泣菌" message="你发现了巨大的{{K|石油}}泣菌。" adjectives="oil,weep" category="Natural Features"/>
   </object>
   <object Name="oilLichen Minor" Inherits="LiquidLichen Minor">
-    <part Name="Render" RenderIfDark="true" DisplayName="{{K|油}}泪" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
+    <part Name="Render" RenderIfDark="true" DisplayName="{{K|油}}泣菌" RenderString="231" ColorString="&amp;K" DetailColor="Y"/>
     <mutation Name="LiquidFont" Liquid="oil"/>
-    <part Name="SecretObject" text="{{K|油}}泪" message="你发现了{{K|油}}泪。" adjectives="oil,weep" category="Natural Features"/>
+    <part Name="SecretObject" text="{{K|油}}泣菌" message="你发现了{{K|油}}泣菌。" adjectives="oil,weep" category="Natural Features"/>
   </object>
   <!-- Soup sludges -->
   <object Name="SoupSludge" Inherits="BaseOoze">

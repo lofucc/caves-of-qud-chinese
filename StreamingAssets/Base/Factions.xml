@@ -1,0 +1,1940 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+	<faction Name="Player" Visible="false" InitialPlayerReputation="1000"/>
+	<faction Name="Inanimate" Visible="false" Old="false" InitialPlayerReputation="0">
+		<feeling About="*" Value="0" />
+	</faction>
+
+  <faction
+    Name="Beasts"
+    Visible="false"
+    InitialPlayerReputation="-475"
+  >
+    <feeling About="Snapjaws" Value="0" />
+    <feeling About="*" Value="-50" />
+    <feeling About="Robots" Value="0" />
+    <feeling About="Cats" Value="0" />
+    <feeling About="Arachnids" Value="0" />
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Plants"
+    Visible="false"
+    InitialPlayerReputation="-475"
+  >
+    <feeling About="*" Value="-50" />
+    <feeling About="Robots" Value="0" />
+    <feeling About="Cats" Value="0" />
+    <feeling About="Consortium" Value="40" />
+    <feeling About="Flowers" Value="50" />
+    <feeling About="Trees" Value="50" />
+    <feeling About="Vines" Value="50" />
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Humanoids"
+    Visible="false"
+    InitialPlayerReputation="-475"
+  >
+    <feeling About="Snapjaws" Value="0" />
+    <feeling About="*" Value="-50" />
+    <feeling About="Robots" Value="0" />
+    <feeling About="Cats" Value="0" />
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="GerminatedPlants"
+    Visible="false"
+  >
+    <feeling About="*" Value="-100" />
+  </faction>
+
+  <faction
+    Name="Cherubim"
+    Visible="false"
+    InitialPlayerReputation="0"
+  >
+    <feeling About="*" Value="0" />
+  </faction>
+
+  <faction
+    Name="Prey"
+    DisplayName="食草享乐者"
+    PositiveSound="Sounds/Reputation/sfx_reputation_grazingHedonists_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_grazingHedonists_negative"
+		EmblemTile="Creatures/sw_goat.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="y"
+  >
+    <partreputation About="ThickFur" Value="100" />
+    <feeling About="*" Value="0" />
+    <interests>
+      <interest Tags="水,泣菌" />
+      <interest Tags="酒,泣菌" />
+      <interest Tags="苹果酒,泣菌" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="Hindren" Attitude="100" />
+      <factionworshipattitude Name="Hunters" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Playerhater"
+    Visible="false"
+    HatesPlayer="true"
+	InitialPlayerReputation="-1000"
+  >
+	  <feeling About="Player" Value="-100" />
+  </faction>
+
+  <faction
+    Name="Playerneutral"
+    Visible="false"
+    InitialPlayerReputation="0"
+  >
+	  <feeling About="Player" Value="0" />
+  </faction>
+
+  <faction
+    Name="Hunters"
+    Visible="false"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Prey" Value="-50" />
+    <feeling About="Robots" Value="-50" />
+    <feeling About="Templar" Value="-50" />
+    <feeling About="*" Value="0" />
+  </faction>
+
+  <faction
+    Name="Mean"
+    Visible="false"
+  >
+    <feeling About="*" Value="-25" />
+    <feeling About="Prey" Value="50" />
+  </faction>
+
+  <faction
+    Name="Joppa"
+    DisplayName="约帕村"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-140"
+    PositiveSound="Sounds/Reputation/sfx_reputation_village_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_village_negative"
+    HistoricalSignificance="1"
+		EmblemTile="Terrain/sw_joppa.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="y"		
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="Goatfolk" Value="-50" />
+    <feeling About="*" Value="0" />
+    <feeling About="Wardens" Value="100" />
+    <feeling About="Fish" Value="50" />
+    <waterritual
+      Skill="CookingAndGathering_Harvestry"
+      SkillCost="75"
+      Recipe="AppleMatz"
+    />
+    <interests>
+      <interest Tags="咬颚兽,定居点" WillBuy="true" WillSell="false" />
+      <interest Tags="苹果,定居点" WillBuy="false" WillSell="true" />
+      <interest Tags="猪,定居点" WillBuy="false" WillSell="true" />
+      <interest Tags="saltmarsh" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="Wardens" Attitude="0" />
+      <factionworshipattitude Name="Fish" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Kyakukya"
+    DisplayName="卡库基亚村"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_village_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_village_negative"
+		EmblemTile="Terrain/tile_kya.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="R"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Girsh" Value="-50" />
+    <feeling About="*" Value="0" />
+    <feeling About="Wardens" Value="0" />
+    <waterritual
+      Skill="CookingAndGathering"
+      Recipe="MushroomCider"
+      RecipeText="Would you share the favorite dish of Kyakukya's villagers?"
+    />
+    <interests>
+      <interest Tags="jungle" />
+      <interest Tags="机器人,巢穴" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Ezra"
+    DisplayName="埃兹拉村"
+    Old="true"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_village_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_village_negative"
+		EmblemTile="Terrain/sw_joppa.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="W"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="*" Value="0" />
+    <feeling About="Wardens" Value="0" />
+    <feeling About="Templar" Value="-100" />
+    <waterritual
+      Skill="Customs"
+      Recipe="GoatAndSweetLeaf"
+      RecipeText="Would you share the favorite dish of Ezra's villagers?"
+    />
+    <interests>
+      <interest Tags="historic" WillBuy="false" WillSell="true" />
+      <interest Tags="bananagrove" />
+      <interest Tags="苏丹" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="20" />
+      <factionworshipattitude Name="SultanCult2" Attitude="20" />
+      <factionworshipattitude Name="SultanCult3" Attitude="20" />
+      <factionworshipattitude Name="SultanCult4" Attitude="20" />
+      <factionworshipattitude Name="SultanCult5" Attitude="20" />
+      <factionworshipattitude Name="Resheph" Attitude="20" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Snapjaws"
+    DisplayName="咬颚兽"
+    Old="false"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_snapjaw_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_snapjaw_negative"
+		EmblemTile="Creatures/sw_snapjaw.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="R"
+  >
+    <feeling About="Beasts" Value="0" />
+    <feeling About="*" Value="-50" />
+    <interests>
+      <interest Tags="猪,定居点" WillBuy="true" WillSell="false" />
+      <interest Tags="苹果,定居点" WillBuy="true" WillSell="false" />
+      <interest Tags="stopsvalinn" WillBuy="false" WillSell="true" />
+      <interest Tags="咬颚兽,定居点" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes Default="0">
+      <factionworshipattitude Name="Snapjaws" Attitude="200" />
+      <factionworshipattitude Name="Entropic" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Baboons"
+    DisplayName="狒狒"
+    InitialPlayerReputation="-300"
+    PositiveSound="Sounds/Reputation/sfx_reputation_baboons_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_baboons_negative"
+    EmblemTile="Assets_Content_Textures_Creatures_sw_baboon.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="r"
+
+  >
+    <partreputation About="ThickFur" Value="100" />
+    <feeling About="*" Value="-50" />
+    <interests>
+      <interest Tags="狒狒,巢穴" />
+      <interest Tags="gossip" />
+    </interests>
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Apes" Attitude="50" />
+      <factionworshipattitude Name="Kyakukya" Attitude="30" />
+      <factionworshipattitude Name="Girsh" Attitude="-50" />
+      <factionworshipattitude Name="Entropic" Attitude="-50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Apes"
+    DisplayName="猿"
+    Parent="Beasts"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_apes_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_apes_negative"
+    EmblemTile="creatures/sw_albino_ape2.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="w"
+  >
+    <partreputation About="ThickFur" Value="100" />
+    <waterritual
+      Skill="Cudgel_Conk"
+    />
+    <interests>
+      <interest Tags="昆虫,巢穴" />
+      <interest Tags="猿,巢穴" />
+      <interest Tags="oboroqoru,巢穴" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Kyakukya" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Crabs"
+    DisplayName="螃蟹"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_crabs_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_crabs_negative"
+		EmblemTile="Creatures/sw_crab.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="w"
+  >
+    <waterritual
+      Skill="Endurance_Calloused"
+    />
+    <interests>
+      <interest Tags="underground" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Bears"
+    DisplayName="熊"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_bear_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_bear_negative"
+		EmblemTile="Creatures/sw_angrybear.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="y"
+  >
+    <partreputation About="ThickFur" Value="100" />
+    <interests>
+      <interest Tags="灵液商人" />
+      <interest Tags="蜂蜜,泣菌" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Winged Mammals"
+    DisplayName="有翼哺乳动物"
+    Parent="Beasts"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_wingedMammals_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_wingedMammals_negative"
+		EmblemTile="Creatures/sw_bat.bmp"
+    EmblemTileColor="K"
+    EmblemDetailColor="w"
+  >
+    <feeling About="Birds" Value="50" />
+    <partreputation About="Wings" Value="300" />
+    <interests>
+      <interest Tags="鱼,巢穴" />
+      <interest Tags="青蛙,巢穴" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Birds"
+    DisplayName="鸟"
+    Parent="Beasts"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_birds_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_birds_negative"
+    HistoricalSignificance="2"
+		EmblemTile="Creatures/sw_crow.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="w"
+  >
+    <feeling About="Unshelled Reptiles" Value="0" />
+    <feeling About="Chavvah" Value="0" />
+    <partreputation About="Wings" Value="300" />
+    <partreputation About="Beak" Value="200" />
+    <interests>
+      <interest Tags="gossip" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Fish"
+    DisplayName="鱼"
+    Parent="Beasts"
+    InitialPlayerReputation="-400"
+    PositiveSound="Sounds/Reputation/sfx_reputation_fish_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_fish_negative"
+    HistoricalSignificance="1"
+		EmblemTile="Creatures/sw_glowfish.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="C"
+		
+  >
+    <waterritual
+      Skill="Endurance_Swimming"
+    />
+    <feeling About="Flowers" Value="50" />
+    <feeling About="Joppa" Value="50" />
+    <feeling About="MechaSub" Value="50" />
+    <feeling About="Barathrumites" Value="50" />
+    <interests>
+      <interest Tags="opalduskwaters,riveryonth,riversvy,mountainstream,riveropal" MatchAny="true" Description="有水的地方" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Insects"
+    DisplayName="昆虫"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_insect_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_insect_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_centipede.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="r"
+  >
+    <interests>
+      <interest Tags="花,巢穴" />
+      <interest Tags="flowerfields" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Swine"
+    DisplayName="猪"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_swine_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_swine_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_boar2.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="猪,定居点" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Unshelled Reptiles"
+    DisplayName="无壳爬行动物"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_unshelledReptiles_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_unshelledReptiles_negative"
+    HistoricalSignificance="2"
+		EmblemTile="creatures/sw_salamander.bmp"
+    EmblemTileColor="R"
+    EmblemDetailColor="w"
+  >
+    <feeling About="Birds" Value="0" />
+    <partreputation About="ColdBlooded" Value="100" />
+    <interests>
+      <interest Tags="昆虫,巢穴" />
+      <interest Tags="熔岩,泣菌" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Cannibals"
+    DisplayName="食人族"
+    Parent="Beasts"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_cannibals_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_cannibals_negative"
+		EmblemTile="creatures/sw_craigsmench.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="r"
+  >
+    <waterritual
+      Skill="CookingAndGathering_Butchery"
+      SkillCost="75"
+    />
+    <interests>
+      <interest Tags="人形,定居点" />
+      <interest Tags="人形,巢穴" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="50" />
+      <factionworshipattitude Name="Entropic" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Arachnids"
+    DisplayName="蛛形动物"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_arachnids_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_arachnids_negative"
+    HistoricalSignificance="1"
+    EmblemTile="creatures/sw_spider.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="G"
+  >
+    <feeling About="*" Value="-50" />
+    <feeling About="Beasts" Value="0" />
+    <feeling About="Cats" Value="0" />
+    <partreputation About="Spinnerets" Value="300" />
+    <partreputation About="Stinger" Value="200" />
+    <interests>
+      <interest Tags="昆虫,巢穴" />
+      <interest Tags="裁缝商" />
+    </interests>
+    <waterritual
+      Skill="LongBladesLunge"
+    />
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Arachnids" Attitude="100" />
+      <factionworshipattitude Name="Insects" Attitude="-100" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Cats"
+    DisplayName="猫"
+    Parent="Beasts"
+    Pettable="true"
+    InitialPlayerReputation="-300"
+    PositiveSound="Sounds/Reputation/sfx_reputation_cats_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_cats_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_cat.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="y"
+  >
+    <feeling About="Antelopes" Value="-500" />
+    <feeling About="Prey" Value="-500" />
+    <waterritual
+      Skill="Acrobatics"
+    />
+    <interests>
+      <interest Tags="settlement" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Dogs"
+    DisplayName="狗"
+    Parent="Beasts"
+    Pettable="true"
+    InitialPlayerReputation="300"
+    PositiveSound="Sounds/Reputation/sfx_reputation_dogs_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_dogs_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_dog.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="人形,定居点" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Cragmensch"
+    DisplayName="岩石人"
+    Old="false"
+    Parent="Humanoids"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_cragmensch_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_cragmensch_negative"
+		EmblemTile="creatures/sw_bugbear.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="mountains" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Mollusks"
+    DisplayName="软体动物"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_mollusks_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_mollusks_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_spitting_slug.bmp"
+    EmblemTileColor="G"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="盐,泣菌" />
+      <interest Tags="slimy" />
+      <interest Tags="鸟,巢穴" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Tortoises"
+    DisplayName="陆龟"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_tortoises_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_tortoises_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_tortoise.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="g"
+  >
+    <feeling About="*" Value="0" />
+  </faction>
+
+  <faction
+    Name="Robots"
+    DisplayName="机器人"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_robot_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_robot_negative"
+    HistoricalSignificance="5"
+		EmblemTile="creatures/sw_scrapbot.bmp"
+    EmblemTileColor="c"
+    EmblemDetailColor="W"
+  >
+    <feeling About="Beasts" Value="0" />
+    <feeling About="*" Value="-50" />
+    <waterritual
+      Skill="Discipline_IronMind"
+      Items="0-1"
+      ItemBlueprint="CyberneticsCreditWedge"
+    />
+    <interests>
+      <interest Tags="tech" WillBuy="false" WillSell="true" />
+      <interest Tags="rusty" WillBuy="true" WillSell="false" />
+      <interest Tags="ruins" WillBuy="false" WillSell="true" />
+      <interest Tags="historic" WillBuy="false" WillSell="true" />
+      <interest Tags="苏丹" WillBuy="false" WillSell="true" />
+      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false"></interest>
+    </interests>
+    <factionworshipattitudes Default="0">
+      <factionworshipattitude Name="Baetyls" Attitude="50" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult2" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult3" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult4" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult5" Attitude="-50" />
+      <factionworshipattitude Name="Resheph" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Baetyls"
+    DisplayName="神石"
+    ExtradimensionalVersions="false"
+    HistoricalSignificance="5"
+    EmblemTile="items/sw_betyl.bmp"
+    EmblemTileColor="B"
+    EmblemDetailColor="W"
+  >
+    <feeling About="*" Value="0" />
+    <interests>
+      <interest Tags="苏丹" />
+      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false" />
+    </interests>
+    <factionworshipattitudes Default="0">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult2" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult3" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult4" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult5" Attitude="-50" />
+      <factionworshipattitude Name="Resheph" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Dromad"
+    DisplayName="骆驼商人"
+    Old="false"
+    PositiveSound="Sounds/Reputation/sfx_reputation_dromadMerchants_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_dromadMerchants_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_dromad.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="W"
+  >
+    <feeling About="*" Value="0" />
+    <interests>
+      <interest Tags="人形,商人" WillBuy="true" WillSell="false" />
+      <interest Tags="consortium" WillBuy="true" WillSell="false" />
+      <interest Tags="dromad" WillBuy="false" WillSell="true" />
+      <interest Tags="saltdunes" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Dromad" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Entropic"
+    DisplayName="高度熵化生物"
+    ExtradimensionalVersions="false"
+    PositiveSound="Sounds/Reputation/sfx_reputation_highlyEntropicBeings_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_highlyEntropicBeings_negative"
+    HistoricalSignificance="5"
+		EmblemTile="Mutations/spacetime_vortex.bmp"
+    EmblemTileColor="M"
+    EmblemDetailColor="b"
+  >
+    <feeling About="*" Value="0" />
+    <partreputation About="SpacetimeVortex" Value="200" />
+    <waterritual
+      Join="false"
+      Liquid="warmstatic"
+    />
+    <interests>
+      <interest Tags="*" />
+    </interests>
+    <wellknownworshippables>
+      <wellknownworshippable Name="Ptoh" Power="100" />
+    </wellknownworshippables>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Antelopes"
+    DisplayName="羚羊"
+    Parent="Beasts"
+    InterestedInSultans="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_antelopes_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_antelopes_negative"
+    HistoricalSignificance="1"
+    EmblemTile="creatures/sw_gnu.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="G"
+  >
+    <feeling About="Cats" Value="0" />
+    <partreputation About="Horns" Value="100" />
+    <interests>
+      <interest Tags="水,泣菌" />
+      <interest Tags="猫,巢穴" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Antelopes" Attitude="50" />
+      <factionworshipattitude Name="Cats" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="50" />
+      <factionworshipattitude Name="SultanCult2" Attitude="50" />
+      <factionworshipattitude Name="SultanCult3" Attitude="50" />
+      <factionworshipattitude Name="SultanCult4" Attitude="50" />
+      <factionworshipattitude Name="SultanCult5" Attitude="50" />
+      <factionworshipattitude Name="Resheph" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Worms"
+    DisplayName="蠕虫"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_worms_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_worms_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_knollworm.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="underground" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Oozes"
+    DisplayName="污泥"
+    Parent="Beasts"
+    InitialPlayerReputation="-550"
+    PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_amoeba.bmp"
+    EmblemTileColor="g"
+    EmblemDetailColor="w"
+  >
+    <feeling About="Fungi" Value="50" />
+    <waterritual
+      Mutation="Slime Glands"
+      MutationCost="100"
+    />
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Equines"
+    DisplayName="马科动物"
+    Parent="Prey"
+    PositiveSound="Sounds/Reputation/sfx_reputation_equines_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_equines_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_equimax.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="B"
+  >
+    <waterritual
+      Skill="Endurance_Longstrider"
+    />
+    <interests>
+      <interest Tags="flowerfields" />
+      <interest Tags="desertcanyons" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Newly Sentient Beings"
+    DisplayName="新觉醒的生物"
+    ExtradimensionalVersions="false"
+    PositiveSound="Sounds/Reputation/sfx_reputation_newlySentientBeings_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_newlySentientBeings_negative"
+		EmblemTile="Tiles/wall_rock-00000000.bmp"
+    EmblemTileColor="r"
+    EmblemDetailColor="w"
+  >
+		
+    <feeling About="*" Value="0" />
+    <waterritual
+      SkillPointAmount="200"
+      SkillPointCost="200"
+    />
+    <interests BuyTargetedSecrets="false" Blurb="什么都不知道">
+      <interest Tags="*" WillBuy="true" WillSell="false" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Goatfolk"
+    DisplayName="山羊人"
+    Old="false"
+    Parent="Humanoids"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_goatfolk_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_goatfolk_negative"
+    HistoricalSignificance="2"
+		EmblemTile="creatures/sw_goatfolk.bmp"
+    EmblemTileColor="W"
+    EmblemDetailColor="w"
+  >
+    <partreputation About="Horns" Value="100" />
+    <waterritual
+      Skill="CookingAndGathering_Butchery"
+      SkillCost="75"
+    />
+    <interests>
+      <interest Tags="jungle" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Hermits"
+    DisplayName="隐士"
+    Parent="Humanoids"
+    InitialPlayerReputation="-100"
+    PositiveSound="Sounds/Reputation/sfx_reputation_hermits_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_hermits_negative"
+		EmblemTile="creatures/sw_hermit.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="c"
+  >
+    <waterritual
+      Skill="Persuasion_Berate"
+      HermitOath="100"
+    />
+    <interests>
+      <interest Tags="book" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Hermits" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Frogs"
+    DisplayName="青蛙"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_frogs_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_frogs_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_frog.bmp"
+    EmblemTileColor="C"
+    EmblemDetailColor="W"
+  >
+    <partreputation About="Amphibious" Value="100" />
+    <waterritual
+      Skill="Acrobatics_Jump"
+    />
+    <interests>
+      <interest Tags="昆虫,巢穴" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Svardym"
+    DisplayName="斯瓦德姆"
+    Old="false"
+    Parent="Beasts"
+    InitialPlayerReputation="-475"
+		EmblemTile="creatures/sw_svardym_jut.bmp"
+    EmblemTileColor="g"
+    EmblemDetailColor="w"
+  >
+    <partreputation About="Amphibious" Value="100" />
+    <waterritual
+      Skill="Acrobatics_Jump"
+    />
+    <interests>
+      <interest Tags="昆虫,巢穴" WillBuy="true" WillSell="false" />
+      <interest Tags="旋风现象" WillBuy="false" WillSell="true" Description="环流瘟疫" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Naphtaali"
+    DisplayName="纳夫塔利部落"
+    Old="false"
+    Parent="Humanoids"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-350"
+    PositiveSound="Sounds/Reputation/sfx_reputation_naphtaaliTribe_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_naphtaaliTribe_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/naphtaali_forager.bmp"
+    EmblemTileColor="g"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="jungle" />
+      <interest Tags="机器人,巢穴" WillBuy="true" WillSell="false" />
+    </interests>
+    <waterritual
+      AltBehaviorPart="Robot"
+      AltItems="1d3-2"
+      AltItemBlueprint="CyberneticsCreditWedge"
+      AltSkill="Customs_Tactful"
+    />
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Robots" Attitude="100" />
+      <factionworshipattitude Name="Baetyls" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Trolls"
+    DisplayName="巨魔"
+    Old="false"
+    Parent="Humanoids"
+    ExtradimensionalVersions="false"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_trolls_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_trolls_negative"
+    HistoricalSignificance="4"
+		EmblemTile="creatures/sw_troll_foal.bmp"
+    EmblemTileColor="W"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="artifact" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Issachari"
+    DisplayName="伊萨查里部落"
+    Old="false"
+    Parent="Humanoids"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_issachariTribe_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_issachariTribe_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_raider1.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="R"
+  >
+    <waterritual
+      Skill="Endurance_Weathered"
+    />
+    <interests>
+      <interest Tags="saltdunes" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Issachari" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Strangers"
+    DisplayName="神秘的陌生人"
+    Parent="Humanoids"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_mysteriousStrangers_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_mysteriousStrangers_negative"
+    HistoricalSignificance="3"
+		EmblemTile="creatures/caste_flipped_16.bmp"
+    EmblemTileColor="K"
+    EmblemDetailColor="w"
+  >
+    <waterritual
+      Skill="Pistol_Akimbo"
+    />
+    <interests>
+      <interest Tags="*" WillBuy="true" WillSell="false" />
+      <interest Tags="怪事" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Strangers" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Solos"
+    Visible="false"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Beasts" Value="-50" />
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Solos" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Pariahs"
+    DisplayName="被遗弃者"
+    ExtradimensionalVersions="false"
+    PositiveSound="Sounds/Reputation/sfx_reputation_pariahs_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_pariahs_negative"
+		EmblemTile="creatures/sw_lulihart.bmp"
+    EmblemTileColor="C"
+    EmblemDetailColor="w"
+  >
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Customs_TrashDivining"
+    />
+    <interests BuyDescription="对建立新社会所需资源感兴趣：">
+      <interest Tags="水,泣菌" WillBuy="true" WillSell="false" />
+      <interest Tags="recipe" WillBuy="true" WillSell="false" />
+      <interest Tags="tech" WillBuy="true" WillSell="false" />
+      <interest Tags="settlement" WillBuy="false" WillSell="true" />
+      <interest Tags="gossip" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Pariahs" Attitude="20" />
+      <factionworshipattitude Name="Hindren" Attitude="10" />
+      <factionworshipattitude Name="Girsh" Attitude="-80" />
+      <factionworshipattitude Name="Entropic" Attitude="-20" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Hindren"
+    DisplayName="贝拉的后裔"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-200"
+    PositiveSound="Sounds/Reputation/sfx_reputation_hindrenBeyLah_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_hindrenBeyLah_negative"
+		EmblemTile="creatures/sw_hindren_1.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <waterritual
+      Recipe="MahLahSoup"
+    />
+    <interests>
+      <interest Tags="flowerfields" />
+      <interest Tags="金德里什" WillBuy="true" WillSell="false" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Prey" Attitude="100" />
+      <factionworshipattitude Name="Girsh" Attitude="-150" />
+      <factionworshipattitude Name="Entropic" Attitude="-150" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Mopango"
+    DisplayName="莫潘戈"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="150"
+    PositiveSound="Sounds/Reputation/sfx_reputation_mopango_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_mopango_negative"
+    DefaultAddress="climber"
+		EmblemTile="creatures/sw_mopango_villager.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Mechanimists" Value="100" />
+    <feeling About="Barathrumites" Value="100" />
+    <waterritual
+      Recipe="BoneBabka"
+      RecipeText="Would you share the favorite dish of the mopango?"
+    />
+    <interests>
+      <interest Tags="rusty" WillBuy="true" WillSell="false" />
+      <interest Tags="tech" WillBuy="true" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Mopango" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Girsh"
+    DisplayName="吉尔什"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-800"
+    PositiveSound="Sounds/Reputation/sfx_reputation_girsh_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_girsh_negative"
+    HistoricalSignificance="6"
+		EmblemTile="creatures/sw_solifuge.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="y"
+  >
+    <feeling About="*" Value="-50" />
+    <waterritual
+      Liquid="cloning"
+    />
+    <interests>
+      <interest Tags="moonstair" />
+    </interests>
+    <factionworshipattitudes Default="0">
+      <factionworshipattitude Name="Girsh" Attitude="100" />
+      <factionworshipattitude Name="Entropic" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Barathrumites"
+    DisplayName="巴拉斯鲁米特"
+    Old="false"
+    FormatWithArticle="true"
+    PositiveSound="Sounds/Reputation/sfx_reputation_barathrumites_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_barathrumites_negative"
+    DefaultAddress="delver"
+    HistoricalSignificance="2"
+    EmblemTile="Creatures/sw_barathrumite.bmp"
+    EmblemTileColor="Y"
+    EmblemDetailColor="w"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Templar" Value="-100" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="Mechanimists" Value="-50" />
+    <feeling About="MechaSub" Value="-50" />
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Tinkering"
+      Blueprints="1d3"
+      Recipe="ThePorridge"
+      RecipeText="What a... pungent smell. Would you teach me to cook the Barathrumites' favorite dish?"
+    />
+    <interests>
+      <interest Tags="tech" />
+      <interest Tags="templar,巢穴" />
+    </interests>
+    <ranks>
+      <rank Name="学徒" Standing="1" />
+      <rank Name="旅伴" Standing="2" />
+      <rank Name="弟子" Standing="3" />
+      <rank Name="学者" Standing="4" />
+    </ranks>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Barathrumites" Attitude="0" />
+      <factionworshipattitude Name="Entropic" Attitude="-150" />
+      <factionworshipattitude Name="Mechanimists" Attitude="0" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Consortium"
+    DisplayName="植物联盟"
+    Old="false"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-10"
+    PositiveSound="Sounds/Reputation/sfx_reputation_consortiumPhyta_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_consortiumPhyta_negative"
+    HistoricalSignificance="2"
+		EmblemTile="creatures/sw_yurl.bmp"
+    EmblemTileColor="g"
+    EmblemDetailColor="W"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Flowers" Value="100" />
+    <feeling About="Roots" Value="100" />
+    <feeling About="Fungi" Value="-50" />
+    <feeling About="Vines" Value="100" />
+    <feeling About="Trees" Value="40" />
+    <feeling About="Templar" Value="-100" />
+    <partreputation About="PhotosyntheticSkin" Value="200" />
+    <partreputation About="Burgeoning" Value="200" />
+    <waterritual
+      Skill="Persuasion_SnakeOiler"
+      BuyMostValuableItem="true"
+    />
+    <interests>
+      <interest Tags="骆驼,商人" WillBuy="true" WillSell="false" />
+      <interest Tags="人形,商人" WillBuy="true" WillSell="false" />
+      <interest Tags="consortium" WillBuy="false" WillSell="true" />
+      <interest Tags="gossip" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Consortium" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-150" />
+      <factionworshipattitude Name="Entropic" Attitude="-150" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Templar"
+    DisplayName="普图斯圣殿骑士"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-700"
+    PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative"
+    HistoricalSignificance="3"
+		EmblemTile="creatures/sw_templar.bmp"
+    EmblemTileColor="r"
+    EmblemDetailColor="Y"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Barathrumites" Value="-50" />
+    <feeling About="Mechanimists" Value="-50" />
+    <feeling About="Gyre Wights" Value="-100" />
+    <feeling About="Daughters" Value="-100" />
+    <feeling About="Mamon" Value="-100" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="*" Value="-50" />
+    <feeling About="Robots" Value="0" />
+    <feeling About="Joppa" Value="0" />
+    <feeling About="Kyakukya" Value="0" />
+    <waterritual
+      Items="1"
+      ItemBlueprint="CyberneticsCreditWedge"
+    />
+    <interests>
+      <interest Tags="废墟,科技,历史性,苏丹,cybernetics,丽贝卡,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="现代世界" />
+      <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
+      <interest Tags="historic" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes Default="0" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Templar" Attitude="100" />
+      <factionworshipattitude Name="Girsh" Attitude="-200" />
+      <factionworshipattitude Name="Entropic" Attitude="-200" />
+      <factionworshipattitude Name="Mamon" Attitude="-200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Mechanimists"
+    DisplayName="机械主义者"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_mechanimists_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_mechanimists_negative"
+    HistoricalSignificance="3"
+		EmblemTile="creatures/caste_flipped_18.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="C"
+  >
+    <feeling About="Joppa" Value="0" />
+    <feeling About="Kyakukya" Value="0" />
+    <feeling About="Succulents" Value="0" />
+    <feeling About="*" Value="0" />
+    <feeling About="Baetyls" Value="0" />
+    <waterritual
+      Skill="Persuasion_Proselytize"
+      Gifts="3"
+    />
+    <interests>
+      <interest Tags="tech" />
+      <interest Tags="ruins" />
+      <interest Tags="historic" />
+      <interest Tags="枪匠" />
+      <interest Tags="机器人,巢穴" />
+    </interests>
+    <holyplace ZoneID="JoppaWorld.25.3.1.1.26" />
+    <factionworshipattitudes Default="-50" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Mechanimists" Attitude="100" />
+      <factionworshipattitude Name="Resheph" Attitude="50" />
+      <factionworshipattitude Name="Robots" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="Templar" Attitude="-50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="MechaSub"
+    Visible="false"
+  >
+    <feeling About="Mechanimists" Value="100" />
+    <feeling About="Fish" Value="50" />
+  </faction>
+
+  <faction
+    Name="Gyre Wights"
+    DisplayName="旋涡幽灵"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_glow-Wights_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_glow-Wights_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/wight_agolgot.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="g"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Girsh" Value="100" />
+    <interests>
+    <interest Tags="girsh" />
+      <interest Tags="尼菲林" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Gyre Wights" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="100" />
+      <factionworshipattitude Name="Entropic" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Mamon"
+    DisplayName="玛蒙之子"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-600"
+    PositiveSound="Sounds/Reputation/sfx_reputation_childrenMamon_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_childrenMamon_negative"
+		EmblemTile="creatures/sw_goatfolk_shaman.bmp"
+    EmblemTileColor="M"
+    EmblemDetailColor="w"
+  >
+    <feeling About="*" Value="-50" />
+    <feeling About="Seekers" Value="100" />
+    <waterritual
+      Liquid="blood"
+    />
+    <interests>
+      <interest Tags="山羊人,定居点" />
+      <interest Tags="jungle" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes Default="0">
+      <factionworshipattitude Name="Mamon" Attitude="50" />
+      <factionworshipattitude Name="Girsh" Attitude="50" />
+      <factionworshipattitude Name="Entropic" Attitude="100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Seekers"
+    DisplayName="盲道追寻者"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_seekersSightlessWay_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_seekersSightlessWay_negative"
+    HistoricalSignificance="4"
+		EmblemTile="creatures/sw_sightless_novice.bmp"
+    EmblemTileColor="r"
+    EmblemDetailColor="W"
+  >
+    <feeling About="*" Value="-50" />
+    <feeling About="Mamon" Value="0" />
+    <partreputation About="MassMind" Value="-200" />
+    <waterritual
+      Skill="Discipline"
+      RandomMentalMutation="50"
+    />
+    <interests>
+      <interest Tags="Ptoh" />
+    </interests>
+    <factionworshipattitudes Default="-10">
+      <factionworshipattitude Name="Seekers" Attitude="-200" />
+      <factionworshipattitude Name="Entropic" Attitude="100" />
+      <factionworshipattitude Name="Mamon" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Wardens"
+    DisplayName="守护者联盟"
+    Old="false"
+    Parent="Joppa"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-150"
+    PositiveSound="Sounds/Reputation/sfx_reputation_fellowshipWardens_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_fellowshipWardens_negative"
+    HistoricalSignificance="5"
+		EmblemTile="creatures/npc-yrame.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="B"
+  >
+    <feeling About="Kyakukya" Value="100" />
+    <feeling About="Joppa" Value="100" />
+    <feeling About="Merchants" Value="100" />
+    <feeling About="Insects" Value="-50" />
+    <feeling About="Unshelled Reptiles" Value="-50" />
+    <feeling About="Arachnids" Value="-50" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Snapjaws" Value="-50" />
+    <feeling About="Baboons" Value="-50" />
+    <feeling About="Apes" Value="-50" />
+    <feeling About="Crabs" Value="-50" />
+    <feeling About="Bears" Value="-50" />
+    <feeling About="Swine" Value="-50" />
+    <feeling About="Cannibals" Value="-100" />
+    <feeling About="Tortoises" Value="-50" />
+    <feeling About="Worms" Value="-50" />
+    <feeling About="Oozes" Value="-50" />
+    <feeling About="Goatfolk" Value="-50" />
+    <feeling About="Frogs" Value="-50" />
+    <feeling About="Naphtaali" Value="-50" />
+    <feeling About="Templar" Value="-50" />
+    <feeling About="Mamon" Value="-100" />
+    <feeling About="Gyre Wights" Value="0" />
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Shield"
+    />
+    <interests>
+      <interest Tags="settlement" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Wardens" Attitude="-50" />
+      <factionworshipattitude Name="Kyakukya" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-200" />
+      <factionworshipattitude Name="Entropic" Attitude="-200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Water"
+    DisplayName="水领主"
+    ExtradimensionalVersions="false"
+    PositiveSound="Sounds/Reputation/sfx_reputation_waterBarons_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_waterBarons_negative"
+    HistoricalSignificance="3"
+		EmblemTile="items/sw_waterskin.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="y"
+  >
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Persuasion_SnakeOiler"
+    />
+    <interests>
+      <interest Tags="settlement" WillBuy="true" WillSell="false" />
+      <interest Tags="水,泣菌" WillBuy="false" WillSell="true" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Flowers"
+    DisplayName="花"
+    Parent="Plants"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_flowers_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_flowers_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_glowpad.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="g"
+  >
+    <feeling About="Fish" Value="50" />
+    <waterritual
+      Skill="Persuasion"
+    />
+    <interests>
+      <interest Tags="flowerfields" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Roots"
+    DisplayName="根系"
+    Parent="Plants"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_roots_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_roots_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_dreadroot.bmp"
+    EmblemTileColor="K"
+    EmblemDetailColor="w"
+  >
+    <partreputation About="PhotosyntheticSkin" Value="200" />
+    <waterritual
+      Skill="Survival_JungleSurvival"
+    />
+    <interests>
+      <interest Tags="underground" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Fungi"
+    DisplayName="真菌"
+    Parent="Plants"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+    HistoricalSignificance="2"
+		EmblemTile="creatures/sw_mushroom.bmp"
+    EmblemTileColor="W"
+    EmblemDetailColor="M"
+  >
+    <waterritual
+      FungusInfect="30"
+    />
+    <interests>
+      <interest Tags="settlement" WillBuy="true" WillSell="false" />
+      <interest Tags="fungal" WillBuy="false" WillSell="true" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Vines"
+    DisplayName="藤蔓"
+    Parent="Plants"
+    InitialPlayerReputation="-475"
+    PositiveSound="Sounds/Reputation/sfx_reputation_vines_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_vines_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_seed_spitting_vine.bmp"
+    EmblemTileColor="G"
+    EmblemDetailColor="g"
+  >
+    <partreputation About="PhotosyntheticSkin" Value="200" />
+    <waterritual
+      Skill="Multiweapon_Expertise"
+    />
+  </faction>
+
+  <faction
+    Name="Urchins"
+    DisplayName="海胆"
+    Parent="Plants"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_urchins_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_urchins_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_urchin.bmp"
+    EmblemTileColor="w"
+    EmblemDetailColor="c"
+  >
+    <interests>
+      <interest Tags="凝胶,泣菌" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Succulents"
+    DisplayName="多肉植物"
+    ExtradimensionalVersions="false"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_succulents_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_succulents_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_aloe_solo.bmp"
+    EmblemTileColor="G"
+    EmblemDetailColor="M"
+  >
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Discipline_FastingWay"
+    />
+    <interests>
+      <interest Tags="saltdunes" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Trees"
+    DisplayName="树木"
+    Parent="Plants"
+    InitialPlayerReputation="-300"
+    PositiveSound="Sounds/Reputation/sfx_reputation_trees_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_trees_negative"
+    HistoricalSignificance="2"
+		EmblemTile="creatures/sw_palm.bmp"
+    EmblemTileColor="C"
+    EmblemDetailColor="w"
+  >
+    <partreputation About="PhotosyntheticSkin" Value="200" />
+    <interests>
+      <interest Tags="苏丹" WillBuy="false" WillSell="true" />
+      <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false"></interest>
+    </interests>
+  </faction>
+
+  <faction
+    Name="Merchants"
+    DisplayName="商人公会"
+    Old="false"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_merchantsGuild_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_merchantsGuild_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/caste_flipped_23.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="B"
+  >
+    <feeling About="*" Value="0" />
+    <waterritual
+      BuyMostValuableItem="true"
+      Join="false"
+    />
+    <interests>
+      <interest Tags="merchant" />
+      <interest Tags="gossip" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Merchants" Attitude="50" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Farmers"
+    DisplayName="农民公会"
+    Old="false"
+    Parent="Joppa"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_farmersGuild_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_farmersGuild_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_farmer1.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="人形,定居点" WillBuy="true" WillSell="false" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Farmers" Attitude="20" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Resheph"
+    DisplayName="盘羊教派"
+    Old="false"
+    Plural="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_cultCoiledLamb_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_cultCoiledLamb_negative"
+    HistoricalSignificance="3"
+		EmblemTile="terrain/sw_resheph_sultanstatue.bmp"
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <waterritual
+      Skill="Physic_StaunchWounds"
+    />
+    <interest Tags="苏丹" WillBuy="false" WillSell="false" />
+    <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false"></interest>
+    <feeling About="*" Value="0" />
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Girsh" Attitude="-200" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult2" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult3" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult4" Attitude="-50" />
+      <factionworshipattitude Name="SultanCult5" Attitude="-50" />
+      <factionworshipattitude Name="Mechanimists" Attitude="50" />
+      <factionworshipattitude Name="Resheph" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Daughters"
+    DisplayName="流亡者之女"
+    Old="false"
+    Plural="true"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_daughtersExile_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_daughtersExile_negative"
+    HistoricalSignificance="1"
+		EmblemTile="creatures/sw_daughter_wrench.bmp"
+    EmblemTileColor="C"
+    EmblemDetailColor="m"
+  >
+    <feeling About="*" Value="0" />
+    <feeling About="Templar" Value="-50" />
+    <interests BuyTargetedSecrets="false" SellTargetedSecrets="false">
+      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false" />
+      <interest Tags="rebekah" WillBuy="false" WillSell="true"/>
+    </interests>
+    <waterritual
+      Skill="Tinkering_Repair"
+      Blueprints="1-2"
+    />
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Daughters" Attitude="0" />
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="-20" />
+      <factionworshipattitude Name="SultanCult2" Attitude="-20" />
+      <factionworshipattitude Name="SultanCult3" Attitude="-20" />
+      <factionworshipattitude Name="SultanCult4" Attitude="-20" />
+      <factionworshipattitude Name="SultanCult5" Attitude="-20" />
+      <factionworshipattitude Name="Resheph" Attitude="50" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="YdFreehold"
+    DisplayName="伊德自由领居民"
+    Old="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_village_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_village_negative"
+    HistoricalSignificance="1"
+		EmblemTile="Terrain/terrainpalladiumreef_3l.bmp"
+    EmblemTileColor="c"
+    EmblemDetailColor="W"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="Templar" Value="-100" />
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="CookingAndGathering_Spicer"
+      Recipe="TongueAndCheek"
+      RecipeText="Would you share the favorite dish of the Yd Freehold's denizens?"
+    />
+    <interests>
+      <interest Tags="tech" WillBuy="true" WillSell="false" />
+      <interest Tags="oddity" WillBuy="true" WillSell="false" />
+      <interest Tags="settlement" WillBuy="true" WillSell="false" />
+      <interest Tags="historic" WillBuy="true" WillSell="false" />
+      <interest Tags="lakehinnom" WillBuy="false" WillSell="true" />
+      <interest Tags="palladiumreef" WillBuy="false" WillSell="true" />
+      <interest Tags="苏丹" WillBuy="false" WillSell="false" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="Chavvah"
+    DisplayName="生命之树查瓦"
+    Old="false"
+    FormatWithArticle="false"
+    Plural="false"
+    InitialPlayerReputation="0"
+    PositiveSound="Sounds/Reputation/sfx_reputation_chavvah_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_chavvah_negative"
+    HistoricalSignificance="5"
+		EmblemTile="Terrain/sw_chavvah_worldmap.bmp"
+    EmblemTileColor="m"
+    EmblemDetailColor="Y"
+  >
+    <feeling About="Beasts" Value="-50" />
+    <feeling About="Girsh" Value="-100" />
+    <feeling About="Templar" Value="-100" />
+    <feeling About="*" Value="0" />
+    <waterritual
+      Skill="Nonlinearity_Tomorrowful"
+      Recipe="CrystalDelight"
+      RecipeText="Would you share the favorite dish of the entities of Chavvah?"
+      RecipeGenotype="!True Kin"
+    />
+    <interests>
+      <interest Tags="oddity" WillBuy="true" WillSell="false" />
+      <interest Tags="Ptoh" WillBuy="true" WillSell="false" />
+      <interest Tags="moonstair" WillBuy="false" WillSell="true" />
+      <interest Tags="苏丹" WillBuy="false" WillSell="false" />
+    </interests>
+    <factionworshipattitudes>
+      <factionworshipattitude Name="Chavvah" Attitude="0" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="SultanCult1"
+    Old="false"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+    HistoricalSignificance="5"
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <feeling About="SultanCult1" Value="0" />
+    <feeling About="*" Value="-50" />
+    <factionworshipattitudes Default="-20" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult1" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="SultanCult2"
+    Old="false"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+    HistoricalSignificance="4"		
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <feeling About="SultanCult2" Value="0" />
+    <feeling About="*" Value="-50" />
+    <factionworshipattitudes Default="-20" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult2" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="SultanCult3"
+    Old="false"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+    HistoricalSignificance="3"		
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <feeling About="SultanCult3" Value="0" />
+    <feeling About="*" Value="-50" />
+    <factionworshipattitudes Default="-20" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult3" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="SultanCult4"
+    Old="false"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+    HistoricalSignificance="2"		
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <feeling About="SultanCult4" Value="0" />
+    <feeling About="*" Value="-50" />
+    <factionworshipattitudes Default="-20" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult4" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+  <faction
+    Name="SultanCult5"
+    Old="false"
+    Plural="false"
+    ExtradimensionalVersions="false"
+    FormatWithArticle="true"
+    InitialPlayerReputation="-500"
+    PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+    NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+    HistoricalSignificance="1"		
+    EmblemTileColor="y"
+    EmblemDetailColor="g"
+  >
+    <feeling About="SultanCult5" Value="0" />
+    <feeling About="*" Value="-50" />
+    <factionworshipattitudes Default="-20" ApplyDefaultAfterSpecificFeelings="true">
+      <factionworshipattitude Name="Girsh" Attitude="-100" />
+      <factionworshipattitude Name="Entropic" Attitude="-100" />
+      <factionworshipattitude Name="SultanCult5" Attitude="200" />
+    </factionworshipattitudes>
+  </faction>
+
+</factions>
