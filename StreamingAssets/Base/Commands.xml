@@ -107,9 +107,9 @@
   </command>
 
   <command ID="Accept" DisplayText="接受" Category="菜单" Layer="UINav" InputModuleBind="submit" Required="true" SkipUpgrade="true" CanShareBindsWith="Submit,CmdUse">
+    <keyboardBind Key="space"/>
     <keyboardBind Key="enter"/>
     <keyboardBind Key="numpadenter"/>
-    <keyboardBind Key="space"/>
     <gamepadBind Button="buttonSouth" />
   </command>
   <command ID="Cancel" DisplayText="取消" Category="菜单" Layer="UINav" InputModuleBind="cancel" Required="true" SkipUpgrade="true" CanShareBindsWith="CmdSystemMenu">
@@ -823,6 +823,9 @@
   <command ID="CmdWish" DisplayText="希望" Category="调试" Layer="Adventure" Auto="DownPass">
     <keyboardBind Modifier="ctrl" Key="w"/>
   </command>
+  <command ID="CmdWishMenu" DisplayText="希望菜单" Category="调试" Layer="Adventure" Auto="DownPass">
+    <keyboardBind Modifier="shift" Key="w"/>
+  </command>  
   <command ID="CmdXP" DisplayText="给予 250000 XP" Category="调试" Layer="Adventure" Auto="DownPass"></command>
   <command ID="CmdExplore" DisplayText="探索区" Category="调试" Layer="Adventure" Auto="DownPass"></command>
   <command ID="CmdNoclipD" DisplayText="Noclip下来" Category="调试" Layer="Adventure" Auto="DownPass"></command>

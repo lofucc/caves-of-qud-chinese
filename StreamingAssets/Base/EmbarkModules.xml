@@ -1,19 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
-<!-- 角色创建界面相关 -->
 <embarkmodules>
 
   <module Class="XRL.CharacterBuilds.Qud.QudSpecificCharacterInitModule"> <!-- responsible for initializing the default humanoid object during character builds (returns a "humanoid" object) -->
 
   </module>
 
-  <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
+   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
     <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
       <title>:选择你的游玩模式:</title>
       <name>游玩模式</name>
     </window>
 
-		<modes>
+    <modes>
+
+      <mode ID="Tutorial" Title="教程">
+        <icon Tile="Items/sw_square_cap.bmp" Foreground="K" Detail="W"></icon>
+        <description>
+          学习卡德洞窟的基础教程。
+        </description>
+        <stringgamestate Name="GameMode" Value="教程"></stringgamestate>
+      </mode>
+
 			<mode ID="Classic" Title="经典">
 				<icon Tile="Creatures/class_gunslinger.bmp" Foreground="y" Detail="K"></icon>
 				<description>
@@ -121,8 +128,7 @@
     <pregens>
       
     <!-- True Kin -->
-    <!--注意构建码 -->
-    <pregen Name="禁卫军总领" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
+      <pregen Name="禁卫军总领" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
         <code>H4sIAEwY6GYC/82V0WrbMBSG7/sUxvTSMUkaShnkIk23UbqNrAlpofRCtg+2mCIZ6ajDFF/sAfYavdlzjb3GJKVN41o1gcIWgcHW+f6j378P+P4gMCvMyQruQCoqePguCIdxPx72h/FoFEZrINGUZVvEwBD9p+JKZJqBMvs3bsOu+83dFrKoSrDq68tP8bQgkqQI8tS2VvFXndnrI3CBBvvsBFEwUQpWCat607kRlFGwXJsYP3uMgqlmqCWMOWiUhEXBTCeMphdQLcQ34GOuGXs0u3GUESTGS9Onqxxit82mxTPTp2XzxWGu7ZPMdl5IDcEF5T6ulXIDqTdPdfTmsOc62fOsGw53jvpRZfv+efjx++ev/5zzBFHSRCOoPY76pcmd054JylHNtEwLoiDznr7+LCiB51gY4iTyI5OcMoqVIY5fIRZC5wUHpTq6nHMExmgOPLVvPHoFu6KMleI7yA7mfS5stVWsPUGQcl4CR8P3jk689UtYEcopzw3T9xCJCXBSmqJX/w8ndlolIDkgTfd5ZFsud55ZZkPuDTwVBQxSNO/V/J9tL/94O/WzI2v7C80LXFL30aIOkdBuagYdzJJIShwVfiBmqr1k3dq9fcsYubvbg/ovF91myiUIAAA=</code>
         <description>
 &amp;c&#249;&amp;y 基于冲锋的近战战斗机
@@ -398,7 +404,7 @@
           {{c|&#249;}} 山上随意的村庄.
           {{c|&#249;}} 村庄教授屠宰.
           {{c|&#249;}} +100 隐士声望.
-          {{c|&#249;}} Start with a {{r|blood-stained}} neck-ring
+          {{c|&#249;}} 开局携带{{r|blood-stained}}颈环
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="Hills"></stringgamestate>
@@ -425,7 +431,32 @@
         <grid Position="32" Tile="Terrain/sw_hills.bmp" Foreground="w" Detail="w" Background="k"></grid>
         <grid Position="42" Tile="Terrain/tile_jungle2.bmp" Foreground="g" Detail="G" Background="k"></grid>
       </location>
-    
+
+      <location ID="JoppaTutorial" Name="沉没的卡瓦兰瑟莱" Location="GlobalLocation:JoppaWorld.11.24.1.1.11@10,13" Set="Tutorial" ExcludeFromDaily="Yes">
+        <description>
+          你到达了卡德的郊区。
+        </description>
+
+        <grid Position="00" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="10" Tile="Terrain/sw_marsh_worldmap_1.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="20" Tile="Terrain/sw_joppa.bmp" Foreground="w" Detail="y" Background="k"></grid>
+        <grid Position="30" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="40" Tile="Terrain/sw_marsh_worldmap_1.bmp" Foreground="g" Detail="b" Background="k"></grid>
+
+        <grid Position="01" Tile="Terrain/sw_marsh_worldmap_4.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="11" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="21" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="31" Tile="Terrain/sw_marsh_worldmap_4.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="41" Tile="Terrain/sw_canyon.bmp" Foreground="w" Detail="w" Background="k"></grid>
+
+        <grid Position="02" Tile="Terrain/sw_marsh_worldmap_2.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="12" Tile="Terrain/sw_marsh_worldmap_3.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="22" Tile="Items/sw_bedroll.bmp" Foreground="w" Detail="y" Background="k"></grid>
+        <grid Position="32" Tile="Terrain/sw_marsh_worldmap_4.bmp" Foreground="g" Detail="g" Background="k"></grid>
+        <grid Position="42" Tile="Terrain/sw_marsh_worldmap_2.bmp" Foreground="g" Detail="b" Background="k"></grid>
+
+      </location>
+      
     </locations>
   
   </module>

@@ -2266,8 +2266,47 @@
         <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
         <music Track="Caves1" />
       </zone>
-    </cell>    
+    </cell> 
+       
+    <cell Name="JoppaTutorialArea" Inherits="SaltMarsh" ApplyTo="TerrainJoppaTutorial" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt marsh" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="Watervine"></builder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Overworld1" />
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>
+        <postbuilder Class="TutorialClear" ZoneTemplate=""></postbuilder>
+      </zone>
 
+      <zone Level="10" x="1" y="1" Name="salt marsh" HasWeather="true" WindSpeed="0-50">
+        <builder Class="Watervine"></builder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Overworld1" />
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>
+        <postbuilder Class="TutorialClear" ZoneTemplate=""></postbuilder>
+        <postbuilder Class="AddPresetAtLocation" X="7" Y="11" Preset="CaravanseraiShaft"></postbuilder>
+      </zone>
+
+      <zone Level="10" x="1" y="0" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="MapBuilder" FileName="TutorialMapSurface.rpm"/>
+        <builder Class="WatervineCaravanserai" />
+        <postbuilder Class="TutorialClear"></postbuilder>
+      </zone>
+
+      <zone Level="11" x="1" y="1" Name="salt marsh" HasWeather="true" WindSpeed="0-50">
+        <builder Class="MapBuilder" FileName="TutorialMap.rpm"/>
+        <music Track="Kyakukya" />
+        <postbuilder Class="TutorialClear" ZoneTemplate="WatervineCaves"></postbuilder>
+      </zone>
+
+      <zone Level="11" x="1" y="0" Name="salt marsh">
+        <builder Class="MapBuilder" FileName="TutorialMap2.rpm"/>
+        <music Track="Kyakukya" />
+        <postbuilder Class="TutorialClear" ZoneTemplate="WatervineCaves"></postbuilder>
+      </zone>
+    </cell>
   </world>
 
 </worlds>

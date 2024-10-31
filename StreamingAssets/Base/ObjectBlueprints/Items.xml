@@ -10108,7 +10108,7 @@
     <tag Name="NoAIEquip" Value="*delete"/>
   </object>
   <object Name="Witchwood Bark" Inherits="Snack">
-    <part Name="Render" DisplayName="{{W|女巫木皮}}" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_jerky1.bmp" RenderString="'" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{W|巫术树皮}}" ColorString="&amp;W" DetailColor="w" Tile="Items/sw_jerky1.bmp" RenderString="'" RenderLayer="5"/>
     <part Name="Physics" Category="药物"/>
     <part Name="Commerce" Value="4"/>
     <part Name="Food" Satiation="None" Thirst="0" Message="一股温暖的刺痛感袭遍全身。"/>

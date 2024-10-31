@@ -470,6 +470,9 @@
     ************************
 
   -->
+  <object Name="CaravanseraiShaft" Inherits="Widget">
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CaravanseraiShaft.rpm" Width="6" Height="6" />
+  </object>
   <object Name="JoppaSultanShrine_3x3" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_3x3.rpm" Width="3" Height="3" />
   </object>

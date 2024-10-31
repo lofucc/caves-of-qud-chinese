@@ -10740,7 +10740,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
   </object>
   <!-- Cherubim -->
   <object Name="Prey Cherub" Inherits="BaseAntelope">
-    <part Name="Render" DisplayName="放牧小天使" Tile="Creatures/sw_cherub_grazing.bmp" RenderString="143" ColorString="&amp;Y" DetailColor="W"/>
+    <part Name="Render" DisplayName="放牧 小天使" Tile="Creatures/sw_cherub_grazing.bmp" RenderString="143" ColorString="&amp;Y" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Prey-100"/>
     <stat Name="Level" Value="40"/>
@@ -10755,7 +10755,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Prey Cherub" Inherits="BaseAntelope">
-    <part Name="Render" DisplayName="机械放牧小天使" Tile="Creatures/sw_cherub_grazing_mechanical.bmp" RenderString="142" ColorString="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械放牧 小天使" Tile="Creatures/sw_cherub_grazing_mechanical.bmp" RenderString="142" ColorString="&amp;c" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Prey-100"/>
     <stat Name="Level" Value="31"/>
@@ -10771,7 +10771,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Baboons Cherub" Inherits="BaseBaboon">
-    <part Name="Render" DisplayName="狒狒小天使" Tile="Creatures/sw_cherub_baboon.bmp" RenderString="142" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="狒狒 小天使" Tile="Creatures/sw_cherub_baboon.bmp" RenderString="142" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10784,7 +10784,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Baboons Cherub" Inherits="BaseBaboon">
-    <part Name="Render" DisplayName="机械狒狒天使" Tile="Creatures/sw_cherub_baboon_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械狒狒 小天使" Tile="Creatures/sw_cherub_baboon_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10797,7 +10797,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Apes Cherub" Inherits="BaseApe">
-    <part Name="Render" DisplayName="猿天使" Tile="Creatures/sw_cherub_ape.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="猿 小天使" Tile="Creatures/sw_cherub_ape.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10810,7 +10810,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Apes Cherub" Inherits="BaseApe">
-    <part Name="Render" DisplayName="机械猿童" Tile="Creatures/sw_cherub_ape_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械猿 小天使" Tile="Creatures/sw_cherub_ape_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10823,7 +10823,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Crabs Cherub" Inherits="BaseCrab">
-    <part Name="Render" DisplayName="蟹天使" Tile="Creatures/sw_cherub_crab.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="蟹 小天使" Tile="Creatures/sw_cherub_crab.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10836,7 +10836,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Crabs Cherub" Inherits="BaseCrab">
-    <part Name="Render" DisplayName="机械蟹天使" Tile="Creatures/sw_cherub_crab_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械蟹 小天使" Tile="Creatures/sw_cherub_crab_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10849,7 +10849,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Bears Cherub" Inherits="BaseBear">
-    <part Name="Render" DisplayName="熊天使" Tile="Creatures/sw_cherub_bear.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="熊 小天使" Tile="Creatures/sw_cherub_bear.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10863,7 +10863,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Bears Cherub" Inherits="BaseBear">
-    <part Name="Render" DisplayName="机械熊天使" Tile="Creatures/sw_cherub_bear_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械熊 小天使" Tile="Creatures/sw_cherub_bear_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10877,7 +10877,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Winged Mammals Cherub" Inherits="BaseBat">
-    <part Name="Render" DisplayName="蝙蝠小天使" Tile="Creatures/sw_cherub_winged_mammal.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="蝙蝠 小天使" Tile="Creatures/sw_cherub_winged_mammal.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Winged Mammals-100"/>
     <stat Name="Level" Value="40"/>
@@ -10891,7 +10891,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Winged Mammals Cherub" Inherits="BaseBat">
-    <part Name="Render" DisplayName="机械蝙蝠小天使" Tile="Creatures/sw_cherub_winged_mammal_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械蝙蝠 小天使" Tile="Creatures/sw_cherub_winged_mammal_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Winged Mammals-100"/>
     <stat Name="Level" Value="31"/>
@@ -10905,7 +10905,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Birds Cherub" Inherits="BaseBird">
-    <part Name="Render" DisplayName="鸟童" Tile="Creatures/sw_cherub_bird.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="鸟 小天使" Tile="Creatures/sw_cherub_bird.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10918,7 +10918,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Birds Cherub" Inherits="BaseBird">
-    <part Name="Render" DisplayName="机械鸟童" Tile="Creatures/sw_cherub_bird_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械鸟 小天使" Tile="Creatures/sw_cherub_bird_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10931,7 +10931,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Fish Cherub" Inherits="BaseFish">
-    <part Name="Render" DisplayName="鱼童" Tile="Creatures/sw_cherub_fish.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="鱼 小天使" Tile="Creatures/sw_cherub_fish.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10945,7 +10945,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Fish Cherub" Inherits="BaseFish">
-    <part Name="Render" DisplayName="机械鱼天使" Tile="Creatures/sw_cherub_fish_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械鱼 小天使" Tile="Creatures/sw_cherub_fish_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10959,7 +10959,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Insects Cherub" Inherits="BaseInsect">
-    <part Name="Render" DisplayName="昆虫小天使" Tile="Creatures/sw_cherub_insect.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="昆虫 小天使" Tile="Creatures/sw_cherub_insect.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -10972,7 +10972,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Insects Cherub" Inherits="BaseInsect">
-    <part Name="Render" DisplayName="机械昆虫小天使" Tile="Creatures/sw_cherub_insect_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械昆虫 小天使" Tile="Creatures/sw_cherub_insect_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -10985,7 +10985,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Swine Cherub" Inherits="BaseSwine">
-    <part Name="Render" DisplayName="猪翼天使" Tile="Creatures/sw_cherub_swine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="猪 小天使" Tile="Creatures/sw_cherub_swine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Swine-100"/>
     <stat Name="Level" Value="40"/>
@@ -11000,7 +11000,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Swine Cherub" Inherits="BaseSwine">
-    <part Name="Render" DisplayName="机械猪精灵" Tile="Creatures/sw_cherub_swine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械猪 小天使" Tile="Creatures/sw_cherub_swine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Swine-100"/>
     <stat Name="Level" Value="31"/>
@@ -11015,7 +11015,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Reptiles Cherub" Inherits="BaseReptile">
-    <part Name="Render" DisplayName="爬行天使" Tile="Creatures/sw_cherub_reptile.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="爬行兽 小天使" Tile="Creatures/sw_cherub_reptile.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11029,7 +11029,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Reptiles Cherub" Inherits="BaseReptile">
-    <part Name="Render" DisplayName="机械爬行兽幼崽" Tile="Creatures/sw_cherub_reptile_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械爬行兽 小天使" Tile="Creatures/sw_cherub_reptile_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11043,7 +11043,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Cannibals Cherub" Inherits="BaseCannibal">
-    <part Name="Render" DisplayName="食人小天使" Tile="Creatures/sw_cherub_cannibal.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="食人 小天使" Tile="Creatures/sw_cherub_cannibal.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11056,7 +11056,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Cannibals Cherub" Inherits="BaseCannibal">
-    <part Name="Render" DisplayName="机械食人小天使" Tile="Creatures/sw_cherub_cannibal_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械食人 小天使" Tile="Creatures/sw_cherub_cannibal_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11069,7 +11069,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Arachnids Cherub" Inherits="BaseSpider">
-    <part Name="Render" DisplayName="蜘蛛小天使" Tile="Creatures/sw_cherub_arachnid.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="蜘蛛 小天使" Tile="Creatures/sw_cherub_arachnid.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11082,7 +11082,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Arachnids Cherub" Inherits="BaseSpider">
-    <part Name="Render" DisplayName="机械蜘蛛小天使" Tile="Creatures/sw_cherub_arachnid_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械蜘蛛 小天使" Tile="Creatures/sw_cherub_arachnid_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11095,7 +11095,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Cats Cherub" Inherits="BaseCat">
-    <part Name="Render" DisplayName="猫小天使" Tile="Creatures/sw_cherub_cat.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="猫 小天使" Tile="Creatures/sw_cherub_cat.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11109,7 +11109,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Cats Cherub" Inherits="BaseCat">
-    <part Name="Render" DisplayName="机械猫天使" Tile="Creatures/sw_cherub_cat_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械猫 小天使" Tile="Creatures/sw_cherub_cat_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11123,7 +11123,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Dogs Cherub" Inherits="BaseDog">
-    <part Name="Render" DisplayName="狗天使" Tile="Creatures/sw_cherub_dog.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="狗 小天使" Tile="Creatures/sw_cherub_dog.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11136,7 +11136,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Dogs Cherub" Inherits="BaseDog">
-    <part Name="Render" DisplayName="机械狗天使" Tile="Creatures/sw_cherub_dog_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械狗 小天使" Tile="Creatures/sw_cherub_dog_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11150,7 +11150,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
   </object>
   <object Name="Mollusks Cherub" Inherits="BaseSlug">
     <part Name="Body" Anatomy="SlugWithHands"/>
-    <part Name="Render" DisplayName="软体小天使" Tile="Creatures/sw_cherub_mollusk.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="软体 小天使" Tile="Creatures/sw_cherub_mollusk.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11164,7 +11164,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
   </object>
   <object Name="Mechanical Mollusks Cherub" Inherits="BaseSlug">
     <part Name="Body" Anatomy="SlugWithHands"/>
-    <part Name="Render" DisplayName="机械软体小天使" Tile="Creatures/sw_cherub_mollusk_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械软体 小天使" Tile="Creatures/sw_cherub_mollusk_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11177,7 +11177,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Tortoises Cherub" Inherits="BaseTortoise">
-    <part Name="Render" DisplayName="乌龟小天使" Tile="Creatures/sw_cherub_tortoise.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="乌龟 小天使" Tile="Creatures/sw_cherub_tortoise.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11190,7 +11190,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Tortoises Cherub" Inherits="BaseTortoise">
-    <part Name="Render" DisplayName="机械龟童" Tile="Creatures/sw_cherub_tortoise_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械龟 小天使" Tile="Creatures/sw_cherub_tortoise_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11203,7 +11203,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Robots Cherub" Inherits="BaseRobot">
-    <part Name="Render" DisplayName="机器人小天使" Tile="Creatures/sw_cherub_robot.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="机器人 小天使" Tile="Creatures/sw_cherub_robot.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Body" Anatomy="TreadedRobot"/>
     <stat Name="Level" Value="40"/>
@@ -11218,7 +11218,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Robots Cherub" Inherits="BaseRobot">
-    <part Name="Render" DisplayName="机械机器人小天使" Tile="Creatures/sw_cherub_robot_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械机器人 小天使" Tile="Creatures/sw_cherub_robot_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Body" Anatomy="TreadedRobot"/>
     <stat Name="Level" Value="31"/>
@@ -11233,7 +11233,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Baetyls Cherub" Inherits="BaseRobot">
-    <part Name="Render" DisplayName="贝特尔小天使" Tile="Creatures/sw_cherub_baetyl.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="贝特尔 小天使" Tile="Creatures/sw_cherub_baetyl.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Body" Anatomy="HoverRobot"/>
     <part Name="Brain" Factions="Baetyls-100"/>
     <part Name="Description" Short=""/>
@@ -11251,7 +11251,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Baetyls Cherub" Inherits="BaseRobot">
-    <part Name="Render" DisplayName="机械贝特尔小天使" Tile="Creatures/sw_cherub_baetyl_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械贝特尔 小天使" Tile="Creatures/sw_cherub_baetyl_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Body" Anatomy="HoverRobot"/>
     <part Name="Brain" Factions="Baetyls-100"/>
     <part Name="Description" Short=""/>
@@ -11269,7 +11269,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Antelopes Cherub" Inherits="BaseAntelope">
-    <part Name="Render" DisplayName="羚羊小天使" Tile="Creatures/sw_cherub_antelope.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="羚羊 小天使" Tile="Creatures/sw_cherub_antelope.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11282,7 +11282,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Antelopes Cherub" Inherits="BaseAntelope">
-    <part Name="Render" DisplayName="机械羚羊天使" Tile="Creatures/sw_cherub_antelope_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械羚羊 小天使" Tile="Creatures/sw_cherub_antelope_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11295,7 +11295,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Worms Cherub" Inherits="BaseWorm">
-    <part Name="Render" DisplayName="蠕虫小天使" Tile="Creatures/sw_cherub_worm.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="蠕虫 小天使" Tile="Creatures/sw_cherub_worm.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11308,7 +11308,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Worms Cherub" Inherits="BaseWorm">
-    <part Name="Render" DisplayName="机械蠕虫小天使" Tile="Creatures/sw_cherub_worm_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械蠕虫 小天使" Tile="Creatures/sw_cherub_worm_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11321,7 +11321,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Oozes Cherub" Inherits="BaseOoze">
-    <part Name="Render" DisplayName="黏液小天使" Tile="Creatures/sw_cherub_ooze.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="黏液 小天使" Tile="Creatures/sw_cherub_ooze.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11334,7 +11334,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Oozes Cherub" Inherits="BaseOoze">
-    <part Name="Render" DisplayName="机械粘液小天使" Tile="Creatures/sw_cherub_ooze_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械黏液 小天使" Tile="Creatures/sw_cherub_ooze_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11347,7 +11347,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Equines Cherub" Inherits="BaseAnimal">
-    <part Name="Render" DisplayName="马形小天使" Tile="Creatures/sw_cherub_equine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="马 小天使" Tile="Creatures/sw_cherub_equine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Equines-100"/>
     <stat Name="Level" Value="40"/>
@@ -11362,7 +11362,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Equines Cherub" Inherits="BaseAnimal">
-    <part Name="Render" DisplayName="机械马天使" Tile="Creatures/sw_cherub_equine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械马 小天使" Tile="Creatures/sw_cherub_equine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Equines-100"/>
     <stat Name="Level" Value="31"/>
@@ -11377,7 +11377,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Newly Sentient Beings Cherub" Inherits="BaseAnimal">
-    <part Name="Render" DisplayName="陶俑天使" Tile="Creatures/sw_cherub_newly_sentient_being.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="陶俑 小天使" Tile="Creatures/sw_cherub_newly_sentient_being.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Brain" Factions="Newly Sentient Beings-100"/>
     <part Name="Body" Anatomy="Pottery"/>
     <part Name="Description" Short=""/>
@@ -11395,7 +11395,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Newly Sentient Beings Cherub" Inherits="BaseAnimal">
-    <part Name="Render" DisplayName="机械陶俑天使" Tile="Creatures/sw_cherub_newly_sentient_being_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械陶俑 小天使" Tile="Creatures/sw_cherub_newly_sentient_being_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Brain" Factions="Newly Sentient Beings-100"/>
     <part Name="Body" Anatomy="Pottery"/>
     <part Name="Description" Short=""/>
@@ -11413,7 +11413,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Hermits Cherub" Inherits="BaseHumanoid">
-    <part Name="Render" DisplayName="隐居小天使" Tile="Creatures/sw_cherub_hermit.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="隐士 小天使" Tile="Creatures/sw_cherub_hermit.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Hermits-100"/>
     <stat Name="Level" Value="40"/>
@@ -11427,7 +11427,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Hermits Cherub" Inherits="BaseHumanoid">
-    <part Name="Render" DisplayName="机械隐士小天使" Tile="Creatures/sw_cherub_hermit_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械隐士 小天使" Tile="Creatures/sw_cherub_hermit_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Hermits-100"/>
     <stat Name="Level" Value="31"/>
@@ -11441,7 +11441,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Frogs Cherub" Inherits="BaseFrog">
-    <part Name="Render" DisplayName="青蛙小天使" Tile="Creatures/sw_cherub_frog.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="青蛙 小天使" Tile="Creatures/sw_cherub_frog.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Frogs-100"/>
     <stat Name="Level" Value="40"/>
@@ -11455,7 +11455,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Frogs Cherub" Inherits="BaseFrog">
-    <part Name="Render" DisplayName="机械青蛙天使" Tile="Creatures/sw_cherub_frog_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械青蛙 小天使" Tile="Creatures/sw_cherub_frog_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Frogs-100"/>
     <stat Name="Level" Value="31"/>
@@ -11469,7 +11469,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Strangers Cherub" Inherits="BaseHumanoid">
-    <part Name="Render" DisplayName="陌生的小天使" Tile="Creatures/sw_cherub_stranger.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="陌生人 小天使" Tile="Creatures/sw_cherub_stranger.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Strangers-100"/>
     <stat Name="Level" Value="40"/>
@@ -11483,7 +11483,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Strangers Cherub" Inherits="BaseHumanoid">
-    <part Name="Render" DisplayName="机械异乡小天使" Tile="Creatures/sw_cherub_stranger_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械陌生人 小天使" Tile="Creatures/sw_cherub_stranger_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Strangers-100"/>
     <stat Name="Level" Value="31"/>
@@ -11497,7 +11497,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Flowers Cherub" Inherits="MutatedFlower">
-    <part Name="Render" DisplayName="花小天使" Tile="Creatures/sw_cherub_flower.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="花 小天使" Tile="Creatures/sw_cherub_flower.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11510,7 +11510,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Flowers Cherub" Inherits="MutatedFlower">
-    <part Name="Render" DisplayName="机械花小天使" Tile="Creatures/sw_cherub_flower_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械花 小天使" Tile="Creatures/sw_cherub_flower_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11523,7 +11523,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Roots Cherub" Inherits="MutatedRoots">
-    <part Name="Render" DisplayName="根精灵" Tile="Creatures/sw_cherub_root.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="根 小天使" Tile="Creatures/sw_cherub_root.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Roots-100"/>
     <stat Name="Level" Value="40"/>
@@ -11537,7 +11537,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Roots Cherub" Inherits="MutatedRoots">
-    <part Name="Render" DisplayName="机械根天使" Tile="Creatures/sw_cherub_root_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械根 小天使" Tile="Creatures/sw_cherub_root_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <part Name="Brain" Factions="Roots-100"/>
     <stat Name="Level" Value="31"/>
@@ -11551,7 +11551,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Fungi Cherub" Inherits="MutatedFungus">
-    <part Name="Render" DisplayName="蘑菇小天使" Tile="Creatures/sw_cherub_fungus.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="蘑菇 小天使" Tile="Creatures/sw_cherub_fungus.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11564,7 +11564,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Fungi Cherub" Inherits="MutatedFungus">
-    <part Name="Render" DisplayName="机械蘑菇小天使" Tile="Creatures/sw_cherub_fungus_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械蘑菇 小天使" Tile="Creatures/sw_cherub_fungus_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11577,7 +11577,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Vines Cherub" Inherits="MutatedVine">
-    <part Name="Render" DisplayName="藤蔓小天使" Tile="Creatures/sw_cherub_vine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="藤蔓 小天使" Tile="Creatures/sw_cherub_vine.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11590,7 +11590,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Vines Cherub" Inherits="MutatedVine">
-    <part Name="Render" DisplayName="机械藤蔓小天使" Tile="Creatures/sw_cherub_vine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械藤蔓 小天使" Tile="Creatures/sw_cherub_vine_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11603,7 +11603,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Urchins Cherub" Inherits="BaseUrchin">
-    <part Name="Render" DisplayName="刺猬小天使" Tile="Creatures/sw_cherub_urchin.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="刺猬 小天使" Tile="Creatures/sw_cherub_urchin.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11617,7 +11617,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Urchins Cherub" Inherits="BaseUrchin">
-    <part Name="Render" DisplayName="机械刺猬天使" Tile="Creatures/sw_cherub_urchin_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械刺猬 小天使" Tile="Creatures/sw_cherub_urchin_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11631,7 +11631,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Succulents Cherub" Inherits="MutatedSucculent">
-    <part Name="Render" DisplayName="裂隙天使" Tile="Creatures/sw_cherub_succulent.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="多肉植物 小天使" Tile="Creatures/sw_cherub_succulent.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11645,7 +11645,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Succulents Cherub" Inherits="MutatedSucculent">
-    <part Name="Render" DisplayName="机械分形小天使" Tile="Creatures/sw_cherub_succulent_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械多肉植物 小天使" Tile="Creatures/sw_cherub_succulent_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11659,7 +11659,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Trees Cherub" Inherits="MutatedTree">
-    <part Name="Render" DisplayName="树小天使" Tile="Creatures/sw_cherub_tree.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="树 小天使" Tile="Creatures/sw_cherub_tree.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11672,7 +11672,7 @@ Uuflax 的金叶辫带从王冠雷达垂下，覆盖在 =pronouns.possessive= �
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Mechanical Trees Cherub" Inherits="MutatedTree">
-    <part Name="Render" DisplayName="机械树小天使" Tile="Creatures/sw_cherub_tree_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械树 小天使" Tile="Creatures/sw_cherub_tree_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>

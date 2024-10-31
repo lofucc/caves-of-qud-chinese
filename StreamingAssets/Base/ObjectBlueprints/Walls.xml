@@ -310,6 +310,7 @@
     <stat Name="Hitpoints" Value="200"/>
     <part Name="Description" Short="黏土和石英被晒干并粉碎成红岩，这种岩石已经被山民开采了数千年之久。"/>
     <part Name="ShaleVines"/>
+    <tag Name="PaintWith" Value="MarbleWalls" />
     <xtagGrammar massNoun="true"/>
   </object>
   <object Name="Sandstone" Inherits="BaseSedimentaryRock">

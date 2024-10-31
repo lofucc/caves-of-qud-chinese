@@ -1,48 +1,59 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<options>
+<options>      
+  <option ID="OptionMasterVolume" DisplayText="主音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
+  <option ID="OptionSound" DisplayText="音效" Category="声音" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionSoundVolume" Requires="OptionSound==Yes" DisplayText="音效音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
+  <option ID="OptionMusic" DisplayText="音乐" Category="声音" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionMusicVolume" Requires="OptionMusic==Yes" DisplayText="音乐音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
+  <option ID="OptionAmbient" DisplayText="环境音效" Category="声音" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAmbientVolume" Requires="OptionAmbient==Yes" DisplayText="环境音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="50"/>
+  <option ID="OptionUseInterfaceSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="界面音效" Category="声音" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionInterfaceVolume" Requires="OptionUseInterfaceSounds==Yes,OptionShowAdvancedOptions==Yes" DisplayText="界面音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
+  <option ID="OptionUseCombatSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="战斗音效" Category="声音" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionCombatVolume" Requires="OptionUseCombatSounds==Yes,OptionShowAdvancedOptions==Yes" DisplayText="战斗音量" Category="声音" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
+  <option ID="OptionPlayFireSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="火焰噼啪声" Category="声音" Type="Checkbox" Default="Yes"/>
+  
+  
+  <option ID="OptionDisplayBrightness" DisplayText="亮度" Category="显示" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"/>
+  <option ID="OptionDisplayContrast" DisplayText="对比度" Category="显示" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"/>
+  <option ID="OptionDisplayFullscreen" DisplayText="全屏" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisplayResolution" DisplayText="全屏分辨率" Category="显示" Type="BigCombo" Values="*Resolution" Default="Unset"/>
+  <option ID="OptionDisplayFramerate" DisplayText="帧率" Category="显示" Type="Combo" Values="10,20,30,40,50,60,120,Unlimited,VSync" Default="VSync"/>
+  <option ID="OptionUseTiles" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用瓷砖图形" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisplayVignette" DisplayText="显示暗角效果" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisplayScanlines" DisplayText="显示扫描线" Category="显示" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionUseOverlayCombatEffects" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示战斗动画" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionUseOverlayDamageText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示浮动伤害数字" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionUseParticleVFX" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示现代视觉效果" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionUseTextParticleVFX" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示ASCII视觉效果" Category="显示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisableFloorTextures" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用地板纹理" Category="显示" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableBloodsplatter" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用血花飞溅" Category="显示" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableSmoke" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用烟雾效果" Category="显示" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableImposters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用现代基于图块的图形效果" Category="显示" Type="Checkbox" Default="No"/>
+  <option ID="OptionMainMenuBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="主菜单背景艺术" Category="显示" Type="Combo" Values="Modern,Classic" Default="Modern"/>
+  
 
-  <option ID="OptionMasterVolume" DisplayText="主音量" Category="常规设置" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
-  <option ID="OptionSound" DisplayText="音效" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionSoundVolume" Requires="OptionSound==Yes" DisplayText="音效音量" Category="常规设置" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
-  <option ID="OptionMusic" DisplayText="音乐" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionMusicVolume" Requires="OptionMusic==Yes" DisplayText="音乐音量" Category="常规设置" Type="Slider" Min="0" Max="100" Increment="5" Default="100"/>
-  <option ID="OptionAmbient" DisplayText="环境音效" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAmbientVolume" Requires="OptionAmbient==Yes" DisplayText="环境音量" Category="常规设置" Type="Slider" Min="0" Max="100" Increment="5" Default="50"/>
-  <option ID="OptionUseCombatSounds" Requires="OptionSound==Yes" DisplayText="战斗音效" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseInterfaceSounds" Requires="OptionSound==Yes" DisplayText="界面声音" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionPlayFireSounds" Requires="OptionSound==Yes" DisplayText="火焰声音" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseTiles" DisplayText="瓷砖" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseOverlayCombatEffects" DisplayText="战斗动画" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseOverlayDamageText" DisplayText="战斗伤害文字" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseParticleVFX" DisplayText="使用现代粒子特效" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionUseTextParticleVFX" DisplayText="使用文字粒子特效" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayVignette" DisplayText="显示暗角效果" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayScanlines" DisplayText="显示扫描线" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayBrightness" DisplayText="亮度" Category="常规设置" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"/>
-  <option ID="OptionDisplayContrast" DisplayText="对比度" Category="常规设置" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"/>
-  <option ID="OptionDisplayFullscreen" DisplayText="全屏" Category="常规设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayResolution" DisplayText="全屏分辨率" Category="常规设置" Type="BigCombo" Values="*Resolution" Default="Unset"/>
-  <option ID="OptionMusicBackground" DisplayText="后台运行" Category="常规设置" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisplayFramerate" DisplayText="应用程序目标帧率" Category="常规设置" Type="Combo" Values="10,20,30,40,50,60,120,Unlimited,VSync" Default="VSync"/>
-	<option ID="OptionSessionBackups" DisplayText="会话备份存档" Category="常规设置" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="3">
-		<helptext>
-			When you load a save from the main menu rolling backups of loaded saves will be maintained in your data folder (&lt;...&gt;/CavesOfQud/Local/Session) up to this number.
-		</helptext>
-	</option>
-
-  <option ID="OptionsKeybindings" DisplayText="控制映射" Category="控制设置" Type="Button" OnClick="Qud.UI.KeybindsScreen.ShowKeybindsClick" SearchKeywords="keybinds key binding"/>
+  <option ID="OptionsKeybindings" DisplayText="控制映射" Category="控制设置" Type="Button" OnClick="Qud.UI.KeybindsScreen.ShowKeybindsClick" SearchKeywords="Control bindings"/>
   <option ID="OptionKeyRepeatDelay" DisplayText="按键重复延迟" Category="控制设置" Type="Slider" Min="5" Max="100" Increment="5" Default="10"/>
   <option ID="OptionKeyRepeatRate" DisplayText="按键重复率" Category="控制设置" Type="Slider" Min="0" Max="100" Increment="5" Default="90"/>
-  <option ID="OptionMouseInput" DisplayText="允许鼠标输入" Category="控制设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionMouseMovement" Requires="OptionMouseInput==Yes" DisplayText="允许鼠标移动" Category="控制设置" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionMouseScrollWheel" Requires="OptionMouseInput==Yes" DisplayText="允许鼠标滚轮缩放" Category="控制设置" Type="Checkbox" Default="Yes"/>
-  <option ID="MacOS13UnityKeypadBugWorkaround" DisplayText="MacOS13 Unity 键盘Bug修复" Category="控制设置" Type="Checkbox" Default="No"/>
+  <option ID="OptionMouseInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="允许鼠标输入" Category="控制设置" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionMouseMovement" Requires="OptionMouseInput==Yes,OptionShowAdvancedOptions==Yes" DisplayText="允许鼠标移动" Category="控制设置" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionMouseScrollWheel" Requires="OptionMouseInput==Yes,OptionShowAdvancedOptions==Yes" DisplayText="允许滚轮缩放" Category="控制设置" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionCapInputBuffer" Requires="OptionShowAdvancedOptions==Yes" DisplayText="限制输入缓冲区为两个命令" Category="控制设置" Type="Checkbox" Default="Yes"/>
 
-  <option ID="OptionModernUI" DisplayText="启用现代UI元素" Category="现代UI" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionPrereleaseStageScale" Requires="OptionModernUI==Yes" DisplayText="现代UI缩放" Category="现代UI" Type="Combo" Values="auto,auto x1.25,auto x1.5,.5,.75,1.0,1.25,1.5,2" Default="auto"/>
-  <option ID="OptionModernCharacterSheet" Requires="OptionModernUI==Yes" DisplayText="现代角色面板" Category="现代UI" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionCharacterSheetAdditionalScale" Requires="OptionModernUI==Yes,OptionModernCharacterSheet==Yes" DisplayText="角色面板额外缩放百分比" Category="现代UI" Type="Slider" Min="-50" Max="50" Increment="1" Default="0"/>
-  <option ID="OptionPlayScale" Requires="OptionModernUI==Yes" DisplayText="游戏区域比例" Category="现代UI" Type="Combo" Values="Fit,Cover,Pixel Perfect" Default="Cover" SearchKeywords="Fit Cover Pixel Perfect">
+ 
+  <option ID="OptionDisableFullscreenColorEffects" DisplayText="禁用全屏颜色效果（适用于色盲）" Category="无障碍" Type="Checkbox" Default="No"/>
+  <option ID="OptionAlphanumericBits" DisplayText="使用字母数字代替点显示位（适用于色盲）" Category="无障碍" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisableTextAnimationEffects" DisplayText="禁用大多数基于图块的闪烁效果" Category="无障碍" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableTextWarpEffects" DisplayText="禁用基于图块的屏幕扭曲效果" Category="无障碍" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableFullscreenWarpEffects" DisplayText="禁用全屏扭曲效果" Category="无障碍" Type="Checkbox" Default="No"/>
+
+
+  <option ID="OptionModernUI" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用现代UI" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionPrereleaseStageScale" Requires="OptionModernUI==Yes" DisplayText="UI 缩放" Category="用户界面" Type="Combo" Values="auto,auto x1.25,auto x1.5,.5,.75,1.0,1.25,1.5,2" Default="auto"/>
+  <option ID="OptionModernCharacterSheet" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="启用现代UI角色表" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionCharacterSheetAdditionalScale" Requires="OptionModernUI==Yes,OptionModernCharacterSheet==Yes,OptionShowAdvancedOptions==Yes" DisplayText="角色面板缩放百分比" Category="用户界面" Type="Slider" Min="-50" Max="50" Increment="1" Default="0"/>
+  <option ID="OptionPlayScale" Requires="OptionModernUI==Yes" DisplayText="游戏区域比例" Category="用户界面" Type="Combo" Values="Fit,Cover,Pixel Perfect" Default="Cover" SearchKeywords="Fit Cover Pixel Perfect">
     <helptext>
         Controls how the play area will scale in the area not used by the UI.
 
@@ -51,155 +62,156 @@
         {{W|Pixel Perfect}}: Sizes the play area to an integer multiple of the pixel art. Maximizes sharpness.
     </helptext>
   </option>
-  <option ID="OptionTileScale" Requires="OptionModernUI==Yes,OptionPlayScale==Pixel Perfect" DisplayText="像素完美瓦片缩放" Category="现代UI" Type="Combo" Values="1,2,3,4,5,6,7,8" Default="1"/>
-  <option ID="OptionMessageLineLogScale" Requires="OptionModernUI==Yes" DisplayText="消息日志行大小调整 (pt)" Category="现代UI" Type="Slider" Min="-12" Max="24" Increment="1" Default="0"/>
-  <option ID="OptionDockMovable" Requires="OptionModernUI==Yes" DisplayText="停靠消息日志 &amp;&amp; 小地图" Category="现代UI" Type="Combo" Values="Unset,Right,Left,Flip" Default="Right"/>
-  <option ID="OptionDockOpacity" Requires="OptionModernUI==Yes,OptionDockMovable!=Unset" DisplayText="停靠背景透明度" Category="现代UI" Type="Slider" Min="0" Max="100" Increment="10" Default="100"/>
-  <option ID="OptionMouseCursor" Requires="OptionModernUI==Yes" DisplayText="鼠标指针" Category="现代UI" Type="Combo" Values="System,Default,Alternate" Default="Default"/>
-  <option ID="OptionControllerFont" Requires="OptionModernUI==Yes" DisplayText="控制器按钮" Category="现代UI" Type="Combo" Values="Auto,KBM,XBox,PS,XBox Filled,PS Filled" Default="Auto"/>
-  <option ID="OptionZoomSensitivity" Requires="OptionModernUI==Yes" DisplayText="缩放灵敏度" Category="现代UI" Type="Slider" Min="1" Max="25" Increment="1" Default="1"/>
+  <option ID="OptionTileScale" Requires="OptionModernUI==Yes,OptionPlayScale==Pixel Perfect" DisplayText="像素完美瓷砖图形缩放" Category="用户界面" Type="Combo" Values="1,2,3,4,5,6,7,8" Default="1"/>
+  <option ID="OptionAbilityBarMode" DisplayText="技能栏模式" Category="用户界面" Type="Combo" Values="Full,Compact" Default="Full"/>
+  <option ID="OptionOverlayMinimap" Requires="OptionModernUI==Yes" DisplayText="显示小地图" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionOverlayNearbyObjects" Requires="OptionModernUI==Yes" DisplayText="显示附近物体列表" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionOverlayNearbyObjectsLocal" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="附近物体列表：仅显示当前格子的内容" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionOverlayNearbyObjectsPools" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="附近物体列表: 显示液体池" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionOverlayNearbyObjectsPlants" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="附近物体列表：显示植物" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionOverlayNearbyObjectsTakeable" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="附近物品列表：仅显示可拾取物品" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionMessageLineLogScale" Requires="OptionModernUI==Yes" DisplayText="消息日志字体大小（点）" Category="用户界面" Type="Slider" Min="-12" Max="24" Increment="1" Default="0"/>
+  <option ID="OptionDockMovable" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="停靠消息日志 &amp;&amp; 小地图" Category="用户界面" Type="Combo" Values="Unset,Right,Left,Flip" Default="Right"/>
+  <option ID="OptionDockOpacity" Requires="OptionModernUI==Yes,OptionDockMovable!=Unset" DisplayText="停靠背景透明度" Category="用户界面" Type="Slider" Min="0" Max="100" Increment="10" Default="100"/>  
+  <option ID="OptionMouseCursor" Requires="OptionModernUI==Yes" DisplayText="鼠标光标外观" Category="用户界面" Type="Combo" Values="System,Default,Alternate" Default="Default"/>
+  <option ID="OptionControllerFont" Requires="OptionModernUI==Yes" DisplayText="手柄按钮外观" Category="用户界面" Type="Combo" Values="Auto,KBM,XBox,PS,XBox Filled,PS Filled" Default="Auto"/>  
+  <option ID="OptionFloatingKeyboard" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示支持设备上的输入覆盖键盘" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionZoomSensitivity" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="缩放灵敏度" Category="用户界面" Type="Slider" Min="1" Max="25" Increment="1" Default="1"/>
+  <option ID="OptionTooltipDelay" DisplayText="提示延迟（毫秒）" Category="用户界面" Type="Slider" Min="0" Max="3000" Increment="100" Default="1000"/>
+  <option ID="Option@HPColor" DisplayText="根据角色健康状态为其符号上色" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="Option@AlwaysHPColor" Requires="OptionShowAdvancedOptions==Yes" DisplayText="忽略所有重新着色角色符号的效果，除了健康状态" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="Option@MutationColor" Requires="OptionShowAdvancedOptions==Yes" DisplayText="允许变异重新着色角色的符号" Category="用户界面" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionDisplayMousableZoneTransitionBorder" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="显示鼠标可点击区域过渡箭头" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionShiftHidesSidebar" Requires="OptionShowAdvancedOptions==Yes" DisplayText="按下Shift键隐藏侧边栏" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionAllowFramelessZoomOut" Requires="OptionShowAdvancedOptions==Yes" DisplayText="当缩放到最大时，从主游戏屏幕移除UI框架" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionHighlightStairs" Requires="OptionShowAdvancedOptions==Yes" DisplayText="始终高亮显示楼梯" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionLogTurnSeparator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在每轮战斗结束时添加一行分隔符" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionIndentBodyParts" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在装备界面根据附件缩进身体部位" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowDetailedWeaponStats" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在武器名称中显示详细的穿透力和伤害" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionTakeallCorpses" Requires="OptionShowAdvancedOptions==Yes" DisplayText="使用‘全部拾取’命令时拾取尸体" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionDropAll" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用物品栏中的'全部丢弃'交互" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionPressingRightInInventoryEquips" Requires="OptionShowAdvancedOptions==Yes" DisplayText="按左右键分别装备或卸下高亮物品，在管理装备或物品时生效" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionTutorialComplete" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将移动教程移至游戏模式列表末尾" Category="用户界面" Type="Checkbox" Default="No"/>
 
-  <option ID="OptionOverlayMinimap" Requires="OptionModernUI==Yes" DisplayText="显示小地图" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNearbyObjects" Requires="OptionModernUI==Yes" DisplayText="显示附近物体列表叠加层" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNearbyObjectsLocal" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes" DisplayText="附近物体列表: 仅当前格" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNearbyObjectsPools" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes" DisplayText="附近物体列表: 显示液体池" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNearbyObjectsPlants" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes" DisplayText="附近物体列表: 显示植物" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNearbyObjectsTakeable" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes" DisplayText="附近物品列表: 仅显示可拾取物品" Category="现代UI" Type="Checkbox" Default="No"/>
-  <option ID="OptionOverlayNoShaders" DisplayText="排除全屏相机效果中的UI" Category="现代UI" Type="Checkbox" Default="No"/>
-	<option ID="OptionFloatingKeyboard" DisplayText="为支持的设备显示覆盖键盘输入" Category="现代UI" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayMousableZoneTransitionBorder" Requires="OptionModernUI==Yes" DisplayText="显示鼠标点击区域过渡边界的箭头" Category="现代UI" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAbilityBarMode" DisplayText="技能栏模式" Category="现代UI" Type="Combo" Values="Full,Compact" Default="Full"/>
-  <option ID="OptionTooltipDelay" DisplayText="提示延迟 (毫秒)" Category="现代UI" Type="Slider" Min="0" Max="3000" Increment="100" Default="1000"/>
-  <option ID="OptionDisableSteamInputWarning" Requires="OptionModernUI==Yes" DisplayText="禁用输入警告" Category="现代UI" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowSidebarAbilities" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="在侧边栏显示能力图标" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionShowCurrentCellPopup" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="在弹出窗口中显示当前单元格的内容" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionShowMonsterHPHearts" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="根据目标剩余生命值显示彩色心跳" Category="传统用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowNumberOfItems" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="显示每个库存类别的物品数量" Category="传统用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionLocationIntseadOfName" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="在侧边栏显示位置而非名称" Category="传统用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionMapDirectionsToKeypad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="始终将方向映射到数字小键盘" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionMapShiftDirectionToPage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="设置项: 地图 Shift+方向键绑定菜单分页（不适用于数字小键盘绑定）" Category="传统用户界面" Type="Checkbox" Default="No"/>
+  
 
-  <option ID="OptionInterruptHeldMovement" DisplayText="当附近有敌对生物时中断持有的移动按钮" Category="自动化" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionInterruptHeldMovementOnZoneTransition" DisplayText="进入未探索区域时中断持有的移动按钮" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutoSip" DisplayText="口渴时自动饮用新鲜水源" Category="自动化" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="自动饮水阈值" Category="自动化" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"/>
-  <option ID="OptionAutosaveInterval" DisplayText="区域转换自动存档" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="5"/>
+  <option ID="OptionAutoSip" DisplayText="口渴时自动饮用新鲜水" Category="自动化" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="自动饮水的口渴阈值" Category="自动化" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"/>
   <option ID="OptionAutoTorch" DisplayText="自动熄灭和点燃火把" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutoDisassembleScrap" DisplayText="自动拆解废料" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowScavengeItemAsMessage" DisplayText="在垃圾中搜寻物品时，以消息日志条目显示而非弹出窗口" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutoexploreRate" DisplayText="最大自动移动方格数/秒和自动攻击次数/秒" SearchKeywords="autoact autoexplore framerate" Category="自动化" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,ì" Default="20"/>
-  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略低于的敌人" Category="自动化" Type="Combo" Values="None,Easy,Average,Tough,Very Tough,Impossible" Default="None"/>
-  <option ID="OptionAutoexploreIgnoreDistantEnemies" DisplayText="忽略距离超过的敌人" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"/>
-  <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" DisplayText="自动探索时忽略攻击你靠近的敌对生物" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionUseTextAutowalkThreatIndicator" DisplayText="使用文本版本的自动行动中断指示器，而不是闪烁的红色方框" Category="自动化" Type="Checkbox" Default="No"/>
-  <option ID="OptionDigOnMove" DisplayText="当持有挖掘工具时，尝试通过移动进入墙壁来挖掘穿墙。" Category="自动化" Type="Checkbox" Default="Yes"/>
-	
-  <option ID="OptionAutogetAmmo" DisplayText="自动拾取弹药" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetPrimitiveAmmo" DisplayText="自动拾取原始弹药" Category="自动获取" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutogetNuggets" DisplayText="自动拾取矿石" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetTradeGoods" DisplayText="自动拾取交易物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetFreshWater" DisplayText="自动拾取淡水" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetArtifacts" DisplayText="自动拾取遗物" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetSpecialItems" DisplayText="自动拾取特殊物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetScrap" DisplayText="自动拾取废料" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetFood" DisplayText="自动拾取食物物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetBooks" DisplayText="自动拾取书籍" Category="自动获取" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutogetZeroWeight" DisplayText="自动拾取零重量物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAutogetIfHostiles" DisplayText="敌对生物靠近时自动拾取" Category="自动获取" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutogetFromNearby" DisplayText="自动拾取相邻方格物品" Category="自动获取" Type="Checkbox" Default="No"/>  
-  <option ID="OptionAutogetNoDroppedLiquid" DisplayText="设置项: 排除已丢弃容器中的液体自动收集" Category="自动获取" Type="Checkbox" Default="No"/>
-  <option ID="OptionAutoexploreChests" DisplayText="自动探索时查看容器" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutoDisassembleScrap" DisplayText="自动拆解废料" Category="自动化" Type="Checkbox" Default="No"/>  
+  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略敌对生物的难度阈值" Category="自动化" Type="Combo" Values="None,Easy,Average,Tough,Very Tough,Impossible" Default="None"/>
+  <option ID="OptionAutoexploreIgnoreDistantEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="忽略敌对生物的距离阈值" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"/>
+  <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动探索时忽略靠近的敌对目标" Category="自动化" Type="Checkbox" Default="No"/>
+  <option ID="OptionInterruptHeldMovement" Requires="OptionShowAdvancedOptions==Yes" DisplayText="当附近有敌对生物时中断持有的移动" Category="自动化" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionInterruptHeldMovementOnZoneTransition" Requires="OptionShowAdvancedOptions==Yes" DisplayText="进入未探索区域时中断持行动作" Category="自动化" Type="Checkbox" Default="No"/>
+  <option ID="OptionUseTextAutowalkThreatIndicator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="使用文本自动中断指示器代替闪烁的红框" Category="自动化" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutoexploreChests" DisplayText="自动探索时搜索容器" Category="自动化" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDigOnMove" DisplayText="自动挖掘墙壁：当手持挖掘工具时，移动到墙壁上自动挖掘" Category="自动化" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="移动到不同区域时自动保存" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="5"/>
+  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="最大自动移动单元/秒 和 自动攻击动作/秒" SearchKeywords="autoact autoexplore framerate" Category="自动化" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,ì" Default="20"/>
 
-  <option ID="OptionAskForWorldmap" DisplayText="移动至世界地图前询问" Category="提示" Type="Checkbox" Default="No"/>
-  <option ID="OptionAskForOneItem" DisplayText="始终显示获取物品列表，即使只有一件物品" Category="提示" Type="Checkbox" Default="No"/>
-  <option ID="OptionAskAutostair" DisplayText="自动行走至楼梯前询问" Category="提示" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionConfirmSwimming" DisplayText="游泳前确认" Category="提示" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionConfirmDangerousLiquid" DisplayText="在饮用和移动到某些危险液体前确认" Category="提示" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayLedLevelUp" DisplayText="显示追随者等级提升完整信息" Category="提示" Type="Checkbox" Default="No"/>
-  <option ID="OptionPopupJournalNote" DisplayText="在日志中记录信息时显示弹出窗口" Category="提示" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayHPWarning" DisplayText="生命值警告阈值" Category="提示" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"/>
 
-  <option ID="OptionMainMenuBackground" DisplayText="主菜单背景" Category="常规设置" Type="Combo" Values="Modern,Classic" Default="Modern"/>
-  <option ID="Option@HPColor" DisplayText="根据生命值等级为玩家的@上色" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="Option@AlwaysHPColor" DisplayText="忽略玩家@除生命值等级外的所有状态颜色" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="Option@MutationColor" DisplayText="根据某些变异更改玩家默认@颜色" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionF1TakeAll" DisplayText="使用F1代替TAB进行全选" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionTakeallCorpses" DisplayText="使用Tab键拾取所有物品时携带尸体" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowSidebarAbilities" Requires="OptionModernUI==No" DisplayText="在侧边栏显示能力状态图标" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionShowCurrentCellPopup" Requires="OptionModernUI==No" DisplayText="显示当前单元格内容的弹出窗口" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionShowDetailedWeaponStats" DisplayText="显示武器名称中的详细穿透力和伤害" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowMonsterHPHearts" DisplayText="显示被击中目标剩余生命值的心形颜色" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionShiftHidesSidebar" DisplayText="按下Shift键将隐藏侧边栏。" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowNumberOfItems" DisplayText="显示每个库存类别的物品数量" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableFloorTextures" DisplayText="禁用地板纹理" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionHighlightStairs" DisplayText="始终高亮显示楼梯" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionLocationIntseadOfName" DisplayText="在侧边栏显示位置而非名称" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionAlphanumericBits" DisplayText="使用字母数字而非点显示位（适用于色盲玩家）" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisableFullscreenColorEffects" DisplayText="禁用全屏色彩效果（适用于色盲玩家）" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableTextAnimationEffects" DisplayText="禁用大部分基于图块的闪烁效果" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableTextWarpEffects" DisplayText="禁用基于瓦片的屏幕扭曲效果" Category="用户界面" Type="Checkbox" Default="No"/>
-	<option ID="OptionDisableFullscreenWarpEffects" DisplayText="禁用全屏扭曲效果" Category="用户界面" Type="Checkbox" Default="No"/>
-	<option ID="OptionLowContrast" DisplayText="低对比度背景（仅限OpenGL，需要重启）" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionMapDirectionsToKeypad" DisplayText="始终将方向映射到小键盘" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionMapShiftDirectionToPage" DisplayText="设置项: 将地图移动方向键映射到翻页键。（不适用于数字键盘方向键）" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionCapInputBuffer" DisplayText="限制输入缓冲区为两个命令" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionLogTurnSeparator" DisplayText="在战斗中每回合结束时添加一行分隔符" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionIndentBodyParts" DisplayText="在装备界面按附件缩进身体部位" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionAbilityCooldownWarningAsMessage" DisplayText="显示技能冷却警告为消息日志条目而非弹出窗口" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionPressingRightInInventoryEquips" DisplayText="在库存和装备界面，分别按左右键装备或卸下高亮物品。" Category="用户界面" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionAllowFramelessZoomOut" DisplayText="当最大缩放时，移除舞台框架以获得完整概览" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionDropAll" DisplayText="启用库存物品的‘全部丢弃’交互" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutogetAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取弹药" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetPrimitiveAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取原始弹药" Category="自动获取" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutogetNuggets" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取铜、银、金矿石" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetTradeGoods" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取交易物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetFood" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取食物" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetFreshWater" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取新鲜水源" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetNoDroppedLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="不要自动从你丢弃的容器中获取液体" Category="自动获取" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutogetSpecialItems" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取特殊物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetArtifacts" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取神器" Category="自动获取" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionAutogetScrap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动收集废料" Category="自动获取" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionAutogetBooks" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动获取书籍" Category="自动获取" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutogetZeroWeight" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取无重量物品" Category="自动获取" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAutogetIfHostiles" Requires="OptionShowAdvancedOptions==Yes" DisplayText="敌对生物靠近时自动拾取" Category="自动获取" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutogetFromNearby" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取相邻单元格物品" Category="自动获取" Type="Checkbox" Default="No"/>  
+    
 
-  <option ID="OptionEnableMods" DisplayText="启用模组。（需要重启。）" Category="模组管理" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionShowModSelectionNewGame" Requires="OptionEnableMods==Yes" DisplayText="选择新游戏时启用的模组" Category="模组管理" Type="Checkbox" Default="No"/>
-  <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="允许脚本模组。脚本模组可能包含恶意代码！" Category="模组管理" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionApproveCSMods" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes" DisplayText="每次脚本模组更改时都需要批准" Category="模组管理" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes" DisplayText="启用和谐调试输出" Category="模组管理" Type="Checkbox" Default="No"/>
-  <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes" DisplayText="将编译的模组组件写入磁盘" Category="模组管理" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAskForWorldmap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="移动到世界地图前提示" Category="提示" Type="Checkbox" Default="No"/>
+  <option ID="OptionAskAutostair" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在自动行走至楼梯前提示" Category="提示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionConfirmSwimming" Requires="OptionShowAdvancedOptions==Yes" DisplayText="游泳前提示" Category="提示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionConfirmDangerousLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="饮用及进入特定危险液体前提醒" Category="提示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionAskForOneItem" Requires="OptionShowAdvancedOptions==Yes" DisplayText="从地面拾取物品时提示列表，即使只有一件" Category="提示" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="低生命值警告阈值" Category="提示" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"/>  
+  <option ID="OptionAbilityCooldownWarningAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将技能冷却提示显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将拾荒物品显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
+  <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在日志中记录信息时显示弹出窗口" Category="提示" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisplayLedLevelUp" Requires="OptionShowAdvancedOptions==Yes" DisplayText="为同伴显示详细的等级提升信息" Category="提示" Type="Checkbox" Default="No"/>    
+  
+  
+  <option ID="OptionEnableMods" DisplayText="启用模组（需要重启）" Category="模组" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionShowModSelectionNewGame" Requires="OptionEnableMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="选择新游戏启用的模组" Category="模组" Type="Checkbox" Default="No"/>
+  <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="允许脚本模组（脚本模组可能包含恶意代码！）" Category="模组" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionApproveCSMods" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes" DisplayText="当脚本模组更改时需要审批" Category="模组" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="将编译的模组程序集写入磁盘" Category="模组" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="启用和谐调试输出" Category="模组" Type="Checkbox" Default="No"/>
 
-  <option ID="OptionCacheEarly" DisplayText="提前缓存区域（适用于低内存环境）" Category="性能" Type="Checkbox" Default="No"/>
-  <option ID="OptionCollectEarly" DisplayText="每个区域刷新后进行垃圾回收（适用于低内存环境）" Category="性能" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableFloorTextureObjects" DisplayText="不生成地面纹理对象（性能和内存优化）" Category="性能" Type="Checkbox" Default="No"/>
-  <option ID="OptionThrottleAnimation" DisplayText="限制动画（适用于低CPU环境）" Category="性能" Type="Checkbox" Default="No"/>
-  <option ID="OptionAnalytics" DisplayText="发送匿名游戏数据" Category="性能" Type="Checkbox" Default="Yes"/>
 
-  <option ID="OptionDisablePermadeath" DisplayText="死亡时不要删除经典模式存档" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionAllowSaveLoad" DisplayText="启用存档和读档" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionAllowReallydie" DisplayText="死亡确认提示" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowQuickstart" DisplayText="角色创建时显示快速开始选项" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableBloodsplatter" DisplayText="禁用血花飞溅" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableSmoke" DisplayText="禁用烟雾" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableImposters" DisplayText="禁用图形替身" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableAchievements" DisplayText="禁用成就" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionGivesRepShowsCurrentRep" DisplayText="显示查看生物时与派系的当前声望" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionCheckMemory" DisplayText="检查内存使用情况并在内存过高时显示警告" Category="调试" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDrawPopulationHintMaps" DisplayText="绘制人口提示地图" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawInfluenceMaps" DisplayText="绘制影响力地图" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawPathfinder" DisplayText="绘制探路者" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawPathfinderHalt" DisplayText="路径查找时等待按键" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawNavigationWeightMaps" DisplayText="绘制导航权重地图" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawCASystems" DisplayText="绘制CA系统" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawFloodVis" DisplayText="绘制洪水可见性" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawFloodAud" DisplayText="绘制洪水音效" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawFloodOlf" DisplayText="绘制洪流嗅觉" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawArcs" DisplayText="绘制电弧" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDrawZoneSemantics" DisplayText="绘制区域语义" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisablePlayerbrain" DisplayText="禁用玩家大脑劫持" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableZoneCaching2" DisplayText="禁用区域缓存" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugShowConversationNode" DisplayText="显示当前对话节点" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugShowFullZoneDuringBuild" DisplayText="创建区域时显示完整的区域ID" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugDamagePenetrations" DisplayText="显示伤害穿透调试文本" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugSavingThrows" DisplayText="显示存档投掷调试文本" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugGetLostChance" DisplayText="显示迷路几率的调试信息" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugStatShift" DisplayText="显示状态变化的调试文本" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugEncounterChance" DisplayText="显示遭遇战概率的调试文本" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugTravelSpeed" DisplayText="显示旅行速度的调试文本" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDebugInternals" DisplayText="显示对象和系统内部的调试信息" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionInventoryConsistencyCheck" DisplayText="执行库存一致性检查" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowReachable" DisplayText="生成时绘制可达性地图" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowOverlandEncounters" DisplayText="在主地图上标记野外遭遇" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowOverlandRegions" DisplayText="在主地图上显示陆地生物群落" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionEnablePrereleaseContent" DisplayText="启用未完成和预发布内容（需要重启）" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionEnableWishRegionNames" DisplayText="预生成区域名称以支持许愿" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableTryLimit" DisplayText="禁用区域构建尝试限制" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableDefectLimit" DisplayText="禁用缺陷变异限制" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionShowErrorPopups" DisplayText="显示错误弹窗" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionEnableColorTextInput" DisplayText="启用彩色文本输入" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionWriteSoundsToLog" DisplayText="将播放的声音文件名称写入消息日志" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisableSoundPreload" DisplayText="禁用声音预加载" Category="调试" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionNoPlayerTileFlip" DisplayText="禁用不在原身体时的角色图块翻转" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionThrottleWorlden" DisplayText="控制世界生成速度" Category="调试" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionCheckMemory" Requires="OptionShowAdvancedOptions==Yes" DisplayText="检查内存使用情况并在内存过高时显示警告" Category="性能" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionCacheEarly" Requires="OptionShowAdvancedOptions==Yes" DisplayText="提前刷新区域缓存（适用于低内存环境）" Category="性能" Type="Checkbox" Default="No"/>
+  <option ID="OptionCollectEarly" Requires="OptionShowAdvancedOptions==Yes" DisplayText="每个区域刷新后进行垃圾回收（适用于低内存环境）" Category="性能" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableFloorTextureObjects" Requires="OptionShowAdvancedOptions==Yes" DisplayText="不生成地面纹理对象" Category="性能" Type="Checkbox" Default="No"/>
+  <option ID="OptionThrottleAnimation" Requires="OptionShowAdvancedOptions==Yes" DisplayText="限制动画（适用于低CPU环境）" Category="性能" Type="Checkbox" Default="No"/>
+
+
+  <option ID="OptionShowAdvancedOptions" DisplayText="显示高级选项" Category="应用设置" Type="Checkbox" Default="No"/>
+  <option ID="OptionMusicBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="保持《Qud 地洞》在后台运行" Category="应用设置" Type="Checkbox" Default="No"/>
+  <option ID="OptionSessionBackups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="滚动备份存档数量" Category="应用设置" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="3">
+    <helptext>
+      When you load a save from the main menu rolling backups of loaded saves will be maintained in your data folder (&lt;...&gt;/CavesOfQud/Local/Session) up to this number.
+    </helptext>
+  </option>
+  <option ID="OptionAnalytics" DisplayText="发送匿名游戏统计数据" Category="应用设置" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionDisableSteamInputWarning" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="禁用输入警告" Category="应用设置" Type="Checkbox" Default="No"/>
+  
+  
+  <option ID="OptionDisablePermadeath" Requires="OptionShowAdvancedOptions==Yes" DisplayText="死亡时不要删除经典模式存档" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionAllowSaveLoad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用存档和读档" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionAllowReallydie" Requires="OptionShowAdvancedOptions==Yes" DisplayText="死亡确认提示" Category="调试" Type="Checkbox" Default="No"/>    
+  <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用未完成和不受支持的内容（需要重启）" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="允许生物拥有多个缺陷" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用文本输入的颜色菜单" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionNoPlayerTileFlip" Requires="OptionShowAdvancedOptions==Yes" DisplayText="当不在原始身体时，不翻转玩家图块" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableAchievements" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用成就" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowQuickstart" Requires="OptionShowAdvancedOptions==Yes" DisplayText="创建角色时显示快速开始选项" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisablePlayerbrain" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用玩家控制角色的大脑劫持" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableZoneCaching2" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用区域缓存" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableTryLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="取消区域建造尝试次数限制" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionEnableWishRegionNames" Requires="OptionShowAdvancedOptions==Yes" DisplayText="预生成区域名称以支持许愿" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionGivesRepShowsCurrentRep" Requires="OptionShowAdvancedOptions==Yes" DisplayText="查看生物时显示其所属派系的声望" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugShowConversationNode" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示对话期间的XML对话和节点名称" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugShowFullZoneDuringBuild" Requires="OptionShowAdvancedOptions==Yes" DisplayText="创建区域时显示完整的区域ID" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugDamagePenetrations" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示伤害穿透调试文本" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugSavingThrows" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示存档投掷调试文本" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugGetLostChance" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示失去机会的调试文本" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugStatShift" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示状态变化的调试文本" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugEncounterChance" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示遭遇几率调试信息" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugTravelSpeed" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示旅行速度调试文本" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugInternals" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示物体调试信息" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowOverlandEncounters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在世界地图上标记特殊遭遇" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowOverlandRegions" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在世界地图上显示生物群落" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawPopulationHintMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在建造区域时绘制人口安置提示地图" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawInfluenceMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="构建区域时绘制人口安置区" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawPathfinder" Requires="OptionShowAdvancedOptions==Yes" DisplayText="绘制生物寻路" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawPathfinderHalt" Requires="OptionShowAdvancedOptions==Yes" DisplayText="路径计算时等待按键" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawNavigationWeightMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="每步绘制导航权重地图" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawCASystems" Requires="OptionShowAdvancedOptions==Yes" DisplayText="生成地图时绘制细胞自动机" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowReachable" Requires="OptionShowAdvancedOptions==Yes" DisplayText="生成区域时绘制可达性地图" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawZoneSemantics" Requires="OptionShowAdvancedOptions==Yes" DisplayText="构建区域时绘制语义标签信息" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawFloodVis" Requires="OptionShowAdvancedOptions==Yes" DisplayText="绘制可见性泛洪填充" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawFloodAud" Requires="OptionShowAdvancedOptions==Yes" DisplayText="绘制声音扩散填充" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawFloodOlf" Requires="OptionShowAdvancedOptions==Yes" DisplayText="绘制气味扩散填充" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDrawArcs" Requires="OptionShowAdvancedOptions==Yes" DisplayText="绘制最近几轮的电流轨迹" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionWriteSoundsToLog" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将播放的声音文件名称写入消息日志" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDisableSoundPreload" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用声音预加载" Category="调试" Type="Checkbox" Default="Yes"/>  
+  <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="执行库存一致性检查" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示错误弹窗" Category="调试" Type="Checkbox" Default="No"/>
+  
 </options>
