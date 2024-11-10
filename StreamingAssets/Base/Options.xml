@@ -144,7 +144,7 @@
   <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将拾荒物品显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
   <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在日志中记录信息时显示弹出窗口" Category="提示" Type="Checkbox" Default="Yes"/>
   <option ID="OptionDisplayLedLevelUp" Requires="OptionShowAdvancedOptions==Yes" DisplayText="为同伴显示详细的等级提升信息" Category="提示" Type="Checkbox" Default="No"/>    
-  
+  <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将角色扮演模式下死亡提示的默认选择设置为“查看最终消息”而不是“重新加载检查点”'" Category="提示" Type="Checkbox" Default="Yes"></option>
   
   <option ID="OptionEnableMods" DisplayText="启用模组（需要重启）" Category="模组" Type="Checkbox" Default="Yes"/>
   <option ID="OptionShowModSelectionNewGame" Requires="OptionEnableMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="选择新游戏启用的模组" Category="模组" Type="Checkbox" Default="No"/>

@@ -1299,7 +1299,9 @@
 </case>
         <default><p>你不能跳过生物。</p>
 </default>
-      </switch>      
+      </switch>
+      <br />
+      <statline Name="Cooldown" />      
 		</description>
     <tag Name="Skill">Acrobatics</tag>
   </ability>
