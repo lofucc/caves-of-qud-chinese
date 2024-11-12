@@ -21,6 +21,7 @@
 		<tag Name="IncludeInDynamicSemanticTables"/>
     <tag Name="NoDamageReadout"/>
     <tag Name="Immutable"/>
+    <tag Name="DefaultRightClickInventoryAction" Value="Look"></tag>
   </object>
 
   <!--
