@@ -13,7 +13,7 @@
       <skill Name="Tactics_Run" />
       <skill Name="Survival_Camp" />
     </skills>
-    <extrainfo>变异</extrainfo>
+    <extrainfo>变种人</extrainfo>
     <extrainfo>中等起始属性</extrainfo>
     <extrainfo>-600 声望 {{C|普图斯骑士团}}</extrainfo>
   </genotype>
@@ -34,10 +34,10 @@
       <reputation With="Templar" Value="600" />
     </reputations>
     <extrainfo>起始属性高</extrainfo>
-    <extrainfo>机械体访问</extrainfo>
-    <extrainfo>{{C|20}} 每个级别奖励技能点</extrainfo>
-    <extrainfo>基于起源生态的额外抗性</extrainfo>
-    <extrainfo>可能会斥责机器人</extrainfo>
+    <extrainfo>可以植入义体</extrainfo>
+    <extrainfo>{{C|20}} 每个级别额外技能点</extrainfo>
+    <extrainfo>基于角色起源的额外抗性</extrainfo>
+    <extrainfo>可以重编程机器人</extrainfo>
   </genotype>
 
 </genotypes>
