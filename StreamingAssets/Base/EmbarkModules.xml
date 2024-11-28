@@ -42,9 +42,9 @@
 				<icon Tile="UI/sw_wander_mode.bmp" Foreground="g" Detail="C"></icon>
 				<description>
 					{{c|&#249;}} 大多数生物一开始对你是中立的。
-					{{c|&#249;}} 击杀没有XP。
-					{{c|&#249;}} 更多 XP 用于发现和执行水仪式。
-					{{c|&#249;}} 检查点在定居点。
+					{{c|&#249;}} 击杀不获得经验值。
+					{{c|&#249;}} 发现地点以及执行水仪式时获得更多经验值。
+					{{c|&#249;}} 抵达定居点后存档。
 				</description>
 				<stringgamestate Name="GameMode" Value="漫步"></stringgamestate>
 				<stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
@@ -71,7 +71,7 @@
       <type ID="Pregen" Title="预设">
         <icon Tile="Creatures/sw_marsh_taur.bmp" Foreground="W" Detail="w"></icon>
         <description>
-          从几个预设角色中进行选择。一旦你习惯了，你就可以定制它们。
+          从几个预设角色中进行选择。一旦你掌握了游戏，你可以再来定制它们。
          </description>
       </type>
       
@@ -131,8 +131,8 @@
       <pregen Name="禁卫军总领" Genotype="True Kin" Tile="creatures/sw_praetorian_prime.bmp" Foreground="y" Detail="c" Background="k">
         <code>H4sIAEwY6GYC/82V0WrbMBSG7/sUxvTSMUkaShnkIk23UbqNrAlpofRCtg+2mCIZ6ajDFF/sAfYavdlzjb3GJKVN41o1gcIWgcHW+f6j378P+P4gMCvMyQruQCoqePguCIdxPx72h/FoFEZrINGUZVvEwBD9p+JKZJqBMvs3bsOu+83dFrKoSrDq68tP8bQgkqQI8tS2VvFXndnrI3CBBvvsBFEwUQpWCat607kRlFGwXJsYP3uMgqlmqCWMOWiUhEXBTCeMphdQLcQ34GOuGXs0u3GUESTGS9Onqxxit82mxTPTp2XzxWGu7ZPMdl5IDcEF5T6ulXIDqTdPdfTmsOc62fOsGw53jvpRZfv+efjx++ev/5zzBFHSRCOoPY76pcmd054JylHNtEwLoiDznr7+LCiB51gY4iTyI5OcMoqVIY5fIRZC5wUHpTq6nHMExmgOPLVvPHoFu6KMleI7yA7mfS5stVWsPUGQcl4CR8P3jk689UtYEcopzw3T9xCJCXBSmqJX/w8ndlolIDkgTfd5ZFsud55ZZkPuDTwVBQxSNO/V/J9tL/94O/WzI2v7C80LXFL30aIOkdBuagYdzJJIShwVfiBmqr1k3dq9fcsYubvbg/ovF91myiUIAAA=</code>
         <description>
-&amp;c&#249;&amp;y 基于冲锋的近战战斗机
-&amp;c&#249;&amp;y 从夜视开始
+&amp;c&#249;&amp;y 基于冲锋的近战战斗者
+&amp;c&#249;&amp;y 初始拥有夜视
 &amp;c&#249;&amp;y {{W|最有生存能力}} 的开始构建
         </description>
       </pregen>
@@ -150,7 +150,7 @@
         <code>H4sIANEd6GYC/82V0WrbMBSG7/MURuzSMUkaRhnkInXLNrpB1oSuMHoh2wdHTJGMdLRhim92N3azF9kD9GZPs9E+RiWnTeNaCYFeNAKDrfOdo9+/f/BVJ7CL5HQB30BpJgV5E5BB1IsGvUE0HJJwCSSG8WyN6Fui91BcyMxw0Hb/S73h1tXqbg2ZlQW47ouzD1E8p4qmCOrIjdbRJ5O56y0IiRb7WDeEwVhrWCS87MZT21CEwflSxOhRYxjEhqNRMBJgUFEeBhOTcJaeQjmTX0GMhOH8XuxKUUaRWi1NnXXlFW6X2ZR4bOe0ZD45rB770OYmz5SB4JQJH9dyuYFUq6cqfLbZU5PsudcNhTtbfd/l5t78+Hn79/rf9a//f36TzsvaPUZULDEIeo8dfypyZ9MnkgnUE6PSOdWQeU9ffh1UIHKcW6I/CP3MOGecYWmR1xuImTT5XIDWW5j3AoFzloNI3Sv3N2CfGeeF/A7KMgcbmJNc2uqwVaw8TtBiWoBAy3cPDr31M1hQJpjILdPzEIl1cFw4OYcvG9m4TEAJQJbuc2ZbKncOLXcmdz3BIBo4pGjfq/lfW1/+fNfdj4qc7JiqhGXwjorsSNrMknBLpzR1dPpbmHOqGK0p4mZq4kWr1u7lc8JU3112qjsdaZLAMwgAAA==</code>
         <description>
 &amp;c&#249;&amp;y 近战战士和极限战士
-&amp;c&#249;&amp;y 从硬质合金手骨开始
+&amp;c&#249;&amp;y 初始拥有硬质合金手骨
 &amp;c&#249;&amp;y {{W|生存能力强}} 开始构建
         </description>
       </pregen>
@@ -180,7 +180,7 @@
       <pregen Name="枪翼" Genotype="Mutated Human" Tile="Creatures/sw_gunwing.bmp" Foreground="y" Detail="K" Background="k">
         <code>H4sIACwg6GYC/82U3WrbMBTH7/MUwvTSNW7oPijkIkm7dWyFtAltYfRCtg+2iCwZfWyEkFcZvd5D7GnGnqOS0mRxogRDKbXAYOv8zzk/H+mceQeZFeS4hB8gJOEsOENBN4qjbtyNTk+DcClINKHZhuLEKOKVseSZpiDN/ne3Ydd8/bYhmcwqsN73N9+iYYEFThWIgQ0to2ud2eczMK6M7Mo5hKgvJZQJnR0Px8ahCtHtEqL3nzFEQ02VFtBjoJXANEQjnVCSfoXZhE+B9Zim9Bl2TZRhhQ1LndNZjtRhzDriuYmzg7mVzIVdudnIV1phBRm61CVmPvFOqWuSxfprEb644mOdtLzgNcLG9X72snH//fr9989j0HnbQrtDN7lki0u9xdi42GVlgsYegwQKqYtYGw+ba+7ddd4rHEs8ADz1pF5rh1wzZYQnBzS3WBDsVLFXtAhfQngJJC8UMNPY15qkUwZStpv4jrC85YifuEgBDXSSUHh10p3dh7cdGX2lBEm0gjbPjG3IxkNjxAlTcqRFWmAJmTf7cpQrASxXhVG89x9v0M8JJWpmL0C8RzLhOi9cT56hj3s0X5gCSkkOLLW//GGP7I5QWvGfIA4QXeTcWN91GrRDgKtxBe5iHpvz89lvoMSEmXbdM2cTU8G+HcJe/8ZX1r09dBZPCtRlmhgKAAA=</code>
         <description>
-&amp;c&#249;&amp;y 主要远程战斗
+&amp;c&#249;&amp;y 主要专注远程战斗
 &amp;c&#249;&amp;y 快速且机动性强
 &amp;c&#249;&amp;y 会飞
 &amp;c&#249;&amp;y {{W|生存能力强}} 开始构建
@@ -201,7 +201,7 @@
         <description>
 &amp;c&#249;&amp;y 混合近战战士和精神施法者
 &amp;c&#249;&amp;y 能够使敌人着火
-&amp;c&#249;&amp;y 使可收获的植物在附近生长
+&amp;c&#249;&amp;y 召唤植物在附近生长
 &amp;c&#249;&amp;y {{W|具有挑战性的}} 开始构建
         </description>
       </pregen>
@@ -248,7 +248,7 @@
   <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
     <window ID="Chargen/Cybernetic" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudCyberneticsModuleWindow">
       <name>Cybernetics</name>
-      <title>:选择插件植入物:</title>
+      <title>:选择义体植入物:</title>
     </window>
   </module>
 
@@ -302,7 +302,7 @@
       <location ID="SaltMarshVillage" Name="{{G|盐沼}}&#10;村庄" Location="StringGameState:villageZeroStartingLocation">
         <description>
           {{c|&#249;}} 盐沼中的随机村庄.
-          {{c|&#249;}} 村庄有教收获.
+          {{c|&#249;}} 村庄教授收获.
           {{c|&#249;}} +50 鱼和昆虫的声望.
           {{c|&#249;}} 从一对 {{g|crocc{{G|a}}sins}} 开始.
         </description>
@@ -338,7 +338,7 @@
           {{c|&#249;}} 盐丘中的随机村庄.
           {{c|&#249;}} 村里传授斋戒之道.
           {{c|&#249;}} +100 爬行动物声望.
-          {{c|&#249;}} Start with an {{Y|Issach{{r|a}}ri}} banner.
+          {{c|&#249;}} 初始携带 {{Y|Issach{{r|a}}ri}} 披风.
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="Saltdunes"></stringgamestate>
@@ -370,7 +370,7 @@
         <description>
           {{c|&#249;}} 沙漠峡谷中的随机村庄.
           {{c|&#249;}} 村庄教授徒步旅行.
-          {{c|&#249;}} +50 声望 马科动物,乌龟,藤蔓.
+          {{c|&#249;}} +50 马科动物,乌龟,藤蔓的声望 .
         </description>
         
         <stringgamestate Name="VillageZeroRegion" Value="DesertCanyon"></stringgamestate>
@@ -401,7 +401,7 @@
   
       <location ID="HillsVillage" Name="{{Y|山丘}}&#10;村庄" Location="StringGameState:villageZeroStartingLocation">
         <description>
-          {{c|&#249;}} 山上随意的村庄.
+          {{c|&#249;}} 山丘上的随机村庄.
           {{c|&#249;}} 村庄教授屠宰.
           {{c|&#249;}} +100 隐士声望.
           {{c|&#249;}} 开局携带{{r|blood-stained}}颈环
