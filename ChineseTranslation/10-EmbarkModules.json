@@ -1,0 +1,25 @@
+{
+  ":choose game mode:": ":选择你的游玩模式:",
+    "Tutorial": "教程",
+      "Learn the basics of Caves of Qud.": "学习卡德洞窟的基础教程。",
+    "Classic": "经典",
+      "Permadeath: lose your character when you die.": "永久死亡: 死后失去你的人物",
+    "Roleplay": "角色扮演",
+      "Checkpointing at settlements.": "在上个存档点复活",
+    "Wander": "漫步",
+      "{{c|ù}} Most creatures begin neutral to you.\n\t\t\t\t\t{{c|ù}} No XP for killing.\n\t\t\t\t\t{{c|ù}} More XP for discoveries and performing the water ritual.\n\t\t\t\t\t{{c|ù}} Checkpointing at settlements.": "{{c|ù}} 大多数生物一开始对你是中立的。\n\t\t\t\t\t{{c|ù}} 击杀不获得经验值。\n\t\t\t\t\t{{c|ù}} 发现地点以及执行水仪式时获得更多经验值。\n\t\t\t\t\t{{c|ù}} 抵达定居点后存档。",
+    "Daily": "日常",
+      "{{c|ù}} One chance with a fixed character and world seed.\n\t\t\t\t\t{{c|ù}} Currently in day {{W|{day_of_year}}} of {{W|{year}}}.": "{{c|ù}} 一次拥有固定角色和世界种子的机会。\n\t\t\t\t\t{{c|ù}} 当前天数 {{W|{day_of_year}}} of {{W|{year}}}.",
+
+  ":choose character type:": ":选择人物类型:",
+  ":build library:": ":角色库:",
+  ":choose genotype:": ":选择基因型:",
+  ":choose preset:": ":选择预设:",
+  ":choose subtype:": ":选择子类型:",
+  ":choose mutations:": ":选择变异:",
+  ":choose attributes:": ":选择属性:",
+  ":choose cybernetic implant:": ":选择义体植入物:",
+  ":build summary:": ":构建总览:",
+  ":customize character:": ":自定义角色:",
+  ":choose starting location:": ":选择开局位置:"
+}
