@@ -4801,7 +4801,7 @@
     <stat Name="Hitpoints" sValue="80"/>
     <stat Name="AV" Value="6"/>
     <part Name="Description" Short="一族轮廓分明的花瓣舒展成一个繁花盛开的碗状。 尖锐的电流沿着=pronouns.possessive=花丝攀爬，从花药跳到花药，而泥土在=pronouns.possessive=挖掘的根系下颤抖。 "/>
-    <part Name="FriendlyFireAmnestyDuringQuest" QuestName="开垦"/>
+    <part Name="FriendlyFireAmnestyDuringQuest" QuestName="Reclamation"/>
     <tag Name="Role" Value="Minion"/>
     <mutation Name="ElectricalGeneration" Level="7"/>
     <mutation Name="Teleportation" Level="10"/>
@@ -5821,7 +5821,7 @@
     <tag Name="DynamicObjectsTable:BaroqueRuins_Plants"/>
   </object>
   <object Name="Baetyl" Inherits="InorganicObject">
-    <part Name="Render" DisplayName="{{G|baetyl}}" Tile="items/sw_betyl.bmp" DetailColor="W" RenderLayer="6" RenderString="004" ColorString="&amp;B^g" TileColor="&amp;B^k" Occluding="true"/>		
+    <part Name="Render" DisplayName="{{G|巴伊特尔}}" Tile="items/sw_betyl.bmp" DetailColor="W" RenderLayer="6" RenderString="004" ColorString="&amp;B^g" TileColor="&amp;B^k" Occluding="true"/>		
     <part Name="Physics" Weight="12000" Takeable="false" Solid="true"/>
     <part Name="Brain" Factions="Baetyls-100" Wanders="false" Mobile="false"/>
     <part Name="BaetylHostility"/>
@@ -8791,7 +8791,7 @@
 		<stag Name="Historical"/>		
   </object>
   <object Name="Naser Cannon" Inherits="NaturalMissileWeapon">
-    <part Name="Render" DisplayName="naser cannon" ColorString="&amp;K" Tile="items/sw_techrifle_2.bmp"/>
+    <part Name="Render" DisplayName="纳瑟加农炮" ColorString="&amp;K" Tile="items/sw_techrifle_2.bmp"/>
     <part Name="Physics" Weight="40" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;K" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
     <part Name="Commerce" Value="2000"/>
@@ -9071,8 +9071,8 @@
   </object>
 	<object Name="Unimax" Inherits="BaseEquine">
 		<part Name="Corpse" CorpseChance="10" CorpseBlueprint="Unimax Corpse"/>
-		<part Name="Render" DisplayName="unimax" RenderString="E" Tile="Creatures/sw_unimax.bmp" ColorString="&amp;Y" DetailColor="m"/>
-		<part Name="Description" Short="Horse hair carpets =pronouns.possessive= beautiful brawn like white rain on the Pale Sea, and then it's battered by streamers of magenta mane. That and =pronouns.possessive= tail are pennants of a Lost and Never kingdom. Ofer the head a dream is promised: bone races itself to a nothing-point and is sheathed by Time's breath in the keratin of glitter."/>
+		<part Name="Render" DisplayName="尤尼马克斯" RenderString="E" Tile="Creatures/sw_unimax.bmp" ColorString="&amp;Y" DetailColor="m"/>
+		<part Name="Description" Short="马毛地毯如同苍白海洋上的白色雨点，美丽而强壮，然后被洋红色的鬃毛流苏拍打。 鬃毛和尾巴是失落与永不王国的旗帜。 在头部上方，一个梦想被承诺: 骨头竞速到无处可去，被时间的呼吸包裹在闪耀的角蛋白中。 "/>
 		<part Name="Brain" Wanders="True" Factions="Prey-99,Equines-100"/>
 		<stat Name="Intelligence" Boost="4"/>
 		<stat Name="Willpower" Boost="4"/>
@@ -9088,7 +9088,7 @@
 		<tag Name="Class" Value="equine"/>
 		<tag Name="Role" Value="Brute"/>
 		<tag Name="Species" Value="horse"/>
-		<tag Name="SimpleConversation" Value="&amp;w*soft nickering*&amp;y"/>
+		<tag Name="SimpleConversation" Value="&amp;w*软刻痕*&amp;y"/>
 		<tag Name="DynamicObjectsTable:MoonStair_Creatures"/>
 	</object>
 	<object Name="Unimax_Kick" Inherits="NaturalWeapon">
@@ -9684,7 +9684,7 @@
   <!-- Urshiib -->
   <object Name="Urshiib" Inherits="NPC">
     <part Name="Render" Tile="creatures/sw_barathrumite.bmp"/>
-    <part Name="Description" Short="=pronouns.Possessive= hunched back is sown with tufts of white fur and needle quills. The nose at the end of =pronouns.possessive= bear-snout is dark and wet. Long, slender, triple-jointed fingers sprout from =pronouns.possessive= pudgey paws and flutter with composed precision."/>
+    <part Name="Description" Short="=pronouns.Possessive= 背部弯曲，长满了白色的毛发和针状刺。 =pronouns.possessive= 熊状鼻子末端是黑色且湿润的。 细长的三关节手指从=pronouns.possessive= 肥胖的爪子中伸出，动作优雅而精确。 "/>
     <part Name="Corpse" CorpseBlueprint="Urshiib Corpse"/>
     <stat Name="Strength" sValue="18,1d3"/>
     <stat Name="Agility" sValue="16,1d3"/>
@@ -11035,7 +11035,7 @@
   </object>
   <object Name="Urchins Cherub" Inherits="BaseUrchin">
     <part Name="Brain" Mobile="true" HostileWalkRadius="84"/>
-    <part Name="Render" DisplayName="urchin cherub" Tile="Creatures/sw_cherub_urchin.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>    
+    <part Name="Render" DisplayName="刺猬 小天使" Tile="Creatures/sw_cherub_urchin.bmp" RenderString="b" ColorString="&amp;Y" DetailColor="y"/>    
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="40"/>
     <stat Name="Strength" Boost="1"/>
@@ -11050,7 +11050,7 @@
   </object>
   <object Name="Mechanical Urchins Cherub" Inherits="BaseUrchin">
     <part Name="Brain" Mobile="true" HostileWalkRadius="84"/>
-    <part Name="Render" DisplayName="mechanical urchin cherub" Tile="Creatures/sw_cherub_urchin_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>    
+    <part Name="Render" DisplayName="机械刺猬 小天使" Tile="Creatures/sw_cherub_urchin_mechanical.bmp" RenderString="b" ColorString="&amp;C" DetailColor="W"/>    
     <part Name="Description" Short=""/>
     <stat Name="Level" Value="31"/>
     <stat Name="Strength" Boost="1"/>
@@ -11257,7 +11257,7 @@
 	<!-- Nephilim -->
 	<object Name="BaseNephal" Inherits="Creature">
 		<part Name="Brain" Factions="Girsh-100" Mobile="true"/>
-		<part Name="Render" DisplayName="nephal" ColorString="&amp;m" DetailColor="w" TileColor="&amp;m"/>
+		<part Name="Render" DisplayName="尼法尔" ColorString="&amp;m" DetailColor="w" TileColor="&amp;m"/>
 		<part Name="Honorifics" Ordinary="Girsh"/>
 		<part Name="ConversationScript" ConversationID="Nephilim"/>
 		<part Name="Spawner" SpawnVerb="slough" SpawnCooldown="15-25" SpawnCheckLimit="16"/>
@@ -13323,11 +13323,11 @@
     <tag Name="ReturnToGritGateAfterAttack" Value="32,10"/>
   </object>
   <object Name="Barathrum" Inherits="Barathrumite">
-    <part Name="Render" DisplayName="Barathrum" ColorString="&amp;Y" DetailColor="w" RenderString="B" Tile="Creatures/sw_barathrum.bmp"/>
+    <part Name="Render" DisplayName="巴拉特鲁姆" ColorString="&amp;Y" DetailColor="w" RenderString="B" Tile="Creatures/sw_barathrum.bmp"/>
     <part Name="Epithets" Primary="the Old"/>
     <part Name="Brain" Wanders="false"/>
     <part Name="ConversationScript" ConversationID="Barathrum"/>
-    <part Name="Description" Short="The absurd greebling of age has caused an extra patch of quills to grow where every one quillroot had been, so the hunching back of the eldest arch bear is now meadowed in white needles of every direction and length. =pronouns.Subjective= =verb:seem:afterpronoun= a world in one; a spine crumpled by a chiliad of years still holds a posture of thereness and knowing. Interred beneath scarps of wrinkled skin, =pronouns.possessive= eyes smolder to the horizon like dying suns."/>
+    <part Name="Description" Short="岁月的荒诞生长使得每根刺根处都长出了一片额外的刺，因此最年老的拱背熊背上如今如同一片白针的草地，刺向四面八方，长短不一。 =pronouns.Subjective= =verb:seem:afterpronoun= 仿佛一个世界；被千年岁月压弯的脊背仍保持着存在与洞悉的姿态。 埋藏在皱褶皮肤之下，=pronouns.possessive= 眼睛如同垂死的太阳般在地平线上燃烧。 "/>
     <part Name="FactionRank" Ranks="Barathrumites::meyvn"/>
     <stat Name="Level" Value="50"/>
     <stat Name="Strength" sValue="16"/>
@@ -14424,7 +14424,7 @@
     <stat Name="AV" Value="8"/>
     <part Name="Description" Short="阿斯福德尔（被称为美丽者）将它们的顶端花药以诱人的角度倾斜。 所有丰收阳光和香蕉皮的明亮金色都是这脆弱美丽的花瓣的点缀。 =pronouns.possessive= 花瓣声称继承了黑格尔鲁特的美学血统，而从这一论点中，花朵又宣称拥有奥蒙波奇和整个林地大荫蔽的权利。 "/>
     <part Name="Calming"/>
-    <part Name="FriendlyFireAmnestyDuringQuest" QuestName="开垦"/>
+    <part Name="FriendlyFireAmnestyDuringQuest" QuestName="Reclamation"/>
     <part Name="FinishQuestStepWhenSlain" Quest="奥蒙门廊伯爵" Step="到奥蒙门奇~固定主轴" GameState="AsphodelSlain" RequireQuest="true"/>
     <inventoryobject Blueprint="Clay Pot"/>
     <skill Name="Persuasion_Berate"/>

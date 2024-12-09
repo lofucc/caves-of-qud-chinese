@@ -263,10 +263,10 @@
 		<stag Name="Contemporary"/>
   </object>
 	<object Name="Wrench" Inherits="BaseCudgel">
-		<part Name="Render" DisplayName="wrench" Tile="Items/wrench.bmp" ColorString="&amp;c" TileColor="&amp;y" DetailColor="c"/>
+		<part Name="Render" DisplayName="扳手" Tile="Items/wrench.bmp" ColorString="&amp;c" TileColor="&amp;y" DetailColor="c"/>
 		<part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2" Skill="Cudgel" Stat="Strength"/>
 		<part Name="Commerce" Value="5"/>
-		<part Name="Description" Short="An armlength of time-tortured metal is punched through with screwing iron for extra torque."/>
+		<part Name="Description" Short="一段历经时光摧残的金属，穿插着螺纹铁以增加扭矩。"/>
 		<tag Name="Tier" Value="0"/>
 		<part Name="Physics" Weight="1"/>
 		<part Name="Metal"/>
@@ -275,10 +275,10 @@
 		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light"/>
 	</object>
 	<object Name="Pestle" Inherits="BaseCudgel">
-		<part Name="Render" DisplayName="pestle" Tile="Items/pestle.bmp" ColorString="&amp;y" DetailColor="Y"/>
+		<part Name="Render" DisplayName="研磨杵" Tile="Items/pestle.bmp" ColorString="&amp;y" DetailColor="Y"/>
 		<part Name="MeleeWeapon" MaxStrengthBonus="1" BaseDamage="1d2-1" Skill="Cudgel" Stat="Strength"/>
 		<part Name="Commerce" Value="3"/>
-		<part Name="Description" Short="A bulb of stone is dusted by humoric powders."/>
+		<part Name="Description" Short="一块石质的球体上覆盖着幽默的粉末。"/>
 		<tag Name="EquipSound" Value="sfx_equip_material_generic_stone"/>
 		<tag Name="Tier" Value="0"/>
     <part Name="ItemElements" Elements="salt::3"/>
@@ -378,10 +378,10 @@
 		<stag Name="Contemporary"/>
   </object>
   <object Name="Billowing Conch of the Aji" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="billowing conch of the {{r|Aji}}" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K"/>
+    <part Name="Render" DisplayName="阿吉的涌动海螺" Tile="Items/sw_shell_1.bmp" ColorString="&amp;r" DetailColor="K"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="3" BaseDamage="2d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="20"/>
-    <part Name="Description" Short="A fist-sized snail shell is coiled in soft spirals, blackened with soot, and stinks of sulfur."/>
+    <part Name="Description" Short="一只拳头大小的蜗牛壳，盘旋成柔软的螺旋形，被烟炱熏黑，并散发着硫磺的恶臭。"/>
     <part Name="AjiConch"/>
     <part Name="Physics" Weight="2"/>
     <part Name="ItemElements" Elements="chance::5"/>
@@ -568,10 +568,10 @@
     <tag Name="Tier" Value="5"/>    
   </object>	
   <object Name="Rhinox-Skull Maul" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{g|rhinox-skull}} maul" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{g|犀牛头骨}}榔头" Tile="Items/sw_cudgel_skull.bmp" ColorString="&amp;y" DetailColor="Y"/>
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="320"/>
-    <part Name="Description" Short="Thick and diamond-hard headbone with three horn holes functions as the jumbo head of a bludgeon. A long shaft of shining steel was driven through the maw and welded inside."/>
+    <part Name="Description" Short="厚实且坚硬如钻石的头骨上有三个角孔，作为钝器的巨大头部。一根长长的闪亮钢杆穿过嘴巴并焊接在内部。"/>
     <part Name="ItemElements" Elements="might::4"/>
     <tag Name="Tier" Value="6"/>
     <part Name="Physics" Weight="25" UsesTwoSlots="true"/>    
@@ -613,14 +613,14 @@
     <tag Name="NoSparkingQuest"/>    
   </object>
   <object Name="Syphon Baton" Inherits="MeleeWeapon">
-    <part Name="Render" DisplayName="{{syphon|syphon}} baton" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{syphon|虹吸}}棍棒" Tile="Items/sw_baton_siphon.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="150"/>
-    <part Name="Description" Short="Ring magnets form a cylindric mace-head to bash against objects and syphon their electron juice into a battery slotted on the shaft."/>
+    <part Name="Description" Short="环形磁铁形成一个圆柱形的重锤头，可以敲击物体并虹吸其电子汁液到手柄上的电池中。"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="AIOffensiveEnergyCellReload"/>
     <part Name="AIPassiveEnergyCellReload"/>
-    <part Name="SapChargeOnHit" Amount="10d100" Single="true" BehaviorDescription="On hit, this weapon drains electrical charge from its target and their equipment and transfers it to a slotted energy cell."/>    
+    <part Name="SapChargeOnHit" Amount="10d100" Single="true" BehaviorDescription="命中时，这把武器会从目标及其装备中吸取电荷，并将其转移到插槽中的能量电池。"/>    
     <part Name="SlottedCellCharger"/>
     <part Name="Examiner" Complexity="5" Difficulty="2"/>
     <part Name="TinkerItem" Bits="00445" CanDisassemble="true" CanBuild="true"/>
@@ -943,10 +943,10 @@
 		<stag Name="Contemporary"/>
   </object>
   <object Name="Iron Vinereaper" Inherits="BaseAxe">
-    <part Name="Render" DisplayName="iron vinereaper" Tile="Items/sw_axe_10.bmp"/>
+    <part Name="Render" DisplayName="铁蔓收割者" Tile="Items/sw_axe_10.bmp"/>
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d3"/>
     <part Name="Commerce" Value="5"/>
-    <part Name="Description" Short="Wrought iron was moulded to a crescent for scything the rough hides of watervine."/>
+    <part Name="Description" Short="锻造铁被塑造成新月形，用于割除水藤粗糙的表皮。"/>
     <part Name="Metal"/>
     <part Name="ItemElements" Elements="salt::1"/>
     <tag Name="Tier" Value="1"/>
@@ -1437,10 +1437,10 @@
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Shayna" Inherits="BaseHindrenAxe">
-    <part Name="Render" DisplayName="{{w-w-Y-w-w-w sequence|Shayna}}" Tile="Items/sw_axe_11.bmp" ColorString="&amp;Y"/>
+    <part Name="Render" DisplayName="{{w-w-Y-w-w-w 序列|莎娜}}" Tile="Items/sw_axe_11.bmp" ColorString="&amp;Y"/>
     <stat Name="Hitpoints" Value="300"/>
     <part Name="ModElectrified" Tier="2"/>
-    <part Name="Description" Short="What was once merely a carbide axe is now a florid work of art. Curling wires wind around the haft of the weapon as the creeping vine of a rose plant; modules and battery housing are mounted on the flat of its blade where the blossom might rest."/>
+    <part Name="Description" Short="曾经只是一把碳化物斧头，如今却成了一件华丽的艺术品。缠绕在武器柄上的电线如同玫瑰植物的蔓延藤蔓；模块和电池组安装在刀片的平面上，宛如花朵安息之处。"/>
     <part Name="ItemElements" Elements="circuitry::5"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
@@ -1457,18 +1457,18 @@
 		<tag Name="EquipmentFrameColors" Value="RWyY"/>
   </object>
   <object Name="Yal" Inherits="BaseHindrenAxe">
-    <part Name="Render" DisplayName="{{B-C-Y sequence|Yal}}" Tile="Items/sw_axe_11.bmp" ColorString="&amp;C"/>
+    <part Name="Render" DisplayName="{{B-C-Y 序列|亚尔}}" Tile="Items/sw_axe_11.bmp" ColorString="&amp;C"/>
     <stat Name="Hitpoints" Value="300"/>
     <part Name="ModFreezing" Tier="3"/>
     <part Name="ItemElements" Elements="cold::4"/>
-    <part Name="Description" Short="Half battle axe and half vinereaper, the ancestral tool called Yal evokes the struggle between the hindren cultivators and the cruelty of a harsh winter. A biting cold radiates off the curved blade."/>
+    <part Name="Description" Short="半战斧半藤收割机，这把名为亚尔的祖传工具唤起了后裔耕种者与严冬残酷斗争的记忆。弯曲的刀刃散发着刺骨的寒气。"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
     <xtagGrammar Proper="true"/>
 		<tag Name="EquipmentFrameColors" Value="BCyY"/>
   </object>
   <object Name="Svensword" Inherits="Long Sword4">		
-    <part Name="Render" DisplayName="[Svensword]"/>
+    <part Name="Render" DisplayName="[斯文剑]"/>
     <stat Name="Hitpoints" Value="300"/>
     <part Name="AddMod" Mods="ModCounterweighted,ModElectrified" Tiers="5,7"/>
     <part Name="ItemElements" Elements="circuitry::5"/>
@@ -1495,8 +1495,8 @@
 		<tag Name="EquipmentFrameColors" Value="YWbB"/>
   </object>
   <object Name="Difucila" Inherits="Dagger4">
-    <part Name="Render" DisplayName="etched cleaver" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y" DetailColor="w"/>
-    <part Name="Description" Short="Beautiful ribbons of leaf are etched along the edges of the broad and oiled blade. The pine handle is carved with its name: Difucila."/>
+    <part Name="Render" DisplayName="刻纹砍刀" Tile="Items/sw_shortblade_10.bmp" ColorString="&amp;Y" DetailColor="w"/>
+    <part Name="Description" Short="宽大的油润刀刃上雕刻着美丽的叶状花纹。松木手柄上刻着它的名字: Difucila。"/>
     <part Name="AddMod" Mods="ModSharp,ModMasterwork"/>    
     <stat Name="Hitpoints" Value="300"/>
     <part Name="Physics" Weight="3"/>
@@ -1508,11 +1508,11 @@
     <xtagGrammar Proper="false"/>
   </object>
   <object Name="Fist of the Ape God" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{r|Fist}} of the {{Y|Ape God}}" ColorString="&amp;M" Tile="Items/sw_first_ape_god.bmp" DetailColor="r"/>
+    <part Name="Render" DisplayName="{{Y|猿神}}之{{r|拳}}" ColorString="&amp;M" Tile="Items/sw_first_ape_god.bmp" DetailColor="r"/>
     <part Name="MeleeWeapon" HitBonus="3" PenBonus="1" MaxStrengthBonus="9999" Ego="4" BaseDamage="6d2" Skill="Cudgel" Stat="Strength"/>
     <part Name="Commerce" Value="2000"/>
     <part Name="ItemElements" Elements="might::8"/>
-    <part Name="Description" Short="Lifeblood the color of amaranth and dried in moonlight paints the clenched and giant fist of the dead forest Saad. The sight of it unfurls one of Time's right-blown ribbons: this is a relic in all or near-all futures, and the wielder perhaps =pronouns.possessive= fossil-mate and secret sharer."/>
+    <part Name="Description" Short="生命之血如紫茉莉般鲜红，经月光晒干后，涂满了死森林萨德紧握的巨大拳头。这一景象展开了一条时间的丝带: 这是一件几乎在所有未来中都存在的遗物，而持有者或许就是=pronouns.possessive=化石伴侣和秘密共享者。"/>
     <part Name="Physics" Weight="120" FlameTemperature="99999" VaporTemperature="99999" UsesTwoSlots="true" Organic="true"/>
     <stat Name="Hitpoints" Value="1000"/>
     <tag Name="Tier" Value="8"/>
@@ -1670,13 +1670,13 @@
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d8"/>
   </object>
   <object Name="Laser Rifle" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{C|laser}} rifle" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp"/>
+    <part Name="Render" DisplayName="{{C|激光}}步枪" ColorString="&amp;C" Tile="items/sw_techrifle_1.bmp"/>
     <part Name="Physics" Weight="9" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
     <part Name="Commerce" Value="750"/>
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserRifle"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
-    <part Name="Description" Short="Telescoped cylinders pinch the mirror point, and under them grows a sylph-like stock of sea-ferried nutwood."/>
+    <part Name="Description" Short="望远镜状的圆筒夹住反射点，其下生长着如同精灵般的海运坚果木枪托。"/>
     <part Name="Examiner" Complexity="4"/>
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
     <part Name="Metal"/>
@@ -1698,13 +1698,13 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Chain Laser" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="chain {{C|laser}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp"/>
+    <part Name="Render" DisplayName="链式{{C|激光}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp"/>
     <part Name="Physics" Weight="40" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;B" ShotsPerAction="3" AmmoPerAction="3" ShotsPerAnimation="1" WeaponAccuracy="5"/>
     <part Name="Commerce" Value="1000"/>
     <part Name="EnergyAmmoLoader" ChargeUse="150" ProjectileObject="ProjectileLaserRifle"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
-    <part Name="Description" Short="Three carbon steel barrels fit together into an arc-edged triangle of luminous ritualism. They pinch the mirror point inside."/>
+    <part Name="Description" Short="三个碳钢炮管组合成一个弧形边缘的三角形，散发着仪式般的光辉。它们夹住了内部的焦点。"/>
     <part Name="Examiner" Complexity="5"/>
     <part Name="TinkerItem" Bits="0005" CanDisassemble="true" CanBuild="true"/>
     <part Name="Metal"/>
@@ -1793,8 +1793,8 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_hypertractor_hit"/>
   </object>
   <object Name="Light Rail" Inherits="BaseRifle">
-    <part Name="Render" DisplayName="{{W|light}} rail" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp"/>
-    <part Name="Description" Short="Artisanally carved wood castles a sextet of parallel conductors and a sliding photon armature. The grain is scorched black on the rifle's stock."/>
+    <part Name="Render" DisplayName="{{W|光}}轨道" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="items/sw_techrifle_3.bmp"/>
+    <part Name="Description" Short="手工雕刻的木制城堡上排列着六条平行导轨和一个滑动的光子结构。枪托上的木纹被烧成了黑色。"/>
     <part Name="Physics" Weight="16" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
     <part Name="Commerce" Value="1500"/>
@@ -1844,14 +1844,14 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Phase Cannon" Inherits="BaseHeavyWeapon">
-    <part Name="Render" DisplayName="phase cannon" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp"/>
+    <part Name="Render" DisplayName="相位炮" ColorString="&amp;m" TileColor="&amp;c" DetailColor="m" Tile="Items/sw_techrifle_5.bmp"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;M" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
     <intproperty Name="IntegratedWeaponHostShots" Value="20"/>
     <part Name="Commerce" Value="2000"/>
     <part Name="EnergyAmmoLoader" ChargeUse="7500" ProjectileObject="ProjectilePhaseCannon"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100"/>
-    <part Name="Description" Short="Astralgals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion."/>
+    <part Name="Description" Short="星界加尔沿着棱锥的长度标出相位裂隙。噪音被吸出时间，预示着跨平面融合。"/>
     <part Name="Examiner" Complexity="8"/>
     <part Name="ItemElements" Elements="might::3"/>
     <part Name="TinkerItem" Bits="0008" CanDisassemble="true" CanBuild="true"/>
@@ -1913,7 +1913,7 @@
 		<stag Name="Contemporary"/>
   </object>
   <object Name="Electrobow" Inherits="MissileWeapon">
-    <part Name="Render" DisplayName="{{W|electro}}{{c|bow}}" ColorString="&amp;W" Tile="items/sw_bow_4.bmp"/>
+    <part Name="Render" DisplayName="{{W|电}}弓" ColorString="&amp;W" Tile="items/sw_bow_4.bmp"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" RangeIncrement="12"/>
     <part Name="Commerce" Value="120"/>
@@ -1923,7 +1923,7 @@
     <part Name="ItemElements" Elements="circuitry::4"/>
     <part Name="AnimatedMaterialElectric"/>
     <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="8"/>
-    <part Name="Description" Short="Magnets on the string nocks hum and a slender curve of metal hums back. The air crackles as fingers approach the arrow rest."/>
+    <part Name="Description" Short="弦上的磁铁发出嗡嗡声，一弯细长的金属也回应着。手指靠近箭架时，空气噼啪作响。"/>
     <part Name="TinkerItem" Bits="0024" CanDisassemble="true" CanBuild="true"/>
     <part Name="Metal"/>
     <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Bows/sfx_missile_electroBow_fire"/>
@@ -2115,13 +2115,13 @@
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Chaingun" Inherits="BaseMagazineHeavyWeapon">
-    <part Name="Render" DisplayName="chaingun" Tile="items/sw_chain_gun.bmp" ColorString="&amp;y" DetailColor="c"/>
+    <part Name="Render" DisplayName="链枪" Tile="items/sw_chain_gun.bmp" ColorString="&amp;y" DetailColor="c"/>
     <part Name="Physics" Weight="40" UsesTwoSlots="true"/>
     <part Name="Commerce" Value="250"/>
     <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="4"/>
     <part Name="MissileWeapon" AnimationDelay="0" Skill="HeavyWeapons" ShotsPerAction="6" AmmoPerAction="6" ShotsPerAnimation="1" WeaponAccuracy="16" RangeIncrement="6"/>
     <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileChaingunBullet" AmmoPart="AmmoSlug" MaxAmmo="42"/>
-    <part Name="Description" Short="A chrome chain wraps around a self-winding flywheel and is spotted with grease dew. One long barrel is nicked with steel scarring."/>
+    <part Name="Description" Short="镀铬链条缠绕在自动旋转的飞轮上，上面点缀着油脂露珠。一根长枪管上布满了钢痕。"/>
     <part Name="Metal"/>    
     <part Name="TinkerItem" Bits="004" CanDisassemble="true" CanBuild="true"/>
     <tag Name="Tier" Value="4"/>
@@ -2307,14 +2307,14 @@
     <stag Name="Normality"/>
   </object>	
   <object Name="Arc Cannon" Inherits="BaseHeavyWeapon">
-    <part Name="Render" DisplayName="{{c|arc cannon}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp"/>
+    <part Name="Render" DisplayName="{{c|弧光炮}}" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" Tile="Items/sw_techcannon_3.bmp"/>
     <part Name="Physics" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="e" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
     <part Name="Commerce" Value="300"/>
     <part Name="EnergyAmmoLoader" ChargeUse="70" ProjectileObject="ProjectileArcCannon"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell" SlottedType="Chem Cell" ChanceSlotted="100"/>
     <part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors"/>
-    <part Name="Description" Short="Cables purled together form the barrel of a blastgun that fires along the cambered electromagnetic field lines."/>
+    <part Name="Description" Short="多股电缆编织成形，构成了这门沿弯曲电磁场线发射的爆能炮的枪管。"/>
     <part Name="Examiner" Complexity="4"/>
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="false"/>
     <part Name="Metal"/>
@@ -2328,8 +2328,8 @@
     <part Name="Projectile" BasePenetration="11" BaseDamage="1d6" Attributes="Electric" ColorString="&amp;W" PassByVerb="leap"/>
   </object>
   <object Name="Linear Cannon" Inherits="BaseHeavyWeapon">
-    <part Name="Render" DisplayName="linear cannon" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp"/>
-    <part Name="Description" Short="Baroque and kite-like volumes of metal are arranged on an axis as a lathe to shave dimensionality off their inner spaces. A giant stock and grip of painted fullerite support their tremendous weight."/>
+    <part Name="Render" DisplayName="线性炮" ColorString="&amp;y" DetailColor="c" Tile="Items/sw_techcannon_6.bmp"/>
+    <part Name="Description" Short="巴洛克风格的金属体如同风筝般排列在轴上，犹如车床般削去了内部空间的维度。巨大的枪托和握把由涂漆的{{K|富勒烯}}支撑，以承受其惊人的重量。"/>
     <part Name="Physics" Weight="40" UsesTwoSlots="true"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;y" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
     <part Name="Commerce" Value="750"/>
@@ -2351,7 +2351,7 @@
     <part Name="Projectile" BasePenetration="0" BaseDamage="2d12" Attributes="Vorpal" ColorString="&amp;B" PassByVerb="dart"/>
   </object>
   <object Name="Blast Cannon" Inherits="BaseHeavyWeapon">
-    <part Name="Render" DisplayName="{{R|blast}} cannon" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp"/>
+    <part Name="Render" DisplayName="{{R|爆破}}炮" ColorString="&amp;R" TileColor="&amp;c" DetailColor="R" Tile="Items/sw_techcannon_4.bmp"/>
     <part Name="Physics" UsesTwoSlots="true" Weight="70"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12"/>
     <part Name="Commerce" Value="2000"/>
@@ -2360,7 +2360,7 @@
     <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" SlottedType="Antimatter Cell" ChanceDestroyCellOnForcedUnequip="85"/>
     <part Name="EquipCharge" ChargeRate="80" EquipperProperty="BlastCannonRecharge" NameForStatus="PowerUplink"/>
     <part Name="IntegralRecharger"/>
-    <part Name="Description" Short="Sleek spiral barrels of matrixed metal cradle an enormous cyclinder of ionic gas. On fire the mixture is hyperpressurized into shot and sent to explode at sight's end."/>
+    <part Name="Description" Short="光滑的螺旋金属炮管环抱着一个巨大的离子气体圆筒。点燃后，混合物被超高压缩成弹丸，射向视野的尽头爆炸。"/>
     <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="7"/>
     <part Name="TinkerItem" Bits="0357" CanDisassemble="true" CanBuild="false"/>
     <part Name="Metal"/>
@@ -2376,13 +2376,13 @@
     <xtagGrammar massNoun="true"/>
   </object>
   <object Name="Swarm Rack" Inherits="BaseMagazineHeavyWeapon">
-    <part Name="Render" DisplayName="{{m|swarm rack}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp"/>
+    <part Name="Render" DisplayName="{{m|群架}}" ColorString="&amp;m" DetailColor="c" Tile="Items/sw_techcannon_5.bmp"/>
     <part Name="Physics" UsesTwoSlots="true" Weight="300"/>
     <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="sm" ShotsPerAction="10" AmmoPerAction="10" ShotsPerAnimation="10" WeaponAccuracy="25"/>
     <part Name="Commerce" Value="3200"/>
     <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileSwarmRocket" AmmoPart="AmmoMissile" MaxAmmo="100"/>
     <intproperty Name="IntegratedWeaponHostShots" Value="1"/>
-    <part Name="Description" Short="A chrome and quartz-dusted honeycomb mounts the viewing plane and threatens obliteration to all. Bar weldings bend to its gigantic weight, and rocketheads peak out of hexagonal hive."/>
+    <part Name="Description" Short="铬合金和石英粉饰的蜂巢状结构矗立在观察平面上，对所有生物构成毁灭性的威胁。巨大的重量使金属焊接处弯曲，六角形蜂巢中露出火箭头。"/>
     <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="8"/>
     <part Name="TinkerItem" Bits="0678" CanDisassemble="true" CanBuild="false"/>
     <part Name="ModGigantic"/>
@@ -2443,8 +2443,8 @@
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d6"/>
   </object>
 	<object Name="Grappling Gun" Inherits="BasePistol">
-		<part Name="Render" DisplayName="grappling gun" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp"/>
-		<part Name="Description" Short="A tension spring shoves a firing pin to bang a barrel of gas and eject a cabled grapnel; then a winch winds it back."/>
+		<part Name="Render" DisplayName="抓钩枪" ColorString="&amp;y" TileColor="&amp;c" DetailColor="y" Tile="items/sw_grappling_gun.bmp"/>
+		<part Name="Description" Short="张力弹簧推动击针撞击气罐，弹射出带缆绳的抓钩；然后绞盘将其收回。"/>
 		<part Name="Physics" Weight="5"/>
 		<part Name="MissileWeapon" Skill="Pistol" AmmoChar="GG" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" MaxRange="8"/>
 		<part Name="Commerce" Value="350"/>
@@ -2487,12 +2487,12 @@
     <part Name="Projectile" BasePenetration="4" BaseDamage="1d6"/>
   </object>
   <object Name="Laser Pistol" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{C|laser}} pistol" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w"/>
+    <part Name="Render" DisplayName="{{C|激光}}手枪" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4"/>
     <part Name="Commerce" Value="400"/>
     <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserPistol"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
-    <part Name="Description" Short="The pistol is engraved with watervine hemp and encircled in saltstone. On the grip is an image of a nomad and knight in saltstone. The knight is striking down the nomad."/>
+    <part Name="Description" Short="手枪上雕刻着水藤麻，并用盐石环绕。握把上刻有一幅盐石制成的游牧民和骑士的图像，骑士正在击倒游牧民。"/>
     <part Name="Examiner" Complexity="5"/>
     <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
     <part Name="Metal"/>
@@ -2547,8 +2547,8 @@
 	  <xtagProjectileVFX Effect="MissileWeaponsEffects/eigen_laser" StartColor="b" EndColor="B" Tessellation="30" Width="5"/>
   </object>
   <object Name="Arc Winder" Inherits="BasePistol">
-    <part Name="Render" DisplayName="arc winder" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W"/>
-    <part Name="Description" Short="A spiral crank closes a chrome-encased circuit and ejects charge through two contact tips. Smoke twirls through their yellow glow."/>
+    <part Name="Render" DisplayName="弧线卷轴" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Description" Short="一个螺旋曲柄闭合了镀铬外壳中的电路，并通过两个接触端子释放电荷。烟雾在它们的黄色光芒中旋绕。"/>
     <part Name="Physics" Weight="4"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4"/>
     <part Name="Commerce" Value="750"/>
@@ -2595,8 +2595,8 @@
     <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#0f3b3a;;beamColor1::#0f3b3a;;beamColor2::#0f3b3a"/>
   </object>
   <object Name="Hand Rail" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{W|hand}} rail" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp"/>
-    <part Name="Description" Short="Artisanally carved wood castles a sextet of parallel conductors and a sliding photon armature. The grain is scorched black on the pistol's stock."/>
+    <part Name="Render" DisplayName="{{W|手}}护栏" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" Tile="Items/sw_techpistol_3.bmp"/>
+    <part Name="Description" Short="手工雕刻的木制护拦上排列着六条平行导体和一个滑动光子结构。枪托上的木纹被烧成黑色。"/>
     <part Name="Physics" Weight="8"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2"/>
     <part Name="Commerce" Value="1050"/>
@@ -2621,8 +2621,8 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Di-Thermo Beam" Inherits="BasePistol">
-    <part Name="Render" DisplayName="{{R|di-thermo}} beam" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C"/>
-    <part Name="Description" Short="A coolant pipe and an antifreeze pipe are barrel-locked in symmetric geometry. Thumb flips rotate the mechanism and reverse their orientation."/>
+    <part Name="Render" DisplayName="{{R|双温}}射线" ColorString="&amp;R" Tile="Items/sw_techpistol_7.bmp" DetailColor="C"/>
+    <part Name="Description" Short="冷却管和防冻管以对称几何形状锁定在一起。拇指翻转可以旋转机制并反转它们的方向。"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="f" AnimationDelay="15" ShotsPerAction="2" AmmoPerAction="1" ShotsPerAnimation="2" WeaponAccuracy="4"/>
     <part Name="Physics" Weight="6"/>
     <part Name="Commerce" Value="1000"/>
@@ -2712,8 +2712,8 @@
     <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
   </object>
   <object Name="Space Inverter" Inherits="BasePistol">
-    <part Name="Render" DisplayName="space inverter" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M"/>
-    <part Name="Description" Short="Behind the muzzle, a glass-bound nimbus of unstable spacetime curls around an astral tether. The trigger mechanism cuts the tether and out-vacuums the anomaly to the free world."/>
+    <part Name="Render" DisplayName="空间反转器" ColorString="&amp;m" Tile="Items/sw_techpistol_8.bmp" TileColor="&amp;y" DetailColor="M"/>
+    <part Name="Description" Short="枪口后方，一个被玻璃束缚的不稳定时空光环围绕着一条星界绳索。触发机制切断绳索，将异常现象从真空状态释放到自由世界。"/>
     <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;m*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4"/>
     <part Name="Physics" Weight="4"/>
     <part Name="Commerce" Value="750"/>
@@ -2733,8 +2733,8 @@
     <stag Name="Travel"/>
   </object>
   <object Name="High-Voltage Arc Winder" Inherits="Arc Winder">
-    <part Name="Render" DisplayName="{{W|high-voltage}} arc winder" ColorString="&amp;Y" DetailColor="Y"/>
-    <part Name="Description" Short="A spiral crank closes a chrome-encased circuit and ejects immense amounts of charge through two contact tips. Smoke twirls through their white-hot glow."/>
+    <part Name="Render" DisplayName="{{W|高压}}弧线卷绕器" ColorString="&amp;Y" DetailColor="Y"/>
+    <part Name="Description" Short="螺旋曲柄闭合一个铬壳电路，并通过两个接触尖端释放大量电荷。烟雾在它们的白炽光芒中旋转。"/>
     <part Name="Commerce" Value="1250"/>
     <part Name="ElectricalDischargeLoader" ChargeUse="425"/>
     <part Name="Examiner" Complexity="7" Difficulty="1"/>
@@ -2771,8 +2771,8 @@
     <part Name="Projectile" BasePenetration="0" BaseDamage="1d8" Attributes="Mental Psionic" PenetrateCreatures="true" PenetrateWalls="true" ColorString="&amp;m" PassByVerb="swirl"/>
   </object>
 	<object Name="Longreach Grappling Gun" Inherits="Grappling Gun">
-		<part Name="Render" DisplayName="longreach grappling gun" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp"/>
-		<part Name="Description" Short="A tension spring shoves a firing pin to bang a barrel of gas and eject a long-cabled grapnel at precise range; and then a winch winds it back."/>
+		<part Name="Render" DisplayName="长距抓钩枪" ColorString="&amp;Y" TileColor="&amp;c" DetailColor="Y" Tile="items/sw_grappling_gun.bmp"/>
+		<part Name="Description" Short="一个张力弹簧推动击针撞击气体筒，将带有长缆绳的抓钩精确射出；然后卷扬机将其收回。"/>
 		<part Name="Physics" Weight="4"/>
 		<part Name="MissileWeapon" AmmoChar="GG" MaxRange="120"/>
 		<part Name="Commerce" Value="1250"/>
@@ -2856,12 +2856,12 @@
 
   <!-- Unique missile weapons -->
   <object Name="Ruin of House Isner" Inherits="Borderlands Revolver">
-    <part Name="Render" DisplayName="Ruin of House Isner" RenderLayer="6" ColorString="&amp;M"/>
+    <part Name="Render" DisplayName="伊斯纳府的废墟" RenderLayer="6" ColorString="&amp;M"/>
     <part Name="Commerce" Value="500"/>
     <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="5" RangeIncrement="6"/>
     <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileRuinsOfHouseIsnerShell" AmmoPart="AmmoSlug" MaxAmmo="7"/>
-    <part Name="Description" Short="The craftsmanship of this pistol worked in brass and chrome is breathtaking: grips of kingswood call the palm to an airless wrap, the hammer is contoured to the thumb by the microinch, and the sight draws the eye down the barrel like the slipping of silk. It's engraved all around with withered ivy, and the muzzle is kissed in blood."/>
-    <part Name="RulesDescription" Text="+1 Ego Critical hits scored with this weapon get an extra +4 bonus to penetration rolls. When this weapons fires a shot with its last round of ammo, the shot has perfect aim and is guaranteed to score a critical hit."/>
+    <part Name="Description" Short="这把手枪的工艺令人叹为观止: 黄铜和铬制成的枪身精美绝伦，国王木制成的手柄让人握感舒适，锤子经过微米级的精细打磨，准星如同丝绸般引导视线沿着枪管滑下。枪身上雕刻着枯萎的常春藤，枪口处似乎还残留着血迹。"/>
+    <part Name="RulesDescription" Text="+1 Ego 使用这把武器造成的暴击额外获得+4穿透加成。当这把武器使用最后一发弹药射击时，射击将完美命中并必定造成暴击。"/>
     <part Name="TinkerItem" Bits="2222" CanDisassemble="true" CanBuild="false"/>
     <part Name="RuinOfHouseIsner"/>
 		<stat Name="Hitpoints" Value="300"/>
@@ -2896,9 +2896,9 @@
   -->
 
   <object Name="Geomagnetic Disc" Inherits="Item">
-    <part Name="Render" DisplayName="geomagnetic disc" RenderString="." Tile="Items/sw_geomagnetic_disc.bmp" DetailColor="Y" ColorString="&amp;C" Occluding="false"/>
-    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="Thrown Weapons"/>
-    <part Name="Description" Short="Ions were spun into a euhedral disc on a spinning wheel, and aquamarine was heat-set on the inner ring by deepsea steam."/>
+    <part Name="Render" DisplayName="地磁圆盘" RenderString="." Tile="Items/sw_geomagnetic_disc.bmp" DetailColor="Y" ColorString="&amp;C" Occluding="false"/>
+    <part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="投掷武器"/>
+    <part Name="Description" Short="离子在旋转轮上被纺成一个完美的圆盘，深海蒸汽将海蓝宝石热固在内环上。"/>
     <part Name="ThrownWeapon"/>
     <part Name="GeomagneticDisc" Damage="2d6" ChargeUse="100" Bounces="5"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -4414,8 +4414,8 @@
     <tag Name="Tier" Value="6"/>
   </object>
   <object Name="Thermo Cask" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="{{thermo|thermo}} cask" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]"/>
-    <part Name="Description" Short="Tetraglass tubes of coolant and antifreeze snake their way over the keg-mail's compressors, and condenser and evaporator coils spin out the shoulders like grandfather trees above the insulation shrub."/>
+    <part Name="Render" DisplayName="{{thermo|热能}}桶" Tile="Items/sw_cask.bmp" ColorString="&amp;r" DetailColor="C" RenderString="]"/>
+    <part Name="Description" Short="冷却液和防冻剂通过四玻璃管蜿蜒穿过邮件桶的压缩机，冷凝器和蒸发器线圈像祖父树一样从绝缘灌木上方延伸而出。"/>
     <part Name="Armor" AV="4" DV="-4" Heat="25" Cold="25" WornOn="Body"/>
     <part Name="Physics" Weight="40"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -4465,8 +4465,8 @@
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="High-Energy Thermo Cask" Inherits="Thermo Cask">
-    <part Name="Render" DisplayName="high-energy {{thermo|thermo}} cask" Tile="Items/sw_cask.bmp" ColorString="&amp;R" DetailColor="C" RenderString="]"/>
-    <part Name="Description" Short="A dense mesh of dilated tetraglass tubes convey coolant and antifreeze over the keg-mail's jumbo compressors. Blower motors drone a low hum, and condenser and evaporator coils spin out the shoulders like grandfather trees above the insulation shrub."/>
+    <part Name="Render" DisplayName="高能{{thermo|热}}桶" Tile="Items/sw_cask.bmp" ColorString="&amp;R" DetailColor="C" RenderString="]"/>
+    <part Name="Description" Short="密集的膨胀四玻璃管网输送冷却液和防冻液到桶甲的巨大压缩机上。鼓风机电机发出低沉的嗡嗡声，冷凝器和蒸发器线圈像祖父树一样从绝缘灌木上方旋转而出。"/>
     <part Name="Armor" AV="4" DV="-4" Heat="50" Cold="50" WornOn="Body"/>
     <part Name="ThermalAmp" HeatDamage="50" ColdDamage="50" ModifyHeat="50" ModifyCold="50"/>
     <part Name="Physics" Weight="40"/>
@@ -4609,10 +4609,10 @@
   </object>
   <object Name="Mechanical Wings" Inherits="Armor">
     <part Name="Armor" AV="0" DV="0" WornOn="Back"/>
-    <part Name="Render" DisplayName="mechanical wings" RenderString="]" Tile="items/sw_mechanical_wings.bmp" TileColor="&amp;w" DetailColor="W"/>
+    <part Name="Render" DisplayName="机械羽翼" RenderString="]" Tile="items/sw_mechanical_wings.bmp" TileColor="&amp;w" DetailColor="W"/>
     <part Name="Commerce" Value="500"/>
     <part Name="Physics" Weight="15"/>
-    <part Name="Description" Short="Force is pushed across bronze spines through an improbable series of flapping motions, whereupon parasols pop open to catch the mercurial wind."/>
+    <part Name="Description" Short="力量通过一系列不可思议的拍打动作传递到青铜脊骨上，随后伞状装置展开，捕捉那变幻莫测的风。"/>
     <part Name="MechanicalWings"/>
     <part Name="Metal"/>
     <tag Name="Tier" Value="2"/>
@@ -4662,12 +4662,12 @@
   <object Name="Portable Beehive" Inherits="Armor">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
     <part Name="Physics" Weight="5" Organic="true"/>
-    <part Name="Render" DisplayName="portable {{bee|beehive}}" ColorString="&amp;w" DetailColor="K" RenderString="]" Tile="items/sw_beehive.bmp"/>
+    <part Name="Render" DisplayName="便携式{{bee|蜂巢}}" ColorString="&amp;w" DetailColor="K" RenderString="]" Tile="items/sw_beehive.bmp"/>
     <part Name="Commerce" Value="95"/>
     <part Name="LiquidVolume" MaxVolume="8" StartVolume="1-8" InitialLiquid="honey-1000"/>
     <part Name="LeakWhenBroken"/>
     <part Name="LiquidProducer" Liquid="honey" Rate="2000" WorksOnWearer="true" WorksOnSelf="false"/>
-    <part Name="Description" Short="Bees crawl over the back-mounted slatted rack. A few more dart around nearby."/>
+    <part Name="Description" Short="蜜蜂爬满了背上的框架。附近还有几只在飞舞。"/>
     <part Name="AddsRep" Faction="Flowers" Value="200"/>
     <part Name="ItemElements" Elements="salt::2"/>
 	  <tag Name="EquipSound" Value="sfx_equip_armor_organic"/>
@@ -4717,10 +4717,10 @@
   <!-- Back, Tier 5 -->
   <object Name="Gyrocopter Backpack" Inherits="Armor">
     <part Name="Armor" AV="0" DV="0" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|gyrocopter}} backpack" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|旋翼背包}}" RenderString="]" Tile="items/sw_gyrocopter_backpack.bmp" ColorString="&amp;B" TileColor="&amp;B" DetailColor="C"/>
     <part Name="Commerce" Value="800"/>
     <part Name="Physics" Weight="10"/>
-    <part Name="Description" Short="Articulated blades unfold to form an aerial screw that gets blown upward by an air thruster mounted below. On activation, the equipper takes flight."/>
+    <part Name="Description" Short="可折叠的叶片展开后形成一个螺旋桨，由下方安装的喷气推进器向上吹动。激活后，装备者可以飞行。"/>
     <part Name="BootSequence" BootTime="10" VerbOnBootInitialized="cough" VerbOnBootAborted="sputter" VerbOnBootDone="whir" ObviousIfUnderstood="true" IsEMPSensitive="false" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_cough" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_sputter" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_whir"/>
     <part Name="MechanicalWings" ChargeUse="2" Level="4" IsBootSensitive="true" RequiresOngoingEffort="false" CrashBreakChance="5" Type="GyrocopterBackpack" FlightSourceDescription="Gyrocopter Backpack" NameForStatus="DriveTrain"/>
     <part Name="PartsGas" Radius="1" Chance="25" WorksOnEquipper="true" IsTechScannable="false" NeedsOtherActivePartEngaged="MechanicalWings"/>
@@ -4763,9 +4763,9 @@
   </object>
   <object Name="Mercurial Cloak" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="1"/>
-    <part Name="Render" DisplayName="{{mercurial|mercurial}} cloak" RenderString="]" Tile="items/sw_cloak_fancy.bmp" ColorString="&amp;C" DetailColor="B"/>
+    <part Name="Render" DisplayName="{{水银|水银}}斗篷" RenderString="]" Tile="items/sw_cloak_fancy.bmp" ColorString="&amp;C" DetailColor="B"/>
     <part Name="Commerce" Value="250"/>
-    <part Name="Description" Short="Movement puts the birds stitched into the soft pleats of cloth into stuttery animation."/>
+    <part Name="Description" Short="移动时，缝制在柔软褶皱布料中的鸟儿会断断续续地动起来。"/>
     <part Name="Examiner" Complexity="5"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Springy" Factor="0.8"/>
@@ -4779,8 +4779,8 @@
     <stag Name="Travel"/>
   </object>
   <object Name="Quartzfur Cloak" Inherits="BaseCloak">
-    <part Name="Render" DisplayName="{{Y|quartzfur}} cloak" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_cloak.bmp"/>
-    <part Name="Description" Short="Prism-studded skin was shorn from a dead monkey and sawed into a cloak."/>
+    <part Name="Render" DisplayName="{{Y|石英毛皮}}斗篷" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_cloak.bmp"/>
+    <part Name="Description" Short="从一只死去的猴子身上剥下的棱镜镶嵌的皮肤，被裁剪成了一件斗篷。"/>
     <part Name="Armor" AV="1" DV="-1" Elec="6" Cold="6" Heat="6" Acid="6"/>
     <part Name="Physics" Weight="10" Organic="true"/>
     <part Name="Fur"/>
@@ -4795,12 +4795,12 @@
 
   <!-- Back, Tier 6 -->
   <object Name="Strength Exo" Inherits="Armor">
-    <part Name="Render" DisplayName="{{W-W-W-W-W-R sequence|powered}} {{K-y-K-K-K-K-K-K-K-K sequence|exoskeleton}}" Tile="Items/sw_exoskeleton.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="]"/>
+    <part Name="Render" DisplayName="{{W-W-W-W-W-R sequence|激活}}{{K-y-K-K-K-K-K-K-K-K sequence|外骨骼}}" Tile="Items/sw_exoskeleton.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="]"/>
     <part Name="Armor" AV="0" DV="-2" WornOn="Back"/>
     <part Name="BootSequence" BootTime="5" VerbOnBootInitialized="whine" VerbOnBootAborted="thunk" VerbOnBootDone="hum" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_whine" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_thunk" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_hum"/>
     <part Name="EquipStatBoost" Boosts="Strength:2" ChargeUse="1" IsEMPSensitive="true" IsBootSensitive="true" IsPowerLoadSensitive="true" NameForStatus="ServoAssist"/>
     <part Name="Commerce" Value="535"/>
-    <part Name="Description" Short="Slate tubes assemble to scaffold the human form."/>
+    <part Name="Description" Short="石板管组装成支撑人体的支架。"/>
     <part Name="Physics" Weight="10"/>
     <stat Name="Hitpoints" Value="60"/>
     <stat Name="AV" Value="6"/>
@@ -4859,8 +4859,8 @@
 
   <!-- Back, Tier 7 -->
   <object Name="Kaleidocera Cape" Inherits="BaseCloak">
-    <part Name="Render" DisplayName="{{kaleidoslug|kaleidocera}} cape" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_cape.bmp"/>
-    <part Name="Description" Short="Cerata pendulate on the cape like prism grass of a windy meadow. They mirror rich hues in cerulean, ruby, star orchid, and void; together they shine to resplendent effect."/>
+    <part Name="Render" DisplayName="{{kaleidoslug|万花筒虫}}斗篷" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_cape.bmp"/>
+    <part Name="Description" Short="斗篷上的触角像风中的棱镜草一样摇曳。它们反射出丰富的色彩，包括天蓝色、红宝石色、星兰色和虚空色；这些颜色共同闪耀出辉煌的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
     <tag Name="Tier" Value="7"/>
@@ -4873,9 +4873,9 @@
   </object>
 	<object Name="Palladium Mesh Tabard" Inherits="BaseCloak">
 		<part Name="Armor" AV="1" DV="1" MA="1"/>
-		<part Name="Render" DisplayName="{{palladium mesh|palladium mesh}} tabard" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W"/>
+		<part Name="Render" DisplayName="{{palladium mesh|钯网}}披风" RenderString="]" Tile="Items/sw_mesh_tabard.bmp" HFlip="true" ColorString="&amp;c" DetailColor="W"/>
 		<part Name="Commerce" Value="925"/>
-		<part Name="Description" Short="Electrodes shine on the lattice across the uuflax weave. Sleeves, widened in fashion, display the gold and cyan heraldic circuitry."/>
+		<part Name="Description" Short="电极在uuflax编织的网格上闪耀。袖子按照时尚加宽，展示出金色和青色的纹章电路。"/>
 		<part Name="Physics" Weight="9"/>
 		<part Name="EnergyCellSocket" SlotType="EnergyCell"/>
         <part Name="AIDefensiveEnergyCellReload"/>
@@ -4894,8 +4894,8 @@
 
 	<!-- Back, Tier 8 -->
 	<object Name="Gigantic Chassis Plate" Inherits="BaseCloak">
-		<part Name="Render" DisplayName="{{c|chassis plate}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp"/>
-		<part Name="Description" Short="A gargantuan slab of burned and rolled chrome was unjointed from an earth-mover. It shadows its monstrous wielder like a starsail."/>
+		<part Name="Render" DisplayName="{{c|底盘板}}" ColorString="&amp;c" RenderString="]" DetailColor="C" Tile="Items/sw_chassis_plate.bmp"/>
+		<part Name="Description" Short="一块巨大的烧焦并轧制的铬合金板从一台地球移动机上拆下。它像星帆一样遮蔽了其庞大的持有者。"/>
 		<part Name="Armor" AV="6" DV="-2" Cold="20" Heat="20"/>
 		<part Name="Physics" Weight="300"/>
 		<tag Name="Tier" Value="8"/>
@@ -5039,9 +5039,9 @@
   </object>  
   <object Name="Square Cap" Inherits="BaseHat">
     <part Name="Armor" AV="0" Intelligence="1" Ego="1" DV="0" WornOn="Head"/>
-    <part Name="Render" DisplayName="square cap" RenderString="]" ColorString="&amp;K" DetailColor="W" Tile="Items/sw_square_cap.bmp"/>
+    <part Name="Render" DisplayName="方帽" RenderString="]" ColorString="&amp;K" DetailColor="W" Tile="Items/sw_square_cap.bmp"/>
     <part Name="Commerce" Value="25"/>
-    <part Name="Description" Short="A wearable square is modeled on the bricklayer's mortar board and decorated with a colored tassel."/>
+    <part Name="Description" Short="这顶可穿戴的方形帽子模仿了砖瓦匠的抹刀板，并装饰有彩色流苏。"/>
     <part Name="Physics" Weight="1" Organic="true"/>
     <part Name="Springy" Factor="0.1"/>
     <tag Name="Tier" Value="3"/>
@@ -5139,9 +5139,9 @@
   </object>
   <object Name="Ganglionic Teleprojector" Inherits="BaseHelmet">
     <part Name="Armor" AV="1" DV="-1" WornOn="Head"/>
-    <part Name="Render" DisplayName="ganglionic teleprojector" ColorString="&amp;m" TileColor="&amp;c" RenderString="]" DetailColor="m" Tile="Items/sw_teleprojector.bmp"/>
+    <part Name="Render" DisplayName="神经节远距投影器" ColorString="&amp;m" TileColor="&amp;c" RenderString="]" DetailColor="m" Tile="Items/sw_teleprojector.bmp"/>
     <part Name="Commerce" Value="595"/>
-    <part Name="Description" Short="A fluted visor is satcheled in strands of tungsten filament. Two antennae coil out the temples in robotic likeness."/>
+    <part Name="Description" Short="一个凹槽状的面罩被钨丝束固定。两根天线从两侧的太阳穴处向外盘旋，呈现出机械般的形态。"/>
     <part Name="Physics" Weight="8"/>
     <tag Name="Tier" Value="4"/>
     <part Name="Examiner" Complexity="4"/>
@@ -5167,8 +5167,8 @@
     <tag Name="DynamicObjectsTable:Headwear"/>
   </object>
   <object Name="Quartzfur Hat" Inherits="BaseHat">
-    <part Name="Render" DisplayName="{{Y|quartzfur}} hat" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_hat.bmp"/>
-    <part Name="Description" Short="Prism-studded skin was shorn from a dead monkey and sawed into a hat."/>
+    <part Name="Render" DisplayName="{{Y|石英毛皮}}帽子" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_hat.bmp"/>
+    <part Name="Description" Short="从一只死去的猴子身上剥下的棱镜镶嵌的皮肤被裁剪成了一顶帽子。"/>
     <part Name="Armor" AV="2" DV="-1" Elec="6" Cold="6" Heat="6" Acid="6" WornOn="Head"/>
     <part Name="Physics" Weight="10" Organic="true"/>
     <part Name="Fur"/>
@@ -5279,9 +5279,9 @@
   </object>
   <object Name="Mental Aggregator" Inherits="BaseHelmet">
     <part Name="Armor" AV="1" DV="0" WornOn="Head"/>
-    <part Name="Render" DisplayName="mental aggregator" Tile="Items/sw_mental_aggregator.bmp" RenderString="]" ColorString="&amp;c" DetailColor="m"/>
+    <part Name="Render" DisplayName="精神聚合器" Tile="Items/sw_mental_aggregator.bmp" RenderString="]" ColorString="&amp;c" DetailColor="m"/>
     <part Name="Commerce" Value="2265"/>
-    <part Name="Description" Short="A crinkle-sheet of papery metal pokes at the angle of repose."/>
+    <part Name="Description" Short="一张皱巴巴的金属纸片斜倚在休止角上。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Springy" Factor="0.5"/>
     <part Name="Metal"/>
@@ -5348,9 +5348,9 @@
   </object>  
   <object Name="Smiling Sun Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
-    <part Name="Render" DisplayName="smiling {{sun|sun}} mask" RenderString="]" DetailColor="W" ColorString="&amp;Y" Tile="items/sw_mask.bmp"/>
+    <part Name="Render" DisplayName="微笑的{{sun|太阳}}面具" RenderString="]" DetailColor="W" ColorString="&amp;Y" Tile="items/sw_mask.bmp"/>
     <part Name="Commerce" Value="8"/>
-    <part Name="Description" Short="The sun beams on soapstone with cheeks made high and proud of ochre and teeth. The shadow of a noon canopy bespeaks a treeline thicker with leaflife than any on the plateau or at all north of Moghra'yi."/>
+    <part Name="Description" Short="太阳在皂石上投射出高傲而自豪的赭色脸颊和牙齿。正午树冠的阴影预示着这里的树叶比高原上或莫格拉伊以北任何地方都要茂密。"/>
     <part Name="Physics" Weight="1"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_organic"/>
     <tag Name="Tier" Value="1"/>
@@ -5359,9 +5359,9 @@
   </object>
   <object Name="Frowning Moon Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
-    <part Name="Render" DisplayName="frowning {{moon|moon}} mask" RenderString="]" Tile="items/sw_mask3.bmp" ColorString="&amp;Y" DetailColor="K"/>
+    <part Name="Render" DisplayName="皱眉{{moon|月亮}}面具" RenderString="]" Tile="items/sw_mask3.bmp" ColorString="&amp;Y" DetailColor="K"/>
     <part Name="Commerce" Value="8"/>
-    <part Name="Description" Short="The moon scowls on an unseen jungle, the craters of brow shaded with animal ash and eaten to a natural ridgeline by the venomous breathe of gods."/>
+    <part Name="Description" Short="月亮在一片看不见的丛林上皱眉，眉间的陨石坑被动物的灰烬遮蔽，被神祇的毒气侵蚀成天然的山脊线。"/>
     <part Name="Physics" Weight="1"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_organic"/>
     <tag Name="Tier" Value="1"/>
@@ -5370,9 +5370,9 @@
   </object>
   <object Name="Sun and Moon Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
-    <part Name="Render" DisplayName="{{sun|sun}} and {{moon|moon}} mask" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp"/>
+    <part Name="Render" DisplayName="{{sun|太阳}}和{{moon|月亮}}面具" RenderString="]" ColorString="&amp;W" DetailColor="B" Tile="items/sw_mask2.bmp"/>
     <part Name="Commerce" Value="8"/>
-    <part Name="Description" Short="Hot fire on soapstone bleeds into damp night at a twilight terminus drawn in blood. The mask wearer assumes this and all dualities."/>
+    <part Name="Description" Short="热火在皂石上渗入潮湿的夜晚，在血色黄昏的尽头交汇。佩戴此面具者将承担这一切二元性。"/>
     <part Name="Physics" Weight="1"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_organic"/>
     <tag Name="Tier" Value="1"/>
@@ -5430,9 +5430,9 @@
   </object>
   <object Name="Night-vision Goggles" Inherits="BaseEyewear">
     <part Name="Armor" AV="0" DV="0" WornOn="Face"/>
-    <part Name="Render" DisplayName="night-vision goggles" RenderString="]" Tile="Items/sw_goggles.bmp" ColorString="&amp;K" TileColor="&amp;K" DetailColor="G"/>
+    <part Name="Render" DisplayName="夜视护目镜" RenderString="]" Tile="Items/sw_goggles.bmp" ColorString="&amp;K" TileColor="&amp;K" DetailColor="G"/>
     <part Name="Commerce" Value="35"/>
-    <part Name="Description" Short="Focus-ringed binoculars read the tells of infrared light and produce a textured picture of eye-warm greens."/>
+    <part Name="Description" Short="带有聚焦环的双筒望远镜读取红外光的信号，并生成一幅温暖绿色的纹理图像。"/>
     <part Name="Physics" Weight="6"/>
     <part Name="Examiner" Complexity="3"/>
     <part Name="NightVision"/>
@@ -5501,10 +5501,10 @@
 		<stag Name="Scholarly"/>
   </object>
   <object Name="Polyhedral Rings" Inherits="BaseFaceJewelry">
-    <part Name="Render" DisplayName="{{Y-y-m-M-m-y-Y-M-m-y sequence|polyhedral}} rings" RenderString="236" Tile="Items/sw_poly_rings.bmp" ColorString="&amp;m" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{Y-y-m-M-m-y-Y-M-m-y sequence|多面体}}戒指" RenderString="236" Tile="Items/sw_poly_rings.bmp" ColorString="&amp;m" DetailColor="Y"/>
     <part Name="Commerce" Value="150"/>
-    <part Name="Description" Short="The hoops sport rhombic facets that reflect light at wavelengths between plum and quartz."/>
-    <part Name="Physics" Weight="1" Category="Trade Goods"/>
+    <part Name="Description" Short="这些环形物具有菱形切面，反射出介于李子色和石英色之间的光线。"/>
+    <part Name="Physics" Weight="1" Category="交易物品"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_coin"/>
     <tag Name="Tier" Value="3"/>
     <part Name="ItemElements" Elements="jewels::6"/>
@@ -5513,10 +5513,10 @@
 		<tag Name="EquipmentFrameColors" Value="YymM"/>
   </object>
   <object Name="Silver Rondure" Inherits="BaseFaceJewelry">
-    <part Name="Render" DisplayName="{{silvery|silver rondure}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{银色|银圆球}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y"/>
     <part Name="Commerce" Value="50"/>
-    <part Name="Description" Short="Silver was melted and cast to a perfect sphere in isomorphic veneration of the Kasaphescence."/>
-    <part Name="Physics" Weight="1" Category="Trade Goods"/>
+    <part Name="Description" Short="银被熔化并铸造成一个完美的球体，以同形敬仰卡萨菲斯肯斯。"/>
+    <part Name="Physics" Weight="1" Category="交易物品"/>
     <part Name="AddsRep" Faction="Mechanimists" Value="50"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_coin"/>
     <tag Name="DynamicObjectsTable:TradeGoods"/>
@@ -5527,10 +5527,10 @@
   <!-- Face, Tier 5 -->
   <object Name="Telemetric Visor" Inherits="BaseEyewear">
     <part Name="Armor" AV="0" DV="0" WornOn="Face"/>
-    <part Name="Render" DisplayName="{{telemetric|telemetric}} {{C|visor}}" RenderString="]" Tile="Items/sw_visor.bmp" ColorString="&amp;c" DetailColor="W"/>
+    <part Name="Render" DisplayName="{{telemetric|遥测}}{{C|护目镜}}" RenderString="]" Tile="Items/sw_visor.bmp" ColorString="&amp;c" DetailColor="W"/>
     <part Name="Commerce" Value="60"/>
-    <part Name="Description" Short="The glass lune is showered in information across the electromagnetic channels."/>
-    <part Name="Physics" Weight="1" Category="Artifacts"/>
+    <part Name="Description" Short="玻璃弯月上布满了电磁频段的信息。"/>
+    <part Name="Physics" Weight="1" Category="遗物"/>
     <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true"/>
     <part Name="IntPropertyChanger" AffectedProperty="TechScannerEquipped" Amount="1" ChargeUse="1" WorksOnWearer="true" NameForStatus="Techscanning"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell" SlottedType="#Solar Cell,@DynamicObjectsTable:EnergyCells:Tier{zonetier}"/>
@@ -5545,11 +5545,11 @@
 
   <!-- Face, Tier 6 -->
   <object Name="VISAGE" Inherits="BaseEyewear">
-    <part Name="Render" DisplayName="{{visage|VISAGE}}" Tile="Items/sw_visage.bmp" ColorString="&amp;R" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{visage|面容仪}}" Tile="Items/sw_visage.bmp" ColorString="&amp;R" DetailColor="y"/>
     <part Name="Armor" AV="0" DV="1" WornOn="Face"/>
     <part Name="Commerce" Value="150"/>
-    <part Name="Description" Short="Visual Instrument and Sensory Augmentation (G Edition)  Data is painted back and forth between the glass lunes of visor and wristlet. Whereas the outer trim shines gold on F Edition, on this model it fades to grey."/>
-    <part Name="Physics" Weight="8" Category="Artifacts"/>
+    <part Name="Description" Short="视觉仪器和感官增强（G版） 数据在面罩和腕带的玻璃透镜之间来回传输。虽然F版的外部装饰呈金色，但此型号的装饰逐渐变为灰色。"/>
+    <part Name="Physics" Weight="8" Category="遗物"/>
     <part Name="BootSequence" BootTime="15" ReadoutInName="true" ReadoutInDescription="true"/>
     <part Name="MultiIntPropertyChanger" AffectedProperties="BioScannerEquipped:1,TechScannerEquipped:1,StructureScannerEquipped:1" ChargeUse="5" WorksOnWearer="true" NameForStatus="ScanSystems"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell" SlottedType="#Solar Cell,@DynamicObjectsTable:EnergyCells:Tier{zonetier}"/>
@@ -5586,8 +5586,8 @@
 
 	<!-- Face, Tier 8 -->
 	<object Name="Dream Rondure" Inherits="BaseFaceJewelry">
-		<part Name="Render" DisplayName="{{dreamy|dream rondure}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;b" TileColor="&amp;W" DetailColor="b"/>
-		<part Name="Description" Short="Quickened dreamstuff swells to tidal forces and electrifies the membrane of the rondure. It gives off smoke in marble."/>
+		<part Name="Render" DisplayName="{{dreamy|梦幻圆环}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;b" TileColor="&amp;W" DetailColor="b"/>
+		<part Name="Description" Short="加速的梦境物质膨胀至潮汐力，并使圆环的膜带电。它散发出大理石般的烟雾。"/>
 		<part Name="Armor" Elec="13" Willpower="2"/>
 		<part Name="Commerce" Value="300"/>
 		<part Name="Physics" Weight="1"/>
@@ -5601,9 +5601,9 @@
 	</object>
 	<object Name="Dazzle Cheek" Inherits="BaseMask">
 		<part Name="Armor" AV="0" DV="1"/>
-		<part Name="Render" DisplayName="dazzle cheek" RenderString="]" Tile="Items/sw_dazzle_cheek.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m"/>
+		<part Name="Render" DisplayName="眩目脸颊" RenderString="]" Tile="Items/sw_dazzle_cheek.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m"/>
 		<part Name="Commerce" Value="999"/>
-		<part Name="Description" Short="Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagognic key."/>
+		<part Name="Description" Short="几何图案在面具的晶体二极管上流动。它的表情在催眠状态中微笑。"/>
 		<part Name="Physics" Weight="1"/>
 		<part Name="ZeroPointEnergyCollector" ChargeRate="10" World="JoppaWorld,OrbWorld"/>
 		<part Name="Circuitry"/>
@@ -5647,10 +5647,10 @@
 
   <!-- Arm, Tier 1 -->
   <object Name="BaseBeadBracelet" Inherits="BaseBracelet">
-    <part Name="Render" DisplayName="bracelet" Tile="Assets_Content_Textures_Items_sw_necklace.bmp"/>
+    <part Name="Render" DisplayName="手链" Tile="Assets_Content_Textures_Items_sw_necklace.bmp"/>
     <part Name="Commerce" Value="80"/>
-    <part Name="Description" Short="Glass arches cut and fished from the trash sea have been paired by palette and cored into beads. They've been hung on a dried strand of goat gut and bartered up and down the River Svy."/>
-    <part Name="Physics" Weight="1" Category="Trade Goods"/>
+    <part Name="Description" Short="从垃圾海中切割和打捞出的玻璃拱门，按色调配对并制成珠子。它们被串在干燥的山羊肠线上，在斯维河上下交易。"/>
+    <part Name="Physics" Weight="1" Category="交易物品"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_glass"/>
     <tag Name="BaseObject" Value="*noinherit"/>
     <part Name="ItemElements" Elements="jewels::2"/>
@@ -5685,8 +5685,8 @@
 
   <!-- Arm, Tier 2 -->
   <object Name="Compass Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="compass bracelet" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W"/>
-    <part Name="Description" Short="A glass lens encages a magnetized needle and sits inside a leather wristband."/>
+    <part Name="Render" DisplayName="指南针手链" Tile="Items/sw_cuff.bmp" ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W"/>
+    <part Name="Description" Short="玻璃镜片内固定着一根磁化指针，镶嵌在皮革手环中。"/>
     <part Name="Physics" Weight="1" Organic="true"/>
     <part Name="Commerce" Value="25"/>
     <part Name="NavigationBonus" PercentBonus="10" SingleApplicationKey="CompassBraceletApplied" ChargeUse="0" IsEMPSensitive="true" NameForStatus="Compass"/>
@@ -5738,9 +5738,9 @@
 
   <!-- Arm, Tier 4 -->
   <object Name="Bio-Scanning Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{bio|bio-scanning}} bracelet" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g"/>
+    <part Name="Render" DisplayName="{{bio|生物扫描}}手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="g"/>
     <part Name="Commerce" Value="25"/>
-    <part Name="Description" Short="It's a shifting minichart of lifesign voltages picked up in the heat and sound signatures of nearby fauna."/>
+    <part Name="Description" Short="这是一张不断变化的微型生命信号图，通过附近动物的热能和声音特征捕捉到的生命电压。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true"/>
     <part Name="IntPropertyChanger" AffectedProperty="BioScannerEquipped" Amount="1" ChargeUse="1" WorksOnWearer="true" WorksOnHolder="true" NameForStatus="Bioscanning"/>
@@ -5759,9 +5759,9 @@
     <part Name="ItemElements" Elements="circuitry::4"/>
   </object>
   <object Name="Structural Scanning Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{structural|structural}} {{Y-y-y-K-K-y-y-Y sequence|scanning}} bracelet" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y"/>
+    <part Name="Render" DisplayName="{{structural|结构}}{{Y-y-y-K-K-y-y-Y sequence|扫描}}手环" Tile="Items/sw_cuff_tech.bmp" RenderString="]" ColorString="&amp;c" DetailColor="y"/>
     <part Name="Commerce" Value="20"/>
-    <part Name="Description" Short="On the wrist mount, echo-shaped models in three dimensions expose the structural irregularities of simple inanimate objects nearby."/>
+    <part Name="Description" Short="在腕部装置上，三维回声模型揭示了附近简单无生命物体的结构不规则性。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true"/>
     <part Name="IntPropertyChanger" AffectedProperty="StructureScannerEquipped" Amount="1" ChargeUse="1" WorksOnWearer="true" WorksOnHolder="true" NameForStatus="StructuralScanning"/>
@@ -5780,9 +5780,9 @@
     <tag Name="NoSparkingQuest" Value="*noinherit"/>
   </object>
   <object Name="Hologram Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{hologram|hologram}} bracelet" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
+    <part Name="Render" DisplayName="{{hologram|全息图}}手镯" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
     <part Name="Commerce" Value="125"/>
-    <part Name="Description" Short="A bangle clasp features a bright cobalt button.&#10;&quot;You think this is the real =name=? It is.&quot;"/>
+    <part Name="Description" Short="手镯扣上有一个明亮的钴蓝色按钮。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="DecoyHologramEmitter" ChargeUse="5"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -5825,8 +5825,8 @@
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Precinct Navigator" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="precinct navigator" RenderString="]" Tile="Items/sw_cuff_tech.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
-    <part Name="Description" Short="Gridlines and a red dot are painted on the glass lune, and simple rectangles depict the once-ordered streets of chromium that've since burst like gnarled roots through space and time."/>
+    <part Name="Render" DisplayName="区域导航仪" RenderString="]" Tile="Items/sw_cuff_tech.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Description" Short="玻璃新月上绘有网格线和红点，简单的矩形描绘了曾经井然有序的铬合金街道，这些街道如今已如同扭曲的根须般穿过时空。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="40"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -5869,9 +5869,9 @@
 
   <!-- Arm, Tier 6 -->
   <object Name="Displacer Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{displacer|displacer}} bracelet" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B"/>
+    <part Name="Render" DisplayName="{{displacer|位移者}}手镯" RenderString="]" ColorString="&amp;B" TileColor="&amp;Y" DetailColor="B"/>
     <part Name="Commerce" Value="90"/>
-    <part Name="Description" Short="Hieroglyphs of fluctation are incised on the inner surface of this shiny metal torus."/>
+    <part Name="Description" Short="这个闪亮的金属圆环内表面刻有波动的象形文字。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Displacer" MinDistance="0" MaxDistance="2"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -5922,8 +5922,8 @@
 
   <!-- Arm, Tier 7 -->
   <object Name="Tri-Hologram Bracelet" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="tri-{{hologram|hologram}} bracelet" Tile="Items/sw_tri_bracelet.bmp" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
-    <part Name="Description" Short="Bars partition the bangle clasp into three bands; a cobalt button summons the rest of the quartet."/>
+    <part Name="Render" DisplayName="三重{{hologram|全息影像}}手链" Tile="Items/sw_tri_bracelet.bmp" RenderString="]" ColorString="&amp;B" DetailColor="b"/>
+    <part Name="Description" Short="条状物将手链扣分成三个部分；钴蓝色按钮可以召唤出剩余的四分之一。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="1500"/>
     <part Name="DecoyHologramEmitter" MaxDecoys="3" ChargeUse="50"/>
@@ -5939,8 +5939,8 @@
   
   <!-- Arm, Tier 8 -->
   <object Name="Transkinetic Cuffs" Inherits="BaseUtilityBracelet">
-    <part Name="Render" DisplayName="{{transkinetic|transkinetic}} cuffs" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R"/>
-    <part Name="Description" Short="A dial clicks at right intervals on the metal wrist, and mercurial silver courses through tubework along the plastifer sleeve."/>
+    <part Name="Render" DisplayName="{{transkinetic|超动力}}手铐" Tile="Items/sw_cuffs.bmp" RenderString="]" ColorString="&amp;c" DetailColor="R"/>
+    <part Name="Description" Short="金属手镯上的旋钮定时发出咔哒声，水银般的银色液体在塑料袖管中的管道中流动。"/>
     <part Name="Physics" Weight="6"/>
     <part Name="Commerce" Value="2100"/>
     <part Name="TemperatureController" TemperatureTarget="25" TemperatureAmountFloor="10"/>
@@ -6016,9 +6016,9 @@
   </object>
   <object Name="Ulnar Stimulators" Inherits="BaseGlove">
     <part Name="Armor" AV="1" DV="0" WornOn="Hands"/>
-    <part Name="Render" DisplayName="ulnar stimulators" ColorString="&amp;c" Tile="Items/sw_artifact_gloves.bmp" DetailColor="W" RenderString="]"/>
+    <part Name="Render" DisplayName="尺神经刺激器" ColorString="&amp;c" Tile="Items/sw_artifact_gloves.bmp" DetailColor="W" RenderString="]"/>
     <part Name="Commerce" Value="115"/>
-    <part Name="Description" Short="Skin-tight gloves of a conducting mesh jolt the hands into high performance."/>
+    <part Name="Description" Short="紧贴皮肤的导电手套，能激发双手进入高性能状态。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="EquipStatBoost" Boosts="Strength:1;Agility:1" ChargeUse="1" IsBootSensitive="true" IsEMPSensitive="true" IsPowerSwitchSensitive="true" IsPowerLoadSensitive="true" RequiresBodyPartCategory="Animal"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
@@ -6100,8 +6100,8 @@
     <tag Name="Tier" Value="5"/>
   </object>
   <object Name="Quartzfur Gloves" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="{{Y|quartzfur}} gloves" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_gloves.bmp"/>
-    <part Name="Description" Short="Prism-studded skin was shorn from a dead monkey and sawed into a pair of gloves."/>
+    <part Name="Render" DisplayName="{{Y|石英毛皮}}手套" ColorString="&amp;Y" RenderString="]" DetailColor="y" Tile="Items/sw_quartz_fur_gloves.bmp"/>
+    <part Name="Description" Short="从一只死去的猴子身上剥下的棱镜点缀的皮肤被裁剪成了一对手套。"/>
     <part Name="Armor" AV="2" DV="-1" Elec="6" Cold="6" Heat="6" Acid="6"/>
     <part Name="Physics" Weight="10" Organic="true"/>
     <part Name="Fur"/>
@@ -6152,8 +6152,8 @@
     <tag Name="Tier" Value="7"/>
   </object>
   <object Name="Kaleidocera Muffs" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="{{kaleidoslug|kaleidocera}} muffs" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_muffs.bmp"/>
-    <part Name="Description" Short="Cerata pendulate on the muffs like crystal-mold on a tree ring. They mirror rich hues in cerulean, ruby, star orchid, and void; together they shine to resplendent effect."/>
+    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}}手套" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_muffs.bmp"/>
+    <part Name="Description" Short="手套上的触角像树年轮上的水晶霉一样垂下。它们映射出丰富的天蓝色、红宝石色、星兰色和虚空色；共同闪耀出璀璨的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
     <tag Name="Tier" Value="7"/>
@@ -6165,9 +6165,9 @@
 		<tag Name="EquipmentFrameColors" Value="KCmy"/>
   </object>
   <object Name="Precision Nanon Fingers" Inherits="BaseGlove">
-    <part Name="Render" DisplayName="precision {{Y|nanon}} fingers" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]"/>
-    <part Name="Description" Short="Fullerene finger extensors splay like fashionable court nails. Their girths are shrunk or unshrunk to task requirements by minuscule servos embedded in the webbing."/>
-    <part Name="RulesDescription" Text="Your weapons' percentage-based effects are 3X as likely to occur, including the base chance for critical hits."/>
+    <part Name="Render" DisplayName="精密{{Y|纳米}}手指" ColorString="&amp;Y" TileColor="&amp;Y" DetailColor="y" Tile="Items/sw_nanon_fingers.bmp" RenderString="]"/>
+    <part Name="Description" Short="富勒烯手指伸展如同时尚宫廷指甲。它们的粗细通过嵌入指蹼中的微小伺服电机根据任务需求进行调整。"/>
+    <part Name="RulesDescription" Text="你的武器基于百分比的效果发生的几率提高3倍，包括暴击的基础几率。"/>
     <part Name="Armor" AV="1" DV="1" WornOn="Hands"/>
     <part Name="Commerce" Value="700"/>
     <part Name="Physics" Weight="1"/>
@@ -6203,11 +6203,11 @@
   </object>
 	<object Name="Leyline Puppeteers" Inherits="BaseGlove">
 		<part Name="Armor" AV="2" DV="2"/>
-		<part Name="Render" DisplayName="{{psymeridian|leyline puppeteers}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m"/>
+		<part Name="Render" DisplayName="{{psymeridian|莱线操纵者}}" RenderLayer="5" Tile="Items/sw_puppeteers.bmp" ColorString="&amp;m" TileColor="&amp;K" DetailColor="m"/>
 		<part Name="Physics" FlameTemperature="1000" VaporTemperature="8000" Weight="10"/>
 		<part Name="Commerce" Value="1750"/>
-		<part Name="Description" Short="Channel grooves are cut into the gloves' static-dried palms in the impossible patterns of leyline geometry. The fingers articulate at intersecting radials and spin the latent into being."/>
-		<part Name="RulesDescription" Text="Requires 1 dram of neutron flux to function.&#10;Very tiny chance each round neutron flux is consumed.&#10;+10 psychic glimmer"/>
+		<part Name="Description" Short="手套的静电干燥掌心上刻有莱线几何学的不可能图案。手指在相交的径向线上活动，将潜在的力量转化为现实。"/>
+		<part Name="RulesDescription" Text="需要 1 剂量的中子流才能运作。&#10;每回合有极小的概率消耗中子流。&#10;+10 心灵光辉"/>
 		<part Name="LiquidFueledPowerPlant" Liquid="neutronflux" ChargePerDram="1000000" ChancePerRoundToEmptyOneIn="50000"/>
 		<part Name="LiquidVolume" MaxVolume="1" Volume="0" StartVolume="0-1" InitialLiquid="neutronflux-1000"/>
 		<part Name="ChargeSink" ChargeUse="3" NameForStatus="LeyHarmonicCircuitry"/>
@@ -6433,16 +6433,16 @@
   </object>
   <object Name="Rocket Skates" Inherits="BaseBoot">
     <part Name="Armor" AV="0" DV="1"/>
-    <part Name="Render" DisplayName="{{rocket|rocket}} {{K|skates}}" RenderString="]" Tile="Items/sw_rocketskates.bmp" ColorString="&amp;K" DetailColor="R"/>
+    <part Name="Render" DisplayName="{{火箭|rocket}}{{K|滑轮}}" RenderString="]" Tile="Items/sw_rocketskates.bmp" ColorString="&amp;K" DetailColor="R"/>
     <part Name="Commerce" Value="400"/>
     <part Name="Physics" Weight="6"/>
     <part Name="MoveCostMultiplier" Amount="-5"/>
-    <part Name="Description" Short="The finned and wheeled boot had become the sigil of several sects of socionauts by the Late Sultanate. For decades their progenitors careened through the capsule pipelines of the slouching arcology, dismantling it plate by plate, pursued by the constabulary but ferried by their skates to the safety of their moss-skirted hideouts. The metaphor was writ large on the glass guts of the city: Scorch the past. Rocket into the future."/>
+    <part Name="Description" Short="带有鳍片和轮子的靴子在晚苏丹国时期成为了几个社会航海教派的标志。数十年间，他们的先驱者在倾斜的弧形城市胶囊管道中疾驰，一块块拆解这座城市，被警察追捕，但凭借滑轮逃到了他们长满苔藓的藏身处。这个隐喻在城市的玻璃内脏上显而易见: 焚烧过去，火箭般飞向未来。"/>
     <part Name="BootSequence" BootTime="3" VerbOnBootInitialized="cough" VerbOnBootAborted="sputter" VerbOnBootDone="fwoosh" ObviousIfUnderstood="true" IsEMPSensitive="false" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_cough" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_sputter" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_fwoosh"/>
     <part Name="RocketSkates" ChargeUse="1" IsEMPSensitive="false" IsBootSensitive="true" WorksOnWearer="true" PlumeLevel="3"/>
     <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="-4" IsTechScannable="true" NameForStatus="DriveTrain"/>
     <part Name="LiquidFueledPowerPlant" Liquid="oil" ChargePerDram="750"/>
-    <part Name="TemperatureAdjuster" ChargeUse="1" InactiveOnWorldMap="true" IsEMPSensitive="false" IsBootSensitive="true" TemperatureAmount="10" TemperatureThreshold="100" ThresholdAbove="true" AlwaysUseCharge="true" WorksOnSelf="true" WorksOnWearer="true" WorksOnCarrier="false" WorksOnCellContents="true" WorksOnAdjacentCellContents="true" NeedsOtherActivePartOperational="RocketSkates" NameForStatus="EmissionsControl" BehaviorDescription="Heats up the area around the wearer when in operation."/>
+    <part Name="TemperatureAdjuster" ChargeUse="1" InactiveOnWorldMap="true" IsEMPSensitive="false" IsBootSensitive="true" TemperatureAmount="10" TemperatureThreshold="100" ThresholdAbove="true" AlwaysUseCharge="true" WorksOnSelf="true" WorksOnWearer="true" WorksOnCarrier="false" WorksOnCellContents="true" WorksOnAdjacentCellContents="true" NeedsOtherActivePartOperational="RocketSkates" NameForStatus="EmissionsControl" BehaviorDescription="在运行时会使穿戴者周围的区域变热。"/>
     <part Name="LiquidVolume" MaxVolume="32" Volume="0" StartVolume="0-32" InitialLiquid="oil-1000"/>
     <part Name="LeakWhenBroken"/>
     <part Name="Metal"/>
@@ -6469,9 +6469,9 @@
   </object>
   <object Name="Ninefold Boots" Inherits="BaseBoot">
     <part Name="Armor" AV="1" DV="-1" WornOn="Feet"/>
-    <part Name="Render" DisplayName="{{ninefold|ninefold}} boots" RenderString="]" ColorString="&amp;B" TileColor="&amp;b" DetailColor="B" Tile="Items/sw_tech_boots.bmp"/>
+    <part Name="Render" DisplayName="{{ninefold|九重}}靴" RenderString="]" ColorString="&amp;B" TileColor="&amp;b" DetailColor="B" Tile="Items/sw_tech_boots.bmp"/>
     <part Name="Commerce" Value="400"/>
-    <part Name="Description" Short="Calligraphs are incised in uneven rows and columns that meander across the quarter and back stay of the boot. Their character mass appears to orbit a central statement: &quot;The path is contracted.&quot; The rest of the script is etched in a variety of signs and styles that offer competing and composite interpretations of the cryptic proclamation."/>
+    <part Name="Description" Short="书法图案以错落有致的行列蜿蜒于靴子的侧面和后跟。这些字符似乎围绕着一个中心声明: &quot;道路被压缩。&quot; 其余的文字则以多种符号和风格刻写，提供了对这一神秘宣言的相互竞争和综合解释。"/>
     <part Name="Physics" Weight="9"/>
     <part Name="AccelerativeTeleporter"/>
     <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage=""/>
@@ -6539,8 +6539,8 @@
   </object>
 	
   <object Name="Kaleidocera Krakows" Inherits="BaseBoot">
-    <part Name="Render" DisplayName="{{kaleidoslug|kaleidocera}} krakows" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_krakows.bmp"/>
-    <part Name="Description" Short="Cerata pendulate on the shoe tips like the Beetle Moon curled through fog. They mirror rich hues in cerulean, ruby, star orchid, and void; together they shine to resplendent effect."/>
+    <part Name="Render" DisplayName="{{kaleidoslug|变色龙虫}}克拉科夫斯" ColorString="&amp;m" RenderString="]" DetailColor="y" Tile="Items/sw_cera_krakows.bmp"/>
+    <part Name="Description" Short="鞋尖上的角状物如同雾中的甲虫月般卷曲。它们反射出天蓝色、红宝石色、星兰色和虚空色的丰富色调，共同闪耀出辉煌的效果。"/>
     <part Name="Armor" Ego="1" AV="1" DV="1" Elec="20" Cold="20" Heat="20" Acid="20"/>
     <part Name="Physics" Weight="11" Organic="true"/>
     <tag Name="Tier" Value="7"/>
@@ -6569,10 +6569,10 @@
   <!-- Feet, no tier -->
   <object Name="Jeweled Sandals" Inherits="Armor">
     <part Name="Armor" AV="0" DV="0" WornOn="Feet"/>
-    <part Name="Render" Tile="items/sw_sandals.bmp" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" DisplayName="{{y-y-y-g-G-g-y sequence|jeweled sandals}}" RenderString="]"/>    
+    <part Name="Render" Tile="items/sw_sandals.bmp" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" DisplayName="{{y-y-y-g-G-g-y sequence|宝石镶嵌凉鞋}}" RenderString="]"/>    
     <part Name="Commerce" Value="200"/>
-    <part Name="Description" Short="A shining jewel, container for gigantic melancholies and gigantic mirths alike, is beset inside a strapped sandal of sheyd leather."/>
-    <part Name="Physics" Weight="1" Category="Clothes"/>
+    <part Name="Description" Short="一颗闪耀的宝石，既是巨大忧伤也是巨大欢乐的容器，被镶嵌在一条由sheyd皮革制成的绑带凉鞋中。"/>
+    <part Name="Physics" Weight="1" Category="衣服"/>
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather"/>
     <tag Name="NoSparkingQuest"/>
     <part Name="ItemElements" Elements="jewels::6"/>
@@ -6590,9 +6590,9 @@
   
   <object Name="Light-Obfuscating Lens" Inherits="Armor">
     <part Name="Armor" AV="0" DV="1" WornOn="Floating Nearby"/>
-    <part Name="Render" DisplayName="{{starry|light-obfuscating}} lens" RenderString="]" Tile="Items/sw_lens.bmp" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{starry|遮光}}透镜" RenderString="]" Tile="Items/sw_lens.bmp" DetailColor="K"/>
     <part Name="Commerce" Value="35"/>
-    <part Name="Description" Short="A torso-length lens haloed in refraction waves is suspended in mid air."/>
+    <part Name="Description" Short="一具悬浮在半空中的躯干长度透镜，周围环绕着折射波纹。"/>
     <part Name="Physics" Weight="1"/>
     <part Name="ItemElements" Elements="glass::5"/>
     <tag Name="Tier" Value="3"/>
@@ -6619,12 +6619,12 @@
 
   <!-- Floating nearby, Tier 3 -->
   <object Name="Luminous Mote" Inherits="LightSource">
-    <part Name="Render" DisplayName="{{W|luminous}} {{W-Y-y-K sequence|mote}}" RenderString="." ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" Tile="Items/sw_mote.bmp" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{W|发光}}{{W-Y-y-K sequence|微粒}}" RenderString="." ColorString="&amp;W" TileColor="&amp;Y" DetailColor="W" Tile="Items/sw_mote.bmp" RenderLayer="5"/>
     <part Name="Armor" AV="0" DV="0" WornOn="Floating Nearby"/>
     <part Name="LightSource" Lit="false" Radius="4"/>
     <part Name="MoteProperties"/>
     <part Name="Commerce" Value="10"/>
-    <part Name="Description" Short="Color swirls around a mote of glow dust."/>
+    <part Name="Description" Short="光芒尘埃周围色彩斑斓。"/>
     <part Name="Stacker"/>
     <part Name="DestroyOnUnequip"/>
     <part Name="ItemElements" Elements="stars::2"/>
@@ -6917,10 +6917,10 @@
 
   <!-- Unique armor -->
   <object Name="Stopsvaalinn" Inherits="BaseShield">
-    <part Name="Render" DisplayName="{{R-r-K-y-Y sequence|Stopsvalinn}}" ColorString="&amp;M" Tile="items/sw_buckler2.bmp" DetailColor="r"/>
+    <part Name="Render" DisplayName="{{R-r-K-y-Y 序列|Stopsvalinn}}" ColorString="&amp;M" Tile="items/sw_buckler2.bmp" DetailColor="r"/>
     <part Name="Shield" AV="3" DV="0" WornOn="Arm"/>
-    <part Name="Description" Short="A layer cake of wide-age rust grants dimension to the ancient and flat-faced astagon. Its front is painted with the coat of arms of an archaic house -- white runic script on a field of crimson."/>
-    <part Name="RulesDescription" Text="+1 Ego You may activate this item to conjure a force field in front of you. Robots will often be unable to advance toward you while the force field is active."/>
+    <part Name="Description" Short="多层锈迹赋予了这古老的扁平阿斯塔贡以维度。其正面绘有一个古老家族的徽章——猩红底色上的白色符文。"/>
+    <part Name="RulesDescription" Text="+1 自我 你可以激活此物品，在你前方召唤一个力场。力场激活时，机器人通常无法向你靠近。"/>
     <part Name="Commerce" Value="500"/>
     <stat Name="Hitpoints" Value="300"/>
     <part Name="Physics" Weight="5"/>
@@ -6945,14 +6945,14 @@
 		<stag Name="Historical"/>
   </object>
   <object Name="Kindrish" Inherits="BaseArmlet">
-    <part Name="Render" DisplayName="{{g-G-y-Y-Y-y-G-g alternation|Kindrish}}" Tile="items/sw_kindrish.bmp" DetailColor="Y" ColorString="&amp;g"/>
+    <part Name="Render" DisplayName="{{g-G-y-Y-Y-y-G-g alternation|科德里什}}" Tile="items/sw_kindrish.bmp" DetailColor="Y" ColorString="&amp;g"/>
     <part Name="Armor" AV="0" DV="0" WornOn="Arm"/>
     <part Name="Physics" Weight="1"/>
     <tag Name="Tier" Value="3"/>
     <stat Name="Hitpoints" Value="1000"/>
     <part Name="Commerce" Value="500"/>
     <tag Name="Mods" Value="None"/>
-    <part Name="Description" Short="Boartooth beads on the ancient charm are worn to nubs by the cartilage of time, but the flexing cable that holds them together is as strong as the day it was woven. Dangling from the bracelet is a figurine of a deer, carved from a mysterious substance that cracks light like crystal but weighs like metal, producing a shaded lifelikeness elsewhere unseen."/>
+    <part Name="Description" Short="古旧的幸运符上，野猪牙珠已被时间的软骨磨平，但将它们串在一起的弹性缆绳依然坚如初织之日。手链上悬挂着一只鹿的雕像，雕刻材料神秘莫测，既像水晶般裂光，又重若金属，营造出一种前所未见的真实阴影。"/>
     <part Name="KindrishProperties"/>
     <part Name="TakenAccomplishment" Text="You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief &lt;spice.elements.entity$elements[random].murdermethods.!random&gt; and immediately recovered their cherished heirloom."/>
     <part Name="TakenAchievement" AchievementID="ACH_RECOVER_KINDRISH"/>
@@ -6989,12 +6989,12 @@
   </object>
   <object Name="SkybearJetpack" Inherits="Armor">
     <part Name="Armor" AV="0" Ego="1" DV="2" WornOn="Back"/>
-    <part Name="Render" Tile="items/sw_jetbackpack.bmp" RenderLayer="5" DisplayName="{{R-r-w-W-Y-y sequence|Flume-Flier}} of the {{b-B-C-c sequence|Sky-Bear}}" RenderString="]" ColorString="&amp;M"/>
+    <part Name="Render" Tile="items/sw_jetbackpack.bmp" RenderLayer="5" DisplayName="{{b-B-C-c sequence|天空熊}}的{{R-r-w-W-Y-y sequence|流水飞翼}}" RenderString="]" ColorString="&amp;M"/>
     <part Name="Commerce" Value="500"/>
 		<stat Name="Hitpoints" Value="500"/>
     <part Name="SkybearShroud"/>
-    <part Name="Description" Short="Two turrets of sun-conducting chrome cap cylinders of burning gas, which straddle a metal trellis of spades girding some sort of guild mark. A 6-helix of fume, signature of the star engine this flier is wrought through, twirls toward the sky."/>
-	<part Name="RulesDescription" Text="You may activate this item to start dashing.  While dashing, whenever you move in a direction, you dash up to 20 spaces toward the nearest enemy or obstacle and perform an attack.  For every three spaces you dash, you get +2 to hit and +2 to penetration rolls."/>
+    <part Name="Description" Short="两个充满燃烧气体的导光铬帽圆柱，横跨在一个由铲形金属格架环绕的某种公会标志上。这艘飞行器的星引擎特有的6螺旋烟雾，向天空旋转上升。"/>
+	<part Name="RulesDescription" Text="你可以激活此物品开始冲刺。在冲刺状态下，每当你向某个方向移动时，你会朝最近的敌人或障碍物冲刺最多20格并发起攻击。每冲刺3格，你的命中率和穿透率各提高+2。"/>
     <part Name="Physics" Weight="8"/>
     <part Name="EquippedAchievement" AchievementID="ACH_EQUIP_FLUMEFLIER"/>
     <tag Name="Tier" Value="6"/>
@@ -7054,9 +7054,9 @@
   </object>
   <object Name="Cyclopean Prism" Inherits="BaseFloat">
     <part Name="Armor" AV="0" DV="0" Ego="+8" Willpower="-8" WornOn="Floating Nearby"/>
-    <part Name="Render" DisplayName="{{K|amaranthine}} prism" ColorString="&amp;M" RenderString="^" Tile="Items/sw_prism.bmp" DetailColor="K"/>
+    <part Name="Render" DisplayName="{{K|紫罗兰色}}棱镜" ColorString="&amp;M" RenderString="^" Tile="Items/sw_prism.bmp" DetailColor="K"/>
     <part Name="Commerce" Value="335"/>
-    <part Name="Description" Short="A starless, triangular prism of black glass holds still."/>
+    <part Name="Description" Short="一个无星的黑色玻璃三棱镜静止不动。"/>
     <part Name="Physics" Weight="1" FlameTemperature="8550"/>
     <part Name="CyclopeanPrism"/>
     <part Name="Cursed"/>
@@ -7076,15 +7076,15 @@
 		<stag Name="Floating"/>
   </object>
 	<object Name="TauChime" Inherits="Armor">
-		<part Name="Render" DisplayName="still crystal chime" RenderString="13" Tile="Terrain/sw_chavvah_chime_9.bmp" ColorString="&amp;m" DetailColor="y"/>
-		<part Name="Description" Short="Sharp points are run through with bright and brilliant amethyst and sapphire. The colors remain but smolder to heather in their dying light. The chime is grave-still."/>
+		<part Name="Render" DisplayName="静止水晶风铃" RenderString="13" Tile="Terrain/sw_chavvah_chime_9.bmp" ColorString="&amp;m" DetailColor="y"/>
+		<part Name="Description" Short="尖锐的棱角贯穿明亮耀眼的紫水晶和蓝宝石。色彩依旧，但在即将消逝的光芒中变得暗淡如薰衣草色。风铃静止不动，如同墓地般沉寂。"/>
 		<part Name="Physics" Weight="40"/>
 		<part Name="Armor" AV="7" DV="-4" Ego="1" WornOn="Body" Describe="false"/>
 		<part Name="MutationOnEquip" ClassName="Telepathy" Describe="false"/>
 		<part Name="QuickenMind" Cooldown="100" IsBootSensitive="true"/>
 		<part Name="Commerce" Value="555"/>
 		<part Name="ConversationScript" ConversationID="TauChime"/>
-		<part Name="CompleteQuestOnTaken" Quest="If, Then, Else" QuestStep="Gather Tau's Chime"/>
+		<part Name="CompleteQuestOnTaken" Quest="如果、那么、否则" QuestStep="收集塔乌的钟声"/>
 		<part Name="Interesting" Radius="1"/>
 		<part Name="Unreplicable"/>
 		<part Name="GameUnique" DeathState="TauLostInSoft"/>
@@ -7095,15 +7095,15 @@
 		<tag Name="EquipmentFrameColors" Value="mymy"/>
 	</object>
 	<object Name="TauHeadpiece" Inherits="BaseHelmet">
-		<part Name="Render" DisplayName="{{crystalline|crystalline}} halo" Tile="Items/sw_chime_headpiece.bmp" ColorString="&amp;m" DetailColor="y"/>
-		<part Name="Description" Short="Byzantine purple smolders at a medium hue on the sharp and linked prisms of the crystal. It hums with new life and ingenuity."/>
+		<part Name="Render" DisplayName="{{crystalline|结晶}}光环" Tile="Items/sw_chime_headpiece.bmp" ColorString="&amp;m" DetailColor="y"/>
+		<part Name="Description" Short="拜占庭紫色在结晶的尖锐且相连的棱柱上呈现出中等色调。它散发着新生与创造力的光芒。"/>
 		<part Name="Armor" AV="2" DV="0" Ego="1" WornOn="Head"/>
 		<part Name="Physics" Weight="5"/>
 		<part Name="Commerce" Value="1666"/>
 		<part Name="MutationOnEquip" ClassName="Telepathy"/>
     <part Name="ItemElements" Elements="jewels::3;;glass::3"/>
 		<part Name="QuickenMind" Cooldown="50" AbilityAmount="1" IsBootSensitive="true"/>
-		<part Name="RulesDescription" Text="Grants you Quicken Mind: refresh a random cooldown on use."/>
+		<part Name="RulesDescription" Text="使你获得加速思维: 使用时刷新一个随机冷却时间。"/>
 		<part Name="TauShard"/>
 		<part Name="BootSequence" ChargeUse="0" BootTime="100" VerbOnBootInitialized="vibrate" VerbOnBootAborted="still" VerbOnBootDone="chime" ObviousIfUnderstood="true" IsEMPSensitive="false" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_vibrate" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_still" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_chime"/>
 		<tag Name="Mods" Value="None"/>
@@ -7111,12 +7111,12 @@
 		<tag Name="EquipmentFrameColors" Value="YmBb"/>
 	</object>
 	<object Name="TauDagger" Inherits="BaseDagger">
-		<part Name="Render" DisplayName="{{crystalline|crystalline}} jile" Tile="Items/sw_chime_dagger.bmp" ColorString="&amp;m" DetailColor="y"/>
-		<part Name="Description" Short="Broken crystal narrows to a hateful razor at the shard seams. It cracked at the resonance curvature of anguish, and fell out of its host rock as a shattered promise."/>
+		<part Name="Render" DisplayName="{{crystalline|结晶}}刺" Tile="Items/sw_chime_dagger.bmp" ColorString="&amp;m" DetailColor="y"/>
+		<part Name="Description" Short="破碎的水晶在裂片处锐化成仇恨的剃刀。它在痛苦的共鸣曲率下裂开，从宿主岩石中坠落，如同破碎的誓言。"/>
 		<part Name="Physics" Weight="3"/>
 		<part Name="Commerce" Value="1666"/>
     <part Name="ItemElements" Elements="jewels::3;;glass::3"/>
-		<part Name="RulesDescription" Text="Attacks MA instead of AV."/>
+		<part Name="RulesDescription" Text="攻击 MA 而不是 AV。"/>
 		<part Name="MeleeWeapon" Stat="Ego" MaxStrengthBonus="9" BaseDamage="1d12+2"/>
 		<part Name="AfferentWeapon"/>
 		<part Name="CleaveOnHit"/>
@@ -7128,13 +7128,13 @@
   <!-- Unique armor, Tomb children rewards -->
   <object Name="Nacham's Ribbon" Inherits="BaseCloak">
     <part Name="Armor" AV="0" DV="2" WornOn="Back"/>
-    <part Name="Render" DisplayName="{{K-K-K-K-K-c-C-Y sequence|Nacham's}} {{C-c-K-K-K-K sequence|ribbon}}" RenderString="]" Tile="items/sw_nacham_mantle.bmp" ColorString="&amp;M" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{K-K-K-K-K-c-C-Y sequence|纳查姆的}}{{C-c-K-K-K-K sequence|丝带}}" RenderString="]" Tile="items/sw_nacham_mantle.bmp" ColorString="&amp;M" DetailColor="c"/>
     <part Name="Physics" Weight="8"/>
     <part Name="Commerce" Value="1500"/>
     <stat Name="Hitpoints" Value="1000"/>
-    <part Name="Description" Short="A curtain of thrumming cables make a mantle for hunched shoulders. They pitch at neuronal frequencies long dormant."/>
+    <part Name="Description" Short="一帘震颤的电缆为弓腰的肩膀披上斗篷。它们以长期休眠的神经频率振动。"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
-    <part Name="Toolbox" ChargeUse="1000" PoweredBonusModBonus="40" UnpoweredBonusModBonus="0" WorksOnEquipper="true" WorksOnCarrier="false" TrackAsToolbox="false" BehaviorDescription="When powered, this item grants a 40% chance that a tinkered item will have a random item modification. This may include item modifications that aren't normally tinkerable."/>
+    <part Name="Toolbox" ChargeUse="1000" PoweredBonusModBonus="40" UnpoweredBonusModBonus="0" WorksOnEquipper="true" WorksOnCarrier="false" TrackAsToolbox="false" BehaviorDescription="当激活时，此物品有40%的几率使一个被改造的物品获得随机的物品修改。这可能包括那些通常不能被改造的物品修改。"/>
     <part Name="BootSequence" ChargeUse="0" BootTime="100" ReadoutInName="true" ReadoutInDescription="true"/>
     <part Name="IntegratedPowerSystems" RequiresEvent="HasPowerConnectors"/>
     <tag Name="Mods" Value="None"/>
@@ -7149,11 +7149,11 @@
   </object>
   <object Name="Vaam's Lens" Inherits="BaseShield">
     <part Name="Shield" AV="6" DV="-2" WornOn="Hand"/>
-    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y sequence|Va'am's}} {{C-c-K-K sequence|lens}}" Tile="Items/sw_vaam_aegis.bmp" ColorString="&amp;M" DetailColor="c"/>
+    <part Name="Render" DisplayName="{{K-K-K-K-c-C-Y sequence|瓦姆的}}{{C-c-K-K sequence|透镜}}" Tile="Items/sw_vaam_aegis.bmp" ColorString="&amp;M" DetailColor="c"/>
     <part Name="Physics" Weight="15"/>
     <part Name="Commerce" Value="1500"/>
     <stat Name="Hitpoints" Value="1000"/>
-    <part Name="Description" Short="An ocean drum of unknown zircon cleans itself of dust down to the mote by electrostatic cancelling. The center cross affords a wielder's grip."/>
+    <part Name="Description" Short="未知锆石制成的海洋鼓，通过静电清除尘埃至微粒级别。中央十字形结构提供了握持的手柄。"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="AIDefensiveEnergyCellReload"/>
     <part Name="AIPassiveEnergyCellReload"/>
@@ -7190,11 +7190,11 @@
 		<stag Name="Travel"/>
   </object>
   <object Name="Kah's Loop" Inherits="BaseArmlet">
-    <part Name="Render" DisplayName="{{K-K-c-C-Y sequence|Kah's}} {{C-c-K-K sequence|loop}}" Tile="Items/sw_kah_loop.bmp" DetailColor="c" ColorString="&amp;M"/>
-    <part Name="Description" Short="A ribbed cable of tangent needle points squeezes the limb and quickens its biomatter beyond expectation."/>
+    <part Name="Render" DisplayName="{{K-K-c-C-Y sequence|Kah's}}{{C-c-K-K sequence|循环}}" Tile="Items/sw_kah_loop.bmp" DetailColor="c" ColorString="&amp;M"/>
+    <part Name="Description" Short="一条带有肋状纹路的电缆，由相切的针尖组成，挤压肢体并使其生物物质以超乎预期的速度加速。"/>
     <part Name="Armor" AV="0" DV="1" WornOn="Arm"/>
     <part Name="Physics" Weight="1"/>
-    <part Name="IntPropertyChanger" AffectedProperty="EnhancedSprint" Amount="1" ChargeUse="0" NameForStatus="?????" BehaviorDescription="Wearer may take any action while sprinting at no additional penalty."/>
+    <part Name="IntPropertyChanger" AffectedProperty="EnhancedSprint" Amount="1" ChargeUse="0" NameForStatus="?????" BehaviorDescription="穿戴者在冲刺时可以采取任何行动而不会受到额外惩罚。"/>
     <part Name="BootSequence" ChargeUse="0" BootTime="100" ReadoutInName="true" ReadoutInDescription="true"/>
     <stat Name="Hitpoints" Value="1000"/>
     <part Name="Commerce" Value="1500"/>
@@ -7341,9 +7341,9 @@
   </object>
 
   <object Name="Otherpearl" Inherits="BaseBracelet">
-    <part Name="Render" DisplayName="{{otherpearl|Otherpearl}}" RenderLayer="6" Tile="Items/sw_motherpearl.bmp" ColorString="&amp;M" DetailColor="O"/>
-    <part Name="Description" Short="All-color nacre is hardened into an ontologically perfect shape; the mathematics of spheres are mere approximations. Inside, ribboned patterns of aether are frozen in stasis and cohere as a moonlit vista, a scene somehow tethered to the spacetime point whence you observed it. The meaning of this pairing is unknown and unknowable."/>
-    <part Name="RulesDescription" Text="+40 psychic glimmer&#10;Objects you find are five times more likely to come from other dimensions."/>
+    <part Name="Render" DisplayName="{{otherpearl|其他珍珠}}" RenderLayer="6" Tile="Items/sw_motherpearl.bmp" ColorString="&amp;M" DetailColor="O"/>
+    <part Name="Description" Short="全色珍珠层硬化成一种本体论上的完美形态；球体的数学只是近似。内部，以太的条纹图案被冻结在静止状态，凝聚成一个月光下的景象，某种方式上与你观察到的时空点相连。这种配对的意义未知且不可知。"/>
+    <part Name="RulesDescription" Text="+40 心灵光辉&#10;你发现的物品来自其他维度的可能性是原来的五倍。"/>
     <part Name="Armor" DV="1" MA="2" WornOn="Arm"/>
     <part Name="Physics" Weight="0"/>
     <part Name="Commerce" Value="33333"/>
@@ -7367,8 +7367,8 @@
   </object>
 
   <object Name="Flange from the Great Machine" Inherits="BaseArmor">
-    <part Name="Render" DisplayName="flange from the {{great machine|Great Machine}}" Tile="Items/flange_great_machine.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="W"/>
-    <part Name="Description" Short="A gigantic whorl lip snapped off the driving wheel of culture, fell out of its star vault's orbit, and, through the eroded methods of time, arrived here. Astroexotic spores lash its metasteel underrim, pilgrims from a hot fungal core biding time between now and some mystifying future point."/>
+    <part Name="Render" DisplayName="来自{{great machine|伟大机器}}的法兰" Tile="Items/flange_great_machine.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Description" Short="一个巨大的涡旋唇从文化的驱动轮上断裂，脱离了其星穹轨道，经过时间的侵蚀，最终到达这里。来自炽热真菌核心的天外来种孢子缠绕在其超钢下缘，这些朝圣者正在等待某个神秘的未来时刻。"/>
     <part Name="Armor" AV="10" DV="-4" Strength="1" Agility="1" Toughness="1" Intelligence="1" Ego="1" Willpower="1"/>
     <part Name="Commerce" Value="6666"/>
     <part Name="Physics" Weight="250"/>
@@ -7409,8 +7409,8 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Gear from the Great Machine" Inherits="BaseShield">
-    <part Name="Render" DisplayName="gear from the {{great machine|Great Machine}}" Tile="Items/gear_great_machine.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="W"/>
-    <part Name="Description" Short="Unshafted from its lanterned machine temple orbiting a star some hundred thousand light years away, the great gear looms in stasis. Dust from a hundred neighbored planet-homes tip its fluted teeth, while its bore is slick with amaranth and incense oil cultured over the lifespan of a gardened civilization."/>    
+    <part Name="Render" DisplayName="来自{{great machine|巨机}}的齿轮" Tile="Items/gear_great_machine.png" ColorString="&amp;M" TileColor="&amp;c" DetailColor="W"/>
+    <part Name="Description" Short="这巨大的齿轮从其环绕恒星运转的灯笼机械神殿中卸下，静止地悬浮着。来自上百个邻近星球的尘埃覆盖在其槽齿上，而其孔洞则被花园文明培育出的紫苑花油和香料油所润滑。"/>    
     <part Name="Shield" AV="10" DV="-2" WornOn="Hand"/>
     <part Name="Commerce" Value="6666"/>
     <part Name="Physics" Weight="50"/>
@@ -7424,7 +7424,7 @@
     <tag Name="Tier" Value="8"/>    
     <part Name="Metal"/>
     <part Name="DisarmOnBlock" Chance="10"/>
-    <part Name="RulesDescription" Text="Wielded weapons blocked by this shield have a 10% chance to be disarmed."/>
+    <part Name="RulesDescription" Text="被此盾牌阻挡的武器有10%的几率被解除武装。"/>
     <part Name="EquipStatBoost" Boosts="Strength:1;Agility:1;Toughness:1;Intelligence:1;Ego:1;Willpower:1" IsTechScannable="false"/>    
     <tag Name="EquipSound" Value="sfx_equip_armor_metal_heavy"/>
     <tag Name="StaticObjectsTable:GreatMachine_Artifact"/>
@@ -8936,9 +8936,9 @@
   <!-- 1-pointers -->
   <object Name="BiologicalIndexer" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="A minuscule graphene array that processes optical data against a repository of organic lifeforms."/>
-    <part Name="Render" DisplayName="{{Y|optical bioscanner}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R"/>
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="You gain access to the precise hit point, armor, and dodge values of biological creatures."/>
+    <part Name="Description" Short="一个微型石墨烯阵列，用于处理光学数据并与有机生命体数据库进行比对。"/>
+    <part Name="Render" DisplayName="{{Y|光学生物扫描仪}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;c" DetailColor="R"/>
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="你可以访问生物生物的精确命中点、护甲和闪避值。"/>
     <part Name="CyberneticsBiologicalIndexer"/>
     <part Name="ItemElements" Elements="scholarship::3"/>
     <tag Name="StartingCybernetic:General"/>
@@ -8946,9 +8946,9 @@
 
   <object Name="TechnologicalIndexer" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="A minuscule graphene array that processes optical data against a repository of robotic lifeforms and artifacts."/>
-    <part Name="Render" DisplayName="{{Y|optical technoscanner}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="You gain access to the precise hit point, armor, and dodge values of robotic creatures and you automatically identify artifacts."/>
+    <part Name="Description" Short="一种微型石墨烯阵列，用于处理光学数据并与机器人生命体和人工制品的数据库进行比对。"/>
+    <part Name="Render" DisplayName="{{Y|光学技术扫描仪}}" Tile="Items/sw_scanningmodule.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="你可以获取到机械生物的确切命中点、护甲值和闪避值，并且能够自动识别遗物。"/>
     <part Name="CyberneticsTechIndexer"/>
     <part Name="ItemElements" Elements="scholarship::2"/>
     <tag Name="StartingCybernetic:General"/>
@@ -8968,28 +8968,28 @@
     <part Name="Render" DisplayName="{{Y|天使般的面容}}" Tile="Items/sw_cherubic.bmp" ColorString="&amp;C" DetailColor="r"/>
     <part Name="CyberneticsBaseItem" Slots="Face" Cost="1" BehaviorDescription="+1 自我"/>
     <part Name="CyberneticsStatModifier" Stats="Ego:1"/>
-    <tag Name="StartingCybernetic:工匠"/>
-    <tag Name="StartingCybernetic:领事"/>
-    <tag Name="StartingCybernetic:禁卫"/>
-    <tag Name="StartingCybernetic:宦官"/>
+    <tag Name="StartingCybernetic:工匠" />
+    <tag Name="StartingCybernetic:领事" />
+    <tag Name="StartingCybernetic:禁卫" />
+    <tag Name="StartingCybernetic:宦官" />
     <tag Name="SpecialArcologyText" Value="{{C|[Ibul only]}}"/>
   </object>
 
   <object Name="ElectromagneticSensor" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Small distortions in the electromagnetic field caused by machine folk are visible to this sensor."/>
-    <part Name="Render" DisplayName="{{Y|electromagnetic sensor}}" Tile="Items/sw_electromagsensor.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Head,Face,Back,Body,Feet,Arm,Hands" Cost="1" BehaviorDescription="You detect nearby robots without having to see them."/>
+    <part Name="Description" Short="这种传感器可以检测到由机械族引起的电磁场微小扭曲。"/>
+    <part Name="Render" DisplayName="{{Y|电磁传感器}}" Tile="Items/sw_electromagsensor.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Head,Face,Back,Body,Feet,Arm,Hands" Cost="1" BehaviorDescription="你可以在不看到它们的情况下检测到附近的机器人。"/>
     <part Name="CyberneticsElectromagneticSensor"/>
     <part Name="ItemElements" Elements="circuitry::2"/>
   </object>
 
   <object Name="NavigationSystem" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Geosocial location data is painted across the glass lune and is underlaid with representations of the living loam that has shifted over earth to take its place."/>
-    <part Name="Render" DisplayName="{{Y|navigation system}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="Description" Short="地理社交定位数据被绘制在玻璃新月上，并叠加了取代地球表面的活土层的表示。"/>
+    <part Name="Render" DisplayName="{{Y|导航系统}}" Tile="Items/sw_cyber_navigation_system.bmp" ColorString="&amp;C" DetailColor="r"/>
     <part Name="MultiNavigationBonus" ShowInShortDescription="false" Bonuses="Survival_RuinsSurvival:30:CompassBraceletApplied,*:10:CompassBraceletApplied" ChargeUse="0" NameForStatus="NavigationModule"/>
-    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="Your chance of becoming lost in ruins is reduced by 30%. Your chance of becoming lost in other terrain is reduced by 10%. These effects do not stack with the bonuses of a compass bracelet."/>
+    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="1" BehaviorDescription="你在废墟中迷路的几率减少了30%。在其他地形中迷路的几率减少了10%。这些效果不会与指南针手链的加成叠加。"/>
     <part Name="ItemElements" Elements="travel::2"/>
   </object>
 
@@ -9004,9 +9004,9 @@
 
   <object Name="SkinGlitter1" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world. "/>
-    <part Name="Render" DisplayName="{{Y|skin glitter}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="+8% chance to refract light-based attacks"/>
+    <part Name="Description" Short="一种分形晶格的皮肤贴片将内在的光辉传导到外部世界。"/>
+    <part Name="Render" DisplayName="{{Y|皮肤闪光}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="+8% 反射光基攻击的几率"/>
     <part Name="CyberneticsRefractLight" Chance="8"/>
     <xtagGrammar massNoun="true"/>
     <part Name="ItemElements" Elements="glass::2"/>
@@ -9014,9 +9014,9 @@
 
   <object Name="SingleSkillsoft1" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the neural patterns of a particular skill."/>
-    <part Name="Render" DisplayName="{{Y|skillsoft}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="1" BehaviorDescription="You gain a skill whose cost is between 0 and 50 SP."/>
+    <part Name="Description" Short="这种芯片编码了特定技能的神经模式。"/>
+    <part Name="Render" DisplayName="{{Y|技能软片}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="1" BehaviorDescription="你获得了一项技能，其消耗在0到50点SP之间。"/>
     <part Name="CyberneticsSingleSkillsoft" MinCost="0" MaxCost="50"/>
     <part Name="ItemElements" Elements="scholarship::2"/>
   </object>
@@ -9043,9 +9043,9 @@
 
   <object Name="HyperElasticAnkleTendons" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="Banded ropes of hydrogel are bundled into one."/>
-    <part Name="Render" DisplayName="{{Y|hyper-elastic ankle tendons}}" Tile="Items/sw_hypertendons.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+6 movespeed"/>
+    <part Name="Description" Short="水凝胶绳索捆绑成一条。"/>
+    <part Name="Render" DisplayName="{{Y|超弹性踝腱}}" Tile="Items/sw_hypertendons.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+6 移动速度"/>
     <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-6"/>
     <tag Name="StartingCybernetic:General"/>
     <part Name="ItemElements" Elements="travel::3"/>
@@ -9061,8 +9061,8 @@
 
   <object Name="TranslucentSkin" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="5"/>
-    <part Name="Description" Short="The diaphanous dermis throws the circulatory, muscular, and nervous networks into silhouetted relief."/>
-    <part Name="Render" DisplayName="{{Y|translucent skin}}" Tile="Items/sw_transparent.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="Description" Short="半透明的皮肤将循环系统、肌肉和神经网络的轮廓清晰地展现出来。"/>
+    <part Name="Render" DisplayName="{{Y|半透明皮肤}}" Tile="Items/sw_transparent.bmp" ColorString="&amp;C" DetailColor="r"/>
     <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="2" BehaviorDescription="+2 DV"/>
     <part Name="CyberneticsStatModifier" Stats="DV:2"/>
     <tag Name="StartingCybernetic:General"/>
@@ -9089,9 +9089,9 @@
 
   <object Name="CarbideHandBones" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="15"/>
-    <part Name="Description" Short="Blue carbide merely dents where weak collagen would be smashed to bits."/>
-    <part Name="Render" DisplayName="{{Y|carbide hand bones}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;b" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="Your fists deal 2d3 damage."/>
+    <part Name="Description" Short="蓝色碳化物只会留下凹痕，而脆弱的胶原蛋白早已粉碎成碎片。"/>
+    <part Name="Render" DisplayName="{{Y|碳化物手骨}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;b" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="2" BehaviorDescription="你的拳头造成 2d3 伤害。"/>
     <part Name="CyberneticsFistReplacement" FistObject="CarbideFist"/>
     <tag Name="StartingCybernetic:General"/>
     <part Name="ItemElements" Elements="might::3"/>
@@ -9142,10 +9142,10 @@
     <part Name="Render" DisplayName="{{Y|夜行顶点}}" Tile="Items/sw_nocturnal.bmp" TileColor="&amp;r" DetailColor="C"/>
     <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="白天时自然恢复速度提高10%。每晚一次，你可以潜行，获得6点敏捷和10点移动速度，持续100回合。"/>
     <part Name="CyberneticsNocturnalApex"/>
-    <tag Name="StartingCybernetic:万阳祭司"/>
-    <tag Name="StartingCybernetic:诸月牧师"/>
-    <tag Name="StartingCybernetic:天象祭司"/>
-    <tag Name="StartingCybernetic:园艺师"/>
+    <tag Name="StartingCybernetic:万阳祭司" />
+    <tag Name="StartingCybernetic:诸月牧师" />
+    <tag Name="StartingCybernetic:天象祭司" />
+    <tag Name="StartingCybernetic:园艺师" />
     <tag Name="CyberneticsOneOnly"/>
     <tag Name="SpecialArcologyText" Value="{{G|[Ekuemekiyye only]}}"/>
   </object>
@@ -9156,10 +9156,10 @@
     <part Name="Render" DisplayName="{{Y|深渊视界}}" Tile="Items/sw_aircurrent.bmp" ColorString="&amp;C" DetailColor="r"/>
     <part Name="CyberneticsBaseItem" Slots="Body,Head" Cost="2" BehaviorDescription="楼梯和其他上下地图转换始终对你可见。"/>
     <part Name="CyberneticsAirCurrentMicrosensor"/>
-    <tag Name="StartingCybernetic:深渊之子"/>
-    <tag Name="StartingCybernetic:轮回之子"/>
-    <tag Name="StartingCybernetic:炉边之子"/>
-    <tag Name="StartingCybernetic:怒火神之子"/>
+    <tag Name="StartingCybernetic:深渊之子" />
+    <tag Name="StartingCybernetic:轮回之子" />
+    <tag Name="StartingCybernetic:炉边之子" />
+    <tag Name="StartingCybernetic:怒火神之子" />
     <tag Name="SpecialArcologyText" Value="{{R|[Yawningmoon only]}}"/>
   </object>
 
@@ -9209,9 +9209,9 @@
 
   <object Name="SkinGlitter2" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world. "/>
-    <part Name="Render" DisplayName="{{Y|skin glitter}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="2" BehaviorDescription="+16% chance to refract light-based attacks"/>
+    <part Name="Description" Short="一种分形晶格的皮肤贴片将内在的光辉传导到外部世界。"/>
+    <part Name="Render" DisplayName="{{Y|皮肤闪光}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="2" BehaviorDescription="+16% 反射光基攻击的几率"/>
     <part Name="CyberneticsRefractLight" Chance="16"/>
     <xtagGrammar massNoun="true"/>
     <part Name="ItemElements" Elements="glass::3"/>
@@ -9219,18 +9219,18 @@
 
   <object Name="SingleSkillsoft2" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the neural patterns of a particular skill."/>
-    <part Name="Render" DisplayName="{{Y|skillsoft}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="You gain a skill whose cost is between 51 and 150 SP."/>
+    <part Name="Description" Short="这种芯片编码了特定技能的神经模式。"/>
+    <part Name="Render" DisplayName="{{Y|技能软片}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="你获得了一项技能，其消耗介于51到150点SP之间。"/>
     <part Name="CyberneticsSingleSkillsoft" MinCost="51" MaxCost="150"/>
     <part Name="ItemElements" Elements="scholarship::3"/>
   </object>
 
   <object Name="Schemasoft2" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the schematics for a whole class of low-tier artifacts."/>
-    <part Name="Render" DisplayName="{{Y|Schemasoft}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="You gain access to every schematic for a single class of artifacts."/>
+    <part Name="Description" Short="这个芯片上编码了一整类低级伪物的设计图。"/>
+    <part Name="Render" DisplayName="{{Y|斯凯马软体}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="2" BehaviorDescription="你获得了某一类遗物的所有图纸。"/>
     <part Name="CyberneticsSchemasoft" MaxTier="3"/>
     <tag Name="CyberneticsDestroyOnRemoval"/>
     <part Name="ItemElements" Elements="scholarship::3"/>
@@ -9238,9 +9238,9 @@
 	
   <object Name="GroundingShunts" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="Carbon fiber shoots out of two electrodermal contact pads."/>
-    <part Name="Render" DisplayName="{{Y|grounding shunts}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+50 electric resistance"/>
+    <part Name="Description" Short="碳纤维从两个电皮接触垫中伸出。"/>
+    <part Name="Render" DisplayName="{{Y|接地分流器}}" Tile="Items/sw_grounding_shunts.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="2" BehaviorDescription="+50 耐电性"/>
     <part Name="CyberneticsStatModifier" Stats="ElectricResistance:50"/>
     <part Name="ItemElements" Elements="circuitry::3"/>
   </object>
@@ -9256,8 +9256,8 @@
 
   <object Name="TransparentSkin" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="5"/>
-    <part Name="Description" Short="The new flesh is as ghost film, cloaking none of the machinery of life."/>
-    <part Name="Render" DisplayName="{{Y|transparent skin}}" Tile="Items/sw_transparent.bmp" TileColor="&amp;C" DetailColor="R"/>
+    <part Name="Description" Short="新生的肉体如同幽灵般的薄膜，丝毫不能遮掩生命机制的运作。"/>
+    <part Name="Render" DisplayName="{{Y|透明皮肤}}" Tile="Items/sw_transparent.bmp" TileColor="&amp;C" DetailColor="R"/>
     <part Name="CyberneticsBaseItem" Slots="Body,Back" Cost="3" BehaviorDescription="+3 DV"/>
     <part Name="CyberneticsStatModifier" Stats="DV:3"/>
     <part Name="ItemElements" Elements="glass::4"/>
@@ -9289,9 +9289,9 @@
 
   <object Name="BeautifulVisage" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="Instructions dictate the reformation of the face into a countenance that arouses latent desires in its onlookers."/>
-    <part Name="Render" DisplayName="{{Y|beautiful visage}}" Tile="Items/sw_beautiful.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="+2 Ego"/>
+    <part Name="Description" Short="指令要求将面容重塑为一种能激起旁观者潜在欲望的容貌。"/>
+    <part Name="Render" DisplayName="{{Y|美丽面容}}" Tile="Items/sw_beautiful.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="3" BehaviorDescription="+2 自我"/>
     <part Name="CyberneticsStatModifier" Stats="Ego:2"/>
     <part Name="ItemElements" Elements="jewels::4"/>
   </object>
@@ -9333,10 +9333,10 @@
 
   <object Name="PalladiumElectrodeposits" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="Ionic dust dissolved from palladium facilitates the transfer of computing current."/>
-    <part Name="Render" DisplayName="{{Y|palladium electrodeposits}}" Tile="Items/sw_electrodeposits.bmp" TileColor="&amp;C" DetailColor="r"/>
+    <part Name="Description" Short="从钯溶解的离子尘埃有助于计算电流的传输。"/>
+    <part Name="Render" DisplayName="{{Y|钯电沉积物}}" Tile="Items/sw_electrodeposits.bmp" TileColor="&amp;C" DetailColor="r"/>
     <part Name="Inventory"/>
-    <part Name="CyberneticsBaseItem" Slots="Head,Body,Back,Arm" Cost="3" BehaviorDescription="Provides 20 units of compute power on the local lattice. +2 Intelligence if implanted in a head."/>
+    <part Name="CyberneticsBaseItem" Slots="Head,Body,Back,Arm" Cost="3" BehaviorDescription="提供20单位的计算能力到本地晶格。+2 智力，如果植入头部。"/>
     <part Name="CyberneticsPalladiumElectrodeposits"/>
     <part Name="ItemElements" Elements="circuitry::4"/>
     <tag Name="CyberneticsDestroyOnRemoval"/>
@@ -9353,9 +9353,9 @@
   </object>
 
   <object Name="IntravenousPort" Inherits="BaseCyberneticsEquipment_3point">
-    <part Name="Description" Short="Three catheters imprint the skin from underneath."/>
-    <part Name="Render" DisplayName="{{Y|intravenous port}}" Tile="Items/sw_intravenous.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="The effects of tonics last twice as long."/>
+    <part Name="Description" Short="三根导管从皮肤下印出。"/>
+    <part Name="Render" DisplayName="{{Y|静脉端口}}" Tile="Items/sw_intravenous.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="3" BehaviorDescription="药剂的效果持续时间延长一倍。"/>
     <part Name="CyberneticsTonicDurationModifier" Percentage="100"/>
     <part Name="ItemElements" Elements="salt::4"/>
   </object>
@@ -9371,9 +9371,9 @@
 
   <object Name="MatterRecompositer" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="5"/>
-    <part Name="Description" Short="The flux inside this milliscopic cask can fold space on just a large enough scale to shunt a human chassis nearby."/>
-    <part Name="Render" DisplayName="{{Y|matter recompositer}}" Tile="Items/sw_matter.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="Activated. Cooldown 100. You teleport to a random, explored space on the map."/>    
+    <part Name="Description" Short="这个微小容器内的通量可以在足够大的尺度上折叠空间，从而将附近的人体框架传送。"/>
+    <part Name="Render" DisplayName="{{Y|物质重组器}}" Tile="Items/sw_matter.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="3" BehaviorDescription="激活。冷却时间100。你传送到地图上的一个随机已探索位置。"/>    
     <part Name="CyberneticsMatterRecompositer"/>
     <part Name="ItemElements" Elements="travel::4"/>
     <tag Name="CyberneticsOneOnly"/>
@@ -9416,18 +9416,18 @@
 
   <object Name="SingleSkillsoft3" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the neural patterns of a particular skill."/>
-    <part Name="Render" DisplayName="{{Y|skillsoft}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="You gain a skill whose cost is greater than 151 SP."/>
+    <part Name="Description" Short="这种芯片编码了特定技能的神经模式。"/>
+    <part Name="Render" DisplayName="{{Y|技能软片}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="你获得了一项技能，其消耗大于151 SP。"/>
     <part Name="CyberneticsSingleSkillsoft" MinCost="151" MaxCost="999"/>
     <part Name="ItemElements" Elements="scholarship::4"/>
   </object>
 
   <object Name="Schemasoft3" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the schematics for a whole class of mid-tier artifacts."/>
-    <part Name="Render" DisplayName="{{Y|Schemasoft}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="You gain access to every schematic for a single class of artifacts."/>
+    <part Name="Description" Short="这块芯片上编码了一整类中等级别的神器的设计图。"/>
+    <part Name="Render" DisplayName="{{Y|斯凯马软体}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="3" BehaviorDescription="你获得了某一类遗物的所有图纸。"/>
     <part Name="CyberneticsSchemasoft" MaxTier="5"/>
     <tag Name="CyberneticsDestroyOnRemoval"/>
     <part Name="ItemElements" Elements="scholarship::4"/>
@@ -9436,9 +9436,9 @@
   <!-- 4-pointers -->
   <object Name="FulleriteHandBones" Inherits="BaseCyberneticsEquipment_4point">
     <part Name="Physics" Weight="18"/>
-    <part Name="Description" Short="Black fullerite merely dents where weak collagen would be smashed to bits."/>
-    <part Name="Render" DisplayName="{{Y|fullerite hand bones}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;K" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="Your fists deal 2d4+1 damage."/>
+    <part Name="Description" Short="黑色富勒烯只会留下凹痕，而脆弱的胶原蛋白早已粉碎成碎片。"/>
+    <part Name="Render" DisplayName="{{Y|富勒烯手骨}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;K" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="4" BehaviorDescription="你的拳头造成 2d4+1 点伤害。"/>
     <part Name="CyberneticsFistReplacement" FistObject="FulleriteFist"/>
     <part Name="ItemElements" Elements="might::5"/>
   </object>
@@ -9457,9 +9457,9 @@
 
   <object Name="MotorizedTreads" Inherits="BaseCyberneticsEquipment_4point">
     <part Name="Physics" Weight="75"/>
-    <part Name="Description" Short="Triangular treads swathe the teeth of giant gears that turn to locomote. Their human has escaped the confines of bipedal motion."/>
-    <part Name="Render" DisplayName="{{Y|motorized treads}}" Tile="Items/sw_treads.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="+150 movespeed +4 to saves vs. forced movement, knockdown, and being restrained You cannot wear shoes. This implant can't be uninstalled."/>
+    <part Name="Description" Short="三角形履带包裹着巨大的齿轮的齿，齿轮转动以实现移动。人类已经摆脱了两足行走的限制。"/>
+    <part Name="Render" DisplayName="{{Y|机械履带}}" Tile="Items/sw_treads.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Feet" Cost="4" BehaviorDescription="+150 移动速度 对强制移动、击倒和束缚的豁免+4 你不能穿鞋。此植入物无法卸载。"/>
     <part Name="CyberneticsMotorizedTreads"/>
     <part Name="CyberneticsStatModifier" Stats="MoveSpeed:-150"/>
     <part Name="SaveModifier" Vs="Move,Knockdown,Restraint" Amount="4" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="DriveTrain" ShowInShortDescription="false"/>
@@ -9497,10 +9497,10 @@
 
   <object Name="OnboardRecoiler" Inherits="BaseCyberneticsEquipment_4point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="A geospatial core is fitted with a bionic tether."/>
-    <part Name="Render" DisplayName="{{Y|onboard recoiler}}" Tile="Items/sw_cyber_onboard_recoiler.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="Description" Short="一个地理空间核心装有生化系绳。"/>
+    <part Name="Render" DisplayName="{{Y|内置回弹器}}" Tile="Items/sw_cyber_onboard_recoiler.bmp" ColorString="&amp;C" DetailColor="r"/>
     <part Name="ItemElements" Elements="travel::5"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="4" BehaviorDescription="You can imprint this implant with a location (cooldown 100) and recoil back to it (cooldown 50)."/>
+    <part Name="CyberneticsBaseItem" Slots="Hands,Feet,Body,Back,Face,Arm,Head" Cost="4" BehaviorDescription="你可以将这个植入物标记一个位置（冷却时间100）并回弹到该位置（冷却时间50）"/>
     <part Name="CyberneticsOnboardRecoilerTeleporter" Sound="Sounds/Interact/sfx_interact_recoiler_activate"/>
     <part Name="CyberneticsOnboardRecoilerImprinting" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint"/>
   </object>
@@ -9524,9 +9524,9 @@
 
   <object Name="Schemasoft4" Inherits="BaseCyberneticsEquipment_4point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the schematics for a whole class of high-tier artifacts."/>
-    <part Name="Render" DisplayName="{{Y|Schemasoft}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="R"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="4" BehaviorDescription="You gain access to every schematic for a single class of artifacts."/>
+    <part Name="Description" Short="这芯片上编码了一整类高级神器的设计图。"/>
+    <part Name="Render" DisplayName="{{Y|斯凯马软体}}" Tile="Items/sw_schemasoft.bmp" ColorString="&amp;C" DetailColor="R"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="4" BehaviorDescription="你获得了某一类遗物的所有图纸。"/>
     <part Name="CyberneticsSchemasoft" MaxTier="7"/>
     <part Name="ItemElements" Elements="scholarship::5"/>
     <tag Name="CyberneticsDestroyOnRemoval"/>
@@ -9564,17 +9564,17 @@
   <!-- 5-pointers -->
 	<object Name="GraftedMirrorArm" Inherits="BaseCyberneticsEquipment_5point">
 		<part Name="Physics" Weight="8"/>
-		<part Name="Description" Short="A plastifer arm forks from the scapula and copies instructions issued from nerve to muscle in its grown twin."/>
-		<part Name="Render" DisplayName="{{Y|grafted mirror arm}}" Tile="Items/implant_grafted_mirror_arm.bmp" HFlip="true" TileColor="&amp;C" DetailColor="r"/>
-		<part Name="CyberneticsBaseItem" Slots="Arm" Cost="5" BehaviorDescription="You gain an extra thrown weapon slot. When you perform a throw, you throw from all your thrown weapon slots at once."/>
+		<part Name="Description" Short="一个塑料臂从肩胛骨分叉而出，复制了神经向其生长的孪生肌肉发出的指令。"/>
+		<part Name="Render" DisplayName="{{Y|移植镜像臂}}" Tile="Items/implant_grafted_mirror_arm.bmp" HFlip="true" TileColor="&amp;C" DetailColor="r"/>
+		<part Name="CyberneticsBaseItem" Slots="Arm" Cost="5" BehaviorDescription="你获得一个额外的投掷武器槽。当你执行投掷时，你会同时从所有投掷武器槽中投掷。"/>
 		<part Name="CyberneticsGraftedMirrorArm"/>
     <part Name="ItemElements" Elements="glass::6"/>
 	</object>
 	<object Name="MicromanipulatorArray" Inherits="BaseCyberneticsEquipment_5point">
     <part Name="Physics" Weight="2"/>
-    <part Name="Description" Short="A dozen armatures and manipulators splay out from a metal brace that fuses to the metacarpals."/>
-    <part Name="Render" DisplayName="{{Y|micromanipulator array}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="You can tinker and repair in combat at the action cost of one turn. Reduces the action cost of other tinker skills by 40%. Grants a bonus to identifying artifacts as if your Intelligence score were increased by 8. +10% chance to recover bits from disassembling artifacts."/>
+    <part Name="Description" Short="一打机械臂和操作器从一个与掌骨融合的金属支架上展开。"/>
+    <part Name="Render" DisplayName="{{Y|微操作阵列}}" Tile="Items/sw_cyber_micromanipulator_array.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="5" BehaviorDescription="你可以在战斗中以消耗一个回合的代价修理和改装。其他改装技能的动作成本减少40%。鉴定遗物时，如同你的智力提高了8点一样获得加成。从拆解遗物中回收零件的概率提高10%。"/>
     <part Name="CyberneticsMicromanipulatorArray"/>
     <part Name="ItemElements" Elements="scholarship::5"/>
     <part Name="Toolbox" ChargeUse="0" WorksOnCarrier="false" TrackAsToolbox="false" UnpoweredInspectBonus="8" UnpoweredDisassembleBonus="10" ComputePowerFactor="1" NameForStatus="DiagnosticSensors"/>
@@ -9592,27 +9592,27 @@
 
   <object Name="BiodynamicPowerPlant" Inherits="BaseCyberneticsEquipment_6point">
     <part Name="Physics" Weight="2"/>
-    <part Name="Description" Short="A microturbine skims hemopower off the circulation of blood and the chemical reactions therein."/>
-    <part Name="Render" DisplayName="{{Y|biodynamic power plant}}" Tile="Items/sw_cyber_biodynamic_power_plant.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="6" BehaviorDescription="Provides a continuous 5000 units of charge per turn to equipped items that can access onboard power systems, such as items with the Jacked mod."/>
+    <part Name="Description" Short="微型涡轮机从血液循环和其中的化学反应中提取血能。"/>
+    <part Name="Render" DisplayName="{{Y|生物动力发电厂}}" Tile="Items/sw_cyber_biodynamic_power_plant.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="6" BehaviorDescription="每回合为装备的可访问车载电源系统的物品（如带有插孔改装的物品）提供5000单位的持续电量。"/>
     <part Name="CyberneticsBiodynamicPowerPlant"/>
     <part Name="ItemElements" Elements="circuitry::7"/>
   </object>
 
   <object Name="StasisProjector" Inherits="BaseCyberneticsEquipment_6point">
     <part Name="Physics" Weight="1"/>
-    <part Name="Description" Short="Crystals involute along angles of stillness."/>
-    <part Name="Render" DisplayName="{{Y|stasis projector}}" Tile="Items/sw_stasis_projector.bmp" TileColor="&amp;r" DetailColor="C"/>
-    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="6" BehaviorDescription="Activated. Cooldown 100. Creates up to 6 contiguous squares of stasis field that last for about 5 rounds."/>
+    <part Name="Description" Short="晶体沿着静止的角度内卷。"/>
+    <part Name="Render" DisplayName="{{Y|静止投影仪}}" Tile="Items/sw_stasis_projector.bmp" TileColor="&amp;r" DetailColor="C"/>
+    <part Name="CyberneticsBaseItem" Slots="Head,Arm,Hands,Body,Back" Cost="6" BehaviorDescription="激活。冷却时间100。生成最多6个连续的静止力场方块，持续约5回合。"/>
     <part Name="CyberneticsStasisProjector"/>
     <part Name="ItemElements" Elements="time::7"/>
   </object>
 
 	<object Name="HolographicVisage" Inherits="BaseCyberneticsEquipment_6point">
 		<part Name="Physics" Weight="0"/>
-		<part Name="Description" Short="Emulsion slicks on the cheek and laser light evokes pareidolic warmth."/>
-		<part Name="Render" DisplayName="{{Y|holographic visage}}" Tile="Items/implant_holographic_visage.bmp" ColorString="&amp;B" TileColor="&amp;C" DetailColor="B"/>
-		<part Name="CyberneticsBaseItem" Slots="Face" Cost="6" BehaviorDescription="+200 reputation with a faction you choose when you install this implant You can activate this implant to change the chosen faction."/>
+		<part Name="Description" Short="脸颊上的乳液光泽和激光光线唤起了拟人化的温暖感。"/>
+		<part Name="Render" DisplayName="{{Y|全息面容}}" Tile="Items/implant_holographic_visage.bmp" ColorString="&amp;B" TileColor="&amp;C" DetailColor="B"/>
+		<part Name="CyberneticsBaseItem" Slots="Face" Cost="6" BehaviorDescription="+200 与你安装此植入体时选择的派系的声望。你可以激活此植入体以更改所选派系。"/>
 		<part Name="CyberneticsHolographicVisage"/>
 		<tag Name="CyberneticsOneOnly"/>
     <part Name="ItemElements" Elements="jewels::5"/>
@@ -9621,9 +9621,9 @@
   <!-- 8+ pointers -->
   <object Name="OpticalMultiscanner" Inherits="BaseCyberneticsEquipment_8point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="A minuscule graphene array that processes optical data against the final ontological and phenomenological ledger."/>
-    <part Name="Render" DisplayName="{{Y|optical multiscanner}}" Tile="Items/sw_multiscanner.bmp" TileColor="&amp;C" DetailColor="m"/>
-    <part Name="CyberneticsBaseItem" Slots="Face" Cost="8" BehaviorDescription="You gain access to the precise hit point, armor, and dodge values of robotic creatures, biological creatures, and structures. You automatically identify artifacts. Staircases and other up/down map transitions are always revealed to you."/>
+    <part Name="Description" Short="一个微小的石墨烯阵列，用于处理光学数据并对照最终的本体论和现象学记录。"/>
+    <part Name="Render" DisplayName="{{Y|光学多扫描仪}}" Tile="Items/sw_multiscanner.bmp" TileColor="&amp;C" DetailColor="m"/>
+    <part Name="CyberneticsBaseItem" Slots="Face" Cost="8" BehaviorDescription="你能够获取机器人生物、有机生物和建筑的精确生命值、护甲值和闪避值。你自动识别遗物。楼梯和其他上下地图过渡始终对你可见。"/>
     <part Name="CyberneticsAirCurrentMicrosensor"/>
     <part Name="CyberneticsOpticalMultiscanner"/>
     <part Name="CyberneticsPropertyModifier" Props="TechScannerEquipped:1;BioScannerEquipped:1;StructureScannerEquipped:1"/>
@@ -9642,9 +9642,9 @@
 
 	<object Name="StasisEntangler" Inherits="BaseCyberneticsEquipment_8point">
 		<part Name="Physics" Weight="3"/>
-		<part Name="Description" Short="Shaved crystal faces are matrixed and angled to pipe stillness across a graph of live vertices."/>
-		<part Name="Render" DisplayName="{{Y|stasis entangler}}" Tile="Items/implant_stasis_entangler.bmp" TileColor="&amp;r" DetailColor="C"/>
-		<part Name="CyberneticsBaseItem" Slots="Feet,Back,Body" Cost="8" BehaviorDescription="Activated. Cooldown 200. You choose one creature in line of sight. All other creatures are put into stasis fields for 15 rounds."/>
+		<part Name="Description" Short="剃平的水晶面以矩阵排列并倾斜，将静止状态通过活化顶点的网络传递。"/>
+		<part Name="Render" DisplayName="{{Y|静止缠绕器}}" Tile="Items/implant_stasis_entangler.bmp" TileColor="&amp;r" DetailColor="C"/>
+		<part Name="CyberneticsBaseItem" Slots="Feet,Back,Body" Cost="8" BehaviorDescription="激活。冷却时间200。你选择视线内的一个生物。所有其他生物将被置于静止领域15回合。"/>
 		<part Name="CyberneticsStasisEntangler"/>
     <part Name="ItemElements" Elements="time::8"/>
 		<tag Name="CyberneticsOneOnly"/>
@@ -9652,9 +9652,9 @@
 
   <object Name="CrysteelHandBones" Inherits="BaseCyberneticsEquipment_8point">
     <part Name="Physics" Weight="9"/>
-    <part Name="Description" Short="Dappled crysteel merely dents where weak collagen would be smashed to bits."/>
-    <part Name="Render" DisplayName="{{Y|crysteel hand bones}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;G" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="8" BehaviorDescription="Your fists deal 3d4 damage."/>
+    <part Name="Description" Short="斑驳的水晶钢只会留下凹痕，而脆弱的胶原蛋白早已粉碎成碎片。"/>
+    <part Name="Render" DisplayName="{{Y|水晶钢手骨}}" Tile="Items/sw_carbidehand.bmp" TileColor="&amp;G" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Hands" Cost="8" BehaviorDescription="你的拳头造成 3d4 伤害。"/>
     <part Name="CyberneticsFistReplacement" FistObject="CrysteelFist"/>
     <part Name="ItemElements" Elements="might::8"/>
   </object>
@@ -9673,9 +9673,9 @@
 
   <object Name="HighFidelityMatterRecompositer" Inherits="BaseCyberneticsEquipment_8point">
     <part Name="Physics" Weight="5"/>
-    <part Name="Description" Short="The flux inside this milliscopic cask can fold space on just a large enough scale to shunt a human chassis nearby. Nonlinear circuitry calculates all possible outcomes and discards those that land the host outside the target area."/>
-    <part Name="Render" DisplayName="{{Y|high-fidelity matter recompositer}}" Tile="Items/sw_cyber_high_fidelity_matter_recompositer.bmp" ColorString="&amp;C" DetailColor="r"/>
-    <part Name="CyberneticsBaseItem" Slots="Body" Cost="8" BehaviorDescription="Activated. Cooldown 50. You teleport to any explored space on the map."/>
+    <part Name="Description" Short="这个微小罐内的通量能够在足够大的尺度上折叠空间，以便将附近的人体转移。非线性电路计算所有可能的结果，并排除那些将宿主转移到目标区域之外的情况。"/>
+    <part Name="Render" DisplayName="{{Y|高精度物质重组器}}" Tile="Items/sw_cyber_high_fidelity_matter_recompositer.bmp" ColorString="&amp;C" DetailColor="r"/>
+    <part Name="CyberneticsBaseItem" Slots="Body" Cost="8" BehaviorDescription="激活。冷却时间50。你将传送到地图上的任意已探索地点。"/>
     <part Name="CyberneticsHighFidelityMatterRecompositer"/>
     <part Name="ItemElements" Elements="travel::8"/>
     <tag Name="CyberneticsOneOnly"/>
@@ -9683,9 +9683,9 @@
 
   <object Name="TreeSkillsoft" Inherits="BaseCyberneticsEquipment_3point">
     <part Name="Physics" Weight="0"/>
-    <part Name="Description" Short="Encoded on this chip are the neural patterns of a particular skill tree."/>
-    <part Name="Render" DisplayName="{{Y|skillsoft}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="R"/>
-    <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="You gain access to a whole skill tree."/>
+    <part Name="Description" Short="这芯片上编码了特定技能树的神经模式。"/>
+    <part Name="Render" DisplayName="{{Y|技能软片}}" Tile="Items/sw_skillsoft.bmp" ColorString="&amp;C" DetailColor="R"/>
+    <part Name="CyberneticsBaseItem" Slots="Head" Cost="8" BehaviorDescription="你获得了访问整个技能树的权限。"/>
     <part Name="CyberneticsTreeSkillsoft"/>
     <part Name="ItemElements" Elements="scholarship::8"/>
   </object>
@@ -9720,17 +9720,17 @@
   </object>
 
   <object Name="CathedraWhiteOpal" Inherits="BaseCathedra">
-    <part Name="Render" DisplayName="{{Y|cathedra with white opal tracery}}" ColorString="&amp;c" DetailColor="Y"/>
-    <part Name="Description" Short="Chiliads of glitz are stuck to the naked folk carved in relief of the aureate seat. They people that gilded hill, their bodies conjugate to each other in every way geometry allows, spilling out from the crest and down the scroll arms that once upheld the quivering limbs of a high priest to lust."/>
-    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 move speed +50 hitpoints +100 carry capacity +3 Ego You gain the ability to fly.  Activated. Cooldown 100. You release a burst of glitter dust around yourself.  You cannot wear equipment on your back. This implant can't be uninstalled."/>
+    <part Name="Render" DisplayName="{{Y|带有白色蛋白石纹饰的讲坛}}" ColorString="&amp;c" DetailColor="Y"/>
+    <part Name="Description" Short="无数的闪光物粘附在金色宝座上雕刻的裸体人物上。他们密布在这镀金的小丘上，身体以几何学允许的所有方式相互连接，从顶峰倾泻而下，沿着曾经支撑着高祭司颤抖肢体的卷曲扶手，流淌出欲望的痕迹。"/>
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移动速度 +50 生命值 +100 负重能力 +3 自我 你获得飞行的能力。 激活。 冷却时间 100。 你释放出一团闪粉围绕自己。 你不能在背部穿戴装备。 此植入物无法卸载。"/>
     <part Name="CyberneticsCathedraWhiteOpal"/>
     <part Name="ItemElements" Elements="glass::8"/>
   </object>
 
   <object Name="CathedraBlackOpal" Inherits="BaseCathedra">
-    <part Name="Render" DisplayName="{{Y|cathedra with black opal tracery}}" ColorString="&amp;c" DetailColor="K"/>
-    <part Name="Description" Short="Across the whole of its wide splat and planar armrests, hairlines partition the chair and its vibrant stones into clusters of galaxies. Their fractal patterns at microscale put them beyond the skillwork of now-fossilized carpenters; they must be the scars of leylines."/>
-    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 move speed +50 hitpoints +100 carry capacity +3 Ego You gain the ability to fly.  Activated. Cooldown 100. You sunder spacetime, teleporting to a random location in Qud.  You cannot wear equipment on your back. This implant can't be uninstalled."/>
+    <part Name="Render" DisplayName="{{Y|带有黑欧泊纹饰的主教座}}" ColorString="&amp;c" DetailColor="K"/>
+    <part Name="Description" Short="在整个宽大的椅背和平面扶手上，细线将椅子及其鲜艳的宝石分隔成星系般的簇群。它们在微观尺度上的分形图案超出了现已化石化的木匠的技艺；这些一定是魔力线的痕迹。"/>
+    <part Name="CyberneticsBaseItem" BehaviorDescription="+100 移动速度 +50 生命值 +100 负重 +3 自我 你获得飞行能力。 激活。冷却时间 100。 你撕裂时空，传送到库德的随机位置。 你不能在背部装备任何物品。此植入物无法卸载。"/>
     <part Name="CyberneticsCathedraBlackOpal"/>
     <part Name="ItemElements" Elements="chance::8"/>
   </object>
@@ -9911,8 +9911,8 @@
     <part Name="Commerce" Value="35"/>
   </object>
   <object Name="TornGraphPaper" Inherits="Book">
-    <part Name="Render" DisplayName="{{W|torn sheet of graph paper}}" ColorString="&amp;y" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" DetailColor="c"/>
-    <part Name="Description" Short="A sheet of loose leaf is divided by coordinate lines in cyan. It seems to have been torn from a binder."/>
+    <part Name="Render" DisplayName="{{W|撕裂的方格纸}}" ColorString="&amp;y" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" DetailColor="c"/>
+    <part Name="Description" Short="一张散页纸被青色的坐标线分割开来。似乎是从一个活页夹中撕下来的。"/>
     <part Name="Book" ID="TornGraphPaper"/>
     <part Name="Commerce" Value="150"/>
     <part Name="UniqueWithAlternative" Alternative="StandaloneMarkovBook"/>
@@ -10016,8 +10016,8 @@
     <part Name="Commerce" Value="300"/>
   </object>
   <object Name="Crime and Punishment" Inherits="Book">
-    <part Name="Render" DisplayName="{{W|Crime and Punishment}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="R"/>
-    <part Name="Description" Short="The coverboard of this ancient and hefty tome is faded to the average hue of ten thousand families of dust and skin oils."/>
+    <part Name="Render" DisplayName="{{W|罪与罚}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;w" DetailColor="R"/>
+    <part Name="Description" Short="这本古老而厚重的书的封面已经褪色成一万种尘埃和皮肤油脂的平均色调。"/>
     <part Name="Book" ID="CrimeandPunishment"/>
     <part Name="SetBooleanStateOnRead" State="SawCrimePunishment"/>
     <part Name="SetBooleanStateOnLook" State="SawCrimePunishment"/>
@@ -10284,8 +10284,8 @@
 
   -->
   <object Name="Energy Cell" Inherits="Trinket">
-    <part Name="Render" DisplayName="[Energy Cell]" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" DetailColor="C"/>
-    <part Name="Physics" Category="Energy Cells"/>
+    <part Name="Render" DisplayName="[能量单元]" RenderString="'" RenderLayer="5" Tile="Items/sw_cell_chem.bmp" DetailColor="C"/>
+    <part Name="Physics" Category="能源电池"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1"/>
     <part Name="EnergyCell" Charge="10000" MaxCharge="10000"/>
     <part Name="Metal"/>
@@ -10452,9 +10452,9 @@
 
   -->
   <object Name="LightSource" Inherits="Item">
-    <part Name="Render" DisplayName="[LightSource]" RenderString="*" RenderLayer="5"/>
+    <part Name="Render" DisplayName="[光源]" RenderString="*" RenderLayer="5"/>
     <part Name="LightSource" Lit="true" Radius="4"/>
-    <part Name="Physics" Category="Light Sources"/>
+    <part Name="Physics" Category="光源"/>
     <tag Name="TinkerCategory" Value="utility"/>
     <tag Name="LightSource" Value="1"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -10569,9 +10569,9 @@
   -->
   
   <object Name="Scrap" Inherits="Item">
-    <part Name="Render" DisplayName="[scrap]" ColorString="&amp;K" RenderString="232" RenderLayer="4" Tile="Assets_Content_Textures_Items_sw_gadget.bmp"/>
-    <part Name="Physics" Weight="2" Category="Scrap"/>
-    <part Name="Description" Short="A piece of scrap was shed or peeled off a machine fossil."/>
+    <part Name="Render" DisplayName="[废料]" ColorString="&amp;K" RenderString="232" RenderLayer="4" Tile="Assets_Content_Textures_Items_sw_gadget.bmp"/>
+    <part Name="Physics" Weight="2" Category="废料"/>
+    <part Name="Description" Short="这是一块从机械化石上脱落或剥落的废料。"/>
     <part Name="Metal"/>
     <part Name="TinkerItem" Bits="0" CanDisassemble="true" CanBuild="false"/>
     <part Name="Commerce" Value="5"/>
@@ -10727,8 +10727,8 @@
 
   -->
   <object Name="Tonic" Inherits="Medication">
-    <part Name="Physics" Category="Tonics" Weight="0"/>
-    <part Name="Description" Short="A glass tube and hype needle deliver a tonic directly to the bloodstream."/>
+    <part Name="Physics" Category="补药" Weight="0"/>
+    <part Name="Description" Short="玻璃管和高敏针头将药剂直接输送至血液中。"/>
     <part Name="Commerce" Value="40"/>
     <part Name="RulesDescription"/>
     <part Name="Tonic"/>
@@ -10743,9 +10743,9 @@
   </object>
 
   <object Name="LoveTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{love|love}} injector"/>
+    <part Name="Render" DisplayName="{{love|爱}}注射器"/>
     <part Name="LoveTonicApplicator"/>
-    <part Name="RulesDescription" Text="You feel unusually amorous for about half a day, during which time you'll fall in love with the first thing you look at. If you inject someone else, they'll fall in love with you and follow you around for 3000-3600 rounds. There's a 1% failure rate for every level higher they are than you."/>
+    <part Name="RulesDescription" Text="你感到异常地充满爱意，持续大约半天的时间，在这段时间里，你会爱上你看到的第一样东西。如果你给其他人注射，他们会爱上你并跟随你3000-3600回合。每比你高一个等级，失败率增加1%。"/>
     <tag Name="Tier" Value="2"/>
     <tag Name="TechTier" Value="4"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Lover's Blossom"/>
@@ -10770,10 +10770,10 @@
   </object>
 
   <object Name="HulkHoneyTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{G|hulk}} {{w|honey}} injector"/>
+    <part Name="Render" DisplayName="{{G|巨兽}}{{w|蜂蜜}}注射器"/>
     <part Name="HulkHoney_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
-    <part Name="RulesDescription" Text="Duration: 41-50 rounds +6 Strength +2 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)" AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +9 Strength +3 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)"/>
+    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +6 力量 +2 每等级临时生命值 -25 移动速度 你不会感到疼痛。你对恐惧免疫。你每回合受到最大生命值 1% 的伤害（此伤害不会 使你的生命值降至 1 以下）" AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +9 Strength +3 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Albino Ape Heart,Ogre Ape Heart"/>
     <part Name="PreservableItem" Result="Congealed Hulk Honey" Number="5"/>
     <tag Name="Gift" Value="*noinherit"/>
@@ -10813,10 +10813,10 @@
   </object>
 
   <object Name="SphynxSaltTonic" Inherits="Tonic">
-    <part Name="Render" DisplayName="{{sphynx|sphynx}} {{Y|salt}} injector"/>
+    <part Name="Render" DisplayName="{{sphynx|斯芬克斯}}{{Y|盐}}注射器"/>
     <part Name="SphynxSalt_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
-    <part Name="RulesDescription" Text="Duration: 18-22 rounds You are immune to confusing attacks. Your activated mental mutations cool down twice as quickly." AltForGenotype="True Kin" GenotypeAlt="Duration: 18-22 rounds You are immune to confusing attacks. You peer into your near future (you may revert to the point in time at which you first used this drug at the end of its duration)."/>
+    <part Name="RulesDescription" Text="持续时间: 18-22 回合 你对混乱攻击免疫。你的激活精神变异冷却速度加快一倍。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 18-22 回合 你对混乱攻击免疫。你可以预见自己不久的将来（在药效结束时，你可以回到首次使用该药物的时间点）。"/>
     <part Name="TinkerItem" Bits="05" Ingredient="Crystal of Eve"/>
     <tag Name="Gift" Value="*noinherit"/>
     <tag Name="Tier" Value="5"/>
@@ -10908,23 +10908,23 @@
     <tag Name="BaseObject" Value="*noinherit"/>
   </object>
   <object Name="Basic Toolkit" Inherits="Tool">
-    <part Name="Render" DisplayName="{{c|basic toolkit}}" Tile="Items/sw_toolbox.bmp" ColorString="&amp;c" DetailColor="C"/>
-    <part Name="Description" Short="An array of tinkering utensils clang against tin: tweezers, a tiny hammer, pliers, inverted pliers, glass marbles, and three wrenches."/>
+    <part Name="Render" DisplayName="{{c|基础工具箱}}" Tile="Items/sw_toolbox.bmp" ColorString="&amp;c" DetailColor="C"/>
+    <part Name="Description" Short="一套修补工具叮当作响地碰撞着锡盒: 镊子、小锤子、钳子、反向钳子、玻璃弹珠和三把扳手。"/>
     <part Name="Commerce" Value="15"/>
     <part Name="Metal"/>
-    <part Name="Toolbox" UnpoweredDisassembleBonus="10" ChargeUse="0" WorksOnEquipper="true" WorksOnCarrier="true" IsTechScannable="false" BehaviorDescription="This item increases the chance of recovering additional bits when you disassemble an artifact."/>
+    <part Name="Toolbox" UnpoweredDisassembleBonus="10" ChargeUse="0" WorksOnEquipper="true" WorksOnCarrier="true" IsTechScannable="false" BehaviorDescription="此物品可增加你在拆解遗物时恢复额外数据碎片的几率。"/>
     <tag Name="Gift" Value="*noinherit"/>
     <tag Name="GiftSkillRestriction" Value="Tinkering_Tinker1"/>
     <part Name="ItemElements" Elements="scholarship::1"/>
   </object>
   <object Name="Advanced Toolkit" Inherits="Tool">
-    <part Name="Render" DisplayName="{{C|advanced toolkit}}" Tile="Items/sw_toolbox_large.bmp" ColorString="&amp;c" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{C|高级工具箱}}" Tile="Items/sw_toolbox_large.bmp" ColorString="&amp;c" DetailColor="C"/>
     <part Name="Physics" Weight="2"/>
     <part Name="Commerce" Value="150"/>
-    <part Name="Description" Short="An array of tinkering utensils clang against carbide: voltmeter, polyjack, soldering knife, ion shield, circuitboard, and three spare vacuum tubes."/>
+    <part Name="Description" Short="一套精密工具碰撞着碳化物: 电压表、多用途扳手、烙铁刀、离子护盾、电路板和三根备用真空管。"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="Metal"/>
-    <part Name="Toolbox" ChargeUse="50" PoweredDisassembleBonus="20" UnpoweredDisassembleBonus="10" PoweredInspectBonus="3" UnpoweredInspectBonus="0" WorksOnEquipper="true" WorksOnCarrier="true" BehaviorDescription="When powered, this item greatly increases the chance of identifying artifacts and recovering additional bits when you disassemble artifacts. When unpowered, it functions as a basic toolkit, mildly increasing the chance of recovering additional bits."/>
+    <part Name="Toolbox" ChargeUse="50" PoweredDisassembleBonus="20" UnpoweredDisassembleBonus="10" PoweredInspectBonus="3" UnpoweredInspectBonus="0" WorksOnEquipper="true" WorksOnCarrier="true" BehaviorDescription="当开启电源时，此物品会大幅提高识别遗物和拆解遗物时回收额外部件的几率。未开启电源时，它作为一个基本工具箱，略微增加回收额外部件的几率。"/>
     <tag Name="Gift" Value="*noinherit"/>
     <tag Name="GiftSkillRestriction" Value="Tinkering_Tinker2"/>
     <tag Name="Tier" Value="4"/>
@@ -11041,25 +11041,25 @@
 	  <tag Name="DynamicObjectsTable:Trinkets"/>
   </object>
   <object Name="Neuro Animator" Inherits="Tool">
-    <part Name="Render" DisplayName="{{nanoneuro|nano-neuro}} {{Y|animator}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp"/>
+    <part Name="Render" DisplayName="{{nanoneuro|纳米神经}}{{Y|激活器}}" ColorString="&amp;r" DetailColor="G" Tile="Items/sw_animator.bmp"/>
     <part Name="AnimateObject"/>
     <tag Name="Tier" Value="7"/>
-    <part Name="Physics" Weight="12" Category="Tools"/>
+    <part Name="Physics" Weight="12" Category="工具"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="Commerce" Value="900"/>
     <part Name="Metal"/>
-    <part Name="Description" Short="Spurred on by their aspiration for a fully autonomous, climate-controlled banana grove, Research and Development at Hegemonic Fruit devised the neuro animator, which knits a nervous system into the inorganic material of inanimate objects. Originally, full sentience was their product diffentiator, but within months cheaper alternates like Spray-a-Brain came to dominate the market."/>
+    <part Name="Description" Short="受到创建一个完全自主、气候控制香蕉园的愿望的驱使，霸权水果公司的研发部门设计了神经激活器，该装置可以将神经系统编织进无生命物体的无机材料中。最初，完全的意识是他们的产品差异化特点，但在几个月内，更便宜的替代品如喷脑液开始主导市场。"/>
     <part Name="Examiner" Complexity="7"/>
     <part Name="TinkerItem" Bits="0067" CanDisassemble="true" CanBuild="true"/>
     <tag Name="Mods" Value="CommonMods,ElectronicsMods"/>
     <part Name="ItemElements" Elements="circuitry::1"/>
   </object>
   <object Name="Droid Scrambler" Inherits="Trinket">
-    <part Name="Render" DisplayName="{{Y|droid scrambler}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp"/>
-    <part Name="Physics" Category="Tools"/>
+    <part Name="Render" DisplayName="{{Y|机器人干扰器}}" ColorString="&amp;C" DetailColor="W" RenderString="004" RenderLayer="5" Tile="Items/sw_scrambler.bmp"/>
+    <part Name="Physics" Category="工具"/>
     <part Name="Commerce" Value="25"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="1" Understanding="0"/>
-    <part Name="Description" Short="A transmitter discoid beeps out staccato noise to create interference across short-range frequency bands."/>
+    <part Name="Description" Short="一个发射圆盘发出断断续续的蜂鸣声，以在短程频段内制造干扰。"/>
     <part Name="TinkerItem" Bits="123" CanDisassemble="true" CanBuild="true"/>
     <part Name="DroidScrambler"/>
     <part Name="Metal"/>
@@ -11072,11 +11072,11 @@
   
   <!-- Recoilers -->
   <object Name="BaseRecoiler" Inherits="Item">
-    <part Name="Render" DisplayName="{{Y|recoiler}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp"/>
-    <part Name="Physics" Category="Tools"/>
+    <part Name="Render" DisplayName="{{Y|回弹器}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp"/>
+    <part Name="Physics" Category="工具"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="2" Difficulty="1"/>
     <part Name="Teleporter" ChargeUse="2500" Sound="Sounds/Interact/sfx_interact_recoiler_activate"/>
-    <part Name="Description" Short="A cassette is cut with hexagonal grooves and steeped in the right amount of magnetic charge to spool a spacetime tether (and generate its characteristic hot gum smell). On top, a recessed button snaps the potential and initiates the recoil."/>
+    <part Name="Description" Short="磁带被切割成六角形凹槽，并浸入适量的磁荷，以缠绕时空绳索（并产生其特有的热胶味）。顶部，一个凹陷的按钮锁定电位并启动回弹。"/>
     <part Name="TinkerItem" Bits="123" CanDisassemble="true" CanBuild="true"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="Metal"/>
@@ -11225,9 +11225,9 @@
   </object>
   <object Name="Metamorphic Polygel" Inherits="Item">
     <part Name="Examiner" Complexity="5" Alternate="UnknownBottle"/>
-    <part Name="Render" DisplayName="{{metamorphic|metamorphic polygel}}" Tile="items/sw_spray.bmp" ColorString="&amp;y" DetailColor="M" RenderString="012" RenderLayer="5"/>
-    <part Name="Physics" Category="Applicators"/>
-    <part Name="Description" Short="Pink slime kneads the inner wall of a glass bottle and starts to take the shape of what's on the other side."/>
+    <part Name="Render" DisplayName="{{metamorphic|变形多聚胶}}" Tile="items/sw_spray.bmp" ColorString="&amp;y" DetailColor="M" RenderString="012" RenderLayer="5"/>
+    <part Name="Physics" Category="应用器"/>
+    <part Name="Description" Short="粉红色的黏液在玻璃瓶的内壁上揉搓，开始呈现出另一边物体的形状。"/>
     <part Name="Commerce" Value="600"/>
     <part Name="Applicator"/>
     <part Name="Polygel"/>
@@ -11257,9 +11257,9 @@
     <stag Name="Scholarly"/>
   </object>
   <object Name="High-Powered Magnet" Inherits="Item">
-    <part Name="Render" DisplayName="high-powered magnet" Tile="items/sw_magnet.bmp" TileColor="&amp;c" DetailColor="W" RenderString="012" ColorString="&amp;w" RenderLayer="5"/>
-    <part Name="Physics" Category="Artifacts" Weight="5"/>
-    <part Name="Description" Short="Iron fragments mottle its cankered surfaces."/>
+    <part Name="Render" DisplayName="高功率磁铁" Tile="items/sw_magnet.bmp" TileColor="&amp;c" DetailColor="W" RenderString="012" ColorString="&amp;w" RenderLayer="5"/>
+    <part Name="Physics" Category="遗物" Weight="5"/>
+    <part Name="Description" Short="铁碎片斑驳其锈蚀的表面"/>
     <part Name="Commerce" Value="150"/>
     <part Name="Applicator"/>
     <part Name="MagnetizedApplicator"/>
@@ -11291,7 +11291,7 @@
 		<stag Name="Precious"/>
   </object>
   <object Name="Jewel-Encrusted Item" Inherits="Item">
-    <part Name="Render" DisplayName="item"/>
+    <part Name="Render" DisplayName="物品"/>
     <part Name="RandomJewelEncrustedItem"/>
     <tag Name="NoSparkingQuest"/>
     <tag Name="Tier" Value="5"/>
@@ -11364,7 +11364,7 @@
 
   <!-- Gemstones -->
   <object Name="Gemstone" Inherits="BaseCurrency">
-    <part Name="Render" DisplayName="rough gemstone" Tile="items/sw_rough_gemstone.bmp" DetailColor="Y" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="粗糙宝石" Tile="items/sw_rough_gemstone.bmp" DetailColor="Y" ColorString="&amp;W"/>
     <part Name="Commerce" Value="100"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone"/>
     <tag Name="Mods" Value="GemstoneMods"/>
@@ -11484,10 +11484,10 @@
 
   <!-- Figurines -->
   <object Name="Random Figurine" Inherits="Item">
-    <part Name="Render" DisplayName="[figurine]" Tile="Items/figurine.png" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
+    <part Name="Render" DisplayName="[雕像]" Tile="Items/figurine.png" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5"/>
     <part Name="Commerce" Value="10"/>
-    <part Name="Description" Short="This figurine worked from *material* intricately depicts *creature.an*:  "/>
-    <part Name="Physics" Category="Trade Goods"/>
+    <part Name="Description" Short="这座由*material*精心雕刻而成的雕像细致地描绘了*creature.an*"/>
+    <part Name="Physics" Category="交易物品"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone"/>
     <tag Name="Tier" Value="1"/>
     <tag Name="DynamicObjectsTable:TradeGoods"/>
@@ -11600,11 +11600,11 @@
 	  <stag Name="Trinket"/>
   </object>
   <object Name="Salt Mill" Inherits="Trinket">
-    <part Name="Render" DisplayName="salt mill" Tile="Items/salt_mill.bmp" RenderString="*" ColorString="&amp;Y" TileColor="&amp;r" DetailColor="Y"/>
+    <part Name="Render" DisplayName="盐磨" Tile="Items/salt_mill.bmp" RenderString="*" ColorString="&amp;Y" TileColor="&amp;r" DetailColor="Y"/>
     <part Name="Commerce" Value="5"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="1"/>
-    <part Name="Description" Short="Carved and stained olive wood houses the steel teeth that grind irregularities from cooking salt."/>
-    <part Name="Physics" Category="Food"/>
+    <part Name="Description" Short="雕刻并染色的橄榄木包裹着钢制齿刃，用于研磨烹饪盐中的不规则颗粒。"/>
+    <part Name="Physics" Category="食物"/>
     <part Name="NoRust"/>
     <tag Name="Tier" Value="1"/>
     <part Name="LiquidVolume" MaxVolume="1" Volume="1" StartVolume="0-1" InitialLiquid="salt-1000"/>
@@ -11674,12 +11674,12 @@
 	  <stag Name="Trinket"/>
   </object>
   <object Name="Timecube" Inherits="Trinket">
-    <part Name="Render" DisplayName="{{K|timecube}}" RenderString="004" RenderLayer="5" Tile="Items/sw_curio.bmp" ColorString="&amp;K" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{K|时间方块}}" RenderString="004" RenderLayer="5" Tile="Items/sw_curio.bmp" ColorString="&amp;K" DetailColor="Y"/>
     <part Name="Physics" Weight="1"/>
     <part Name="Commerce" Value="3000"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Complexity="8"/>
     <part Name="TimeCube"/>
-    <part Name="Description" Short="A cube with a mere four corners. Facet pictographs for sun-up, mid-day, sun-down, and mid-night insist on a new division of days. It's carved with fanciful depictions of broken clocks."/>
+    <part Name="Description" Short="一个仅有四个角的立方体。其面上刻有日出、正午、日落和午夜的象形图案，主张一种新的时间划分方式。它还雕刻着一些奇特的破损钟表图案。"/>
     <part Name="TinkerItem" Bits="007788" CanDisassemble="true" CanBuild="true"/>
     <tag Name="Tier" Value="8"/>
 		<stag Name="Time"/>
@@ -11931,11 +11931,11 @@
 		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 	</object>
 	<object Name="Magnetic Bottle" Inherits="WaterContainer">
-		<part Name="Render" DisplayName="magnetic bottle" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false"/>
-		<part Name="Physics" Weight="3" Category="Artifacts"/>
+		<part Name="Render" DisplayName="磁力瓶" ColorString="&amp;c" TileColor="&amp;y" DetailColor="K" Tile="Items/ms_vial_tech.bmp" RenderLayer="6" Occluding="false"/>
+		<part Name="Physics" Weight="3" Category="遗物"/>
 		<part Name="Commerce" Value="200"/>
-		<part Name="Description" Short="Magnetic glass spike-warps the placid ferrofluids contained within."/>
-		<part Name="RulesDescription" Text="When powered, this container can have neutron flux safely poured into it from any source, and neutron flux may be safely poured from this container into other suitable containers."/>
+		<part Name="Description" Short="磁性玻璃尖刺扭曲了内部平静的铁磁流体。"/>
+		<part Name="RulesDescription" Text="当通电时，这个容器可以从任何来源安全地接收中子流，并且可以从中子流安全地倒入其他合适的容器。"/>
 		<part Name="LiquidVolume" StartVolume="0-1" InitialLiquid="neutronflux-1000" MaxVolume="1" ManualSeal="true" LiquidVisibleWhenSealed="true"/>
 		<part Name="EnergyCellSocket" SlotType="EnergyCell"/>
         <part Name="AIPassiveEnergyCellReload"/>
@@ -12001,10 +12001,10 @@
   <object Name="LuminousInfection" Inherits="FungalInfection">
     <part Name="Physics" Weight="3"/>
     <part Name="Armor" WornOn="*" DV="0" AV="0" Cold="10"/>
-    <part Name="Render" DisplayName="{{C|glowcrust}}" Tile="Items/sw_glowcrust.bmp" ColorString="&amp;C" DetailColor="Y"/>
+    <part Name="Render" DisplayName="{{C|发光地衣}}" Tile="Items/sw_glowcrust.bmp" ColorString="&amp;C" DetailColor="Y"/>
     <part Name="LightSource" Lit="true" Radius="3"/>
     <part Name="LuminousInfection"/>
-    <part Name="Description" Short="Rime-dotted nodules crust over the infected skin, where an algid mist clings. The fungus colony has terraformed the epidermis into what looks like a miniature range of ice-capped peaks."/>
+    <part Name="Description" Short="覆盖着受感染皮肤的结节上点缀着霜花，冰冷的雾气紧紧附着其上。真菌群落已经将表皮改造成了看起来像微型冰帽山峰的地形。"/>
     <part Name="ItemElements" Elements="ice::5"/>
   </object>
   <object Name="PuffInfection" Inherits="FungalInfection">
@@ -12015,9 +12015,9 @@
   </object>
   <object Name="MumblesInfection" Inherits="FungalInfection">
     <part Name="Physics" Weight="2"/>
-    <part Name="Render" DisplayName="{{R|mumbl}}{{M|e m}}{{R|outh}}" Tile="Items/sw_mumblemouth.bmp" ColorString="&amp;R" DetailColor="M"/>
+    <part Name="Render" DisplayName="{{R|喃喃}}{{M|呢}}{{R|语}}" Tile="Items/sw_mumblemouth.bmp" ColorString="&amp;R" DetailColor="M"/>
     <part Name="MumblesInfection" Chance="5"/>
-    <part Name="Description" Short="Dozens of tiny mouths tessellate the infected skin, their moist lips pursing in asynchronicity and panting out prattle. Every so often, the cacophony harmonizes into sensible speech."/>
+    <part Name="Description" Short="数十个微小的嘴镶嵌在感染的皮肤上，湿润的嘴唇异步地紧闭和喘息，发出杂乱的低语。偶尔，这些嘈杂声会和谐地汇集成有意义的话语。"/>
     <part Name="ItemElements" Elements="chance::4"/>
   </object>
   <object Name="WaxInfection" Inherits="FungalInfection">
@@ -12154,11 +12154,11 @@
 
   <!-- Wire -->
   <object Name="Wire Strand" Inherits="Item">
-    <part Name="Render" DisplayName="{{r|wire strand}}" ColorString="&amp;r" RenderString="009" RenderLayer="5" DetailColor="w" Tile="Items/sw_copper_wire.bmp"/>
+    <part Name="Render" DisplayName="{{r|金属丝}}" ColorString="&amp;r" RenderString="009" RenderLayer="5" DetailColor="w" Tile="Items/sw_copper_wire.bmp"/>
     <part Name="Physics" Weight="0"/>
     <part Name="FractionalWeight" Weight="0.04"/>
     <part Name="Wire" Material="metal" NameColor="&amp;r" ColorString1="&amp;r" ColorString2="&amp;R" ColorStringThreshold="25"/>
-    <part Name="Description" Short="A cord extruded from metal ore conducts current when laid together."/>
+    <part Name="Description" Short="从金属矿石中挤出的导线，铺设在一起时可传导电流。"/>
     <part Name="Metal"/>
     <tag Name="SingleDisplay"/>
 	  <tag Name="EquipSound" Value="sfx_equip_material_wire"/>
@@ -12218,9 +12218,9 @@
     <tag Name="VaporObject" Value="MoltenWaxDrop"/>
   </object>  
   <object Name="Bouquet" Inherits="Item">
-    <part Name="Render" DisplayName="bouquet of flowers" ColorString="&amp;r" DetailColor="W" RenderString="." Tile="Items/sw_bouquet_1.bmp"/>
-    <part Name="Description" Short="Hued and life-wet beauty was gathered in twine to make a point. Now dead stems and petals desperately grasp each other."/>
-    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="Savory, but not particularly satisfying."/>
+    <part Name="Render" DisplayName="花束" ColorString="&amp;r" DetailColor="W" RenderString="." Tile="Items/sw_bouquet_1.bmp"/>
+    <part Name="Description" Short="色彩斑斓、生机盎然的美丽花朵被扎成一束，以表达某种意义。如今，枯萎的花茎和花瓣仍在绝望地相互依偎。"/>
+    <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="味道不错，但不是特别令人满意。"/>
     <builder Name="RandomTile" Tiles="Items/sw_bouquet_1.bmp,Items/sw_bouquet_2.bmp,Items/sw_bouquet_3.bmp,Items/sw_bouquet_4.bmp"/>
     <part Name="RandomColors" MainColor="b,B,g,G,r,R,m,M,W,Y,K" DetailColor="b,B,g,G,r,R,m,M,W,Y,K"/>
     <tag Name="NoAutoget" Value="1"/>
@@ -12230,8 +12230,8 @@
     <part Name="ItemElements" Elements="jewels::1"/>
   </object> 
   <object Name="Flowers" Inherits="Item">
-    <part Name="Render" DisplayName="flowers" ColorString="&amp;r" DetailColor="W" RenderString="." Tile="Terrain/sw_flowers_bunched_1.bmp"/>
-    <part Name="Description" Short="They're petal-shaded arks of nectarous secrets."/>
+    <part Name="Render" DisplayName="花朵" ColorString="&amp;r" DetailColor="W" RenderString="." Tile="Terrain/sw_flowers_bunched_1.bmp"/>
+    <part Name="Description" Short="它们是花瓣遮蔽的蜜汁秘密之舟。"/>
     <part Name="Physics" Weight="0"/>
     <part Name="FractionalWeight" Weight="0.02"/>
     <part Name="Food" Satiation="Snack" Thirst="0" Healing="0" Message="Savory, but not particularly satisfying."/>
@@ -12246,8 +12246,8 @@
     <part Name="ItemElements" Elements="jewels::1"/>
   </object>
 	<object Name="Crystal Flowers" Inherits="Flowers">
-		<part Name="Render" DisplayName="crystal flowers" ColorString="&amp;W" DetailColor="W" RenderString="." Tile="Terrain/sw_flowers_crystal_1.bmp"/>
-		<part Name="Description" Short="A candle quartz blossom spreads light across the color spectrum and concentrates it in pails of petals."/>
+		<part Name="Render" DisplayName="水晶花" ColorString="&amp;W" DetailColor="W" RenderString="." Tile="Terrain/sw_flowers_crystal_1.bmp"/>
+		<part Name="Description" Short="烛石花绽放出覆盖整个光谱的光芒，并将其集中在花瓣的桶中。"/>
 		<builder Name="RandomTile" Tiles="Terrain/sw_flowers_crystal_1.bmp,Terrain/sw_flowers_crystal_2.bmp,Terrain/sw_flowers_crystal_3.bmp,Terrain/sw_flowers_crystal_4.bmp"/>
 		<part Name="RandomColors" MainColor="C,W" TileColor="y" DetailColor="C,W"/>
     <part Name="ItemElements" Elements="jewels::1"/>
@@ -12311,11 +12311,11 @@
   </object>
 
   <object Name="Scrapped Waydroid" Inherits="Item">
-    <part Name="Physics" Category="Quest Items"/>
-    <part Name="Render" DisplayName="scrapped waydroid" RenderString="2" ColorString="&amp;y" Tile="Creatures/sw_waydroid.bmp" DetailColor="Y" RenderLayer="5"/>
+    <part Name="Physics" Category="任务物品"/>
+    <part Name="Render" DisplayName="废弃向导机器人" RenderString="2" ColorString="&amp;y" Tile="Creatures/sw_waydroid.bmp" DetailColor="Y" RenderLayer="5"/>
     <part Name="Repair" FixedBlueprint="Dormant Waydroid" Difficulty="1"/>
     <part Name="Commerce" Value="5"/>
-    <part Name="Description" Short="Here lies the metallic husk of a defunct waydroid. It's been stripped of its valuables: copper wire, LED lights, and chrome bearings. It beeps and whirs no longer."/>
+    <part Name="Description" Short="这里躺着一个失效的向导机器人的金属外壳。它的有价值部件已被剥离: 铜线、LED灯和铬轴承。它不再发出哔哔声和嗡嗡声。"/>
 
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_metal"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -12324,10 +12324,10 @@
     <stag Name="Scrap"/>
   </object>
   <object Name="Dormant Waydroid" Inherits="Item">
-    <part Name="Render" DisplayName="{{c|dormant waydroid}}" RenderString="2" ColorString="&amp;c" Tile="Creatures/sw_waydroid.bmp" DetailColor="W" RenderLayer="5"/>
+    <part Name="Render" DisplayName="{{c|休眠向导机器人}}" RenderString="2" ColorString="&amp;c" Tile="Creatures/sw_waydroid.bmp" DetailColor="W" RenderLayer="5"/>
     <part Name="Commerce" Value="30"/>
-    <part Name="Description" Short="Here lies a waydroid in unknowing slumber. Might a willing tinker give it life again?"/>
-		<part Name="Physics" Category="Quest Items"/>
+    <part Name="Description" Short="这里躺着一个不知晓沉睡的向导机器人。或许一位乐于助人的技工能再次赋予它生命？"/>
+		<part Name="Physics" Category="任务物品"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
     <tag Name="NoSparkingQuest"/>
     <stag Name="Scrap"/>
