@@ -105,6 +105,9 @@
   <object Name="DamnedPool" Inherits="Water">
     <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="putrid-500,blood-300,wax-100,ink-100"/>
   </object>
+  <object Name="UnctuousAlgalWaterPool" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="500" InitialLiquid="water-600,algae-300,gel-100" />
+  </object>
   <object Name="BrackishPool" Inherits="Water">
     <part Name="LiquidVolume" MaxVolume="-1" Volume="10" StartVolume="10d10" InitialLiquid="water-900,salt-100"/>
   </object>
@@ -122,6 +125,9 @@
   </object>
   <object Name="FreshWaterPool300" Inherits="Water">
     <part Name="LiquidVolume" MaxVolume="-1" Volume="300" InitialLiquid="water-1000"/>
+  </object>
+  <object Name="FreshWaterPool500" Inherits="Water">
+    <part Name="LiquidVolume" MaxVolume="-1" Volume="500" InitialLiquid="water-1000" />
   </object>
   <object Name="DeepFreshWaterPool" Inherits="Water">
     <part Name="LiquidVolume" MaxVolume="-1" Volume="2000" InitialLiquid="water-1000"/>
@@ -424,7 +430,10 @@
   <object Name="CryoGas80" Inherits="CryoGas">
     <part Name="Gas" Density="80"/>
   </object>
-
+  <object Name="CryoGas1000" Inherits="CryoGas">
+    <part Name="Gas" Density="1000" />
+  </object>
+  
   <object Name="AcidGas" Inherits="Gas">
     <part Name="Render" DisplayName="腐蚀气体"/>
     <part Name="Gas" GasType="AcidGas" ColorString="&amp;g^G"/>

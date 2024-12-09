@@ -90,9 +90,13 @@
   <option ID="OptionShowDetailedWeaponStats" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在武器名称中显示详细的穿透力和伤害" Category="用户界面" Type="Checkbox" Default="No"/>
   <option ID="OptionTakeallCorpses" Requires="OptionShowAdvancedOptions==Yes" DisplayText="使用‘全部拾取’命令时拾取尸体" Category="用户界面" Type="Checkbox" Default="No"/>
   <option ID="OptionDropAll" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用物品栏中的'全部丢弃'交互" Category="用户界面" Type="Checkbox" Default="No"/>
-  <option ID="OptionPressingRightInInventoryEquips" Requires="OptionShowAdvancedOptions==Yes" DisplayText="按左右键分别装备或卸下高亮物品，在管理装备或物品时生效" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionNavigateInventoryAndEquipmentWithPagination" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="使用左右分页而非移动键来浏览物品栏和装备面板" Category="用户界面" Type="Checkbox" Default="No"/>    
+  <option ID="OptionPressingRightInInventoryEquips" Requires="OptionShowAdvancedOptions==Yes,OptionNavigateInventoryAndEquipmentWithPagination==Yes" DisplayText="在装备界面中，分别按下左右键以装备或卸下高亮显示的物品" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  <option ID="OptionExpandHighlightedInventoryAndEquipmentPane" Requires="OptionShowAdvancedOptions==Yes" DisplayText="聚焦时展开装备或库存面板" Category="用户界面" Type="Checkbox" Default="No"/>
+  <option ID="OptionStatusScreenSize" DisplayText="角色面板大小" Category="用户界面" Type="Combo" Values="Standard,Full Height,Full" Default="Standard"/>  
   <option ID="OptionTutorialComplete" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将移动教程移至游戏模式列表末尾" Category="用户界面" Type="Checkbox" Default="No"/>
-
+  <option ID="OptionShowCollectionBadges" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在主菜单显示收藏家印章" Category="用户界面" Type="Checkbox" Default="Yes"/>
+  
   <option ID="OptionShowSidebarAbilities" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="在侧边栏显示能力图标" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
   <option ID="OptionShowCurrentCellPopup" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="在弹出窗口中显示当前单元格的内容" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
   <option ID="OptionShowMonsterHPHearts" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="根据目标剩余生命值显示彩色心跳" Category="传统用户界面" Type="Checkbox" Default="No"/>
@@ -100,7 +104,8 @@
   <option ID="OptionLocationIntseadOfName" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="在侧边栏显示位置而非名称" Category="传统用户界面" Type="Checkbox" Default="No"/>
   <option ID="OptionMapDirectionsToKeypad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="始终将方向映射到数字小键盘" Category="传统用户界面" Type="Checkbox" Default="Yes"/>
   <option ID="OptionMapShiftDirectionToPage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="设置项: 地图 Shift+方向键绑定菜单分页（不适用于数字小键盘绑定）" Category="传统用户界面" Type="Checkbox" Default="No"/>
-  
+  <option ID="OptionPushAZHotkeys" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="始终将 A-Z 快捷键传递给旧版界面" Category="传统用户界面" Type="Checkbox" Default="No"/>
+
 
   <option ID="OptionAutoSip" DisplayText="口渴时自动饮用新鲜水" Category="自动化" Type="Checkbox" Default="Yes"/>
   <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="自动饮水的口渴阈值" Category="自动化" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"/>
@@ -143,9 +148,10 @@
   <option ID="OptionAbilityCooldownWarningAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将技能冷却提示显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
   <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将拾荒物品显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
   <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在日志中记录信息时显示弹出窗口" Category="提示" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionDisplayLedLevelUp" Requires="OptionShowAdvancedOptions==Yes" DisplayText="为同伴显示详细的等级提升信息" Category="提示" Type="Checkbox" Default="No"/>    
-  <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将角色扮演模式下死亡提示的默认选择设置为“查看最终消息”而不是“重新加载检查点”'" Category="提示" Type="Checkbox" Default="Yes"></option>
-  
+  <option ID="OptionDisplayLedLevelUp" Requires="OptionShowAdvancedOptions==Yes" DisplayText="为同伴显示详细的等级提升信息" Category="提示" Type="Checkbox" Default="No"/>
+  <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="死亡提示默认选择：在角色扮演模式下死亡时，默认选择'查看最终信息'而非'重新加载存档点'" Category="提示" Type="Checkbox" Default="Yes"/>
+
+
   <option ID="OptionEnableMods" DisplayText="启用模组（需要重启）" Category="模组" Type="Checkbox" Default="Yes"/>
   <option ID="OptionShowModSelectionNewGame" Requires="OptionEnableMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="选择新游戏启用的模组" Category="模组" Type="Checkbox" Default="No"/>
   <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="允许脚本模组（脚本模组可能包含恶意代码！）" Category="模组" Type="Checkbox" Default="Yes"/>
@@ -178,7 +184,6 @@
   <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用未完成和不受支持的内容（需要重启）" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="允许生物拥有多个缺陷" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用文本输入的颜色菜单" Category="调试" Type="Checkbox" Default="No"/>
-  <option ID="OptionNoPlayerTileFlip" Requires="OptionShowAdvancedOptions==Yes" DisplayText="当不在原始身体时，不翻转玩家图块" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisableAchievements" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用成就" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionShowQuickstart" Requires="OptionShowAdvancedOptions==Yes" DisplayText="创建角色时显示快速开始选项" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisablePlayerbrain" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用玩家控制角色的大脑劫持" Category="调试" Type="Checkbox" Default="No"/>

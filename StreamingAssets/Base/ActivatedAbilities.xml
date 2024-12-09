@@ -355,6 +355,12 @@
 </description>
 		<UITile Tile="Items/sw_buckler2.bmp" Foreground="Y" Detail="r"/>
   </ability>
+  <ability Command="CommandChangeGrip">
+    <description>
+      <p>你可以更改武器的握持方式并将其用作另一种武器类型。</p>
+    </description>
+    <UITile Tile="Abilities/sw_skill_axe.png" Foreground="y" Detail="R" />
+  </ability>
   <ability Command="CommandBeguileCreature">
 		<description>
 			<p>你魅惑一个相邻的生物，使其忠心地为你服务。</p>

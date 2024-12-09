@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<factions>
+<factions LoadPriority="1000">
 	<faction Name="Player" Visible="false" InitialPlayerReputation="1000"/>
 	<faction Name="Inanimate" Visible="false" Old="false" InitialPlayerReputation="0">
 		<feeling About="*" Value="0" />
@@ -292,7 +292,7 @@
     InitialPlayerReputation="0"
     PositiveSound="Sounds/Reputation/sfx_reputation_apes_positive"
     NegativeSound="Sounds/Reputation/sfx_reputation_apes_negative"
-    EmblemTile="creatures/sw_albino_ape2.bmp"
+    EmblemTile="Creatures/albino-ape.png"
     EmblemTileColor="Y"
     EmblemDetailColor="w"
   >
@@ -1015,7 +1015,7 @@
     PositiveSound="Sounds/Reputation/sfx_reputation_mysteriousStrangers_positive"
     NegativeSound="Sounds/Reputation/sfx_reputation_mysteriousStrangers_negative"
     HistoricalSignificance="3"
-		EmblemTile="creatures/caste_flipped_16.bmp"
+		EmblemTile="creatures/caste_16.bmp"
     EmblemTileColor="K"
     EmblemDetailColor="w"
   >
@@ -1286,7 +1286,7 @@
     PositiveSound="Sounds/Reputation/sfx_reputation_mechanimists_positive"
     NegativeSound="Sounds/Reputation/sfx_reputation_mechanimists_negative"
     HistoricalSignificance="3"
-		EmblemTile="creatures/caste_flipped_18.bmp"
+		EmblemTile="creatures/caste_18.bmp"
     EmblemTileColor="y"
     EmblemDetailColor="C"
   >
@@ -1641,7 +1641,7 @@
     PositiveSound="Sounds/Reputation/sfx_reputation_merchantsGuild_positive"
     NegativeSound="Sounds/Reputation/sfx_reputation_merchantsGuild_negative"
     HistoricalSignificance="1"
-		EmblemTile="creatures/caste_flipped_23.bmp"
+		EmblemTile="creatures/caste_23.bmp"
     EmblemTileColor="y"
     EmblemDetailColor="B"
   >

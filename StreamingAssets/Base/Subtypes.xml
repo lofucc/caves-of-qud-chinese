@@ -234,7 +234,7 @@
       </skills>
     </subtype>
 
-    <subtype Name="旅行者" Gear="StartingGear_Pilgrim" Tile="creatures/caste_18.bmp" DetailColor="y">
+    <subtype Name="旅行者" Gear="StartingGear_Pilgrim" Tile="creatures/caste-pilgrim.png" DetailColor="y">
       <stat Name="Willpower" Bonus="2" />
       <skills>
         <skill Name="Discipline" />

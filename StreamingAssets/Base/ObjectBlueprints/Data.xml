@@ -711,6 +711,12 @@
 		<tag Name="Description" Value="随机，通常强大"/>
 		<tag Name="RandomWeight" Value="0"/>
 	</object>
+  <object Name="ProceduralCookingIngredient_ego" Inherits="IngredientMapping">
+    <tag Name="Units" Value="CookingDomainEgo_UnitEgoProjection" />
+    <tag Name="Description" Value="基于Ego" />
+    <tag Name="RandomWeight" Value="0" />
+    <tag Name="RandomHighTierWeight" Value="0" />
+  </object>
 
   <!-- End cooking ingredient mappings -->
   

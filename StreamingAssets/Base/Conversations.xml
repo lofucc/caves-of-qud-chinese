@@ -2113,7 +2113,7 @@ Grit Gate 不是 Joppa，你这自大的铁钉士兵，在这里你仍然是学�
       <choice GotoID="PaxKlanq2">*继续聆听*</choice>
     </node>
     <node ID="PaxKlanq2">
-      <text>我必须请你解开这个谜题，找到Pax Klanq，并说服他们建造攀爬者。提醒Pax他们欠我们的债。
+      <text>我必须请你解开这个谜团，找到帕克斯·克兰克，并说服他们建造登山者。提醒帕克斯他们欠我们的债。
 这‘彩虹’很可能指的是彩虹森林，那里是Klanq的族人聚集的地方，所以我建议你从那里开始。
 </text>
       <choice GotoID="Accept" StartQuest="我猜是帕克斯·克兰克吧？">我将找到Pax Klanq并交付Q Girl的设计。</choice>
@@ -4551,6 +4551,15 @@ Grh.~
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
   </conversation>
+    <!-- Crystalline entities -->
+  <conversation ID="Crystals">
+    <node ID="Start">
+      <text>
+        {{emote||水晶发出明亮的铃声。}}
+      </text>
+      <choice GotoID="End">活着，畅饮。</choice>
+    </node>
+  </conversation>
   <conversation ID="Keh" Inherits="BaseSlynthMayor">
     <node ID="SlynthRequestAccept" Load="Remove" />
     <node ID="SlynthArrived" Load="Remove" />
@@ -6310,7 +6319,7 @@ W-w-w-w-你在……你在说什么……~
       <choice GotoID="End">活着并... 永远不锈。</choice>
     </node>
   </conversation>
-  <conversation ID="YlaHaj">
+  <conversation ID="YlaHaj" SetBooleanState="TalkedToYlaHaj,true">
     <node ID="Start">
       <text>旅者。放下你那些破烂的饰品，我会修理它们。</text>
       <choice ID="GreetChoice" GotoID="Greet">你是谁？</choice>
@@ -7976,12 +7985,12 @@ rrk rrkself.
       <choice GotoID="Start">我还有其他问题要问</choice>
       <choice GotoID="End">活着，畅饮。</choice>
     </node>
-    <node ID="Founder2">
+    <node ID="Founder2" SetBooleanState="MakHatesResheph,true">
       <text>为什么？一生的烦恼。出生时耳畔充斥着刺耳的噪音，令耳朵生疼。我的数千族人被那些被称为羔羊的愚蠢紫杉蜂所屠杀。千年来的炎热、恶臭的太阳和令人作呕的盐水虱作为晚餐。
 这片池塘充满了苦难，小子。我以查瓦之名发誓，如果你像阳光一样灿烂微笑并对甲虫之月吟唱约德尔歌，我会当场吃了你。
 </text>
-      <choice GotoID="Start">...我还有更多问题要问。</choice>
-      <choice GotoID="End">活着，畅饮。</choice>
+      <choice GotoID="Start" SetBooleanState="MakAngryResheph,true">...我还有更多问题要问。</choice>
+      <choice GotoID="End" SetBooleanState="MakAngryResheph,true">活着，畅饮。</choice>
     </node>
     <node ID="Who">
       <text>我是谁？我是Mak。仅此而已。我不会浪费口舌在无关紧要的询问上。</text>
@@ -8116,7 +8125,7 @@ rrk rrkself.
 </text>
       <choice GotoID="Founder2">...</choice>
     </node>
-    <node ID="Founder2">
+    <node ID="Founder2" SetBooleanState="UrsineApprenticeMentioned,true">
       <text>是的，我们曾在那里，虽然不如其他生物活跃。但我们看到了，记忆碎片如同财团的保险箱中的珠宝般摇晃；古老的纪元数据盘碎片，故事和地点的片段。逃离亲族，虱子的盛宴，可怕的无聊。但命运的捉弄让我们穿越了历史的脚步。有一位机械发言人，她的熊科学徒和他的小植物，还有播种者带着四个胖乎乎的小崽子，最后，是多眼者。我们亲爱的大轮。那么多。</text>
       <choice GotoID="Founder3">...</choice>
     </node>

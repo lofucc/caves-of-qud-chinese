@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<mutations>
+<mutations LoadPriority="1000">
   <category Name="Morphotypes" DisplayName="{{W|变异形态}}" Foreground="r" Detail="R" ExcludeFromPool="true">
     <mutation Name="Chimera" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp" />
     <mutation Name="Esper" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp" />
@@ -26,7 +26,7 @@
     <mutation Name="Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="the darksighted" Tile="Mutations/night_vision_mutation.bmp" />
     <mutation Name="Phasing" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="those who phase" Tile="Mutations/phasing.bmp" />
     <mutation Name="Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="the green-skinned" Tile="Mutations/photosynthetic_skin.bmp" />
-    <mutation Name="Quills" Cost="4" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp" />
+    <mutation Name="Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp" />
     <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp" />
     <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp" />
     <mutation Name="Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="slime spitters" Tile="Mutations/slime_glands.bmp" />
@@ -68,7 +68,7 @@
       </leveltext>
     </mutation>
     <mutation Name="Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="riddlers" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp" />
-    <mutation Name="Cryokinesis" Cost="5" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
+    <mutation Name="Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
     <mutation Name="Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
     <mutation Name="Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="those who dominate the wills of others" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp" />
     <mutation Name="Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="those who project their egos onto the physical realm" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
@@ -79,8 +79,8 @@
     <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
     <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
     <mutation Name="Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="the prescient" BiomeEpithet="future site" Tile="Mutations/precognition.bmp" />
-    <mutation Name="Psychometry" Cost="4" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp" />
-    <mutation Name="Pyrokinesis" Cost="5" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="pyromancers" BiomeEpithet="flame meadow" Tile="Mutations/pyrokinesis.bmp">
+    <mutation Name="Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp" />
+    <mutation Name="Pyrokinesis" Cost="4" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="pyromancers" BiomeEpithet="flame meadow" Tile="Mutations/pyrokinesis.bmp">
       <description>
         <p>You heat a nearby area with your mind.</p>
       </description>
@@ -96,7 +96,7 @@
     </mutation>
     <mutation Name="Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="the psychically sensitive" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
     <mutation Name="Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="spacefolders" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
-    <mutation Name="Stunning Force" Cost="4" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
+    <mutation Name="Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
     <mutation Name="Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="mind sunderers" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
     <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
     <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />

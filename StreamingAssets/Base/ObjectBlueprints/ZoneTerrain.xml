@@ -49,6 +49,8 @@
     <tag Name="BodyType" Value="Tree"/>
     <tag Name="PrimaryLimbType" Value="Arm"/>
     <tag Name="BaseObject" Value="*noinherit"/>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree" />
   </object>
   <object Name="SolidTree" Inherits="Tree">
     <part Name="Render" RenderString="230" ColorString="&amp;w" TileColor="&amp;g" DetailColor="w" Occluding="true" RenderLayer="7"/>
@@ -497,7 +499,8 @@
 
   <!-- Unique -->
   <object Name="Yempuris" Inherits="BasePlant">
-    <part Name="Render" RenderIfDark="true" Visible="true" DisplayName="耶姆普里斯菲" RenderLayer="10" RenderString="228" ColorString="&amp;g" DetailColor="m" Tile="creatures/sw_yempuris.bmp"/>
+    <part Name="Render" RenderIfDark="true" Visible="true" DisplayName="耶姆普里斯菲" RenderLayer="10" RenderString="228" ColorString="&amp;g" DetailColor="m" Tile="Terrain/yempuris-phi-1.png" />
+        <builder Name="RandomTile" Tiles="Terrain/yempuris-phi-1.png,Terrain/yempuris-phi-2.png,Terrain/yempuris-phi-3.png,Terrain/yempuris-phi-4.png" />
     <part Name="Brain" Hostile="false" Wanders="false" Mobile="false"/>
     <stat Name="Hitpoints" Value="50"/>
     <stat Name="HeatResistance" Value="25"/>
@@ -922,6 +925,10 @@
     <part Name="Physics" Solid="false" Takeable="false" Weight="-1" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="99999" VaporTemperature="9999"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
+  <object Name="VestibuleFloor" Inherits="ArenaFloor">
+    <part Name="Render" ColorString="&amp;K" />    
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
   <object Name="DirtFloor" Inherits="Floor">
     <part Name="Render" DisplayName="压实的泥土地面" RenderString="250" ColorString="&amp;w" DetailColor="w" RenderLayer="0"/>
     <part Name="RandomTileOnMove" Tiles="Terrain/sw_ground_dots1.png,Terrain/sw_ground_dots2.png,Terrain/sw_ground_dots3.png,Terrain/sw_ground_dots4.png"/>
@@ -948,16 +955,19 @@
   <object Name="WhiteTile" Inherits="DirtPath">
     <part Name="Render" DisplayName="白色瓷砖" RenderString="250" ColorString="&amp;y" DetailColor="Y" RenderLayer="0"/>
     <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoTwiddle" />
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="GreenTile" Inherits="DirtPath">
     <part Name="Render" DisplayName="绿瓷砖" RenderString="250" ColorString="&amp;c" DetailColor="C" RenderLayer="0"/>
     <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoTwiddle" />
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="RedTile" Inherits="DirtPath">
     <part Name="Render" DisplayName="红砖" RenderString="177" ColorString="&amp;b^c" DetailColor="C" RenderLayer="0"/>
     <removepart Name="RandomTileOnMove"/>
+    <tag Name="NoTwiddle" />
     <tag Name="NoSparkingQuest"/>
   </object>
   <object Name="FungalTrailBrick" Inherits="Floor">
@@ -1012,12 +1022,12 @@
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
   <object Name="MarbleWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="大理石步道" ColorString="&amp;c" TileColor="&amp;K" DetailColor="C"/>
+    <part Name="Render" DisplayName="大理石步道" ColorString="&amp;K" TileColor="&amp;K" DetailColor="C"/>
     <part Name="Description" Short="大理石矩形铺成的小径。"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
   <object Name="BlackMarbleWalkway" Inherits="Walkway">
-    <part Name="Render" DisplayName="黑色大理石步道" ColorString="&amp;c" TileColor="&amp;K" DetailColor="y"/>
+    <part Name="Render" DisplayName="黑色大理石步道" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y"/>
     <part Name="Description" Short="黑色大理石矩形拼接成路径。"/>
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
   </object>
@@ -1037,8 +1047,18 @@
     <part Name="Render" DisplayName="[地面]" RenderString="." RenderLayer="0" RenderIfDark="true" ColorString="&amp;C^k" DetailColor="k" Tile="assets_content_textures_tiles_tile-dirt.png"/>
     <part Name="Physics" Weight="50" Takeable="false" Solid="false"/>
     <intproperty Name="Bridge" Value="1"/>
+    <tag Name="NoTwiddle" />
     <tag Name="NoSparkingQuest"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+    <object Name="BlueMarbleFloor" Inherits="MarbleFloor">
+    <part Name="Render" ColorString="&amp;B^k" />
+  </object>
+  <object Name="GoldMarbleFloor" Inherits="MarbleFloor">
+    <part Name="Render" ColorString="&amp;W^k" />
+  </object>
+  <object Name="GreyMarbleFloor" Inherits="MarbleFloor">
+    <part Name="Render" ColorString="&amp;y^k" />
   </object>
   <object Name="BrineBridge" Inherits="Furniture">
     <part Name="Render" DisplayName="桥" RenderString="#" RenderLayer="3" ColorString="&amp;w" Tile="tiles/sw_floor_brick1.bmp" DetailColor="W" Occluding="false" RenderIfDark="true"/>

@@ -1161,6 +1161,9 @@
   <object Name="StoneHalfWall" Inherits="HalfWall">
     <part Name="Render" ColorString="&amp;K^k" DetailColor="y"/>
   </object>
+    <object Name="MoverHalfWall" Inherits="HalfWall">
+    <part Name="Render" ColorString="&amp;w^k" DetailColor="W" />
+  </object>
   <object Name="LowSandstoneWall" Inherits="Sandstone">
     <part Name="Render" Occluding="false"/>
     <part Name="Physics" Solid="false"/>

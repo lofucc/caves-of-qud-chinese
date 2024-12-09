@@ -53,6 +53,7 @@
   <navcategory ID="Chargen">
     <layer ID="UI"/>
     <layer ID="UINav"/>
+    <layer ID="CategoryNav" />
     <layer ID="Menus"/>
     <layer ID="Chargen"/>
   </navcategory>

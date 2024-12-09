@@ -22,7 +22,7 @@
 
   <mod Part="ModSerrated" Tables="LongBladeMods,AxeMods" Rarity="R" TinkerTier="3" TinkerDisplayName="锯齿" Value="1.3" Description="锯齿: 此武器有3%几率造成对手肢体残缺。" TinkerCategory="melee weapons" />
 
-  <mod Part="ModGigantic" Tables="CommonMods,PotteryMods,EnergyCellMods,GrenadeMods,NuggetMods,GemstoneMods,TonicMods" Rarity="R2" TinkerDisplayName="巨型" TinkerAllowed="false" CanAutoTinker="false" BonusAllowed="false" Value="1.5" TinkerCategory="utility" />
+  <mod Part="ModGigantic" Tables="CommonMods,PotteryMods，ShevaPotteryMods,EnergyCellMods,GrenadeMods,NuggetMods,GemstoneMods,TonicMods" Rarity="R2" TinkerDisplayName="巨型" TinkerAllowed="false" CanAutoTinker="false" BonusAllowed="false" Value="1.5" TinkerCategory="utility" />
 
   <mod Part="ModElectrified" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="带电的" Value="1.2" TinkerCategory="melee weapons" />
   <mod Part="ModFreezing" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" NoSparkingQuest="true" TinkerDisplayName="冰冻的" Value="1.2" TinkerCategory="melee weapons" />
@@ -70,7 +70,7 @@
 
   <mod Part="ModIlluminated" Tables="BookMods" Rarity="U" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="装有插图的" Value="1.3" TinkerCategory="utility" Description="插图: 本书配有装饰性旁注和插图。它的价值增加了​​ 30%。" />
 
-  <mod Part="ModExtradimensional" Tables="CommonMods,PotteryMods" Rarity="R3" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="异次元的" Value="3" TinkerCategory="utility" Description="异次元: 此物品最近实体化，继承了其原生维度的一些特性。" />
+  <mod Part="ModExtradimensional" Tables="CommonMods,PotteryMods,ShevaPotteryMods" Rarity="R3" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="异次元的" Value="3" TinkerCategory="utility" Description="异次元: 此物品最近实体化，继承了其原生维度的一些特性。" />
 
   <mod Part="ModAirfoil" Tables="GrenadeMods,ThrownWeaponMods" Rarity="C" TinkerTier="1" TinkerDisplayName="翼型" Value="1.1" TinkerCategory="grenades" />
   <mod Part="ModPhaseConjugate" Tables="GrenadeMods" Rarity="R" NativeTier="0" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="相位共轭" Value="1.5" TinkerCategory="grenades" />

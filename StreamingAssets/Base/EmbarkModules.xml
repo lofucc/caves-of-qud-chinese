@@ -22,7 +22,7 @@
       </mode>
 
 			<mode ID="Classic" Title="经典">
-				<icon Tile="Creatures/class_gunslinger.bmp" Foreground="y" Detail="K"></icon>
+				<icon Tile="UI/sw_classic_mode.bmp" Foreground="y" Detail="K"></icon>
 				<description>
 					永久死亡: 死后失去你的人物
 				</description>
@@ -42,7 +42,7 @@
 				<icon Tile="UI/sw_wander_mode.bmp" Foreground="g" Detail="C"></icon>
 				<description>
 					{{c|&#249;}} 大多数生物一开始对你是中立的。
-					{{c|&#249;}} 击杀不获得经验值。
+          {{c|&#249;}} 击杀不获得经验值。
 					{{c|&#249;}} 发现地点以及执行水仪式时获得更多经验值。
 					{{c|&#249;}} 抵达定居点后存档。
 				</description>
@@ -69,7 +69,7 @@
 
     <types>
       <type ID="Pregen" Title="预设">
-        <icon Tile="Creatures/sw_marsh_taur.bmp" Foreground="W" Detail="w"></icon>
+        <icon Tile="UI/sw_preset.bmp" Foreground="W" Detail="w"></icon>
         <description>
           从几个预设角色中进行选择。一旦你掌握了游戏，你可以再来定制它们。
          </description>
@@ -150,7 +150,7 @@
         <code>H4sIANEd6GYC/82V0WrbMBSG7/MURuzSMUkaRhnkInXLNrpB1oSuMHoh2wdHTJGMdLRhim92N3azF9kD9GZPs9E+RiWnTeNaCYFeNAKDrfOdo9+/f/BVJ7CL5HQB30BpJgV5E5BB1IsGvUE0HJJwCSSG8WyN6Fui91BcyMxw0Hb/S73h1tXqbg2ZlQW47ouzD1E8p4qmCOrIjdbRJ5O56y0IiRb7WDeEwVhrWCS87MZT21CEwflSxOhRYxjEhqNRMBJgUFEeBhOTcJaeQjmTX0GMhOH8XuxKUUaRWi1NnXXlFW6X2ZR4bOe0ZD45rB770OYmz5SB4JQJH9dyuYFUq6cqfLbZU5PsudcNhTtbfd/l5t78+Hn79/rf9a//f36TzsvaPUZULDEIeo8dfypyZ9MnkgnUE6PSOdWQeU9ffh1UIHKcW6I/CP3MOGecYWmR1xuImTT5XIDWW5j3AoFzloNI3Sv3N2CfGeeF/A7KMgcbmJNc2uqwVaw8TtBiWoBAy3cPDr31M1hQJpjILdPzEIl1cFw4OYcvG9m4TEAJQJbuc2ZbKncOLXcmdz3BIBo4pGjfq/lfW1/+fNfdj4qc7JiqhGXwjorsSNrMknBLpzR1dPpbmHOqGK0p4mZq4kWr1u7lc8JU3112qjsdaZLAMwgAAA==</code>
         <description>
 &amp;c&#249;&amp;y 近战战士和极限战士
-&amp;c&#249;&amp;y 初始拥有硬质合金手骨
+&amp;c&#249;&amp;y 从硬质合金手骨开始
 &amp;c&#249;&amp;y {{W|生存能力强}} 开始构建
         </description>
       </pregen>

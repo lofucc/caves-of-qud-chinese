@@ -57,6 +57,7 @@
     <part Name="Render" DisplayName="[安装的家具]"/>
     <part Name="Physics" Takeable="false"/>
     <part Name="MountedFurniture"/>
+    <stat Name="Hitpoints" Value="300" />
     <part Name="MissileCover" Percentage="10"/>
     <tag Name="OverlayColor" Value="&amp;k^k"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -741,6 +742,7 @@
 恋人横跨浮雕，山羊在檐口咀嚼铜制反刍物。
 "/>
     <part Name="Door" Locked="true" ClosedTile="Tiles2/sw_lifegate_w.bmp" OpenTile="Tiles2/sw_tombgate_w_open.bmp"/>
+    <part Name="LifeGate" />
     <stat Name="Hitpoints" sValue="10000"/>
     <xtagGrammar iArticle="the"/>
     <tag Name="OpenSound" Value="sfx_ancientDoor_open"/>
@@ -754,6 +756,7 @@
 恋人横跨浮雕，山羊在檐口咀嚼铜制反刍物。
 "/>
     <part Name="Door" Locked="true" ClosedTile="Tiles2/sw_lifegate_e.bmp" OpenTile="Tiles2/sw_tombgate_e_open.bmp"/>
+    <part Name="LifeGate" />
     <stat Name="Hitpoints" sValue="10000"/>
     <xtagGrammar iArticle="the"/>
     <tag Name="OpenSound" Value="sfx_ancientDoor_open"/>
@@ -4328,8 +4331,7 @@
     <part Name="Render" DisplayName="火炬壁灯" RenderString="249" ColorString="&amp;R" DetailColor="w" Tile="tiles/sw_torch_nofire.png" RenderLayer="6" Occluding="false"/>
 		<part Name="Description" Short="一盏由木头和铁制成的壁灯悬挂在墙上，未点燃。
 "/>
-    <part Name="Physics" Weight="13"/>
-    <part Name="LightSource" Lit="true" Radius="6"/>    
+    <part Name="Physics" Weight="13" />
     <part Name="Metal"/>
   </object>
   <object Name="Techlight1" Inherits="MountedFurniture">
@@ -5663,13 +5665,12 @@
 		<stag Name="Historical"/>
   </object>
   <object Name="EaterStatueFlipped" Inherits="EaterStatue">
-    <builder Name="RandomTile" Tiles="Creatures/sw_eater_1_flipped.bmp,Creatures/sw_eater_2_flipped.bmp,Creatures/sw_eater_3_flipped.bmp,Creatures/sw_eater_4_flipped.bmp,Creatures/sw_eater_5_flipped.bmp,Creatures/sw_eater_6_flipped.bmp,Creatures/sw_eater_7_flipped.bmp,Creatures/sw_eater_8_flipped.bmp,Creatures/sw_eater_9_flipped.bmp,Creatures/sw_eater_10_flipped.bmp,Creatures/sw_eater_11_flipped.bmp,Creatures/sw_eater_12_flipped.bmp,Creatures/sw_eater_13_flipped.bmp,Creatures/sw_eater_14_flipped.bmp,Creatures/sw_eater_15_flipped.bmp,Creatures/sw_eater_16_flipped.bmp,Creatures/sw_eater_17_flipped.bmp,Creatures/sw_eater_18_flipped.bmp,Creatures/sw_eater_19_flipped.bmp,Creatures/sw_eater_20_flipped.bmp,Creatures/sw_eater_21_flipped.bmp,Creatures/sw_eater_22_flipped.bmp,Creatures/sw_eater_23_flipped.bmp,Creatures/sw_eater_24_flipped.bmp,Creatures/sw_eater_25_flipped.bmp,Creatures/sw_eater_26_flipped.bmp,Creatures/sw_eater_27_flipped.bmp,Creatures/sw_eater_28_flipped.bmp,Creatures/sw_eater_ruined_1_flipped.bmp,Creatures/sw_eater_ruined_2_flipped.bmp,Creatures/sw_eater_ruined_3_flipped.bmp,Creatures/sw_eater_ruined_4_flipped.bmp,Creatures/sw_eater_ruined_5_flipped.bmp,Creatures/sw_eater_ruined_1_flipped.bmp,Creatures/sw_eater_ruined_2_flipped.bmp,Creatures/sw_eater_ruined_3_flipped.bmp,Creatures/sw_eater_ruined_4_flipped.bmp,Creatures/sw_eater_ruined_5_flipped.bmp"/>
-		<stag Name="Historical"/>
+		<part Name="Render" HFlip="true" />
+    <stag Name="Historical"/>
   </object>
-  <object Name="EaterStatue Gold" Inherits="EaterStatue">
-    <part Name="Render" ColorString="&amp;W" DetailColor="w"/>
-    <builder Name="RandomTile" Tiles="Creatures/sw_eater_1.bmp,Creatures/sw_eater_2.bmp,Creatures/sw_eater_3.bmp,Creatures/sw_eater_4.bmp,Creatures/sw_eater_5.bmp,Creatures/sw_eater_6.bmp,Creatures/sw_eater_7.bmp,Creatures/sw_eater_8.bmp,Creatures/sw_eater_9.bmp,Creatures/sw_eater_10.bmp,Creatures/sw_eater_11.bmp,Creatures/sw_eater_12.bmp,Creatures/sw_eater_13.bmp,Creatures/sw_eater_14.bmp,Creatures/sw_eater_15.bmp,Creatures/sw_eater_16.bmp,Creatures/sw_eater_17.bmp,Creatures/sw_eater_18.bmp,Creatures/sw_eater_19.bmp,Creatures/sw_eater_20.bmp,Creatures/sw_eater_21.bmp,Creatures/sw_eater_22.bmp,Creatures/sw_eater_23.bmp,Creatures/sw_eater_24.bmp,Creatures/sw_eater_25.bmp,Creatures/sw_eater_26.bmp,Creatures/sw_eater_27.bmp,Creatures/sw_eater_28.bmp,Creatures/sw_eater_ruined_1.bmp,Creatures/sw_eater_ruined_2.bmp,Creatures/sw_eater_ruined_3.bmp,Creatures/sw_eater_ruined_4.bmp,Creatures/sw_eater_ruined_5.bmp,Creatures/sw_eater_ruined_1.bmp,Creatures/sw_eater_ruined_2.bmp,Creatures/sw_eater_ruined_3.bmp,Creatures/sw_eater_ruined_4.bmp,Creatures/sw_eater_ruined_5.bmp,Creatures/sw_eater_ruined_1.bmp,Creatures/sw_eater_ruined_2.bmp,Creatures/sw_eater_ruined_3.bmp,Creatures/sw_eater_ruined_4.bmp,Creatures/sw_eater_ruined_5.bmp"/>
-		<stag Name="Historical"/>
+  <object Name="EaterStatueFlipped Gold" Inherits="EaterStatue Gold">
+    <part Name="Render" HFlip="true" />
+		<stag Name="Historical" />
   </object>
   <object Name="EaterStatueFlipped Gold" Inherits="EaterStatueFlipped">
     <part Name="Render" ColorString="&amp;W" DetailColor="w"/>
@@ -5844,7 +5845,6 @@
 		<part Name="Shrine"/>
 		<part Name="RandomSubterraneanColors" DetailColor="r,c,w,Y"/>
 		<part Name="SmartuseTwiddles"/>
-		<part Name="Description" Short="无"/>
 		<removepart Name="MissileCover"/>
 		<tag Name="NoSparkingQuest"/>
 		<tag Name="VaporObject" Value="LavaPuddle"/>
@@ -5966,9 +5966,8 @@
 		<stag Name="Historical"/>
   </object>
   <object Name="Eater Hologram Flipped" Inherits="Eater Hologram">
-    <part Name="Render" Tile="Creatures/sw_eater_1_flipped.bmp"/>
-    <builder Name="RandomTile" Tiles="Creatures/sw_eater_1_flipped.bmp,Creatures/sw_eater_2_flipped.bmp,Creatures/sw_eater_3_flipped.bmp,Creatures/sw_eater_4_flipped.bmp,Creatures/sw_eater_5_flipped.bmp,Creatures/sw_eater_6_flipped.bmp,Creatures/sw_eater_7_flipped.bmp,Creatures/sw_eater_8_flipped.bmp,Creatures/sw_eater_9_flipped.bmp,Creatures/sw_eater_10_flipped.bmp,Creatures/sw_eater_11_flipped.bmp,Creatures/sw_eater_12_flipped.bmp,Creatures/sw_eater_13_flipped.bmp,Creatures/sw_eater_14_flipped.bmp,Creatures/sw_eater_15_flipped.bmp,Creatures/sw_eater_16_flipped.bmp,Creatures/sw_eater_17_flipped.bmp,Creatures/sw_eater_18_flipped.bmp,Creatures/sw_eater_19_flipped.bmp,Creatures/sw_eater_20_flipped.bmp,Creatures/sw_eater_21_flipped.bmp,Creatures/sw_eater_22_flipped.bmp,Creatures/sw_eater_23_flipped.bmp,Creatures/sw_eater_24_flipped.bmp,Creatures/sw_eater_25_flipped.bmp,Creatures/sw_eater_26_flipped.bmp,Creatures/sw_eater_27_flipped.bmp,Creatures/sw_eater_28_flipped.bmp"/>
-		<stag Name="Historical"/>
+    <part Name="Render" HFlip="true" />
+		<stag Name="Historical" />
   </object>
   <object Name="Eater Hologram Dynamic Flip" Inherits="Eater Hologram">
     <part Name="FlipTileByAdjacentWall"/>
@@ -6561,7 +6560,7 @@
 一个模糊的形状因此悬浮在无星的巨型黑色岩石卧榻之上。
 艺术家可能意图以此唤起黑暗平原上的闪电风暴或河流之上的百合花: 某种代表明亮而气体般游荡的意识漫游在静止躯体之上的东西。
 "/>
-    <part Name="Enclosing" OpenRenderString="Ñ" ClosedRenderString="Â" OpenTile="Items/sw_sultan_sarcophagus_open_w.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_w.bmp" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+    <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="Ñ" ClosedRenderString="Â" OpenTile="Items/sw_sultan_sarcophagus_open_w.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_w.bmp" OpenColor="&amp;K" ClosedColor="&amp;C"/>
     <part Name="DoubleEnclosing" Direction="E"/>
     <part Name="Physics" Weight="2000"/>
     <part Name="NoDamage"/>
@@ -6650,7 +6649,7 @@
 
 	<!-- Golem quest -->
 	<object Name="Golem Mound" Inherits="MountedFurniture">
-		<part Name="Render" DisplayName="废料与黏土堆" RenderString="234" Tile="Creatures/sw_golem_mound.bmp" ColorString="&amp;y" DetailColor="w"/>
+		<part Name="Render" DisplayName="废料与黏土堆" RenderString="234" Tile="Creatures/sw_golem_mound.png" ColorString="&amp;y" DetailColor="w"/>
 		<part Name="Description" Short="湿润的黏土粘附在轮子和焊接板上。
 上面点缀着二极管、电路、叶片泵和磁铁。
 "/>
