@@ -40,6 +40,7 @@ namespace Lofucc.ChineseTranslation.XML.EmbarkModules
       foreach (var type in __instance.module.GameTypes.Values)
       {
         Dict.Translate(ref type.Title, "XML/Embark/Module/Chartype/Title");
+        Dict.Translate(ref type.Description, "XML/Embark/Module/Chartype/Description");
       }
     }
   }
