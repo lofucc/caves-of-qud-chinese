@@ -44,5 +44,18 @@ namespace Lofucc.ChineseTranslation.XML.EmbarkModules
       }
     }
   }
+
+  [HarmonyPatch(typeof(QudPregenModuleWindow), "BeforeShow")]
+  class QudPregenModuleWindow__BeforeShow
+  {
+    static void Prefix(QudPregenModuleWindow __instance)
+    {
+      foreach (var pregen in __instance.module.pregens.Values)
+      {
+        Dict.Translate(ref pregen.Name, "XML/Embark/Module/Pregen/Name");
+        Dict.Translate(ref pregen.Description, "XML/Embark/Module/Pregen/Description");
+      }
+    }
+  }
 }
 
