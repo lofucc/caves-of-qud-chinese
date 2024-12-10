@@ -1,3 +1,4 @@
+using System.Linq;
 using XRL;
 using XRL.Collections;
 
@@ -24,6 +25,15 @@ namespace Lofucc.ChineseTranslation
       }
 
       return null;
+    }
+
+    /// <summary>
+    /// 获取回溯信息
+    /// </summary>
+    /// <returns>回溯信息数组</returns>
+    public static string[] GetBackTrace()
+    {
+      return new System.Diagnostics.StackTrace(3).GetFrames().Select(frame => $"{frame.GetMethod().DeclaringType}.{frame.GetMethod().Name}").ToArray();
     }
   }
 }
