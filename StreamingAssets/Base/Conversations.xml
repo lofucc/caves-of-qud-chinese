@@ -195,7 +195,7 @@
 </text>
       <choice Target="InTheHole">是的，我把它扔进洞里了。</choice>
       <choice Target="LostIt">不，我弄丢了。</choice>
-      <choice Target="LosingIt">我把它给了阿尔吉夫。或者可能是卖掉了。</choice>
+      <choice Target="LosingIt">我把它给了某人。或者卖掉了它，也许。</choice>
     </node>
     <node ID="InTheHole">
       <text>好吧……卡萨菲斯肯斯之光仍在你那嘶嘶作响的边缘闪烁。
@@ -3489,6 +3489,7 @@ Qud 不是 =villageZeroName=。你需要证明自己的价值，以免浪费我�
       <text>你完成任务了吗？</text>
       <choice GotoID="RepairedWaydroid" IfFinishedQuestStep="不仅仅是一种愿意的精神~修复 Waydroid">是。</choice>
       <choice GotoID="TradeEntrance">还不到时候。但我需要进城进行贸易。</choice>
+      <choice GotoID="End">...</choice>
     </node>
     <node ID="Start" IfFinishedQuest="不仅仅是一种愿意的精神">
       <text>欢迎，行者。</text>

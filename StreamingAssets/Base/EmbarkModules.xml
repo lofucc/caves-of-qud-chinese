@@ -432,7 +432,7 @@
         <grid Position="42" Tile="Terrain/tile_jungle2.bmp" Foreground="g" Detail="G" Background="k"></grid>
       </location>
 
-      <location ID="JoppaTutorial" Name="沉没的卡瓦兰瑟莱" Location="GlobalLocation:JoppaWorld.11.24.1.1.11@10,13" Set="Tutorial" ExcludeFromDaily="Yes">
+      <location ID="JoppaTutorial" Name="沉没的商队旅馆" Location="GlobalLocation:JoppaWorld.11.24.1.1.11@10,13" Set="Tutorial" ExcludeFromDaily="Yes">
         <description>
           你到达了卡德的郊区。
         </description>

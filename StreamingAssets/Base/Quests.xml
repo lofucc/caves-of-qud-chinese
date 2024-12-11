@@ -5,7 +5,7 @@
          Hagiograph="在 =month= 月 =year= 年，=name= 走在铬合金拱门下，击退了成群的吉尔什灵，并治愈了枯萎的庄稼。"
          HagiographCategory="DoesSomethingRad"
          Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
-         
+
     <step Name="前往红岩" XP="50">
       <text>从约帕以北经过两个帕拉桑到达红岩。</text>
     </step>
@@ -99,7 +99,7 @@
       <text>找到巴拉瑟姆矿飞地 within Grit Gate</text>
     </step>
     <step Name="与巴拉瑟鲁姆人交谈" XP="500">
-      <text>Ask the Barathrumites about the strange signal.</text>
+      <text>向巴拉瑟鲁姆派询问这个奇怪信号的情况。</text>
     </step>
   </quest>
   <quest Name="不仅仅是一种愿意的精神" Level="10" BonusAtLevel="12,18" System="WillingSpiritSystem" Factions="Barathrumites" Reputation="100"

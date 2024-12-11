@@ -7846,7 +7846,7 @@
   </object>
   <object Name="Chrome Stilt" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{c|铬合金支架}}" Tile="Creatures/natural-weapon-manipulator.bmp" ColorString="&amp;c"/>
-    <part Name="MeleeWeapon" PenBonus="8" BaseDamage="2d6+1" Skill="LongBlades" Stat="Strength" Slot="Foot"/>
+    <part Name="MeleeWeapon" HitBonus="8" BaseDamage="2d6+1" Skill="LongBlades" Stat="Strength" Slot="Foot"/>
     <part Name="Metal"/>
   </object>
 	<object Name="Dream Wren" Inherits="BaseBird">

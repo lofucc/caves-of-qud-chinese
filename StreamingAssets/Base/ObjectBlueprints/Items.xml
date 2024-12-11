@@ -6938,7 +6938,7 @@
     <part Name="Stopsvaalinn"/>
     <part Name="Examiner" Complexity="1" Understanding="0"/>
     <part Name="TakenAchievement" AchievementID="ACH_FIND_STOPSVALINN"/>
-    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =they.capitalize= wielded a buckler with such &lt;spice.commonPhrases.finesse.!random&gt; that it became forever known as =this.refname=. "/>
+    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such &lt;spice.commonPhrases.finesse.!random&gt; that it became forever known as =this.refname=. "/>
 	  <tag Name="BlockSound" Value="Sounds/Melee/multiUseBlock/sfx_shield_stopsvaalinn_block"/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     <xtagGrammar Proper="true"/>
