@@ -10758,7 +10758,7 @@
   <object Name="BlazeTonic" Inherits="Tonic">
     <part Name="Render" DisplayName="{{fire|火焰}}注射器"/>
     <part Name="Blaze_Tonic_Applicator"/>
-    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +100 耐热性 你不会被冻结。你造成的热伤害增加 25%。-50 冷抗性 +10 敏捷 你的温度不会因外部热源而升高。你必须移动以避免燃烧并失去这种药剂的效果。" AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +100 heat resistance You cannot be frozen Heat damage you deal is increased by 25%. -50 cold resistance +20 Quickness Your temperature cannot be increased by external heat sources. You must move around to avoid combusting and losing the effects of this tonic."/>
+    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +100 耐热性 你不会被冻结。你造成的热伤害增加 25%。-50 冷抗性 +10 敏捷 你的温度不会因外部热源而升高。你必须移动以避免燃烧并失去这种药剂的效果。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 41-50 回合 +100 耐热性 你不会被冻结。你造成的热伤害增加 25%。-50 冷抗性 +10 敏捷 你的温度不会因外部热源而升高。你必须移动以避免燃烧并失去这种药剂的效果。"/>
     /&gt;
     <part Name="TinkerItem" Bits="01" Ingredient="Fire Ant Gaster Paste"/>
     <tag Name="Tier" Value="2"/>
@@ -10773,7 +10773,7 @@
     <part Name="Render" DisplayName="{{G|巨兽}}{{w|蜂蜜}}注射器"/>
     <part Name="HulkHoney_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
-    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +6 力量 +2 每等级临时生命值 -25 移动速度 你不会感到疼痛。你对恐惧免疫。你每回合受到最大生命值 1% 的伤害（此伤害不会 使你的生命值降至 1 以下）" AltForGenotype="True Kin" GenotypeAlt="Duration: 41-50 rounds +9 Strength +3 temporary hit points per level -25 move speed You cannot feel pain. You are immune to fear. You suffer 1% of your maximum hit points in damage each round (this damage cannot reduce you to below one hit point)"/>
+    <part Name="RulesDescription" Text="持续时间: 41-50 回合 +6 力量 +2 每等级临时生命值 -25 移动速度 你不会感到疼痛。你对恐惧免疫。你每回合受到最大生命值 1% 的伤害（此伤害不会 使你的生命值降至 1 以下）" AltForGenotype="True Kin" GenotypeAlt="持续时间: 41-50 回合 +6 力量 +2 每等级临时生命值 -25 移动速度 你不会感到疼痛。你对恐惧免疫。你每回合受到最大生命值 1% 的伤害（此伤害不会使你的生命值降至 1 以下）"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Albino Ape Heart,Ogre Ape Heart"/>
     <part Name="PreservableItem" Result="Congealed Hulk Honey" Number="5"/>
     <tag Name="Gift" Value="*noinherit"/>
@@ -10802,7 +10802,7 @@
     <part Name="Render" DisplayName="{{skulk|潜行者}}注射器"/>
     <part Name="Skulk_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
-    <part Name="RulesDescription" Text="持续时间: 1001-1200 回合 在夜间和地下，你的移动速度增加 25%，但在白天减少 20%。夜间和地下时 +3 敏捷，在白天时 -3 敏捷。你可以在黑暗中视物（半径 8）。你会长出掘地爪。你受到光基攻击的伤害翻倍。" AltForGenotype="True Kin" GenotypeAlt="Duration: 1001-1200 rounds Your movement speed is increased by 40% at night and underground but reduced by 20% in the daylight. +4 Agility at night and underground -3 Agility in the daylight You can see in the dark (radius 8). You suffer double damage from light-based attacks."/>
+    <part Name="RulesDescription" Text="持续时间: 1001-1200 回合 在夜间和地下，你的移动速度增加 25%，但在白天减少 20%。夜间和地下时 +3 敏捷，在白天时 -3 敏捷。你可以在黑暗中视物（半径 8）。你会长出掘地爪。你受到光基攻击的伤害翻倍。" AltForGenotype="True Kin" GenotypeAlt="持续时间：1001-1200 轮你的移动速度在夜间和地下提高 40%，但在白天降低 20%。 +4 夜间和地下敏捷 -3 白天敏捷 你可以在黑暗中看到（半径 8）。你会因光攻击而遭受双倍伤害。"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Black Puma Haunch"/>
     <part Name="PreservableItem" Result="Congealed Skulk" Number="5"/>
     <tag Name="Gift" Value="*noinherit"/>
