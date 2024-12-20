@@ -464,7 +464,7 @@
   </object>
   <object Name="TerrainBazaarOfSamech" Inherits="TerrainNorthSheva">
     <part Name="Render" DisplayName="萨梅克集市" RenderString="110" ColorString="&amp;y"/>
-    <part Name="Description" Short="在这星际港的庇护下，伟大的集市以其融合的拱廊拔地而起。市场中挤满了来自六十颗星球的繁多商品：亿万织线的地毯、牛车装载的巨型处理器、剧毒香水以及冰冷的桃子。"/>
+    <part Name="Description" Short="在这星际港的庇护下，伟大的集市以其融合的拱廊拔地而起。市场中挤满了来自六十颗星球的繁多商品: 亿万织线的地毯、牛车装载的巨型处理器、剧毒香水以及冰冷的桃子。"/>
     <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215"/>    
     <xtagGrammar Proper="true"/>
     <tag Name="IndefiniteArticle" Value="the"/>
@@ -1672,7 +1672,7 @@
 
   <object Name="BaseArkCore" Inherits="MountedFurniture">
     <part Name="Render" DisplayName="非确定性核心" RenderString="223" ColorString="&amp;W" TileColor="&amp;W" DetailColor="R"/>
-    <part Name="Description" Short="一层蓝色、洋红色和深红色的帷幕笼罩着月阳之影与超新星金（颜色规格直接由源自恩西奥斯内的机械生命体传承而来）。原始的非物质性从容器边界中析出，并以受控剂量输送至处理器，这些处理器对其进行破解，从而完成不可计算的任务：从虚无中作出决定。"/>
+    <part Name="Description" Short="一层蓝色、洋红色和深红色的帷幕笼罩着月阳之影与超新星金（颜色规格直接由源自恩西奥斯内的机械生命体传承而来）。原始的非物质性从容器边界中析出，并以受控剂量输送至处理器，这些处理器对其进行破解，从而完成不可计算的任务: 从虚无中作出决定。"/>
     <part Name="Physics" Weight="12000"/>    
     <part Name="ArkCore"/>
     <part Name="NoDamage"/>
@@ -2077,7 +2077,7 @@
   </object>
   <object Name="Mechanical Golem" Inherits="MountedFurniture">
     <part Name="Render" ColorString="&amp;c" DetailColor="y"/>
-    <part Name="Description" Short="来自元素周期表的废金属被焊接成一个神话特征的雕塑：=body.features=。老旧的汤和=催化剂=的溢出物染污了它生锈的躯干，在闷烧的光线下，它的姿势让人联想到一个垂死的=atzmus.creature=。铁制的四肢被打制成=武器技能片段=的形状，在中心位置悬挂着=哈姆萨之手=的破碎符号。"/>
+    <part Name="Description" Short="来自元素周期表的废金属被焊接成一个神话特征的雕塑: =body.features=。老旧的汤和=催化剂=的溢出物染污了它生锈的躯干，在闷烧的光线下，它的姿势让人联想到一个垂死的=atzmus.creature=。铁制的四肢被打制成=武器技能片段=的形状，在中心位置悬挂着=哈姆萨之手=的破碎符号。"/>
     <part Name="Interactable" Action="enter" Message="=object.Does:are= much too old and rusted to enter." UsePopup="true" CanSmartUse="false"/>
     <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" SparkWhenBrokenAndPowered="false"/>
     <part Name="ChargeSink" ChargeUse="1" NameForStatus="PrimeMover"/>

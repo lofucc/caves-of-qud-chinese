@@ -388,7 +388,7 @@
   </quest>
   <quest Name="我们是星航" Level="40" Achievement="ACH_STARFREIGHT" System="AscensionSystem">
     <step ID="Barathrum" Name="Prepare to Ascend">
-      <text>Get Barathrum in 魔像.</text>
+      <text>让巴拉瑟鲁姆进入魔像.</text>
     </step>
     <step ID="Ascend" Name="上升">
       <text>接合主轴的提升机构。</text>

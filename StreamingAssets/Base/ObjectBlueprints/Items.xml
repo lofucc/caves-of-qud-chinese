@@ -10801,7 +10801,7 @@
     <part Name="Render" DisplayName="{{skulk|潜行者}}注射器"/>
     <part Name="Skulk_Tonic_Applicator"/>
     <part Name="AITonicUse"/>
-    <part Name="RulesDescription" Text="持续时间: 1001-1200 回合 在夜间和地下，你的移动速度增加 25%，但在白天减少 20%。夜间和地下时 +3 敏捷，在白天时 -3 敏捷。你可以在黑暗中视物（半径 8）。你会长出掘地爪。你受到光基攻击的伤害翻倍。" AltForGenotype="True Kin" GenotypeAlt="持续时间：1001-1200 轮你的移动速度在夜间和地下提高 40%，但在白天降低 20%。 +4 夜间和地下敏捷 -3 白天敏捷 你可以在黑暗中看到（半径 8）。你会因光攻击而遭受双倍伤害。"/>
+    <part Name="RulesDescription" Text="持续时间: 1001-1200 回合 在夜间和地下，你的移动速度增加 25%，但在白天减少 20%。夜间和地下时 +3 敏捷，在白天时 -3 敏捷。你可以在黑暗中视物（半径 8）。你会长出掘地爪。你受到光基攻击的伤害翻倍。" AltForGenotype="True Kin" GenotypeAlt="持续时间: 1001-1200 轮你的移动速度在夜间和地下提高 40%，但在白天降低 20%。 +4 夜间和地下敏捷 -3 白天敏捷 你可以在黑暗中看到（半径 8）。你会因光攻击而遭受双倍伤害。"/>
     <part Name="TinkerItem" Bits="01" Ingredient="Black Puma Haunch"/>
     <part Name="PreservableItem" Result="Congealed Skulk" Number="5"/>
     <tag Name="Gift" Value="*noinherit"/>

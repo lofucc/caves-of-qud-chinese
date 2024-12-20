@@ -13477,7 +13477,7 @@
     <part Name="FactionRank" Ranks="Barathrumites::disciple"/>
     <tag Name="InventoryPopulationTable" Value="DardiInventory"/>
     <stat Name="Hitpoints" Value="95"/>
-    <part Name="Description" Short="大乌尔希布撒满了香料，沾满了蜂蜜油脂，还有 =pronouns.subjective= =verb:smell:afterpronoun= 的混合物：热蘑菇、令人腻味的墨水、藏红花和煮熟的舌头。"/>
+    <part Name="Description" Short="大乌尔希布撒满了香料，沾满了蜂蜜油脂，还有 =pronouns.subjective= =verb:smell:afterpronoun= 的混合物: 热蘑菇、令人腻味的墨水、藏红花和煮熟的舌头。"/>
     <part Name="AISelfPreservation" Threshold="60"/>
     <part Name="Interesting"/>
     <part Name="Memorial" Eulogies="Barathrumites::Today we are bereft of a passionate artisan and dedicated scientist. We laud you, from home to heptagon."/>
