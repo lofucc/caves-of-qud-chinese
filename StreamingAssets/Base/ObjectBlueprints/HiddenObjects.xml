@@ -1641,7 +1641,7 @@
     <tag Name="PaintedWall" Value="walls_resheph_1_0"/>
     <tag Name="PaintedWallExtension" Value=".png"/>    
     <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_1_" FrameMS="500" AllowRushing="false"/>
-    TileColorAnimationFrames="0=&amp;y^k,400=&amp;y^y,600=&amp;y^Y,800=&amp;y^m,1000=&amp;y^M" /&gt;
+
     <part Name="HologramMaterial" ColorStrings="&amp;m^M,&amp;M^m,&amp;m^M,&amp;M^m" DetailColors="k,k,k,k"/>
     <part Name="ConversationScript" ConversationID="ArchonHologram" Filter="Cryptic Machine"/>
   </object>
@@ -1654,6 +1654,7 @@
     <part Name="Render" DisplayName="瑞舍夫·天界之上的全息影像" Tile="Creatures/resheph.png"/>
     <part Name="Description" Short="一条披风从他的肩膀垂下，带着神话般的必然性，而这个数字二元体既暗示着地上的治愈和平，又与天穹相和谐。"/>
     <part Name="ConversationScript" ConversationID="Resheph" Filter="Cryptic Machine"/>
+    <part Name="CrypticParticleText" InitialTimer="2-3" />
     <tag Name="ExcludeFromDynamicEncounters"/>
     <tag Name="ChatSound" Value="sfx_endgame_supercomputer_chat"/>
     <tag Name="ChatNodeSound" Value="sfx_endgame_supercomputer_chat_dialogNode"/>
@@ -2519,7 +2520,7 @@
   </object>
   <object Name="Chiliad Creature Issachari" Inherits="BaseIssachari">
     <part Name="Render" DisplayName="伊萨查里 =creatureRegionNoun=" Tile="Creatures/chiliad-issachari.png"/>
-    <part Name="Description" Short=""/>    
+    <part Name="Description" Short="风将流苏披肩和领带压在人体上。面料上绣有与盐和星形天空图案押韵的图案。"/>    
     <mixin Name="BaseChiliadCreatureStats"/>
   </object>
   <object Name="Chiliad Creature Mechanimists" Inherits="Mechanimist">
@@ -2547,7 +2548,7 @@
   <object Name="Chiliad Creature Strangers" Inherits="BaseHumanoid">
     <part Name="Render" DisplayName="神秘的=creatureRegionNoun=" Tile="Creatures/chiliad-stranger.png"/>
     <part Name="Brain" Factions="Strangers-100"/>
-    <part Name="Description" Short="她那条在被遗忘的河岸边编织而成的流苏斗篷，衬托出她那谨慎沉静的纤细身姿。"/>    
+    <part Name="Description" Short="=pronouns.Possessive=那条在被遗忘的河岸边编织而成的流苏斗篷，衬托出她那谨慎沉静的纤细身姿。"/>    
     <mixin Name="BaseChiliadCreatureStats"/>
   </object>
   <object Name="Chiliad Creature Naphtaali" Inherits="BaseNaphtaali">

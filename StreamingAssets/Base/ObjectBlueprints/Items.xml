@@ -4788,7 +4788,6 @@
     <part Name="AddsRep" Faction="Baboons" Value="-100"/>
     <part Name="Commerce" Value="250"/>
 	  <tag Name="EquipSound" Value="sfx_equip_armor_fur"/>
-    <tag Name="DynamicObjectsTable:Headwear"/>
     <part Name="ModGlassArmor" Tier="5" Type="quartz"/>
     <part Name="ItemElements" Elements="glass::7"/>
   </object>

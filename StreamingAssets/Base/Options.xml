@@ -74,6 +74,7 @@
   <option ID="OptionDockMovable" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="停靠消息日志 &amp;&amp; 小地图" Category="用户界面" Type="Combo" Values="Unset,Right,Left,Flip" Default="Right"/>
   <option ID="OptionDockOpacity" Requires="OptionModernUI==Yes,OptionDockMovable!=Unset" DisplayText="停靠背景透明度" Category="用户界面" Type="Slider" Min="0" Max="100" Increment="10" Default="100"/>  
   <option ID="OptionMouseCursor" Requires="OptionModernUI==Yes" DisplayText="鼠标光标外观" Category="用户界面" Type="Combo" Values="System,Default,Alternate" Default="Default"/>
+  <option ID="OptionMouseAutoHideCursorEnabled" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="不活动时自动隐藏鼠标光标" Category="用户界面" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionControllerFont" Requires="OptionModernUI==Yes" DisplayText="手柄按钮外观" Category="用户界面" Type="Combo" Values="Auto,KBM,XBox,PS,XBox Filled,PS Filled" Default="Auto"/>  
   <option ID="OptionFloatingKeyboard" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示支持设备上的输入覆盖键盘" Category="用户界面" Type="Checkbox" Default="Yes"/>
   <option ID="OptionZoomSensitivity" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="缩放灵敏度" Category="用户界面" Type="Slider" Min="1" Max="25" Increment="1" Default="1"/>
@@ -218,5 +219,6 @@
   <option ID="OptionDisableSoundPreload" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用声音预加载" Category="调试" Type="Checkbox" Default="Yes"/>  
   <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="执行库存一致性检查" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示错误弹窗" Category="调试" Type="Checkbox" Default="No"/>
-  
+  <option ID="OptionDisableBindConflictChecking" Requires="OptionShowAdvancedOptions==Yes" DisplayText="重新绑定控件时禁用冲突检查" Category="调试" Type="Checkbox" Default="No"></option>
+
 </options>

@@ -214,7 +214,7 @@
     <gamepadBind Button="leftShoulder"/>
     <keyboardBind Key="y" Set="hjkl"/>
   </command>
-  <command ID="Page Right" DisplayText="下一页" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
+  <command ID="Page Right" DisplayText="下一页" Category="菜单" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD,CmdFire">
     <keyboardBind Key="numpad9"/>
     <keyboardBind Key="end"/>
     <gamepadBind Button="rightShoulder"/>
@@ -370,7 +370,7 @@
     <keyboardBind Key="a"/>
     <gamepadBind Alt="true" Button="buttonWest"/>
   </command>
-  <command ID="CmdFire" DisplayText="远程武器开火" Category="冒险" Layer="AdventureTargeting" Auto="Down">
+  <command ID="CmdFire" DisplayText="远程武器开火" Category="冒险" Layer="AdventureTargeting" Auto="Down"  CanShareBindsWith="Page Right">
     <keyboardBind Key="f"/>
     <gamepadBind Button="rightShoulder"/>
   </command>
