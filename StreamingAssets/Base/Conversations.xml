@@ -468,7 +468,7 @@
     <start ID="RedrockNews" IfHaveActiveQuest="什么在吃水藤？" Inherits="Welcome">
       <text>活着并畅饮吧，=name=。红岩有什么消息吗？</text>
       <choice Priority="1" Target="BackFromRedrock" IfHaveActiveQuest="什么在吃水藤？" IfFinishedQuestStep="什么在吃水藤？~前往红岩" IfHaveItemDescendsFrom="Girshling Corpse">是的。我找到了那些害虫和被啃食过的水藤碎片。我随身携带着其中一个的尸体。</choice>
-      <choice Priority="1" Target="Aye" IfHaveActiveQuest="什么在吃水藤？" />还没有.</choice>
+      <choice Priority="1" Target="Aye" IfHaveActiveQuest="什么在吃水藤？">还没有.</choice>
       <choice ID="MehmetIntroduce" Load="Remove" />
     </start>
     <start ID="Welcome">
