@@ -439,7 +439,7 @@
 
   -->
   <object Name="TerrainJoppa" Inherits="Terrain">
-    <part Name="Render" DisplayName="乔帕" RenderString="216" Tile="Terrain/sw_joppa.bmp" ColorString="&amp;w^k" DetailColor="y"/>
+    <part Name="Render" DisplayName="约帕" RenderString="216" Tile="Terrain/sw_joppa.bmp" ColorString="&amp;w^k" DetailColor="y"/>
     <part Name="Description" Short="绿屑中的蚂蚁，农夫们从盐斑遍布的土地中榨取最后一滴纯净的水分。"/>
     <xtagGrammar Proper="true" massNoun="false"/>
     <tag Name="NoBiomes" Value="1"/>
@@ -483,7 +483,7 @@
     <tag Name="MinimapColor" Value="g"/>
   </object>
   <object Name="TerrainKyakukya" Inherits="Terrain">
-    <part Name="Render" DisplayName="卡库基亚" RenderString="006" Tile="terrain/tile_kya.bmp" ColorString="&amp;R^k" DetailColor="R" TileColor="&amp;Y"/>
+    <part Name="Render" DisplayName="迦库迦" RenderString="006" Tile="terrain/tile_kya.bmp" ColorString="&amp;R^k" DetailColor="R" TileColor="&amp;Y"/>
     <part Name="Description" Short="这里是崇拜猿神的丛林村落，以及他们巨大的蘑菇居所。"/>
     <tag Name="NoBiomes" Value="1"/>
     <xtagGrammar Proper="true" massNoun="false"/>
@@ -544,8 +544,8 @@
     <tag Name="MinimapColor" Value="g"/>
   </object>
   <object Name="TerrainGolgotha" Inherits="Terrain">
-    <part Name="Render" DisplayName="髑髅地" Tile="terrain/tile_location5.bmp" DetailColor="C" TileColor="&amp;G^k" RenderString="030" ColorString="&amp;R^k"/>
-    <part Name="Description" Short="在腐烂的丛林中，隐藏着髑髅地的锈洞入口，这里是铬金的墓场。"/>
+    <part Name="Render" DisplayName="各各他" Tile="terrain/tile_location5.bmp" DetailColor="C" TileColor="&amp;G^k" RenderString="030" ColorString="&amp;R^k"/>
+    <part Name="Description" Short="在腐烂的丛林中，隐藏着各各他的锈洞入口，这里是铬金的墓场。"/>
     <tag Name="NoBiomes" Value="1"/>
     <xtagGrammar Proper="true" massNoun="false"/>
     <tag Name="OverlayColor" Value="&amp;W"/>

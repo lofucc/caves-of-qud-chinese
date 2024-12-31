@@ -1,10 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <quests>
-  <quest Name="什么在吃水藤？" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE"
-         Accomplishment="你解开了被啃食的水藤之谜，并警告了乔帕村的村民关于吉尔什。" 
-         Hagiograph="在 =month= 月 =year= 年，=name= 走在铬合金拱门下，击退了成群的吉尔什灵，并治愈了枯萎的庄稼。"
-         HagiographCategory="DoesSomethingRad"
-         Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+  <quest Name="什么在吃水藤？" Factions="Joppa" Reputation="200" Level="1"
+    Achievement="ACH_COMPLETE_WATERVINE"
+    Accomplishment="你解开了被啃食的水藤之谜，并警告了约帕村的村民关于吉尔什。"
+    Hagiograph="在 =month= 月 =year= 年，=name= 走在铬合金拱门下，击退了成群的吉尔什灵，并治愈了枯萎的庄稼。"
+    HagiographCategory="DoesSomethingRad"
+    Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
 
     <step Name="前往红岩" XP="50">
       <text>从约帕以北经过两个帕拉桑到达红岩。</text>
@@ -19,11 +20,11 @@
       <text>带着水藤害虫的尸体返回约帕。</text>
     </step>
   </quest>
-  <quest Name="Raising Indrix" Level="20" 
-         Factions="Kyakukya,Wardens" Reputation="100"
-         Hagiograph=" O grace! =name= 从一片生机勃勃的丛林中找回了一片黑色玻璃碎片，并将其归还给那头依靠其电路驱动的机械山羊。"
-         HagiographCategory="FindsObject"
-         Gospel="当在 Kyakukya 附近的丛林中徘徊时，=name= 梦想 =player.subjective= 围绕一颗暗星运行，并在其巨大的吸积盘中堆积了自我的积木。从那时起，=name=就在=player.possessive=人身上保留了一个无星的三棱柱。">
+  <quest Name="Raising Indrix" Level="20"
+    Factions="Kyakukya,Wardens" Reputation="100"
+    Hagiograph=" O grace! =name= 从一片生机勃勃的丛林中找回了一片黑色玻璃碎片，并将其归还给那头依靠其电路驱动的机械山羊。"
+    HagiographCategory="FindsObject"
+    Gospel="当在 Kyakukya 附近的丛林中徘徊时，=name= 梦想 =player.subjective= 围绕一颗暗星运行，并在其巨大的吸积盘中堆积了自我的积木。从那时起，=name=就在=player.possessive=人身上保留了一个无星的三棱柱。">
     <step Name="找到玛蒙饮魂者" XP="1000">
       <text>前往山羊村并找到玛蒙饮魂者。</text>
     </step>
@@ -31,11 +32,11 @@
       <text>将长生棱镜归还给典狱长因德里克斯。</text>
     </step>
   </quest>
-  <quest Name="给阿吉夫取一个小玩意" Level="3" System="ArgyveKnicknackSystem" 
-         Accomplishment="你为一位老人拿了一件饰品。"
-         Hagiograph="在水与藤蔓的神殿内，=name= 向一位老人传授了铬的价值。"
-         HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= 通过与 Argyve 结婚，巩固了 =player.possessive= 与修补匠公会的友谊。">
+  <quest Name="给阿吉夫取一个小玩意" Level="3" System="ArgyveKnicknackSystem"
+    Accomplishment="你为一位老人拿了一件饰品。"
+    Hagiograph="在水与藤蔓的神殿内，=name= 向一位老人传授了铬的价值。"
+    HagiographCategory="Trysts"
+    Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= 通过与 Argyve 结婚，巩固了 =player.possessive= 与修补匠公会的友谊。">
     <step Name="找到一个遗物" XP="0">
       <text>在约帕周边地区搜寻遗物。</text>
     </step>
@@ -43,11 +44,11 @@
       <text>将遗物带会给阿尔吉夫。</text>
     </step>
   </quest>
-  <quest Name="给阿吉夫取另一个小玩意" Level="5" System="ArgyveAnotherKnicknackSystem" 
-         Accomplishment="你又给一位老人拿了一件小饰品。"
-         Hagiograph="在高盐阳光下的钢铁阴影下，=name= 教会了一位老人铬的价值。"
-         HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+  <quest Name="给阿吉夫取另一个小玩意" Level="5" System="ArgyveAnotherKnicknackSystem"
+    Accomplishment="你又给一位老人拿了一件小饰品。"
+    Hagiograph="在高盐阳光下的钢铁阴影下，=name= 教会了一位老人铬的价值。"
+    HagiographCategory="Trysts"
+    Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
 
     <step Name="找到另一个遗物" XP="0">
       <text>在约帕周边地区搜寻另一件遗物。</text>
@@ -56,12 +57,12 @@
       <text>将遗物带会给阿尔吉夫。</text>
     </step>
   </quest>
-  <quest Name="奇怪的电线导管...尤里卡！" Level="7" System="WeirdwireConduitSystem" 
-         Accomplishment="在你的帮助下，阿吉夫检测到了一个奇怪的信号。"
-		 Achievement="ACH_WEIRDWIRE_CONDUIT"
-         Hagiograph="在沼泽的支持下，=name=发明了奇怪的电线导管并检测到了隐藏的信号。"
-         HagiographCategory="CreatesSomething"
-         Gospel="At a remote workshop near the oasis-hamlet of Joppa, =name= and =player.possessive= apprentice Argyve invented an apparatus that evoked the presence of pounding drums and blistering wire. They named it the Weirdwire Conduit.">
+  <quest Name="奇怪的电线导管...尤里卡！" Level="7" System="WeirdwireConduitSystem"
+    Accomplishment="在你的帮助下，阿吉夫检测到了一个奇怪的信号。"
+    Achievement="ACH_WEIRDWIRE_CONDUIT"
+    Hagiograph="在沼泽的支持下，=name=发明了奇怪的电线导管并检测到了隐藏的信号。"
+    HagiographCategory="CreatesSomething"
+    Gospel="At a remote workshop near the oasis-hamlet of Joppa, =name= and =player.possessive= apprentice Argyve invented an apparatus that evoked the presence of pounding drums and blistering wire. They named it the Weirdwire Conduit.">
 
     <step Name="找到 200 英尺的电线" XP="0">
       <text>在约帕以东的铁锈井中搜寻 200 英尺长的电线。</text>
@@ -70,11 +71,11 @@
       <text>将电线交给阿尔吉夫。</text>
     </step>
   </quest>
-  <quest Name="巴拉瑟鲁姆的颂歌" Level="10" 
-         Accomplishment="你在砂砾之门的巴拉瑟鲁姆人飞地与他们交谈过。"
-         Hagiograph="=name=为生活在地下的顽皮羽毛熊写下并演唱了一首赞歌。"
-         HagiographCategory="CreatesSomething"
-         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
+  <quest Name="巴拉瑟鲁姆的颂歌" Level="10"
+    Accomplishment="你在砂砾之门的巴拉瑟鲁姆人飞地与他们交谈过。"
+    Hagiograph="=name=为生活在地下的顽皮羽毛熊写下并演唱了一首赞歌。"
+    HagiographCategory="CreatesSomething"
+    Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
 
     <step Name="前往砂砾门" XP="500">
       <text>前往约帕东北部废弃的地下大门。</text>
@@ -86,28 +87,29 @@
       <text>向巴拉瑟鲁姆派询问阿尔吉夫的奇怪信号。</text>
     </step>
   </quest>
-  <quest Name="噪音中的信号" Level="10" 
-         Accomplishment="你在砂砾之门的巴拉瑟鲁姆人飞地与他们交谈过。"
-         Hagiograph="=name=为生活在地下的顽皮羽毛熊写下并演唱了一首赞歌。"
-         HagiographCategory="CreatesSomething"
-         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
+  <quest Name="噪音中的信号" Level="10"
+    Accomplishment="你在砂砾之门的巴拉瑟鲁姆人飞地与他们交谈过。"
+    Hagiograph="=name=为生活在地下的顽皮羽毛熊写下并演唱了一首赞歌。"
+    HagiographCategory="CreatesSomething"
+    Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
 
-    <step Name="前往砂砾门" XP="500">
+    <step Name="前往砂砾之门" XP="500">
       <text>前往西部丛林中的废墟地下城门。</text>
     </step>
     <step Name="找到巴拉瑟姆矿飞地" XP="250">
-      <text>找到巴拉瑟姆矿飞地 within Grit Gate</text>
+      <text>找到位于砂砾之门的巴拉瑟姆矿飞地。</text>
     </step>
     <step Name="与巴拉瑟鲁姆人交谈" XP="500">
       <text>向巴拉瑟鲁姆派询问这个奇怪信号的情况。</text>
     </step>
   </quest>
-  <quest Name="不仅仅是一种愿意的精神" Level="10" BonusAtLevel="12,18" System="WillingSpiritSystem" Factions="Barathrumites" Reputation="100"
-         Accomplishment="你勇敢地面对各各他并向巴拉瑟鲁姆人展示了你的英勇。"
-		 Achievement="ACH_WILLING_SPIRIT"
-         Hagiograph="在 =month= 月的 =year= 年，=name= 从戈耳戈塔的垃圾滑道中走出，胜利而身披黏液。"
-         HagiographCategory="DoesSomethingRad"
-         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= coating of foul slime, they accepted =name= into their fold and taught =player.objective= their secrets.">
+  <quest Name="不仅仅是一种愿意的精神" Level="10" BonusAtLevel="12,18" System="WillingSpiritSystem"
+    Factions="Barathrumites" Reputation="100"
+    Accomplishment="你勇敢地面对各各他并向巴拉瑟鲁姆人展示了你的英勇。"
+    Achievement="ACH_WILLING_SPIRIT"
+    Hagiograph="在 =month= 月的 =year= 年，=name= 从戈耳戈塔的垃圾滑道中走出，胜利而身披黏液。"
+    HagiographCategory="DoesSomethingRad"
+    Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= coating of foul slime, they accepted =name= into their fold and taught =player.objective= their secrets.">
 
     <step Name="前往各各他" XP="250">
       <text>前往砂砾门以北的各各他大洞穴。</text>
@@ -123,11 +125,11 @@
     </step>
   </quest>
   <quest Name="解码信号" Level="15" Factions="Barathrumites" Reputation="100"
-         Accomplishment="你在岩石神庙与贝提尔交谈并破译了神秘的信号。"
-		 Achievement="ACH_DECODING_SIGNAL"
-         Hagiograph="勇敢！=name= 冲入了一片敞开的冰架之口，并用神圣的语言与一个贝提尔交谈。"
-         HagiographCategory="AppeasesBaetyl"
-         Gospel="Inside a giant block of ice, =name= cemented =player.possessive= friendship with the Mechanimists by exchanging whispered vows with a sparking baetyl.">
+    Accomplishment="你在岩石神庙与贝提尔交谈并破译了神秘的信号。"
+    Achievement="ACH_DECODING_SIGNAL"
+    Hagiograph="勇敢！=name= 冲入了一片敞开的冰架之口，并用神圣的语言与一个贝提尔交谈。"
+    HagiographCategory="AppeasesBaetyl"
+    Gospel="Inside a giant block of ice, =name= cemented =player.possessive= friendship with the Mechanimists by exchanging whispered vows with a sparking baetyl.">
 
     <step Name="将Q Girl的使用说明放入数据盘" XP="250">
       <text>与工作室中的 Q Girl 交谈，并要求她将 baetyl 的指令编码到磁盘上。</text>
@@ -142,22 +144,23 @@
       <text>返回砂砾门与奥托交谈。</text>
     </step>
   </quest>
-  <quest Name="光荣的谢希纳！" Level="3" System="TravelToStiltSystem" 
-         Accomplishment="在一位改宗者的推荐下，你参观了六日高跷的商人集市和宏伟的大教堂。"
-         Hagiograph="=name= 徒步穿过盐田，向北和向西到达商人集市和六日高跷大教堂。在那里，高跷人唱着赞美苏丹的赞美诗。"
-         HagiographCategory="VisitsLocation"
-         Gospel="After trekking the vacant flats, =name= journeyed to the merchant bazaar and cathedral at the Six Day Stilt. There =player.subjective= befriended the Mechanimists and threw an artifact down the Sacred Well.">
+  <quest Name="光荣的谢希纳！" Level="3" System="TravelToStiltSystem"
+    Accomplishment="在一位改宗者的推荐下，你参观了六日高跷的商人集市和宏伟的大教堂。"
+    Hagiograph="=name= 徒步穿过盐田，向北和向西到达商人集市和六日高跷大教堂。在那里，高跷人唱着赞美苏丹的赞美诗。"
+    HagiographCategory="VisitsLocation"
+    Gospel="After trekking the vacant flats, =name= journeyed to the merchant bazaar and cathedral at the Six Day Stilt. There =player.subjective= befriended the Mechanimists and threw an artifact down the Sacred Well.">
 
     <step Name="六日高跷朝圣" XP="1500">
       <text>穿越大盐漠前往商贩集市和机械师大教堂，在那里一位传教士请求你献上一件小饰品。</text>
     </step>
   </quest>
-  <quest Name="奥蒙门廊伯爵" Level="20" System="OmonporchEarlSystem" Factions="Barathrumites" Reputation="100"
-         Accomplishment="你解决了 Asphodel 并保护了纺锤体底部的地面。"
-		 Achievement="ACH_OMONPORCH_EARL"
-         Hagiograph="在 =month= 月，=year= 年，=name= 任命了美丽的阿斯福黛尔为奥蒙波奇的伯爵和纺锤加乌斯的保护者。"
-         HagiographCategory="Treats"
-         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity$elements[random].practices.!random&gt; in =player.t's= name.">
+  <quest Name="奥蒙门廊伯爵" Level="20" System="OmonporchEarlSystem" Factions="Barathrumites"
+    Reputation="100"
+    Accomplishment="你解决了 Asphodel 并保护了纺锤体底部的地面。"
+    Achievement="ACH_OMONPORCH_EARL"
+    Hagiograph="在 =month= 月，=year= 年，=name= 任命了美丽的阿斯福黛尔为奥蒙波奇的伯爵和纺锤加乌斯的保护者。"
+    HagiographCategory="Treats"
+    Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity$elements[random].practices.!random&gt; in =player.t's= name.">
 
     <step Name="到奥蒙门奇" XP="1000">
       <text>向北前往奥蒙门廊的纺锤。</text>
@@ -177,12 +180,12 @@
       <text>通过主机室对讲机或亲自与奥托交谈。</text>
     </step>
   </quest>
-  <quest Name="战斗的号角" Level="20" 
-         Accomplishment="你英勇地保卫了砂砾门免受普图斯圣殿骑士的攻击。"
-		 Achievement="ACH_CALL_TO_ARMS"
-         Hagiograph="=name= 摧毁了一队儿子与女儿，将他们砸进一台巨大的主控机中，碎玻璃和镓雨洒满了周围的神殿。"
-         HagiographCategory="Slays"
-         Gospel="In the month of =month= of =year=, =name= won a decisive victory against the combined Templar forces at the bloody Battle of Grit Gate. Grit Gate was so devasted by hot gallium and smashed glass that it was renamed Otho's Graveyard.">
+  <quest Name="战斗的号角" Level="20"
+    Accomplishment="你英勇地保卫了砂砾门免受普图斯圣殿骑士的攻击。"
+    Achievement="ACH_CALL_TO_ARMS"
+    Hagiograph="=name= 摧毁了一队儿子与女儿，将他们砸进一台巨大的主控机中，碎玻璃和镓雨洒满了周围的神殿。"
+    HagiographCategory="Slays"
+    Gospel="In the month of =month= of =year=, =name= won a decisive victory against the combined Templar forces at the bloody Battle of Grit Gate. Grit Gate was so devasted by hot gallium and smashed glass that it was renamed Otho's Graveyard.">
 
     <step Name="准备防御" Optional="true">
       <text>能量激光装置、能量力场发射器、超频铬灵，并激活罗达尼斯Y以准备应对普图斯圣殿骑士的攻击。</text>
@@ -196,12 +199,13 @@
       <text>与奥托交谈以评估袭击中遭受的损失。</text>
     </step>
   </quest>
-  <quest Name="我猜是帕克斯·克兰克吧？" Level="25" System="PaxKlanqIPresumeSystem"  Factions="Barathrumites" Reputation="100"
-         Accomplishment="你走上了珊瑚之路，并说服蘑菇神童帕克斯·克兰克 (Pax Klanq) 制作了 Q Girl 设计的电池。"
-		 Achievement="ACH_PAX_KLANQ"
-         Hagiograph="在虚无的空间中，=名字=石匠用星砖建造了一条珊瑚之路，并用神圣的舌头与蘑菇交谈。"
-         HagiographCategory="CreatesSomething"
-         Gospel="In an extradimensional cathedral made of coral and fungus flesh, =name= cemented =player.possessive= relationship with fungi by marrying Pax Klanq.">
+  <quest Name="我猜是帕克斯·克兰克吧？" Level="25" System="PaxKlanqIPresumeSystem" Factions="Barathrumites"
+    Reputation="100"
+    Accomplishment="你走上了珊瑚之路，并说服蘑菇神童帕克斯·克兰克 (Pax Klanq) 制作了 Q Girl 设计的电池。"
+    Achievement="ACH_PAX_KLANQ"
+    Hagiograph="在虚无的空间中，=名字=石匠用星砖建造了一条珊瑚之路，并用神圣的舌头与蘑菇交谈。"
+    HagiographCategory="CreatesSomething"
+    Gospel="In an extradimensional cathedral made of coral and fungus flesh, =name= cemented =player.possessive= relationship with fungi by marrying Pax Klanq.">
 
     <step Name="获取 Q Girl 的登山者蓝图" XP="250">
       <text>为登山者获取蓝图并交付给帕克斯·克兰克。</text>
@@ -222,21 +226,21 @@
       <text>返回砂砾门与巴拉瑟鲁姆交谈。</text>
     </step>
   </quest>
-  <quest Name="风中的花瓣" System="PetalsOnTheWindSystem" 
-         Accomplishment="在一位落后贱民的要求下，你前往隐藏的贝拉村庄调查一个谜团。"
-         Hagiograph="仁慈的=name=应鹿民贱民的请求，同意干涉草地上的事务。苏丹以仁爱统治！"
-         HagiographCategory="MeetsWithCounselors"
-         Gospel="At &lt;spice.time.partsOfDay.!random&gt; under a &lt;spice.commonPhrases.strange.!random.article&gt; and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
+  <quest Name="风中的花瓣" System="PetalsOnTheWindSystem"
+    Accomplishment="在一位落后贱民的要求下，你前往隐藏的贝拉村庄调查一个谜团。"
+    Hagiograph="仁慈的=name=应鹿民贱民的请求，同意干涉草地上的事务。苏丹以仁爱统治！"
+    HagiographCategory="MeetsWithCounselors"
+    Gospel="At &lt;spice.time.partsOfDay.!random&gt; under a &lt;spice.commonPhrases.strange.!random.article&gt; and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
 
     <step Name="调查贝拉" XP="250">
       <text>前往隐藏的贝拉村庄并调查那里的问题。</text>
     </step>
   </quest>
-  <quest Name="寻找埃斯欣德" 
-         Accomplishment="你在一棵挖空的树里发现了落后贱民埃斯欣德和她的姐妹们。"
-         Hagiograph="记住！ =name= 告诫贱民埃斯欣德逃离了自己的命运。从那时起，她被称为“温顺的埃斯欣德”。"
-         HagiographCategory="Slays"
-         Gospel="In the month of =month= of =year=, =name= was challenged by the accused Eskhind to a duel over the location of the hindren heirloom Kindrish. =name= won and admonished Eskhind into returning to Bey Lah.">
+  <quest Name="寻找埃斯欣德"
+    Accomplishment="你在一棵挖空的树里发现了落后贱民埃斯欣德和她的姐妹们。"
+    Hagiograph="记住！ =name= 告诫贱民埃斯欣德逃离了自己的命运。从那时起，她被称为“温顺的埃斯欣德”。"
+    HagiographCategory="Slays"
+    Gospel="In the month of =month= of =year=, =name= was challenged by the accused Eskhind to a duel over the location of the hindren heirloom Kindrish. =name= won and admonished Eskhind into returning to Bey Lah.">
 
     <step Name="寻找埃斯欣德" XP="250">
       <text>找到埃斯欣德并找回金德里什。</text>
@@ -249,11 +253,11 @@
     </step>
   </quest>
   <quest Name="爱与恐惧"
-         Accomplishment="你发现并归还了一首被遗弃的情诗。"
-		 Achievement="ACH_BEY_LAH_SONNET"
-         Hagiograph="=name= 的出现是多么鼓舞人心，她如此救赎了温顺的埃斯欣德，以至于她寻求贝拉最伟大的冠军的帮助！"
-         HagiographCategory="Trysts"
-         Gospel="In the burnt out core of a tree stump, =name= cemented =player.possessive= friendship with the hindren of Bey Lah by marrying Eskhind and the Warden Neelahind.">
+    Accomplishment="你发现并归还了一首被遗弃的情诗。"
+    Achievement="ACH_BEY_LAH_SONNET"
+    Hagiograph="=name= 的出现是多么鼓舞人心，她如此救赎了温顺的埃斯欣德，以至于她寻求贝拉最伟大的冠军的帮助！"
+    HagiographCategory="Trysts"
+    Gospel="In the burnt out core of a tree stump, =name= cemented =player.possessive= friendship with the hindren of Bey Lah by marrying Eskhind and the Warden Neelahind.">
 
     <step Name="拯救岌岌可危的爱情" XP="250" Optional="true">
       <text>在这对恋人的命运被注定之前进行干预。</text>
@@ -262,11 +266,11 @@
       <text>将皱巴巴的纸交给其作者或预期的收件人。</text>
     </step>
   </quest>
-  <quest Name="基斯和金" 
-         Accomplishment="无论贝拉的命运是好是坏，你解开了金德里什失踪之谜，并帮助典狱长尼拉欣德主持正义。"
-         Hagiograph="神圣的救世主！ =name=给贝拉草甸上陷入困境的鹿人们带来了和平与繁荣。"
-         HagiographCategory="BecomesLoved"
-         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity$elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
+  <quest Name="基斯和金"
+    Accomplishment="无论贝拉的命运是好是坏，你解开了金德里什失踪之谜，并帮助典狱长尼拉欣德主持正义。"
+    Hagiograph="神圣的救世主！ =name=给贝拉草甸上陷入困境的鹿人们带来了和平与繁荣。"
+    HagiographCategory="BecomesLoved"
+    Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity$elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
 
     <step Name="信件典狱长尼拉欣德" XP="250">
       <text>告诉 Bey Lah 的典狱长有关 金德里什 盗窃案的争议性质。</text>
@@ -278,11 +282,11 @@
       <text>与典狱长尼拉欣德交谈并提供事件证据并指控带走金德里什的小偷。</text>
     </step>
   </quest>
-  <quest Name="被埋葬的守望者" 
-         Accomplishment="你参观了墓穴莫潘戈的小圈子。"
-         Hagiograph="在奥蒙门廊的食者之墓深处，=name=偶然发现莫潘戈氏族正在进行秘密仪式。他们接受了苏丹并教导了他们他们的秘密。"
-         HagiographCategory="Treats"
-         Gospel="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the =sultanTerm= into eir fold and taught =player.objective= eir secrets.">
+  <quest Name="被埋葬的守望者"
+    Accomplishment="你参观了墓穴莫潘戈的小圈子。"
+    Hagiograph="在奥蒙门廊的食者之墓深处，=name=偶然发现莫潘戈氏族正在进行秘密仪式。他们接受了苏丹并教导了他们他们的秘密。"
+    HagiographCategory="Treats"
+    Gospel="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the =sultanTerm= into eir fold and taught =player.objective= eir secrets.">
 
     <step Name="参观食者之墓中的莫潘戈定居点" XP="2000">
       <text>找到西北地下墓穴中的友好炮塔 Vivira，并告诉他们是 Zothom 派你来的。</text>
@@ -303,8 +307,8 @@
     </step>
   </quest>
   <quest Name="食者之墓" Level="30" Factions="Barathrumites" Reputation="100"
-         Accomplishment="成功禁用纺锤的磁场后，你从食者之墓返回。"
-		 Achievement="ACH_EATER_TOMB"
+    Accomplishment="成功禁用纺锤的磁场后，你从食者之墓返回。"
+    Achievement="ACH_EATER_TOMB"
   >
     <step Name="恢复死亡印记" XP="2500">
       <text>找回食者用来标记死者的丢失印记。</text>
@@ -325,7 +329,8 @@
       <text>返回砂砾门与巴拉瑟鲁姆交谈。</text>
     </step>
   </quest>
-  <quest Name="Landing Pads" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="LandingPadsSystem" Achievement="ACH_SLYNTH_HOME">
+  <quest Name="Landing Pads" Level="35" Factions="Newly Sentient Beings" Reputation="300"
+    System="LandingPadsSystem" Achievement="ACH_SLYNTH_HOME">
     <step Name="咨询和解">
       <text>说服至少三个定居点的领导人为狡猾的人提供庇护所。</text>
     </step>
@@ -342,10 +347,10 @@
     </step>
   </quest>
   <quest Name="如果、那么、否则" Level="40" Factions="Chavvah" Reputation="200"
-         Accomplishment="你帮助生命之树Chavvah完成了-elseing仪式并永远切断了它的一个实体-编钟。"
-				 Hagiograph="美在减法！修剪器=name=将生命之树修剪成更美观的形式。"
-			   HagiographCategory="DoesSomethingRad"
-         Gospel="Acting in accordance with the Tree of Life's many wills, =name= brought a transit rock to the glowing Soft beneath Chavvah's trunk. There =player.subjective= performed a secret ritual and returned to the surface forever altered.">
+    Accomplishment="你帮助生命之树Chavvah完成了-elseing仪式并永远切断了它的一个实体-编钟。"
+    Hagiograph="美在减法！修剪器=name=将生命之树修剪成更美观的形式。"
+    HagiographCategory="DoesSomethingRad"
+    Gospel="Acting in accordance with the Tree of Life's many wills, =name= brought a transit rock to the glowing Soft beneath Chavvah's trunk. There =player.subjective= performed a secret ritual and returned to the surface forever altered.">
 
     <step Name="收集塔乌的钟声" XP="2500">
       <text>从塔乌的科特树枝上取回她的铃声。</text>
@@ -396,31 +401,32 @@
   </quest>
   <quest Name="开垦" Level="40" System="ReclamationSystem" Achievement="ACH_RECLAMATION">
     <!-- System Properties -->
-    <intproperty Name="MinorBattles" Value="2"/>
-    <intproperty Name="HealDelay" Value="2400"/>
-    <intproperty Name="ReinforcementDelay" Value="1200"/>
-    <intproperty Name="ReinforcementChance" Value="33"/>
-    <intproperty Name="ClusterChance" Value="50"/>
-    <intproperty Name="ClusterDistance" Value="4"/>
-    <intproperty Name="ClusterRadius" Value="4"/>
-    <intproperty Name="DisplaceBiotaChance" Value="25"/>
-    <intproperty Name="DisplaceFaunaChance" Value="25"/>
+    <intproperty Name="MinorBattles" Value="2" />
+    <intproperty Name="HealDelay" Value="2400" />
+    <intproperty Name="ReinforcementDelay" Value="1200" />
+    <intproperty Name="ReinforcementChance" Value="33" />
+    <intproperty Name="ClusterChance" Value="50" />
+    <intproperty Name="ClusterDistance" Value="4" />
+    <intproperty Name="ClusterRadius" Value="4" />
+    <intproperty Name="DisplaceBiotaChance" Value="25" />
+    <intproperty Name="DisplaceFaunaChance" Value="25" />
     <intproperty Name="DisplaceFloraChance">
       <value>85</value>
       <value>75</value>
     </intproperty>
     <property Name="ArrivalTimer" Value="300-1500" />
-    <property Name="ArrivalSound" Value="grenade_heat,Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle" />
+    <property Name="ArrivalSound"
+      Value="grenade_heat,Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle" />
     <property Name="NephalRetryZone" Value="JoppaWorld.53.4.1.0.10" />
     <property Name="MessageLeaving">
       离开战场可能会给圣殿骑士重新集结的时间，并导致更多巴拉瑟鲁姆派伤亡。继续？
     </property>
     <property Name="MessageArrival">
       {{m|ULLLLLLLLLLLLQ!}}
-			
-			拿非利人痛苦的世界呻吟声响起，你的身体在电空气中颤动！
-			
-			已经到了，{{R|=方向=}}.
+
+      拿非利人痛苦的世界呻吟声响起，你的身体在电空气中颤动！
+
+      已经到了，{{R|=方向=}}.
     </property>
     <property Name="MessageArrivalSuper">
       {{m|QQQYQQQYQQQYQQQYQQQ!}}

@@ -1,0 +1,2498 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+  <world Name="ThinWorld" ZoneFactory="ThinWorldZoneFactory" DisplayName="Thin World" Protocol="THIN" CustomClock="time_sheol"></world>
+
+  <world Name="Tzimtzlum" ZoneFactory="TzimtzlumWorldZoneFactory" DisplayName="Tzimtzlum" Plane="Tzimtzlum" CustomClock="time_clam1"></world>
+  
+  <world Name="Interior" ZoneFactory="InteriorWorldZoneFactory" ZoneFactoryRegex="^Interior" DisplayName="Inside" Plane="Inherit" Protocol="Inherit">
+	  <cell Name="Golem">
+		  <boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+		  <zone Level="10" x="1" y="1" Name="Control pit" NameContext="Golem" AmbientBed="sfx_endgame_golem_int_lp" IncludeStratumInZoneDisplay="false">
+			  <builder Class="InteriorGround" />
+			  <builder Class="MapBuilder" FileName="GolemInterior.rpm" Width="7" Height="7" ClearBeforePlace="true" />
+			  <widget Blueprint="AmbientLight" />
+			  <intproperty Name="AmbushChance" Value="10" />
+		  </zone>
+	  </cell>
+		<cell Name="TempleMechaMkI">
+			<boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+			<zone Level="10" x="1" y="1" Name="Control pit" NameContext="Temple mecha mk I" AmbientBed="sfx_endgame_golem_int_lp" IncludeStratumInZoneDisplay="false">
+				<builder Class="InteriorGround" />
+				<builder Class="MapBuilder" FileName="TempleMechaMkIInterior.rpm" Width="5" Height="3" ClearBeforePlace="true" />
+				<widget Blueprint="AmbientLight" />
+				<intproperty Name="AmbushChance" Value="10" />
+			</zone>
+		</cell>
+		<cell Name="TempleMechaMkII">
+			<boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+			<zone Level="10" x="1" y="1" Name="Control pit" NameContext="Temple mecha mk II" AmbientBed="sfx_endgame_golem_int_lp" IncludeStratumInZoneDisplay="false">
+				<builder Class="InteriorGround" />
+				<builder Class="MapBuilder" FileName="TempleMechaMkIIInterior.rpm" Width="7" Height="7" ClearBeforePlace="true" />
+				<widget Blueprint="AmbientLight" />
+				<intproperty Name="AmbushChance" Value="10" />
+			</zone>
+		</cell>
+	  <cell Name="Mover">
+		  <zone Level="10" x="1" y="1" Name="Atrium" NameContext="Mover" IncludeStratumInZoneDisplay="false">
+			  <builder Class="InteriorGround" />
+			  <builder Class="MapBuilder" FileName="NorthSheva/MoverInterior.rpm" Width="16" Height="14" ClearBeforePlace="true" />
+			  <widget Blueprint="AmbientLight" />
+			  <intproperty Name="AmbushChance" Value="0" />
+		  </zone>
+	  </cell>
+    <cell Name="ShevaStarship">
+      <boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+      <zone Level="10" x="1" y="1" ProperName="true" Name="Exodus" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false">
+        <builder Class="InteriorGround" />
+        <builder Class="MapBuilder" FileName="NorthSheva/Starship1.rpm" Width="29" Height="10" ClearBeforePlace="true" />
+        <widget Blueprint="AmbientLight" />
+        <intproperty Name="AmbushChance" Value="0" />
+      </zone>
+    </cell>
+    <cell Name="ShevaStarCarousel">
+      <zone Level="10" x="1" y="1" ProperName="true" Name="vqvtl 3" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false">
+        <builder Class="InteriorGround" />
+        <builder Class="MapBuilder" FileName="NorthSheva/StarCarousel.rpm" Width="23" Height="15" ClearBeforePlace="true" />        
+        <intproperty Name="AmbushChance" Value="0" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+    </cell>
+    <cell Name="Coda">
+      <boolproperty Name="JoinPartyLeaderPossible" Value="false" />
+      <zone Level="10" x="1" y="1" Name="Coda" IncludeStratumInZoneDisplay="false">
+        <widget Blueprint="DaylightWidget" />
+        <music Track="Music/Overworld" />
+        <property Name="Inside" Value="0" />
+        <intproperty Name="AmbushChance" Value="0" />
+      </zone>
+    </cell>
+  </world>
+
+  <world Name="JoppaWorld" ZoneFactory="JoppaWorldZoneFactory" Map="QudWorldMap.rpm" AmbientBed="amb_worldMap_sky" DisplayName="Qud">
+    <builder Class="JoppaWorldBuilder"></builder>
+    <builder Class="RingGateBuilder" StaticGateZones="JoppaWorld.17.17.1.1.14"></builder>
+
+    <cell Name="DefaultJoppaCell" Inherits="" ApplyTo="*Default">
+      <zone Level="0-9" x="0-2" y="0-2" Name="open sky" IndefiniteArticle="the" GroundLiquid="" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="500-6000">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="EmptyGround"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-20" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="21-30" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="31-40" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="41-49" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Cave Addendum" />
+      </zone>
+    </cell>
+
+    <cell Name="WaterCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainWater">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above a salt river" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_river">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt river" AmbientBed="Sounds/Ambiences/amb_bed_river">
+        <builder Class="OverlandWater"></builder>
+        <postbuilder Class="ZoneTemplate:Rivers"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean river">
+        <builder Class="Strata"></builder>
+        <builder Class="OverlandWater" Underground="true"></builder>
+        <builder Class="ZoneTemplate:WaterCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="RiverSvyCell" Inherits="WaterCell" ApplyTo="TerrainRiverSvy"></cell>
+    <cell Name="RiverSvyCell WE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy WE"></cell>
+    <cell Name="RiverSvyCell NS" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NS"></cell>
+    <cell Name="RiverSvyCell NSW" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NSW"></cell>
+    <cell Name="RiverSvyCell NE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NE"></cell>
+    <cell Name="RiverSvyCell SW" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy SW"></cell>
+    <cell Name="RiverSvyCell NW" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NW"></cell>
+    <cell Name="RiverSvyCell NSE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NSE"></cell>
+    <cell Name="RiverSvyCell NWE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NWE"></cell>
+    <cell Name="RiverSvyCell SE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy SE"></cell>
+    <cell Name="RiverSvyCell SWE" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy SWE"></cell>
+    <cell Name="RiverSvyCell NtoEnd" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy NtoEnd"></cell>
+    <cell Name="RiverSvyCell EtoEnd" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy EtoEnd"></cell>
+    <cell Name="RiverSvyCell Lake 1i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 1i"></cell>
+    <cell Name="RiverSvyCell Lake 1j" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 1j"></cell>
+    <cell Name="RiverSvyCell Lake 2h" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 2h"></cell>
+    <cell Name="RiverSvyCell Lake 2i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 2i"></cell>
+    <cell Name="RiverSvyCell Lake 2j" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 2j"></cell>
+    <cell Name="RiverSvyCell Lake 3e" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3e"></cell>
+    <cell Name="RiverSvyCell Lake 3f" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3f"></cell>
+    <cell Name="RiverSvyCell Lake 3g" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3g"></cell>
+    <cell Name="RiverSvyCell Lake 3h" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3h"></cell>
+    <cell Name="RiverSvyCell Lake 3i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3i"></cell>
+    <cell Name="RiverSvyCell Lake 3j" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 3j"></cell>
+    <cell Name="RiverSvyCell Lake 4d" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 4d"></cell>
+    <cell Name="RiverSvyCell Lake 4e" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 4e"></cell>
+    <cell Name="RiverSvyCell Lake 4f" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 4f"></cell>
+    <cell Name="RiverSvyCell Lake 4g" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 4g"></cell>
+    <cell Name="RiverSvyCell Lake 4i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 4i"></cell>
+    <cell Name="RiverSvyCell Lake 5c" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 5c"></cell>
+    <cell Name="RiverSvyCell Lake 5d" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 5d"></cell>
+    <cell Name="RiverSvyCell Lake 5h" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 5h"></cell>
+    <cell Name="RiverSvyCell Lake 5i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 5i"></cell>
+    <cell Name="RiverSvyCell Lake 6c" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 6c"></cell>
+    <cell Name="RiverSvyCell Lake 6f" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 6f"></cell>
+    <cell Name="RiverSvyCell Lake 6h" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 6h"></cell>
+    <cell Name="RiverSvyCell Lake 6i" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 6i"></cell>
+    <cell Name="RiverSvyCell Lake 7a" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7a"></cell>
+    <cell Name="RiverSvyCell Lake 7b" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7b"></cell>
+    <cell Name="RiverSvyCell Lake 7c" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7c"></cell>
+    <cell Name="RiverSvyCell Lake 7d" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7d"></cell>
+    <cell Name="RiverSvyCell Lake 7e" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7e"></cell>
+    <cell Name="RiverSvyCell Lake 7f" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 7f"></cell>
+    <cell Name="RiverSvyCell Lake 8b" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 8b"></cell>
+    <cell Name="RiverSvyCell Lake 8c" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 8c"></cell>
+    <cell Name="RiverSvyCell Lake 8d" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake 8d"></cell>
+    <cell Name="RiverSvyCell Lake Blank" Inherits="RiverSvyCell" ApplyTo="TerrainRiverSvy Lake Blank"></cell>
+    <cell Name="RiverOpalCell" Inherits="WaterCell" ApplyTo="TerrainRiverOpal"></cell>
+    <cell Name="RiverOpalCell WE" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal WE"></cell>
+    <cell Name="RiverOpalCell NS" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal NS"></cell>
+    <cell Name="RiverOpalCell NE" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal NE"></cell>
+    <cell Name="RiverOpalCell SW" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal SW"></cell>
+    <cell Name="RiverOpalCell SE" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal SE"></cell>
+    <cell Name="RiverOpalCell NW" Inherits="RiverOpalCell" ApplyTo="TerrainRiverOpal NW"></cell>
+
+    <cell Name="OpalDuskwatersCell" Inherits="WaterCell" ApplyTo="TerrainOpalDuskwaters"></cell>
+    <cell Name="OpalDuskwatersCell 1" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 1"></cell>
+    <cell Name="OpalDuskwatersCell 2" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 2"></cell>
+    <cell Name="OpalDuskwatersCell 3" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 3"></cell>
+    <cell Name="OpalDuskwatersCell 4" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 4"></cell>
+    <cell Name="OpalDuskwatersCell 5" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 5"></cell>
+    <cell Name="OpalDuskwatersCell 6" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 6"></cell>
+    <cell Name="OpalDuskwatersCell 7" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 7"></cell>
+    <cell Name="OpalDuskwatersCell 8" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 8"></cell>
+    <cell Name="OpalDuskwatersCell 9" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 9"></cell>
+    <cell Name="OpalDuskwatersCell 10" Inherits="OpalDuskwatersCell" ApplyTo="TerrainOpalDuskwaters 10"></cell>
+
+    <cell Name="RiverYonthCell" Inherits="WaterCell" ApplyTo="TerrainRiverYonth"></cell>
+    <cell Name="RiverYonthCell WE" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth WE"></cell>
+    <cell Name="RiverYonthCell NS" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NS"></cell>
+    <cell Name="RiverYonthCell NSW" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NSW"></cell>
+    <cell Name="RiverYonthCell NE" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NE"></cell>
+    <cell Name="RiverYonthCell SW" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SW"></cell>
+    <cell Name="RiverYonthCell NW" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NW"></cell>
+    <cell Name="RiverYonthCell NSE" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NSE"></cell>
+    <cell Name="RiverYonthCell NWE" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NWE"></cell>
+    <cell Name="RiverYonthCell SE" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SE"></cell>
+    <cell Name="RiverYonthCell NtoEnd" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NtoEnd"></cell>
+    <cell Name="RiverYonthCell SouthLake 1" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SouthLake 1"></cell>
+    <cell Name="RiverYonthCell SouthLake 2" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SouthLake 2"></cell>
+    <cell Name="RiverYonthCell SouthLake 3" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SouthLake 3"></cell>
+    <cell Name="RiverYonthCell SouthLake 4" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SouthLake 4"></cell>
+    <cell Name="RiverYonthCell SouthLake 5" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth SouthLake 5"></cell>
+    <cell Name="RiverYonthCell NorthLake 1" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NorthLake 1"></cell>
+    <cell Name="RiverYonthCell NorthLake 2" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NorthLake 2"></cell>
+    <cell Name="RiverYonthCell NorthLake 3" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NorthLake 3"></cell>
+    <cell Name="RiverYonthCell NorthLake 4" Inherits="RiverYonthCell" ApplyTo="TerrainRiverYonth NorthLake 4"></cell>
+
+    <cell Name="MountainStreamCell" Inherits="WaterCell" ApplyTo="TerrainMountainStream"></cell>
+    <cell Name="MountainStreamCell WE" Inherits="MountainStreamCell" ApplyTo="TerrainMountainStream WE"></cell>
+    <cell Name="MountainStreamCell NS" Inherits="MountainStreamCell" ApplyTo="TerrainMountainStream NS"></cell>
+    <cell Name="MountainStreamCell NSW" Inherits="MountainStreamCell" ApplyTo="TerrainMountainStream NSW"></cell>
+    <cell Name="MountainStreamCell NE" Inherits="MountainStreamCell" ApplyTo="TerrainMountainStream NE"></cell>
+    <cell Name="MountainStreamCell SW" Inherits="MountainStreamCell" ApplyTo="TerrainMountainStream SW"></cell>
+
+    <cell Name="LakeHinnomCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainLakeHinnom">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Lake Hinnom" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="Lake Hinnom" AmbientBed="Sounds/Ambiences/amb_bed_lakeHinnom">
+        <builder Class="OverlandAlgaeLake"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+        <postbuilder Class="ZoneTemplate:LakeHinnom"></postbuilder>
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="caverns beneath Lake Hinnom">
+        <builder Class="Strata"></builder>
+        <builder Class="OverlandAlgaeLake" Underground="true"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+        <postbuilder Class="ZoneTemplate:LakeHinnomCaves"></postbuilder>
+      </zone>
+    </cell>
+
+    <cell Name="LakeHinnomCell 1i" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 1i"></cell>
+    <cell Name="LakeHinnomCell 1j" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 1j"></cell>
+    <cell Name="LakeHinnomCell 2c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2c"></cell>
+    <cell Name="LakeHinnomCell 2d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2d"></cell>
+    <cell Name="LakeHinnomCell 2g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2g"></cell>
+    <cell Name="LakeHinnomCell 2l" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2l"></cell>
+    <cell Name="LakeHinnomCell 2m" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2m"></cell>
+    <cell Name="LakeHinnomCell 2n" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 2n"></cell>
+    <cell Name="LakeHinnomCell 3c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3c"></cell>
+    <cell Name="LakeHinnomCell 3d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3d"></cell>
+    <cell Name="LakeHinnomCell 3e" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3e"></cell>
+    <cell Name="LakeHinnomCell 3f" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3f"></cell>
+    <cell Name="LakeHinnomCell 3g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3g"></cell>
+    <cell Name="LakeHinnomCell 3o" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 3o"></cell>
+    <cell Name="LakeHinnomCell 4c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 4c"></cell>
+    <cell Name="LakeHinnomCell 4d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 4d"></cell>
+    <cell Name="LakeHinnomCell 4e" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 4e"></cell>
+    <cell Name="LakeHinnomCell 4f" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 4f"></cell>
+    <cell Name="LakeHinnomCell 4m" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 4m"></cell>
+    <cell Name="LakeHinnomCell 5b" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 5b"></cell>
+    <cell Name="LakeHinnomCell 5c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 5c"></cell>
+    <cell Name="LakeHinnomCell 6a" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6a"></cell>
+    <cell Name="LakeHinnomCell 6b" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6b"></cell>
+    <cell Name="LakeHinnomCell 6c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6c"></cell>
+    <cell Name="LakeHinnomCell 6g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6g"></cell>
+    <cell Name="LakeHinnomCell 6h" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6h"></cell>
+    <cell Name="LakeHinnomCell 6i" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6i"></cell>
+    <cell Name="LakeHinnomCell 6m" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 6m"></cell>
+    <cell Name="LakeHinnomCell 7a" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7a"></cell>
+    <cell Name="LakeHinnomCell 7b" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7b"></cell>
+    <cell Name="LakeHinnomCell 7c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7c"></cell>
+    <cell Name="LakeHinnomCell 7d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7d"></cell>
+    <cell Name="LakeHinnomCell 7e" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7e"></cell>
+    <cell Name="LakeHinnomCell 7f" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7f"></cell>
+    <cell Name="LakeHinnomCell 7g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7g"></cell>
+    <cell Name="LakeHinnomCell 7i" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7i"></cell>
+    <cell Name="LakeHinnomCell 7j" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7j"></cell>
+    <cell Name="LakeHinnomCell 7k" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7k"></cell>
+    <cell Name="LakeHinnomCell 7l" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 7l"></cell>
+    <cell Name="LakeHinnomCell 8a" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8a"></cell>
+    <cell Name="LakeHinnomCell 8b" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8b"></cell>
+    <cell Name="LakeHinnomCell 8c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8c"></cell>
+    <cell Name="LakeHinnomCell 8d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8d"></cell>
+    <cell Name="LakeHinnomCell 8e" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8e"></cell>
+    <cell Name="LakeHinnomCell 8f" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8f"></cell>
+    <cell Name="LakeHinnomCell 8g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 8g"></cell>
+    <cell Name="LakeHinnomCell 9c" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9c"></cell>
+    <cell Name="LakeHinnomCell 9d" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9d"></cell>
+    <cell Name="LakeHinnomCell 9e" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9e"></cell>
+    <cell Name="LakeHinnomCell 9f" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9f"></cell>
+    <cell Name="LakeHinnomCell 9g" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9g"></cell>
+    <cell Name="LakeHinnomCell 9h" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom 9h"></cell>
+    <cell Name="LakeHinnomCell blank" Inherits="LakeHinnomCell" ApplyTo="TerrainLakeHinnom blank"></cell>
+
+    <cell Name="PalladiumReefCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainPalladiumReef">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Palladium Reef" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_palladiumReef">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="Palladium Reef" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_palladiumReef">
+        <builder Class="Reef"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+        <postbuilder Class="ZoneTemplate:PalladiumReef"></postbuilder>
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean reef">
+        <builder Class="Strata"></builder>
+        <builder Class="Reef"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+				<postbuilder Class="ZoneTemplate:PalladiumReefCaves"></postbuilder>
+      </zone>
+    </cell>
+
+    <cell Name="PalladiumReefCell 1k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 1k"></cell>
+    <cell Name="PalladiumReefCell 1l" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 1l"></cell>
+    <cell Name="PalladiumReefCell 1o" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 1o"></cell>
+    <cell Name="PalladiumReefCell 2h" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 2h"></cell>
+    <cell Name="PalladiumReefCell 2i" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 2i"></cell>
+    <cell Name="PalladiumReefCell 2j" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 2j"></cell>
+    <cell Name="PalladiumReefCell 2k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 2k"></cell>
+    <cell Name="PalladiumReefCell 3j" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 3j"></cell>
+    <cell Name="PalladiumReefCell 3k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 3k"></cell>
+    <cell Name="PalladiumReefCell 3m" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 3m"></cell>
+    <cell Name="PalladiumReefCell 3n" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 3n"></cell>
+    <cell Name="PalladiumReefCell 3p" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 3p"></cell>
+    <cell Name="PalladiumReefCell 4h" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4h"></cell>
+    <cell Name="PalladiumReefCell 4j" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4j"></cell>
+    <cell Name="PalladiumReefCell 4k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4k"></cell>
+    <cell Name="PalladiumReefCell 4l" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4l"></cell>
+    <cell Name="PalladiumReefCell 4n" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4n"></cell>
+    <cell Name="PalladiumReefCell 4o" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4o"></cell>
+    <cell Name="PalladiumReefCell 4q" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 4q"></cell>
+    <cell Name="PalladiumReefCell 5h" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5h"></cell>
+    <cell Name="PalladiumReefCell 5i" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5i"></cell>
+    <cell Name="PalladiumReefCell 5j" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5j"></cell>
+    <cell Name="PalladiumReefCell 5k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5k"></cell>
+    <cell Name="PalladiumReefCell 5l" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5l"></cell>
+    <cell Name="PalladiumReefCell 5m" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5m"></cell>
+    <cell Name="PalladiumReefCell 5n" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 5n"></cell>
+    <cell Name="PalladiumReefCell 6j" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 6j"></cell>
+    <cell Name="PalladiumReefCell 6k" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 6k"></cell>
+    <cell Name="PalladiumReefCell 6l" Inherits="PalladiumReefCell" ApplyTo="TerrainPalladiumReef 6l"></cell>
+
+    <cell Name="YdFreeholdCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainPalladiumReef 3l" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Yd Freehold" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="the Yd Freehold" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" DisableForcedConnections="Yes">
+        <builder Class="Reef"></builder>
+        <population Table="YdFreeholdOutskirtsPopulation"></population>
+        <music Track="Music/3rd Spore Phase" />
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Yd Freehold" IndefiniteArticle="the" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" DisableForcedConnections="Yes">
+        <map FileName="YdFreehold.rpm"></map>
+        <music Track="Music/3rd Spore Phase" />
+        <part Name="NoPolypPlucking" />
+        <prebuilder Class="IsCheckpoint" Key="YdFreehold" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean reef">
+        <builder Class="Strata"></builder>
+        <builder Class="OverlandAlgaeLake" Underground="true"></builder>
+        <builder Class="ZoneTemplate:WaterCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+        <postbuilder Class="ZoneTemplate:LakeHinnom"></postbuilder>
+      </zone>
+      <zone Level="11" x="1" y="1" Name="Yd Freehold" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" DisableForcedConnections="Yes">
+        <map FileName="YdFreehold-under.rpm"></map>
+        <music Track="Music/3rd Spore Phase" />
+        <prebuilder Class="IsCheckpoint" Key="YdFreehold"></prebuilder>
+      </zone>
+    </cell>   
+
+    <cell Name="MoonStairCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainMoonStair">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Moon Stair" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_moonstair">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="Moon Stair" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_moonstair">
+        <builder Class="MoonStair"></builder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Moonstair" />
+				<postbuilder Class="ZoneTemplate:MoonStair"></postbuilder>
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean stair">				
+				<builder Class="MoonStair"></builder>				        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Moonstair" />
+				<postbuilder Class="ZoneTemplate:MoonStairCaves"></postbuilder>
+      </zone>
+    </cell>
+
+    <cell Name="EynRojCell" Inherits="MoonStairCell" ApplyTo="TerrainEynRoj" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Eyn Roj" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Eyn Roj" ProperName="true" IncludeStratumInZoneDisplay="false" HasBiomes="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <map FileName="ChavvahTrunk.rpm"></map>
+				<music Track="Music/Moonstair" />				
+      </zone>
+      <zone Level="11-15" x="1" y="1" Name="crystalline roots" ProperName="false" DisableForcedConnections="Yes">
+        <builder Class="Strata" Stairs="false"></builder>
+        <builder Class="ZoneTemplate:MoonStairCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <postbuilder Class="ChavvahRoots"></postbuilder>
+				<music Track="Music/Moonstair" />
+			</zone>
+			<zone Level="16-40" x="1" y="1" Name="crystalline roots" ProperName="false" DisableForcedConnections="Yes">
+				<builder Class="Strata" Stairs="false"></builder>
+				<builder Class="ZoneTemplate:Caves"></builder>
+				<builder Class="PossibleCryotube"></builder>
+				<builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+				<postbuilder Class="ChavvahRoots"></postbuilder>
+				<music Track="Music/Binaural Concept" />
+			</zone>
+			<zone Level="41-48" x="1" y="1" Name="crystalline roots" ProperName="false" DisableForcedConnections="Yes">
+				<builder Class="Strata" Stairs="false"></builder>
+				<builder Class="ZoneTemplate:Caves"></builder>
+				<builder Class="PossibleCryotube"></builder>
+				<builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+				<postbuilder Class="ChavvahRoots"></postbuilder>
+				<music Track="Music/Cave Addendum" />
+			</zone>
+			<zone Level="49" x="1" y="1" Name="crystalline roots" ProperName="false" DisableForcedConnections="Yes">
+				<builder Class="Strata" Stairs="false"></builder>				
+				<builder Class="PossibleCryotube"></builder>
+				<builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+				<postbuilder Class="ChavvahRoots"></postbuilder>
+				<music Track="Music/Moonstair" />
+			</zone>		
+    </cell>
+
+    <cell Name="FlowerfieldCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainFlowerfields">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above flower fields" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_flowerFields">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="flower fields" HasWeather="true" WindSpeed="0-40" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_flowerFields">
+        <builder Class="Flowerfields"></builder>
+        <builder Class="ZoneTemplate:FlowerFields"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean flower fields" HasWeather="true" WindSpeed="0-20" WindDirections="N,NW,W,SW,S,SE,E,NE" WindDuration="200-3000">
+        <builder Class="Strata"></builder>
+        <builder Class="Flowerfields" Underground="true"></builder>
+        <builder Class="ZoneTemplate:FlowerfieldCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+    </cell>
+
+    <cell Name="WatervineCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainWatervine">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt marsh" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="Watervine"></builder>
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>        
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean salt marsh">
+        <builder Class="Strata"></builder>
+        <builder Class="Watervine" Underground="true"></builder>
+        <builder Class="ZoneTemplate:WatervineCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+    </cell>
+
+
+    <cell Name="SaltMarsh" Inherits="WatervineCell" ApplyTo="TerrainSaltmarsh">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt marsh" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="Watervine"></builder>
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>        
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+    </cell>
+
+    <cell Name="SaltMarsh2" Inherits="SaltMarsh" ApplyTo="TerrainSaltmarsh2"></cell>
+
+
+    <cell Name="Jungle" Inherits="DefaultJoppaCell" ApplyTo="TerrainJungle">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above jungle" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="jungle" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_jungle">
+        <postbuilder Class="ZoneTemplate:Jungle"></postbuilder>        
+        <builder Class="JungleRuins" Chance="5"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean jungle">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:JungleCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="DeepJungle" Inherits="DefaultJoppaCell" ApplyTo="TerrainDeepJungle">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the deep jungle" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_deepJungle">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="deep jungle" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_deepJungle">
+        <postbuilder Class="ZoneTemplate:Deep Jungle"></postbuilder>
+        <builder Class="JungleRuins" Chance="5"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean deep jungle">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:DeepJungleCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="Fungal" Inherits="DefaultJoppaCell" ApplyTo="TerrainFungal" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Rainbow Wood" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_mushroom">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="Rainbow Wood" IndefiniteArticle="the" ProperName="true" IncludeStratumInZoneDisplay="true" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_mushroom">
+        <builder Class="FungalJungle"></builder>
+        <postbuilder Class="ZoneTemplate:RainbowWood"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="" NameContext="the Rainbow Wood" AmbientBed="Sounds/Ambiences/amb_bed_mushroom">
+        <builder Class="Strata"></builder>
+        <builder Class="FungalJungle" Underground="true"></builder>
+        <builder Class="ZoneTemplate:RainbowWoodCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Substrate" />
+      </zone>
+    </cell>
+
+    <cell Name="FungalR" Inherits="Fungal" ApplyTo="TerrainFungalR"></cell>
+    <cell Name="FungalG" Inherits="Fungal" ApplyTo="TerrainFungalG"></cell>
+    <cell Name="FungalcG" Inherits="Fungal" ApplyTo="TerrainFungalcG"></cell>
+    <cell Name="FungalGw" Inherits="Fungal" ApplyTo="TerrainFungalGw"></cell>
+    <cell Name="FungalB" Inherits="Fungal" ApplyTo="TerrainFungalB"></cell>
+    <cell Name="FungalW" Inherits="Fungal" ApplyTo="TerrainFungalW"></cell>
+    <cell Name="FungalM" Inherits="Fungal" ApplyTo="TerrainFungalM"></cell>
+    <cell Name="FungalC" Inherits="Fungal" ApplyTo="TerrainFungalC"></cell>
+    <cell Name="FungalCenter" Inherits="Fungal" ApplyTo="TerrainFungalCenter"></cell>
+
+
+    <cell Name="Fungal Outskirts" Inherits="DefaultJoppaCell" ApplyTo="TerrainFungalOuter" Mutable="true">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Rainbow Wood" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="Rainbow Wood" IndefiniteArticle="the" ProperName="true" IncludeStratumInZoneDisplay="true" AmbientBed="Sounds/Ambiences/amb_bed_mushroom" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="FungalJungle" Outskirts="true"></builder>        
+        <postbuilder Class="ZoneTemplate:Outer RainbowWood"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="" NameContext="the Rainbow Wood">
+        <builder Class="Strata"></builder>
+        <builder Class="FungalJungle" Underground="true" Outskirts="true"></builder>
+        <builder Class="ZoneTemplate:RainbowWoodCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="FungalOuterR" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterR"></cell>
+    <cell Name="FungalOuterG" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterG"></cell>
+    <cell Name="FungalOutercG" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOutercG"></cell>
+    <cell Name="FungalOuterGw" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterGw"></cell>
+    <cell Name="FungalOuterB" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterB"></cell>
+    <cell Name="FungalOuterW" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterW"></cell>
+    <cell Name="FungalOuterM" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterM"></cell>
+    <cell Name="FungalOuterC" Inherits="Fungal Outskirts" ApplyTo="TerrainFungalOuterC"></cell>
+
+
+    <cell Name="DesertCanyon" Inherits="DefaultJoppaCell" ApplyTo="TerrainDesertCanyon">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above desert canyon" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="desert canyon" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_canyons">
+        <builder Class="Hills"></builder>
+        <postbuilder Class="ZoneTemplate:DesertCanyon"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean desert canyon">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:DesertCanyonCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+    </cell>
+
+    <cell Name="DesertCanyon2" Inherits="DesertCanyon" ApplyTo="TerrainDesertCanyon2"></cell>
+    <cell Name="DesertCanyon3" Inherits="DesertCanyon" ApplyTo="TerrainDesertCanyon3"></cell>
+    <cell Name="DesertCanyon4" Inherits="DesertCanyon" ApplyTo="TerrainDesertCanyon4"></cell>
+
+
+    <cell Name="Hills" Inherits="DefaultJoppaCell" ApplyTo="TerrainHills">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above hills" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_hills">>
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="hills" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_hills">
+        <builder Class="Hills"></builder>
+        <postbuilder Class="ZoneTemplate:Hills"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean hills">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:HillCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+    </cell>
+
+
+    <cell Name="Mountains" Inherits="DefaultJoppaCell" ApplyTo="TerrainMountains">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above mountains" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_mountains">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="mountains" HasWeather="true" WindSpeed="0-100" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_mountains">
+        <builder Class="Hills"></builder>
+        <postbuilder Class="ZoneTemplate:Mountains"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean mountains">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:MountainCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="MountainsSpindleShadow" Inherits="Mountains" ApplyTo="TerrainMountainsSpindleShadow"></cell>
+
+
+    <cell Name="SaltDesertCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainSaltdunes">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt desert" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_saltDesert">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt desert" HasWeather="true" WindSpeed="0-100" WindDirections="NW,NW,W,W,SW" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_saltDesert">
+        <builder Class="SaltDunes"></builder>
+        <postbuilder Class="ZoneTemplate:SaltDesert"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Moghrayi Remembrance Circle" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean salt desert">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:SaltDuneCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Moghrayi Remembrance Circle" />
+      </zone>
+    </cell>
+
+    <cell Name="SaltDesertCell2" Inherits="SaltDesertCell" ApplyTo="TerrainSaltdunes2"></cell>
+
+    <cell Name="SixDayStilt" Inherits="SaltDesertCell" ApplyTo="TerrainSixDayStilt" LandingZone="1,2" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Stiltgrounds" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="" NameContext="The Stiltgrounds" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-80" WindDirections="NW,NW,W,W,SW" WindDuration="200-3000">
+        <builder Class="SaltDunes"></builder>
+        <builder Class="SixDayTents"></builder>
+        <prebuilder Class="IsCheckpoint" Key="Stilt"></prebuilder>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="六日高跷" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-80" WindDirections="NW,NW,W,W,SW" WindDuration="200-3000">
+        <builder Class="SaltDunes"></builder>
+        <map FileName="StiltGroundFloor.rpm"></map>
+        <music Track="Music/Stilt" />
+        <prebuilder Class="IsCheckpoint" Key="Stilt"></prebuilder>
+      </zone>
+    </cell>
+
+    <!-- Trembling dunes
+		<cell Name="Tremblezone" Inherits="SaltDesertCell" ApplyTo="TerrainTremblezone">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt desert" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Trembling Dunes" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-100" WindDirections="NW,NW,W,W,SW" WindDuration="50-3000">
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Fulcrete" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="TrembleTiles" TileEndMarker="TrembleTilesEnd" VaultStartMarker="TrembleVaults" VaultEndMarker="TrembleVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="TrembleVaults" VaultEndMarker2="TrembleVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="Ruiner" RuinLevel="30"></builder>
+        <builder Class="SaltDunes"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <postbuilder Class="ZoneTemplate:Trembling Dunes Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-12" x="1" y="1" Name="" NameContext="the Trembling Dunes">
+        <builder Class="SolidEarth"></builder>
+        <population Table="TrembleRocky"></population>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true" WallMaterial="Fulcrete" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="TrembleTiles" TileEndMarker="TrembleTilesEnd" VaultStartMarker="TrembleVaults" VaultEndMarker="TrembleVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="TrembleVaults" VaultEndMarker2="TrembleVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="Ruiner" RuinAmount="2"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <postbuilder Class="ZoneTemplate:Lower Trembling Dunes"></postbuilder>
+        <postbuilder Class="CollapseAtLevel" Level="5"></postbuilder> 
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="13" x="1" y="1" Name="" NameContext="the Trembling Dunes">
+        <builder Class="SolidEarth"></builder>
+        <population Table="TrembleRocky"></population>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Fulcrete" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="TrembleTiles" TileEndMarker="TrembleTilesEnd" VaultStartMarker="CyberVault" VaultEndMarker="CyberVaultEnd" VaultWidth="5" VaultHeight="2" NumberOfVaults="1" ChancePerVault="100" VaultWidth2="1" VaultHeight2="1" NumberOfVaults2="1" ChancePerVault2="100" VaultStartMarker2="TrembleExit" VaultEndMarker2="TrembleExitEnd" ></builder>
+        <builder Class="StairsUp" x="1d45+12" y="1d18+4"></builder>
+        <postbuilder Class="ZoneTemplate:Lower Trembling Dunes"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>-->
+
+    <cell Name="Kyakukya" Inherits="Jungle" ApplyTo="TerrainKyakukya" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Kyakukya" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Kyakukya" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <population Table="Kyakukya Outskirts"></population>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Kyakukya" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="Kyakukya.rpm"></map>
+        <music Track="Music/3rd Spore Phase" />
+        <prebuilder Class="IsCheckpoint" Key="Kyakukya"></prebuilder>
+      </zone>
+    </cell>
+
+    <cell Name="Joppa" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Joppa" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Joppa" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Joppa Outskirts" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="Joppa" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="Music/Mehmets Morning" />
+        <prebuilder Class="IsCheckpoint" Key="Joppa"></prebuilder>
+      </zone>      
+
+			<zone Level="11" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel Connection"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="12" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="13" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="14" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="RiverStartMouth"></builder>
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="StairsUp"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Connection"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="14" x="1" y="0" Name="waterlogged tunnel">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Connection"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>
+
+    <cell Name="Joppa" Inherits="WatervineCell" ApplyTo="TerrainJoppaRuins" Mutable="false">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Joppa" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Joppa" IndefiniteArticle="some" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="Watervine"></builder>        
+        <builder Class="JoppaOutskirtsRuins"></builder>        
+        <population Table="Joppa Outskirts"></population>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="Joppa" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <map FileName="JoppaRuins.rpm"></map>
+        <music Track="Music/Mehmets Morning" />
+        <prebuilder Class="IsCheckpoint" Key="Joppa"></prebuilder>
+      </zone>
+
+      <zone Level="11" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel Connection"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="12" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="13" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Joppa Tunnel"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="14" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="RiverStartMouth"></builder>
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="StairsUp"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Connection"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+      <zone Level="14" x="1" y="0" Name="waterlogged tunnel">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="Waterlogged"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Connection"></postbuilder>        
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>
+
+    <!-- Rust Well -->
+
+    <cell Name="Rustwell" Inherits="DesertCanyon" ApplyTo="TerrainRustWell" Mutable="false">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Rust Wells" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="Rustwell" AmbientBed="Sounds/Ambiences/amb_biome_rusty">
+        <builder Class="Rustwells"></builder>
+		    <music Track="Music/Deep Dawn" />
+		    <postbuilder Class="ZoneTemplate:Rustwells Surface"></postbuilder>
+	    </zone>
+
+      <zone Level="11" x="1" y="1" Name="Rustwell" AmbientBed="Sounds/Ambiences/amb_biome_rusty">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Rustwells"></builder>
+		    <builder Class="PossibleCryotube"></builder>
+	  	  <music Track="Music/Binaural Concept" />
+  		  <postbuilder Class="ZoneTemplate:Rustwells 1"></postbuilder>
+	    </zone>
+
+      <zone Level="12" x="1" y="1" Name="Rustwell" AmbientBed="Sounds/Ambiences/amb_biome_rusty">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Rustwells"></builder>
+		    <builder Class="PossibleCryotube"></builder>
+        <music Track="Music/Binaural Concept" />
+		    <postbuilder Class="ZoneTemplate:Rustwells 2"></postbuilder>
+	    </zone>
+
+      <zone Level="13" x="1" y="1" Name="Rustwell" AmbientBed="Sounds/Ambiences/amb_biome_rusty">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Rustwells"></builder>
+		    <builder Class="PossibleCryotube"></builder>
+        <music Track="Music/Binaural Concept" />
+		    <postbuilder Class="ZoneTemplate:Rustwells 3"></postbuilder>
+	    </zone>
+
+    </cell>
+
+    <!-- Gritgate -->
+
+    <cell Name="Gritgate" Inherits="Jungle" ApplyTo="TerrainGritGate" Mutable="false">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Grit Gate" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Grit Gate" IndefiniteArticle="some" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <postbuilder Class="ZoneTemplate:Grit Gate Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" NameContext="Grit Gate" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Surface"></postbuilder>        
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-29" x="0-2" y="0-2" Name="lower tunnels" NameContext="Grit Gate">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="12" x="1" y="0" Name="lower tunnels" NameContext="Grit Gate">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <builder Class="ZoneTemplate:GritGateTemplarScouts"></builder>
+      </zone>
+
+      <zone Level="12" x="1" y="1" Name="lower tunnels" NameContext="Grit Gate">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <builder Class="ZoneTemplate:GritGateTemplarScouts"></builder>
+      </zone>
+
+      <zone Level="13" x="1" y="1" Name="entrance level" NameContext="Grit Gate">
+        <builder Class="CaveNorthMouth" X="37"></builder>
+        <builder Class="CaveNorthMouth" X="38"></builder>
+        <builder Class="CaveNorthMouth" X="39"></builder>
+        <builder Class="CaveNorthMouth" X="40"></builder>
+        <builder Class="CaveNorthMouth" X="41"></builder>
+        <builder Class="CaveNorthMouth" X="42"></builder>
+        <builder Class="CaveNorthMouth" X="43"></builder>
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="13" x="2" y="0" Name="Grit Gate" ProperName="true" IncludeStratumInZoneDisplay="false">
+        <builder Class="CaveWestMouth" Y="2"></builder>
+        <builder Class="CaveWestMouth" Y="3"></builder>
+        <builder Class="CaveWestMouth" Y="4"></builder>
+        <builder Class="CaveWestMouth" Y="5"></builder>
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <builder Class="ZoneTemplate:GritGateTemplarScouts"></builder>
+      </zone>
+
+      <zone Level="13" x="1" y="0" Name="Grit Gate" ProperName="true" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <builder Class="CaveSouthMouth" X="37"></builder>
+        <builder Class="CaveSouthMouth" X="38"></builder>
+        <builder Class="CaveSouthMouth" X="39"></builder>
+        <builder Class="CaveSouthMouth" X="40"></builder>
+        <builder Class="CaveSouthMouth" X="41"></builder>
+        <builder Class="CaveSouthMouth" X="42"></builder>
+        <builder Class="CaveSouthMouth" X="43"></builder>
+        <builder Class="CaveEastMouth" Y="2"></builder>
+        <builder Class="CaveEastMouth" Y="3"></builder>
+        <builder Class="CaveEastMouth" Y="4"></builder>
+        <builder Class="CaveEastMouth" Y="5"></builder>
+        <part Name="Memorialization" Faction="Barathrumites" RequiresObjectOfFaction="Barathrumites" RequiresObjectWithOperationalPart="DepositCorpses" Blueprint="GritGateUrn" BlueprintInorganic="GritGateUrnEmpty" />
+        <map FileName="GritGate.rpm"></map>        
+        <music Track="Music/Stoic Porridge" />
+        <prebuilder Class="IsCheckpoint" Key="Grit Gate"></prebuilder>
+      </zone>
+
+      <zone Level="14" x="1" y="0" Name="Barathrum's Study" ProperName="true" IncludeStratumInZoneDisplay="false" NameContext="Grit Gate" DisableForcedConnections="Yes">
+        <map FileName="Barathrums_Study.rpm"></map>
+        <music Track="Music/Barathrums Study" />
+      </zone>
+
+      <zone Level="15" x="1" y="0" Name="lower tunnels" NameContext="Grit Gate">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="60" y="6" Reachable="false"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <builder Class="ForceConnectionsPlus"></builder>
+        <postbuilder Class="ZoneTemplate:Grit Gate Dungeon"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+    </cell>
+
+      <!-- Golgotha -->
+
+    <cell Name="Golgotha" Inherits="Jungle" ApplyTo="TerrainGolgotha" Mutable="false" DisableForcedConnections="Yes">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Golgotha" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" NameContext="Golgotha" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <postbuilder Class="ZoneTemplate:Jungle"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+       <music Track="Music/Overworld" />
+     </zone>
+
+      <zone Level="10" x="1" y="1" NameContext="Golgotha" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="GolgothaChutes"></builder>
+        <postbuilder Class="ZoneTemplate:Golgotha Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-14" x="1" y="1" Name="trash chutes" NameContext="Golgotha" DisableForcedConnections="Yes">
+        <builder Class="GolgothaChutes"></builder>
+        <postbuilder Class="ZoneTemplate:Golgotha Dungeon"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Golgotha" />
+      </zone>
+
+      <zone Level="15" x="1" y="1" Name="Cloaca" ProperName="true" NameContext="Golgotha" DisableForcedConnections="Yes">
+        <postbuilder Class="PlaceWedgeBuilder4"></postbuilder>
+        <builder Class="GolgothaChutes"></builder>
+        <postbuilder Class="ZoneTemplate:Golgotha Cloaca"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Golgotha" />
+      </zone>
+
+      <zone Level="16-20" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+        <postbuilder Class="AgolgotColumn"></postbuilder>
+      </zone>
+
+      <zone Level="21-30" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+				<postbuilder Class="AgolgotColumn"></postbuilder>
+      </zone>
+      
+      <zone Level="31-40" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+				<postbuilder Class="AgolgotColumn"></postbuilder>
+      </zone>
+      
+      <zone Level="41-49" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Cave Addendum" />
+				<postbuilder Class="AgolgotColumn"></postbuilder>
+      </zone>
+      
+    </cell>
+
+      <!-- Rusted Archway -->
+
+    <cell Name="rusted archway" Inherits="DesertCanyon" ApplyTo="TerrainRustedArchway" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above a rusted archway" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="1" y="1" NameContext="a rusted archway" HasWeather="true" WindSpeed="0-40" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Spire"></builder>
+        <postbuilder Class="ZoneTemplate:Rusted Archway Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <postbuilder Class="StairsDown" x="32-48" y="5-19" EmptyOnly="false"></postbuilder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+
+      <zone Level="11-13" x="1" y="1" Name="" NameContext="a rusted archway">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <postbuilder Class="ZoneTemplate:Lower Rusted Archway"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+ 
+      <zone Level="14" x="1" y="1" Name="" NameContext="a rusted archway">
+        <builder Class="Spire"></builder>
+        <postbuilder Class="PlaceWedgeBuilder2"></postbuilder>
+        <builder Class="InsertPresetFromPopulation" Population="DualCyberStations"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <postbuilder Class="ZoneTemplate:Bottom Rusted Archway"></postbuilder>
+        <postbuilder Class="ZoneTemplate:RingGateElectrical" AfterTerrain="true"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>
+
+      <!-- Asphalt Mines -->
+
+    <cell Name="Asphalt Mines" Inherits="Hills" ApplyTo="TerrainAsphaltMines" Mutable="false" Tier="3" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the Asphalt Mines" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" NameContext="the Asphalt Mines" HasWeather="true" WindSpeed="0-40" WindDirections="SW,S,SE" WindDuration="100-3000" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <postbuilder Class="ZoneTemplate:Mountains"></postbuilder>
+        <builder Class="Tarland"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" NameContext="the Asphalt Mines" HasWeather="true" WindSpeed="0-40" WindDirections="SW,S,SE" WindDuration="100-3000" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <postbuilder Class="ZoneTemplate:Mountains"></postbuilder>
+        <builder Class="Tarland"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+        <postbuilder Class="StairsDown" x="32-48" y="5-19" EmptyOnly="false"></postbuilder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="11-14" x="0-2" y="0-2" Name="upper shafts" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="15" x="0-2" y="0-2" Name="middle shafts" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines Caver"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="16-18" x="0-2" y="0-2" Name="middle shafts" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="19-22" x="0-2" y="0-2" Name="deep shafts" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="23-27" x="0-2" y="0-2" Name="Darkunder" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="28" x="0-2" y="0-2" Name="City of Bones" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="29" x="0-2" y="0-2" Name="Great Sea" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines" MinimumDepth="0"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="30-35" x="0-2" y="0-2" Name="Tunnels of Ur" Tier="7" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines2"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="36-40" x="0-2" y="0-2" Name="Swilling Vast" Tier="7" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines2"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Deep Asphalt Mines"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Cave Addendum" />
+      </zone>
+
+      <zone Level="40" x="1" y="1" Name="Swilling Vast" Tier="7" ProperName="true" NameContext="the Asphalt Mines" AmbientBed="Sounds/Ambiences/amb_biome_tarry">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Mines2"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Deep Asphalt Mines"></postbuilder>
+        <postbuilder Class="HamilcrabShop" Width="6" Height="7" Padding="0"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Cave Addendum" />
+      </zone>
+    </cell>
+
+    <!-- Bethesda Susa -->
+
+    <cell Name="Bethesda Susa" Inherits="Hills" ApplyTo="TerrainBethesdaSusa" Mutable="false" Tier="4">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Bethesda Susa" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Bethesda Susa" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="Bethesda Susa" ProperName="true" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="TileBuilding" WallMaterial="Marble" ShellMaterial="Fulcrete" XCorner="20" YCorner="2" Shell="false" Wide="7" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="0" ChancePerVault="13"></builder>
+        <builder Class="Ruiner" RuinLevel="24"></builder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Surface"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <postbuilder Class="StairsDown" x="32-48" y="5-19" EmptyOnly="false"></postbuilder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-26" x="1" y="1" Name="tunnels" NameContext="Bethesda Susa">
+        <builder Class="Spire"></builder>
+        <builder Class="StairsUp" x="13-57" y="5-19"></builder>
+        <builder Class="StairsDown" x="13-57" y="5-19"></builder>
+        <builder Class="Connecter"></builder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="11" x="1" y="0" Name="river passage" NameContext="Bethesda Susa" HasWeather="true" WindSpeed="0-40" WindDirections="N,S" WindDuration="50-3000">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Waterway"></builder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Wharf Outskirts"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+      </zone>
+
+      <zone Level="11" x="1" y="1" Name="ruined wharf" NameContext="Bethesda Susa" HasWeather="true" WindSpeed="0-40" WindDirections="N,S" WindDuration="50-3000">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" WallMaterial="Marble" XCorner="10" YCorner="2" Shell="true" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="0" ChancePerVault="13"></builder>
+        <builder Class="Waterway"></builder>
+        <postbuilder Class="StairsUp" x="1d21+29"></postbuilder>
+        <postbuilder Class="StairsDown" x="69" y="20" Reachable="false" EmptyOnly="false"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Wharf"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="11" x="1" y="2" Name="river passage" NameContext="Bethesda Susa" HasWeather="true" WindSpeed="0-40" WindDirections="N,S" WindDuration="50-3000">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="Waterway"></builder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Wharf Outskirts"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="12" x="1" y="1" Name="healing pools" NameContext="Bethesda Susa" DisableForcedConnections="Yes">
+        <builder Class="BathPools"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <population Table="Bethesda Susa Pools 1"></population>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="13" x="1" y="1" Name="healing pools" NameContext="Bethesda Susa" DisableForcedConnections="Yes">
+        <builder Class="BathPools"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <population Table="Bethesda Susa Pools 2"></population>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="14" x="1" y="1" Name="healing pools" NameContext="Bethesda Susa" DisableForcedConnections="Yes">
+        <builder Class="BathPools"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <population Table="Bethesda Susa Pools 3"></population>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="15" x="1" y="1" Name="abandoned ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="UpperBethesdaElevator"></builder>
+        <postbuilder Class="StairsUp" x="69" y="20" Reachable="false" EmptyOnly="false"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>        
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+		    <postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="16-17" x="1" y="1" Name="ruined ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="Ruiner" RuinLevel="2"></builder>
+        <builder Class="UpperBethesdaElevator"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Ruined Ward"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="18" x="1" y="1" Name="ruined ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="AlchemistVault" VaultEndMarker="AlchemistVaultEnd" VaultWidth="2" VaultHeight="2" NumberOfVaults="1" ChancePerVault="100" CustomCharMap="a@Alchemist,-@Alchemist Table,_@Bedroll,*@Forge,g@Garbage"></builder>
+        <builder Class="UpperBethesdaElevator"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+        <population Table="BethesaSusaWard18Extras"></population>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="19-20" x="1" y="1" Name="ruined ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="Ruiner" RuinLevel="2"></builder>
+        <builder Class="UpperBethesdaElevator"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Ruined Ward"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="10" MissingConsumers="0-4" MissingProducers="0-2"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="21" x="1" y="1" Name="abandoned ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <builder Class="UpperBethesdaElevator"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+		    <postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="22" x="1" y="1" Name="abandoned ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="BethVaults" VaultEndMarker="BethVaultsEnd" VaultWidth="2" VaultHeight="1" NumberOfVaults="4" ChancePerVault="13" VaultStartMarker2="BathVaults" VaultEndMarker2="BathVaultsEnd" VaultWidth2="2" VaultHeight2="2" NumberOfVaults2="2" ChancePerVault2="30"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="Connecter"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="23" x="1" y="1" Name="cybernetics ward" NameContext="Bethesda Susa">
+        <builder Class="SolidEarth"></builder>
+        <builder Class="TileBuilding" XCorner="10" YCorner="2" Shell="true"  WallMaterial="Marble" ShellMaterial="Fulcrete" Wide="12" High="4" TileStartMarker="6Tiles" TileEndMarker="6TilesEnd" VaultStartMarker="CyberVault" VaultEndMarker="CyberVaultEnd" VaultWidth="3" VaultHeight="3" NumberOfVaults="1" ChancePerVault="100" CustomCharMap="C@QuadCyberWStatues,-@(clear)"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Standard Ward"></postbuilder>
+		    <postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <postbuilder Class="PowerGrid" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+        <postbuilder Class="Hydraulics" DamageChance="1" MissingConsumers="0-1" MissingProducers="0-1"></postbuilder>
+				<postbuilder Class="PlaceWedgeBuilder6"></postbuilder>
+				<builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+				<music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="24" x="1" y="1" Name="Cryobarrio" ProperName="true" NameContext="Bethesda Susa" DisableForcedConnections="Yes">
+        <builder Class="Cryobarrio1"></builder>
+        <postbuilder Class="StairsUp"></postbuilder>
+        <postbuilder Class="StairsDown" x="68" y="12" Reachable="false" EmptyOnly="false"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Upper Cryobarrio"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>           
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="25" x="1" y="1" Name="Cryobarrio" ProperName="true" NameContext="Bethesda Susa" DisableForcedConnections="Yes">
+        <builder Class="Cryobarrio2"></builder>
+        <postbuilder Class="StairsUp" x="68" y="12" Reachable="false" EmptyOnly="false"></postbuilder>
+        <postbuilder Class="ZoneTemplate:Bethesda Susa Lower Cryobarrio"></postbuilder>
+		<postbuilder Class="BethesdaColdZone"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <widget Blueprint="HolyPlaceNephilimWidget" />
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="26" x="1" y="1" Name="Temple of the Rock" ProperName="true" IncludeStratumInZoneDisplay="false" NameContext="Bethesda Susa">
+        <map FileName="TempleOfTheRock.rpm"></map>
+        <music Track="Music/Lazarus" />
+      </zone>
+
+      <zone Level="27-30" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+        <postbuilder Class="BethsaidaColumn"></postbuilder>
+      </zone>
+
+      <zone Level="31-40" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+				<postbuilder Class="BethsaidaColumn"></postbuilder>
+      </zone>
+
+      <zone Level="41-49" x="1" y="1" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Cave Addendum" />
+				<postbuilder Class="BethsaidaColumn"></postbuilder>
+      </zone>
+    </cell>
+
+    <!-- Tomb of the Eaters -->
+
+    <cell Name="BananaGrove" Inherits="DefaultJoppaCell" ApplyTo="TerrainBananaGrove">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above a banana grove" IndefiniteArticle="the" GroundLiquid="" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_bananaGrove">
+        <builder Class="BananaSky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="banana grove" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_bananaGrove">
+        <builder Class="BananaGrove"></builder>
+        <postbuilder Class="ZoneTemplate:BananaGrove"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean banana grove" DisableForcedConnections="Yes" AmbientBed="Sounds/Ambiences/amb_bed_bananaGrove">
+        <builder Class="Strata"></builder>
+        <builder Class="BananaGrove" Underground="true"></builder>
+        <builder Class="ZoneTemplate:BananaGroveCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+    </cell>
+
+    <cell Name="BananaGroveSpindleShadow" Inherits="BananaGrove" ApplyTo="TerrainBananaGroveSpindleShadow"></cell>
+    <cell Name="BananaGroveSpindleShadow2" Inherits="BananaGrove" ApplyTo="TerrainBananaGroveSpindleShadow2"></cell>
+
+    <cell Name="TheSpindle" Inherits="BananaGrove" ApplyTo="TerrainTheSpindle" Mutable="false">
+
+      <zone Level="0-9" x="0-2" y="0-2" Name="sky around the Spindle" IndefiniteArticle="the" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <!-- -1: Folk Catacombs (entrance level) -->
+      <zone Level="11" x="0-2" y="0-2" Name="Folk Catacombs" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CatacombsPublicus"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+      </zone>
+
+      <!-- Ground Vestibule -->
+      <zone Level="10" x="0-2" y="0-2" Name="structural rib" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="SolidEbonFulcrete.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="1" y="2" Name="Grand Vestibule" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="OmonporchVestibuleS.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="0" y="2" Name="Grand Vestibule" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="OmonporchVestibuleSW.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="0" y="0" Name="Grand Vestibule" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="OmonporchVestibuleNW.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="0" y="1" Name="Grand Vestibule" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="OmonporchVestibuleW.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="2" y="0" Name="access corridor" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Catacombs-CrematoryAccessCorridor_N.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="2" y="2" Name="access corridor" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Catacombs-CrematoryAccessCorridor_S.rpm"></map>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <!-- +1: Crematory/Columbarium -->
+      <zone Level="9" x="0" y="0-2" Name="Columbarium: Landlords and Changers" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CryptOfLandlords"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="9" x="1-2" y="0" Name="Crematory" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CryptOfLandlords"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="9" x="1-2" y="2" Name="Crematory" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CryptOfLandlords"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="9" x="2" y="1" Name="Crematory Machine Room" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="CrematoryMachineRoom.rpm"></map>
+        <builder Class="CryptOfLandlords"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <!-- +2: Crypt of Warriors and Tutors -->
+      <zone Level="8" x="0-2" y="0-2" Name="Lower Crypts: Warriors and Tutors" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CryptOfWarriors"></builder>
+        <builder Class="Stillvine" Underground="true"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="8" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnetions="Yes">
+        <map FileName="SpindleChannel.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <!-- +3: Crypt of Priests and Royal Families -->
+      <zone Level="7" x="0-2" y="0-2" Name="Upper Crypts: Priests and Royal Families" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <builder Class="CryptOfWarriors"></builder>
+        <music Track="Music/Among The Tombs of Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="7" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnetions="Yes">
+        <map FileName="SpindleChannel.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <!-- +4: Liminal way -->
+
+      <zone Level="6" x="0-2" y="0-2" Name="structural rib" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <music Track="Music/Among The Tombs of Eaters" />
+        <map FileName="SolidEbonFulcrete.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <zone Level="6" x="0" y="2" Name="Liminal Way" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="LiminalWay.rpm"></map>
+        <music Track="Music/Deeper Eaters" />
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+
+      <!-- +5: Tomb of Sultan #1 -->
+      <zone Level="5" x="0" y="2" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="0" y="1" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="0" y="0" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="1" y="0" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="2" y="0" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="2" y="1" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="5" x="2" y="2" Name="Tomb of *Sultan1Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan1SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <!-- +6: Tomb of Sultan #2 -->
+      <zone Level="4" x="0" y="2" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="0" y="1" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="0" y="0" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="1" y="0" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="2" y="0" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="2" y="1" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="4" x="2" y="2" Name="Tomb of *Sultan2Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan2SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <!-- +7: Tomb of Sultan #3 -->
+      <zone Level="3" x="0" y="2" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="0" y="1" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="0" y="0" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="1" y="0" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="2" y="0" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="2" y="1" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="3" x="2" y="2" Name="Tomb of *Sultan3Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan3SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <!-- +8: Tomb of Sultan #4 -->
+      <zone Level="2" x="0" y="2" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="0" y="1" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="0" y="0" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="1" y="0" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="2" y="0" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="2" y="1" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="2" x="2" y="2" Name="Tomb of *Sultan4Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan4SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <!-- +9: Tomb of Sultan #5 -->
+      <zone Level="1" x="0" y="2" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="0" y="1" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="0" y="0" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="1" y="0" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="2" y="0" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="2" y="1" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="1" x="2" y="2" Name="Tomb of *Sultan5Name*" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan5SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <!-- +10: Resheph's Tomb -->
+
+      <zone Level="0" x="0" y="2" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6SW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="0" y="1" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6W.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="0" y="0" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6NW.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="1" y="0" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6N.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="2" y="0" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6NE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="2" y="1" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6E.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0" x="2" y="2" Name="unfinished tomb" NameContext="the Tomb of the Eaters" DisableForcedConnections="Yes">
+        <map FileName="Sultan6SE.rpm"></map>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Deeper Eaters" />
+        <part Name="AmbientStabilization" Strength="40" />
+      </zone>
+
+      <zone Level="0-14" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnections="Yes">   <map FileName="SpindleChannel.rpm"></map>
+        <map FileName="SpindleChannel.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Ascension Chamber" DisableForcedConnections="Yes">
+        <map FileName="SpindlePassengerPad.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+      <zone Level="14" x="1" y="1" Name="Tether Bay" IndefiniteArticle="the" DisableForcedConnections="Yes">
+        <map FileName="SpindleFreightPad.rpm"></map>
+        <builder Class="FlagInside"></builder>
+      </zone>
+
+      <!-- +5-10 Spindle Window in S map -->
+
+      <zone Level="0-5" x="1" y="2" Name="sky around the Spindle" IndefiniteArticle="the" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="TombExteriorSultanTierSpindleWindow.rpm"></map>
+        <music Track="Music/Deeper Eaters" />
+      </zone>
+
+    </cell>
+
+    <cell Name="Omonporch" Inherits="BananaGrove" ApplyTo="TerrainOmonporch" Mutable="false">
+      <zone Level="6-9" x="0-2" y="0-2" Name="sky above Omonporch" IndefiniteArticle="the" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="BananaSky"></builder>
+      </zone>
+
+      <zone Level="0-5" x="1" y="0" Name="sky above Omonporch" IndefiniteArticle="the" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="TombExteriorSultanTierSS.rpm"></map>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="" NameContext="Omonporch" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="BananaGrove"></builder>
+        <population Table="Omonporch Outskirts"></population>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean banana grove" DisableForcedConnections="Yes">
+        <builder Class="Strata"></builder>
+        <builder Class="BananaGrove" Underground="true"></builder>
+        <builder Class="ZoneTemplate:BananaGroveCaves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <!-- Arcade to the Twin Gates -->
+      <zone Level="10" x="1" y="0" Name="Arcade to the Twin Gates" NameContext="Omonporch" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="OmonporchArcade.rpm"></map>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <!-- Court of the Sultans -->
+      <zone Level="10" x="1" y="1" Name="Court of the Sultans" NameContext="Omonporch" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="CourtOfTheSultans.rpm"></map>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+        <builder Class="PulldownLocation" x="39" y="22"></builder>
+        <builder Class="ReachabilitySouthEdge"></builder>
+      </zone>
+
+      <!-- Ezra -->
+      <zone Level="10" x="0" y="0" Name="Ezra" ProperName="true" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-60" WindDirections="W,SW,S,SE" WindDuration="50-3000">
+        <map FileName="Ezra.rpm"></map>
+        <music Track="Music/Onward" />
+        <prebuilder Class="IsCheckpoint" Key="Ezra"></prebuilder>
+        <builder Class="ReachabilityEastEdge"></builder>
+      </zone>
+
+    </cell>
+
+    <!-- Redrock -->
+
+    <cell Name="Redrock" Inherits="DesertCanyon" ApplyTo="TerrainRedRock" Mutable="false">
+
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Red Rock" IndefiniteArticle="the" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Red Rock" IndefiniteArticle="some" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Plains"></builder>
+        <population Table="Redrock Surface"></population>        
+        <music Track="Music/Deep Dawn" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="Red Rock" ProperName="true" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Plains"></builder>
+        <population Table="Redrock Surface"></population>        
+        <builder Class="RedrockOutcrop"></builder>
+        <music Track="Music/Deep Dawn" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="11" x="1" y="1" Name="" NameContext="Red Rock">
+        <builder Class="Redrock"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Redrock 1"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="12" x="1" y="1" Name="" NameContext="Red Rock">
+		    <builder Class="Redrock"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Redrock 2"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="13" x="1" y="1" Name="" NameContext="Red Rock" AmbientBed="Sounds/Ambiences/amb_creature_snapjaw">
+        <builder Class="Redrock"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Redrock 3"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="14" x="1" y="1" Name="" NameContext="Red Rock">
+		    <builder Class="Redrock"></builder>
+		    <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Bottom Redrock"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+
+      <zone Level="14" x="1" y="2" Name="" NameContext="Red Rock">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <!--<builder Class="SolidEarth"></builder>-->
+        <!--<builder Class="BasicRoomHall"></builder>-->
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Connection"></postbuilder>        
+        <music Track="Music/Binaural Concept" />
+        <widget Blueprint="HazingRitualWidget" />
+      </zone>
+    </cell>
+
+    <cell Name="JoppaRedrockChannel" Inherits="WatervineCell" ApplyTo="TerrainJoppaRedrockChannel">
+      <zone Level="10" x="0-2" y="0-2" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="Watervine"></builder>
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+      </zone>
+
+        <zone Level="14" x="1" y="0" Name="waterlogged tunnel">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="14" x="1" y="1" Name="waterlogged tunnel">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel Bottom"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="14" x="1" y="2" Name="waterlogged tunnel">
+        <builder Class="RiverNorthMouth"></builder>
+        <builder Class="RiverSouthMouth"></builder>
+        <builder Class="Strata" Noise="true"></builder>
+        <builder Class="RiverBuilder"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <postbuilder Class="ZoneTemplate:Waterlogged Tunnel"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+    </cell>
+
+    <!-- End Redrock -->
+
+    <cell Name="RuinsCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainRuins">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above some ruins" IndefiniteArticle="the" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_ruins">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="ruins" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_ruins">
+        <builder Class="Ruins"></builder>
+        <builder Class="StairsDown"></builder>
+        <postbuilder Class="ZoneTemplate:SurfaceRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:SurfaceRuinsTechInfrastructure"></postbuilder>        
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean ruins" Tier="4">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:SubterraneanRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="16-20" x="0-2" y="0-2" Name="subterranean ruins" Tier="4">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:DeepRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="21-30" x="0-2" y="0-2" Name="subterranean ruins" Tier="5">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:DeepRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="31-40" x="0-2" y="0-2" Name="subterranean ruins" Tier="6">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:DeepRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>
+
+    <cell Name="BaroqueRuinsCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainBaroqueRuins" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above some baroque ruins" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="baroque ruins" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins">
+        <builder Class="Ruins"></builder>
+        <builder Class="StairsDown"></builder>
+        <postbuilder Class="ZoneTemplate:BaroqueSurfaceRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:SurfaceRuinsTechInfrastructure"></postbuilder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Overworld" />
+      </zone>
+
+      <zone Level="11-15" x="0-2" y="0-2" Name="subterranean baroque ruins" Tier="7">
+		    <builder Class="Strata"></builder>
+		    <builder Class="Ruins" Name="Ruins"></builder>
+  	    <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:BaroqueSubterraneanRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="16-30" x="0-2" y="0-2" Name="subterranean baroque ruins" Tier="7">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:DeepRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+
+      <zone Level="31-40" x="0-2" y="0-2" Name="subterranean baroque ruins" Tier="8">
+        <builder Class="Strata"></builder>
+        <builder Class="Ruins" Name="Ruins"></builder>
+        <builder Class="StairsUp"></builder>
+        <builder Class="StairsDown"></builder>
+        <builder Class="StairConnector"></builder>
+        <postbuilder Class="ZoneTemplate:DeepRuins"></postbuilder>
+        <postbuilder Class="ZoneTemplate:DeepRuinsTechInfrastructure"></postbuilder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Music/Binaural Concept" />
+      </zone>
+    </cell>
+
+    <cell Name="JoppaTutorialArea" Inherits="SaltMarsh" ApplyTo="TerrainJoppaTutorial" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above salt marsh" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="Watervine"></builder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>
+        <postbuilder Class="TutorialClear" ZoneTemplate=""></postbuilder>
+      </zone>
+
+      <zone Level="10" x="1" y="1" Name="salt marsh" HasWeather="true" WindSpeed="0-50">
+        <builder Class="Watervine"></builder>
+        <builder Class="FactionEncounters" Population="SafeFactionPopulation"></builder>
+        <music Track="Music/Deep Dawn" />
+        <postbuilder Class="ZoneTemplate:SaltMarsh"></postbuilder>
+        <postbuilder Class="TutorialClear" ZoneTemplate=""></postbuilder>
+        <postbuilder Class="AddPresetAtLocation" X="7" Y="11" Preset="CaravanseraiShaft"></postbuilder>
+      </zone>
+
+      <zone Level="10" x="1" y="0" Name="salt marsh" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_marsh" AmbientSounds="amb_scatter_marsh_bird1,amb_scatter_marsh_bird2,amb_scatter_marsh_insect1,amb_scatter_marsh_insect2">
+        <builder Class="MapBuilder" FileName="TutorialMapSurface.rpm"/>
+        <builder Class="WatervineCaravanserai" />
+        <postbuilder Class="TutorialClear"></postbuilder>
+      </zone>
+
+      <zone Level="11" x="1" y="1" Name="salt marsh" HasWeather="true" WindSpeed="0-50">
+        <builder Class="MapBuilder" FileName="TutorialMap.rpm"/>
+        <music Track="Music/3rd Spore Phase" />
+        <postbuilder Class="TutorialClear" ZoneTemplate="WatervineCaves"></postbuilder>
+      </zone>
+
+      <zone Level="11" x="1" y="0" Name="salt marsh">
+        <builder Class="MapBuilder" FileName="TutorialMap2.rpm"/>
+        <music Track="Music/3rd Spore Phase" />
+        <postbuilder Class="TutorialClear" ZoneTemplate="WatervineCaves"></postbuilder>
+      </zone>
+    </cell>
+    
+  </world>
+
+  <!-- North Sheva -->
+	<world Name="NorthSheva" ZoneFactory="BlueprintZoneFactory" Map="NorthSheva/NorthShevaWorldMap.rpm" AmbientBed="amb_endgame_worldMap_spacestation_lp" DisplayName="The North Sheva" Plane="NorthSheva" CustomClock="time_space">
+		<cell Name="DefaultNorthShevaCell" Inherits="" AmbientBed="amb_endgame_spacestation_lp" ApplyTo="*Default">
+			<zone Level="0-9" x="0-2" y="0-2" Name="high orbit" GroundLiquid="" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="500-6000" DisableForcedConnections="Yes">
+				<builder Class="Sky" />
+        <part Name="ShevaBoundary" />
+        <music Track="Music/A New World" />
+      </zone>
+			<zone Level="10" x="0-2" y="0-2">
+				<builder Class="EmptyGround" />
+        <part Name="ShevaBoundary" />
+        <music Track="Music/A New World" />
+			</zone>
+      <zone Level="11-49" x="0-2" y="0-2">
+        <builder Class="EmptyGround" />
+        <part Name="ShevaBoundary" />
+        <music Track="Music/A New World" />
+      </zone>
+    </cell>
+		<cell Name="ArrivariumCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainArrivarium" LandingZone="1,0">		
+			<zone Level="10" x="1" y="0" Name="Arrivarium" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+				<map FileName="NorthSheva/Arrivarium.rpm"/>
+        <prebuilder Class="IsCheckpoint" Key="Arrivarium" />
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+		</cell>
+    <cell Name="EarthGateCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainEarthGate">
+      <zone Level="10" x="1" y="0" Name="Earth Gate" IndefiniteArticle="the" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/EarthGate.rpm"/>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Black Wall" IndefiniteArticle="the" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/TheBlackWall.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="1" y="2" Name="Black Wall" IndefiniteArticle="the" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/BlackWallOpening.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>      
+    </cell>
+    <cell Name="TifaretCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainTifaret" LandingZone="2,2,8">
+      <zone Level="10" x="1" y="2" Name="Shallow Stair" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/ShallowStair1.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="9" x="1" y="2" Name="Shallow Stair" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/ShallowStair2.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="8" x="1" y="2" Name="Bridge of Eidolons" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/BridgeOfEidolons.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="8" x="2" y="2" Name="Point of Tifaret" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/PointOfTifaret.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+    </cell>   
+		<cell Name="ArkStopCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainNorthernArkStop" LandingZone="1,0">
+			<zone Level="10" x="1" y="0" Name="Northern Ark" IndefiniteArticle="the" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+				<map FileName="NorthSheva/ArkStop.rpm"/>        
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="0" y="0" Name="Northern Ark" IndefiniteArticle="the" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/ArkWestWing.rpm"/>        
+        <music Track="Music/A New World" />
+      </zone>
+    </cell>
+    <cell Name="ArkArchCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainShieldingArch">
+      <zone Level="10" x="1" y="2" Name="Shielding Arch" NameContext="the Northern Ark" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes" AmbientBed="amb_endgame_supercomputer_lp" AmbientVolume="25">
+        <map FileName="NorthSheva/ArkShieldArch1.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Shielding Arch" NameContext="the Northern Ark" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes" AmbientBed="amb_endgame_supercomputer_lp" AmbientVolume="50">
+        <map FileName="NorthSheva/ArkShieldArch2.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="1" y="0" Name="Shielding Arch" NameContext="the Northern Ark" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes" AmbientBed="amb_endgame_supercomputer_lp" AmbientVolume="75">
+        <map FileName="NorthSheva/ArkShieldArch3.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>
+    </cell>
+    <cell Name="ArkSiachCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainNorthernArkSiach">
+      <zone Level="10" x="1" y="2" Name="The Great Siach" NameContext="the Northern Ark" IncludeStratumInZoneDisplay="false" AmbientBed="amb_endgame_supercomputer_lp" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/ArkSiach.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/Complex Being" />
+      </zone>
+      <zone Level="10" x="2" y="2" IndefiniteArticle="a" Name="wood-carved space" NameContext="the Northern Ark" IncludeStratumInZoneDisplay="false" AmbientBed="amb_endgame_supercomputer_lp" AmbientVolume="25" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/WoodCarvedSpace.rpm"/>
+        <music Track="Music/Barathrums Study" />
+        <builder Class="FlagInside"></builder>        
+      </zone>
+    </cell>
+    <cell Name="QuayStopCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainStarfarersQuayStop" LandingZone="2,2">
+      <zone Level="10" x="2" y="2" Name="Starfarer's Quay" NameContext="the North Sheva" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarfarersQuayStop.rpm"/>
+        <builder Class="FlagInside"></builder>
+        <music Track="Music/A New World" />
+      </zone>     
+    </cell>
+    <cell Name="QuayCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainSurfaceStratumNorthwiseMoors">
+      <zone Level="10" x="0" y="2" Name="Northwise moors" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarfarersQuayHigh.rpm"/>
+        <music Track="Music/A New World" />
+      </zone>    
+    </cell>
+    <cell Name="QuayCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainStarfarersQuayNorthwiseMoors">
+      <zone Level="10" x="0" y="0" Name="Northwise moors" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarfarersQuayMid.rpm"/>
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="10" x="0" y="1" Name="Northwise moors" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarfarersQuayLow.rpm"/>
+        <music Track="Music/A New World" />
+      </zone>      
+    </cell>
+    <cell Name="StarOrchidTempleCell" Inherits="DefaultNorthShevaCell" ApplyTo="MoverStopStarOrchidTemple">
+      <zone Level="10" x="1" y="1" Name="Star Orchid Temple" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarOrchidTempleStop.rpm"/>        
+        <music Track="Music/A New World" />
+      </zone>
+      <zone Level="9" x="1" y="1" Name="Star Orchid Temple" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarOrchidTempleCantoI.rpm"/>        
+        <music Track="Music/A New World" />
+      </zone>     
+      <zone Level="8" x="1" y="1" Name="Star Orchid Temple" DisableForcedConnections="Yes">
+        <map FileName="NorthSheva/StarOrchidTempleCantoII.rpm"/>        
+        <music Track="Music/A New World" />
+      </zone>           
+    </cell>
+	</world>
+
+</worlds>

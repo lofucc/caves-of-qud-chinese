@@ -169,7 +169,7 @@
 
 
   <option ID="OptionShowAdvancedOptions" DisplayText="显示高级选项" Category="应用设置" Type="Checkbox" Default="No"/>
-  <option ID="OptionMusicBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="保持《Qud 地洞》在后台运行" Category="应用设置" Type="Checkbox" Default="No"/>
+  <option ID="OptionMusicBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="保持《卡德洞窟》在后台运行" Category="应用设置" Type="Checkbox" Default="No"/>
   <option ID="OptionSessionBackups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="滚动备份存档数量" Category="应用设置" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="3">
     <helptext>
       When you load a save from the main menu rolling backups of loaded saves will be maintained in your data folder (&lt;...&gt;/CavesOfQud/Local/Session) up to this number.

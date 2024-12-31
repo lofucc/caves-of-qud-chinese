@@ -191,7 +191,8 @@
   </object>
   <!-- Ruins power grids -->
   <object Name="RuinPowerGridsWidget" Inherits="Widget">
-    <part Name="RuinPowerGrids" MissingElectricalChance="0" MissingHydraulicsChance="0" MissingMechanicalChance="0" />
+    <part Name="RuinPowerGrids" MissingElectricalChance="0" MissingHydraulicsChance="0"
+      MissingMechanicalChance="0" />
   </object>
   <object Name="RuinPowerGridWidget" Inherits="Widget">
     <part Name="RuinPowerGrid" MissingChance="0" />
@@ -203,7 +204,8 @@
     <part Name="RuinMechanicalPower" MissingChance="0" />
   </object>
   <object Name="RuinPowerGridsAvoidWallsWidget" Inherits="Widget">
-    <part Name="RuinPowerGrids" MissingElectricalChance="0" MissingHydraulicsChance="0" MissingMechanicalChance="0" AvoidWalls="true" />
+    <part Name="RuinPowerGrids" MissingElectricalChance="0" MissingHydraulicsChance="0"
+      MissingMechanicalChance="0" AvoidWalls="true" />
   </object>
   <object Name="RuinPowerGridAvoidWallsWidget" Inherits="Widget">
     <part Name="RuinPowerGrid" MissingChance="0" AvoidWalls="true" />
@@ -235,7 +237,8 @@
   <object Name="RuinHydraulicsAvoidWallsMoreIntactWidget" Inherits="RuinHydraulicsAvoidWallsWidget">
     <part Name="RuinHydraulics" DamageChance="0-1x5" />
   </object>
-  <object Name="RuinMechanicalPowerAvoidWallsMoreIntactWidget" Inherits="RuinMechanicalPowerAvoidWallsWidget">
+  <object Name="RuinMechanicalPowerAvoidWallsMoreIntactWidget"
+    Inherits="RuinMechanicalPowerAvoidWallsWidget">
     <part Name="RuinMechanicalPower" DamageChance="0-1x5" />
   </object>
   <!-- Sultan wall -->
@@ -276,7 +279,7 @@
     <part Name="SultanMuralController" PeriodFilter="3" Layout="chronological:3" />
   </object>
   <object Name="SultanMuralControllerChronological4" Inherits="SultanMuralController">
-    <part Name="SultanMuralController" PeriodFilter="4" Layout="chronological:4" Reversed ="true" />
+    <part Name="SultanMuralController" PeriodFilter="4" Layout="chronological:4" Reversed="true" />
   </object>
   <object Name="SultanMuralControllerChronological5" Inherits="SultanMuralController">
     <part Name="SultanMuralController" PeriodFilter="5" Layout="chronological:5" />
@@ -316,19 +319,24 @@
   </object>
   <!-- Village landmarks -->
   <object Name="LandmarkJoppaIrudadHut" Inherits="Widget">
-    <part Name="ZoneLandmarkBox" DisplayName="hut" Preposition="in" OwnerBlueprint="ElderBob" Width="14" Height="4" RequireBlueprint="BrinestalkWall" RequireCount="5" />
+    <part Name="ZoneLandmarkBox" DisplayName="小屋" Preposition="在里面" OwnerBlueprint="ElderBob"
+      Width="14" Height="4" RequireBlueprint="BrinestalkWall" RequireCount="5" />
   </object>
   <object Name="LandmarkJoppaArgyveWorkshop" Inherits="Widget">
-    <part Name="ZoneLandmarkBox" DisplayName="workshop" Preposition="in" OwnerBlueprint="Argyve" Width="8" Height="5" RequireBlueprint="RustedMetalWall" RequireCount="5" />
+    <part Name="ZoneLandmarkBox" DisplayName="工作台" Preposition="在里面" OwnerBlueprint="Argyve"
+      Width="8" Height="5" RequireBlueprint="RustedMetalWall" RequireCount="5" />
   </object>
   <object Name="LandmarkJoppaTamTent" Inherits="Widget">
-    <part Name="ZoneLandmarkBox" DisplayName="tent" Preposition="in" OwnerBlueprint="Tam" Width="5" Height="5" RequireBlueprint="CanvasWall" RequireCount="5" />
+    <part Name="ZoneLandmarkBox" DisplayName="帐篷" Preposition="在里面" OwnerBlueprint="Tam" Width="5"
+      Height="5" RequireBlueprint="CanvasWall" RequireCount="5" />
   </object>
   <object Name="LandmarkJoppaWatervine" Inherits="Widget">
-    <part Name="ZoneLandmarkGroup" DisplayName="watervine patch" Preposition="by" Blueprint="Watervine" Count="5" Padding="1" />
+    <part Name="ZoneLandmarkGroup" DisplayName="水藤丛" Preposition="by"
+      Blueprint="Watervine" Count="5" Padding="1" />
   </object>
   <object Name="LandmarkJoppaMill" Inherits="Widget">
-    <part Name="ZoneLandmarkBox" DisplayName="village mill" Preposition="by" Width="7" Height="5" RequireBlueprint="Millstone" RequireCount="1" />
+    <part Name="ZoneLandmarkBox" DisplayName="村庄磨坊" Preposition="by" Width="7" Height="5"
+      RequireBlueprint="Millstone" RequireCount="1" />
   </object>
   <!-- End zone mutators -->
   <!--
@@ -338,7 +346,8 @@
     ***************************
   -->
   <object Name="HazingRitualWidget" Inherits="Widget">
-    <part Name="PlayerDeathAchievement" AchievementID="ACH_STONED_RED_ROCK" Killer="BaseBaboon" Weapon="BaseStone" />
+    <part Name="PlayerDeathAchievement" AchievementID="ACH_STONED_RED_ROCK" Killer="BaseBaboon"
+      Weapon="BaseStone" />
   </object>
   <!--
 
@@ -382,7 +391,9 @@
     <part Name="ForceWallTarget" />
   </object>
   <object Name="GritGateMedicalBayWidget" Inherits="Widget">
-    <part Name="Interesting" DisplayName="medical bay" Preposition="in" Radius="2" EvenIfInvisible="true" TranslateToLocation="true" IconTile="Items/sw_medlocker.bmp" IconRenderString="+" IconColorString="&amp;R" IconTileColor="&amp;c" IconDetailColor="R" />
+    <part Name="Interesting" DisplayName="医疗舱" Preposition="在里面" Radius="2"
+      EvenIfInvisible="true" TranslateToLocation="true" IconTile="Items/sw_medlocker.bmp"
+      IconRenderString="+" IconColorString="&amp;R" IconTileColor="&amp;c" IconDetailColor="R" />
   </object>
   <object Name="AnchorRoomTile" Inherits="Widget">
     <part Name="AnchorRoomTile" />
@@ -435,32 +446,36 @@
   </object>
   <!-- Palladium Reef coral spawners -->
   <object Name="CoralPolypSpawner" Inherits="Widget">
-    <part Name="Render" DisplayName="coral polyp" RenderString="231" ColorString="&amp;r" Tile="Terrain/sw_reef_organic_even_1.bmp" DetailColor="r" Occluding="false" />
+    <part Name="Render" DisplayName="珊瑚虫" RenderString="231" ColorString="&amp;r"
+      Tile="Terrain/sw_reef_organic_even_1.bmp" DetailColor="r" Occluding="false" />
     <part Name="CheckPatternSpawner" ObjectBaseName="Coral Polyp" />
     <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
     <tag Name="DynamicObjectsTable:FarmablePlants" />
     <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
   </object>
   <object Name="CoralAndPalladiumSpawner" Inherits="Widget">
-    <part Name="Render" DisplayName="palladium strut with coral growth" RenderString="231" ColorString="&amp;C" Tile="Terrain/sw_reef_both_even_1.bmp" DetailColor="r"  Occluding="true" />
+    <part Name="Render" DisplayName="带有珊瑚生长的钯金支柱" RenderString="231"
+      ColorString="&amp;C" Tile="Terrain/sw_reef_both_even_1.bmp" DetailColor="r" Occluding="true" />
     <part Name="CheckPatternSpawner" ObjectBaseName="Coral and Palladium Strut" />
     <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
     <tag Name="DynamicObjectsTable:FarmablePlants" />
     <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
   </object>
   <object Name="PalladiumStrutSpawner" Inherits="Widget">
-    <part Name="Render" DisplayName="palladium strut" RenderString="231" ColorString="&amp;C" Tile="Terrain/sw_reef_metal_even_1.bmp" DetailColor="C"  Occluding="true" />
+    <part Name="Render" DisplayName="钯金支柱" RenderString="231" ColorString="&amp;C"
+      Tile="Terrain/sw_reef_metal_even_1.bmp" DetailColor="C" Occluding="true" />
     <part Name="CheckPatternSpawner" ObjectBaseName="Palladium Strut" />
   </object>
   <object Name="ArspliceHyphaeSpawner" Inherits="Widget">
-    <part Name="Render" DisplayName="arsplice hyphae" RenderString="231" ColorString="&amp;C" Tile="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp" DetailColor="C"  Occluding="false" />
+    <part Name="Render" DisplayName="菌丝接合体" RenderString="231" ColorString="&amp;C"
+      Tile="Terrain/sw_arsplice_hyphae_unripe_even_1.bmp" DetailColor="C" Occluding="false" />
     <part Name="CheckPatternSpawner" ObjectBaseName="Arsplice Hyphae" />
   </object>
   <object Name="ReefFloraSpawner" Inherits="Widget">
     <tag Name="DynamicObjectsTable:PalladiumReef_Plants" />
     <tag Name="DynamicObjectsTable:FarmablePlants" />
     <tag Name="DynamicObjectsTable:PalladiumReef_FarmablePlants" />
-    <part Name="PopulationSpawner" Specification="@ReefFlora" DestroyAfterSpawn="false"/>
+    <part Name="PopulationSpawner" Specification="@ReefFlora" DestroyAfterSpawn="false" />
   </object>
   <!-- End tile mutators -->
   <!--
@@ -471,40 +486,51 @@
 
   -->
   <object Name="CaravanseraiShaft" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CaravanseraiShaft.rpm" Width="6" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CaravanseraiShaft.rpm" Width="6"
+      Height="6" />
   </object>
   <object Name="JoppaSultanShrine_3x3" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_3x3.rpm" Width="3" Height="3" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_3x3.rpm" Width="3"
+      Height="3" />
   </object>
   <object Name="JoppaSultanShrine_5x3" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_5x3.rpm" Width="5" Height="3" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_5x3.rpm" Width="5"
+      Height="3" />
   </object>
   <object Name="JoppaSultanShrine_5x3_ruined" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_5x3_ruined.rpm" Width="5" Height="3" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/JoppaSultanShrine_5x3_ruined.rpm"
+      Width="5" Height="3" />
   </object>
   <object Name="SultanShrine_3x3N" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3N.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3N.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="SultanShrine_3x3S" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3S.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3S.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="SultanShrine_3x3W" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3W.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3W.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="SultanShrine_3x3E" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3E.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SultanShrine_3x3E.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="Arena_25X15" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/Arena_25x15.rpm" Width="25" Height="15" />
   </object>
   <object Name="SultanMegaShrine_25X9" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/Sultan_Megashrine.rpm" Width="25" Height="9" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/Sultan_Megashrine.rpm" Width="25"
+      Height="9" />
   </object>
   <object Name="SpaceTimeRift_5X5" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SpaceTimeRift_5x5.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SpaceTimeRift_5x5.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="SpaceTimeRift_11X7" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SpaceTimeRift_11x7.rpm" Width="11" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SpaceTimeRift_11x7.rpm" Width="11"
+      Height="7" />
   </object>
   <object Name="WeaponRack_Chunk" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/WeaponRack_3x1.rpm" Width="3" Height="1" />
@@ -516,173 +542,241 @@
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/ArmorRack_3x1.rpm" Width="3" Height="1" />
   </object>
   <object Name="BarathrumsStudy_Klanq" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/BarathrumsStudy_Klanq.rpm" Width="8" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/BarathrumsStudy_Klanq.rpm" Width="8"
+      Height="7" />
   </object>
   <object Name="CourtOfTheSultans_ReshapingNook" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CourtOfTheSultans_ReshapingNook.rpm" Width="15" Height="3" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CourtOfTheSultans_ReshapingNook.rpm"
+      Width="15" Height="3" />
   </object>
   <object Name="RoamingChavvahTrunkBase" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="ChavvahHolographicTrunkBase.rpm" Width="20" Height="19" />
   </object>
   <!-- Becoming nook presets -->
   <object Name="CyberStation1" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm" Width="8" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm" Width="8"
+      Height="7" />
   </object>
   <object Name="CyberStation2" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" Width="8" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" Width="8"
+      Height="7" />
   </object>
   <object Name="CyberStation3" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm" Width="8" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm" Width="8"
+      Height="7" />
   </object>
   <object Name="CyberStation4" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm" Width="8" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm" Width="8"
+      Height="7" />
   </object>
   <object Name="QuadCyberWStatues" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/QuadCyberWStatues.rpm" Width="19" Height="17" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/QuadCyberWStatues.rpm" Width="19"
+      Height="17" />
   </object>
   <object Name="QuadCyberStation" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_4-3" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_4-1" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_4-2" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_3-1" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_3-2" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="DualCyberStation_1-2" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="2" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_1N" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm" MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm"
+      MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_1E" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal1_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_2N" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater3_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_2W" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm" MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater1_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal2_8x7b.rpm"
+      MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_3S" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_3W" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm" MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/UnamedEater4_8x7b.rpm,preset_tile_chunks/CyberneticsTerminal3_8x7b.rpm"
+      MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_4S" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm" MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater1_8x7b.rpm"
+      MapsWide="1" MapsHigh="2" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <object Name="MonoCyberStation_4E" Inherits="Widget">
-    <part Name="MultiMapChunkPlacement" Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm" MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
+    <part Name="MultiMapChunkPlacement"
+      Maps="preset_tile_chunks/CyberneticsTerminal4_8x7b.rpm,preset_tile_chunks/UnamedEater2_8x7b.rpm"
+      MapsWide="2" MapsHigh="1" Width="8" Height="7" RowPadding="1" ColumnPadding="1" />
   </object>
   <!-- 食者之墓 presets -->
   <object Name="TombPillarPlacement" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombPillar.rpm" Width="11" Height="8" />
   </object>
   <object Name="TombRuinedMuralCistern" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombRuinedMuralCistern.rpm" Width="19" Height="15" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombRuinedMuralCistern.rpm" Width="19"
+      Height="15" />
   </object>
   <object Name="TombExteriorWall_N" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_N.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_N.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_NE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NE.rpm" Width="9" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NE.rpm" Width="9"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_NNE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NNE.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NNE.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_NNW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NNW.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NNW.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_NW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NW.rpm" Width="9" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_NW.rpm" Width="9"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_S" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_S.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_S.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_SE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SE.rpm" Width="9" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SE.rpm" Width="9"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_SSE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SSE.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SSE.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_SSW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SSW.rpm" Width="80" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SSW.rpm" Width="80"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_SW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SW.rpm" Width="9" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SW.rpm" Width="9"
+      Height="6" />
   </object>
   <object Name="TombExteriorWall_W" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_W.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_W.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_WNW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_WNW.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_WNW.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_WSW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_WSW.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_WSW.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_E" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_E.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_E.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_ENE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_ENE.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_ENE.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_ESE" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_ESE.rpm" Width="9" Height="25" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_ESE.rpm" Width="9"
+      Height="25" />
   </object>
   <object Name="TombExteriorWall_SW" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SW.rpm" Width="9" Height="6" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/TombExteriorWall_SW.rpm" Width="9"
+      Height="6" />
   </object>
   <object Name="CrematoryStairsDown" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CrematoryStairsDown.rpm" Width="5" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CrematoryStairsDown.rpm" Width="5"
+      Height="5" />
   </object>
   <object Name="IndustrialFanRow_5_N" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_5_N.rpm" Width="7" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_5_N.rpm" Width="7"
+      Height="5" />
   </object>
   <object Name="IndustrialFanRow_9_N" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_9_N.rpm" Width="11" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_9_N.rpm" Width="11"
+      Height="5" />
   </object>
   <object Name="IndustrialFanRow_5_S" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_5_S.rpm" Width="7" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_5_S.rpm" Width="7"
+      Height="5" />
   </object>
   <object Name="IndustrialFanRow_9_S" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_9_S.rpm" Width="11" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/SIndustrialFanRow_9_S.rpm" Width="11"
+      Height="5" />
   </object>
   <object Name="PistonPressController" Inherits="Widget">
-    <part Name="Render" Visible="false" RenderLayer="20" TileColor="&amp;y" DetailColor="Y" DisplayName="machine press" RenderString="0" ColorString="&amp;y" Occluding="false" RenderIfDark="true"/>
-    <part Name="Physics" Solid="false" IsReal="false"/>
+    <part Name="Render" Visible="false" RenderLayer="20" TileColor="&amp;y" DetailColor="Y"
+      DisplayName="机械压铸机" RenderString="0" ColorString="&amp;y" Occluding="false"
+      RenderIfDark="true" />
+    <part Name="Physics" Solid="false" IsReal="false" />
     <part Name="PistonPressController" />
   </object>
   <object Name="PistonPressElement" Inherits="SolidHighTechInstallation">
-    <part Name="Render" TileColor="&amp;y" DetailColor="Y" DisplayName="machine press" RenderString="0" ColorString="&amp;y" />
+    <part Name="Render" TileColor="&amp;y" DetailColor="Y" DisplayName="机械压力机"
+      RenderString="0" ColorString="&amp;y" />
     <part Name="Physics" Weight="3000" />
-    <part Name="Description" Short="Light glints off the tiny scratches torn into the vast tube's chrome surface from where metal smashed bone into grated submission." />
+    <part Name="Description"
+      Short="Light glints off the tiny scratches torn into the vast tube's chrome surface from where metal smashed bone into grated submission." />
     <part Name="PistonPressElement" />
   </object>
   <object Name="CryptPeriod5" Inherits="Widget">
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/CryptPeriod5_S.rpm" Width="7" Height="6" />
   </object>
   <object Name="OmonporchBarathrumiteCamp1" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp1.rpm" Width="6" Height="4" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp1.rpm" Width="6"
+      Height="4" />
   </object>
   <object Name="OmonporchBarathrumiteCamp2" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp2.rpm" Width="9" Height="2" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp2.rpm" Width="9"
+      Height="2" />
   </object>
   <object Name="OmonporchBarathrumiteCamp3" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp3.rpm" Width="7" Height="5" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/OmonporchBarathrumiteCamp3.rpm" Width="7"
+      Height="5" />
   </object>
   <object Name="RemortingNook_11X19" Inherits="Widget">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CorporealizationNook.rpm" Width="11" Height="9" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/CorporealizationNook.rpm" Width="11"
+      Height="9" />
   </object>
   <!-- Ring gate presets -->
   <object Name="Base RingGatePrefab" Inherits="Widget">
@@ -705,20 +799,25 @@
     <part Name="MapChunkPlacement" Map="preset_tile_chunks/TeleportGate3.rpm" Width="9" Height="7" />
   </object>
   <object Name="ElectricalRingGatePrefab Ruined" Inherits="Base ElectricalRingGatePrefab">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/RuinedTeleportGate.rpm" Width="9" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/RuinedTeleportGate.rpm" Width="9"
+      Height="7" />
     <tag Name="AggregateWith" Value="*delete" />
   </object>
   <object Name="HydraulicRingGatePrefab 1" Inherits="Base HydraulicRingGatePrefab">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate1.rpm" Width="9" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate1.rpm" Width="9"
+      Height="7" />
   </object>
   <object Name="HydraulicRingGatePrefab 2" Inherits="Base HydraulicRingGatePrefab">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate2.rpm" Width="9" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate2.rpm" Width="9"
+      Height="7" />
   </object>
   <object Name="HydraulicRingGatePrefab 3" Inherits="Base HydraulicRingGatePrefab">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate3.rpm" Width="9" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/HydraulicTeleportGate3.rpm" Width="9"
+      Height="7" />
   </object>
   <object Name="HydraulicRingGatePrefab Ruined" Inherits="Base HydraulicRingGatePrefab">
-    <part Name="MapChunkPlacement" Map="preset_tile_chunks/RuinedTeleportGate.rpm" Width="9" Height="7" />
+    <part Name="MapChunkPlacement" Map="preset_tile_chunks/RuinedTeleportGate.rpm" Width="9"
+      Height="7" />
     <tag Name="AggregateWith" Value="*delete" />
   </object>
   <!-- End multi-tile presets -->
@@ -739,7 +838,8 @@
     <part Name="QuestStepFinisher" Trigger="Created" Quest="不仅仅是一种愿意的精神" Step="前往各各他" />
   </object>
   <object Name="Finish_RaisingIndrix_FindRazedVillage" Inherits="Widget">
-    <part Name="QuestStepFinisher" Trigger="Created" Quest="Raising Indrix" Step="Find the Razed Village" />
+    <part Name="QuestStepFinisher" Trigger="Created" Quest="Raising Indrix"
+      Step="Find the Razed Village" />
   </object>
   <object Name="Finish_ExploringRedrock_TravelToBethseda" Inherits="Widget">
     <part Name="QuestStepFinisher" Trigger="Created" Quest="解码信号" Step="找到贝塞斯达苏萨的机械神殿" />
@@ -769,7 +869,7 @@
     <part Name="AfterBrightsheolCourtSpawner" />
   </object>
   <object Name="GritGatePowerDisplay" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/gritgate_power" VisibleOnly="false"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/gritgate_power" VisibleOnly="false" />
     <part Name="GritGatePowerDisplay" />
     <tag Name="AlwaysPaint" />
   </object>
@@ -837,12 +937,13 @@
     <part Name="MemorialPlacement" FillOrder="20" />
   </object>
   <object Name="AlarmCircle" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle" VisibleOnly="false"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle" VisibleOnly="false" />
     <part Name="AlarmCircle" Radius="6" />
     <tag Name="AlwaysPaint" />
   </object>
   <object Name="AlarmCircleSmall" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle_small" VisibleOnly="false"/>
+    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle_small"
+      VisibleOnly="false" />
     <part Name="AlarmCircle" Radius="3" />
     <tag Name="AlwaysPaint" />
   </object>
@@ -869,7 +970,8 @@
 
   -->
   <object Name="DummyTinkerScreenObject" Inherits="Item">
-    <part Name="Render" DisplayName="{{C|Known Modifications}}" Tile="creatures/sw_ape.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Render" DisplayName="{{C|已知改造}}" Tile="creatures/sw_ape.bmp"
+      RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <!-- End UI widgets -->

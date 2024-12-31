@@ -48,7 +48,7 @@
     <power Name="摧毁" Cost="300" Attribute="Strength" Minimum="29" Class="Cudgel_SmashUp" Prereq="Cudgel_Slam" Snippet="demolishing" Description="激活；冷却时间100。接下来的5轮中，使用棍棒攻击使敌人眩晕的几率为100%，并且重击没有冷却时间。使用摧毁时，重击必须处于非冷却状态，且使用摧毁会使重击进入冷却。" Tile="Abilities/abil_demolish.bmp" Foreground="y" Detail="g"/>
   </skill>
 
-  <skill Name="风俗与传说" Class="Customs" Description="你熟悉Qud的风俗和传说。" Cost="150" Attribute="Intelligence" Snippet="customs and folklore" Tile="Abilities/sw_skill_customs_and_folklore.png" Foreground="y" Detail="B">
+  <skill Name="风俗与传说" Class="Customs" Description="你熟悉卡德的风俗和传说。" Cost="150" Attribute="Intelligence" Snippet="customs and folklore" Tile="Abilities/sw_skill_customs_and_folklore.png" Foreground="y" Detail="B">
     <power Name="审慎" Cost="0" Attribute="Intelligence" Minimum="19" Class="Customs_Tactful" Snippet="being tactful" Description="当你首次与新生物进行水之仪式时，获得25点声望奖励。如果你在与某个生物交往后购买此能力，下次与该生物交往时同样获得25点声望奖励。" Tile="Abilities/sw_skill_tactful.png" Foreground="y" Detail="B"/>
     <power Name="垃圾占卜" Cost="150" Attribute="Intelligence" Minimum="21" Class="Customs_TrashDivining" Snippet="trash divining" Description="每当你翻找垃圾时，有5%的几率拼凑出线索并学到一个随机秘密。" Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="y" Detail="B"/>
   </skill>

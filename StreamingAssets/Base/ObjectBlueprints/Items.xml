@@ -2958,7 +2958,7 @@
   </object>
   <object Name="Small Stone" Inherits="BaseStone">
     <part Name="Render" DisplayName="石" Tile="Items/sw_smallstone.bmp"/>
-    <part Name="SizeAdjective" Adjective="small"/>
+    <part Name="SizeAdjective" Adjective="小的"/>
     <part Name="Physics" Weight="10"/>
     <part Name="Description" Short="这是一块从其诞生之地被水流切割下来的岩石，经过时间的磨砺，逐渐变成了一个球体。"/>
     <part Name="ThrownWeapon" Damage="1d2"/>
@@ -2967,7 +2967,7 @@
   </object>
   <object Name="Large Stone" Inherits="BaseStone">
     <part Name="Render" DisplayName="石" Tile="Items/sw_stone_large.bmp"/>
-    <part Name="SizeAdjective" Adjective="large"/>
+    <part Name="SizeAdjective" Adjective="大的"/>
     <part Name="Physics" Weight="15"/>
     <part Name="Description" Short="一块岩石从其诞生之地被水流切割下来，经过时间的磨砺变成了一颗巨大的球体。"/>
     <part Name="ThrownWeapon" Damage="1d2" Penetration="6"/>
@@ -2976,7 +2976,7 @@
   </object>
   <object Name="BaseBoulder" Inherits="BaseStone">
     <part Name="Render" DisplayName="巨石" Tile="Items/sw_smallboulder.bmp" RenderString="249" ColorString="&amp;W" Occluding="false"/>
-    <part Name="SizeAdjective" Adjective="small"/>
+    <part Name="SizeAdjective" Adjective="小的"/>
     <part Name="Physics" Weight="50" Takeable="true" Solid="false" FlameTemperature="99999" VaporTemperature="1500"/>		
     <stat Name="AV" Value="10"/>
     <stat Name="Hitpoints" Value="500"/>    
@@ -2991,7 +2991,7 @@
   </object>
   <object Name="SmallBoulder" Inherits="BaseBoulder">
     <part Name="Render" DisplayName="巨石" Tile="Items/sw_smallboulder.bmp" RenderString="249"/>
-    <part Name="SizeAdjective" Adjective="small"/>
+    <part Name="SizeAdjective" Adjective="小的"/>
     <part Name="Physics" Weight="50"/>
     <stat Name="Hitpoints" Value="500"/>
     <part Name="Description" Short="这是一块比所有书籍都要古老的岩石。"/>
@@ -3004,7 +3004,7 @@
   </object>
   <object Name="MediumBoulder" Inherits="BaseBoulder">
     <part Name="Render" DisplayName="巨石" Tile="Items/sw_mediumboulder.bmp" RenderString="46"/>
-    <part Name="SizeAdjective" Adjective="medium"/>
+    <part Name="SizeAdjective" Adjective="中等"/>
     <part Name="Physics" Weight="250"/>
     <stat Name="Hitpoints" Value="1500"/>
     <part Name="Description" Short="这是一块巨大的岩石，比任何符号都要古老。"/>
@@ -3015,7 +3015,7 @@
   </object>
   <object Name="LargeBoulder" Inherits="BaseBoulder">
     <part Name="Render" DisplayName="巨石" Tile="Items/sw_largeboulder.bmp" RenderLayer="8" RenderString="007"/>
-    <part Name="SizeAdjective" Adjective="large"/>
+    <part Name="SizeAdjective" Adjective="大的"/>
     <part Name="Physics" Weight="500" Solid="true"/>
     <stat Name="Hitpoints" Value="2500"/>
     <part Name="Description" Short="这是一块比所有想法都要古老的巨岩。"/>
@@ -7215,7 +7215,7 @@
     <part Name="Commerce" Value="10000"/>
 		<stat Name="Hitpoints" Value="1500"/>
     <part Name="Description" Short="银河面容上散落着闪耀的宝石，它们之间的线条勾勒出一个系带愚者的轮廓。在远处的铬合金顶点，明亮炽热的光点暗示着一个中轴水罐的形状，而水罐的出水口之外，则是一个广阔而悠久的结构。面具内部布满了被镓车床塑形后留下的烧焦痕迹，然后用从谢迪姆身上提取的乳状虹膜染色，并在温暖的静电池中晾干。"/>
-    <part Name="RulesDescription" Text="+1 至所有变异等级&#10;+6 所有插件层阶"/>
+    <part Name="RulesDescription" Text="+1 至所有变异等级&#10;+6 所有赛博插件许可等级"/>
     <part Name="Physics" Weight="1"/>
     <part Name="MutationOnEquip" ClassName="Telepathy"/>
     <part Name="EquipIntProperties" Props="AllMutationLevelModifier:1;CyberneticsLicenses:6;FreeCyberneticsLicenses:6"/>
@@ -11071,11 +11071,11 @@
   
   <!-- Recoilers -->
   <object Name="BaseRecoiler" Inherits="Item">
-    <part Name="Render" DisplayName="{{Y|回弹器}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp"/>
+    <part Name="Render" DisplayName="{{Y|传送器}}" ColorString="&amp;y" DetailColor="g" RenderString="004" RenderLayer="5" Tile="Items/sw_recoiler.bmp"/>
     <part Name="Physics" Category="工具"/>
     <part Name="Examiner" Unknown="UnknownOddTrinket" Alternate="UnknownTool" Complexity="2" Difficulty="1"/>
     <part Name="Teleporter" ChargeUse="2500" Sound="Sounds/Interact/sfx_interact_recoiler_activate"/>
-    <part Name="Description" Short="磁带被切割成六角形凹槽，并浸入适量的磁荷，以缠绕时空绳索（并产生其特有的热胶味）。顶部，一个凹陷的按钮锁定电位并启动回弹。"/>
+    <part Name="Description" Short="磁带被切割成六角形凹槽，并浸入适量的磁荷，以缠绕时空绳索并产生其特有的热胶味。顶部，一个凹陷的按钮锁定电位并启动传送。"/>
     <part Name="TinkerItem" Bits="123" CanDisassemble="true" CanBuild="true"/>
     <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
     <part Name="Metal"/>
@@ -11093,63 +11093,63 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="Joppa Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="乔帕反弹者"/>
+    <part Name="Render" DisplayName="约帕传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.11.22.1.1.10" DestinationX="37" DestinationY="23"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="25"/>
     <tag Name="Tier" Value="2"/>
   </object>
   <object Name="Grit Gate Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{c|砂砾之门}}弹射器" DetailColor="C"/>
+    <part Name="Render" DisplayName="{{c|砂砾之门}}传送器" DetailColor="C"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.22.14.1.0.13" DestinationX="37" DestinationY="23"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="35"/>
     <tag Name="Tier" Value="3"/>
   </object>
   <object Name="Golgotha Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{g|戈耳贡塔}}弹射器"/>
+    <part Name="Render" DisplayName="{{g|各各他}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.23.9.1.1.10" DestinationX="38" DestinationY="9"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="45"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Kyakukya Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{R|卡尤库亚}}反冲器"/>
+    <part Name="Render" DisplayName="{{R|迦库迦}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.27.20.1.1.10" DestinationX="32" DestinationY="15"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="45"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Six Day Stilt Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{Y|六日高跷}}弹射器"/>
+    <part Name="Render" DisplayName="{{Y|六日高跷}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.5.2.1.2.10" DestinationX="38" DestinationY="12"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="80"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Bethesda Susa Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{C|贝塞斯达苏萨}}反冲器"/>
+    <part Name="Render" DisplayName="{{C|贝塞斯达 苏萨}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.25.3.1.1.10" DestinationX="38" DestinationY="19"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="55"/>
     <tag Name="Tier" Value="4"/>
   </object>
   <object Name="Ezra Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{W|以斯拉}}反冲器"/>
+    <part Name="Render" DisplayName="{{W|以斯拉}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.53.4.0.0.10" DestinationX="40" DestinationY="18"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="65"/>
     <tag Name="Tier" Value="5"/>
   </object>
   <object Name="Yd Freehold Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="{{W|译文}}退缩者"/>
+    <part Name="Render" DisplayName="{{W|伊德}}传送器"/>
     <part Name="Teleporter" DestinationZone="JoppaWorld.67.17.1.1.10" DestinationX="37" DestinationY="23"/>
     <part Name="TinkerItem" CanBuild="false"/>
     <part Name="Commerce" Value="100"/>
     <tag Name="Tier" Value="7"/>	  
   </object>
   <object Name="Ruin Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="随机点回缩器" DetailColor="r"/>
+    <part Name="Render" DisplayName="废墟传送器" DetailColor="r"/>
     <part Name="Examiner" Complexity="3" Difficulty="2"/>
     <part Name="RandomRuinRecoiler"/>
     <part Name="Commerce" Value="15"/>
@@ -11158,7 +11158,7 @@
     <tag Name="NoSwapInAtGenerate"/>
   </object>
   <object Name="Programmable Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="可编程后坐力装置" DetailColor="w"/>
+    <part Name="Render" DisplayName="可编程传送器" DetailColor="w"/>
     <part Name="Examiner" Complexity="4" Difficulty="2"/>
     <part Name="ProgrammableRecoiler" ChargeUse="10000" Reprogrammable="false" NameElide="programmable" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint"/>
     <part Name="Commerce" Value="80"/>
@@ -11168,7 +11168,7 @@
     <tag Name="Role" Value="Uncommon"/>
   </object>
   <object Name="Reprogrammable Recoiler" Inherits="BaseRecoiler">
-    <part Name="Render" DisplayName="可重编程回弹器" DetailColor="W"/>
+    <part Name="Render" DisplayName="可重编程传送器" DetailColor="W"/>
     <part Name="Examiner" Complexity="6" Difficulty="3"/>
     <part Name="ProgrammableRecoiler" ChargeUse="30000" Reprogrammable="true" NameElide="reprogrammable" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint"/>
     <part Name="Commerce" Value="210"/>

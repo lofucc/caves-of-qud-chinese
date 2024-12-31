@@ -143,8 +143,8 @@
   </object>
 
   <object Name="Spindle Ribbon Top" Inherits="BaseSpindleSupport">
-    <part Name="Render" Tile="Furniture/spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="graphene ribbon"/>
-    <part Name="Description" Short="A bubbled ribbon of carbon motes lathed to the thickness of paper combs against its anchoring mechanisms and disappears skyward to a tapered nothing."/>
+    <part Name="Render" Tile="Furniture/spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="石墨烯丝带"/>
+    <part Name="Description" Short="这是一条由碳微粒制成的气泡状丝带，其厚度被加工得如同纸张一般。它在锚定装置上轻轻摩擦后，逐渐消失于天际，直至无影无踪。"/>
     <part Name="AscensionCable"/>
     <tag Name="ForceSmartUse"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -278,9 +278,9 @@
     <tag Name="DefiniteArticle" Value="the"/>
   </object>
   <object Name="TerrainEarthGateFlank" Inherits="TerrainNorthSheva">
-    <part Name="Render" DisplayName="Earth Gate" RenderString="239" ColorString="&amp;W"/>
+    <part Name="Render" DisplayName="大地之门" RenderString="239" ColorString="&amp;W"/>
     <xtagGrammar Proper="true"/>
-    <part Name="Description" Short="A shouldered arch and gate reify the flow from terrestrial tree and sand to star perch, and vice versa. In the orchard of passage, at the foot of the gate itself, great slabs of ancestral shale ring the vessels of ceremony."/>
+    <part Name="Description" Short="这扇肩扛式的拱门和大门实体化了从地面的树木和沙子到星空栖息地之间的流动，反之亦然。在通道的果园中，大门脚下，巨大的祖先页岩板环绕着仪式的器皿。"/>
     <tag Name="IndefiniteArticle" Value="the"/>
     <tag Name="DefiniteArticle" Value="the"/>
   </object>
@@ -389,8 +389,8 @@
     <tag Name="DefiniteArticle" Value="the"/>
   </object>
   <object Name="TerrainConsulate U" Inherits="TerrainNorthSheva">
-    <part Name="Render" DisplayName="Triangulum Consulate" RenderString="30" ColorString="&amp;Y"/>
-    <part Name="Description" Short="The spiraling triangle finial portrays the flowing asterism that gave the star cluster its prominence. Alpha, Bet, and Dalet emerged from the galactic nucleus and flowered, coursed o'er the same ecliptic tracks of the Great Machine, and sent a minyan of petal-beings to pray/play a future coupling into existence."/>
+    <part Name="Render" DisplayName="三角座领事馆" RenderString="30" ColorString="&amp;Y"/>
+    <part Name="Description" Short="螺旋形的三角尖顶描绘了赋予这个星团显著地位的流动星群。阿尔法、贝塔和达莱特从银河核心中涌现，如同花朵般绽放，在大机器相同的黄道轨迹上流淌，并派遣了一群花瓣状的生命体来祈祷/游戏，以期实现未来的结合。"/>
     <xtagGrammar Proper="true"/>
     <tag Name="IndefiniteArticle" Value="the"/>
     <tag Name="DefiniteArticle" Value="the"/>
@@ -403,15 +403,15 @@
     <tag Name="DefiniteArticle" Value="the"/>
   </object>
   <object Name="TerrainJyEgregore C" Inherits="TerrainNorthSheva">
-    <part Name="Render" DisplayName="Jy egregore" RenderString="25" ColorString="&amp;r"/>
-    <part Name="Description" Short="The mysterious thought-form woke from a lost current of local sapiance and squat itself a spongey mangrowth in the ultraviolet baths of the surface. It's long sinced desiccated, the visceral mass time-viced into something more like paper pulp."/>
+    <part Name="Render" DisplayName="吉伊灵体" RenderString="25" ColorString="&amp;r"/>
+    <part Name="Description" Short="这个神秘的思想形态从失落的本地智慧流中苏醒，并在地表的紫外线浴中长成了一块海绵状的植物。它早已干枯，内脏般的物质被时间压榨成了类似纸浆的东西。"/>
     <xtagGrammar Proper="true"/>
     <tag Name="IndefiniteArticle" Value="the"/>
     <tag Name="DefiniteArticle" Value="the"/>
   </object>
   <object Name="TerrainJyEgregore R" Inherits="TerrainNorthSheva">
-    <part Name="Render" DisplayName="Jy egregore" RenderString="007" ColorString="&amp;r"/>
-    <part Name="Description" Short="The mysterious thought-form woke from a lost current of local sapiance and squat itself a spongey mangrowth in the ultraviolet baths of the surface. It's long sinced desiccated, the visceral mass time-viced into something more like paper pulp."/>
+    <part Name="Render" DisplayName="吉伊灵体" RenderString="007" ColorString="&amp;r"/>
+    <part Name="Description" Short="这个神秘的思想形态从失落的本地智慧流中苏醒，并在地表的紫外线浴中长成了一块海绵状的植物。它早已干枯，内脏般的物质被时间压榨成了类似纸浆的东西。"/>
     <xtagGrammar Proper="true"/>
     <tag Name="IndefiniteArticle" Value="the"/>
     <tag Name="DefiniteArticle" Value="the"/>
@@ -464,7 +464,7 @@
   </object>
   <object Name="TerrainBazaarOfSamech" Inherits="TerrainNorthSheva">
     <part Name="Render" DisplayName="萨梅克集市" RenderString="110" ColorString="&amp;y"/>
-    <part Name="Description" Short="在这星际港的庇护下，伟大的集市以其融合的拱廊拔地而起。市场中挤满了来自六十颗星球的繁多商品: 亿万织线的地毯、牛车装载的巨型处理器、剧毒香水以及冰冷的桃子。"/>
+    <part Name="Description" Short="在这星际港的庇护下，伟大的集市以其融合的拱廊拔地而起。市场中挤满了来自六十颗星球的繁多商品：亿万织线的地毯、牛车装载的巨型处理器、剧毒香水以及冰冷的桃子。"/>
     <part Name="RandomRenderString" Strings="182,186,189,199,208,210,211,214,215"/>    
     <xtagGrammar Proper="true"/>
     <tag Name="IndefiniteArticle" Value="the"/>
@@ -483,8 +483,8 @@
     <part Name="Description" Short="机械笼储存从时空流中汲取的原始力量，并用于重塑局部时空。偶尔，数学波动会导致一个普斯顿逃逸并在核心处投射出一个侧向银河。"/>
   </object>
   <object Name="TerrainForceCore R" Inherits="TerrainNorthSheva">
-    <part Name="Render" DisplayName="forcecore" RenderString="016" ColorString="&amp;B"/>
-    <part Name="Description" Short="Machinic cages store raw force sipped from the slipstream and used to reshape local spacetime. Occasionally, amathematical fluctuations allow a pushton to escape and beam a sidewise galaxy right in the core."/>
+    <part Name="Render" DisplayName="力核" RenderString="016" ColorString="&amp;B"/>
+    <part Name="Description" Short="机械笼储存从时空流中汲取的原始力量，并用于重塑局部时空。偶尔，数学波动会导致一个普斯顿逃逸并在核心处投射出一个侧向银河。"/>
   </object>
 
   <!--
@@ -496,8 +496,8 @@
   -->
   <!-- Space station general -->
   <object Name="OmniForcefield" Inherits="BaseForcefield">
-    <part Name="Render" DisplayName="force barrier" ColorString="&amp;M^k"/>
-    <part Name="Description" Short="Potential is polarized into a magenta hex mesh and keyed to every strata in the phasic spectrum. Objects are blocked without exception."/>
+    <part Name="Render" DisplayName="力场屏障" ColorString="&amp;M^k"/>
+    <part Name="Description" Short="潜能被极化成洋红色的六角网格，并与相位光谱中的每一层相对应。所有物体均无一例外地被阻挡。"/>
     <part Name="AnimatedMaterialForcefield" Color="Magenta"/>
     <part Name="Forcefield" MissileOpaque="true"/>
     <tag Name="PaintedFence" Value="force_field_1"/>
@@ -679,22 +679,22 @@
     <tag Name="IncludeInDynamicSemanticTables"/>
   </object>
   <object Name="Eater Sign 1" Inherits="Sign">
-    <part Name="Render" DisplayName="sign" RenderString="=" Tile="Furniture/eater-sign-shard.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
-    <part Name="Description" Short="Starfire ikons skip on a board of holographic bronze."/>
+    <part Name="Render" DisplayName="标志牌" RenderString="=" Tile="Furniture/eater-sign-shard.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
+    <part Name="Description" Short="星火图标在全息青铜板上跳跃。"/>
     <part Name="Chat" Says="Westwise to shard" ShowInShortDescription="true"/>
     <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Eater Sign 2" Inherits="Sign">
-    <part Name="Render" DisplayName="sign" RenderString="=" Tile="Furniture/eater-sign-script-1.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
-    <part Name="Description" Short="Starfire ikons skip on a board of holographic bronze."/>
+    <part Name="Render" DisplayName="标志牌" RenderString="=" Tile="Furniture/eater-sign-script-1.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
+    <part Name="Description" Short="星火图标在全息青铜板上跳跃。"/>
     <part Name="Chat" Says="Eastwise to movers at the Point of Tifaret" ShowInShortDescription="true"/>
     <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Eater Sign 3" Inherits="Sign">
-    <part Name="Render" DisplayName="sign" RenderString="=" Tile="Furniture/eater-sign-arrow.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
-    <part Name="Description" Short="Starfire ikons skip on a board of holographic bronze."/>
+    <part Name="Render" DisplayName="标志牌" RenderString="=" Tile="Furniture/eater-sign-arrow.png" ColorString="&amp;W" TileColor="&amp;W" DetailColor="w"/>
+    <part Name="Description" Short="星火图标在全息青铜板上跳跃。"/>
     <part Name="Chat" Says="Eastwise to Quay" ShowInShortDescription="true"/>
     <part Name="HologramMaterial" ColorStrings="&amp;W,&amp;w,&amp;W,&amp;w" DetailColors="w,W,w,W"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -796,8 +796,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Earth Gate W" Inherits="Double Door W">
-    <part Name="Render" DisplayName="Earth Gate" Tile="Furniture/earth-gate-left.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234"/>
-    <part Name="Description" Short="Cultured patinae grow in whittled grooves across the doors of star bronze. Inset on joined halves is a gigantic jeweled sphere, with islands of agate on drifting seas of turquoise. The myriad ways of being are depicted on the panel margins in high relief: Eaters lift and lower chains to the star-ribboned sky, swallow stardust, and cartwheel ritual to the vaporous rim of existence."/>
+    <part Name="Render" DisplayName="大地之门" Tile="Furniture/earth-gate-left.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234"/>
+    <part Name="Description" Short="精致的铜绿生长在星青铜雕琢的沟槽中。门上镶嵌着一个巨大的宝石球体，玛瑙岛屿漂浮在青金石的大海上。面板边缘以高浮雕描绘了存在的万千形态：食者们举起和放下通往星辰丝带天空的链条，吞食星尘，并在存在之虚无边缘进行仪式性的翻滚。"/>
     <part Name="Door" Locked="false" ClosedTile="Furniture/earth-gate-left.png" OpenTile="Tiles2/sw_tombgate_w_open.bmp"/>    
     <stat Name="Hitpoints" sValue="10000"/>
     <xtagGrammar iArticle="the"/>
@@ -806,8 +806,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Earth Gate E" Inherits="Double Door E">
-    <part Name="Render" DisplayName="Earth Gate" Tile="Furniture/earth-gate-right.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234"/>
-    <part Name="Description" Short="Cultured patinae grow in whittled grooves across the doors of star bronze. Inset on joined halves is a gigantic jeweled sphere, with islands of agate on drifting seas of turquoise. The myriad ways of being are depicted on the panel margins in high relief: Eaters lift and lower chains to the star-ribboned sky, swallow stardust, and cartwheel ritual to the vaporous rim of existence."/>
+    <part Name="Render" DisplayName="大地之门" Tile="Furniture/earth-gate-right.png" ColorString="&amp;C" TileColor="&amp;W" DetailColor="c" RenderString="234"/>
+    <part Name="Description" Short="精致的铜绿生长在星青铜雕琢的沟槽中。门上镶嵌着一个巨大的宝石球体，玛瑙岛屿漂浮在青金石的大海上。面板边缘以高浮雕描绘了存在的万千形态：食者们举起和放下通往星辰丝带天空的链条，吞食星尘，并在存在之虚无边缘进行仪式性的翻滚。"/>
     <part Name="Door" Locked="false" ClosedTile="Furniture/earth-gate-right.png" OpenTile="Tiles2/sw_tombgate_e_open.bmp"/>    
     <stat Name="Hitpoints" sValue="10000"/>
     <xtagGrammar iArticle="the"/>
@@ -994,8 +994,8 @@
     <part Name="Render" HFlip="true"/>    
   </object>
   <object Name="BaseMoverCouch" Inherits="BaseChair">
-    <part Name="Render" DisplayName="sofa" ColorString="&amp;w" DetailColor="W"/>
-    <part Name="Description" Short="An arched sofa brings movers together via the blunted tyranny of here and now. The wooden seat, cut from tree-things on a Coven moon world, bears a notch of some form made by every sitter in its hundred chiliad history. "/>
+    <part Name="Render" DisplayName="沙发" ColorString="&amp;w" DetailColor="W"/>
+    <part Name="Description" Short="这把拱形沙发通过钝化的当下暴政将人们聚集在一起。木质座椅由契约月亮世界上的树木制成，其上刻有每一位就坐者在长达千年的历史中留下的痕迹。"/>
     <part Name="Chair" Level="3"/>
     <stat Name="AV" Value="20"/>
     <stat Name="Hitpoints" Value="1000"/>
@@ -1155,8 +1155,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="StarshipBed E" Inherits="BaseBed">
-    <part Name="Render" DisplayName="sleep hollow" RenderString="178" Tile="Walls2/starship-1-wallbed-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W"/>
-    <part Name="Description" Short="A wood-carved hollow in the geometric bulkhead is circled with blankets and curtained with patterned textiles. In the long void between stars, gently rocked by the juddering of the hedron engine, shipfolk attain tiers of peaceful sleep unknown to onworlders."/>
+    <part Name="Render" DisplayName="眠穴" RenderString="178" Tile="Walls2/starship-1-wallbed-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W"/>
+    <part Name="Description" Short="在几何舱壁上雕刻的木制凹槽被毯子环绕，并用图案纺织品遮挡。在星际间的漫长虚空中，随着赫德隆引擎的震动轻轻摇晃，船民们达到了陆地上的人们无法体验的宁静睡眠层次。"/>
     <tag Name="PaintWith" Value="StarshipGeometricWall"/>
     <stag Name="Sleep" Value="*delete"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -1169,8 +1169,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="StarshipBookshelf E" Inherits="BaseBookshelf">
-    <part Name="Render" DisplayName="built-in bookshelf" RenderString="178" Tile="Walls2/starship-1-wallbookshelf-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W"/>
-    <part Name="Description" Short="Planks of oak cut from the trees of a rainy beryl world are nailed into the bulkhead. Floor cushions at its base offer a plush and low view on the rainbow spines of codices, each a portal to a far-flung corner of the universe."/>
+    <part Name="Render" DisplayName="内置书架" RenderString="178" Tile="Walls2/starship-1-wallbookshelf-e.png" ColorString="&amp;w^k" TileColor="&amp;w^k" DetailColor="W"/>
+    <part Name="Description" Short="由雨翡翠世界的橡树切割而成的木板钉在舱壁上。底部的地垫提供了一个柔软且低矮的视角，可以欣赏到彩虹色的典籍书脊，每一本都是通往宇宙遥远角落的门户。"/>
     <part Name="MarkovBookshelf" BookTable="MarkovCorpus_Starship"/>
     <tag Name="PaintWith" Value="StarshipGeometricWall"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -1220,8 +1220,8 @@
   </object>
 
   <object Name="Starship Pilot Console" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="pilot console" RenderString="220" Tile="Furniture/starship-1-pilot-console.png" ColorString="&amp;b" DetailColor="C"/>
-    <part Name="Description" Short="The glass lune exhibits spiraling arms and the endless sluices that course between them. Pinchers, sliders, whistlers, and dials array the bezel and provide navigation affordances across the manifold."/>
+    <part Name="Render" DisplayName="飞行员控制台" RenderString="220" Tile="Furniture/starship-1-pilot-console.png" ColorString="&amp;b" DetailColor="C"/>
+    <part Name="Description" Short="玻璃月形仪展示着螺旋状的臂和其间无尽的通道。夹子、滑块、哨声器和刻度盘排列在边框上，提供了穿越多维空间的导航功能。"/>
     <part Name="ShevaStarshipControl"/>
     <stat Name="Hitpoints" Value="1500"/>
     <part Name="ChargeSink" ChargeUse="0" NameForStatus="StarflightControl"/>
@@ -1235,14 +1235,14 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Starship1 ExitHatch" Inherits="Stairs">
-    <part Name="Render" DisplayName="exit hatch" Tile="Furniture/starship-1-escape-hatch.png" ColorString="&amp;W" DetailColor="y"/>
-    <part Name="Description" Short="A retractible hex panel is fit on oiled tracks."/>
+    <part Name="Render" DisplayName="出口舱门" Tile="Furniture/starship-1-escape-hatch.png" ColorString="&amp;W" DetailColor="y"/>
+    <part Name="Description" Short="一个可伸缩的六边形面板安装在涂油的轨道上。"/>
     <part Name="InteriorPortal"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Starship1 Pilot Seat" Inherits="BaseChair">
-    <part Name="Render" DisplayName="pilot seat" Tile="Furniture/starship-1-pilot-seat.png" ColorString="&amp;b" DetailColor="W"/>
-    <part Name="Description" Short="The seat cushions are vinyl-cocooned in the hue of a frozen ocean spilling free from tidal heat. Control dials, sliders, and switches grid the flat-paneled armrest."/>
+    <part Name="Render" DisplayName="飞行员座椅" Tile="Furniture/starship-1-pilot-seat.png" ColorString="&amp;b" DetailColor="W"/>
+    <part Name="Description" Short="座椅的垫子被包裹在一种冰冻海洋色的乙烯基材料中，仿佛从潮汐热中自由流淌而出。扶手处平面上布满了控制旋钮、滑块和开关。"/>
     <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems"/>
     <removebuilder Name="Animated"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -1256,8 +1256,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Starship1 Passenger Seat" Inherits="BaseChair">
-    <part Name="Render" DisplayName="passenger seat" Tile="Furniture/starship-1-passenger-seat.png" ColorString="&amp;y" DetailColor="W"/>
-    <part Name="Description" Short="Seat foam is pressed with weird backprints, painted with a dozen blends of sweat, and balanced on a metal dais."/>
+    <part Name="Render" DisplayName="乘客座椅" Tile="Furniture/starship-1-passenger-seat.png" ColorString="&amp;y" DetailColor="W"/>
+    <part Name="Description" Short="座椅泡沫上印有奇怪的背印，被汗水混合成多种颜色，放置在一个金属底座上。"/>
     <stat Name="Hitpoints" Value="500"/>
     <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems"/>
     <removebuilder Name="Animated"/>
@@ -1349,8 +1349,8 @@
     <tag Name="PaintedWall" Value="wall_wiggle_infested"/>        
   </object>
   <object Name="Star Carousel Pilot Console" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="pilot console" RenderString="220" Tile="Furniture/star-carousel-pilot-console-n.png" ColorString="&amp;b" DetailColor="C"/>
-    <part Name="Description" Short="A panel of tone bars at harmonic ratios shine in sculpted blue light. The space hums with the residual input schema of past flights."/>
+    <part Name="Render" DisplayName="飞行员控制台" RenderString="220" Tile="Furniture/star-carousel-pilot-console-n.png" ColorString="&amp;b" DetailColor="C"/>
+    <part Name="Description" Short="一组按谐波比例排列的音调条在雕琢的蓝光中闪耀。空间中回荡着过去飞行留下的输入模式的余音。"/>
     <stat Name="Hitpoints" Value="1500"/>
     <part Name="ChargeSink" ChargeUse="0" NameForStatus="SpiralCareening"/>
     <part Name="SpawnWithEffect" Effect="Broken"/>
@@ -1364,8 +1364,8 @@
     <part Name="Render" DisplayName="飞行员控制台" RenderString="220" Tile="Furniture/star-carousel-pilot-console-s.png" ColorString="&amp;b" DetailColor="B"/>
   </object>
   <object Name="Star Carousel Passenger Console 1" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="pilot console" RenderString="220" Tile="Furniture/star-carousel-passenger-console-1.png" ColorString="&amp;b" DetailColor="B"/>
-    <part Name="Description" Short="Audiovisual depictions of the moisture manifold splash over the panel's holographic surface. A small and gentle null melody sounds from the underlight."/>    
+    <part Name="Render" DisplayName="飞行员控制台" RenderString="220" Tile="Furniture/star-carousel-passenger-console-1.png" ColorString="&amp;b" DetailColor="B"/>
+    <part Name="Description" Short="面板的全息表面上显示着水分歧管的音视频图像。底部灯光发出柔和的空灵旋律。"/>    
     <stat Name="Hitpoints" Value="1500"/>
     <part Name="ChargeSink" ChargeUse="0" NameForStatus="ExoticMoistureManifold"/>
     <part Name="SpawnWithEffect" Effect="Broken"/>
@@ -1376,21 +1376,21 @@
     <part Name="Render" DisplayName="乘客控制台" RenderString="220" Tile="Furniture/star-carousel-passenger-console-2.png" ColorString="&amp;b" DetailColor="B"/>    
   </object>
   <object Name="Star Carousel ExitHatch" Inherits="Stairs">
-    <part Name="Render" DisplayName="exit hatch" Tile="Furniture/star-carousel-hatch.png" ColorString="&amp;y" DetailColor="g"/>
-    <part Name="Description" Short="A perfect circle of mossbed parts in a sine wave and grants in/out access to opposing darknesses."/>
+    <part Name="Render" DisplayName="出口舱门" Tile="Furniture/star-carousel-hatch.png" ColorString="&amp;y" DetailColor="g"/>
+    <part Name="Description" Short="一片完美的苔藓床以正弦波的形式分开，提供通往对立黑暗的进出通道。"/>
     <part Name="InteriorPortal"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Star Carousel Pilot Seat" Inherits="BaseChair">
-    <part Name="Render" DisplayName="pilot seat" Tile="Furniture/star-carousel-pilot-seat.png" ColorString="&amp;C" DetailColor="y"/>
-    <part Name="Description" Short="Spinning lunes at counter heights provide concentrative posture for a variety of body geometries."/>
+    <part Name="Render" DisplayName="飞行员座椅" Tile="Furniture/star-carousel-pilot-seat.png" ColorString="&amp;C" DetailColor="y"/>
+    <part Name="Description" Short="高度适中的旋转月牙形座椅为各种体型提供专注的坐姿。"/>
     <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems"/>
     <removebuilder Name="Animated"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Star Carousel Passenger Seat" Inherits="BaseChair">
-    <part Name="Render" DisplayName="passenger seat" Tile="Furniture/star-carousel-passenger-seat.png" ColorString="&amp;C" DetailColor="y"/>
-    <part Name="Description" Short="Spinning lunes at counter heights provide concentrative posture for a variety of body geometries."/>
+    <part Name="Render" DisplayName="乘客座椅" Tile="Furniture/star-carousel-passenger-seat.png" ColorString="&amp;C" DetailColor="y"/>
+    <part Name="Description" Short="高度适中的旋转月牙形座椅为各种体型提供专注的坐姿。"/>
     <part Name="Chair" Level="4" LevelWhenDisabled="0" ChargeUse="0" IsEMPSensitive="true" IsTechScannable="true" NameForStatus="ErgonomicSystems"/>
     <removebuilder Name="Animated"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
@@ -1554,15 +1554,15 @@
     <part Name="ChargeSink" NameForStatus="PhenomenologicalSorting"/>
   </object>
   <object Name="ReshephWall3" Inherits="BaseReshephWall">
-    <part Name="Render" DisplayName="mainframe status panel"/>
-    <part Name="Description" Short="Across a field of vacuum glass and zetachrome diodes blink in gyres."/>
+    <part Name="Render" DisplayName="主控状态面板"/>
+    <part Name="Description" Short="在一片真空玻璃和泽塔铬二极管的领域中，灯光以旋涡状闪烁。"/>
     <tag Name="PaintedWall" Value="walls_resheph_3"/>
     <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" ColorStringAnimationFrames="0=&amp;y^k,100=&amp;y^C" TileColorAnimationFrames="0=&amp;y^k,100=&amp;y^C"/>
     <part Name="ChargeSink" NameForStatus="QualiaObservation"/>
   </object>  
   <object Name="ReshephWall4" Inherits="BaseReshephWall">
-    <part Name="Render" DisplayName="mainframe monitor" TileColor="&amp;y^C"/>
-    <part Name="Description" Short="Great epiphenomenal domains are invented, interpreted, and tokenized as language to relay the well-being of the nondeterministic core."/>
+    <part Name="Render" DisplayName="主控显示器" TileColor="&amp;y^C"/>
+    <part Name="Description" Short="伟大的附现象领域被创造、解释并转化为语言，以传达非确定性核心的状况。"/>
     <tag Name="PaintedWall" Value="walls_resheph_4_0"/>
     <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_4_" FrameMS="1200" AllowRushing="false"/>
     <part Name="ChargeSink" NameForStatus="GestaltEpiphenomena"/>
@@ -1641,7 +1641,7 @@
     <tag Name="PaintedWall" Value="walls_resheph_1_0"/>
     <tag Name="PaintedWallExtension" Value=".png"/>    
     <part Name="AnimatedWallGeneric" Frames="4" Tile="walls_resheph_1_" FrameMS="500" AllowRushing="false"/>
-
+    TileColorAnimationFrames="0=&amp;y^k,400=&amp;y^y,600=&amp;y^Y,800=&amp;y^m,1000=&amp;y^M" /&gt;
     <part Name="HologramMaterial" ColorStrings="&amp;m^M,&amp;M^m,&amp;m^M,&amp;M^m" DetailColors="k,k,k,k"/>
     <part Name="ConversationScript" ConversationID="ArchonHologram" Filter="Cryptic Machine"/>
   </object>
@@ -1654,7 +1654,6 @@
     <part Name="Render" DisplayName="瑞舍夫·天界之上的全息影像" Tile="Creatures/resheph.png"/>
     <part Name="Description" Short="一条披风从他的肩膀垂下，带着神话般的必然性，而这个数字二元体既暗示着地上的治愈和平，又与天穹相和谐。"/>
     <part Name="ConversationScript" ConversationID="Resheph" Filter="Cryptic Machine"/>
-    <part Name="CrypticParticleText" InitialTimer="2-3" />
     <tag Name="ExcludeFromDynamicEncounters"/>
     <tag Name="ChatSound" Value="sfx_endgame_supercomputer_chat"/>
     <tag Name="ChatNodeSound" Value="sfx_endgame_supercomputer_chat_dialogNode"/>
@@ -1672,7 +1671,7 @@
 
   <object Name="BaseArkCore" Inherits="MountedFurniture">
     <part Name="Render" DisplayName="非确定性核心" RenderString="223" ColorString="&amp;W" TileColor="&amp;W" DetailColor="R"/>
-    <part Name="Description" Short="一层蓝色、洋红色和深红色的帷幕笼罩着月阳之影与超新星金（颜色规格直接由源自恩西奥斯内的机械生命体传承而来）。原始的非物质性从容器边界中析出，并以受控剂量输送至处理器，这些处理器对其进行破解，从而完成不可计算的任务: 从虚无中作出决定。"/>
+    <part Name="Description" Short="一层蓝色、洋红色和深红色的帷幕笼罩着月阳之影与超新星金（颜色规格直接由源自恩西奥斯内的机械生命体传承而来）。原始的非物质性从容器边界中析出，并以受控剂量输送至处理器，这些处理器对其进行破解，从而完成不可计算的任务：从虚无中作出决定。"/>
     <part Name="Physics" Weight="12000"/>    
     <part Name="ArkCore"/>
     <part Name="NoDamage"/>
@@ -1824,8 +1823,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="BaseStarOrchidTemplePlaqueEndcap" Inherits="Relief">
-    <part Name="Render" DisplayName="starship nozzle" Tile="Terrain/sw_fresco1-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;y^k" DetailColor="Y" Occluding="true"/>
-    <part Name="Description" Short="Metal cribbed from the blackened nozzle of a starship was melted down by the Exhaustiers' Guild and cast to a monumental scaffold. The silhouettes of fried voidfauna are still visible on the burnished veneer."/>
+    <part Name="Render" DisplayName="星舰喷嘴" Tile="Terrain/sw_fresco1-1.bmp" RenderLayer="6" RenderString="219" ColorString="&amp;y^k" DetailColor="Y" Occluding="true"/>
+    <part Name="Description" Short="从被烧焦的星舰喷嘴上拆下的金属被排气师公会熔化并铸造成了一座巨大的支架。抛光的表面仍然可以看到被烤焦的虚空生物的轮廓。"/>
     <stat Name="AV" Value="40"/>
     <stat Name="Hitpoints" Value="5000"/>
     <tag Name="BaseObject" Value="*noinherit"/>
@@ -2001,8 +2000,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="Chiliad Village Monument Orb" Inherits="Village Monument">
-    <part Name="Render" DisplayName="stone columbary" Tile="Furniture/chiliad-monument-2.png" ColorString="&amp;C" DetailColor="W"/>
-    <part Name="Description" Short="A lens of glass has crusted over the smooth stone, and its kinetic fins have been shorn off at the poles."/>
+    <part Name="Render" DisplayName="石柱灵龛" Tile="Furniture/chiliad-monument-2.png" ColorString="&amp;C" DetailColor="W"/>
+    <part Name="Description" Short="光滑的石头表面覆盖了一层玻璃，其动能鳍在两极处被切断。"/>
     <stag Name="Chiliad"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
@@ -2077,7 +2076,7 @@
   </object>
   <object Name="Mechanical Golem" Inherits="MountedFurniture">
     <part Name="Render" ColorString="&amp;c" DetailColor="y"/>
-    <part Name="Description" Short="来自元素周期表的废金属被焊接成一个神话特征的雕塑: =body.features=。老旧的汤和=催化剂=的溢出物染污了它生锈的躯干，在闷烧的光线下，它的姿势让人联想到一个垂死的=atzmus.creature=。铁制的四肢被打制成=武器技能片段=的形状，在中心位置悬挂着=哈姆萨之手=的破碎符号。"/>
+    <part Name="Description" Short="来自元素周期表的废金属被焊接成一个神话特征的雕塑：=body.features=。老旧的汤和=催化剂=的溢出物染污了它生锈的躯干，在闷烧的光线下，它的姿势让人联想到一个垂死的=atzmus.creature=。铁制的四肢被打制成=武器技能片段=的形状，在中心位置悬挂着=哈姆萨之手=的破碎符号。"/>
     <part Name="Interactable" Action="enter" Message="=object.Does:are= much too old and rusted to enter." UsePopup="true" CanSmartUse="false"/>
     <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsConsumer="true" SparkWhenBrokenAndPowered="false"/>
     <part Name="ChargeSink" ChargeUse="1" NameForStatus="PrimeMover"/>
@@ -2225,8 +2224,8 @@
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
   <object Name="True Godling" Inherits="Godling">
-    <part Name="Render" DisplayName="Girsh godling" Tile="Creatures/chiliad-true-godling.png" ColorString="&amp;m" DetailColor="M"/>
-    <part Name="Description" Short="A creature of wing, hoof, and spine slouches to the weight of years, tongue tra-la'ing a rich and wistful echo, countenance shining in the bright spectrum of affect. An irisdual grease churns under =pronouns.possessive= mosaic skin (fractalized by =pronouns.possessive= multi-threaded lineage) and beams rainbows that squirrel off in seven-dimensional strips. The thing waits unbidden."/>
+    <part Name="Render" DisplayName="吉尔什神灵" Tile="Creatures/chiliad-true-godling.png" ColorString="&amp;m" DetailColor="M"/>
+    <part Name="Description" Short="这生物拥有翅膀、蹄子和脊椎，因岁月的重压而弯腰驼背，口中发出丰富而怀旧的回声，面容在情感的光谱中闪耀。=pronouns.possessive=镶嵌皮肤下（由=pronouns.possessive=多线程血统分形化）涌动着虹彩油脂，散发出七维条带般的彩虹。这生物不请自来地等待着。"/>
     <part Name="Brain" Wanders="false" Feelings="Player:0"/>
     <part Name="ConversationScript" ConversationID="InheritorGodling"/>    
     <tag Name="ExcludeFromDynamicEncounters"/>    
@@ -2520,7 +2519,7 @@
   </object>
   <object Name="Chiliad Creature Issachari" Inherits="BaseIssachari">
     <part Name="Render" DisplayName="伊萨查里 =creatureRegionNoun=" Tile="Creatures/chiliad-issachari.png"/>
-    <part Name="Description" Short="风将流苏披肩和领带压在人体上。面料上绣有与盐和星形天空图案押韵的图案。"/>    
+    <part Name="Description" Short=""/>    
     <mixin Name="BaseChiliadCreatureStats"/>
   </object>
   <object Name="Chiliad Creature Mechanimists" Inherits="Mechanimist">
@@ -2548,7 +2547,7 @@
   <object Name="Chiliad Creature Strangers" Inherits="BaseHumanoid">
     <part Name="Render" DisplayName="神秘的=creatureRegionNoun=" Tile="Creatures/chiliad-stranger.png"/>
     <part Name="Brain" Factions="Strangers-100"/>
-    <part Name="Description" Short="=pronouns.Possessive=那条在被遗忘的河岸边编织而成的流苏斗篷，衬托出她那谨慎沉静的纤细身姿。"/>    
+    <part Name="Description" Short="她那条在被遗忘的河岸边编织而成的流苏斗篷，衬托出她那谨慎沉静的纤细身姿。"/>    
     <mixin Name="BaseChiliadCreatureStats"/>
   </object>
   <object Name="Chiliad Creature Naphtaali" Inherits="BaseNaphtaali">

@@ -32,7 +32,7 @@
 	</object>
   <object Name="UnknownGigantic" Inherits="BaseUnknown">    
     <part Name="Description" Short="尘埃覆盖了这巨大的装置。"/>
-    <part Name="SizeAdjective" Adjective="gigantic"/>    
+    <part Name="SizeAdjective" Adjective="巨大"/>    
   </object>
 	<object Name="UnknownOddTrinket" Inherits="BaseUnknown">
 		<part Name="Render" DisplayName="奇异饰品" Tile="Items/unidentified_artifact_trinket.bmp" RenderString="."/>		
@@ -55,7 +55,7 @@
 	<object Name="UnknownMed" Inherits="BaseUnknown">
 		<part Name="Render" DisplayName="管状物" RenderString="012" Tile="Items/sw_injector.bmp" ColorString="&amp;Y" DetailColor="m"/>
 		<part Name="Description" Short="一种奇异的物质填充在玻璃管道中。"/>
-		<part Name="SizeAdjective" Adjective="small"/>		
+		<part Name="SizeAdjective" Adjective="小的"/>		
 		<tag Name="ExaminerRandom" Value="ExaminerUnknownMeds"/>
 	</object>
 	<object Name="UnknownStrangeMeat" Inherits="BaseUnknown">
