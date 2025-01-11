@@ -1,86 +1,173 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <mods>
-  <mod Part="ModLacquered" Tables="CommonMods" Rarity="C" TinkerDisplayName="漆器" Value="1.1" TinkerCategory="utility" Description="上漆: 此物品不会生锈。" />
-  <mod Part="ModSturdy" Tables="CommonMods" Rarity="C" TinkerDisplayName="坚固" Value="1.1" TinkerCategory="utility" Description="坚固: 此物品不会损坏。" />
-  <mod Part="ModSlender" Tables="CommonMods" Rarity="C" TinkerDisplayName="纤细" Value="1.1" TinkerCategory="utility" Description="纤细: 此物品重量低于正常。" />
-  <mod Part="ModWillowy" Tables="CommonMods" Rarity="R" TinkerTier="2" TinkerDisplayName="柳枝" Value="1.3" TinkerCategory="utility" Description="柳枝: 此物品重量远低于正常。" />
-  <mod Part="ModSuspensor" Tables="CommonMods" Rarity="R" NativeTier="5" TinkerTier="7" CanAutoTinker="false" TinkerCategory="utility" TinkerDisplayName="悬浮装置" Value="1.3" />
-  <mod Part="ModJewelEncrusted" Tables="CommonMods,JeweledMods" Rarity="R" Value="5" TinkerAllowed="false" TinkerDisplayName="镶嵌宝石的" TinkerCategory="utility" Description="镶宝: 此物品价值远超寻常，并使佩戴者获得+100水商声望。" />
+  <mod Part="ModLacquered" Tables="CommonMods" Rarity="C" TinkerDisplayName="漆器" Value="1.1"
+    TinkerCategory="工具" Description="上漆: 此物品不会生锈。" />
+  <mod Part="ModSturdy" Tables="CommonMods" Rarity="C" TinkerDisplayName="坚固" Value="1.1"
+    TinkerCategory="工具" Description="坚固: 此物品不会损坏。" />
+  <mod Part="ModSlender" Tables="CommonMods" Rarity="C" TinkerDisplayName="纤细" Value="1.1"
+    TinkerCategory="工具" Description="纤细: 此物品重量低于正常。" />
+  <mod Part="ModWillowy" Tables="CommonMods" Rarity="R" TinkerTier="2" TinkerDisplayName="柳枝"
+    Value="1.3" TinkerCategory="工具" Description="柳枝: 此物品重量远低于正常。" />
+  <mod Part="ModSuspensor" Tables="CommonMods" Rarity="R" NativeTier="5" TinkerTier="7"
+    CanAutoTinker="false" TinkerCategory="工具" TinkerDisplayName="悬浮装置" Value="1.3" />
+  <mod Part="ModJewelEncrusted" Tables="CommonMods,JeweledMods" Rarity="R" Value="5"
+    TinkerAllowed="false" TinkerDisplayName="镶嵌宝石的" TinkerCategory="工具"
+    Description="镶宝: 此物品价值远超寻常，并使佩戴者获得+100水商声望。" />
 
-  <mod Part="ModDrumLoaded" Tables="MagazineMods" Rarity="U" MinTier="3" TinkerTier="2" TinkerDisplayName="鼓装" Value="1.2" TinkerCategory="rifles" Description="鼓装: 此武器可额外装载20%弹药。" />
+  <mod Part="ModDrumLoaded" Tables="MagazineMods" Rarity="U" MinTier="3" TinkerTier="2"
+    TinkerDisplayName="鼓装" Value="1.2" TinkerCategory="步枪" Description="鼓装: 此武器可额外装载20%弹药。" />
 
-  <mod Part="ModScoped" Tables="FirearmMods" Rarity="C" MinTier="2" TinkerDisplayName="瞄准镜" Value="1.1" TinkerCategory="rifles" Description="瞄准镜: 此武器精度提升。" />
-  <mod Part="ModLiquidCooled" Tables="FirearmMods" Rarity="U" NativeTier="3" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="液冷" Value="1.2" TinkerCategory="rifles" />
+  <mod Part="ModScoped" Tables="FirearmMods" Rarity="C" MinTier="2" TinkerDisplayName="瞄准镜"
+    Value="1.1" TinkerCategory="步枪" Description="瞄准镜: 此武器精度提升。" />
+  <mod Part="ModLiquidCooled" Tables="FirearmMods" Rarity="U" NativeTier="3" TinkerTier="3"
+    CanAutoTinker="false" TinkerDisplayName="液冷" Value="1.2" TinkerCategory="步枪" />
 
-  <mod Part="ModBeamsplitter" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="6" TinkerDisplayName="装配分光器" Value="1.3" TinkerCategory="rifles" />
-  <mod Part="ModNanon" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="7" TinkerDisplayName="纳米" NoSparkingQuest="true" Value="1.3" TinkerCategory="rifles" />
+  <mod Part="ModBeamsplitter" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="6"
+    TinkerDisplayName="装配分光器" Value="1.3" TinkerCategory="步枪" />
+  <mod Part="ModNanon" Tables="BeamWeaponMods" Rarity="R" NativeTier="4" TinkerTier="7"
+    TinkerDisplayName="纳米" NoSparkingQuest="true" Value="1.3" TinkerCategory="步枪" />
 
-  <mod Part="ModSharp" Tables="BladeMods,ThrownWeaponMods" Rarity="C" TinkerDisplayName="锋利" Value="1.1" NoSparkingQuest="true" Description="锋利: 穿透检定+1" TinkerCategory="melee weapons" />
-  <mod Part="ModMasterwork" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="U" TinkerDisplayName="精工" Value="1.2" TinkerCategory="melee weapons" Description="精工: 此武器暴击率翻倍。" />
-  <mod Part="ModDisplacer" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R" NativeTier="6" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="位移器" Value="1.5" TinkerCategory="melee weapons" />
-  <mod Part="ModMorphogenetic" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R" NativeTier="6" TinkerTier="7" CanAutoTinker="false" TinkerDisplayName="形态发生" Value="1.5" TinkerCategory="melee weapons" />
+  <mod Part="ModSharp" Tables="BladeMods,ThrownWeaponMods" Rarity="C" TinkerDisplayName="锋利"
+    Value="1.1" NoSparkingQuest="true" Description="锋利: 穿透检定+1" TinkerCategory="近战武器" />
+  <mod Part="ModMasterwork" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="U"
+    TinkerDisplayName="精工" Value="1.2" TinkerCategory="近战武器" Description="精工: 此武器暴击率翻倍。" />
+  <mod Part="ModDisplacer" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R"
+    NativeTier="6" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="位移器" Value="1.5"
+    TinkerCategory="近战武器" />
+  <mod Part="ModMorphogenetic" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods" Rarity="R"
+    NativeTier="6" TinkerTier="7" CanAutoTinker="false" TinkerDisplayName="形态发生" Value="1.5"
+    TinkerCategory="近战武器" />
 
-  <mod Part="ModSerrated" Tables="LongBladeMods,AxeMods" Rarity="R" TinkerTier="3" TinkerDisplayName="锯齿" Value="1.3" Description="锯齿: 此武器有3%几率造成对手肢体残缺。" TinkerCategory="melee weapons" />
+  <mod Part="ModSerrated" Tables="LongBladeMods,AxeMods" Rarity="R" TinkerTier="3"
+    TinkerDisplayName="锯齿" Value="1.3" Description="锯齿: 此武器有3%几率造成对手肢体残缺。"
+    TinkerCategory="近战武器" />
 
-  <mod Part="ModGigantic" Tables="CommonMods,PotteryMods，ShevaPotteryMods,EnergyCellMods,GrenadeMods,NuggetMods,GemstoneMods,TonicMods" Rarity="R2" TinkerDisplayName="巨型" TinkerAllowed="false" CanAutoTinker="false" BonusAllowed="false" Value="1.5" TinkerCategory="utility" />
+  <mod Part="ModGigantic"
+    Tables="CommonMods,PotteryMods，ShevaPotteryMods,EnergyCellMods,GrenadeMods,NuggetMods,GemstoneMods,TonicMods"
+    Rarity="R2" TinkerDisplayName="巨型" TinkerAllowed="false" CanAutoTinker="false"
+    BonusAllowed="false" Value="1.5" TinkerCategory="工具" />
 
-  <mod Part="ModElectrified" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="带电的" Value="1.2" TinkerCategory="melee weapons" />
-  <mod Part="ModFreezing" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" NoSparkingQuest="true" TinkerDisplayName="冰冻的" Value="1.2" TinkerCategory="melee weapons" />
-  <mod Part="ModFlaming" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" NoSparkingQuest="true" TinkerDisplayName="火焰的" Value="1.2" TinkerCategory="melee weapons" />
-  <mod Part="ModCounterweighted" Tables="WeaponMods" Rarity="C" TinkerTier="2" TinkerDisplayName="配重" Value="1.1" TinkerCategory="melee weapons" />
+  <mod Part="ModElectrified" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false"
+    TinkerDisplayName="带电的" Value="1.2" TinkerCategory="近战武器" />
+  <mod Part="ModFreezing" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false"
+    NoSparkingQuest="true" TinkerDisplayName="冰冻的" Value="1.2" TinkerCategory="近战武器" />
+  <mod Part="ModFlaming" Tables="WeaponMods" Rarity="U" TinkerTier="2" CanAutoTinker="false"
+    NoSparkingQuest="true" TinkerDisplayName="火焰的" Value="1.2" TinkerCategory="近战武器" />
+  <mod Part="ModCounterweighted" Tables="WeaponMods" Rarity="C" TinkerTier="2"
+    TinkerDisplayName="配重" Value="1.1" TinkerCategory="近战武器" />
 
-  <mod Part="ModReinforced" Tables="BodyMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="强化" Value="1.2" TinkerCategory="armor" Description="强化: +1 AV" />
-  <mod Part="ModFlexiweaved" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="U" MinTier="2" TinkerTier="2" TinkerDisplayName="柔性编织" TinkerCategory="armor" Value="1.2" />
-  <mod Part="ModRecycling" Tables="BodyMods,ExoskeletonMods" Rarity="R" MinTier="2" NativeTier="0" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="回收" Value="1.3" TinkerCategory="armor" NoSparkingQuest="true" Description="回收: 此物品收集、净化并储存穿戴者最多8打兰废水。" />
-  <mod Part="ModDisguise" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="R" TinkerTier="2" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="伪装" TinkerCategory="armor" Value="1.3" />
+  <mod Part="ModReinforced" Tables="BodyMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2"
+    TinkerDisplayName="强化" Value="1.2" TinkerCategory="护甲" Description="强化: +1 AV" />
+  <mod Part="ModFlexiweaved" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="U" MinTier="2"
+    TinkerTier="2" TinkerDisplayName="柔性编织" TinkerCategory="护甲" Value="1.2" />
+  <mod Part="ModRecycling" Tables="BodyMods,ExoskeletonMods" Rarity="R" MinTier="2" NativeTier="0"
+    TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="回收" Value="1.3" TinkerCategory="护甲"
+    NoSparkingQuest="true" Description="回收: 此物品收集、净化并储存穿戴者最多8打兰废水。" />
+  <mod Part="ModDisguise" Tables="BodyMods,CloakMods,ExoskeletonMods" Rarity="R" TinkerTier="2"
+    TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="伪装" TinkerCategory="护甲"
+    Value="1.3" />
 
-  <mod Part="ModVisored" Tables="HelmetMods,ExoskeletonMods" Rarity="C" MinTier="2" TinkerDisplayName="面罩" Value="1.1" TinkerCategory="armor" Description="面罩: +1 DV" />
-  <mod Part="ModPadded" Tables="HelmetMods" Rarity="C" TinkerDisplayName="衬垫" Value="1.1" TinkerCategory="armor" />
-  <mod Part="ModLanterned" Tables="HelmetMods,ExoskeletonMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="灯笼化" Value="1.2" Description="灯笼化: 此物品提供光源。" TinkerCategory="armor" />
-  <mod Part="ModFilters" Tables="HelmetMods,MaskMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="配备过滤器" Value="1.2" TinkerCategory="armor" />
-  <mod Part="ModTwoFaced" Tables="HelmetMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="双面的" Value="1.3" Description="双面: 此物品提供额外面部装备槽。" TinkerCategory="armor" />
-  <mod Part="ModTerrifyingVisage" Tables="HeadwearMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="恐怖面容的" Value="1.3" Description="恐怖面容: 此物品减少“训斥”、“恐吓”和“威胁凝视”的冷却时间10回合。此外，它占用头部和面部装备槽。" TinkerCategory="armor" />
-  <mod Part="ModSereneVisage" Tables="HeadwearMods" Rarity="R" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="宁静面容的" Value="1.3" Description="宁静面容: +1 意志力并减少“冥想”的冷却时间40回合。此外，此物品占用头部和面部装备槽。" TinkerCategory="armor" />
-  <mod Part="ModCoProcessor" Tables="HeadwearMods" Rarity="R" TinkerTier="6" NativeTier="4" CanAutoTinker="false" TinkerDisplayName="协处理器" Value="1.3" TinkerCategory="armor" />
+  <mod Part="ModVisored" Tables="HelmetMods,ExoskeletonMods" Rarity="C" MinTier="2"
+    TinkerDisplayName="面罩" Value="1.1" TinkerCategory="护甲" Description="面罩: +1 DV" />
+  <mod Part="ModPadded" Tables="HelmetMods" Rarity="C" TinkerDisplayName="衬垫" Value="1.1"
+    TinkerCategory="护甲" />
+  <mod Part="ModLanterned" Tables="HelmetMods,ExoskeletonMods" Rarity="U" TinkerTier="2"
+    CanAutoTinker="false" TinkerDisplayName="灯笼化" Value="1.2" Description="灯笼化: 此物品提供光源。"
+    TinkerCategory="护甲" />
+  <mod Part="ModFilters" Tables="HelmetMods,MaskMods" Rarity="U" TinkerTier="2"
+    CanAutoTinker="false" TinkerDisplayName="配备过滤器" Value="1.2" TinkerCategory="护甲" />
+  <mod Part="ModTwoFaced" Tables="HelmetMods" Rarity="R" TinkerTier="3" CanAutoTinker="false"
+    TinkerDisplayName="双面的" Value="1.3" Description="双面: 此物品提供额外面部装备槽。" TinkerCategory="护甲" />
+  <mod Part="ModTerrifyingVisage" Tables="HeadwearMods" Rarity="R" TinkerTier="3"
+    CanAutoTinker="false" TinkerDisplayName="恐怖面容的" Value="1.3"
+    Description="恐怖面容: 此物品减少“训斥”、“恐吓”和“威胁凝视”的冷却时间10回合。此外，它占用头部和面部装备槽。" TinkerCategory="护甲" />
+  <mod Part="ModSereneVisage" Tables="HeadwearMods" Rarity="R" TinkerTier="3" CanAutoTinker="false"
+    TinkerDisplayName="宁静面容的" Value="1.3"
+    Description="宁静面容: +1 意志力并减少“冥想”的冷却时间40回合。此外，此物品占用头部和面部装备槽。" TinkerCategory="护甲" />
+  <mod Part="ModCoProcessor" Tables="HeadwearMods" Rarity="R" TinkerTier="6" NativeTier="4"
+    CanAutoTinker="false" TinkerDisplayName="协处理器" Value="1.3" TinkerCategory="护甲" />
 
-  <mod Part="ModSpiked" Tables="ShieldMods,GauntletMods" Rarity="R" TinkerTier="3" TinkerDisplayName="尖刺的" Value="1.3" TinkerCategory="armor" />
+  <mod Part="ModSpiked" Tables="ShieldMods,GauntletMods" Rarity="R" TinkerTier="3"
+    TinkerDisplayName="尖刺的" Value="1.3" TinkerCategory="护甲" />
 
-  <mod Part="ModRefractive" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,ShieldMods,BootMods,CloakMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" TinkerTier="5" NativeTier="4" TinkerDisplayName="折射的" Value="1.3" TinkerCategory="armor" />
+  <mod Part="ModRefractive"
+    Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,ShieldMods,BootMods,CloakMods,TreadAccessoryMods,ExoskeletonMods"
+    Rarity="R" TinkerTier="5" NativeTier="4" TinkerDisplayName="折射的" Value="1.3"
+    TinkerCategory="护甲" />
 
-  <mod Part="ModSixFingered" Tables="GloveMods,GauntletMods" Rarity="R" MinTier="3" TinkerTier="3" TinkerDisplayName="六指" Value="1.3" Description="六指: +1 敏捷" TinkerCategory="armor" />
-  
-  <mod Part="ModGesticulating" Tables="GloveMods,GauntletMods,ExoskeletonMods" Rarity="R" MinTier="3" TinkerTier="3" TinkerDisplayName="手势的" Value="1.3" TinkerCategory="armor" />
-  
-  <mod Part="ModFeathered" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="羽饰的" Value="1.2" TinkerCategory="armor" Description="羽化: 此物品使穿戴者获得+250鸟类声望。" />
-  <mod Part="ModScaled" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods" Rarity="U" TinkerTier="2" TinkerDisplayName="鳞片的" Value="1.2" TinkerCategory="armor" Description="鳞化: 此物品使穿戴者获得+250无壳爬行动物声望。" />
-  <mod Part="ModWooly" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,BootMods,ExoskeletonMods,WingsMods,BracerMods" Rarity="U" TinkerTier="2" TinkerDisplayName="毛绒的" Value="1.2" TinkerCategory="armor" Description="毛绒: 此物品提供对热和冷的抗性。" />
-  <mod Part="ModSnailEncrusted" Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" TinkerTier="2" TinkerDisplayName="蜗牛附着的" TinkerAllowed="false" Value="1.2" TinkerCategory="armor" Description="鳞化: 此物品使穿戴者获得+250软体动物声望。" />
-  
-  <mod Part="ModSpringLoaded" Tables="BootMods,ExoskeletonMods" Rarity="U" TinkerTier="2" TinkerDisplayName="弹簧加载的" Value="1.2" TinkerCategory="armor" Description="弹簧加载: +5-10 移动速度" />
-  <mod Part="ModCleated" Tables="BootMods,ExoskeletonMods" Rarity="C" TinkerTier="1" TinkerDisplayName="装有鞋钉的" Value="1.1" TinkerCategory="armor" />
+  <mod Part="ModSixFingered" Tables="GloveMods,GauntletMods" Rarity="R" MinTier="3" TinkerTier="3"
+    TinkerDisplayName="六指" Value="1.3" Description="六指: +1 敏捷" TinkerCategory="护甲" />
 
-  <mod Part="ModPolarized" Tables="EyewearMods" Rarity="C" NativeTier="0" TinkerTier="2" TinkerDisplayName="偏振的" Value="1.1" TinkerCategory="armor" />
-  <mod Part="ModNav" Tables="EyewearMods,ExoskeletonMods" Rarity="R" NativeTier="0" TinkerTier="3" CanAutoTinker="false" TinkerDisplayName="导航" Value="1.5" TinkerCategory="armor" />
+  <mod Part="ModGesticulating" Tables="GloveMods,GauntletMods,ExoskeletonMods" Rarity="R"
+    MinTier="3" TinkerTier="3" TinkerDisplayName="手势的" Value="1.3" TinkerCategory="护甲" />
 
-  <mod Part="ModNulling" Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods,ShieldMods,BodyMods,CloakMods,HeadwearMods,EyewearMods,GloveMods,GauntletMods,BootMods,TreadAccessoryMods,ExoskeletonMods" Rarity="R" NativeTier="5" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="虚无化" Value="1.3" TinkerCategory="utility" />
+  <mod Part="ModFeathered"
+    Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods"
+    Rarity="U" TinkerTier="2" TinkerDisplayName="羽饰的" Value="1.2" TinkerCategory="护甲"
+    Description="羽化: 此物品使穿戴者获得+250鸟类声望。" />
+  <mod Part="ModScaled"
+    Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods,WingsMods"
+    Rarity="U" TinkerTier="2" TinkerDisplayName="鳞片的" Value="1.2" TinkerCategory="护甲"
+    Description="鳞化: 此物品使穿戴者获得+250无壳爬行动物声望。" />
+  <mod Part="ModWooly"
+    Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,BootMods,ExoskeletonMods,WingsMods,BracerMods"
+    Rarity="U" TinkerTier="2" TinkerDisplayName="毛绒的" Value="1.2" TinkerCategory="护甲"
+    Description="毛绒: 此物品提供对热和冷的抗性。" />
+  <mod Part="ModSnailEncrusted"
+    Tables="GloveMods,GauntletMods,HeadwearMods,BodyMods,CloakMods,ShieldMods,BootMods,TreadAccessoryMods,ExoskeletonMods"
+    Rarity="R" TinkerTier="2" TinkerDisplayName="蜗牛附着的" TinkerAllowed="false" Value="1.2"
+    TinkerCategory="护甲" Description="鳞化: 此物品使穿戴者获得+250软体动物声望。" />
 
-  <mod Part="ModHighCapacity" Tables="EnergyCellMods,ChargeStorageMods" Rarity="U" TinkerDisplayName="高容量" Value="1.2" TinkerCategory="ammo and energy cells" />
-  <mod Part="ModMetered" Tables="EnergyCellMods" Rarity="U" TinkerTier="2" CanAutoTinker="false" TinkerDisplayName="计量" Value="1.2" TinkerCategory="ammo and energy cells" />
-  <mod Part="ModRadioPowered" Tables="EnergyCellMods" Rarity="R" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="无线供电的" Value="1.3" TinkerCategory="ammo and energy cells" />
+  <mod Part="ModSpringLoaded" Tables="BootMods,ExoskeletonMods" Rarity="U" TinkerTier="2"
+    TinkerDisplayName="弹簧加载的" Value="1.2" TinkerCategory="护甲" Description="弹簧加载: +5-10 移动速度" />
+  <mod Part="ModCleated" Tables="BootMods,ExoskeletonMods" Rarity="C" TinkerTier="1"
+    TinkerDisplayName="装有鞋钉的" Value="1.1" TinkerCategory="护甲" />
 
-  <mod Part="ModIlluminated" Tables="BookMods" Rarity="U" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="装有插图的" Value="1.3" TinkerCategory="utility" Description="插图: 本书配有装饰性旁注和插图。它的价值增加了​​ 30%。" />
+  <mod Part="ModPolarized" Tables="EyewearMods" Rarity="C" NativeTier="0" TinkerTier="2"
+    TinkerDisplayName="偏振的" Value="1.1" TinkerCategory="护甲" />
+  <mod Part="ModNav" Tables="EyewearMods,ExoskeletonMods" Rarity="R" NativeTier="0" TinkerTier="3"
+    CanAutoTinker="false" TinkerDisplayName="导航" Value="1.5" TinkerCategory="护甲" />
 
-  <mod Part="ModExtradimensional" Tables="CommonMods,PotteryMods,ShevaPotteryMods" Rarity="R3" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="异次元的" Value="3" TinkerCategory="utility" Description="异次元: 此物品最近实体化，继承了其原生维度的一些特性。" />
+  <mod Part="ModNulling"
+    Tables="WeaponMods,MissileWeaponMods,ThrownWeaponMods,ShieldMods,BodyMods,CloakMods,HeadwearMods,EyewearMods,GloveMods,GauntletMods,BootMods,TreadAccessoryMods,ExoskeletonMods"
+    Rarity="R" NativeTier="5" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="虚无化"
+    Value="1.3" TinkerCategory="工具" />
 
-  <mod Part="ModAirfoil" Tables="GrenadeMods,ThrownWeaponMods" Rarity="C" TinkerTier="1" TinkerDisplayName="翼型" Value="1.1" TinkerCategory="grenades" />
-  <mod Part="ModPhaseConjugate" Tables="GrenadeMods" Rarity="R" NativeTier="0" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="相位共轭" Value="1.5" TinkerCategory="grenades" />
+  <mod Part="ModHighCapacity" Tables="EnergyCellMods,ChargeStorageMods" Rarity="U"
+    TinkerDisplayName="高容量" Value="1.2" TinkerCategory="弹药和能量电池" />
+  <mod Part="ModMetered" Tables="EnergyCellMods" Rarity="U" TinkerTier="2" CanAutoTinker="false"
+    TinkerDisplayName="计量" Value="1.2" TinkerCategory="弹药和能量电池" />
+  <mod Part="ModRadioPowered" Tables="EnergyCellMods" Rarity="R" TinkerTier="4"
+    CanAutoTinker="false" TinkerDisplayName="无线供电的" Value="1.3" TinkerCategory="弹药和能量电池" />
 
-  <mod Part="ModHardened" Tables="CommonMods" Rarity="R" NativeTier="4" TinkerTier="5" CanAutoTinker="false" TinkerDisplayName="电磁屏蔽的" Value="1.3" TinkerCategory="utility" />
-  <mod Part="ModJacked" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="插电的" Value="1.3" TinkerCategory="utility" />
-  <mod Part="ModOverloaded" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4" CanAutoTinker="false" TinkerDisplayName="过载的" Value="1.3" TinkerCategory="utility" />
-  <mod Part="ModPhaseHarmonic" Tables="CommonMods,GrenadeMods" Rarity="R" NativeTier="6" TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="相位谐波的" Value="1.3" TinkerCategory="utility" />
+  <mod Part="ModIlluminated" Tables="BookMods" Rarity="U" TinkerAllowed="false"
+    CanAutoTinker="false" TinkerDisplayName="装有插图的" Value="1.3" TinkerCategory="工具"
+    Description="插图: 本书配有装饰性旁注和插图。它的价值增加了​​ 30%。" />
 
-  <mod Part="ModEngraved" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="雕刻的" Value="2" Description="雕刻: 此物品雕刻有历史事件的描绘。" TinkerCategory="utility" />
-  <mod Part="ModPainted" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="彩绘的" Value="2" Description="彩绘: 此物品彩绘有历史事件的描绘。" TinkerCategory="utility" />
+  <mod Part="ModExtradimensional" Tables="CommonMods,PotteryMods,ShevaPotteryMods" Rarity="R3"
+    TinkerAllowed="false" CanAutoTinker="false" TinkerDisplayName="异次元的" Value="3"
+    TinkerCategory="工具" Description="异次元: 此物品最近实体化，继承了其原生维度的一些特性。" />
+
+  <mod Part="ModAirfoil" Tables="GrenadeMods,ThrownWeaponMods" Rarity="C" TinkerTier="1"
+    TinkerDisplayName="翼型" Value="1.1" TinkerCategory="grenades" />
+  <mod Part="ModPhaseConjugate" Tables="GrenadeMods" Rarity="R" NativeTier="0" TinkerTier="6"
+    CanAutoTinker="false" TinkerDisplayName="相位共轭" Value="1.5" TinkerCategory="grenades" />
+
+  <mod Part="ModHardened" Tables="CommonMods" Rarity="R" NativeTier="4" TinkerTier="5"
+    CanAutoTinker="false" TinkerDisplayName="电磁屏蔽的" Value="1.3" TinkerCategory="工具" />
+  <mod Part="ModJacked" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4"
+    CanAutoTinker="false" TinkerDisplayName="插电的" Value="1.3" TinkerCategory="工具" />
+  <mod Part="ModOverloaded" Tables="CommonMods" Rarity="R" NativeTier="0" TinkerTier="4"
+    CanAutoTinker="false" TinkerDisplayName="过载的" Value="1.3" TinkerCategory="工具" />
+  <mod Part="ModPhaseHarmonic" Tables="CommonMods,GrenadeMods" Rarity="R" NativeTier="6"
+    TinkerTier="6" CanAutoTinker="false" TinkerDisplayName="相位谐波的" Value="1.3"
+    TinkerCategory="工具" />
+
+  <mod Part="ModEngraved" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false"
+    CanAutoTinker="false" TinkerDisplayName="雕刻的" Value="2" Description="雕刻: 此物品雕刻有历史事件的描绘。"
+    TinkerCategory="工具" />
+  <mod Part="ModPainted" Tables="CommonMods,PotteryMods" Rarity="C" TinkerAllowed="false"
+    CanAutoTinker="false" TinkerDisplayName="彩绘的" Value="2" Description="彩绘: 此物品彩绘有历史事件的描绘。"
+    TinkerCategory="工具" />
 
 </mods>

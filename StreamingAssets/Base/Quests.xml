@@ -112,16 +112,16 @@
     Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= coating of foul slime, they accepted =name= into their fold and taught =player.objective= their secrets.">
 
     <step Name="前往各各他" XP="250">
-      <text>前往砂砾门以北的各各他大洞穴。</text>
+      <text>前往砂砾门北面的各各他大洞穴。</text>
     </step>
-    <step Name="寻找功能失调的 Waydroid" XP="250">
-      <text>在各各他的废墟中找到一个功能失调的机器人。</text>
+    <step Name="寻找功能失调的机器人" XP="250">
+      <text>在各各他的洞穴中找到一个功能失调的机器人。</text>
     </step>
-    <step Name="修复 Waydroid" XP="250">
-      <text>修复 Waydroid。</text>
+    <step Name="修复机器人" XP="250">
+      <text>修复机器人。</text>
     </step>
     <step Name="返回砂砾门" XP="1250">
-      <text>携带waydroid返回砂砾门然后与巴拉瑟鲁姆人交谈。</text>
+      <text>携带机器人返回砂砾门然后与巴拉瑟鲁姆人交谈。</text>
     </step>
   </quest>
   <quest Name="解码信号" Level="15" Factions="Barathrumites" Reputation="100"
@@ -426,14 +426,14 @@
 
       拿非利人痛苦的世界呻吟声响起，你的身体在电空气中颤动！
 
-      已经到了，{{R|=方向=}}.
+      已经到了，{{R|=direction=}}.
     </property>
     <property Name="MessageArrivalSuper">
       {{m|QQQYQQQYQQQYQQQYQQQ!}}
 
       星爆喷射物像燃烧的丝带一样落下，而你的身体几乎被早期宇宙难以言喻的呻吟所化为乌有！
 
-      =name= 下降, {{R|=方向=}}.
+      =name= 下降, {{R|=direction=}}.
     </property>
     <property Name="FixedSpawnLocations">
       <entry Key="JoppaWorld.53.4.1.0.10">Major</entry>

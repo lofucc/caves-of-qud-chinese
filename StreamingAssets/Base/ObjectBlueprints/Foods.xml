@@ -475,7 +475,7 @@
     <part Name="PreservableItem" Result="Freeze-Dried Hoarshrooms" Number="8"/>
     <tag Name="LiveFungus"/>
     <tag Name="SpecialCookingIngredient"/>    
-    <part Name="RulesDescription" Text="Duration: 180-220 rounds You cast light in radius 2. For the first 5 rounds after imbibing, you gain 0.6 hit points per level (minimum 3) each round. +20 cold resistance You cannot be poisoned."/>
+    <part Name="RulesDescription" Text="持续时间：180-220回合；施放半径为2的光亮在你周围。在食用后的前5回合内，每回合恢复0.6点生命值每等级（最低3点）。+20 耐寒性。你免疫中毒。"/>
     <part Name="Tonic" Eat="true"/>
 		<stag Name="Cold"/>
 		<stag Name="LightSource"/>
@@ -621,7 +621,7 @@
     <part Name="StatOnEat" Stats="Ego:-1"/>
     <part Name="AchievementOnConsume" AchievementID="ACH_ATE_HUMBLE_PIE"/>
     <part Name="Description" Short="派底下的碎肉被调味，其中混入了一点点yyffur粉，这种粉末是从同名蘑菇的茎上刮下并精细研磨而成的。整个蘑菇对哺乳动物的精神来说太过强烈（食用一个会在瞬间摧毁自我意识），但一点点粉末撒在美味的派上可以让人意识到自己在宇宙中的位置。"/>
-    <part Name="RulesDescription" Text="-1 Ego permanently"/>
+    <part Name="RulesDescription" Text="-1 Ego 永久"/>
     <xtagGrammar massNoun="true"/>
     <part Name="Food" Message="味道很苦。你的{{Y|自我}}减少了{{C|1}}"/>
   </object>  

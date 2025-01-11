@@ -112,7 +112,7 @@
   <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="自动饮水的口渴阈值" Category="自动化" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"/>
   <option ID="OptionAutoTorch" DisplayText="自动熄灭和点燃火把" Category="自动化" Type="Checkbox" Default="No"/>
   <option ID="OptionAutoDisassembleScrap" DisplayText="自动拆解废料" Category="自动化" Type="Checkbox" Default="No"/>  
-  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略敌对生物的难度阈值" Category="自动化" Type="Combo" Values="None,Easy,Average,Tough,Very Tough,Impossible" Default="None"/>
+  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略敌对生物的难度阈值" Category="自动化" Type="Combo" Values="None,容易,一般,困难,非常困难,不可战胜的" Default="None"/>
   <option ID="OptionAutoexploreIgnoreDistantEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="忽略敌对生物的距离阈值" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"/>
   <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动探索时忽略靠近的敌对目标" Category="自动化" Type="Checkbox" Default="No"/>
   <option ID="OptionInterruptHeldMovement" Requires="OptionShowAdvancedOptions==Yes" DisplayText="当附近有敌对生物时中断持有的移动" Category="自动化" Type="Checkbox" Default="Yes"/>

@@ -29,8 +29,8 @@
     <stat Name="ElectricResistance" Value="50"/>
     <tag Name="PaintedWall" Value="wall_brick"/>
     <tag Name="BaseObject" Value="*noinherit"/>
-    <tag Name="HeroNameTitleDescriptor" Value="Cracked,Crackless,Once-Cracked,Painted,Still-Standing,Studded,Sturdy,Twice-Cracked,Unpainted,Unstudded"/>
-    <tag Name="HeroNameTitleClientele" Value="Builders,Cowards,Defenders,Roofs,the Assailed,the Stalwart"/>
+    <tag Name="HeroNameTitleDescriptor" Value="破裂者,无裂者,曾破裂者,被涂绘者,仍屹立者,带钉者,结实者,两度破裂者,未涂绘者,无钉者"/>
+    <tag Name="HeroNameTitleClientele" Value="建造者,懦夫,守护者,屋顶,被攻击者,坚定者"/>
     <xtagTextFragments Skin="texture" PoeticFeatures="towering nature,gentle stillness,comforting enclosure"/>
     <builder Name="Animated" ChanceOneIn="200000"/>
     <tag Name="Animatable"/>
@@ -310,7 +310,7 @@
     <stat Name="Hitpoints" Value="200"/>
     <part Name="Description" Short="黏土和石英被晒干并粉碎成红岩，这种岩石已经被山民开采了数千年之久。"/>
     <part Name="ShaleVines"/>
-    <tag Name="PaintWith" Value="MarbleWalls" />
+    <tag Name="PaintWith" Value="MarbleWalls"/>
     <xtagGrammar massNoun="true"/>
   </object>
   <object Name="Sandstone" Inherits="BaseSedimentaryRock">
@@ -1162,7 +1162,7 @@
     <part Name="Render" ColorString="&amp;K^k" DetailColor="y"/>
   </object>
     <object Name="MoverHalfWall" Inherits="HalfWall">
-    <part Name="Render" ColorString="&amp;w^k" DetailColor="W" />
+    <part Name="Render" ColorString="&amp;w^k" DetailColor="W"/>
   </object>
   <object Name="LowSandstoneWall" Inherits="Sandstone">
     <part Name="Render" Occluding="false"/>
@@ -1759,7 +1759,7 @@
     <tag Name="Wall"/>
     <tag Name="Diggable"/>
     <tag Name="NoEffects"/>
-    <tag Name="HeroNameTitleDescriptor" Value="Sturdy,Studded,Unstudded,Crackless,Cracked,Once-Cracked,Twice-Cracked,Still-Standing,Painted,Unpainted"/>
+    <tag Name="HeroNameTitleDescriptor" Value="结实的,铆钉加固的,无铆钉的,无裂纹的,有裂纹的,曾经开裂的,两次开裂的,依然屹立的,上漆的,未上漆的"/>
     <tag Name="NamingTag" Value="Animated"/>
     <builder Name="Animated" ChanceOneIn="200000"/>
     <tag Name="Animatable"/>

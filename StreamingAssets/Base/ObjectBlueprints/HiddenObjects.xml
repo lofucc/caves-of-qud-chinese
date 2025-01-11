@@ -14,7 +14,7 @@
     <part Name="Body" Anatomy="Quadruped"/>
     <part Name="Render" DisplayName="{{M|艾哈尔科顿}}" Tile="Creatures/nephilim_ehalcodon.png" DetailColor="Y"/>
     <part Name="Description" Short="一个庞大的生物矗立在视野之上，散发着神光。覆盖着纺锤微光的后腿支撑着由这个位面的感知背景辐射勾勒出的生物形态，宽阔的带状翅膀边缘适合在星际风中翱翔。最终，虹彩双光在其tx-玻璃皮肤下翻腾，折射成不可能的超光谱，并以角螺旋的形式从身体中溢出。"/>
-    <part Name="Honorifics" Ordinary="{{M|Starformed}}"/>
+    <part Name="Honorifics" Ordinary="{{M|星铸}}"/>
     <part Name="Physics" VaporTemperature="15000"/>
     <tag Name="PronounSet" Value="qe/qem/qyr"/>
     <tag Name="AIAbilityIgnoreCon"/>

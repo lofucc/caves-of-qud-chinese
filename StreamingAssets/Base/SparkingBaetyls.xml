@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sparkingbaetyls>
+
+  <rewards>
+
+    <reward
+        Name="MeleeWeapon"
+        Description="一件强大的武器"
+        Weight="1"
+        Item="@Melee Weapons {tier}R"
+        ItemBonusModChance="40"
+        ItemSetModNumber="1"
+        ItemMinorBestowalChance="35"
+        ItemElementBestowalChance="15"
+    />
+
+    <reward
+        Name="Armor"
+        Description="一件华丽的法衣"
+        Weight="1"
+        Item="@Armor {tier}R"
+        ItemBonusModChance="40"
+        ItemSetModNumber="1"
+        ItemMinorBestowalChance="35"
+        ItemElementBestowalChance="15"
+    />
+
+    <reward
+        Name="MissileWeapon"
+        Description="一个炽热大炮"
+        Weight="1"
+        Item="@Missile {tier}"
+        ItemBonusModChance="40"
+        ItemSetModNumber="1"
+        ItemMinorBestowalChance="35"
+        ItemElementBestowalChance="15"
+    />
+
+    <reward
+        Name="Artifact"
+        Description="一个奇特的装置"
+        Weight="1"
+        Item="@Artifact {tier}R"
+        ItemBonusModChance="40"
+        ItemSetModNumber="1"
+        ItemMinorBestowalChance="35"
+        ItemElementBestowalChance="15"
+    />
+
+    <reward
+        Name="AttributePoints"
+        Description="增强实力"
+        Weight="1"
+        AttributePoints="1-3"
+    />
+
+    <reward
+        Name="MutationPoints"
+        Description="增强实力"
+        Weight="1"
+        MutantOnly="true"
+        MutationPoints="1-3"
+    />
+
+    <reward
+        Name="SkillPoints"
+        Description="提升实力"
+        Weight="1"
+        SkillPoints="1-3"
+    />
+    <!-- skill points amount is multiplied by 50 + (baseIntelligence - 10) * 4 -->
+
+    <reward
+        Name="Reputation"
+        Description="赫赫有名"
+        Weight="1"
+        Reputation="800"
+    />
+
+  </rewards>
+
+</sparkingbaetyls>

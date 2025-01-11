@@ -117,4 +117,3 @@
     <mutation Name="Socially Repugnant" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="the socially repugnant" BiomeEpithet="wretchmoot" Tile="Mutations/socially_repugnant.bmp" />
   </category>
 </mutations>
-

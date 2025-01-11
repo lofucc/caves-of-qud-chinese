@@ -1005,7 +1005,7 @@
         你与我的族人和几位祭司一样悲观。我的心感受到了你的共鸣，但请听我说，或许你会开始理解我的感受。
         贬低智慧即是贬低卡萨菲斯肯斯。她在虚空中闪耀，折射光芒，照亮周围的人。我们的长者所书写的智慧亦是如此。
         铬的机械在其神圣性上是复杂的。当我们对它、对我们的过去和未来一无所知时，我们是否在亵渎我们的父辈？我们难道不应享有知晓的喜悦吗？祝福埃舍尔施塔特二世，第一个孩子，因为他和我一样相信这一点。
-</text>
+      </text>
       <choice GotoID="Start" Transient="true">
         <text>我将捐赠一本书。</text>
         <part Name="LibrarianGiveBook" />
@@ -1433,7 +1433,7 @@
       <text>
         {{emote|*阿尔吉夫抬起双眉.*}}
         现在，让我解释一下！我正处于关键时刻。一个伟大的发现。奇异导线管道即将完成，一旦完成，我们就能即时通讯！从这里到伊德自由领地。但在完成之前，我需要导线。尽可能多找一些……至少两百英尺。你应该能从锈井里找到。
-</text>
+      </text>
       <choice GotoID="End" StartQuest="奇怪的电线导管...尤里卡！">我会给你拿电线。</choice>
       <choice GotoID="End">我不感兴趣。</choice>
     </node>
@@ -2094,7 +2094,7 @@
       <text>
         攀爬者的设计依赖于使用电磁铁与行星磁场交互并产生扭矩。不幸的是，纺锤产生了自身的干扰场，可能作为一种防止不希望的上升的机制。
         我们的目标是进入纺锤的控制单元并关闭力场。然而，如何实现这一点仍是个谜。从数码档案中零散的信息片段中，埃RESH基伽尔拼凑出了一幅神秘但具有指导意义的织锦。她了解到，可以从一个名为光明谢奥的地方关闭力场，该地位于薄界，只能通过食者之墓内的雷谢夫之墓进入。
-</text>
+      </text>
       <choice GotoID="TombBody2">...</choice>
     </node>
     <node ID="TombBody2">
@@ -2119,7 +2119,7 @@
       <text>
         攀爬者的设计依赖于使用电磁铁与行星磁场交互并产生扭矩。不幸的是，纺锤产生了自身的干扰场，可能作为一种防止不希望的上升的机制。
         我们的目标是进入纺锤的控制单元并关闭力场。然而，如何实现这一点仍是个谜。从数码档案中零散的信息片段中，埃RESH基伽尔拼凑出了一幅神秘但具有指导意义的织锦。她了解到，可以从一个名为光明谢奥的地方关闭力场，该地位于薄界，只能通过食者之墓内的雷谢夫之墓进入。
-</text>
+      </text>
       <choice GotoID="TombExplain2">...</choice>
     </node>
     <node ID="TombExplain2">
@@ -2155,7 +2155,7 @@
         我确实如此。你对公会的服务令人称道，=factionaddress:Barathrumites=。你勇敢地深入了Bethesda
         Susa的雾气深处并解码了信号，你确保了Spindlegrounds的安全并处理了自封的伯爵，也许最重要的是，你保卫了我们的驻地免受Putus Templar的侵袭。
         自从你从贝塞斯达归来后，你无疑对信号的内容感到困惑。确实，我隐藏了它们，以免真相的重负压垮你。只有奥托、Q少女和我承担着这份重担，但情况已经改变。时间之河驱动着我们计划和装置的齿轮，它正急速向前。从现在起，我必须分担这份重担。你必须知道。
-</text>
+      </text>
       <choice GotoID="Signal">这是什么？信号来自哪里，又说了些什么？</choice>
     </node>
     <node ID="Signal">
@@ -2175,7 +2175,7 @@
         我打算登上纺锤，响应召唤，=factionaddress:Barathrumites=。
         我的门徒 &amp;mQ Girl&amp;y
         设计了一种攀登装置用于攀爬。我们原计划在避难所和现场分段建造，但这项工程超出了我们的能力范围。随着时间的推移，我相信我们能够完成，但普图斯圣殿骑士夺走了我们的耐心。我们需要立即行动，因此尽管我不情愿承认，但我们需要帕克斯·克兰克。
-</text>
+      </text>
       <choice GotoID="PaxKlanq">谁是Pax Klanq？</choice>
     </node>
     <node ID="PaxKlanq">
@@ -2202,24 +2202,24 @@
   </conversation>
   <conversation ID="Sparafucile">
     <node ID="Start" IfNotFinishedQuest="不仅仅是一种愿意的精神">
-      <text>{{emote|*斯帕拉富西尔抬起一只眉毛，用警惕的眼神看着你。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱抬起一只眉毛，用警惕的眼神看着你。*}}</text>
       <choice GotoID="End">我走了。</choice>
     </node>
     <node ID="Start" IfHaveActiveQuest="战斗的号角" IfWearingBlueprint="MasterworkCarbine">
-      <text>{{emote|*斯帕拉富西尔给=pronouns.possessive=的卡宾枪做了一次检查，并坚定地点了点头。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱给=pronouns.possessive=的卡宾枪做了一次检查，并坚定地点了点头。*}}</text>
       <choice GotoID="End">*点头回礼*</choice>
     </node>
     <node ID="Start" IfHaveActiveQuest="战斗的号角" IfNotWearingBlueprint="MasterworkCarbine">
-      <text>{{emote|*斯帕拉富西尔给了你一个坚定的点头。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱给了你一个坚定的点头。*}}</text>
       <choice GotoID="End">*点头回礼*</choice>
     </node>
     <node ID="Start">
-      <text>{{emote|*斯帕拉富切点头。*}}</text>
-      <choice ID="GreetSpara" GotoID="SilentGreeting">问候，斯帕拉富西勒。</choice>
+      <text>{{emote|*斯帕拉夫西莱点头。*}}</text>
+      <choice ID="GreetSpara" GotoID="SilentGreeting">问候，斯帕拉夫西莱。</choice>
       <choice GotoID="End">*点头回礼*</choice>
     </node>
     <node ID="SilentGreeting">
-      <text>{{emote|*斯帕拉富西尔举起一只长指手致意。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱举起一只长指手致意。*}}</text>
       <choice ID="BethesdaSpara" GotoID="SparaSusa" IfHaveActiveQuest="解码信号">你知道关于贝塞斯达·苏萨的任何事情吗？</choice>
       <choice ID="RumbleSpara" GotoID="GrimNod" IfHaveActiveQuest="深沉的思念">你感觉到那阵震动了吗，斯帕拉富西勒？</choice>
       <choice ID="KlanqSpara" GotoID="ShroomPal" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？">你见过帕克斯·克兰克吗？</choice>
@@ -2235,38 +2235,38 @@
     </node>
     <node ID="Sparagon">
       <text>
-        {{emote|*斯帕拉富西尔皱眉。经过一番翻阅文件后，他向你展示了一幅木炭画，画中描绘了一个果冻形状的凝胶生物。下方的草图描绘了这种粘液覆盖了一个两足生物，然后穿过地板落下。*}}</text>
+        {{emote|*斯帕拉夫西莱皱眉。经过一番翻阅文件后，他向你展示了一幅木炭画，画中描绘了一个果冻形状的凝胶生物。下方的草图描绘了这种粘液覆盖了一个两足生物，然后穿过地板落下。*}}</text>
       <choice GotoID="SparaNod">一种可以腐蚀地板的粘液...</choice>
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="SparaStumped">
-      <text>{{emote|*斯帕拉富西尔皱眉片刻，然后摇了摇头，叹了口气，向你耸了耸肩。他把爪子放在你的肩膀上，轻轻一捏。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱皱眉片刻，然后摇了摇头，叹了口气，向你耸了耸肩。他把爪子放在你的肩膀上，轻轻一捏。*}}</text>
       <choice GotoID="SparaNod">好吧，朋友。</choice>
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="SparaSusa">
-      <text>{{emote|*斯帕拉富西尔指示你稍等，然后花了一分钟左右的时间翻阅散落在=pronouns.possessive=工作台上的纸张和碎片。最后=pronouns.subjective=拿出了一幅石墨素描，描绘了一个圆柱体，细致的高光处理使其表面看起来像玻璃一样光滑。圆柱体内部的细节模糊而黑暗，但却透出一股威胁感。*}}
-        {{emote|*斯帕拉富西尔指向玻璃并做出打破的手势，然后用拇指划过=pronouns.possessive=喉咙。*}}
+      <text>{{emote|*斯帕拉夫西莱指示你稍等，然后花了一分钟左右的时间翻阅散落在=pronouns.possessive=工作台上的纸张和碎片。最后=pronouns.subjective=拿出了一幅石墨素描，描绘了一个圆柱体，细致的高光处理使其表面看起来像玻璃一样光滑。圆柱体内部的细节模糊而黑暗，但却透出一股威胁感。*}}
+        {{emote|*斯帕拉夫西莱指向玻璃并做出打破的手势，然后用拇指划过=pronouns.possessive=喉咙。*}}
       </text>
       <choice GotoID="SparaNod">我得小心点……玻璃管？</choice>
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="SparaFam">
       <text>
-        {{emote|*斯帕拉富西尔给了你一个温暖的微笑和坚定的点头。将两个食指分别按在拇指上，=pronouns.subjective=将这些手指圈在一起轻触=pronouns.possessive=的胸口，并原地旋转双手，直到=pronouns.possessive=最长的手指相触。最后，=pronouns.subjective=向正在各自岗位上工作的其他巴拉图米特人示意。*}}</text>
+        {{emote|*斯帕拉夫西莱给了你一个温暖的微笑和坚定的点头。将两个食指分别按在拇指上，=pronouns.subjective=将这些手指圈在一起轻触=pronouns.possessive=的胸口，并原地旋转双手，直到=pronouns.possessive=最长的手指相触。最后，=pronouns.subjective=向正在各自岗位上工作的其他巴拉图米特人示意。*}}</text>
       <choice ID="idkSpara" GotoID="SparaSigh">我不明白。你能大声解释一下吗？</choice>
       <choice ID="FamilySpara" GotoID="SparaNod">你很开心是因为和家人在一起吗？</choice>
       <choice ID="SubjectChange" GotoID="Sparatopics">如果可以的话，我们换个话题...</choice>
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="PraiseCarbine">
-      <text>{{emote|*斯帕拉富西尔微笑着。=pronouns.Subjective=举起一只平坦的手放到=pronouns.possessive=下巴上，然后朝你放低手。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱微笑着。=pronouns.Subjective=举起一只平坦的手放到=pronouns.possessive=下巴上，然后朝你放低手。*}}</text>
       <choice ID="WelcomeSpara" GotoID="Sparatopics">你太客气了。</choice>
       <choice UseID="SubjectChange" />
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="Sparatopics">
-      <text>{{emote|*点点头后，斯帕拉富西勒等待你继续，=pronouns.possessive=的眼睛紧盯着你的嘴唇。*}}</text>
+      <text>{{emote|*点点头后，斯帕拉夫西莱等待你继续，=pronouns.possessive=的眼睛紧盯着你的嘴唇。*}}</text>
       <choice ID="MoufSpara" GotoID="QuietBear">你为什么盯着我的嘴看？</choice>
       <choice UseID="FewWordsSpara" />
       <choice UseID="CarbineSpara" />
@@ -2275,14 +2275,14 @@
     </node>
     <node ID="QuietBear">
       <text>
-        {{emote|*斯帕拉富西尔将紧握的拳头放在=pronouns.possessive=嘴上，然后轻拍=pronouns.possessive=耳朵，最后用一根长手指轻触枪口。*}}</text>
+        {{emote|*斯帕拉夫西莱将紧握的拳头放在=pronouns.possessive=嘴上，然后轻拍=pronouns.possessive=耳朵，最后用一根长手指轻触枪口。*}}</text>
       <choice UseID="idkSpara" />
       <choice ID="oicSpara" GotoID="Disabearlity">你... 无法听见或说话。</choice>
       <choice UseID="SubjectChange" />
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="Disabearlity">
-      <text>{{emote|*微微笑着，斯帕拉富西尔点头。*}}</text>
+      <text>{{emote|*微微笑着，斯帕拉夫西莱点头。*}}</text>
       <choice ID="AccidentSpara" GotoID="Miscongenitality">你现在的状况是因为你的工作吗？</choice>
       <choice ID="PatronizeSpara" GotoID="SparaStare">然而你却是你领域的专家？真令人鼓舞！</choice>
       <choice UseID="SubjectChange" />
@@ -2312,7 +2312,7 @@
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="SparaSigh">
-      <text>{{emote|*斯帕拉富西尔避开=pronouns.possessive=的目光，发出一声疲惫的叹息。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱避开=pronouns.possessive=的目光，发出一声疲惫的叹息。*}}</text>
       <choice ID="CluelessSpara" GotoID="SparaStare">我只是问了...</choice>
       <choice ID="ApologizeSpara" GotoID="BearySorry">我为我的疏忽道歉。</choice>
       <choice UseID="SubjectChange" />
@@ -2329,18 +2329,18 @@
       <choice GotoID="Sparatopics">（所以呢…）</choice>
     </node>
     <node ID="ShroomPal2">
-      <text>{{emote|*斯帕拉富西尔耸耸肩，仍然带着微笑。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱耸耸肩，仍然带着微笑。*}}</text>
       <choice GotoID="Sparatopics">让我们谈论其他的事情。</choice>
       <choice UseID="FarewellSpara" />
     </node>
     <node ID="SparaStare">
-      <text>{{emote|*斯帕拉富西勒盯着你，仿佛你多长了一个极其难看的脑袋，但实际上你并没有。*}}</text>
+      <text>{{emote|*斯帕拉夫西莱盯着你，仿佛你多长了一个极其难看的脑袋，但实际上你并没有。*}}</text>
       <choice UseID="ApologizeSpara" />
       <choice UseID="SubjectChange" />
       <choice GotoID="End">我会... 走了。</choice>
     </node>
     <node ID="LiveDrinkSign">
-      <text>{{emote|*Sparafucile 用双手做出一个‘L’形状，拇指向下，手指相对指向彼此，然后翻转双手使 =pronouns.possessive=
+      <text>{{emote|*斯帕拉夫西莱用双手做出一个‘L’形状，拇指向下，手指相对指向彼此，然后翻转双手使 =pronouns.possessive=
         拇指向上。=pronouns.Subjective= 接着将握紧的拳头举到 =pronouns.possessive= 嘴边，拇指伸出，模仿喝酒的动作。*}}
         {{emote|*事情办妥后，=pronouns.subjective= 点了点头，再次回到 =pronouns.possessive= 的工作中。*}}
       </text>
@@ -2896,7 +2896,7 @@
       <text>
         那里有康复池。你看，当低温雾气凝结时，会形成一种清凉、发光的液体，如果你能够沐浴其中，就会具有恢复效果。
         哦！而在其中一个废墟病房里，炼金术士经营着他们的店铺。你问炼金术士是谁？一个神秘的人物——业余的液体改造者、诗人、商人。他们的方法并不科学，但如果你在寻找特定类型的液体，它们还是很有用的。只是要小心他们，=name=。
-</text>
+      </text>
       <choice GotoID="Omonporch" IfHaveActiveQuest="奥蒙门廊伯爵">关于奥蒙波奇和自封的伯爵，你知道些什么？</choice>
       <choice GotoID="Rumbling" IfHaveActiveQuest="深沉的思念">你感觉到那阵震动了吗，霍滕萨？</choice>
       <choice GotoID="Klanq" IfHaveActiveQuest="我猜是帕克斯·克兰克吧？">你见过帕克斯·克兰克吗？</choice>
@@ -2949,7 +2949,7 @@
       <text>
         {{emote|*霍滕萨轻笑。*}}
         你真敏锐，=name=。从某种意义上说，我也是这样的人。但液体比废铁更有意志。我无法将它们焊接在一起；它们会逃走，藏在页岩的裂缝中，逐渐分离并消失。我更倾向于把自己看作是一位与它们对话的智者——我管理着它们的情绪和状态。我的笔记本上记录了它们的怪癖和任性。真是令人惊叹，不是吗？在适当的温度和压力下，物质的连续性会被打破？气体蝴蝶如何从密集的虫子中翩翩飞出？
-</text>
+      </text>
       <choice GotoID="HowLong">你在砂门城住了多久了？</choice>
       <choice GotoID="OtherBarathrumites">你能告诉我一些其他巴拉特鲁米特人的事情吗？</choice>
       <choice GotoID="End">活着，畅饮。</choice>
@@ -2961,7 +2961,7 @@
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -2977,7 +2977,7 @@
       <text>比生活更伟大。父亲般的。关心的。他的眼睛聚焦在世界的远方。</text>
       <choice GotoID="Otho">奥托。</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -2993,7 +2993,7 @@
       <text>Brassy. 如果你让他弯下腰，他可能会折断。Otho 对待聚落单位的方式就像我对待燃烧器上的液体一样。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -3009,7 +3009,7 @@
       <text>敏锐如针，过着充满深刻意义的生活。富有创造力且井井有条。虽然我不敢说我能理解他的音乐，但我确实喜欢他在音乐中的表达方式。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -3041,7 +3041,7 @@
       <text>她像银河系一角的气体和尘埃般爆炸。光辉灿烂。革命性。她是个好听众，也是晚餐的好伴侣，这可能是你意想不到的。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -3058,7 +3058,7 @@
         晚餐后我喜欢退到图书馆，从书架上取下一本故事书，倒在椅熊上，沉浸在另一个世界里。这些世界中有许多宫殿、市场、花园和船只。这些地方中很多都有钟声。每当这时，我总会想起马费奥。比起任何人，马费奥更像是一个故事中的角色，而这个尘土飞扬的地方本身则被限制在一本故事书中。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Iseppa">伊塞帕。</choice>
@@ -3074,7 +3074,7 @@
       <text>我们的睡眼惺忪的智者。如此甜美。她让我平静。我坐在她的房间里，我们思考着万物的本质。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3090,7 +3090,7 @@
       <text>我从尼克还是个小崽子的时候就开始教导他们了。真是个奇怪的孩子！活泼好动，满脸笑容。但他们有自己独特的才华。我最喜欢的书就是尼克写的《悬浮雪橇上的蜘蛛网》。谁会想到呢？</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3106,7 +3106,7 @@
       <text>热烈。狂风般。就像他煮的炖菜一样。如果你要和他聊天，确保你的时间表是空的，并准备一壶蜜酒。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3122,7 +3122,7 @@
       <text>珍贵的谢姆。他们的世界观比我们宽广得多。我们为自己创造了多么重大的责任，而我是多么不愿意撤销这一切！</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3138,7 +3138,7 @@
       <text>我已经和那个多刺的穴居人分享我的蜂蜜很多年了，多到我都数不清。我忍不住喜欢他，虽然他不会承认，但他对我也有同样的感觉。</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3154,7 +3154,7 @@
       <text>她是一只狮身人面兽！如此神秘莫测。她究竟是不是在Q女孩成功重置主控系统的那一刻就已经在那里等待，还是在那一刻突然出现的？或者她是两者某种合成体？</text>
       <choice GotoID="Barathrum">巴拉特鲁姆。</choice>
       <choice GotoID="Otho">奥托。</choice>
-      <choice GotoID="Sparafucile">斯帕拉富奇尔.</choice>
+      <choice GotoID="Sparafucile">斯帕拉夫西莱.</choice>
       <choice GotoID="Jacobo">雅各布.</choice>
       <choice GotoID="Q Girl">Q 女孩。</choice>
       <choice GotoID="Mafeo">马费奥。</choice>
@@ -3226,7 +3226,7 @@
     </node>
     <node ID="-1">
       <text>你想听吗？当我第一次由父亲和朋友们组装起来时，我是Shem 2，‘造我计划’的第二代作品。
-        当我穿梭于走廊，聆听尼克为我读的故事，爬到斯帕拉富奇的工作台上更换螺丝时，我意识到自己并不是我所能成为的样子。因此，我将自己降级为谢姆1。
+        当我穿梭于走廊，聆听尼克为我读的故事，爬到斯帕拉夫西莱的工作台上更换螺丝时，我意识到自己并不是我所能成为的样子。因此，我将自己降级为谢姆1。
         这已经发生了三次。
       </text>
       <choice GotoID="Worried">你担心自己离理想的自我越来越远吗？</choice>
@@ -3579,7 +3579,7 @@
     </node>
     <node ID="Start" IfHaveActiveQuest="不仅仅是一种愿意的精神">
       <text>你完成任务了吗？</text>
-      <choice GotoID="RepairedWaydroid" IfFinishedQuestStep="不仅仅是一种愿意的精神~修复 Waydroid">是。</choice>
+      <choice GotoID="RepairedWaydroid" IfFinishedQuestStep="不仅仅是一种愿意的精神~修复机器人">是。</choice>
       <choice GotoID="TradeEntrance">还不到时候。但我需要进城进行贸易。</choice>
       <choice GotoID="End">...</choice>
     </node>
@@ -3648,7 +3648,7 @@
       <text>
         对你的嗅觉表示同情，=player.formalAddressTerm=。
         戈耳哥塔是一个在多方面都令人厌恶的地方，我建议你不要没有足够的恶麦和蜂蜜就前往。如果你会做饭，一顿含有恶麦的餐食可能会在疾病恶化之前将其驱除。还要带上药膏或尿莓，并且在下水道里要小心你的脚步。
-</text>
+      </text>
       <choice UseID="MafeoBethesda" />
       <choice UseID="MafeoOmonporch" />
       <choice UseID="MafeoRumbling" />
@@ -4698,7 +4698,7 @@
         很好。我会尽我所能让你满意。
         虽然她现在对我来说如同嘴中的沙子，但那个偷走金德里什的流放者名叫埃辛德。她几周前离开了，还带走了她的妹妹和弟弟。我不知道她去了哪里，但狱长尼拉欣德可能知道，因为她们小时候是亲密的朋友。
         找到被流放者艾辛德，从她那里取回金德里什，即使……即使代价是她和她兄弟姐妹的生命。金德里什传承了无数代，它属于我的人民，而不是任何个人。去吧，肯德伦。去找看守尼拉欣德，打听艾辛德藏身之处。
-</text>
+      </text>
       <choice CompleteQuestStep="风中的花瓣~调查贝拉" StartQuest="寻找埃斯欣德" GotoID="End">如你所说。</choice>
     </node>
     <node ID="No.">
@@ -5278,7 +5278,7 @@
         Kesehind 对大都主完全忠诚。我们曾经是朋友，但自从他被任命为她的守护者后，他的态度变得非常冷漠，现在对我也很冷淡。他在黑暗中视力不好。他是 Ari
         的持有者，这是一把不可摧毁的传家宝火斧，他使用得非常娴熟。
         他非常挑剔食物。他只会吃清淡的食物和肉，还有……哦！有一次，当他还是个幼兽人时，因为咳嗽得很厉害，一个看护试图喂他难吃的麦子，结果他踢得她太重了，以至于脱臼了她的下巴。可怜的老埃塞尔欣德。
-</text>
+      </text>
       <choice GotoID="Questioning Neelahind">我还有个问题，如果你不介意的话。</choice>
       <choice GotoID="End">谢谢你，这就够了。活着，畅饮吧。</choice>
     </node>
@@ -6183,8 +6183,7 @@
       <choice GotoID="End">谢谢你。活着，畅饮。</choice>
     </node>
     <node ID="How did you know?">
-      <text>我希望你会问！我深入研究了伟大诗人Willow Shakesprig的作品。特别是，我最喜欢的故事是伟大的植物侦探Hemlock
-        Cones的冒险。通过这些故事，我学会了磨练我的观察力和推理能力，使之达到极致。我最渴望的是有一天，人们不再称我为Angohind，村庄书虫……而是Angohind，大师级侦探。
+      <text>我希望你会问！我深入研究了伟大诗人Willow Shakesprig的作品。特别是，我最喜欢的故事是伟大的植物侦探Hemlock Cones的冒险。通过这些故事，我学会了磨练我的观察力和推理能力，使之达到极致。我最渴望的是有一天，人们不再称我为Angohind，村庄书虫……而是Angohind，大师级侦探。
         我的曾祖母禁止我调查村子里的奇怪事件，但她没说不能教你们侦探工作的门道！你觉得如何？
       </text>
       <choice GotoID="Acceptance">我在听。</choice>
@@ -6223,7 +6222,7 @@
       <text>
         证据是任何表明某事出错的迹象。伟大的植物侦探在吉姆莱特悲剧的第二幕中给出了一些很好的例子:
         所以！搜查整个庄园，寻找{{W|贸易}}的迹象，揭露他们阴暗的夜间交易。接着寻找{{W|工艺}}的痕迹，看看制造了什么，以隐藏近在咫尺的宝藏。但更黑暗的是，如果我们发现了{{W|疾病}}的迹象，一种绝望的传染病可能仍在潜伏。最黑暗的是，更多{{W|暴力}}可能会回应那些偶然发现他们可怕行径的人。
-</text>
+      </text>
       <choice GotoID="Finding evidence">我该怎么找到证据？</choice>
       <choice GotoID="Defining evidence">什么能成为证据？</choice>
       <choice GotoID="Implicating evidence">什么是间接证据？</choice>
@@ -6251,7 +6250,7 @@
     </node>
     <node ID="Multiple culprits?">
       <text>正如康斯教授所说:
-        我们知道法律的力量，无论多么长远，\\n并非判断是非的最好标准。\\n在后果显而易见之前，\\n不要选择你将呈现的证据。
+        我们知道法律的力量，无论多么长远，并非判断是非的最好标准。在后果显而易见之前，不要选择你将呈现的证据。
         简而言之，你必须运用你的判断和直觉，肯德伦。
       </text>
       <choice GotoID="Evidence exceptions">如果我指控错了人怎么办？</choice>
@@ -7381,7 +7380,7 @@
       <text>
         {{emote|*多尤巴的脸因痛苦而皱起，当伊与装置交流后，终于将其推回你的手中*}}
         借她的光辉，那真是令人不悦。它扭曲蜿蜒，引领我窥见纳查姆的过去，片段与闪光。我只能捕捉到些许重要的片段。曾经的创造者，革新者。这些部分能否在装置的影响下完好无损地回归？你将虚空遣散，是否也失去了自己的一部分？
-</text>
+      </text>
       <choice GotoID="End">也许我们将会发现。活着，喝酒。</choice>
     </node>
   </conversation>
@@ -7660,7 +7659,7 @@
       <text>
         是的。=ifplayerplural:你们已经:你已=平息了狂热。
         我可以集中精神。现在我可以理解我所见所闻的事物，尽管我对狂热之前的记忆很少。我是工匠吗？还是教师？我曾拥有广博的知识，但这个躯壳却将它们扭曲成了囚笼。我感谢=ifplayerplural:ye:thee=赐予了=ifplayerplural:your:thy=解开这一切的礼物。
-</text>
+      </text>
       <choice GotoID="NachamFuture">你现在打算做什么？</choice>
     </node>
     <node ID="NachamFuture">
@@ -7703,7 +7702,7 @@
       <text>
         虽然我已不再是过去的自己，但确实如此。我的状况和心态都有了显著的改善。
         我几乎记不起过去生活的细节了。我曾是个有影响力的人，我的话语能激发人们采取行动。长期以来，我无法发声，被困在自己的情绪中。=ifplayerplural:你们已:你已=将我从悲惨的命运中解放。
-</text>
+      </text>
       <choice GotoID="DagashaFuture">你现在打算做什么？</choice>
     </node>
     <node ID="DagashaFuture">
@@ -9488,7 +9487,7 @@
         {{emote|*米里亚姆用哀伤的语调附和道。*}}
         哦？你知道我们的痛苦。我们的感知之梦。
         旅者，那痛苦。=name=，我感受到一场大灭绝的沉沦，地球上所有生命的消逝，而我，则沉浸在悲伤之中。或者……并非如此？这是否只是新生之春的绽放，沉沦将我们带到了一片草地，而那些已逝的，正是诸神？
-</text>
+      </text>
       <choice GotoID="Aching">*继续聆听*</choice>
     </node>
     <node ID="Aching">
@@ -9904,7 +9903,7 @@
         {{emote|*浓盐以明亮的音调响起。*}}
         一切存在皆为姿态，而所有姿态皆被感知。用你狂野的肢体拍打空气，按压我水晶臂膀的硬面……我感受到了。
         你也必须能感受到。还是你已经失去了触觉？当迪夫拉克失去触觉时，当他说出第一百万个词并忘记所有言语都是手势时，某处的线被弹动了。然后我感受到了水晶手指上草的弯曲冲击，而迪夫拉克再次恢复了触觉。
-</text>
+      </text>
     </node>
     <node ID="Gyredream">
       <text>{{emote|*盐晶以尖锐的音调响起，然后归于寂静。*}}
