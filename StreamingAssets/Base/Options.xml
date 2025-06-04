@@ -110,7 +110,7 @@
 
   <option ID="OptionAutoSip" DisplayText="口渴时自动饮用新鲜水" Category="自动化" Type="Checkbox" Default="Yes"/>
   <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="自动饮水的口渴阈值" Category="自动化" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"/>
-  <option ID="OptionAutoTorch" DisplayText="自动熄灭和点燃火把" Category="自动化" Type="Checkbox" Default="No"/>
+  <option ID="OptionAutoTorch" DisplayText="自动熄灭和点燃火把" Category="自动化" Type="Checkbox" Default="Yes"/>
   <option ID="OptionAutoDisassembleScrap" DisplayText="自动拆解废料" Category="自动化" Type="Checkbox" Default="No"/>  
   <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="忽略敌对生物的难度阈值" Category="自动化" Type="Combo" Values="None,容易,一般,困难,非常困难,不可战胜的" Default="None"/>
   <option ID="OptionAutoexploreIgnoreDistantEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="忽略敌对生物的距离阈值" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"/>
@@ -120,8 +120,8 @@
   <option ID="OptionUseTextAutowalkThreatIndicator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="使用文本自动中断指示器代替闪烁的红框" Category="自动化" Type="Checkbox" Default="No"/>
   <option ID="OptionAutoexploreChests" DisplayText="自动探索时搜索容器" Category="自动化" Type="Checkbox" Default="Yes"/>
   <option ID="OptionDigOnMove" DisplayText="自动挖掘墙壁：当手持挖掘工具时，移动到墙壁上自动挖掘" Category="自动化" Type="Checkbox" Default="Yes"/>  
-  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="移动到不同区域时自动保存" Category="自动化" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="5"/>
-  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="最大自动移动单元/秒 和 自动攻击动作/秒" SearchKeywords="autoact autoexplore framerate" Category="自动化" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,ì" Default="20"/>
+  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="移动到不同区域时自动保存" Category="自动化" Type="Combo" Values="0|None,1,2,3,5,7,10,15,20,30,40" Default="5"/>
+  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="最大自动移动单元/秒 和 自动攻击动作/秒" SearchKeywords="autoact autoexplore framerate" Category="自动化" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,0|&#236;" Default="20"/>
 
 
   <option ID="OptionAutogetAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="自动拾取弹药" Category="自动获取" Type="Checkbox" Default="Yes"/>
@@ -145,7 +145,8 @@
   <option ID="OptionConfirmSwimming" Requires="OptionShowAdvancedOptions==Yes" DisplayText="游泳前提示" Category="提示" Type="Checkbox" Default="Yes"/>
   <option ID="OptionConfirmDangerousLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="饮用及进入特定危险液体前提醒" Category="提示" Type="Checkbox" Default="Yes"/>
   <option ID="OptionAskForOneItem" Requires="OptionShowAdvancedOptions==Yes" DisplayText="从地面拾取物品时提示列表，即使只有一件" Category="提示" Type="Checkbox" Default="No"/>
-  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="低生命值警告阈值" Category="提示" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"/>  
+  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="低生命值警告阈值" Category="提示" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"/>
+  <option ID="OptionDismemberAsPopup" Requires="OptionShowAdvancedOptions==Yes" DisplayText="肢解时显示弹出窗口" Category="提示" Type="Checkbox" Default="No"></option>
   <option ID="OptionAbilityCooldownWarningAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将技能冷却提示显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
   <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="将拾荒物品显示为消息日志条目而非弹出窗口" Category="提示" Type="Checkbox" Default="No"/>
   <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在日志中记录信息时显示弹出窗口" Category="提示" Type="Checkbox" Default="Yes"/>
@@ -153,10 +154,8 @@
   <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="死亡提示默认选择：在角色扮演模式下死亡时，默认选择'查看最终信息'而非'重新加载存档点'" Category="提示" Type="Checkbox" Default="Yes"/>
 
 
-  <option ID="OptionEnableMods" DisplayText="启用模组（需要重启）" Category="模组" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionShowModSelectionNewGame" Requires="OptionEnableMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="选择新游戏启用的模组" Category="模组" Type="Checkbox" Default="No"/>
+  <option ID="OptionEnableMods" DisplayText="启用模组" Category="模组" Type="Checkbox" Default="Yes"/>
   <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="允许脚本模组（脚本模组可能包含恶意代码！）" Category="模组" Type="Checkbox" Default="Yes"/>
-  <option ID="OptionApproveCSMods" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes" DisplayText="当脚本模组更改时需要审批" Category="模组" Type="Checkbox" Default="Yes"/>
   <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="将编译的模组程序集写入磁盘" Category="模组" Type="Checkbox" Default="Yes"/>
   <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="启用和谐调试输出" Category="模组" Type="Checkbox" Default="No"/>
 
@@ -184,6 +183,7 @@
   <option ID="OptionAllowReallydie" Requires="OptionShowAdvancedOptions==Yes" DisplayText="死亡确认提示" Category="调试" Type="Checkbox" Default="No"/>    
   <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用未完成和不受支持的内容（需要重启）" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="允许生物拥有多个缺陷" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionStripUIColorText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用UI文本颜色" Category="调试" Type="Checkbox" Default="No"></option>
   <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="启用文本输入的颜色菜单" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisableAchievements" Requires="OptionShowAdvancedOptions==Yes" DisplayText="禁用成就" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionShowQuickstart" Requires="OptionShowAdvancedOptions==Yes" DisplayText="创建角色时显示快速开始选项" Category="调试" Type="Checkbox" Default="No"/>
@@ -201,6 +201,7 @@
   <option ID="OptionDebugEncounterChance" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示遭遇几率调试信息" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDebugTravelSpeed" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示旅行速度调试文本" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDebugInternals" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示物体调试信息" Category="调试" Type="Checkbox" Default="No"/>
+  <option ID="OptionDebugAttitude" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示态度信息" Category="调试" Type="Checkbox" Default="No"></option>
   <option ID="OptionShowOverlandEncounters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在世界地图上标记特殊遭遇" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionShowOverlandRegions" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在世界地图上显示生物群落" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDrawPopulationHintMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="在建造区域时绘制人口安置提示地图" Category="调试" Type="Checkbox" Default="No"/>
@@ -220,5 +221,6 @@
   <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="执行库存一致性检查" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="显示错误弹窗" Category="调试" Type="Checkbox" Default="No"/>
   <option ID="OptionDisableBindConflictChecking" Requires="OptionShowAdvancedOptions==Yes" DisplayText="重新绑定控件时禁用冲突检查" Category="调试" Type="Checkbox" Default="No"></option>
+  <option ID="OptionBugDeckKeyboardShift" DisplayText="启用牌组键盘Shift键的bug修复" Category="调试" Type="Checkbox" Default="No"></option>
 
 </options>

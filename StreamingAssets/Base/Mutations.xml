@@ -1,65 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <mutations LoadPriority="1000">
   <category Name="Morphotypes" DisplayName="{{W|变异形态}}" Foreground="r" Detail="R" ExcludeFromPool="true">
-    <mutation Name="Chimera" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp" />
-    <mutation Name="Esper" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp" />
-    <mutation Name="Unstable Genome" Cost="3" MaxSelected="99" Class="UnstableGenome" Exclusions="" Tile="Mutations/unstable_genome.bmp" />
+    <mutation Name="奇美拉" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp" />
+    <mutation Name="异能者" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp" />
+    <mutation Name="不稳定基因" Cost="3" MaxSelected="99" Class="UnstableGenome" Exclusions="" Tile="Mutations/unstable_genome.bmp" />
   </category>
 
   <category Name="Physical" DisplayName="{{G|物理变异}}" Foreground="w" Detail="W" Property="PhysicalMutationShift" ForceProperty="PhysicalMutationForceShift">
-    <mutation Name="Adrenal Control" Cost="4" MaxSelected="1" Class="AdrenalControl2" Exclusions="" BearerDescription="those with control over their adrenal glands" Tile="Mutations/adrenal_control.bmp" />
-    <mutation Name="Beak" Cost="1" MaxSelected="1" Class="Beak" Exclusions="" BearerDescription="those with beaks" Tile="Mutations/beak.bmp" />
-    <mutation Name="Burrowing Claws" Cost="3" MaxSelected="1" Class="BurrowingClaws" Exclusions="" BearerDescription="burrowers" Tile="Mutations/burrowing_claws.bmp" />
-    <mutation Name="Carapace" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp" />
-    <mutation Name="Corrosive Gas Generation" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp" />
-    <mutation Name="Double-muscled" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp" />
-    <mutation Name="Electrical Generation" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="those who generate electricity" Tile="Mutations/electrical_generation.bmp" />
-    <mutation Name="Electromagnetic Pulse" Cost="2" MaxSelected="1" Class="ElectromagneticPulse" Exclusions="" BearerDescription="those who emit electromagnetic pulses" Tile="Mutations/electromagnetic_pulse.bmp" />
-    <mutation Name="Flaming Ray" Cost="4" MaxSelected="1" Class="FlamingRay" Exclusions="Freezing Ray" BearerDescription="the flaming-handed" Tile="Mutations/flaming_ray.bmp" />
-    <mutation Name="Freezing Ray" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="Flaming Ray" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
-    <mutation Name="Heightened Hearing" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="those with heightened hearing" Tile="Mutations/heightened_hearing.bmp" />
-    <mutation Name="Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp" />
-    <mutation Name="Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp" />
-    <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
-    <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
-    <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="the many-legged" Tile="Mutations/multiple_legs.bmp" />
-    <mutation Name="Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="the darksighted" Tile="Mutations/night_vision_mutation.bmp" />
-    <mutation Name="Phasing" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="those who phase" Tile="Mutations/phasing.bmp" />
-    <mutation Name="Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="the green-skinned" Tile="Mutations/photosynthetic_skin.bmp" />
-    <mutation Name="Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp" />
-    <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp" />
-    <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp" />
-    <mutation Name="Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="slime spitters" Tile="Mutations/slime_glands.bmp" />
-    <mutation Name="Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
-    <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom)" BearerDescription="those with stingers tipped with poisoning venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Thick Fur" Cost="1" MaxSelected="1" Class="ThickFur" Exclusions="" BearerDescription="the thickly furred" Tile="Mutations/thick_fur.bmp" />
-    <mutation Name="Triple-jointed" Cost="3" MaxSelected="1" Class="HeightenedAgility" Exclusions="" BearerDescription="the triple-jointed" Tile="Mutations/triple-jointed.bmp" />
-    <mutation Name="Two-headed" Cost="3" MaxSelected="1" Class="TwoHeaded" Exclusions="" BearerDescription="the two-headed" Tile="Mutations/two-headed.bmp" />
-    <mutation Name="Two-hearted" Cost="3" MaxSelected="1" Class="TwoHearted" Exclusions="" BearerDescription="the two-hearted" Tile="Mutations/two-hearted.bmp" />
-    <mutation Name="Wings" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" BearerDescription="the winged" Tile="Mutations/wings.bmp" />
+    <mutation Name="肾上腺控制" Cost="4" MaxSelected="1" Class="AdrenalControl2" Exclusions="" BearerDescription="those with control over their adrenal glands" Tile="Mutations/adrenal_control.bmp" />
+    <mutation Name="鸟喙" Cost="1" MaxSelected="1" Class="Beak" Exclusions="" BearerDescription="those with beaks" Tile="Mutations/beak.bmp" />
+    <mutation Name="钻地爪" Cost="3" MaxSelected="1" Class="BurrowingClaws" Exclusions="" BearerDescription="burrowers" Tile="Mutations/burrowing_claws.bmp" />
+    <mutation Name="甲壳" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp" />
+    <mutation Name="腻蚀气体生成" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp" />
+    <mutation Name="超强肌肉" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp" />
+    <mutation Name="电能生成" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="those who generate electricity" Tile="Mutations/electrical_generation.bmp" />
+    <mutation Name="电磁脉冲" Cost="2" MaxSelected="1" Class="ElectromagneticPulse" Exclusions="" BearerDescription="those who emit electromagnetic pulses" Tile="Mutations/electromagnetic_pulse.bmp" />
+    <mutation Name="火焰射线" Cost="4" MaxSelected="1" Class="FlamingRay" Exclusions="冰冻射线" BearerDescription="the flaming-handed" Tile="Mutations/flaming_ray.bmp" />
+    <mutation Name="冰冻射线" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="火焰射线" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
+    <mutation Name="超敏听觉" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="those with heightened hearing" Tile="Mutations/heightened_hearing.bmp" />
+    <mutation Name="速度提升" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp" />
+    <mutation Name="角" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp" />
+    <mutation Name="变身" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
+    <mutation Name="多臂" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
+    <mutation Name="多足" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="多足生物" Tile="Mutations/multiple_legs.bmp" />
+    <mutation Name="夜视" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="夜视者" Tile="Mutations/night_vision_mutation.bmp" />
+    <mutation Name="相位位移" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="相位位移者" Tile="Mutations/phasing.bmp" />
+    <mutation Name="光合皮肤" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="白化症,肉食者" BearerDescription="光合皮肤者" Tile="Mutations/photosynthetic_skin.bmp" />
+    <mutation Name="羽刺" Cost="3" MaxSelected="1" Class="Quills" Exclusions="甲壳" BearerDescription="羽刺者" Tile="Mutations/quills.bmp" />
+    <mutation Name="再生" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="再生者" Tile="Mutations/regeneration.bmp" />
+    <mutation Name="催眠气体生成" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="催眠气体生成者" Tile="Mutations/gas_generation.bmp" />
+    <mutation Name="黏液腺" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="黏液腺者" Tile="Mutations/slime_glands.bmp" />
+    <mutation Name="丝腺" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="丝腺者" Tile="Mutations/spinnerets.bmp" />
+    <mutation Name="毒刺 (混乱毒液)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="毒刺 (麻痹毒液),毒刺 (毒性毒液)" BearerDescription="毒刺混乱者" Tile="Mutations/stinger.bmp" />
+    <mutation Name="毒刺 (麻痹毒液)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="毒刺 (混乱毒液),毒刺 (毒性毒液)" BearerDescription="毒刺麻痹者" Tile="Mutations/stinger.bmp" />
+    <mutation Name="毒刺 (毒性毒液)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="毒刺 (混乱毒液),毒刺 (麻痹毒液)" BearerDescription="毒刺毒性者" Tile="Mutations/stinger.bmp" />
+    <mutation Name="厚毛皮" Cost="1" MaxSelected="1" Class="ThickFur" Exclusions="" BearerDescription="厚毛皮者" Tile="Mutations/thick_fur.bmp" />
+    <mutation Name="三关节" Cost="3" MaxSelected="1" Class="HeightenedAgility" Exclusions="" BearerDescription="三关节者" Tile="Mutations/triple-jointed.bmp" />
+    <mutation Name="双头" Cost="3" MaxSelected="1" Class="TwoHeaded" Exclusions="" BearerDescription="双头者" Tile="Mutations/two-headed.bmp" />
+    <mutation Name="双心" Cost="3" MaxSelected="1" Class="TwoHearted" Exclusions="" BearerDescription="双心者" Tile="Mutations/two-hearted.bmp" />
+    <mutation Name="双翼" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" BearerDescription="双翼者" Tile="Mutations/wings.bmp" />
   </category>
 
   <category Name="PhysicalDefects" DisplayName="{{R|身体缺陷}}" Foreground="w" Detail="W" Defect="true">
-    <mutation Name="Albino" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="Photosynthetic Skin" BearerDescription="albinos" Tile="Mutations/albino.bmp" />
-    <mutation Name="Amphibious" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" BearerDescription="the amphibious" Tile="Mutations/amphibious.bmp" />
-    <mutation Name="Brittle Bones" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" BearerDescription="the brittle-boned" Tile="Mutations/brittle_bones.bmp" />
-    <mutation Name="Nerve Poppy" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="those who cannot feel pain" Tile="Mutations/nerve_poppy.bmp" />
-    <mutation Name="Carnivorous" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="Photosynthetic Skin" BearerDescription="the carnivorous" Tile="Items/sw_rawmeat1.bmp" />
-    <mutation Name="Cold-Blooded" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="the cold-blooded" Tile="Mutations/cold-blooded.bmp" />
-    <mutation Name="Electromagnetic Impulse" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="those who cannot control their electromagnetic pulses" Tile="Mutations/electromagnetic_impulse.bmp" />
-    <mutation Name="Hooks for Feet" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="those with hooks for feet" Tile="Mutations/hooks_for_feet.bmp" />
-    <mutation Name="Irritable Genome" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="those with irritable genomes" Tile="Mutations/irritable_genome.bmp" />
-    <mutation Name="Myopic" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="the myopic" Tile="Mutations/myopia.bmp" />
-    <mutation Name="Spontaneous Combustion" Cost="-3" MaxSelected="1" Class="SpontaneousCombustion" BearerDescription="those who spontaneously combust" Exclusions="" Tile="Mutations/spontaneous_combustion.bmp" />
-    <mutation Name="Tonic Allergy" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" BearerDescription="the allergic" Tile="Mutations/tonic_allergy.bmp" />
+    <mutation Name="白化症" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="光合皮肤" BearerDescription="白化病者" Tile="Mutations/albino.bmp" />
+    <mutation Name="两栖生物" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" BearerDescription="两栖生物" Tile="Mutations/amphibious.bmp" />
+    <mutation Name="脆骨" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" BearerDescription="脆骨者" Tile="Mutations/brittle_bones.bmp" />
+    <mutation Name="神经泡" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="神经泡者" Tile="Mutations/nerve_poppy.bmp" />
+    <mutation Name="肉食者" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="光合皮肤" BearerDescription="食肉者" Tile="Items/sw_rawmeat1.bmp" />
+    <mutation Name="冷血" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="冷血者" Tile="Mutations/cold-blooded.bmp" />
+    <mutation Name="电磁脉冲" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="电磁脉冲者" Tile="Mutations/electromagnetic_impulse.bmp" />
+    <mutation Name="钩爪" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="钩爪者" Tile="Mutations/hooks_for_feet.bmp" />
+    <mutation Name="易怒基因" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="易怒基因者" Tile="Mutations/irritable_genome.bmp" />
+    <mutation Name="近视" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="近视者" Tile="Mutations/myopia.bmp" />
+    <mutation Name="自燃" Cost="-3" MaxSelected="1" Class="SpontaneousCombustion" BearerDescription="自燃者" Exclusions="" Tile="Mutations/spontaneous_combustion.bmp" />
+    <mutation Name="过敏" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" BearerDescription="过敏者" Tile="Mutations/tonic_allergy.bmp" />
   </category>
 
   <category Name="Mental" DisplayName="{{G|精神变异}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
-    <mutation Name="Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="beguilers" BiomeEpithet="encomium" Tile="Mutations/beguiling.bmp" />
-    <mutation Name="Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="psychic gardeners" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp" />
-    <mutation Name="Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="the clairvoyant" BiomeEpithet="panopticon" Tile="Mutations/clairvoyance.bmp">
+    <mutation Name="魅惑" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="魅惑者" BiomeEpithet="encomium" Tile="Mutations/beguiling.bmp" />
+    <mutation Name="蔓生" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="蔓生者" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp" />
+    <mutation Name="千里眼" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="千里眼者" BiomeEpithet="panopticon" Tile="Mutations/clairvoyance.bmp">
       <description>你短暂地获得附近区域的视野。</description>
       <leveltext>
         <statline Name="VisionRadius" DisplayName="视野半径"/>
@@ -67,22 +67,22 @@
         <statline Name="Cooldown" Unit="round" />
       </leveltext>
     </mutation>
-    <mutation Name="Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="riddlers" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp" />
-    <mutation Name="Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
-    <mutation Name="Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
-    <mutation Name="Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="those who dominate the wills of others" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp" />
-    <mutation Name="Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="those who project their egos onto the physical realm" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
-    <mutation Name="Force Bubble" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="bubble folk" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
-    <mutation Name="Force Wall" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="architects of force walls" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp" />
-    <mutation Name="Kindle" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="kindlers" BiomeAdjective="kindling" Tile="Mutations/kindle.bmp" />
-    <mutation Name="Light Manipulation" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="manipulators of light" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp" />
-    <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
-    <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
-    <mutation Name="Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="the prescient" BiomeEpithet="future site" Tile="Mutations/precognition.bmp" />
-    <mutation Name="Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp" />
-    <mutation Name="Pyrokinesis" Cost="4" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="pyromancers" BiomeEpithet="flame meadow" Tile="Mutations/pyrokinesis.bmp">
+    <mutation Name="混乱" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="混乱者" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp" />
+    <mutation Name="冷冻术" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="冷冻术者" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
+    <mutation Name="分解" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="分解者" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
+    <mutation Name="支配" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="支配者" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp" />
+    <mutation Name="自我投射" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="自我投射者" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
+    <mutation Name="力场泡沫" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="力场泡沫者" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
+    <mutation Name="力场墙" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="力场墙者" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp" />
+    <mutation Name="点燃" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="点燃者" BiomeAdjective="kindling" Tile="Mutations/kindle.bmp" />
+    <mutation Name="光线操控" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="光线操控者" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp" />
+    <mutation Name="集体意识" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="集体意识者" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
+    <mutation Name="精神镜" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="精神镜者" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
+    <mutation Name="预知" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="预知者" BiomeEpithet="future site" Tile="Mutations/precognition.bmp" />
+    <mutation Name="心灵测定" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="技术白痴" BearerDescription="心灵测定者" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp" />
+    <mutation Name="火控术" Cost="4" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="火控术者" BiomeEpithet="flame meadow" Tile="Mutations/pyrokinesis.bmp">
       <description>
-        <p>You heat a nearby area with your mind.</p>
+        <p>你用你的心灵加热附近的区域。</p>
       </description>
       <leveltext>
         <stat Name="Intro" />
@@ -94,26 +94,26 @@
         <statline Name="Cooldown" Unit="round" />
       </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="the psychically sensitive" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
-    <mutation Name="Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="spacefolders" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
-    <mutation Name="Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
-    <mutation Name="Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="mind sunderers" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
-    <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
-    <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />
-    <mutation Name="Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="teleporters" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />
-    <mutation Name="Teleport Other" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="those who teleport others" BiomeEpithet="hermitage" Tile="Mutations/teleport_other.bmp" />
-    <mutation Name="Time Dilation" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="time dilators" BiomeEpithet="time prism" Tile="Mutations/time_dilation.bmp" />
-    <mutation Name="Temporal Fugue" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BearerDescription="temporal fugitives" BiomeEpithet="spacetime hub" Tile="Mutations/temporal_fugue.bmp" />
+    <mutation Name="心灵感知" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="心灵感知者" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
+    <mutation Name="时空漩涡" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="时空漩涡者" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
+    <mutation Name="震慑力量" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="震慑力量者" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
+    <mutation Name="震慑力量" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="震慑力量者" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
+    <mutation Name="汲取活力" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="汲取活力者" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
+    <mutation Name="心灵交流" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="心灵交流者" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />
+    <mutation Name="传送" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="传送者" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />
+    <mutation Name="传送目标" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="传送目标者" BiomeEpithet="hermitage" Tile="Mutations/teleport_other.bmp" />
+    <mutation Name="时间扭曲" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="时间扭曲者" BiomeEpithet="time prism" Tile="Mutations/time_dilation.bmp" />
+    <mutation Name="时空分身" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BearerDescription="时空分身者" BiomeEpithet="spacetime hub" Tile="Mutations/temporal_fugue.bmp" />
   </category>
 
   <category Name="MentalDefects" DisplayName="{{R|精神缺陷}}" Foreground="b" Detail="M" Defect="true">
-    <mutation Name="Amnesia" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BearerDescription="those who cannot remember" BiomeAdjective="pastless" Tile="Mutations/amnesia.bmp" />
-    <mutation Name="Blinking Tic" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BearerDescription="compulsive teleporters" BiomeAdjective="blinking" Tile="Mutations/blinking_tic.bmp" />
-    <mutation Name="Dystechnia" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="Psychometry" BearerDescription="those who are befuddled by technological complexity" BiomeAdjective="regressive" Tile="Mutations/dystechnia.bmp" />
-    <mutation Name="Evil Twin" Cost="-3" MaxSelected="1" Class="EvilTwin" Exclusions="" BearerDescription="those with dopplegangers" BiomeEpithet="selfmoot" Tile="Mutations/evil_twin.bmp" />
-    <mutation Name="Narcolepsy" Cost="-3" MaxSelected="1" Class="Narcolepsy" Exclusions="" BearerDescription="the narcoleptic" BiomeAdjective="drowsy" Tile="Mutations/narcolepsy.bmp" />
-    <mutation Name="Psionic Migraines" Cost="-4" MaxSelected="1" Class="PsionicMigraines" Exclusions="Horns" BearerDescription="those who suffer from psionic migraines" BiomeAdjective="blaring" Tile="Mutations/psionic_migraines.bmp" />
-    <mutation Name="Quantum Jitters" Cost="-4" MaxSelected="1" Class="QuantumJitters" Exclusions="" BearerDescription="those who are quantumly uncertain" BiomeAdjective="jittery" Tile="Mutations/quantum_jitters.bmp" />
-    <mutation Name="Socially Repugnant" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="the socially repugnant" BiomeEpithet="wretchmoot" Tile="Mutations/socially_repugnant.bmp" />
+    <mutation Name="健忘症" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BearerDescription="记忆丧失者" BiomeAdjective="pastless" Tile="Mutations/amnesia.bmp" />
+    <mutation Name="失控传送" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BearerDescription="强迫性传送者" BiomeAdjective="blinking" Tile="Mutations/blinking_tic.bmp" />
+    <mutation Name="技术白痴" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="心灵测定" BearerDescription="那些被技术复杂性弄得困惑的人" BiomeAdjective="regressive" Tile="Mutations/dystechnia.bmp" />
+    <mutation Name="邪恶自我" Cost="-3" MaxSelected="1" Class="EvilTwin" Exclusions="" BearerDescription="那些有双胞胎的人" BiomeEpithet="selfmoot" Tile="Mutations/evil_twin.bmp" />
+    <mutation Name="嗜睡症" Cost="-3" MaxSelected="1" Class="Narcolepsy" Exclusions="" BearerDescription="嗜睡者" BiomeAdjective="drowsy" Tile="Mutations/narcolepsy.bmp" />
+    <mutation Name="精神性头疼" Cost="-4" MaxSelected="1" Class="PsionicMigraines" Exclusions="角" BearerDescription="那些遭受精神头痛的人" BiomeAdjective="blaring" Tile="Mutations/psionic_migraines.bmp" />
+    <mutation Name="时空扰动" Cost="-4" MaxSelected="1" Class="QuantumJitters" Exclusions="" BearerDescription="那些量子不确定的人" BiomeAdjective="jittery" Tile="Mutations/quantum_jitters.bmp" />
+    <mutation Name="社交难容" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="社交难容者" BiomeEpithet="wretchmoot" Tile="Mutations/socially_repugnant.bmp" />
   </category>
 </mutations>

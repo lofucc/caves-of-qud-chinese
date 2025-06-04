@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <worlds>
-  <world Name="ThinWorld" ZoneFactory="ThinWorldZoneFactory" DisplayName="Thin World" Protocol="THIN" CustomClock="time_sheol"></world>
+  <world Name="ThinWorld" ZoneFactory="ThinWorldZoneFactory" DisplayName="Thin World" Protocol="THIN" CustomClock="UI/time_sheol"></world>
 
-  <world Name="Tzimtzlum" ZoneFactory="TzimtzlumWorldZoneFactory" DisplayName="Tzimtzlum" Plane="Tzimtzlum" CustomClock="time_clam1"></world>
-  
+  <world Name="Tzimtzlum" ZoneFactory="TzimtzlumWorldZoneFactory" DisplayName="Tzimtzlum" Plane="Tzimtzlum" CustomClock="UI/time_clam1"></world>
+
   <world Name="Interior" ZoneFactory="InteriorWorldZoneFactory" ZoneFactoryRegex="^Interior" DisplayName="Inside" Plane="Inherit" Protocol="Inherit">
 	  <cell Name="Golem">
 		  <boolproperty Name="JoinPartyLeaderPossible" Value="false" />
@@ -2353,7 +2353,7 @@
   </world>
 
   <!-- North Sheva -->
-	<world Name="NorthSheva" ZoneFactory="BlueprintZoneFactory" Map="NorthSheva/NorthShevaWorldMap.rpm" AmbientBed="amb_endgame_worldMap_spacestation_lp" DisplayName="The North Sheva" Plane="NorthSheva" CustomClock="time_space">
+	<world Name="NorthSheva" ZoneFactory="BlueprintZoneFactory" Map="NorthSheva/NorthShevaWorldMap.rpm" AmbientBed="amb_endgame_worldMap_spacestation_lp" DisplayName="The North Sheva" Plane="NorthSheva" CustomClock="UI/time_space" PsychicHunterChance="5">
 		<cell Name="DefaultNorthShevaCell" Inherits="" AmbientBed="amb_endgame_spacestation_lp" ApplyTo="*Default">
 			<zone Level="0-9" x="0-2" y="0-2" Name="high orbit" GroundLiquid="" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="500-6000" DisableForcedConnections="Yes">
 				<builder Class="Sky" />

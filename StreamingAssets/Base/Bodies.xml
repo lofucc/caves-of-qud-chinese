@@ -1,0 +1,1384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+
+  <bodyparttypes>
+    <bodyparttype Type="Body" Integral="true" />
+    <bodyparttype Type="Head" LimbBlueprintProperty="SeveredHeadBlueprint" LimbBlueprintDefault="GenericHead" Mortal="true" Appendage="true" UsuallyOn="Body" Branching="Lateral,Longitudinal,Vertical,Stratal" ChimeraWeight="3" />
+    <bodyparttype Type="Face" LimbBlueprintProperty="SeveredFaceBlueprint" LimbBlueprintDefault="GenericFace" Appendage="true" UsuallyOn="Head" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+    <bodyparttype Type="Back" DescriptionPrefix="Worn on" Integral="true" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+    <bodyparttype Type="Arm" LimbBlueprintProperty="SeveredArmBlueprint" Appendage="true" UsuallyOn="Body" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+    <bodyparttype Type="Hand" LimbBlueprintProperty="SeveredHandBlueprint" DefaultBehavior="DefaultFist" Appendage="true" UsuallyOn="Arm" Branching="Lateral,Longitudinal,Vertical,Stratal" ChimeraWeight="3" />
+    <bodyparttype Type="Foot" LimbBlueprintProperty="SeveredFootBlueprint" Mobility="1" Appendage="true" UsuallyOn="Body" Branching="Lateral,Longitudinal,Stratal,Vertical" ChimeraWeight="3" />
+    <bodyparttype Type="Hands" DescriptionPrefix="Worn on" Plural="true" ImpliedBy="Hand" ImpliedPer="2" Branching="Vertical,Longitudinal,Stratal,Lateral" ChimeraWeight="3" />
+    <bodyparttype Type="Feet" LimbBlueprintProperty="SeveredFeetBlueprint" Mobility="2" Plural="true" Appendage="true" UsuallyOn="Body" Branching="Longitudinal,Stratal,Lateral,Vertical" ChimeraWeight="3" />
+    <bodyparttype Type="Floating Nearby" Name="floating nearby" EquipSound="sfx_equip_armor_floating" Abstract="true" Contact="false" IgnorePosition="true" NoArmorAveraging="true" Branching="Stratal,Vertical,Longitudinal,Lateral" />
+    <bodyparttype Type="Thrown Weapon" RequiresType="Hand" Abstract="true" IgnorePosition="true" Branching="Stratal,Vertical,Longitudinal,Lateral" />
+    <bodyparttype Type="Missile Weapon" RequiresType="Hand" Abstract="true" />
+    <bodyparttype Type="Fungal Outcrop" LimbBlueprintProperty="SeveredFungalOutcropBlueprint" Category="Fungal" Appendage="true" Branching="Vertical,Lateral,Longitudinal,Stratal" />
+    <bodyparttype Type="Icy Outcrop" LimbBlueprintProperty="SeveredFungalOutcropBlueprint" Category="Fungal" Appendage="true" Branching="Vertical,Lateral,Longitudinal,Stratal" ChimeraWeight="0" />
+    <bodyparttype Type="Fin" LimbBlueprintProperty="SeveredFinBlueprint" Mobility="1" Appendage="true" UsuallyOn="Body" Branching="Lateral,Vertical,Longitudinal,Stratal" />
+    <bodyparttype Type="Roots" Description="Root System" LimbBlueprintProperty="SeveredRootsBlueprint" Mobility="1" Plural="true" Category="Plant" Appendage="true" UsuallyOn="Body" Branching="Stratal,Vertical,Longitudinal,Lateral" />
+    <bodyparttype Type="Tail" LimbBlueprintProperty="SeveredTailBlueprint" Appendage="true" UsuallyOn="Body" Branching="Lateral,Vertical,Stratal,Longitudinal" />
+    <bodyparttype Type="Tread" LimbBlueprintProperty="SeveredTreadBlueprint" LimbBlueprintDefault="SeveredTread" Mobility="1" Category="Mechanical" Appendage="true" UsuallyOn="Body" Branching="Lateral,Longitudinal,Stratal,Vertical" />
+    <bodyparttype Type="Ammo" Abstract="true" Category="Mechanical" />
+  </bodyparttypes>
+
+  <bodyparttypevariants>
+
+    <bodyparttypevariant VariantOf="Head" Type="Blossom" Category="Plant" />
+    <bodyparttypevariant VariantOf="Head" Type="Cap" Category="Fungal" />
+    <bodyparttypevariant VariantOf="Head" Type="Centerpiece" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Head" Type="Central Lobe" Category="Plant" />
+    <bodyparttypevariant VariantOf="Head" Type="Central Mass" Category="Plant" />
+    <bodyparttypevariant VariantOf="Head" Type="Central Node" Category="Plant" />
+    <bodyparttypevariant VariantOf="Head" Type="Control Unit" Category="Mechanical" />
+    <bodyparttypevariant VariantOf="Head" Type="Ear" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Head" Type="Easel" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Head" Type="Head Section" Category="Metal" />
+    <bodyparttypevariant VariantOf="Head" Type="Header" Category="Stone" />
+    <bodyparttypevariant VariantOf="Head" Type="Neck" Category="Stone" />
+    <bodyparttypevariant VariantOf="Head" Type="Nuclear Protrusion" Category="Protoplasmic" />
+    <bodyparttypevariant VariantOf="Head" Type="Pillow" Category="Cloth" />
+    <bodyparttypevariant VariantOf="Head" Type="Skull" Category="Bone" />
+    <bodyparttypevariant VariantOf="Head" Type="Top Rail" Laterality="Upper" Category="Metal" Branching="Lateral,Longitudinal,Stratal" />
+    <bodyparttypevariant VariantOf="Head" Type="Top" Category="Cloth" />
+    <bodyparttypevariant VariantOf="Head" Type="Dome" Category="Stone" />
+
+    <bodyparttypevariant VariantOf="Face" Type="Access Panel" Category="Mechanical" UsuallyOnVariant="Control Unit" />
+    <bodyparttypevariant VariantOf="Face" Type="Antennae" Plural="true" Category="Arthropod" />
+    <bodyparttypevariant VariantOf="Face" Type="Decoration" Category="Wooden" UsuallyOnVariant="Centerpiece" />
+    <bodyparttypevariant VariantOf="Face" Type="Extra Face" Category="Metal" Extrinsic="true" />
+    <bodyparttypevariant VariantOf="Face" Type="Faceplate" Category="Metal" UsuallyOnVariant="Head Section" />
+    <bodyparttypevariant VariantOf="Face" Type="Feelers" Plural="true" />
+    <bodyparttypevariant VariantOf="Face" Type="Knocker" Category="Metal" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Face" Type="Lip" Category="Stone" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Face" Type="Pillowcase" Category="Cloth" UsuallyOnVariant="Pillow" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensor Array" Category="Mechanical" UsuallyOnVariant="Control Unit" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensory Bud" Category="Plant" UsuallyOnVariant="Blossom" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensory Bulb" Category="Plant" UsuallyOnVariant="Central Lobe" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensory Nodule" Category="Plant" UsuallyOnVariant="Central Node" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensory Frill" Category="Fungal" UsuallyOnVariant="Cap" />
+    <bodyparttypevariant VariantOf="Face" Type="Sensory Ganglion" Category="Protoplasmic" UsuallyOnVariant="Nuclear Protrusion" />
+    <bodyparttypevariant VariantOf="Face" Type="Skull Face" Category="Bone" UsuallyOnVariant="Skull" />
+    <bodyparttypevariant VariantOf="Face" Type="Splat" Category="Wooden" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Face" Type="Mouth" Category="Jelly" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Face" Type="Eye" Category="Protoplasmic" UsuallyOn="Face" Branching="Stratal"/>
+    <bodyparttypevariant VariantOf="Face" Type="Reflective Surface" Category="Glass" />
+    <bodyparttypevariant VariantOf="Face" Type="Smooth Face" Category="Stone" />
+    <bodyparttypevariant VariantOf="Face" Type="Writing Surface" Category="Stone" UsuallyOnVariant="Easel" />
+		<bodyparttypevariant VariantOf="Face" Type="Hands-Face" />		
+
+    <bodyparttypevariant VariantOf="Back" Type="Blanket" DescriptionPrefix="" />
+    <bodyparttypevariant VariantOf="Back" Type="Breadth" DescriptionPrefix="Worn across" />
+    <bodyparttypevariant VariantOf="Back" Type="Case" DescriptionPrefix="Worn as" />
+    <bodyparttypevariant VariantOf="Back" Type="Chassis" DescriptionPrefix="Worn about" Category="Mechanical" />
+    <bodyparttypevariant VariantOf="Back" Type="Equipment Rack" Description="Rack" Category="Cybernetic" />
+    <bodyparttypevariant VariantOf="Back" Type="Frame" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Back" Type="Membrane" Category="Protoplasmic" />
+    <bodyparttypevariant VariantOf="Back" Type="Molding" Category="Stone" />
+    <bodyparttypevariant VariantOf="Back" Type="Tablecloth" DescriptionPrefix="" />
+
+    <bodyparttypevariant VariantOf="Arm" Type="Arm Section" Category="Metal" />
+    <bodyparttypevariant VariantOf="Arm" Type="Armature" Category="Mechanical" />
+    <bodyparttypevariant VariantOf="Arm" Type="Armbone" Category="Bone" />
+    <bodyparttypevariant VariantOf="Arm" Type="Bine" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Branch" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Cheliped" Category="Arthropod" />
+    <bodyparttypevariant VariantOf="Arm" Type="Fibrous Node" Category="Fungal" />
+    <bodyparttypevariant VariantOf="Arm" Type="Frond" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Hinge" Category="Metal" />
+    <bodyparttypevariant VariantOf="Arm" Type="Knot" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Arm" Type="Leg" LimbBlueprintProperty="SeveredLegBlueprint" Mobility="1" />
+    <bodyparttypevariant VariantOf="Arm" Type="Lobe" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Pipe" Category="Metal" />
+    <bodyparttypevariant VariantOf="Arm" Type="Reinforcement" Category="Glass" />
+    <bodyparttypevariant VariantOf="Arm" Type="Robo-Arm" Category="Cybernetic" Extrinsic="true" />
+    <bodyparttypevariant VariantOf="Arm" Type="Side Rail" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Arm" Type="Stalk" Category="Fungal" />
+    <bodyparttypevariant VariantOf="Arm" Type="Stem" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Stud" DefaultBehavior="Stud" Category="Stone" />
+    <bodyparttypevariant VariantOf="Arm" Type="Support Pole" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Arm" Type="Support Strut" Category="Mechanical" />
+    <bodyparttypevariant VariantOf="Arm" Type="Taproot" Category="Plant" />
+    <bodyparttypevariant VariantOf="Arm" Type="Oral Arm" Category="Jelly" />
+		<bodyparttypevariant VariantOf="Arm" Type="Crystal Prism" Category="Stone" />
+
+    <bodyparttypevariant VariantOf="Hand" Type="Arm Stump" DefaultBehavior="Blunt End" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Hand" Type="Bifurcation" DefaultBehavior="Blunt End" Category="Plant" UsuallyOnVariant="Lobe" />
+    <bodyparttypevariant VariantOf="Hand" Type="Bottom Drawer" DefaultBehavior="Knob" Laterality="Lower" Category="Wooden" UsuallyOn="Body" Branching="Lateral,Longitudinal,Stratal" />
+    <bodyparttypevariant VariantOf="Hand" Type="Divider" DefaultBehavior="Blunt End" Category="Glass" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Tray" DefaultBehavior="Blunt End" Category="Wooden" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Drawer" DefaultBehavior="Knob" Category="Wooden" UsuallyOnVariant="Side Rail" />
+    <bodyparttypevariant VariantOf="Hand" Type="Fine Root" DefaultBehavior="SoftManipulator" Category="Plant" UsuallyOnVariant="Taproot" />
+    <bodyparttypevariant VariantOf="Hand" Type="Hand Section" DefaultBehavior="Blunt End" Category="Metal" UsuallyOnVariant="Arm Section" />
+    <bodyparttypevariant VariantOf="Hand" Type="Handbone" DefaultBehavior="InorganicManipulator" Category="Bone" UsuallyOnVariant="Armbone" />
+    <bodyparttypevariant VariantOf="Hand" Type="Handle" DefaultBehavior="InorganicManipulator" Category="Stone" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Hypha" DefaultBehavior="SoftManipulator" Category="Fungal" UsuallyOnVariant="Stalk" />
+    <bodyparttypevariant VariantOf="Hand" Type="Knob" DefaultBehavior="Knob" Category="Metal" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Leaf" DefaultBehavior="SoftManipulator" Category="Plant" UsuallyOnVariant="Stem" />
+    <bodyparttypevariant VariantOf="Hand" Type="Manipulator" DefaultBehavior="MetalManipulator" Category="Mechanical" UsuallyOnVariant="Armature" />
+    <bodyparttypevariant VariantOf="Hand" Type="Opening" DefaultBehavior="InorganicManipulator" Category="Stone" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Pincer" DefaultBehavior="HardManipulator" Category="Arthropod" UsuallyOnVariant="Cheliped" />
+    <bodyparttypevariant VariantOf="Hand" Type="Pinnule" DefaultBehavior="SoftManipulator" Category="Plant" UsuallyOnVariant="Frond" />
+    <bodyparttypevariant VariantOf="Hand" Type="Pseudopod" DefaultBehavior="SoftManipulator" Mobility="1" Category="Protoplasmic" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Rail" DefaultBehavior="MetalManipulator" Category="Mechanical" UsuallyOnVariant="Armature" />
+    <bodyparttypevariant VariantOf="Hand" Type="Robo-Hand" DefaultBehavior="MetalFist" Category="Cybernetic" Extrinsic="true" UsuallyOnVariant="Robo-Arm" />
+    <bodyparttypevariant VariantOf="Hand" Type="Shelf" DefaultBehavior="Blunt End" Category="Wooden" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Side Hypha" DefaultBehavior="SoftManipulator" Category="Fungal" UsuallyOnVariant="Fibrous Node" />
+    <bodyparttypevariant VariantOf="Hand" Type="Side" DefaultBehavior="SoftManipulator" Category="Cloth" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Small Crack" DefaultBehavior="" Category="Stone" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Tendril" DefaultBehavior="SoftManipulator" Category="Plant" UsuallyOnVariant="Bine" />
+    <bodyparttypevariant VariantOf="Hand" Type="Tentacle" DefaultBehavior="SoftManipulator" Mobility="1" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Tie Point" DefaultBehavior="InorganicManipulator" Category="Metal" UsuallyOn="Body" />
+    <bodyparttypevariant VariantOf="Hand" Type="Top Drawer" DefaultBehavior="Knob" Laterality="Upper" Category="Wooden" UsuallyOn="Body" Branching="Lateral,Longitudinal,Stratal" />
+    <bodyparttypevariant VariantOf="Hand" Type="Twig" DefaultBehavior="InorganicManipulator" Category="Plant" UsuallyOnVariant="Branch" />
+    <bodyparttypevariant VariantOf="Hand" Type="Vane" DefaultBehavior="MetalManipulator" Category="Mechanical" UsuallyOnVariant="Armature" />
+		<bodyparttypevariant VariantOf="Hand" Type="Quincunx" DefaultBehavior="InorganicManipulator" Category="Stone" UsuallyOnVariant="Crystal Prism" />
+
+    <bodyparttypevariant VariantOf="Hands" Type="Arm Stumps" Category="Wooden" ImpliedBy="Arm Stump" />
+    <bodyparttypevariant VariantOf="Hands" Type="Bifurcations" Category="Plant" ImpliedBy="Bifurcation" />
+    <bodyparttypevariant VariantOf="Hands" Type="Hand Sections" Category="Metal" ImpliedBy="Hand Section" />
+    <bodyparttypevariant VariantOf="Hands" Type="Handbones" Category="Bone" ImpliedBy="Handbone" />
+    <bodyparttypevariant VariantOf="Hands" Type="Knobs" Category="Metal" ImpliedBy="Knob" />
+    <bodyparttypevariant VariantOf="Hands" Type="Lateral Hyphae" Category="Fungal" ImpliedBy="Hypha" />
+    <bodyparttypevariant VariantOf="Hands" Type="Leaves" Category="Plant" ImpliedBy="Leaf" />
+    <bodyparttypevariant VariantOf="Hands" Type="Manipulators" Category="Mechanical" ImpliedBy="Manipulator" />
+    <bodyparttypevariant VariantOf="Hands" Type="Pincers" Category="Arthropod" ImpliedBy="Pincer" />
+    <bodyparttypevariant VariantOf="Hands" Type="Pinnules" Category="Plant" ImpliedBy="Pinnule" />
+    <bodyparttypevariant VariantOf="Hands" Type="Rails" Category="Mechanical" ImpliedBy="Rail" />
+    <bodyparttypevariant VariantOf="Hands" Type="Robo-Hands" Category="Cybernetic" Extrinsic="true" ImpliedBy="Robo-Hand" />
+    <bodyparttypevariant VariantOf="Hands" Type="Tendrils" Category="Plant" ImpliedBy="Tendril" />
+    <bodyparttypevariant VariantOf="Hands" Type="Tentacles" ImpliedBy="Tentacle" />
+		<bodyparttypevariant VariantOf="Hands" Type="Pseudopods" ImpliedBy="Pseudopod" />
+    <bodyparttypevariant VariantOf="Hands" Type="Twigs" Category="Plant" ImpliedBy="Twig" />
+    <bodyparttypevariant VariantOf="Hands" Type="Vanes" Category="Mechanical" ImpliedBy="Vane" />
+		<bodyparttypevariant VariantOf="Hands" Type="Quincunces" Category="Stone" ImpliedBy="Quincunx" />
+		<bodyparttypevariant VariantOf="Hands" Type="Small Cracks" Category="Stone" ImpliedBy="Small Crack" />
+		<bodyparttypevariant VariantOf="Hands" Type="Shelves" Category="Wooden" ImpliedBy="Shelf" />
+		<bodyparttypevariant VariantOf="Hands" Type="Tie Points" Category="Metal" ImpliedBy="Tie Point" />
+		<bodyparttypevariant VariantOf="Hands" Type="Fine Roots" Category="Plant" ImpliedBy="Fine Root" />
+		<bodyparttypevariant VariantOf="Hands" Type="Drawers" Category="Wooden" ImpliedBy="Drawer" />
+		<bodyparttypevariant VariantOf="Hands" Type="Openings" Category="Stone" ImpliedBy="Opening" />
+		<bodyparttypevariant VariantOf="Hands" Type="Handles" Category="Stone" ImpliedBy="Handle" />
+		<bodyparttypevariant VariantOf="Hands" Type="Trays" Category="Wooden" ImpliedBy="Tray" />
+
+    <bodyparttypevariant VariantOf="Feet" Type="Base" Mobility="1" Category="Wooden" Plural="false" />
+    <bodyparttypevariant VariantOf="Feet" Type="Bottom Rail" Laterality="Lower" Mobility="1" Category="Metal" Plural="false" Branching="Lateral,Longitudinal,Stratal" />
+    <bodyparttypevariant VariantOf="Feet" Type="Bottom" Mobility="1" Category="Cloth" Plural="false" />
+    <bodyparttypevariant VariantOf="Feet" Type="Footbones" Category="Bone" />
+    <bodyparttypevariant VariantOf="Feet" Type="Foundation" Mobility="1" Category="Stone" Plural="false" />
+    <bodyparttypevariant VariantOf="Feet" Type="Front Legs" Laterality="Fore" Category="Wooden" Branching="Lateral,Stratal,Vertical" />
+    <bodyparttypevariant VariantOf="Feet" Type="Legs" Mobility="0" />
+    <bodyparttypevariant VariantOf="Feet" Type="Rear Legs" Laterality="Hind" Category="Wooden" Branching="Lateral,Stratal,Vertical" />
+    <bodyparttypevariant VariantOf="Feet" Type="Rockers" Category="Wooden" />
+    <bodyparttypevariant VariantOf="Feet" Type="Support Struts" Mobility="0" Category="Mechanical" />
+    <bodyparttypevariant VariantOf="Feet" Type="Undercarriage" Mobility="3" Category="Mechanical" Plural="false" />
+
+    <bodyparttypevariant VariantOf="Roots" Type="Support Hyphae" Category="Fungal" />
+    <bodyparttypevariant VariantOf="Roots" Type="Mulch" Mobility="0" Category="Plant" Plural="false" Mass="true" />
+    <bodyparttypevariant VariantOf="Roots" Type="Stakes" Category="Wooden" />
+
+    <bodyparttypevariant VariantOf="Tail" Type="Muscular Foot" Category="Mollusk" />
+
+    <bodyparttypevariant VariantOf="Tread" Type="Wheels" Category="Cybernetic" Mobility="3" />
+    <bodyparttypevariant VariantOf="Tread" Type="Wheel" Category="Cybernetic" Mobility="3" Branching="Lateral,Vertical,Stratal,Longitudinal" />
+
+    <bodyparttypevariant VariantOf="Fin" Type="Dorsal Fin" Laterality="Upper" Mobility="0" Branching="Longitudinal,Lateral,Stratal" />
+    <bodyparttypevariant VariantOf="Fin" Type="Tail Fin" Laterality="Hind" Mobility="3" Branching="Lateral,Vertical,Stratal" />
+
+    <bodyparttypevariant VariantOf="Missile Weapon" Type="Hardpoint" LimbBlueprintProperty="SeveredHardpointBlueprint" LimbBlueprintDefault="SeveredHardpoint" RequiresType="" Category="Mechanical" Abstract="false" Appendage="true" UsuallyOn="Body" Branching="Lateral,Vertical,Stratal,Longitudinal" />    
+
+    <bodyparttypevariant VariantOf="Thrown Weapon" Type="Middle Hardpoint" LimbBlueprintProperty="SeveredHardpointBlueprint" LimbBlueprintDefault="SeveredHardpoint" RequiresType="" Category="Mechanical"/>
+    <bodyparttypevariant VariantOf="Thrown Weapon" Type="Grafted Mirror Arm" Description="Grafted Mirror Arm" RequiresType="" Category="Cybernetic" />
+
+  </bodyparttypevariants>
+
+  <anatomies>
+
+		<!-- NPC-specific -->
+    <anatomy Name="Humanoid">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+    </anatomy>
+
+    <anatomy Name="TailedBiped">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+      <part Type="Tail" />
+    </anatomy>
+
+    <anatomy Name="WheeledCreature">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+			<part Type="Wheel" Laterality="Right" />
+			<part Type="Wheel" Laterality="Left" />
+      <part Type="Tail" />
+    </anatomy>
+
+    <anatomy Name="Quadruped">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Foot" Laterality="Right Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Left Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Feet" Laterality="Fore" DependsOn="Forefeet" Mobility="0" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />
+      <part Type="Tail" />
+    </anatomy>
+
+    <anatomy Name="Hexapod">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Foot" Laterality="Right Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Left Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Right Mid" SupportsDependent="Midfeet" />
+      <part Type="Foot" Laterality="Left Mid" SupportsDependent="Midfeet" />
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Feet" Laterality="Fore" DependsOn="Forefeet" Mobility="0" />
+      <part Type="Feet" Laterality="Mid" DependsOn="Midfeet" Mobility="0" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />
+      <part Type="Tail" />
+    </anatomy>
+
+    <anatomy Name="Fish">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Dorsal Fin" />
+      <part Type="Fin" Laterality="Right" />
+      <part Type="Fin" Laterality="Left" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tail Fin" />
+    </anatomy>
+
+    <anatomy Name="Bird">
+      <part Type="Head">
+        <part Type="Face" DefaultBehavior="Beak" />
+      </part>
+      <part Type="Back" />
+      <part Type="Foot" Laterality="Right" SupportsDependent="Feet" />
+      <part Type="Foot" Laterality="Left" SupportsDependent="Feet" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Feet" DependsOn="Feet" />
+      <part Type="Tail" />
+    </anatomy>
+
+    <anatomy Name="Snake" BodyMobility="1">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tail" Mobility="1" />
+    </anatomy>
+
+    <anatomy Name="Clam" BodyMobility="0">      
+      <part Type="Back" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Muscular Foot" />
+    </anatomy>
+
+    <anatomy Name="Worm" BodyMobility="1">
+      <part Type="Head" />
+      <part Type="Back" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tail" Mobility="1" />
+    </anatomy>
+
+    <anatomy Name="Snail" BodyMobility="1">
+      <part Type="Head">
+        <part Type="Feelers" />
+      </part>
+      <part Type="Back" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tail" Mobility="1" />
+    </anatomy>
+
+    <anatomy Name="Frog">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Foot" Laterality="Right Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Left Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Feet" Laterality="Fore" DependsOn="Forefeet" Mobility="0" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />      
+    </anatomy>
+
+    <anatomy Name="Svardym">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />
+    </anatomy>
+
+    <anatomy Name="Slug" BodyMobility="1">
+      <part Type="Head">
+        <part Type="Feelers" />
+      </part>
+      <part Type="Back" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tail" Mobility="1" />
+    </anatomy>
+
+    <anatomy Name="SlugWithHands" BodyMobility="1">
+      <part Type="Head">
+        <part Type="Feelers" />
+      </part>
+      <part Type="Back" />
+      <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Tail" Mobility="1" Integral="true" />
+    </anatomy>
+
+    <anatomy Name="Echinoid" BodyMobility="1">
+      <part Type="Breadth" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+    </anatomy>
+
+    <anatomy Name="Star">
+      <part Type="Breadth" />
+      <part Type="Arm" Mobility="1" />
+      <part Type="Arm" Mobility="1" />
+      <part Type="Arm" Mobility="1" />
+      <part Type="Arm" Mobility="1" />
+      <part Type="Arm" Mobility="1" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+    </anatomy>
+
+		<anatomy Name="Three-Pointed Star">
+			<part Type="Breadth" />
+			<part Type="Arm" Mobility="1" />
+			<part Type="Arm" Mobility="1" />
+			<part Type="Arm" Mobility="1" />			
+			<part Type="Missile Weapon" Laterality="Right" />
+			<part Type="Missile Weapon" Laterality="Left" />
+		</anatomy>
+
+    <anatomy Name="Ooze" Category="Protoplasmic">
+      <part Type="Nuclear Protrusion">
+        <part Type="Sensory Ganglion" />
+      </part>
+      <part Type="Membrane" />
+      <part Type="Pseudopod" SupportsDependent="Pseudopods" />
+      <part Type="Pseudopod" SupportsDependent="Pseudopods" />
+      <part Type="Pseudopod" SupportsDependent="Pseudopods" />
+      <part Type="Pseudopod" SupportsDependent="Pseudopods" />
+      <part Type="Missile Weapon" />
+      <part Type="Missile Weapon" />
+			<part Type="Pseudopods" DependsOn="Pseudopods" />
+			<part Type="Pseudopods" DependsOn="Pseudopods" />
+    </anatomy>
+
+    <anatomy Name="Jelly">
+      <part Type="Nuclear Protrusion">
+        <part Type="Sensory Ganglion" />
+      </part>
+      <part Type="Membrane" />
+      <part Type="Tentacle" SupportsDependent="Tentacles" />
+      <part Type="Tentacle" SupportsDependent="Tentacles" />
+      <part Type="Tentacle" SupportsDependent="Tentacles" />
+      <part Type="Tentacle" SupportsDependent="Tentacles" />
+      <part Type="Oral Arm" />
+      <part Type="Oral Arm" />
+      <part Type="Oral Arm" />
+      <part Type="Oral Arm" />
+      <part Type="Missile Weapon" />
+      <part Type="Missile Weapon" />
+			<part Type="Tentacles" DependsOn="Tentacles" />
+			<part Type="Tentacles" DependsOn="Tentacles" />
+    </anatomy>
+
+    <anatomy Name="Insect" Category="Arthropod">
+      <part Type="Head">
+        <part Type="Antennae" />
+      </part>
+      <part Type="Back" />
+      <part Type="Leg" Laterality="Right Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Left Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Right Mid" SupportsDependent="Midlegs" />
+      <part Type="Leg" Laterality="Left Mid" SupportsDependent="Midlegs" />
+      <part Type="Leg" Laterality="Right Hind" SupportsDependent="Hindlegs" />
+      <part Type="Leg" Laterality="Left Hind" SupportsDependent="Hindlegs" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Legs" Laterality="Fore" DependsOn="Forelegs" />
+      <part Type="Legs" Laterality="Mid" DependsOn="Midlegs" />
+      <part Type="Legs" Laterality="Hind" DependsOn="Hindlegs" />
+    </anatomy>
+
+    <anatomy Name="Spider" Category="Arthropod">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Leg" Laterality="Right Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Left Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Right Mid Fore" SupportsDependent="Midforelegs" />
+      <part Type="Leg" Laterality="Left Mid Fore" SupportsDependent="Midforelegs" />
+      <part Type="Leg" Laterality="Right Mid Hind" SupportsDependent="Midhindlegs" />
+      <part Type="Leg" Laterality="Left Mid Hind" SupportsDependent="Midhindlegs" />
+      <part Type="Leg" Laterality="Right Hind" SupportsDependent="Hindlegs" />
+      <part Type="Leg" Laterality="Left Hind" SupportsDependent="Hindlegs" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Legs" Laterality="Fore" DependsOn="Forelegs" />
+      <part Type="Legs" Laterality="Mid Fore" DependsOn="Midforelegs" />
+      <part Type="Legs" Laterality="Mid Hind" DependsOn="Midhindlegs" />
+      <part Type="Legs" Laterality="Hind" DependsOn="Hindlegs" />
+    </anatomy>
+
+    <anatomy Name="Crab" Category="Arthropod">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Pincer" Laterality="Right" SupportsDependent="Pincers" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Pincer" Laterality="Left" SupportsDependent="Pincers" />
+      </part>
+      <part Type="Leg" Laterality="Right Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Left Fore" SupportsDependent="Forelegs" />
+      <part Type="Leg" Laterality="Right Mid" SupportsDependent="Midlegs" />
+      <part Type="Leg" Laterality="Left Mid" SupportsDependent="Midlegs" />
+      <part Type="Leg" Laterality="Right Hind" SupportsDependent="Hindlegs" />
+      <part Type="Leg" Laterality="Left Hind" SupportsDependent="Hindlegs" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Pincers" DependsOn="Pincers" />
+      <part Type="Legs" Laterality="Fore" DependsOn="Forelegs" />
+      <part Type="Legs" Laterality="Mid" DependsOn="Midlegs" />
+      <part Type="Legs" Laterality="Hind" DependsOn="Hindlegs" />
+    </anatomy>
+
+    <anatomy Name="Turret" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Support Strut" Laterality="Right" SupportsDependent="Support Struts" />
+      <part Type="Support Strut" Laterality="Left" SupportsDependent="Support Struts" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+      <part Type="Support Struts" DependsOn="Support Struts" />
+    </anatomy>
+
+    <anatomy Name="HumanoidRobot" Category="Mechanical">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" DefaultBehavior="MetalFist" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" DefaultBehavior="MetalFist" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+    </anatomy>
+
+    <anatomy Name="BipedalRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+      <part Type="Feet" />
+    </anatomy>
+
+		<anatomy Name="BipedalRobotWithArmatures" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+			<part Type="Control Unit">
+				<part Type="Sensor Array" />
+			</part>
+			<part Type="Chassis" />
+			<part Type="Armature" Laterality="Right">
+				<part Type="Manipulator" Laterality="Right" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Armature" Laterality="Left">
+				<part Type="Manipulator" Laterality="Left" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Hardpoint" Laterality="Right" />
+			<part Type="Hardpoint" Laterality="Left" />
+			<part Type="Manipulators" DependsOn="Manipulators" />
+			<part Type="Feet" />
+		</anatomy>
+
+		<anatomy Name="BipedalMechMk3" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+			<part Type="Control Unit">
+				<part Type="Sensor Array" />
+			</part>
+			<part Type="Chassis" />
+			<part Type="Hardpoint" Laterality="Upper Right" />
+			<part Type="Hardpoint" Laterality="Upper Left" />
+			<part Type="Hardpoint" Laterality="Lower Right" />
+			<part Type="Hardpoint" Laterality="Lower Left" />
+			<part Type="Feet" />
+		</anatomy>
+
+    <anatomy Name="TripedalRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+      <part Type="Foot" Laterality="Right" SupportsDependent="Feet" />
+      <part Type="Foot" Laterality="Left" SupportsDependent="Feet" />
+      <part Type="Foot" Laterality="Mid" SupportsDependent="Feet" />      
+      <part Type="Feet" />
+    </anatomy>
+
+    <anatomy Name="QuadrupedalRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Foot" Laterality="Right Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Left Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+      <part Type="Feet" Laterality="Fore" DependsOn="Forefeet" Mobility="0" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />
+    </anatomy>
+
+    <anatomy Name="HexapedalRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Foot" Laterality="Right Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Left Fore" SupportsDependent="Forefeet" />
+      <part Type="Foot" Laterality="Right Mid" SupportsDependent="Midfeet" />
+      <part Type="Foot" Laterality="Left Mid" SupportsDependent="Midfeet" />
+      <part Type="Foot" Laterality="Right Hind" SupportsDependent="Hindfeet" />
+      <part Type="Foot" Laterality="Left Hind" SupportsDependent="Hindfeet" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+      <part Type="Feet" Laterality="Fore" DependsOn="Forefeet" Mobility="0" />
+      <part Type="Feet" Laterality="Mid" DependsOn="Midfeet" Mobility="0" />
+      <part Type="Feet" Laterality="Hind" DependsOn="Hindfeet" Mobility="0" />
+    </anatomy>
+
+    <anatomy Name="TreadedRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Armature" Laterality="Right">
+        <part Type="Manipulator" Laterality="Right" SupportsDependent="Manipulators" />
+      </part>
+      <part Type="Armature" Laterality="Left">
+        <part Type="Manipulator" Laterality="Left" SupportsDependent="Manipulators" />
+      </part>
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+			<part Type="Manipulators" DependsOn="Manipulators" />
+      <part Type="Tread" Laterality="Right" />
+      <part Type="Tread" Laterality="Left" />
+    </anatomy>
+
+		<anatomy Name="WheeledRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+			<part Type="Control Unit">
+				<part Type="Sensor Array" />
+			</part>
+			<part Type="Chassis" />
+			<part Type="Armature" Laterality="Right">
+				<part Type="Manipulator" Laterality="Right" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Armature" Laterality="Left">
+				<part Type="Manipulator" Laterality="Left" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Hardpoint" Laterality="Right" />
+			<part Type="Hardpoint" Laterality="Left" />
+			<part Type="Manipulators" DependsOn="Manipulators" />
+			<part Type="Wheels" />
+		</anatomy>
+
+    <anatomy Name="HoverRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Control Unit">
+        <part Type="Sensor Array" />
+      </part>
+      <part Type="Chassis" />
+      <part Type="Armature" Laterality="Right">
+        <part Type="Manipulator" Laterality="Right" SupportsDependent="Manipulators" />
+      </part>
+      <part Type="Armature" Laterality="Left">
+        <part Type="Manipulator" Laterality="Left" SupportsDependent="Manipulators" />
+      </part>
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+			<part Type="Manipulators" DependsOn="Manipulators" />
+      <part Type="Undercarriage" />
+    </anatomy>
+
+		<anatomy Name="HoverRobotWithFourArms" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+			<part Type="Control Unit">
+				<part Type="Sensor Array" />
+			</part>
+			<part Type="Chassis" />
+			<part Type="Armature" Laterality="Upper Right">
+				<part Type="Manipulator" Laterality="Upper Right" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Armature" Laterality="Upper Left">
+				<part Type="Manipulator" Laterality="Upper Left" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Armature" Laterality="Lower Right">
+				<part Type="Manipulator" Laterality="Lower Right" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Armature" Laterality="Lower Left">
+				<part Type="Manipulator" Laterality="Lower Left" SupportsDependent="Manipulators" />
+			</part>
+			<part Type="Hardpoint" Laterality="Right" />
+			<part Type="Hardpoint" Laterality="Left" />
+			<part Type="Manipulators" Laterality="Upper" DependsOn="Manipulators" />
+			<part Type="Manipulators" Laterality="Lower" DependsOn="Manipulators" />
+			<part Type="Undercarriage" />
+		</anatomy>
+
+    <anatomy Name="WheelRobot" Category="Mechanical" ThrownWeapon="Middle Hardpoint">
+      <part Type="Wheel" Laterality="Upper">
+        <part Type="Eye" Laterality="Upper Inner" />
+        <part Type="Eye" Laterality="Upper Outer" />
+      </part>
+      <part Type="Wheel" Laterality="Mid">
+        <part Type="Eye" Laterality="Mid Inner" />
+        <part Type="Eye" Laterality="Mid Outer" />  
+      </part>
+      <part Type="Wheel" Laterality="Lower">
+        <part Type="Eye" Laterality="Lower Inner" />
+        <part Type="Eye" Laterality="Lower Outer" />
+      </part>      
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />      
+    </anatomy>
+
+    <anatomy Name="Bush" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Frond" Laterality="Right">
+        <part Type="Pinnule" Laterality="Right" SupportsDependent="Pinnules" />
+      </part>
+      <part Type="Frond" Laterality="Left">
+        <part Type="Pinnule" Laterality="Left" SupportsDependent="Pinnules" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Pinnules" DependsOn="Pinnules" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="Fungus" Category="Fungal">
+      <part Type="Cap">
+        <part Type="Sensory Frill" />
+      </part>
+      <part Type="Back" />
+      <part Type="Stalk" Laterality="Right">
+        <part Type="Hypha" Laterality="Right" SupportsDependent="Lateral Hyphae" />
+      </part>
+      <part Type="Stalk" Laterality="Left">
+        <part Type="Hypha" Laterality="Left" SupportsDependent="Lateral Hyphae" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Lateral Hyphae" DependsOn="Lateral Hyphae" />
+      <part Type="Support Hyphae" />
+    </anatomy>
+
+    <anatomy Name="Cactus" Category="Plant">
+      <part Type="Central Lobe">
+        <part Type="Sensory Bulb" />
+      </part>
+      <part Type="Back" />
+      <part Type="Lobe" Laterality="Right">
+        <part Type="Bifurcation" Laterality="Right" SupportsDependent="Bifurcations" />
+      </part>
+      <part Type="Lobe" Laterality="Left">
+        <part Type="Bifurcation" Laterality="Left" SupportsDependent="Bifurcations" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Bifurcations" DependsOn="Bifurcations" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="Flower" Category="Plant">
+      <part Type="Blossom">
+        <part Type="Sensory Bud" />
+      </part>
+      <part Type="Back" />
+      <part Type="Stem" Laterality="Right">
+        <part Type="Leaf" Laterality="Right" SupportsDependent="Leaves" />
+      </part>
+      <part Type="Stem" Laterality="Left">
+        <part Type="Leaf" Laterality="Left" SupportsDependent="Leaves" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Leaves" DependsOn="Leaves" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="Vine" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Bine" Laterality="Right">
+        <part Type="Tendril" Laterality="Right" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Bine" Laterality="Left">
+        <part Type="Tendril" Laterality="Left" SupportsDependent="Tendrils" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Tendrils" DependsOn="Tendrils" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="Tree" Category="Plant">
+      <part Type="Central Node">
+        <part Type="Sensory Nodule" />
+      </part>
+      <part Type="Back" />
+      <part Type="Branch" Laterality="Right">
+        <part Type="Twig" Laterality="Right" SupportsDependent="Twigs" />
+      </part>
+      <part Type="Branch" Laterality="Left">
+        <part Type="Twig" Laterality="Left" SupportsDependent="Twigs" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Twigs" DependsOn="Twigs" />
+      <part Type="Roots" />
+    </anatomy>
+
+		<anatomy Name="Octohedron" BodyCategory="Crystal" BodyMobility="2">
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Smooth Face" />
+			<part Type="Hardpoint" Laterality="Right" />
+			<part Type="Hardpoint" Laterality="Left" />
+		</anatomy>
+		
+		<anatomy Name="HumanoidOctohedron" BodyCategory="Crystal" BodyMobility="2">
+      <part Type="Smooth Face" />
+			<part Type="Smooth Face">
+				<part Type="Crystal Prism" Laterality="Upper">
+					<part Type="Quincunx" SupportsDependent="Quincunces" />
+				</part>
+				<part Type="Crystal Prism" Laterality="Upper">
+					<part Type="Quincunx" SupportsDependent="Quincunces" />
+				</part>
+				<part Type="Quincunces" DependsOn="Quincunces" />
+			</part>
+      <part Type="Smooth Face" />
+      <part Type="Smooth Face" />
+      <part Type="Smooth Face" />
+      <part Type="Smooth Face" />
+			<part Type="Smooth Face">
+				<part Type="Crystal Prism" Laterality="Lower">
+					<part Type="Quincunx" SupportsDependent="Quincunces" />
+				</part>
+				<part Type="Crystal Prism" Laterality="Lower">
+					<part Type="Quincunx" SupportsDependent="Quincunces" />
+				</part>
+				<part Type="Quincunces" DependsOn="Quincunces" />
+			</part>
+      <part Type="Smooth Face" />
+      <part Type="Hardpoint" Laterality="Right" />
+      <part Type="Hardpoint" Laterality="Left" />
+    </anatomy>
+
+    <anatomy Name="Motes" BodyCategory="Light" BodyMobility="2">
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+    </anatomy>
+
+    <anatomy Name="Door" BodyCategory="Wooden">
+      <part Type="Top Rail" />
+      <part Type="Knocker" />
+      <part Type="Frame" />
+      <part Type="Hinge" Laterality="Upper" />
+      <part Type="Hinge" Laterality="Lower" />
+      <part Type="Knob" Laterality="Inside" SupportsDependent="Knobs" />
+      <part Type="Knob" Laterality="Outside" SupportsDependent="Knobs" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Knobs" DependsOn="Knobs" />
+      <part Type="Bottom Rail" />
+    </anatomy>
+
+    <anatomy Name="MetalDoor" BodyCategory="Metal">
+      <part Type="Top Rail" />
+      <part Type="Knocker" />
+      <part Type="Frame" />
+      <part Type="Hinge" Laterality="Upper" />
+      <part Type="Hinge" Laterality="Lower" />
+      <part Type="Knob" Laterality="Inside" SupportsDependent="Knobs" />
+      <part Type="Knob" Laterality="Outside" SupportsDependent="Knobs" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Knobs" DependsOn="Knobs" />
+      <part Type="Bottom Rail" />
+    </anatomy>
+
+    <anatomy Name="Wall" Category="Stone">
+      <part Type="Header" />
+      <part Type="Molding" />
+      <part Type="Stud" Laterality="Upper" />
+      <part Type="Stud" Laterality="Lower" />
+      <part Type="Small Crack" Laterality="Upper" SupportsDependent="Small Cracks" />
+      <part Type="Small Crack" Laterality="Lower" SupportsDependent="Small Cracks" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Small Cracks" DependsOn="Small Cracks" />
+      <part Type="Foundation" />
+    </anatomy>
+
+    <anatomy Name="WoodWall" Category="Wooden">
+      <part Type="Header" />
+      <part Type="Molding" />
+      <part Type="Knot" Laterality="Upper" />
+      <part Type="Knot" Laterality="Lower" />
+      <part Type="Shelf" Laterality="Upper" SupportsDependent="Shelves" />
+      <part Type="Shelf" Laterality="Lower" SupportsDependent="Shelves" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Shelves" DependsOn="Shelves" />
+      <part Type="Foundation" />
+    </anatomy>
+
+    <anatomy Name="FungusWall" Category="Fungal">
+      <part Type="Central Node" />
+      <part Type="Breadth" />
+      <part Type="Fibrous Node" Laterality="Right">
+        <part Type="Side Hypha" Laterality="Right" SupportsDependent="Lateral Hyphae" />
+      </part>
+      <part Type="Fibrous Node" Laterality="Left">
+        <part Type="Side Hypha" Laterality="Left" SupportsDependent="Lateral Hyphae" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Lateral Hyphae" DependsOn="Lateral Hyphae" />
+      <part Type="Support Hyphae" />
+    </anatomy>
+
+    <anatomy Name="BoneWall" Category="Bone">
+      <part Type="Skull">
+        <part Type="Skull Face" />
+      </part>
+      <part Type="Molding" />
+      <part Type="Armbone" Laterality="Right">
+        <part Type="Handbone" Laterality="Right" SupportsDependent="Handbones" />
+      </part>
+      <part Type="Armbone" Laterality="Left">
+        <part Type="Handbone" Laterality="Left" SupportsDependent="Handbones" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Handbones" DependsOn="Handbones" />
+      <part Type="Footbones" />
+    </anatomy>
+
+    <anatomy Name="LeatherWall" BodyCategory="Leather">
+      <part Type="Header" Category="Leather" />
+      <part Type="Breadth" Category="Leather" />
+      <part Type="Support Pole" Laterality="Right" />
+      <part Type="Support Pole" Laterality="Left" />
+      <part Type="Tie Point" Laterality="Right" SupportsDependent="Tie Points" />
+      <part Type="Tie Point" Laterality="Left" SupportsDependent="Tie Points" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Tie Points" DependsOn="Tie Points" />
+      <part Type="Stakes" />
+    </anatomy>
+
+    <anatomy Name="ClothWall" BodyCategory="Cloth">
+      <part Type="Header" Category="Cloth" />
+      <part Type="Breadth" Category="Cloth" />
+      <part Type="Support Pole" Laterality="Right" />
+      <part Type="Support Pole" Laterality="Left" />
+      <part Type="Tie Point" Laterality="Right" SupportsDependent="Tie Points" />
+      <part Type="Tie Point" Laterality="Left" SupportsDependent="Tie Points" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Tie Points" DependsOn="Tie Points" />
+      <part Type="Stakes" />
+    </anatomy>
+
+    <anatomy Name="MetalWall" Category="Metal">
+      <part Type="Header" />
+      <part Type="Molding" />
+      <part Type="Pipe" Laterality="Upper" />
+      <part Type="Pipe" Laterality="Lower" />
+      <part Type="Shelf" Laterality="Right" SupportsDependent="Shelves" />
+      <part Type="Shelf" Laterality="Left" SupportsDependent="Shelves" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Shelves" DependsOn="Shelves" />
+      <part Type="Base" />
+    </anatomy>
+
+    <anatomy Name="GlassWall" Category="Glass">
+      <part Type="Header" />
+      <part Type="Molding" />
+      <part Type="Pipe" Laterality="Upper" />
+      <part Type="Pipe" Laterality="Lower" />
+      <part Type="Shelf" Laterality="Right" SupportsDependent="Shelves" />
+      <part Type="Shelf" Laterality="Left" SupportsDependent="Shelves" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Shelves" DependsOn="Shelves" />
+      <part Type="Base" />
+    </anatomy>
+
+    <anatomy Name="PlantWall" Category="Plant">
+      <part Type="Central Node" />
+      <part Type="Breadth" />
+      <part Type="Taproot" Laterality="Right" />
+      <part Type="Taproot" Laterality="Left" />
+      <part Type="Fine Root" Laterality="Right" SupportsDependent="Fine Roots" />
+      <part Type="Fine Root" Laterality="Left" SupportsDependent="Fine Roots" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Fine Roots" DependsOn="Fine Roots" />
+      <part Type="Roots" />
+    </anatomy>
+
+    <anatomy Name="Table" BodyCategory="Wooden">
+      <part Type="Centerpiece">
+        <part Type="Decoration" />
+      </part>
+      <part Type="Tablecloth" />
+      <part Type="Top Drawer" SupportsDependent="Drawers" />
+      <part Type="Bottom Drawer" SupportsDependent="Drawers" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Fine Roots" DependsOn="Drawers" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="Chair" BodyCategory="Wooden">
+      <part Type="Ear" Laterality="Right" />
+      <part Type="Ear" Laterality="Left" />
+      <part Type="Splat" />
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Arm Stump" Laterality="Right" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Arm Stump" Laterality="Left" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Arm Stumps" DependsOn="Arm Stumps" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="RockingChair" BodyCategory="Wooden">
+      <part Type="Ear" Laterality="Right" />
+      <part Type="Ear" Laterality="Left" />
+      <part Type="Splat" />
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Arm Stump" Laterality="Right" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Arm Stump" Laterality="Left" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Arm Stumps" DependsOn="Arm Stumps" />
+      <part Type="Rockers" />
+    </anatomy>
+
+    <anatomy Name="PlasticChair" Category="Plastic">
+      <part Type="Ear" Laterality="Right" />
+      <part Type="Ear" Laterality="Left" />
+      <part Type="Splat" />
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Arm Stump" Laterality="Right" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Arm Stump" Laterality="Left" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Arm Stumps" DependsOn="Arm Stumps" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="MetalChair" Category="Metal">
+      <part Type="Ear" Laterality="Right" />
+      <part Type="Ear" Laterality="Left" />
+      <part Type="Splat" />
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Arm Stump" Laterality="Right" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Arm Stump" Laterality="Left" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Arm Stumps" DependsOn="Arm Stumps" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="AnimalChair" Category="Animal">
+      <part Type="Ear" Laterality="Right" />
+      <part Type="Ear" Laterality="Left" />
+      <part Type="Splat" />
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Arm Stump" Laterality="Right" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Arm Stump" Laterality="Left" SupportsDependent="Arm Stumps" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Arm Stumps" DependsOn="Arm Stumps" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="Bed" BodyCategory="Wooden">
+      <part Type="Pillow">
+        <part Type="Pillowcase" />
+      </part>
+      <part Type="Blanket" />
+      <part Type="Side Rail" Laterality="Right">
+        <part Type="Drawer" Laterality="Right" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Side Rail" Laterality="Left">
+        <part Type="Drawer" Laterality="Left" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Drawers" DependsOn="Drawers" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+    <anatomy Name="PlasticBed" BodyCategory="Plastic">
+      <part Type="Pillow">
+        <part Type="Pillowcase" />
+      </part>
+      <part Type="Blanket" />
+      <part Type="Side Rail" Laterality="Right" Category="Plastic">
+        <part Type="Drawer" Laterality="Right" Category="Plastic" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Side Rail" Laterality="Left" Category="Plastic">
+        <part Type="Drawer" Laterality="Left" Category="Plastic" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" Category="Plastic" />
+      <part Type="Missile Weapon" Laterality="Left" Category="Plastic" />
+			<part Type="Drawers" Category="Plastic" DependsOn="Drawers" />
+			<part Type="Front Legs" Category="Plastic" />
+      <part Type="Rear Legs" Category="Plastic" />
+    </anatomy>
+
+    <anatomy Name="MetalBed" BodyCategory="Metal">
+      <part Type="Pillow">
+        <part Type="Pillowcase" />
+      </part>
+      <part Type="Blanket" />
+      <part Type="Side Rail" Laterality="Right" Category="Metal">
+        <part Type="Drawer" Laterality="Right" Category="Metal" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Side Rail" Laterality="Left" Category="Metal">
+        <part Type="Drawer" Laterality="Left" Category="Metal" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" Category="Metal" />
+      <part Type="Missile Weapon" Laterality="Left" Category="Metal" />
+			<part Type="Drawers" Category="Metal" DependsOn="Drawers" />
+			<part Type="Front Legs" Category="Metal" />
+      <part Type="Rear Legs" Category="Metal" />
+    </anatomy>
+
+    <anatomy Name="AnimalBed" BodyCategory="Animal">
+      <part Type="Pillow">
+        <part Type="Pillowcase" />
+      </part>
+      <part Type="Blanket" />
+      <part Type="Side Rail" Laterality="Right" Category="Animal">
+        <part Type="Drawer" Laterality="Right" Category="Animal" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Side Rail" Laterality="Left" Category="Animal">
+        <part Type="Drawer" Laterality="Left" Category="Animal" SupportsDependent="Drawers" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" Category="Animal" />
+      <part Type="Missile Weapon" Laterality="Left" Category="Animal" />
+			<part Type="Drawers" Category="Animal" DependsOn="Drawers" />
+      <part Type="Front Legs" Category="Animal" />
+      <part Type="Rear Legs" Category="Animal" />
+    </anatomy>
+
+    <anatomy Name="Pillow" Category="Cloth">
+      <part Type="Top" />
+      <part Type="Case" />
+      <part Type="Side" Laterality="Right" />
+      <part Type="Side" Laterality="Left" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Bottom" />
+    </anatomy>
+
+    <anatomy Name="VanedMechanism" Category="Mechanical">
+      <part Type="Control Unit">
+        <part Type="Access Panel" />
+      </part>
+      <part Type="Frame" />
+      <part Type="Armature" Laterality="Right">
+        <part Type="Vane" Laterality="Right" SupportsDependent="Vanes" />
+      </part>
+      <part Type="Armature" Laterality="Left">
+        <part Type="Vane" Laterality="Left" SupportsDependent="Vanes" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Vanes" DependsOn="Vanes" />
+      <part Type="Base" />
+    </anatomy>
+
+    <anatomy Name="RailedMechanism" Category="Mechanical">
+      <part Type="Control Unit">
+        <part Type="Access Panel" />
+      </part>
+      <part Type="Frame" />
+      <part Type="Armature" Laterality="Right">
+        <part Type="Rail" Laterality="Right" SupportsDependent="Rails" />
+      </part>
+      <part Type="Armature" Laterality="Left">
+        <part Type="Rail" Laterality="Left" SupportsDependent="Rails" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Rails" DependsOn="Rails" />
+      <part Type="Base" />
+    </anatomy>
+
+    <anatomy Name="IronMaiden" Category="Metal">
+      <part Type="Head Section">
+        <part Type="Faceplate" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm Section" Laterality="Right">
+        <part Type="Hand Section" Laterality="Right" SupportsDependent="Hand Sections" />
+      </part>
+      <part Type="Arm Section" Laterality="Left">
+        <part Type="Hand Section" Laterality="Left" SupportsDependent="Hand Sections" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hand Sections" DependsOn="Hand Sections" />
+      <part Type="Base" />
+    </anatomy>
+
+    <anatomy Name="AirWell" Category="Stone">
+      <part Type="Dome" />
+      <part Type="Back" />
+      <part Type="Opening" Laterality="Right" SupportsDependent="Openings" />
+      <part Type="Opening" Laterality="Left" SupportsDependent="Openings" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Openings" DependsOn="Openings" />
+      <part Type="Foundation" />
+    </anatomy>
+
+    <anatomy Name="Pottery" Category="Stone">
+      <part Type="Lip" />
+      <part Type="Neck" />
+      <part Type="Body" />
+      <part Type="Handle" Laterality="Right" SupportsDependent="Handles" />
+      <part Type="Handle" Laterality="Left" SupportsDependent="Handles" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Handles" DependsOn="Handles" />
+      <part Type="Foundation" />
+    </anatomy>
+
+    <anatomy Name="Nest" Category="Plant">
+      <part Type="Central Mass" />
+      <part Type="Breadth" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Mulch" />
+    </anatomy>
+
+    <anatomy Name="Mirror" Category="Stone">
+      <part Type="Frame">
+        <part Type="Reflective Surface"/>
+      </part>      
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />      
+    </anatomy>
+
+    <anatomy Name="WoodenHumanoid" Category="Wooden">
+      <part Type="Head">
+        <part Type="Face" />
+      </part>
+      <part Type="Back" />
+      <part Type="Arm" Laterality="Right">
+        <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+      </part>
+      <part Type="Arm" Laterality="Left">
+        <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+      </part>
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+      <part Type="Hands" DependsOn="Hands" />
+      <part Type="Feet" />
+    </anatomy>
+
+    <anatomy Name="Chalkboard" BodyCategory="Wooden">
+      <part Type="Easel">
+        <part Type="Writing Surface" />
+      </part>
+      <part Type="Breadth" />
+      <part Type="Tray" Laterality="Right" SupportsDependent="Trays" />
+      <part Type="Tray" Laterality="Left" SupportsDependent="Trays" />
+      <part Type="Missile Weapon" Laterality="Right" />
+      <part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Trays" DependsOn="Trays" />
+      <part Type="Front Legs" />
+      <part Type="Rear Legs" />
+    </anatomy>
+
+		<anatomy Name="Oddity" Category="Protoplasmic">
+			<part Type="Reflective Surface">
+				<part Type="Membrane">
+					<part Type="Lip" Laterality="Right" />
+					<part Type="Lip" Laterality="Left" />
+				</part>
+				<part Type="Membrane">
+					<part Type="Small Crack" />
+				</part>
+				<part Type="Membrane">
+					<part Type="Mulch" />
+				</part>
+			</part>
+			<part Type="Missile Weapon" Laterality="Right" />
+			<part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Floating Nearby" />
+			<part Type="Floating Nearby" />
+		</anatomy>
+
+		<!-- NPC-specific -->
+		<anatomy Name="HumanoidWithHandsFace">
+			<part Type="Head">
+				<part Type="Face" />
+			</part>
+			<part Type="Back" />
+			<part Type="Arm" Laterality="Right">
+				<part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+			</part>
+			<part Type="Arm" Laterality="Left">
+				<part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+			</part>
+			<part Type="Missile Weapon" Laterality="Right" />
+			<part Type="Missile Weapon" Laterality="Left" />
+			<part Type="Hands" DependsOn="Hands">
+				<part Type="Hands-Face" />
+			</part>
+			<part Type="Feet" />			
+		</anatomy>
+
+  </anatomies>
+
+</bodies>

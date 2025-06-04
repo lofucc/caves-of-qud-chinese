@@ -2257,7 +2257,7 @@
     <stat Name="Hitpoints" Value="1200"/>    
     <part Name="HologramMaterial"/>
     <part Name="HologramInvulnerability"/>
-    <tag Name="HologramOf" Value="a starshiib"/>
+    <tag Name="HologramOf" Value="an outworlder" />
     <tag Name="IgnoresGravity"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
   </object>
@@ -2431,6 +2431,7 @@
   <object Name="Chiliad Creature Farmers" Inherits="BaseFarmer">
     <part Name="Render" DisplayName="=creatureRegionAdjective= 农夫" Tile="Creatures/chiliad-farmer.png"/>    
     <part Name="Description" Short="=pronouns.Possessive= 的眼睛穿透了紧实的土壤，=pronouns.subjective= 搓着指间的粘土。"/>    
+    <removepart Name="RandomTile" />
     <stat Name="Level" Value="18"/>
     <mixin Name="BaseChiliadCreatureStats"/>
   </object>
@@ -2680,7 +2681,7 @@
   </object>
 
   <!-- Coda creature neatural weapons -->
-  <object Name="Chilid Creature Hoof" Inherits="NaturalWeapon">
+  <object Name="Chiliad Creature Hoof" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="蹄" Tile="Creatures/natural-weapon-hoof1.bmp" ColorString="&amp;w"/>
     <part Name="MeleeWeapon" BaseDamage="2d2" Skill="Cudgel" Stat="Strength" Slot="Foot"/>
   </object>

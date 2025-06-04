@@ -4513,7 +4513,7 @@
   -->
 
   <object Name="Campfire" Inherits="Item">
-    <part Name="Render" Tile="Items/sw_campfire_noflame.png" DisplayName="篝火" RenderString="249" ColorString="&amp;R" DetailColor="w" Occluding="false" RenderIfDark="true"/>
+    <part Name="Render" Tile="Items/sw_campfire_noflame.png" DisplayName="篝火" RenderString="249" ColorString="&amp;R" DetailColor="w" Occluding="false" RenderIfDark="true" RenderLayer="9"/>
     <part Name="Description" Short="早期地球的温暖磷光被整齐地排列在木砖之中，如今它如同一颗微小的恒星般运作。 "/>
     <part Name="Physics" Weight="30" Takeable="false" FlameTemperature="10000" Organic="true"/>
     <part Name="AnimatedMaterialFire"/>
@@ -4803,6 +4803,7 @@
     <part Name="Physics" Organic="false"/>
     <tag Name="EmptyTile" Value="Items/sw_table_ornate_1.bmp"/>
     <tag Name="FullTile" Value="Items/sw_table_ornate_1.bmp"/>
+    <tag Name="FullDetailColor" Value="*delete" />
     <part Name="Description" Short="奢华的桌腿上刻有铬合金图案，逐渐收窄成爪球足。 大理石桌面上的几何瑕疵被刮除并丢入一个可能至今仍存在的铁桶中。 食者曾在此交谈并策划。 "/>
     <part Name="Metal"/>
   </object>

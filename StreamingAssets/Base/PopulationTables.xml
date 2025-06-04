@@ -108,7 +108,7 @@
 
   </population>
 
-  <!-- 食者之墓 Beta Supply -->
+  <!-- Tomb of the Eaters Beta Supply -->
 
   <population Name="TombSupply">
     <group Name="TombSupply" Style="pickeach">
@@ -11367,7 +11367,7 @@
     <object Chance="100" Number="1d1" Blueprint="Troll King 3" Hint="Aquatic" />
   </population>
 
-  <!-- 食者之墓 -->
+  <!-- Tomb of the Eaters -->
   <population Name="YlaHajDisks">
     <group Name="Items" Style="pickeach">
       <object Blueprint="DataDisk" Number="2-3" />
@@ -12176,6 +12176,11 @@
   <population Name="MarkovCorpus_Barathrum">
     <group Name="Options" Style="pickeach">
       <object Blueprint="LibraryCorpus.json" Number="8-12" />
+    </group>
+  </population>
+  <population Name="MarkovCorpus_Starship">
+    <group Name="Options" Style="pickeach">
+      <object Blueprint="LibraryCorpus.json" Number="1-2" />
     </group>
   </population>
   <population Name="CrematoryMachineRoomBookshelf">
@@ -14513,6 +14518,19 @@
     </group>
   </population>
 
+  <population Name="Village_StoryEmbodiment_Coda_*Default">
+    <!-- stories excluding types using painting or engraving -->
+    <group Name="Options" Style="pickone">
+      <object Blueprint="Monuments" Weight="40" />
+      <object Blueprint="Historic Hall" Weight="20" />
+      <object Blueprint="Books" Weight="15" />
+      <object Blueprint="Library" Weight="15" />
+      <object Blueprint="Graveyard" Weight="15" />
+      <object Blueprint="Tattoo" Weight="10" Hint="NotAbandoned" />
+      <object Blueprint="Holograms" Weight="10" />
+    </group>
+  </population>
+
   <population Name="Villages_LiquidType_*Default">
     <group Name="Options" Style="pickone">
       <object Blueprint="acid" Weight="5" />
@@ -16490,6 +16508,32 @@
       <object Blueprint="SultanShrine_3x3S" Hint="Center" />
       <object Blueprint="SultanShrine_3x3W" Hint="Center" />
       <object Blueprint="SultanShrine_3x3E" Hint="Center" />
+    </group>
+  </population>
+  
+  <population Name="SultanShrines_StatueTiles" Style="pickone">
+    <group Name="Common" Style="pickone" Weight="8">
+      <object Blueprint="Terrain/sw_sultanstatue_1.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_2.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_3.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_4.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_5.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_6.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_7.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_8.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_9.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_10.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_11.png" />
+    </group>
+    <group Name="Rare" Style="pickone">
+      <object Blueprint="Terrain/sw_sultanstatue_rare_1.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_2.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_3.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_4.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_5.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_6.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_7.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_8.png" />
     </group>
   </population>
 
@@ -18890,8 +18934,7 @@
 			<table Name="Templar" Number="2-3" />
 			<table Name="Barathrumites" Number="2-3" />		
 		</group>
-	</population>
-
+	</population>  
 
 	<!--
   ******************
@@ -19117,5 +19160,59 @@
 			</group>			
 		</group>
 	</population>
+  
+  <!-- Wood-Carved Space -->
+  <population Name="WoodCarvedClothespress">
+    <group Name="Contents" Style="pickeach">
+      <object Blueprint="Qorish Veil" />
+      <object Blueprint="Qorish Gown" />  
+    </group>    
+  </population>
+  
+  <!-- Coda -->
+  <population Name="CodaRegionalPlants">
+    <group Name="Default" Style="pickone">
+      <table Name="Village_Plants_Coda_*Default" />
+    </group>
+    <group Name="DesertCanyon" Style="pickone">
+      <table Name="Village_Plants_Coda_DesertCanyon" />
+    </group>
+    <group Name="Hills" Style="pickone">
+      <table Name="Village_Plants_Coda_Hills" />
+    </group>
+  </population>
+
+  <population Name="Village_Plants_Coda_*Default" Style="pickone">
+    <object Blueprint="Chiliad Watervine" />
+  </population>
+  <population Name="Village_Plants_Coda_DesertCanyon" Style="pickone">
+    <object Blueprint="Chiliad Starapple Tree" />
+    <object Blueprint="Chiliad Dogthorn Tree" />
+  </population>
+  <population Name="Village_Plants_Coda_Hills" Style="pickone">
+    <object Blueprint="Chiliad Witchwood Tree" />
+    <object Blueprint="Chiliad Dogthorn Tree" />
+  </population>
+  
+  <population Name="Villages_MonumentType_Coda_*Default">
+    <group Name="Options" Style="pickone">
+      <object Blueprint="Village Monument Obelisk" />
+      <object Blueprint="Village Monument Amphora" />
+      <!--<object Blueprint="Village Monument Birdhouse" />-->
+      <object Blueprint="Village Monument Diptych" />
+      <object Blueprint="Village Monument Stele" />
+      <object Blueprint="Village Monument Monolith" />
+      <!--<object Blueprint="Village Monument Sculpture" />-->
+      <!--<object Blueprint="Village Monument Orb" />-->
+      <object Blueprint="Chiliad Village Monument Post" />
+      <object Blueprint="Chiliad Village Monument Orb" />
+    </group>
+  </population>
+
+  <population Name="Villages_LightSourceType_Coda_*Default">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Chiliad Torchpost" />
+    </group>
+  </population>
 
 </populations>

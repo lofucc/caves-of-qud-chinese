@@ -7650,7 +7650,7 @@
   <object Name="LightCircleRermadon" Inherits="BaseNephilimLightCircle">
     <part Name="Render" DisplayName="在{{rermadon|瑞马顿}}和弦中的光圈" ColorString="&amp;G" />
     <part Name="Description" Short="星气色的尖塔、带电的绿宝石和熔融金属围绕着零点旋转，形成彩虹般的等离子体虹彩。" />
-    <part Name="Armor" Heat="40" Cold="40" Acid="40" Elec="40" WornOn="Floating Nearby" />
+    <part Name="EquipStatBoost" Boosts="AcidResistance:40;ColdResistance:40;HeatResistance:40;ElectricResistance:40" IsTechScannable="false" />
     <tag Name="EquipmentFrameColors" Value="YgGm" />
   </object>
   <object Name="LightCircleShugruith" Inherits="BaseNephilimLightCircle">
@@ -7988,7 +7988,7 @@
     <stag Name="Floating" />
   </object>
   <object Name="TauChime" Inherits="Armor">
-    <part Name="Render" DisplayName="静止水晶风铃" RenderString="13" Tile="Terrain/sw_chavvah_chime_9.bmp"
+    <part Name="Render" RenderLayer="10" DisplayName="静止水晶风铃" RenderString="13" Tile="Terrain/sw_chavvah_chime_9.bmp"
       ColorString="&amp;m" DetailColor="y" />
     <part Name="Description" Short="尖锐的棱角贯穿明亮耀眼的紫水晶和蓝宝石。色彩依旧，但在即将消逝的光芒中变得暗淡如薰衣草色。风铃静止不动，如同墓地般沉寂。" />
     <part Name="Physics" Weight="40" />
@@ -8000,7 +8000,7 @@
     <part Name="CompleteQuestOnTaken" Quest="如果、那么、否则" QuestStep="收集塔乌的钟声" />
     <part Name="Interesting" Radius="1" />
     <part Name="Unreplicable" />
-    <part Name="GameUnique" DeathState="TauLostInSoft" />
+    <!-- <part Name="GameUnique" DeathState="TauLostInSoft" /> -->
     <tag Name="DisplayArmorStatsOnlyWhenEquipped" />
     <tag Name="Mods" Value="None" />
     <part Name="ItemElements" Elements="jewels::3;;glass;3" />
@@ -8646,7 +8646,7 @@
   </object>
   <object Name="BaseTierBack" Inherits="Armor">
     <part Name="Render" DisplayName="[基底背部]" RenderString="]" />
-    <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+    <part Name="Armor" AV="0" DV="0" WornOn="Back" />
     <tag Name="BaseObject" />
     <tag Name="Mods" Value="None" />
   </object>
@@ -9321,7 +9321,7 @@
   </object>
 
   <!-- Relic arm, Tier 7 -->
-  <object Name="BaseTierArm7" Inherits="BaseTierBack">
+  <object Name="BaseTierArm7" Inherits="BaseTierArm">
     <part Name="Render" Tile="Items/sw_bracelet_simple.bmp" DetailColor="b" />
     <part Name="Description" Short="星途上的异界金叶螺旋" />
     <part Name="Armor" AV="1" DV="3" WornOn="Arm" />
@@ -13182,7 +13182,6 @@
       InitialLiquid="neutronflux-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999"
       FlameTemperature="99999" VaporTemperature="9999" />
-    <part Name="Description" Short="一瓶元玻璃" />
     <stat Name="Hitpoints" Value="1000" />
     <tag Name="NoSparkingQuest" />
   </object>
@@ -13191,7 +13190,6 @@
       InitialLiquid="neutronflux-1000" />
     <part Name="Physics" SpecificHeat="0" FreezeTemperature="-9999" BrittleTemperature="-9999"
       FlameTemperature="99999" VaporTemperature="9999" />
-    <part Name="Description" Short="一瓶元玻璃" />
     <stat Name="Hitpoints" Value="1000" />
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />

@@ -136,7 +136,8 @@
 	<object Name="UnknownJewelry" Inherits="BaseUnknown">
 		<part Name="Render" DisplayName="珠宝" RenderString="]" Tile="Items/unidentified_artifact_jewelry.bmp"/>
 		<part Name="Description" Short="一个圆形的项圈在无意间闪耀着光芒。"/>
-	</object>		
+    <xtagGrammar adjunctNoun="piece" />
+  </object>		
 	<object Name="UnknownCloak" Inherits="BaseUnknown">
 		<part Name="Render" DisplayName="斗篷" RenderString="]" Tile="Items/unidentified_artifact_cloak.bmp"/>
 		<part Name="Description" Short="某种织物被缝合到了未知的目的。"/>

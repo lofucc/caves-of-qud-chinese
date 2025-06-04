@@ -1,0 +1,2693 @@
+{
+    "spice": {
+      "elements": {
+        "glass": {
+          "professions": [ "glassblower", "window maker" ],
+          "materials": [ "glass", "sand" ],
+          "adjectives": [ "glazed", "stained", "clear", "prismatic" ],
+          "nouns": [ "prism", "glass", "mirror" ],
+          "nounsPlural": [ "prisms", "glass", "mirrors" ],
+          "practices": [ "staring into mirrors", "staining glass", "glassblowing", "burying prisms under the earth" ],
+          "murdermethods": [ "by trapping <spice.pronouns.object.!random> in a prism", "with a dagger made of <^.materials.!random>" ],
+          "inspirationsVerbPhrase": [ "saw <entity.possessivePronoun> own reflection in a river", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "transparent visage", "sandy hair", "mirrored eyes", "reputation for murdering someone <^.murdermethods.!random>" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "shattering all the glass in the homes" ],
+          "ruinReason": "devastated by torrential glass storms",
+          "ruinDescription": "glass-swept knolls",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a *var* shattered in every home", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "in a cathedral of stained glass", "in a hall of mirrors", "inside a colossal prism", "during a torrential glass storm" ],
+          "mythicalBattleVista": [ "curtained under a *var* lune" ]
+        },
+        "jewels": {
+          "professions": [ "jeweler", "geologist" ],
+          "materials": [ "jewels", "crystal", "ruby", "sapphire", "emerald", "agate", "jasper", "gemstones", "peridot" ],
+          "adjectives": [ "jeweled", "shining", "radiant", "lustrous", "lucent", "glittering" ],
+          "nouns": [ "jewel", "ruby", "sapphire", "emerald", "agate", "jasper stone", "gemstone", "amethyst", "peridot" ],
+          "nounsPlural": [ "jewels", "rubies", "sapphires", "emeralds", "agates", "jasper stones", "gemstones", "amethysts", "peridots" ],
+          "practices": [ "adorning one's self with jewels", "setting a jewel into <spice.jewelry.!random.article>", "mining <^.nounsPlural.!random>", "hoarding <^.nounsPlural.!random>" ],
+          "murdermethods": [ "by trapping <spice.pronouns.object.!random> in <^.nouns.!random.article>", "with a dagger made of <^.materials.!random>" ],
+          "inspirationsVerbPhrase": [ "came across a trove of <^.adjectives.!random> <^.nounsPlural.!random>", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "looting all the jewels from the homes" ],
+          "ruinReason": "bristling with carnivorous geodes",
+          "ruinDescription": "man-eating geodes",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "<spice.commonPhrases.epic.!random.article> *var* was discovered", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "adorned with <^.nounsPlural.!random> and <^.nounsPlural.!random>", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "bathed in *var* light" ]
+        },
+        "stars": {
+          "professions": [ "astrologist", "astronomer", "stargazer" ],
+          "materials": [ "stardust", "meteorite", "motes of light", "starlight" ],
+          "adjectives": [ "shining", "radiant", "luminous", "gleaming", "white-hot" ],
+          "nouns": [ "meteorite", "mote of light", "star in a bottle", "telescope" ],
+          "nounsPlural": [ "stardust", "meteorites", "motes of light", "stars in a bottle", "telescopes" ],
+          "practices": [ "staring at the night sky", "worshipping the stars", "sketching the constellations", "hoarding <^.nounsPlural.!random>" ],
+          "murdermethods": [ "by trapping <spice.pronouns.object.!random> in <^.nouns.!random.article>", "with a dagger made of <^.materials.!random>", "by forecasting <spice.pronouns.possessive.!random> doom" ],
+          "inspirationsVerbPhrase": [ "spotted an unidentified object in the night sky", "witnessed a falling star", "came across a trove of <^.adjectives.!random> <^.nounsPlural.!random>", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "raining meteors down from the sky onto the settlements" ],
+          "ruinReason": "devastated by smoldering stardust",
+          "ruinDescription": "fuming stardew",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "the stars aligned to form a constellation in the shape of a *var*", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "while reciting the properties of <entity.possessivePronoun> favorite star", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "bathed in *var* light" ]
+        },
+        "time": {
+          "professions": [ "historian", "scribe" ],
+          "materials": [ "tiny gears", "time itself", "the fabric of time" ],
+          "adjectives": [ "perpetual", "boundless", "periodic", "rhythmic", "orbital" ],
+          "nouns": [ "miniature clock", "moment in time chosen arbitrarily", "hourglass", "atomic clock" ],
+          "nounsPlural": [ "miniature clocks", "forgotten seconds of one's life", "hourglasses", "atomic clocks" ],
+          "practices": [ "watching sand sift through an hourglass", "worshipping the past, present, and future", "stopping time", "hoarding <^.nounsPlural.!random>" ],
+          "murdermethods": [ "by trapping <spice.pronouns.object.!random> in <^.nouns.!random.article>", "with a dagger made of <^.materials.!random>", "by letting entropy feast on <spice.pronouns.possessive.!random> flesh" ],
+          "inspirationsVerbPhrase": [ "fell into a well and lived a hundred lives", "came upon a river flowing backwards", "came across a trove of <^.adjectives.!random> <^.nounsPlural.!random>", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "conducting midnight raids on the villages" ],
+          "ruinReason": "rife with stray portals to other places and times",
+          "ruinDescription": "fraying reality-edges",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a *var* stopped working in every home", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "in a ceremony that lasted a full year", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "with graceful, *var* movement" ]
+        },
+        "salt": {
+          "professions": [ "cook" ],
+          "materials": [ "salt", "briny water" ],
+          "adjectives": [ "briny", "salt-spangled", "desiccated" ],
+          "nouns": [ "pinch of salt", "dram of brine", "spice root", "leaf" ],
+          "nounsPlural": [ "salt", "brine", "spices", "leaves" ],
+          "practices": [ "seasoning food", "water fasting" ],
+          "murdermethods": [ "by swilling the moisture from his skin", "by pouring salt into his eyes", "by poisoning <spice.pronouns.possessive.!random> water" ],
+          "inspirationsVerbPhrase": [ "trekked through a lifeless salt pan and stumbled on a mysterious monolith", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "sowing with salt the fields" ],
+          "ruinReason": "evaporated of all moisture",
+          "ruinDescription": "bone-dry desert",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "the taste of *var* filled everyone's mouth", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "after abstaining from drinking water for <spice.instancesOf.twoToTen.!random> days", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "upon chewing the *var* leaf" ]
+        },
+        "ice": {
+          "professions": [ "geologist", "stargazer", "astronomer", "glassblower", "winter eremite" ],
+          "materials": [ "ice", "snow", "frost", "rime" ],
+          "adjectives": [ "frigid", "frosty", "icy", "freezing", "glacial", "wintry" ],
+          "nouns": [ "block of ice", "miniature glacier", "snowflake", "icicle" ],
+          "nounsPlural": [ "blocks of ice", "miniature glaciers", "snowflakes", "icicles" ],
+          "practices": [ "burying one's self to the neck in snow", "ice sculpting", "encasing things in ice", "taking a spiritual trek through the tundra", "growing thicker skin from living out in the snow" ],
+          "murdermethods": [ "by trapping <spice.pronouns.object.!random> in <^.nouns.!random.article>", "with a dagger made of <^.materials.!random>", "by allowing <spice.pronouns.object.!random> to continue living in a universe where heat death is inevitable" ],
+          "inspirationsVerbPhrase": [ "made a solitary trek through a lifeless tundra", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "stealing oil from the heat lamps in the villages" ],
+          "ruinReason": "devastated by icy winds",
+          "ruinDescription": "scathing gales",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "snow fell everywhere", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "while stark naked in freezing temperatures", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "in the thin and *var* air" ]
+        },
+        "scholarship": {
+          "professions": [ "scholar", "scribe", "philosopher", "scientist", "historian" ],
+          "materials": [ "ink", "clockwork tools", "data disks" ],
+          "adjectives": [ "philosophical", "shrewd", "inquisitive" ],
+          "nouns": [ "quill", "inkwell", "scroll" ],
+          "nounsPlural": [ "quills", "inkwells", "scrolls" ],
+          "practices": [ "contemplating the meaning of things", "taking measurements" ],
+          "murdermethods": [ "by filling him with existential despair", "by inventing and releasing clockwork beetles", "by writing him out of the annals of history" ],
+          "inspirationsVerbPhrase": [ "contemplated the nature of things in solitude", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "kidnapping the smartest children from the homes" ],
+          "ruinReason": "rife with burnt books and corroded data disks",
+          "ruinDescription": "data corruption",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a college was founded", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "while reciting <entity.possessivePronoun> favorite treatise", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "with *var* eyes peeled" ]
+        },
+        "might": {
+          "professions": [ "soldier", "gladiator" ],
+          "materials": [ "zetachrome", "crysteel", "iron", "diamond", "bone" ],
+          "adjectives": [ "mighty", "colossal", "dominant", "potent", "commanding" ],
+          "nouns": [ "sword", "mace", "axe", "iron gauntlet", "skull", "hammer", "pummel", "helmet", "breastplate", "gauntlet", "boot" ],
+          "nounsPlural": [ "swords", "guns", "maces", "axes", "iron gauntlets", "skulls", "hammers", "pummels", "bones", "helmets", "breastplates", "gauntlets", "boots" ],
+          "practices": [ "smashing things to bits", "cleaving skulls", "making demands", "imposing one's will", "hearing the lamentations of one's foes", "weighing items on a scale and then smashing the scale after not liking the results" ],
+          "murdermethods": [ "with <^.nouns.!random.article> made of <^.materials.!random>", "by choking the life out of <spice.pronouns.object.!random>", "by slaughtering <spice.pronouns.possessive.!random> entire clan" ],
+          "inspirationsVerbPhrase": [ "got into a tavern brawl", "trekked across a field of skulls and bones", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "razing to the ground the homes", "particularly rejoicing in the lamentations" ],
+          "ruinReason": "rife with smashed rubble",
+          "ruinDescription": "trash heaps",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a great battle was won", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "after murdering a foe <^.murdermethods.!random>", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "looming with *var* presence" ]
+        },
+        "chance": {
+          "professions": [ "gambler" ],
+          "materials": [ "chance itself", "copper", "luck", "fate", "silver", "gold", "platinum" ],
+          "adjectives": [ "lucky", "random", "arbitrary", "fateful", "fortuitous", "charmed", "weighted", "cursed", "blessed" ],
+          "nouns": [ "<spice.numbers.!random>-sided die", "coin", "good omen", "bad omen", "token", "charm", "vessel of the Fates" ],
+          "nounsPlural": [ "<spice.numbers.!random>-sided dice", "coins", "good omens", "bad omens", "tokens", "charms", "vessels of the Fates" ],
+          "practices": [ "rolling <spice.numbers.!random>-sided dice", "flipping coins", "determining outcomes by chance", "throwing bones to portend the future", "interpreting omens from the observed flight of birds" ],
+          "murdermethods": [ "with <^.nouns.!random.article> made of <^.materials.!random>", "by flipping a coin and agreeing to kill either <spice.pronouns.object.!random> or <entity.objectPronoun>self based on the outcome", "with a revolver loaded with a single bullet" ],
+          "inspirationsVerbPhrase": [ "fell into a crevasse and survived against all odds", "watched a flipped coin land on heads ten times in a row", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "rolling dice to determine which ones to destroy from the homes" ],
+          "ruinReason": "rife with bad omens",
+          "ruinDescription": "rotten luck",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a *var* was found in every home", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "after choosing a spouse at random", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "after auguring a *var* omen" ]
+        },
+        "circuitry": {
+          "professions": [ "tinker", "electrician" ],
+          "materials": [ "wire", "copper", "silicon", "circuits", "electric current", "logic", "diodes", "transistors", "capacitors", "coils", "vacuum tubes" ],
+          "adjectives": [ "analog", "digital", "logical", "voltaic", "computerized", "electric", "wired", "copper-plated", "coiled" ],
+          "nouns": [ "circuitboard", "circuit", "logic gate", "light bulb", "battery", "vacuum tube", "oscilloscope" ],
+          "nounsPlural": [ "circuitboards", "circuits", "logic gates", "light bulbs", "batteries", "vacuum tubes", "oscilloscopes" ],
+          "practices": [ "wiring <spice.elements.!random.nounsPlural.!random> to <spice.elements.!random.nounsPlural.!random>" ],
+          "murdermethods": [ "with <^.nouns.!random.article> made of <^.materials.!random>", "with malicious soldering", "by wiring <spice.pronouns.object.!random> to hundreds of <^.nounsPlural.!random>", "by dividing by zero" ],
+          "inspirationsVerbPhrase": [ "met a computerized version of <entity.objectPronoun>self", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "soldering together the children" ],
+          "ruinReason": "rife with electric arcs",
+          "ruinDescription": "voltaic lunes",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a *var* lit up in every home", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "while telecommuting", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "inside a *var* machine" ]
+        },
+        "travel": {
+          "professions": [ "explorer", "nomad" ],
+          "materials": [ "water", "farewells", "brick", "leather", "wood", "silk", "paper", "rope", "wind", "canvas", "campfire ashes" ],
+          "adjectives": [ "foreign", "unfamiliar", "strange", "timeworn", "worldly", "traveling", "wandering", "otherworldly" ],
+          "nouns": [ "compass", "altimeter", "astrolabe", "map", "sextant", "bedroll", "journal", "boat", "pair of sandals" ],
+          "nounsPlural": [ "compasses", "altimeters", "astrolabes", "maps", "sextants", "bedrolls", "journals", "boats", "pairs of sandals" ],
+          "practices": [ "wandering without purpose", "making a pilgrimage", "climbing a mountain", "skirring the stars", "leaving <entity.possessivePronoun> home forever", "setting out on an adventure to find a famous <spice.elements.!random.nouns.!random>" ],
+          "murdermethods": [ "with <^.nouns.!random.article> made of <^.materials.!random>", "by pursuing <spice.pronouns.object.!random> to exhaustion", "by cooking <spice.pronouns.object.!random> for sustenance" ],
+          "inspirationsVerbPhrase": [ "broke bread with a pilgrim", "journeyed to a sacred shrine", "had a dream that <entity.subjectPronoun> was <^.practices.!random>" ],
+          "quality": [ "<^.adjectives.!random> eyes", "reputation for murdering someone <^.murdermethods.!random>", "<^.adjectives.!random> visage" ],
+          "babeTrait": [ "with its mouth full of <^.materials.!random>", "with <^.nounsPlural.!random> on its eyes", "with <^.adjectives.!random.article> <^.nouns.!random> in each hand" ],
+          "ravaging": [ "forcibly relocating the families" ],
+          "ruinReason": "vacant of signs of life",
+          "ruinDescription": "emptiness",
+          "thingsTheyDid": [ "<spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random>" ],
+          "mythicalEvent": [ "a new planet was discovered", "a famous <^.professions.!random> completed <spice.pronouns.possessive.!random> work on a legendary *var*" ],
+          "weddingConditions": [ "upon the completion of a great pilgrimage", "inside a colossal <^.nouns.!random>", "in a cathedral ornamented with <^.nounsPlural.!random>", "Waist deep in a lake of <^.materials.!random>" ],
+          "mythicalBattleVista": [ "in view of odd and *var* sands" ]
+        }
+      },
+  
+      "professions": {
+        "glassblower": {
+          "singular": "glassblower",
+          "plural": "glassblowers",
+          "training": "apprentice",
+          "actions": [ "built a glass gazebo" ],
+          "guildhall": "workshop",
+          "forged": "blew",
+          "forge": "blow",
+          "items": [ "dagger" ],
+          "studying": "glassblowing",
+          "foundingVerbTombInscription": [ "blow glass *var* for *activity*" ]
+        },
+        "window maker": {
+          "singular": "window maker",
+          "plural": "window makers",
+          "training": "apprentice",
+          "actions": [ "stained a glass window" ],
+          "guildhall": "workshop",
+          "forged": "blew",
+          "forge": "blow",
+          "items": [ "shield" ],
+          "studying": "glassblowing",
+          "foundingVerbTombInscription": [ "blow glass *var* for *activity*" ]
+        },
+        "scholar": {
+          "singular": "scholar",
+          "plural": "scholars",
+          "training": "student",
+          "actions": [ "wrote a treatise" ],
+          "guildhall": "academy",
+          "forged": "penned",
+          "forge": "pen",
+          "items": [ "treatise" ],
+          "studying": "studying",
+          "foundingVerbTombInscription": [ "study how *var* might be used for *activity*" ]
+        },
+        "scribe": {
+          "singular": "scribe",
+          "plural": "scribes",
+          "training": "underscribe",
+          "actions": [ "recorded the events of the last year of <entity.possessivePronoun> life" ],
+          "guildhall": "scriptorium",
+          "forged": "recorded",
+          "forge": "record",
+          "items": [ "chronology" ],
+          "studying": "writing chronologies for",
+          "foundingVerbTombInscription": [ "write chronologies on how *var* are used for *activity*" ]
+        },
+        "philosopher": {
+          "singular": "philosopher",
+          "plural": "philosophers",
+          "training": "student",
+          "actions": [ "reflected on the meaning of the experience" ],
+          "guildhall": "college",
+          "forged": "formulated",
+          "forge": "formulate",
+          "items": [ "philosophy" ],
+          "studying": "deciphering the meaning of",
+          "foundingVerbTombInscription": [ "decipher the semantic link between *var* and *activity*" ]
+        },
+        "scientist": {
+          "singular": "scientist",
+          "plural": "scientists",
+          "training": "student",
+          "actions": [ "formed a hypothesis about the event" ],
+          "guildhall": "laboratory",
+          "forged": "formulated",
+          "forge": "formulate",
+          "items": [ "hypothesis" ],
+          "studying": "taking measurements of",
+          "foundingVerbTombInscription": [ "experiment with how *var* might be used for *activity*" ]
+        },
+        "historian": {
+          "singular": "historian",
+          "plural": "historians",
+          "training": "student",
+          "actions": [ "penned a historical account" ],
+          "guildhall": "college",
+          "forged": "authored",
+          "forge": "author",
+          "items": [ "account" ],
+          "studying": "interpreting the history of",
+          "foundingVerbTombInscription": [ "interpret the history of *var* and *activity*" ]
+        },
+        "cook": {
+          "singular": "cook",
+          "plural": "cooks",
+          "training": "undercook",
+          "actions": [ "fixed a satisfying meal" ],
+          "guildhall": "tavern",
+          "forged": "cooked",
+          "forge": "cook",
+          "items": [ "feast", "meal" ],
+          "studying": "cooking meals inspired by",
+          "foundingVerbTombInscription": [ "cook meals inspired by *var* and *activity*" ]
+        },
+        "geologist": {
+          "singular": "geologist",
+          "plural": "geologists",
+          "training": "student",
+          "actions": [ "dug into the earth's strata" ],
+          "guildhall": "dig site",
+          "forged": "dug up",
+          "forge": "dig up",
+          "items": [ "artifact" ],
+          "studying": "excavating ancient",
+          "foundingVerbTombInscription": [ "excavate ancient *var* that were used for *activity*" ]
+        },
+        "jeweler": {
+          "singular": "jeweler",
+          "plural": "jewelers",
+          "training": "apprentice",
+          "actions": [ "set <spice.elements.jewels.adjectives.!random.article> <spice.elements.jewels.nouns.!random> into a newly forged <spice.jewelry.!random>" ],
+          "guildhall": "workshop",
+          "forged": "forged",
+          "forge": "forge",
+          "items": [ "bracelet" ],
+          "studying": "making jewelry inspired by",
+          "foundingVerbTombInscription": [ "make jewelry inspired by *var* and *activity*" ]
+        },
+        "astrologist": {
+          "singular": "astrologist",
+          "plural": "astrologists",
+          "training": "student",
+          "actions": [ "gave a horoscope reading" ],
+          "guildhall": "observatory",
+          "forged": "fabricated",
+          "forge": "fabricate",
+          "items": [ "horoscope reading" ],
+          "studying": "mapping stars to the shapes of",
+          "foundingVerbTombInscription": [ "use *var* to divine how we might go about *activity*" ]
+        },
+        "astronomer": {
+          "singular": "astronomer",
+          "plural": "astronomers",
+          "training": "student",
+          "actions": [ "calculated the distance to a nearby star" ],
+          "guildhall": "observatory",
+          "forged": "invented",
+          "forge": "invent",
+          "items": [ "star-tool" ],
+          "studying": "mapping stars to the shapes of",
+          "foundingVerbTombInscription": [ "use *var* to discover how we might go about *activity* from space" ]
+        },
+        "stargazer": {
+          "singular": "stargazer",
+          "plural": "stargazers",
+          "training": "novice",
+          "actions": [ "painted pictures of beasts and monsters with flaming suns" ],
+          "guildhall": "prayer yurt",
+          "forged": "awakened",
+          "forge": "awaken",
+          "items": [ "allegory" ],
+          "studying": "contemplating how extraterrestrials might use",
+          "foundingVerbTombInscription": [ "use *var* to discover how we might go about *activity* from space" ]
+        },
+        "winter eremite": {
+          "singular": "winter eremite",
+          "plural": "winter eremites",
+          "training": "recluse",
+          "actions": [ "dispensed wisdom at a great cost" ],
+          "guildhall": "hermitage",
+          "forged": "revealed",
+          "forge": "reveal",
+          "items": [ "wintry truth" ],
+          "studying": "chanting in devotion of",
+          "foundingVerbTombInscription": [ "chant in devotion of the use of *var* for *activity*" ]
+        },
+        "soldier": {
+          "singular": "soldier",
+          "plural": "soldiers",
+          "training": "recruit",
+          "actions": [ "helped sack a village and burn its homes to the ground" ],
+          "guildhall": "outpost",
+          "forged": "looted",
+          "forge": "loot",
+          "items": [ "<spice.elements.might.nouns.!random>" ],
+          "studying": "hoarding the spoils of looted",
+          "foundingVerbTombInscription": [ "stockpile *var* recovered for *activity*" ]
+        },
+        "gladiator": {
+          "singular": "gladiator",
+          "plural": "gladiators",
+          "training": "slave",
+          "actions": [ "fought for everlasting glory" ],
+          "guildhall": "arena",
+          "forged": "was gifted",
+          "forge": "steal",
+          "items": [ "<spice.elements.might.nouns.!random>" ],
+          "studying": "engaging in ceremonial combat for the reward of",
+          "foundingVerbTombInscription": [ "engage in ceremonial combat focused around *var* and *activity*" ]
+        },
+        "gambler": {
+          "singular": "gambler",
+          "plural": "gamblers",
+          "training": "mark",
+          "actions": [ "played games of chance through the night" ],
+          "guildhall": "gambling den",
+          "forged": "won in a bet",
+          "forge": "bet",
+          "items": [ "coin", "<spice.numbers.!random>-sided die" ],
+          "studying": "making decisions by arbitrarily choosing",
+          "foundingVerbTombInscription": [ "use *var* at random for the purpose of *activity*" ]
+        },
+        "tinker": {
+          "singular": "tinker",
+          "plural": "tinkers",
+          "training": "apprentice",
+          "actions": [ "assembled a new contraption" ],
+          "guildhall": "workshop",
+          "forged": "tinkered",
+          "forge": "tinker",
+          "items": [ "artifact" ],
+          "studying": "assembling contraptions based on",
+          "foundingVerbTombInscription": [ "assemble *var* into contraptions for *activity*" ]
+        },
+        "electrician": {
+          "singular": "electrician",
+          "plural": "electricians",
+          "training": "apprentice",
+          "actions": [ "soldered <spice.elements.circuitry.nounsPlural.!random> together" ],
+          "guildhall": "workshop",
+          "forged": "soldered",
+          "forge": "solder",
+          "items": [ "artifact" ],
+          "studying": "soldering wires to power",
+          "foundingVerbTombInscription": [ "solder *var* together for *activity*" ]
+        },
+        "explorer": {
+          "singular": "explorer",
+          "plural": "explorers",
+          "training": "meanderer",
+          "actions": [ "set out on an adventure to find a sacred <spice.elements.!random.nouns.!random>" ],
+          "guildhall": "tavern",
+          "forged": "found",
+          "forge": "find",
+          "items": [ "artifact" ],
+          "studying": "wandering in search of",
+          "foundingVerbTombInscription": [ "wander in search of *var* for *activity*" ]
+        },
+        "nomad": {
+          "singular": "nomad",
+          "plural": "nomads",
+          "training": "tramp",
+          "actions": [ "found a new home" ],
+          "guildhall": "yurt",
+          "forged": "found",
+          "forge": "find",
+          "items": [ "artifact" ],
+          "studying": "searching for",
+          "foundingVerbTombInscription": [ "wander in search of *var* for *activity*" ]
+        }
+      },
+  
+      "adjectives": [
+        "<spice.commonPhrases.astral.!random>",
+        "<spice.commonPhrases.odious.!random>",
+        "<spice.commonPhrases.intrepid.!random>",
+        "<spice.anatomicalLocation.!random>",
+        "<spice.colors.!random>",
+        "<spice.metals.!random>",
+        "<spice.elements.!random.adjectives.!random>",
+        "<spice.elements.!random.adjectives.!random>",
+        "<spice.commonPhrases.strange.!random>",
+        "<spice.commonPhrases.liberated.!random>",
+        "<spice.commonPhrases.rescued.!random>",
+        "<spice.commonPhrases.wrapped.!random>",
+        "<spice.commonPhrases.crowned.!random>",
+        "<spice.commonPhrases.bygone.!random>",
+        "<spice.commonPhrases.stamped.!random>",
+        "<spice.commonPhrases.eminent.!random>",
+        "<spice.commonPhrases.reputable.!random>",
+        "<spice.commonPhrases.traveling.!random>",
+        "<spice.commonPhrases.despicable.!random>",
+        "<spice.commonPhrases.kind.!random>",
+        "<spice.commonPhrases.artful.!random>",
+        "<spice.commonPhrases.humble.!random>",
+        "<spice.commonPhrases.embraced.!random>",
+        "<spice.commonPhrases.abandoned.!random>",
+        "<spice.commonPhrases.noble.!random>",
+        "<spice.instancesOf.bodyPartMaimed.!random>",
+        "<spice.commonPhrases.blessed.!random>",
+        "<spice.commonPhrases.betrothed.!random>",
+        "<spice.history.gospels.EarlySultanate.adjective.!random>",
+        "<spice.history.gospels.LateSultanate.adjective.!random>"
+      ],
+  
+      "adjectivesJudgement": [ "<spice.commonPhrases.strange.!random>", "<spice.commonPhrases.despicable.!random>", "<spice.elements.!random.adjectives.!random>", "<spice.commonPhrases.artful.!random>" ],
+  
+      "nouns": [
+        "<spice.time.partsOfDay.!random>",
+        "<spice.geometricPatterns.!random>",
+        "<spice.itemTypes.!random.!random>",
+        "<spice.commonPhrases.scion.!random>",
+        "<spice.commonPhrases.pretender.!random>",
+        "<spice.commonPhrases.bane.!random>",
+        "<spice.commonPhrases.boon.!random>",
+        "<spice.commonPhrases.hearth.!random>",
+        "<spice.commonPhrases.cult.!random>",
+        "<spice.commonPhrases.band.!random>",
+        "<spice.commonPhrases.ghost.!random>",
+        "<spice.commonPhrases.shire.!random>",
+        "<spice.commonPhrases.wagon.!random>",
+        "<spice.commonPhrases.spouse.!random>",
+        "<spice.commonPhrases.occasion.!random>",
+        "<spice.commonPhrases.bodyOfWater.!random>",
+        "<spice.commonPhrases.adventurer.!random>",
+        "<spice.instancesOf.tinyBodyPart.!random>",
+        "<spice.instancesOf.divineFeeling.!random>",
+        "<spice.instancesOf.profaneFeeling.!random>",
+        "<spice.instancesOf.sandOrSalt.!random>",
+        "<spice.history.regions.government.city-states.name.!random>",
+        "<spice.elements.!random.nouns.!random>",
+        "<spice.elements.!random.nouns.!random>",
+        "<spice.professions.!random>",
+        "<spice.history.regions.government.city-states.name.!random>",
+        "<spice.professions.!random.guildhall>",
+        "<spice.commonPhrases.farm.!random>",
+        "<spice.commonPhrases.kin.!random>",
+        "<spice.commonPhrases.shrine.!random>",
+        "<spice.commonPhrases.plan.!random>",
+        "<spice.commonPhrases.mug.!random>",
+        "<spice.commonPhrases.festival.!random>",
+        "<spice.commonPhrases.savior.!random>",
+        "<spice.commonPhrases.prayer.!random>",
+        "<spice.instancesOf.warrior.!random>",
+        "<spice.instancesOf.tutor.!random>",
+        "<spice.instancesOf.priest.!random>",
+        "<spice.history.gospels.EarlySultanate.vehicle.!random>",
+        "<spice.history.gospels.LateSultanate.vehicle.!random>"
+      ],
+  
+      "objectNouns": [
+        "<spice.geometricPatterns.!random>",
+        "<spice.itemTypes.!random.!random>",
+        "<spice.commonPhrases.hearth.!random>",
+        "<spice.commonPhrases.ghost.!random>",
+        "<spice.commonPhrases.shire.!random>",
+        "<spice.commonPhrases.wagon.!random>",
+        "<spice.instancesOf.tinyBodyPart.!random>",
+        "<spice.instancesOf.sandOrSalt.!random>",
+        "<spice.elements.!random.nouns.!random>",
+        "<spice.elements.!random.nouns.!random>",
+        "<spice.professions.!random>",
+        "<spice.professions.!random.guildhall>",
+        "<spice.commonPhrases.farm.!random>",
+        "<spice.commonPhrases.kin.!random>",
+        "<spice.commonPhrases.shrine.!random>",
+        "<spice.commonPhrases.mug.!random>"
+      ],
+  
+      "personNouns": [
+        "<spice.commonPhrases.scion.!random>",
+        "<spice.commonPhrases.pretender.!random>",
+        "<spice.commonPhrases.ghost.!random>",
+        "<spice.commonPhrases.spouse.!random>",
+        "<spice.commonPhrases.adventurer.!random>",
+        "<spice.commonPhrases.savior.!random>",
+        "<spice.professions.!random>",
+        "<spice.instancesOf.warrior.!random>",
+        "<spice.instancesOf.tutor.!random>",
+        "<spice.instancesOf.priest.!random>"
+      ],
+  
+      "placeNouns": [
+        "<spice.commonPhrases.hearth.!random>",
+        "<spice.commonPhrases.shire.!random>",
+        "<spice.commonPhrases.bodyOfWater.!random>",
+        "<spice.history.regions.government.city-states.name.!random>",
+        "<spice.professions.!random.guildhall>",
+        "<spice.commonPhrases.farm.!random>",
+        "<spice.commonPhrases.shrine.!random>"
+      ],
+  
+      "jewelry": [ "amulet", "bracelet", "talisman", "ring", "tiara", "anklet" ],
+  
+      "actornouns": [ "dancer", "spinner", "broker", "skipper", "shouter", "caller", "waker" ],
+  
+      "time": {
+        "partsOfDay": [ "dusk", "dawn", "noon", "midnight", "first light", "twilight" ]
+      },
+  
+  
+      "siteModifiers1": [ "anatomicalLocation", "2Dshapes", "3Dshapes", "typeOfVillage", "geometricPatterns", "ordinal" ],
+      "siteModifiers2": [ "basicColors", "ordinal", "anatomicalLocation", "2Dshapes", "3Dshapes", "metals" ],
+  
+      "basicColors": [ "red", "blue", "green", "ivory", "silver", "ebony", "amber", "cyan", "yellow", "purple", "black", "white", "brown" ],
+      "colors": [ "crimson", "scarlet", "cornsilk", "magnolia", "ivory", "silver", "platinum", "ebony", "onyx", "amaranth", "magenta", "telemagenta", "burgundy", "fuchsia", "vermilion", "amber", "citrine", "mahogany", "maroon", "coral", "marigold", "aurelion", "chartreuse", "cyan", "moss green", "pistachio", "turquoise", "viridian", "aquamarine", "cerulean", "azure", "cobalt", "indigo", "ultramarine" ],
+      "ordinal": [ "-1st", "0th", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th" ],
+      "anatomicalLocation": [ "sagittal", "median", "frontal", "coronal", "transverse", "anterior", "posterior", "dorsal", "ventral", "medial", "lateral", "proximal", "distal", "superior", "inferior", "contralateral", "ipsilateral", "bilateral", "unilateral", "rostral", "cranial", "anteversion", "retroversion", "axial", "parietal", "terminal" ],
+      "2Dshapes": [ "circle", "ring", "square", "polygon", "balbis", "tile", "polyform", "monogon", "henagon", "digon", "triangle", "quadrilateral", "rhomb", "rectangle", "rhomboid", "quadragon", "trapezus", "trapezoid", "pentagon", "hexagon", "apeirogon", "heptagon", "octagon", "decagon", "nonagon", "icosagon", "star", "hexagram", "octagram", "annulus", "arbelos", "crescent", "lune", "salinon", "triquetra", "semicircle", "spiral", "astroid", "cardioid", "ellipse", "deltoid", "heartagon", "oval", "ovoid" ],
+      "3Dshapes": [ "prism", "torus", "ellipsoid", "sphere", "cube", "tetrahedron", "pyramid", "cylinder", "cone", "polygon", "octohedron", "icosahedron", "dodecahedron", "spheroid", "hyperboloid", "paraboloid", "hosohedron", "dihedron" ],
+      "typeOfVillage": [ "hideout", "den", "shelter", "sanctuary", "refuge", "borough", "district", "precinct", "town", "village", "hamlet", "abode", "seat", "region", "quarter", "nook", "niche", "berth", "field", "zone", "point", "room", "site", "spot", "fringe", "environs", "central", "oppidan", "dwelling" ],
+      "metals": [ "aluminum", "bismuth", "brass", "bronze", "cadmium", "chromium", "cobalt", "copper", "gold", "iron", "lead", "magnesium", "mercury", "nickel", "platinum", "palladium", "silver", "steel", "tantalum", "tin", "titanium", "tungsten", "zinc" ],
+      "geometricPatterns": [ "cross", "knot", "quincunx", "star", "sickle", "tree", "rod", "flower", "triad", "seal", "rose", "ring", "pentagram", "eye", "ankh", "pentacle", "wheel", "tetractys", "heart", "trefoil", "spade", "diamond", "chevron", "crescent" ],
+  
+      "anatomicalPrefixes": [ "sub-", "hypo-", "infra-", "inter-", "super-", "supra-", "retro", "pro" ],
+  
+  
+      "siteNameForms": [ "The *nameRoot* *top1*" ],
+  
+      "gossip": {
+        "twoFaction": [
+          "*f1* stole @item.a@item.name from *f2*.",
+          "*f1* sold @item.a@item.name to *f2* for too much money.",
+          "*f1* slew a leader of *f2*.",
+          "*f1* cast doubt on the belief of *f2*.",
+          "*f1* insulted the women of *f2*.",
+          "*f1* tricked *f2* into sharing some of their freshwater.",
+          "*f1* sowed the fields of *f2* with salt.",
+          "*f1* disproved a famous theorem of *f2*.",
+          "*f1* dug up some ancestors of *f2*.",
+          "*f1* torched a village of *f2*.",
+          "*f1* repeatedly beat *f2* at dice.",
+          "*f1* released snakes into a camp of *f2*.",
+          "*f1* disparaged a famous poet revered by *f2*.",
+          "*f1* poisoned the freshwater of *f2*.",
+          "*f1* impersonated a leader of *f2*.",
+          "*f1* lead a raiding party on a camp of *f2*.",
+          "*f1* cooked *f2* a rancid meal.",
+          "*f1* told *f2* bawdy jokes.",
+          "*f1* lit a beacon fire to warn the enemies of *f2*.",
+          "*f1* refused *f2* entrance to a local library.",
+          "*f1* sold an adventurer a map for a treasure vault belonging to *f2*.",
+          "*f1* ate a bunch of fruit belonging to *f2*.",
+          "*f1* reprogrammed a robot belonging to *f2*.",
+          "*f1* burned a leader of *f2* in effigy.",
+          "*f1* gave *f2* unfavorable horoscope readings.",
+          "*f1* questioned the origins of the moon, insulting the beliefs of *f2*.",
+          "*f1* praised a highly entropic being, insulting *f2*."
+        ],
+  
+        "leadIns": [
+          "Did you hear?",
+          "I heard that",
+          "Someone told me that",
+          "Rumor is that",
+          "Bird chatter says that"
+        ]
+      },
+  
+      "pronouns": {
+        "subject": [ "he", "she" ],
+        "object": [ "him", "her" ],
+        "possessive": [ "his", "her" ]
+      },
+  
+      "temperaments": {
+        "Angry": {
+          "synonym": [ "anger", "fury" ],
+          "action": [ "<spice.instancesOf.disparaged.!random>" ]
+        }
+      },
+  
+      "itemTypes": {
+        "Axe": [ "edge", "hatchet", "fell", "hew" ],
+        "ShortBlade": [ "dirk", "point", "shiv", "shank", "kris" ],
+        "LongBlade": [ "edge", "brand", "glaive" ],
+        "Cudgel": [ "mace", "rod", "staff", "cosh" ],
+        "Rifle": [ "rifle", "cannon", "boomstick", "long arm" ],
+        "Pistol": [ "pistol", "gun", "sidearm" ],
+        "Head": [ "helm", "cap", "lid", "hood" ],
+        "Face": [ "veil", "guise", "mask" ],
+        "Body": [ "breast", "vest", "mail" ],
+        "Arm": [ "chain", "link", "band" ],
+        "Feet": [ "clogs", "cleats", "sneaks" ],
+        "Hands": [ "mitts", "muffs", "gloves" ],
+        "Floating": [ "orb", "sphere" ],
+        "Artifact": [ "frill", "toy", "gaw" ],
+        "Curio": [ "frill", "toy", "gaw" ],
+        "Shield": [ "guard", "aegis", "ward", "shield" ],
+        "Food": [ "bread", "feed", "meat", "chow" ],
+        "Book": [ "codex", "tome", "volume", "atlas", "lexicon", "folio", "omnibus", "opus" ],
+        "Implant": [ "organ", "chrome", "gear", "ware", "wire", "becoming", "enhancement" ]
+      },
+  
+      "commonPhrases": {
+        "astral": [ "astral", "shadow", "spectral", "illusory", "sublime", "abstract", "eternal", "primordial" ],
+        "intrepid": [ "intrepid", "bold", "courageous", "gallant", "lionhearted", "valiant" ],
+        "odious": [ "odious", "wicked", "devilish", "villainous", "abominable", "degenerate", "fiendish", "foul", "nefarious" ],
+        "lovers": [ "lovers", "<^.betrothed.!random>" ],
+        "eternally": [ "eternally", "forever", "always" ],
+        "entwined": [ "entwined", "braided", "embracing" ],
+        "blessed": [ "blessed", "exalted", "sacred" ],
+        "betrothed": [ "betrothed", "espoused", "joined", "mated" ],
+        "voice": [ "voice", "utter", "say", "sound" ],
+        "prayer": [ "prayer", "blessing" ],
+        "historic": [ "historic", "celebrated", "influential", "illustrious", "imperial" ],
+        "onlooker": [ "watcher", "beholder", "onlooker", "witness" ],
+        "noble": [ "noble", "virtuous", "honorable" ],
+        "corrupt": [ "corrupt", "fraudulent", "venal", "debauched", "base", "perfidious", "knavish", "treacherous" ],
+        "despots": [ "despots", "lords", "aristocrats", "leaders", "magistrates", "shepherds" ],
+        "found": [ "found", "discovered" ],
+        "inspired": [ "inspired", "roused", "stirred" ],
+        "prized": [ "prized", "precious", "cherished", "treasured" ],
+        "demonstrate": [ "demonstrate", "exhibit", "prove", "display", "evince" ],
+        "conquered": [ "conquered", "annexed", "discovered", "subjugated" ],
+        "tamed": [ "tamed", "pacified", "subdued", "gentled", "brought to heel" ],
+        "wild": [ "wild", "untamed", "feral", "savage", "barbaric" ],
+        "humble": [ "humble", "quiet", "modest", "gentle" ],
+        "settled": [ "settled", "roosted", "lodged", "resided", "took up residence" ],
+        "worship": [ "worship", "idolatry", "rituals", "love" ],
+        "morality": [ "morality", "decency", "virtue", "chastity", "godliness", "principles", "the moral code" ],
+        "restore": [ "restore", "rehabilitate", "rescue", "revive", "redeem", "rejuvenate", "win back" ],
+        "rife": [ "rife", "rampant", "prevalent", "reigning", "widespread" ],
+        "depravity": [ "depravity", "degeneracy", "decay", "wickedness", "perversion" ],
+        "commandeered": [ "commandeered", "hijacked", "annexed", "usurped" ],
+        "chastisement": [ "chastisement", "chastening", "rebuking", "<^.curse.!random>" ],
+        "remember": [ "remember", "recall" ],
+        "fromThenOn": [ "from then on", "from that day forth", "for the rest of <entity.name>'s life" ],
+        "oneStarryNight": [ "one starry evening", "on the night of a full moon", "at daybreak on the <spice.myth.mythicDays.!random>", "one night under the Beetle Moon", "one auspicious day", "on the anniversary of a great battle" ],
+        "scion": [ "child", "lamb", "heir", "scion", "seed", "kin", "babe", "heiress", "progeny", "sprout" ],
+        "ascended": [ "ascended to the throne", "took the crown", "ascended to the crown", "proclaimed <entity.objectPronoun>self sultan", "took the reins of power", "seized the crown", "seized the gilded scepter" ],
+        "killed": [ "killed", "murdered", "drawn and quartered", "exiled", "imprisoned", "launched into orbit", "buried deep under the earth", "trapped in <spice.elements.entity$elements[random].nouns.!random.article>", "tried but pardoned" ],
+        "pretender": [ "pretender", "claimant", "aspirant" ],
+        "strange": [ "strange", "weird", "curious", "rare", "marvelous", "uncanny" ],
+        "slaughtered": [ "slaughtered", "persecuted" ],
+        "liberated": [ "liberated", "freed", "rescued" ],
+        "rescued": [ "rescued", "salvaged", "retrieved", "extricated" ],
+        "wrapped": [ "wrapped", "sheathed", "swathed", "swaddled" ],
+        "crowned": [ "crowned", "declared", "proclaimed" ],
+        "ravaged": [ "ravaged", "rampaged through", "pillaged", "plundered", "wreaked havoc on", "laid waste to" ],
+        "allThroughout": [ "in", "throughout", "throughout the entirety of" ],
+        "scourge": [ "scourge", "terror", "bane", "pest", "woe", "sorrow" ],
+        "treating": [ "treating", "striking a deal", "conferring" ],
+        "bane": [ "bane", "ruin", "blight", "woe" ],
+        "boon": [ "boon", "friend", "gift" ],
+        "finesse": [ "finesse", "agility", "skill", "artfulness", "artistry", "dexterity", "prowess", "deftness" ],
+        "lostInTavern": [ "in a game of dice", "to a local thief", "to a local pickpocket", "in a foolhardy bet" ],
+        "ruins": [ "wastes", "ruin", "decay", "havoc", "barren", "flats", "badland", "dunes", "wreck", "bog", "marsh", "moor", "void", "quagmire" ],
+        "bygone": [ "bygone", "erstwhile", "once", "old" ],
+        "hearth": [ "hearth", "home", "hearthstone", "haunt", "seat", "roost" ],
+        "shortHearth": [ "home", "holme" ],
+        "yard": [ "yard", "fold", " quadrangle", "square", "quad" ],
+        "stretches": [ "stretches" ],
+        "lost": [ "lost", "vanished", "moldered", "desolate", "extinct" ],
+        "stamped": [ "stamped", "painted", "engraved", "embossed", "etched", "adorned", "carved" ],
+        "cult": [ "cult", "order", "society", "church", "folk", "brood", "family", "kith", "people", "clan", "flock", "sect", "kinfolk", "cabal", "host" ],
+        "family": [ "family", "kith", "clan", "brood", "kinfolk", "children", "folk", "tribe", "progeny" ],
+        "familySingular": [ "family", "clan", "brood", "tribe" ],
+        "familyPlural": [ "kith", "kinfolk", "children", "folk", "progeny" ],
+        "epic": [ "beautiful", "unsurpassed", "bewitching", "sublime" ],
+        "celebrated": [ "cried out in joy", "drank themselves into stupors", "told stories and renewed friendships" ],
+        "eminent": [ "great", "terrible", "ordained", "destined", "foretold", "eminent", "glorious", "famed", "honored", "venerable" ],
+        "whileTraveling": [ "while traveling", "as <entity.subjectPronoun> rode", "during a trek", "during an expedition", "while on an expedition", "while on a trek" ],
+        "luckily": [ "luckily", "by the grace of fate", "fortuitously", "by chance" ],
+        "band": [ "party", "band", "company", "troupe", "clique", "gang" ],
+        "rogue": [ "rogue", "nefarious", "bandit", "trickster", "criminal" ],
+        "in": [ "through", "around", "in" ],
+        "itWasDiscovered": [ "it was discovered", "the people learned", "the people of Qud learned" ],
+        "sultanClone": [ "a clone of <entity.name>", "a simulacrum of <entity.name>", "*var* twin" ],
+        "ghost": [ "ghost", "shade", "spectre", "devil", "wraith" ],
+        "calmly": [ "calmly", "gently", "quietly" ],
+        "someone": [ "someone", "somebody", "a mysterious person", "a child", "a woman", "a man", "a baby", "someone", "someone", "somebody", "someone", "somebody", "a mysterious person", "a child", "a woman", "a man", "someone", "someone", "somebody" ],
+        "group": [ "group", "sect", "organization", "party", "cabal", "group of friends", "group of lovers" ],
+        "farm": [ "farm", "farmstead", "homestead", "acre", "acreage", "tract" ],
+        "starapplefarm": [ "<^.farm.!random>", "orchard", "grove" ],
+        "pigfarm": [ "<^.farm.!random>", "ranch", "pasture" ],
+        "shire": [ "shire", "end", "hedge", "furrow", "hearth", "hold", "reach" ],
+        "secluded": [ "secluded", "quiet", "small", "remote" ],
+        "spouse": [ "spouse", "partner", "companion", "mate" ],
+        "marriage": [ "marriage", "union", "join", "wed", "matrimony", "nuptial", "wedlock", "betrothed", "love", "delight", "devotion" ],
+        "gift": [ "gift", "favor", "grant", "dower", "boon" ],
+        "inHonorOf": [ "in honor of the <^.occasion.!random>", "to honor the <^.occasion.!random>", "to show their appreciation", "in celebration of the <^.occasion.!random>", "to celebrate the <^.occasion.!random>" ],
+        "occasion": [ "occasion", "ceremony", "affair", "union" ],
+        "picks": [ "picks", "culls", "winnows", "plucks" ],
+        "bodyOfWater": [ "sea", "ocean", "lake", "lagoon", "pond", "cistern", "drink", "brine", "surf" ],
+        "larvae": [ "fry", "larvae", "grub", "maggots", "worms" ],
+        "adventurer": [ "adventurer", "wanderer", "traveler", "drifter", "nomad", "friend" ],
+        "hunter": [ "stalker", "assassin" ],
+        "entropist": [ "entropist" ],
+        "puff": [ "puff", "wisp", "noseful", "sniff" ],
+        "cooking": [ "cooking", "baking", "brewing", "roasting", "stewing", "searing", "braising", "boiling", "pickling", "fermenting", "frying", "broiling", "steaming", "grilling" ],
+        "recipes": [ "recipes", "dishes", "meals", "food", "vittle", "snacks", "cuisine", "cooking", "chow", "grub", "mess", "victual", "fare", "courses", "eats", "servings" ],
+        "door": [ "door", "portal", "entryway", "egress", "gate", "hatch" ],
+        "object": [ "object" ],
+        "trekked": [ "trekked", "journeyed", "traveled", "voyaged" ],
+        "yearsAgo": [ "years ago", "beyond the gulf of time", "back when the musa was perpetually ripe", "before the first <spice.personNouns.!random> roamed Qud", "early in the days after the reign of Resheph", "long ago", "when the <^.larvae.!random> first creeped from the <spice.placeNouns.!random>" ],
+        "practice": [ "practice", "art" ],
+        "people": [ "people", "folk", "communities", "kindred", "families", "kin" ],
+        "grave": [ "deep", "grave", "joyous", "heartfelt" ],
+        "reverence": [ "reverence", "awe", "worship", "adoration", "devotion", "piety", "deification", "love", "honor" ],
+        "sacred": [ "sacred", "holy", "divine", "hallowed", "angelic", "consecrated", "godly", "pure", "sanctified", "venerable" ],
+        "wisdom": [ "wisdom", "knowledge", "enlightenment" ],
+        "curse": [ "curse", "vex", "smite", "torment" ],
+        "plague": [ "plague", "curse", "vex" ],
+        "woe": [ "woe", "misery", "gloom", "anguish", "agony", "sorrow", "shame", "torment" ],
+        "supports": [ "supports", "protects", "promotes", "champions", "cheers" ],
+        "profane": [ "profane", "mock", "scorn", "violate", "blaspheme" ],
+        "misuse": [ "misuse", "abuse", "perversion" ],
+        "profanity": [ "profanity", "obscenity", "blasphemy", "impiety", "irreverence" ],
+        "harm": [ "harm", "abuse", "undermine", "wrong" ],
+        "sanctity": [ "sanctity", "divinity", "purity", "goodness", "<^.wisdom.!random>", "virtue" ],
+        "greetingFriend": [ "friend", "<^.adventurer.!random>" ],
+        "listen": [ "listen", "hark", "hear me", "mind what I say" ],
+        "learning": [ "learning", "discovering", "hearing of", "becoming acquainted with" ],
+        "kin": [ "kin", "people", "kind", "folk", "kinsfolk", "tribe", "clan" ],
+        "clan": [ "people", "clan", "tribe", "society" ],
+        "ways": [ "ways", "customs", "culture", "habits", "priorities", "manner" ],
+        "composed": [ "composed", "invented", "fashioned", "imagined", "consecrated" ],
+        "rituals": [ "rituals", "rites", "rites of passage", "customs", "practices", "ceremonies" ],
+        "services": [ "services", "service", "assistance", "work", "labor" ],
+        "helping": [ "helping", "assisting", "aiding" ],
+        "task": [ "task", "errand", "job", "project", "charge", "stint" ],
+        "learned": [ "learned", "determined", "found out", "ascertained", "gathered" ],
+        "learnedOf": [ "learned of", "learned about", "discovered", "found out about", "came upon" ],
+        "visited": [ "visited", "<^.trekked.!random> to" ],
+        "saw": [ "saw", "found", "discovered" ],
+        "retrieve": [ "retrieve", "find", "recover", "fetch", "salvage", "acquire", "get", "procure", "snag" ],
+        "traveling": [ "traveling", "visiting", "roaming" ],
+        "interesting": [ "interesting", "intriguing", "delightful", "fascinating" ],
+        "shrine": [ "relic", "shrine", "altar" ],
+        "blessing": [ "blessing", "honor", "favor", "boon", "comfort", "gift" ],
+        "despicable": [ "despicable", "disgraceful", "vile", "wretched", "loathsome", "foul", "cursed", "ghastly" ],
+        "horror": [ "horror", "abomination", "shame", "anathama", "atrocity" ],
+        "greatly": [ "greatly", "mightily", "much", "immensely" ],
+        "find": [ "find", "locate", "pinpoint" ],
+        "treasures": [ "treasures", "secrets", "riches", "pearls", "mysteries" ],
+        "hold": [ "hold", "hide", "contain" ],
+        "suspiciously": [ "suspiciously", "tentatively", "warily", "carefully", "anxiously" ],
+        "plan": [ "plan", "scheme", "idea", "stratagem", "ploy", "ruse" ],
+        "enacting": [ "enacting", "setting into motion", "putting into place" ],
+        "trek": [ "trek", "journey", "travel", "go", "hike", "wander" ],
+        "gather": [ "gather", "come together", "habitate together", "cluster", "assemble", "live together" ],
+        "gathering": [ "gathering", "conclave", "congregation", "settlement", "band", "flock", "society" ],
+        "love": [ "love", "revere", "honor", "worship", "cherish", "venerate", "esteem", "treasure", "pay homage to" ],
+        "abhor": [ "abhor", "detest", "denounce", "scorn", "dishonor" ],
+        "congregated": [ "congregated", "gathered", "flocked together", "massed" ],
+        "forever": [ "forever", "for all time", "now and forever", "in perpetuity" ],
+        "hark": [ "hark", "attend", "attention", "pay heed", "<^.adventurer.!random>" ],
+        "kind": [ "kind", "generous", "gracious", "compassionate", "gentle", "courteous", "lenient", "cordial" ],
+        "folks": [ "folks", "people", "beings" ],
+        "protect": [ "protect", "defend", "safeguard", "keep safe", "preserve" ],
+        "society": [ "society", "culture", "civic life", "social order" ],
+        "bequeathed": [ "bequeathed", "gave", "bestowed", "conferred", "entrusted", "granted" ],
+        "laws": [ "laws", "doctrine", "statutes", "edicts", "ordinances", "injunctions" ],
+        "protection": [ "protection", "support", "encouragement", "furtherance", "patronage" ],
+        "prohibited": [ "banned", "prohibited", "outlawed" ],
+        "honored": [ "honored", "celebrated", "lauded", "praised", "consecrated", "eulogized", "revered", "extolled" ],
+        "mug": [ "mug", "stein", "skin", "bladder", "ewer", "jug", "canteen", "glass", "cup" ],
+        "festival": [ "festival", "feast", "carnival", "jubilee", "holiday" ],
+        "merrily": [ "merrily", "gleefully", "cheerfully", "joyfully" ],
+        "artful": [ "artful", "masterful", "sly", "shrewd", "creative", "dramatic", "exquisite", "graceful", "poetic", "tasteful" ],
+        "bludgeoned": [ "bludgeoned", "smashed", "clubbed", "bashed", "pummeled", "beaten", "brained" ],
+        "stabbed": [ "stabbed", "shanked", "gored", "impaled" ],
+        "honoring": [ "honoring", "defending", "loving" ],
+        "sacked": [ "sacked", "destroyed", "pillaged", "ravaged", "burned down" ],
+        "importance": [ "importance", "value", "significance", "<^.sanctity.!random>", "<^.sanctity.!random>" ],
+        "abandoned": [ "abandoned", "deserted", "vacated", "abandoned" ],
+        "embraced": [ "embraced", "accepted", "adopted", "forgotten" ],
+        "settle": [ "settle", "visit", "dwell", "lodge", "take root", "take up residence" ],
+        "ship": [ "ship", "craft", "ark", "haul", "barge", "blimp" ],
+        "wagon": [ "wagon", "cab", "buggy", "chariot" ],
+        "coalition": [ "coalition", "alliance", "confederacy", "league", "conspiracy", "federation", "union", "party" ],
+        "fate": [ "fate", "fortune" ],
+        "foes": [ "foes", "enemies" ],
+        "thankful": [ "thankful", "grateful", "much obliged" ],
+        "reputable": [ "reputable", "eminent", "esteemed", "celebrated", "prominent", "renowned", "notable" ],
+        "savior": [ "savior", "liberator", "defender" ],
+        "celebration": [ "celebration", "joy", "jubilee", "gaiety", "jubilation" ],
+        "inauguration": [ "inauguration", "opening", "founding" ],
+        "vanquished": [ "vanquished", "conquered", "routed", "subdued", "triumphed over" ],
+        "might": [ "might", "power", "prowess" ],
+        "warning": [ "warning", "lesson", "admonition", "example", "forewarning" ],
+        "challenge": [ "challenge", "provoke", "aggrieve" ],
+        "observe": [ "observe", "mark", "regard", "behold", "read" ],
+        "wonder": [ "wonder", "astonishment", "awe", "reverence" ],
+        "marvel": [ "marvel", "stare", "be awed", "stand in awe" ],
+        "defied": [ "defied", "flouted", "mocked", "spurned", "thwarted", "scorned", "eluded" ],
+        "emerged": [ "emerged", "materialized", "sprang forth" ],
+        "celebrate": [ "celebrate", "remember", "observe", "extol", "rejoice in" ]
+      },
+  
+      "instancesOf": {
+        "approach": [ "approach", "meet", "begin", "match", "come at", "surround", "threaten", "accost" ],
+        "build": [ "build", "relocate", "manifest" ],
+        "observeInWonder": [ "<spice.commonPhrases.observe.!random> in <spice.commonPhrases.wonder.!random>", "<spice.commonPhrases.marvel.!random> at" ],
+        "explosives": [ "explosives", "implosives", "munitions", "neutron flux" ],
+        "justice": [ "justice", "love", "truth", "equality", "parity", "faith", "grace", "virtue", "honor", "benefience" ],
+        "criedOut": [ "cried out", "bellowed", "shouted" ],
+        "dearOnes": [ "friends", "lovers", "children", "cohorts", "comrades" ],
+        "rejoicedAt": [ "celebrated", "rejoiced at", "reveled at", "celebrated" ],
+        "unseated": [ "unseated", "ousted", "deposed", "dethroned", "<^.murderedVerb.!random>" ],
+        "ofCourse": [ "of course", "naturally", "undoubtedly", "obviously", "indeed" ],
+        "careFor": [ "care for", "look after", "wash", "maintain", "take care of", "protect", "clean", "scrub", "fix", "repair", "restore" ],
+        "reemerged": [ "reemerged", "appeared anew", "emerged anew", "reappeared" ],
+        "commonFolk": [ "commoners", "common folk", "plebians", "rabble", "herd", "masses" ],
+        "dwellOrWork": [ "dwell", "live", "work", "toil", "labor" ],
+        "seceded": [ "seceded", "separated", "segregated themselves", "insulated themselves", "sequestered themselves", "left" ],
+        "specialPlace": [ "vault", "crypt", "temple", "shrine", "sanctum", "reactor", "core" ],
+        "brokeFaithWith": [ "broke faith with", "betrayed", "committed treason against", "broke trust with", "deceived" ],
+        "yeGodless": [ "ye Godless", "ye Heathens", "ye Skeptics", "ye Doubters" ],
+        "venerated": [ "lifted up on chairs", "thrown into the air joyfully", "venerated as idols", "treated to a delightful feast" ],
+        "disparaged": [ "thrown off a cliff", "humiliated at a banquet", "launched into orbit", "trapped in <spice.elements.!random.nounsPlural.!random>" ],
+        "stamped_VAR": [ "<spice.commonPhrases.stamped.!random> with tiny images of *var*", "<spice.commonPhrases.stamped.!random> with fanciful depictions of *var*", "<spice.commonPhrases.stamped.!random> with beautiful *var*" ],
+        "backToLife": [ "<entity.name> had faked <entity.possessivePronoun> death <^.fakedDeath.!random>", "<spice.commonPhrases.sultanClone.!random> had been the one who died", "*var* life had secretly been saved <^.lifeSaveReasons.!random>" ],
+        "fakedDeath": [ "by forcing a peasant to impersonate <entity.objectPronoun>", "by switching places with <entity.possessivePronoun> twin", "with the clever use of a lifelike hologram" ],
+        "lifeSaveReasons": [ "with cybernetic surgery", "with astral projection", "by a pact with highly entropic beings" ],
+        "inYear": [ "in", "early in", "late in", "sometime in" ],
+        "afterTumultuousYears": [ "after several tumultuous years", "after a bout of <^.illness.!random>", "after having made enemies with a collective of <spice.professions.!random.plural>", "after murdering a popular rival <spice.elements.!random.murdermethods.!random>" ],
+        "illness": [ "depression", "gout", "consumption", "brain rust", "ironshank", "scurvy", "brain mites", "leprosy", "existential despair" ],
+        "abdicated": [ "abdicated the throne", "died under mysterious circumstances", "disappeared", "was assassinated" ],
+        "abdicate": [ "abdicate the throne", "let a regent rule in <entity.possessivePronoun> place", "take an extended sabbatical", "step down" ],
+        "ascensionReasons_VAR": [ "of *var* *var2*", "<entity.name> demanded it", "of *var* *var2*" ],
+        "sultanKnownFor": [ "<spice.elements.entity$elements[random].quality.!random>", "reputation for <spice.elements.entity$elements[random].practices.!random>" ],
+        "countered": [ "murdered each one <spice.elements.entity$elements[random].murdermethods.!random>", "spent the day <spice.elements.entity$elements[random].practices.!random>, and then continued <entity.possessivePronoun> reign like nothing had happened", "reassured <entity.possessivePronoun> counselors by <spice.commonPhrases.calmly.!random> explaining why <entity.subjectPronoun> disagreed" ],
+        "forestPlaces": [ "glen", "glade", "dell", "dale", "vale", "gorge", "meadow", "bosk", "grove", "wood", "weep", "weald", "root" ],
+        "farmyPrefixes": [ "salt", "far", "neath", "narrow" ],
+        "starapplefarmyPrefixes": [ "fruit", "apple", "red", "sweet", "<^.farmyPrefixes.!random>", "<^.farmyPrefixes.!random>", "<^.farmyPrefixes.!random>" ],
+        "pigfarmyPrefixes": [ "mud", "pig", "snout", "<^.farmyPrefixes.!random>", "<^.farmyPrefixes.!random>", "<^.farmyPrefixes.!random>" ],
+        "twoToTen": [ "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" ],
+        "tinyBodyPart": [ "hair", "nail", "finger", "skin" ],
+        "openingTime": [ "<^.inYear.!random> *year*", "<spice.commonPhrases.oneStarryNight.!random>" ],
+        "divineFeeling": [ "wisdom", "prudence", "judgement", "love", "sanctity", "divinity" ],
+        "profaneFeeling": [ "profanity", "cruelty", "blasphemy", "filth", "foulness", "vulgarity" ],
+        "aCurseUpon": [ "a <spice.commonPhrases.curse.!random> upon", "<spice.commonPhrases.curse.!random>", "<spice.commonPhrases.woe.!random> to", "<spice.commonPhrases.woe.!random> to" ],
+        "comeClose": [ "come, close!", "<spice.commonPhrases.greetingFriend.!random>!", "live and drink, <spice.commonPhrases.greetingFriend.!random>.", "<spice.commonPhrases.listen.!random>, <spice.commonPhrases.greetingFriend.!random>.", "by the <spice.adjectives.!random> <spice.nouns.!random>, <spice.commonPhrases.greetingFriend.!random>, <spice.commonPhrases.listen.!random>." ],
+        "unfortunately": [ "unfortunately", "to our great <spice.commonPhrases.woe.!random>", "sadly", "may <^.illness.!random> take us" ],
+        "fate": [ "fate", "chance", "the way the musa peels", "misfortune", "the <spice.commonPhrases.ghost.!random> of <^.fate.!random>" ],
+        "reward": [ "reward", "pay you for", "compensate you for" ],
+        "thank": [ "thank", "bless", "praise", "I'm grateful to", "I bow down to", "I smile on", "kiss" ],
+        "recently": [ "recently", "just a while ago", "a short while ago", "the other day" ],
+        "desire": [ "desire", "want", "need", "covet", "require", "yearn for", "am in need of", "have use for", "must have", "must get a hold of" ],
+        "wouldLikeTo": [ "would like to", "would love to", "need to", "must" ],
+        "have": [ "have", "acquire", "get a hold of", "obtain", "procure", "snag" ],
+        "villageActivityAdj": [ "trade", "artistic", "monetary", "spiritual", "prayer", "festive", "safety", "musical", "architectural", "technological" ],
+        "haveYouHeardOf": [ "have you heard of", "are you aware of", "are you acquainted with", "have you been introduced to" ],
+        "ifYouWouldDoTheSame": [ "if you would do the same", "if you would do it too", "if you would do it yourself" ],
+        "willYou": [ "will you", "would you", "what do you say" ],
+        "holdDear": [ "hold dear", "cherish", "value so highly" ],
+        "leansIn": [ "leans in", "comes close", "leans forward", "whispers" ],
+        "bless": [ "bless", "thank", "exalt", "give thanks for", "praise", "honor" ],
+        "curse": [ "curse", "a blight upon", "a curse upon" ],
+        "speakTo": [ "speak to", "talk to", "find" ],
+        "aboveAllElse": [ "above all else", "come what may", "as long as you are respectful", "per our custom" ],
+        "letItAlwaysBeSo": [ "let it always be so", "may that never change", "be it so <spice.commonPhrases.forever.!random>" ],
+        "flockedTo": [ "flocked to", "gathered in droves at", "amassed at", "herded in droves to" ],
+        "stepDown": [ "step down", "abdicate", "surrender power" ],
+        "murderedVerb": [
+          "stabbed to death",
+          "shanked",
+          "gunned down",
+          "poisoned",
+          "pushed off a cliff",
+          "tricked into jumping into a pool of <^.deadlyLiquids.!random>",
+          "drowned in a lake of <^.deadlyLiquids.!random>",
+          "threw into a pool of <^.deadlyLiquids.!random>",
+          "ate alive",
+          "assassinated",
+          "cooked for sustenance",
+          "chopped into small pieces",
+          "covered in <^.deadlyLiquids.!random>"
+        ],
+        "murdered": [
+          "stabbed to death",
+          "shanked",
+          "gunned down",
+          "poisoned",
+          "pushed off a cliff",
+          "tricked into jumping into a pool of <^.deadlyLiquids.!random>",
+          "drowned in a lake of *liquid*",
+          "thrown into a pool of <^.deadlyLiquids.!random>",
+          "murdered under mysterious circumstances",
+          "eaten alive",
+          "assassinated after disparaging",
+          "cooked for sustenance",
+          "chopped into small pieces",
+          "covered in <^.deadlyLiquids.!random>"
+        ],
+        "groupMurdered": [ "<^.groupMurdered_By.!random> by", "<^.groupMurdered_By.!random> by", "<^.groupMurdered_NotBy.!random>" ],
+        "groupMurdered_By": [ "sacrificed", "burned at the stake", "buried alive", "drawn and quartered", "mummified", "beheaded" ],
+        "groupMurdered_NotBy": [ "killed after cooking a rancid meal for", "<^.murderedSimple.!random> in retaliation for stealing from" ],
+        "deadlyLiquids": [ "lava", "acid", "neutron flux", "lava", "acid", "black ooze", "green goo", "brown sludge", "asphalt", "lava", "acid", "molten wax" ],
+        "murderedSimple": [ "<spice.commonPhrases.bludgeoned.!random>", "<spice.commonPhrases.stabbed.!random>", "shot" ],
+        "overTime": [ "over time", "over the years", "as the years passed", "eventually", "in time" ],
+        "lostInterestIn": [ "lost interest in", "forgot the <spice.commonPhrases.importance.!random> of", "renounced", "rejected" ],
+        "lostFaithIn": [ "lost faith in", "began to <spice.commonPhrases.abhor.!random>" ],
+        "forAllTime": [ "for all time", "for all eternity", "again", "ever again" ],
+        "furnitureStuckPreposition": [ "in", "under", "inside", "behind" ],
+        "bodyPartMaimed": [ "maimed", "dismembered", "crushed", "flattened", "severed", "punctured" ],
+        "sandOrSalt": [ "sand", "salt", "turf", "loam", "ground", "soil" ],
+        "chantedOrSang": [ "chanted", "sang", "shouted", "crooned", "yodeled", "roared" ],
+        "marriageBlessing": [
+          "<spice.commonPhrases.blessed.!random> are the <spice.commonPhrases.betrothed.!random>",
+          "<spice.commonPhrases.voice.!random> a <spice.commonPhrases.prayer.!random> for the <spice.commonPhrases.lovers.!random>"
+        ],
+        "warrior": [ "warrior", "gladiator", "champion", "mercenary", "duelist", "swordfolk", "axefolk", "daggerfolk", "gunfolk", "macefolk", "<spice.personNouns.!random>" ],
+        "tutor": [ "tutor", "sophist", "mentor", "lecturer", "scholar", "augur", "scientist", "philosopher", "sage", "iconoclast", "historian", "scribe" ],
+        "priest": [ "priest", "heretic", "pontiff", "monk", "cleric", "pagan", "anchorite", "priestess", "apostate" ],
+        "kindred": [ "kindred", "sibling", "cousin", "kinsmen", "kinswomen", "kinsfolk", "sib", "brother", "sister" ],
+        "warriorAdj": [ "noble", "honorable", "fearsome", "militant", "knightly", "merciless", "fierce", "brutish" ],
+        "tutorAdj": [ "wise", "shrewd", "learned", "erudite", "controversial", "cerebral", "profound", "methodical" ],
+        "priestAdj": [ "pious", "devout", "heretical", "godly", "moral", "saintly", "schismatic", "dissident" ],
+        "royalAdj": [ "divine", "imperial", "sovereign", "holy", "deific", "kingly", "queenly", "adopted" ],
+        "warriorIdeal": [ "bravery", "ferocity", "honor", "courage", "valor", "violence", "wardenship", "protection", "bloodshed", "war", "combat", "might" ],
+        "priestIdeal": [ "godliness", "god", "divinity", "virtue", "piety", "Gjaus", "faith", "holiness" ],
+        "warriorFoe": [ "death", "dying", "the void", "mortality", "misfortune", "battle", "foes", "adversaries", "enemies" ],
+        "trembleBefore": [ "fear", "quiver at", "tremble before", "dread", "shun", "be in awe of" ],
+        "tar": [ "tar", "asphalt", "goop", "resin", "glue", "tar", "tar" ]
+      },
+  
+      "proverbs": [
+        "<spice.instancesOf.bless.!random> *sacredThing*",
+        "<spice.instancesOf.curse.!random> *profaneThing*",
+        "only the <spice.personNouns.!random> can know *sacredThing*",
+        "at the <spice.placeNouns.!random> lies <spice.instancesOf.divineFeeling.!random>",
+        "at the <spice.placeNouns.!random> lies <spice.instancesOf.profaneFeeling.!random>",
+        "*ValuedOre* hold no value over *sacredThing*",
+        "plant seeds in *ArableLand* and reap *sacredThing*",
+        "the <spice.adjectives.!random> <spice.personNouns.!random> knows the <spice.commonPhrases.sanctity.!random> of *sacredThing*",
+        "the <spice.adjectives.!random> <spice.personNouns.!random> knows the <spice.commonPhrases.profanity.!random> of *profaneThing*",
+        "*Activity* leads to *profaneThing*",
+        "*Activity* is no way to <spice.instancesOf.bless.!random> *sacredThing*",
+        "welcome strangers *VillageActivity*, but teach them the <spice.commonPhrases.sanctity.!random> of *sacredThing*",
+        "welcome strangers *VillageActivity*, but teach them the <spice.commonPhrases.profanity.!random> of *profaneThing*",
+        "don't <spice.commonPhrases.trek.!random> to the <spice.placeNouns.!random>",
+        "a <spice.nouns.!random> today is worth a <spice.nouns.!random> tomorrow",
+        "knowing *sacredThing* means knowing the <spice.nouns.!random>",
+        "*SacredThing* cannot compare to *sacredThing*",
+        "like the <spice.nouns.!random> to the <spice.personNouns.!random>, so *sacredThing* to us",
+        "*sacredThing* dwells in the <spice.commonPhrases.hearth.!random>",
+        "do not ask the <spice.personNouns.!random> to teach <spice.commonPhrases.sanctity.!random>",
+        "keep an eye on your <spice.nouns.!random>",
+        "better to be <spice.adjectives.!random> than to be <spice.adjectives.!random>",
+        "find <spice.commonPhrases.sanctity.!random> in every <spice.nouns.!random>"
+      ],
+      "proverbsCoda": [
+        "<spice.instancesOf.bless.!random> *sacredThing*",
+        "<spice.instancesOf.curse.!random> *profaneThing*",
+        "only the <spice.personNouns.!random> can know *sacredThing*",      
+        "*ValuedOre* hold no value over *sacredThing*",
+        "plant seeds in *ArableLand* and reap *sacredThing*",
+        "the <spice.adjectives.!random> <spice.personNouns.!random> knows the <spice.commonPhrases.sanctity.!random> of *sacredThing*",
+        "the <spice.adjectives.!random> <spice.personNouns.!random> knows the <spice.commonPhrases.profanity.!random> of *profaneThing*",
+        "*Activity* leads to *profaneThing*",
+        "*Activity* is no way to <spice.instancesOf.bless.!random> *sacredThing*",
+        "welcome strangers *VillageActivity*, but teach them the <spice.commonPhrases.sanctity.!random> of *sacredThing*",
+        "welcome strangers *VillageActivity*, but teach them the <spice.commonPhrases.profanity.!random> of *profaneThing*",      
+        "knowing *sacredThing* means knowing the <spice.nouns.!random>",
+        "*SacredThing* cannot compare to *sacredThing*",
+        "like the <spice.nouns.!random> to the <spice.personNouns.!random>, so *sacredThing* to us",
+        "*sacredThing* dwells in the <spice.commonPhrases.hearth.!random>"      
+      ],
+  
+      "randomGerund": [ "constructing", "building", "worshipping", "destroying", "venerating", "discovering", "restoring", "dismantling" ],
+  
+      "lovesick": [
+        "*varReplacePeriod*, but what was the point?",
+        "*var* But *obj* didn't love you, so what did it matter?",
+        "While your heart withered, *varLower*",
+        "*var* You did it for *obj*. You did it all for *objShort*.",
+        "*sob*",
+        "*varReplacePeriod*, and the whole time you wept."
+      ],
+  
+      "textFilters": {
+        "angry": [ "NO!", "ARGH!" ],
+        "lallated": [ "*Noise* *Text* *Noise*", "*Noise* *Noise* *Text*", "*Text*", "*Text*", "*Text* *Noise* *Noise*" ]
+      },
+  
+      "myth": {
+        "mythicDays": [ "first day of autumn", "first day of spring", "first day of summer", "first day of winter", "summer solstice", "winter solstice" ],
+        "mythicPrepPlaces": [ "on a sacred stone cairn", "on the bank of an ancient river", "in the mouth of a she-wolf", "in a copse of sacred trees", "on a floating platform of polished chrome" ]
+      },
+  
+      "items": {
+        "suffixes": [ "icus", "ica", "acus", "ucus", "ocus", "ecus", "aca", "eca", "oca", "uca", "yca", "ycus" ],
+        "types": [ "<^.weapons.!random>", "<^.armor.!random>", "<^.misc.!random>" ],
+        "weapons": [ "sword", "axe", "hammer", "dagger", "rifle", "pistol" ],
+        "armor": [ "helm", "vest", "breastplate", "pair of boots", "mask", "pair of gloves" ],
+        "misc": [ "bracelet", "floating orb" ],
+        "blessing": [ "blessing", "gift", "joy", "victory", "rapture", "charm", "bliss", "pride", "wonder", "ecstasy", "jewel", "prize", "mirth", "solace", "triumph", "beauty", "grace", "glamor", "paragon", "dream", "lure", "promise", "boon", "nursling", "mite", "sprout", "urchin", "boy", "girl", "friend", "cohort", "cousin", "brother", "sister", "mother", "father", "comrade", "lover", "flame", "suitor", "foe", "rival", "star", "sun", "moon", "son", "daughter", "dear", "beloved", "pet", "flower" ]
+      },
+  
+      "numbers": [ "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "twenty", "twelve" ],
+      "digits": [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "A", "B", "C", "D", "E", "F" ],
+      "bigNumbers": [
+        "<^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random>",
+        "<^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random>",
+        "<^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random>",
+        "<^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random>",
+        "<^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random><^.digits.!random>"
+      ],
+  
+      "egregorePrefix": [
+        "<spice.3Dshapes.!random>",
+        "<spice.2Dshapes.!random>",
+        "<spice.geometricPatterns.!random>",
+        "<spice.3Dshapes.!random>",
+        "<spice.2Dshapes.!random>",
+        "<spice.geometricPatterns.!random>",
+        "<spice.colors.!random>",
+        "<spice.history.gospels.EarlySultanate.adjective.!random>",
+        "<spice.history.gospels.LateSultanate.adjective.!random>"
+      ],
+  
+      "extradimensional": {
+        "cultSymbols": [ "244", "225", "227", "228", "229", "230", "231", "232", "233", "234", "235", "236", "237", "238", "239", "252", "11", "12", "20", "157", "158", "168" ],
+        "cultForms": [ "<spice.commonPhrases.cult.!random> of *CultSymbol*" ],
+        "dimensionNames": [
+          "<^.realm.!random> of <spice.colors.!random>",
+          "<^.realm.!random> of <spice.metals.!random>",
+          "<^.void.!random> of <spice.colors.!random>",
+          "<^.void.!random> of <spice.metals.!random>",
+          "<^.realm.!random> of *DimensionSymbol*",
+          "<^.void.!random> of *DimensionSymbol*",
+          "<^.vacuous.!random> <spice.geometricPatterns.!random>",
+          "<^.immense.!random> <spice.geometricPatterns.!random>",
+          "<^.vacuous.!random> <spice.2Dshapes.!random>",
+          "<^.vacuous.!random> <spice.3Dshapes.!random>",
+          "<^.immense.!random> <spice.2Dshapes.!random>",
+          "<^.immense.!random> <spice.3Dshapes.!random>",
+          "<^.vacuous.!random> <spice.geometricPatterns.!random>",
+          "<spice.bigNumbers.!random>",
+          "<spice.bigNumbers.!random>",
+          "<spice.bigNumbers.!random>"
+        ],
+  
+        "realm": [ "realm", "sphere", "zone", "domain", "dominion", "orbit", "plane", "expanse", "unit", "quantity", "radius", "space", "degree", "stratum" ],
+        "void": [ "void", "nether", "vacuum", "nihility", "nullity", "abyss", "chasm", "fissure", "gulf", "gap", "lacuna", "womb", "nothingness", "schism" ],
+        "vacuous": [ "vacuous", "vacant", "hollow", "barren", "pale", "spotless", "blank", "empty", "prosaic", "dreary", "dead", "flat", "inert", "forsaken" ],
+        "immense": [ "colossal", "vast", "eternal", "boundless", "infinite" ],
+        "symbolOrNot": [ " ", " of *CultSymbol*" ],
+        "Beguiling": [ "Charming *cult*", "*cult* and Love" ],
+        "Burgeoning": [ "Verdant *cult*", "*cult*, Aspect of Plants" ],
+        "Clairvoyance": [ "All-Seeing *cult*", "*cult* and the Eye" ],
+        "Confusion": [ "Entropic *cult*", "*cult* and Entropy" ],
+        "Cryokinesis": [ "Frigid *cult*", "*cult*, Aspect of Winter" ],
+        "Domination": [ "Tyrannical *cult*" ],
+        "Disintegration": [ "*cult*, Aspect of the <^.void.!random>" ],
+        "WillForce": [ "Astral *cult*", "*cult* and Astral Projection" ],
+        "ForceBubble": [ "Hidden *cult*", "Lost *cult*" ],
+        "ForceWall": [ "Disjointed *cult*", "*cult*, the Divided" ],
+        "LightManipulation": [ "Shining *cult*", "*cult* and Light" ],
+        "MassMind": [ "Unified *cult*", "*cult*, Aspect of Oneness" ],
+        "MentalMirror": [ "Two-Faced *cult*", "*cult* and the Parallel" ],
+        "Precognition": [ "*cult* and the Before", "Oracular *cult*" ],
+        "Psychometry": [ "*cult*, Chrome and Brass", "*cult*, the Circuit-Maze" ],
+        "Pyrokinesis": [ "Fevered *cult*", "*cult*, Aspect of Fire" ],
+        "SpacetimeVortex": [ "traveling *cult*", "cosmic *cult*", "*cult*, the Door" ],
+        "StunningForce": [ "violent *cult*", "*cult*, Aspect of Inertia" ],
+        "SunderMind": [ "cerebral *cult*", "*cult* and the Mind" ],
+        "LifeDrain": [ "vampiric *cult*", "*cult*, the Succubus" ],
+        "Telekinesis": [ "*cult*, the Mover", "Long-Arm *cult*" ],
+        "Teleportation": [ "*cult*, the Here and There", "entangled *cult*" ],
+        "TeleportOther": [ "fickle *cult", "whimsical *cult*" ],
+        "TimeDilation": [ "*cult*, Now and Then", "Immortal *cult*" ],
+        "TemporalFugue": [ "*cult*, the Many", "popular *cult*" ]
+      },
+  
+      "seekers": {
+        "title": [
+          "<spice.colors.!random> *rank*",
+          "*rank*-in-<spice.colors.!random>",
+          "<spice.metals.!random> *rank*",
+          "<spice.ordinal.!random> *rank*",
+          "<spice.anatomicalLocation.!random> *rank*",
+          "*rank* in the Psychic <spice.2Dshapes.!random>",
+          "*rank* in the Psychic <spice.3Dshapes.!random>",
+          "*rank* of the <spice.geometricPatterns.!random>",
+          "*rank*-<spice.commonPhrases.scion.!random>",
+          "*rank*, <spice.commonPhrases.stamped.!random> in <spice.metals.!random>",
+          "*rank*-<spice.commonPhrases.ghost.!random>",
+          "*rank* and <spice.commonPhrases.spouse.!random>",
+          "*rank* of the <spice.commonPhrases.bodyOfWater.!random>",
+          "*rank* and bringer of <spice.instancesOf.illness.!random>",
+          "*rank* of the <spice.instancesOf.forestPlaces.!random>"
+        ]
+      },
+  
+      "advertisements": {
+        "merchants": [
+          "Come to $workshop for the highest quality wares.\n\nLocated $location.",
+          "The finest goods at $workshop.\n\nTravel $location.",
+          "Come!\n\n$location."
+        ]
+      },
+  
+      "tombstones": {
+        "intro": [ "Here Lies", "Rest in Peace", "Here Rests", "Here Lies the Body of", "Here Rests the Body of", "In Memory of", "In Loving Memory of" ],
+        "genericUrnIntro": [ "In Memory of", "In Loving Memory of", "Dream in Peace", "Here Lie the Remains of" ],
+        "barathrumiteUrnIntro": [ "In Memory of", "In Loving Memory of", "Dream in Peace", "Here Lie the Remains of" ],
+        "ydFreeholderUrnIntro": [ "Here Rests in the Light of Friends", "Rest with Friends", "Under this Reef Lies", "Dream by the Light of Our Freehold", "<^.genericUrnIntro.!random>", "<^.genericUrnIntro.!random>", "<^.genericUrnIntro.!random>", "<^.genericUrnIntro.!random>" ],
+        "eaterUrnIntro": [ "Here Rests in the Light of Gjaus", "Here Sheltered under Gjaus is", "In Memory of", "Rest in the Light of Gjaus", "In Loving Memory of", "Dream in Peace", "Dream in the Light of Gjaus" ],
+        "cryptIntroSingular": [ "Here Rests *familyCognomen*", "Here Lies *familyCognomen*", "Inside Lies *familyCognomen*", "Inside Rests *familyCognomen*", "Sheltered Here under Gjaus is *familyCognomen*" ],
+        "cryptIntroPlural": [ "Here Rest *familyCognomen*", "Here Lie *familyCognomen*", "Inside Lie *familyCognomen*", "Inside Rest *familyCognomen*", "Sheltered Here under Gjaus are *familyCognomen*" ],
+        "inscriptionBody": [
+          "<spice.instancesOf.murdered.!random> by <^.aCreature.!random>",
+          "<^.itemDeath.!random>",
+          "<^.factionDeath.!random>",
+          "<^.specialCausesDeath.!random>",
+          "<^.furnitureDeath.!random>",
+          "<^.martyrDeath.!random>"
+        ],
+        "cryptPlaque": {
+          "familyTitleSingular": [ "*familyName*", "The <spice.commonPhrases.familySingular.!random> of *familyName*", "The *familyName* <spice.commonPhrases.familySingular.!random>", "The Family of *familyName*", "The *familyName* Family" ],
+          "familyTitlePlural": [ "The <spice.commonPhrases.familyPlural.!random> of *familyName*", "The *familyName* <spice.commonPhrases.familyPlural.!random>" ],
+          "tutor": {
+            "familyCognomen": [ "the *tutor* of", "the <spice.instancesOf.tutorAdj.!random> *tutor* of", "the <spice.instancesOf.tutorAdj.!random> *personNouns* of", "the <spice.adjectives.!random> *tutor* of" ],
+            "familyWords": [
+              "<spice.commonPhrases.wisdom.!random> *markovSeed:is*",
+              "Only the <spice.instancesOf.tutorAdj.!random> know *markovSeed:what*",
+              "<spice.commonPhrases.wisdom.!random>, <spice.elements.scholarship.nounsPlural.!random>, and *markovSeed:a*",
+              "Question *markovSeed:the*"
+            ]
+          },
+          "warrior": {
+            "familyCognomen": [ "the *warrior* of", "the <spice.instancesOf.warriorAdj.!random> *warrior* of", "the <spice.instancesOf.warriorAdj.!random> *personNouns* of", "the <spice.adjectives.!random> *warrior* of" ],
+            "familyWords": [
+              "<spice.instancesOf.warriorIdeal.!random> *markovSeed:is*",
+              "<spice.instancesOf.approach.!random> <spice.instancesOf.warriorFoe.!random> *markovSeed:with*",
+              "<spice.instancesOf.trembleBefore.!random> *markovSeed:the*",
+              "<spice.instancesOf.warriorIdeal.!random>, <spice.elements.might.nounsPlural.!random>, and *markovSeed:a*"
+            ]
+          },
+          "priest": {
+            "familyCognomen": [ "the *priest* of", "the <spice.instancesOf.priestAdj.!random> *priest* of", "the <spice.instancesOf.priestAdj.!random> *personNouns* of", "the <spice.adjectives.!random> *priest* of" ],
+            "familyWords": [
+              "<spice.instancesOf.priestIdeal.!random> *markovSeed:is*",
+              "<spice.instancesOf.bless.!random> *markovSeed:the*",
+              "<spice.commonPhrases.love.!random> the <spice.nouns.!random>, *markovSeed:for,so,because*",
+              "<spice.commonPhrases.voice.!random> a <spice.commonPhrases.prayer.!random> *markovSeed:for*"
+            ]
+          },
+          "royal": {
+            "familyCognomen": [ "the *kindred* of", "the <spice.instancesOf.royalAdj.!random> *kindred* of", "the <spice.instancesOf.royalAdj.!random> *personNouns* of", "the <spice.adjectives.!random> *kindred* of" ],
+            "familyWords": [
+              "Our <spice.nouns.!random> *markovSeed:is*",
+              "We *markovSeed:are,do,see,feel,know,have,say,go,take*",
+              "<spice.commonPhrases.hark.!random>! *shortMarkov*"
+            ]
+          }
+        },
+        "aCreature": [ "*aCreatureName*", "*aCreatureName*", "*aLegendaryCreatureName*" ],
+        "specialCausesDeath": [ "died of natural causes", "died of old age", "died of <spice.adjectives.!random> causes", "died of <spice.adjectives.!random> causes" ],
+        "factionDeath": [ "<spice.instancesOf.murdered.!random> by *factionName*", "<spice.instancesOf.groupMurdered.!random> *factionName*" ],
+        "furnitureDeath": [ "crushed under *furnitureName.an*", "trapped inside *furnitureName.an*", "got *their* *bodyPartName* stuck <spice.instancesOf.furnitureStuckPreposition.!random> *furnitureName.an*" ],
+        "martyrDeath": [
+          "<spice.instancesOf.murdered.!random> for <spice.commonPhrases.honoring.!random> *sacredThing*",
+          "<spice.instancesOf.murdered.!random> for *sacredThing*",
+          "<spice.instancesOf.groupMurdered_By.!random> for <spice.commonPhrases.honoring.!random> *sacredThing*",
+          "<spice.instancesOf.groupMurdered_By.!random> for *sacredThing*"
+        ],
+        "itemDeath": [
+          "crushed to death by a falling *itemName*",
+          "had *their* *bodyPartName* <spice.instancesOf.bodyPartMaimed.!random> by *itemName.an*",
+          "killed in a duel over *itemName.an*",
+          "fell from a cliff trying to recover a lost *itemName*",
+          "succumbed to despair after losing *itemName.an*",
+          "smashed *itemName.an* into *itemName2.an*",
+          "<spice.commonPhrases.bludgeoned.!random> with *itemName.an* by <^.aCreature.!random>",
+          "<spice.commonPhrases.bludgeoned.!random> with *itemName.an* by <^.aCreature.!random>",
+          "swallowed *itemName.an*",
+          "tried using *itemName.an* as *bodyPartName.a* prosthetic *bodyPartName*"
+        ]
+      },
+  
+      "villages": {
+        "description": [
+          "*terrainFragment*, <spice.commonPhrases.people.!random> <spice.commonPhrases.gather.!random> in <spice.commonPhrases.reverence.!random> of *sacredThing*",
+          "<spice.commonPhrases.people.!random> <spice.commonPhrases.gather.!random> *terrainFragment* in <spice.commonPhrases.reverence.!random> of *sacredThing*",
+          "*terrainFragment*, <spice.commonPhrases.people.!random> <spice.commonPhrases.gather.!random> to <spice.commonPhrases.profane.!random> *profaneThing*",
+          "<spice.commonPhrases.people.!random> <spice.commonPhrases.gather.!random> *terrainFragment* to <spice.commonPhrases.profane.!random> *profaneThing*",
+          "*terrainFragment*, there's a <spice.commonPhrases.gathering.!random> of *faction* and their <spice.commonPhrases.kin.!random>",
+          "there's a <spice.commonPhrases.gathering.!random> of *faction* and their <spice.commonPhrases.kin.!random> *terrainFragment*"
+        ],
+  
+        "reasonForFounding": {
+          "farming": {
+            "defaultFoundingText": [ "because of the *ArableLand* nearby" ],
+            "sacredThing": [ "finding *ArableLand* for those who love *SacredThing*" ],
+            "profaneThing": [ "those who oppose *ArableLand* and *SacredThing*" ]
+          },
+          "escapePersecution": {
+            "defaultFoundingText": [ "to escape persecution from those who despise *SacredThing*" ],
+            "sacredThing": [ "escaping persecution for loving *SacredThing*" ],
+            "profaneThing": [ "the persecutors of those who love *SacredThing*" ]
+          },
+          "monastery": {
+            "defaultFoundingText": [ "for the contemplation of *SacredThing*" ],
+            "sacredThing": [ "the contemplation of *SacredThing*" ],
+            "profaneThing": [ "profaning *SacredThing*" ]
+          },
+          "outpost": {
+            "defaultFoundingText": [ "to defend *SacredThing* and the practice of *Activity*" ],
+            "sacredThing": [ "defending *SacredThing*" ],
+            "profaneThing": [ "attacking *SacredThing*" ]
+          },
+          "prospecting": {
+            "defaultFoundingText": [ "to search for *ValuedOre*" ],
+            "sacredThing": [ "finding the ideal place for *Activity*" ],
+            "profaneThing": [ "hating *Activity*" ]
+          },
+          "proselytization": {
+            "defaultFoundingText": [ "to spread the gospel of *SacredThing*" ],
+            "sacredThing": [ "spreading the gospel of *SacredThing*" ],
+            "profaneThing": [ "those who profane *SacredThing*" ]
+          }
+        },
+        "SignatureHistoricObject": [ "the oldest *var*", "the purest *var*", "the *var* of *legendaryFigure*" ],
+  
+        "grewTiredOf": [ "I grew tired of *Activity*", "for years I spent my time *Activity*" ],
+        "immigrants": {
+          "immigrantPopReason": [ "After years of *Activity*, we came upon this village and integrated with its villagers." ]
+        },
+  
+        "government": {
+          "representativeDemocracy": {
+            "council": {
+              "mayorTemplate": [ "Councilor" ],
+              "governor": [ "the council" ]
+            },
+            "senate": {
+              "mayorTemplate": [ "Senator" ],
+              "governor": [ "the senate" ]
+            },
+            "parliament": {
+              "mayorTemplate": [ "Parliamentarian" ],
+              "governor": [ "parliament" ]
+            }
+          }
+        },
+  
+        "food": {
+          "specialDishNames": [ "*descriptor* *dish*", "*descriptor.possessive* *dish*", "*dish* of the *descriptor*", "*dish* *descriptor*" ]
+        },
+  
+        "festivalName": [ "<spice.commonPhrases.festival.!random> of the <spice.adjectives.!random> <spice.nouns.!random>", "<spice.adjectives.!random> <spice.nouns.!random> <spice.commonPhrases.festival.!random>" ],
+  
+        "mayor": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants. They asked me to <^.villageTask.!random>." ],
+          "villageTask": [ "employ my magisterial skills and lead the village" ],
+          "introDialog": [ "<^.welcome.!random.capitalize>. <^.hereYoullFind.!random.capitalize>. <^.youMayDrink.!random.capitalize>." ],
+          "welcome": [ "welcome to the village of *villageName*, <spice.commonPhrases.adventurer.!random>", "<spice.commonPhrases.adventurer.!random>, welcome to the village of *villageName*" ],
+          "hereYoullFind": [ "here you will find shade and vittle, along with other provisions to help you better scour the rust-caves for treasure", "we are a <spice.commonPhrases.clan.!random> who <spice.commonPhrases.love.!random> *sacredThing* and <spice.commonPhrases.abhor.!random> *profaneThing*" ],
+          "youMayDrink": [ "<spice.instancesOf.aboveAllElse.!random>, you may drink of our freshwater and quench your thirst" ]
+        },
+        "warden": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants. They asked me to <^.villageTask.!random>." ],
+          "villageTask": [ "employ my martial skills and protect the village" ],
+          "introDialog": [ "Watch yourself, <spice.commonPhrases.adventurer.!random>.", "Live and drink, <spice.commonPhrases.adventurer.!random>.", "Stay out of trouble, <spice.commonPhrases.adventurer.!random>.", "I'm watching you, <spice.commonPhrases.adventurer.!random>." ]
+        },
+        "merchant": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants, and I <^.villageTask.!random>." ],
+          "villageTask": [ "set up a shop for my trade" ]
+        },
+        "tinker": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants, and I <^.villageTask.!random>." ],
+          "villageTask": [ "set up a workshop and repair the village's gadgets" ]
+        },
+        "apothecary": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants, and I <^.villageTask.!random>." ],
+          "villageTask": [ "set up a shop and mix elixirs" ]
+        },
+        "villager": {
+          "reasonIBecame": [ "<spice.villages.grewTiredOf.!random.capitalize>. <^.settledHere.!random.capitalize>" ],
+          "settledHere": [ "I came upon this village and its inhabitants, and I <^.villageTask.!random>." ],
+          "villageTask": [ "settled down" ]
+        },
+        "pet": {
+          "originStory": [ "@Name@ just showed up one day and started *VillageActivity*.", "@They@ just showed up one day and started *VillageActivity*.", "@They've@ been here for as long as I remember, *VillageActivity*.", "@Name@ @has@ been here for as long as I remember, *VillageActivity*.", "@Name@? Who knows.", "Ask @them@ yourself.", "Perhaps @they@ thought @they@ could find *ValuedOre* here.", "Oh, @Name@? I assume because of @their@ love of *SacredThing*." ]
+        }
+      },
+  
+      "quests": {
+        "questContext": {
+          "itemNameMutation": [ "*adj* *itemName*", "*adj* *itemName*", "*adj* *itemName*", "*itemName.cap* of the *adj.cap* *noun.cap*" ]
+        },
+  
+        "intro": [ "I'm looking for work.", "Do you have work that needs doing?", "My services are available if you have work to offer.", "Is there work around here?" ],
+        "thanks": [ "our thanks, <spice.commonPhrases.adventurer.!random>", "thank you for your service, <spice.commonPhrases.adventurer.!random>", "<spice.commonPhrases.adventurer.!random>, you have our thanks" ],
+  
+        "FindaSpecificItem": {
+          "sacred": {
+            "intro": [ "<spice.instancesOf.comeClose.!random> <^.weUsedTo.!random.capitalize>", "<^.heyWeUsedTo.!random>" ],
+            "afterLearning": [ "but after <spice.commonPhrases.learning.!random> the *sanctityOfSacredThing*, we <^.changedAndComposed.!random>" ],
+            "weUsedTo": [ "my <spice.commonPhrases.kin.!random> <^.spentOurDays.!random>", "you know, once my <spice.commonPhrases.kin.!random> <^.spentOurDays.!random>", "there was a time where my <spice.commonPhrases.kin.!random> <^.spentOurDays.!random>" ],
+            "heyWeUsedTo": [ "<spice.commonPhrases.greetingFriend.!random>, <^.weUsedTo.!random>" ],
+            "spentOurDays": [ "used to spend our days *Activity*", "would spend all our time *Activity*", "would be *Activity* all day", "would spend our days *Activity*" ],
+            "changedAndComposed": [ "<^.changedWays.!random> and <^.composedRituals.!random>" ],
+            "changedWays": [ "changed our <spice.commonPhrases.ways.!random>" ],
+            "composedRituals": [ "<spice.commonPhrases.composed.!random> new <spice.commonPhrases.rituals.!random>" ],
+            "lostOur": [ "*name* lost our *itemName*", "our *itemName* *were* stolen from us", "<spice.instancesOf.fate.!random> has separated us from our *itemName*" ],
+            "willingToRecover": [ "would you be willing to recover *it* for us?", "would you seek *it* out and return *it* to us?", "we need someone to recover *it*, <spice.commonPhrases.greetingFriend.!random>. Will you do it?" ],
+            "takenTo": [ "my <spice.commonPhrases.kin.!random> tell me *it* *has* been taken to *deliveryTarget*", "we hear *it* *has* been taken to *deliveryTarget*", "I hear *it* *has* been taken to *deliveryTarget*" ],
+            "rewardYou": [ "we will <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>" ]
+          },
+          "personal": {
+            "intro": [ "<spice.instancesOf.comeClose.!random>", "<spice.instancesOf.thank.!random> the <spice.adjectives.!random> <spice.nouns.!random> that you are here, <spice.commonPhrases.greetingFriend.!random>." ],
+            "iHaveATask": [ "I have a <spice.commonPhrases.task.!random> for you", "I have a <spice.commonPhrases.task.!random> that needs doing", "I could use you for a <spice.commonPhrases.task.!random>", "there's a <spice.commonPhrases.task.!random> you could do for me" ],
+            "rumor": [ "<spice.instancesOf.recently.!random> <^.someoneLearned.!random>", "<spice.instancesOf.recently.!random> <^.iVisited.!random>", "<spice.instancesOf.recently.!random> <^.iLost.!random>" ],
+            "someoneLearned": [ "I <spice.commonPhrases.learned.!random> that <^.itemAtPlace.!random>", "*villagerName* <spice.commonPhrases.learned.!random> that <^.itemAtPlace.!random>", "it was brought to my attention that <^.itemAtPlace.!random>" ],
+            "itemAtPlace": [ "there's *itemName.an* nearby in *itemLocation*", "*itemLocation* is home to *itemName.an*", "*itemName.an* *itemName.have* arrived at *itemLocation*" ],
+            "iVisited": [ "I <spice.commonPhrases.visited.!random> *itemLocation* and <spice.commonPhrases.saw.!random> *itemName.an*" ],
+            "iLost": [ "I <spice.commonPhrases.visited.!random> *itemLocation* and lost *itemName.an*", "I lost my *itemName* at *itemLocation*" ],
+            "loveToHave": [ "*NeedsItemFor*, I <spice.instancesOf.desire.!random> *it*", "*NeedsItemFor*, I <spice.instancesOf.wouldLikeTo.!random> <spice.instancesOf.have.!random> *it*" ],
+            "ifYouRetrieveIt": [ "if you <spice.commonPhrases.retrieve.!random> *it* for me, I'll <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>", "<spice.commonPhrases.retrieve.!random> *it* and I'll <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>", "I'm willing to <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random> if you <spice.commonPhrases.retrieve.!random> *it* for me" ],
+            "willYouDoIt": [ "will you do it?", "will you?", "what say you?", "what do you think?" ]
+          }
+        },
+  
+        "FindaSite": {
+          "travelers": {
+            "intro": [ "<spice.quests.FindaSpecificItem.personal.intro.!random>" ],
+            "cameToOurVillage": [ "<spice.commonPhrases.traveling.!random> *<spice.personNouns.!random>* came to our village the other day" ],
+            "spokeOfPlace": [ "while *GuestActivity*, they spoke of a <spice.commonPhrases.interesting.!random> place, *site*" ],
+            "wouldYouFindIt": [ "will you find it for us?", "would you be willing to locate it?" ],
+            "greatBoon": [ "it would be a great <spice.commonPhrases.gift.!random> to the <spice.instancesOf.villageActivityAdj.!random> prospects of our village" ],
+            "rewardYou": [ "we will <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>" ]
+          },
+          "records": {
+            "intro": [ "<spice.commonPhrases.adventurer.!random>, we've been <^.poringOver.!random> and <^.weHaveLearned.!random> a nearby location forgotten to our people, *siteInitLower*" ],
+            "whatTreasures": [ "what <spice.commonPhrases.treasures.!random> might this place <spice.commonPhrases.hold.!random>" ],
+            "ifYouFindIt": [ "if you <spice.commonPhrases.find.!random> it for us, <spice.quests.FindaSpecificItem.sacred.rewardYou.!random>" ],
+            "poringOver": [ "poring over our records", "sharing stories with each other", "reading the village annals", "speaking to *<spice.personNouns.!random>*" ],
+            "weHaveLearned": [ "we <spice.commonPhrases.learnedOf.!random>" ]
+          },
+          "typeOfDirections": {
+            "radius": {
+              "intro": [ "we hear that it's located next to *landmark*" ]
+            },
+  
+            "direction": {
+              "intro": [ "we hear it's located somewhere between *min* and *max* parasangs *direction* of *landmark*" ]
+            },
+  
+            "path": {
+              "intro": [ "we hear you can find it by following the *path* that passes through *landmark* *direction*" ]
+            }
+          }
+        },
+  
+        "InteractWithAnObject": {
+          "holyitem": {
+            "intro": [ "<spice.commonPhrases.adventurer.!random>, <spice.instancesOf.haveYouHeardOf.!random> the *itemName* at *deliveryTarget*" ],
+            "itIsHoly": [ "*It* is a <spice.commonPhrases.sacred.!random> <spice.commonPhrases.shrine.!random> to us" ],
+            "itIsDespicable": [ "*It* is a <spice.commonPhrases.despicable.!random> <spice.commonPhrases.horror.!random> to *sacredThing* and everything else we <spice.instancesOf.holdDear.!random>" ],
+            "willInteract": [ "often we make pilgrimages to *verb* *it* and contemplate *sacredThing*" ],
+            "honorUs": [ "it would honor us <spice.instancesOf.ifYouWouldDoTheSame.!random>", "it would be a <spice.commonPhrases.blessing.!random> <spice.instancesOf.ifYouWouldDoTheSame.!random>" ],
+            "honorUsDesecrate": [ "it would honor us <spice.commonPhrases.greatly.!random> if you *verb* *it*", "it would be a <spice.commonPhrases.blessing.!random> if you *verb* it" ],
+            "willYou": [ "<spice.instancesOf.willYou.!random>" ],
+            "rewardYou": [ "we will <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>" ]
+          },
+          "strangeplan": {
+            "intro": [ "*looks around <spice.commonPhrases.suspiciously.!random>*", "*looks around <spice.commonPhrases.suspiciously.!random> and <spice.instancesOf.leansIn.!random>*" ],
+            "comeClose": [ "<spice.instancesOf.comeClose.!random>" ],
+            "myPlan": [ "my *plan* has nearly come to fruition. <^.oneMoreStep.!random.capitalize>", "my *plan* is nearly complete. <^.oneMoreStep.!random.capitalize>", "I have a secret *plan* I'm <spice.commonPhrases.enacting.!random>" ],
+            "oneMoreStep": [ "there is but one more step", "there is just a single step remaining", "only one more thing must be done" ],
+            "goTo": [ "I need someone to go to *deliveryTarget* and *verb* the *itemName* there" ],
+            "IRewardYou": [ "I will <spice.instancesOf.reward.!random> your <spice.commonPhrases.services.!random>" ],
+            "byThe_TellNoOne": [ "by *sacredThing*, <^.tellNoOne.!random>", "<^.tellNoOne.!random>" ],
+            "tellNoOne": [ "tell no one of this", "speak to no one about this", "this conversation never happened" ]
+          }
+        }
+      },
+  
+      "construction": {
+        "adjectives": [ "strong", "sturdy", "tight", "flimsy", "quality", "massive" ]
+      },
+  
+      "cooking": {
+        "ate": [ "You eat the meal." ],
+        "cookTemplate": [ "You toss *ingredients* into a pot and stir.", "You gather whatever you can find for your meal: *ingredients*.\n\nYou toss them in a pot and stir.", "Rummaging over your surroundings, you find these ingredients: *ingredients*.\n\nYou toss them in a pot and stir.", "You gather some fixings: *ingredients*.\n\nYou toss them in a pot and stir." ],
+        "ingredient": [
+          "<^.pinchOf.!random> <^.terrain.$terrain.someIngredients.!random>",
+          "<^.pinchOf.!random> <spice.adjectives.!random> <^.terrain.$terrain.someIngredients.!random>",
+          "<^.terrain.$terrain.aIngredients.!random.article>",
+          "<spice.adjectives.!random.article> <^.terrain.$terrain.aIngredients.!random>",
+          "<^.pinchOf.!random> <^.terrain.$terrain.someIngredients.!random>",
+          "<^.pinchOf.!random> <spice.adjectives.!random> <^.terrain.$terrain.someIngredients.!random>",
+          "<^.terrain.$terrain.aIngredients.!random.article>",
+          "<spice.adjectives.!random.article> <^.terrain.$terrain.aIngredients.!random>",
+          "<^.pinchOf.!random> <^.terrain.General.someIngredients.!random>",
+          "<^.pinchOf.!random> <spice.adjectives.!random> <^.terrain.General.someIngredients.!random>",
+          "<^.terrain.General.aIngredients.!random.article>",
+          "<spice.adjectives.!random.article> <^.terrain.General.aIngredients.!random>"
+        ],
+        "pinchOf": [ "a pinch of", "some", "some", "a dash of", "a smidgen of", "a sprinkle of", "a nip of", "a dram of" ],
+        "cookbooks": {
+          "genericName": [ "The <spice.nouns.!random> of <spice.commonPhrases.cooking.!random>", "The <spice.commonPhrases.cooking.!random> of the <spice.nouns.!random>", "$markovTitle", "<^.cookingPrefix.!random> $markovTitle", "$markovTitle", "<^.cookingPrefix.!random> $markovTitle", "<spice.adjectives.!random> <spice.commonPhrases.recipes.!random>", "<spice.commonPhrases.cooking.!random> <spice.adjectives.!random> <spice.commonPhrases.recipes.!random>" ],
+          "focalName": [ "$focus: the <spice.nouns.!random> of <spice.commonPhrases.cooking.!random>", "The <spice.nouns.!random> of $focus", "<spice.commonPhrases.cooking.!random> with $focus", "$focus: $markovTitle", "$focus: $markovTitle", "$focus: $markovTitle", "<spice.adjectives.!random> <spice.commonPhrases.recipes.!random> with $focus", "<spice.commonPhrases.cooking.!random> <spice.adjectives.!random> <spice.commonPhrases.recipes.!random> with $focus" ],
+          "cookingPrefix": [ "<spice.commonPhrases.cooking.!random>:" ]
+        },
+        "recipeNames": {
+          "foods": [ "bread", "loaf", "slaw", "stew", "soup", "brisket", "borscht", "dip", "baklava", "compote", "hash", "porridge", "matz", "cookies", "yogurt", "goulash", "rice", "hummus", "knish", "broth", "kugel", "latkes", "schnitzel", "pancake", "roast", "shawarma", "flatbread", "meatballs", "pastry", "casserole", "cake", "dumpling", "doughnut", "tajine", "couscous", "dolma", "kebab", "fillet" ],
+          "foodAdj": [ "fried", "breaded", "roast", "stuffed", "herbed", "mashed", "herb", "Issachari", "Naphtaali", "baked", "shredded", "sliced", "chopped", "minced", "crumbled", "diced", "dried", "marinated", "aged", "boiled", "flaky", "glazed", "grilled", "mild", "rich", "sauteed", "savory", "sizzling", "smothered", "thick", "tossed", "velvety" ],
+          "categorizedFoods": {
+            "generic": [ "<spice.cooking.recipeNames.foods.!random>" ],
+            "grazed": [ "slaw", "leaves", "bush", "shrubs", "grass", "root", "seeds", "thorns", "hay" ],
+            "picked": [ "berries", "leaves", "figs", "stems", "shoots", "root", "bugs", "larvae", "seeds", "bark" ],
+            "insects": [ "bugs", "larvae" ],
+            "smallmeat": [ "stew", "hash", "goulash", "meatballs" ],
+            "metal": [ "scrap", "alloy", "wire", "diodes", "circuitry" ],
+            "sweet": [ "compote", "pastry", "doughnut" ],
+            "fish": [ "fillet" ],
+            "meat": [ "loaf", "brisket", "hash", "goulash", "schnitzel", "roast", "shawarma", "meatballs", "stew", "tajine", "kebab" ],
+            "bones": [ "marrow", "bones" ],
+            "smallsea": [ "clams", "mussels", "snails", "algae", "worms" ],
+            "rocks": [ "rocks", "gravel", "pebbles", "boulder" ],
+            "rotted": [ "humus", "rot", "corpse" ]
+  
+          },
+          "ingredient1NounPhrase": [
+            "<^.ingredients.$ingredient1.nounPlural.!random>",
+            "<^.foodAdj.!random> <^.ingredients.$ingredient1.nounPlural.!random>",
+            "<^.ingredients.$ingredient1.adj.!random> *dishName*"
+          ],
+          "ingredient2NounPhrase": [
+            "<^.ingredients.$ingredient2.nounPlural.!random>",
+            "<^.foodAdj.!random> <^.ingredients.$ingredient2.nounPlural.!random>",
+            "<^.ingredients.$ingredient2.adj.!random> *dishName*"
+          ],
+          "ingredient3NounPhrase": [
+            "<^.ingredients.$ingredient3.nounPlural.!random>",
+            "<^.foodAdj.!random> <^.ingredients.$ingredient3.nounPlural.!random>",
+            "<^.ingredients.$ingredient3.adj.!random> *dishName*"
+          ],
+          "preposition": [ "with", "inside of", "on top of", "with", "with", "in", "over" ],
+          "suffix": [ "stuffed", "cured", "rubbed" ],
+          "oneIngredientMeal": [
+            "<^.foodAdj.!random> <^.ingredients.$ingredient1.nounPlural.!random>",
+            "<^.ingredients.$ingredient1.adj.!random> *dishName*",
+            "*dishName* <^.preposition.!random> <^.ingredient1NounPhrase.!random>"
+          ],
+          "twoIngredientMeal": [
+            "<^.ingredients.$ingredient1.adj2.!random> <^.ingredients.$ingredient2.adj1.!random> *dishName*",
+            "<^.ingredients.$ingredient1.adj2.!random>-<^.ingredients.$ingredient2.adj1.!random> *dishName*",
+            "<^.ingredient1NounPhrase.!random> <^.preposition.!random> <^.ingredient2NounPhrase.!random>",
+            "<^.ingredient1NounPhrase.!random> and <^.ingredient2NounPhrase.!random>",
+            "<^.ingredients.$ingredient1.noun.!random>-<^.ingredients.$ingredient2.noun.!random> *dishName*",
+            "*dishName* <^.preposition.!random> <^.ingredient1NounPhrase.!random> and <^.ingredient2NounPhrase.!random>",
+            "<^.ingredient1NounPhrase.!random> and <^.ingredient2NounPhrase.!random> <^.preposition.!random> *dishName*"
+          ],
+          "threeIngredientMeal": [
+            "<^.ingredients.$ingredient1.adj2.!random> <^.ingredients.$ingredient2.adj2.!random> <^.ingredients.$ingredient3.adj1.!random> *dishName*",
+            "<^.ingredient3NounPhrase.!random> <^.preposition.!random> <^.ingredient1NounPhrase.!random> and <^.ingredient2NounPhrase.!random>",
+            "<^.ingredient1NounPhrase.!random> and <^.ingredient2NounPhrase.!random> <^.preposition.!random> <^.ingredient3NounPhrase.!random>",
+            "*dishName* <^.preposition.!random> <^.ingredient1NounPhrase.!random>, <^.ingredient2NounPhrase.!random>, and <^.ingredient3NounPhrase.!random>",
+            "<^.ingredients.$ingredient1.noun.!random>-<^.ingredients.$ingredient2.noun.!random> <^.ingredient3NounPhrase.!random>",
+            "<^.ingredient3NounPhrase.!random> <^.preposition.!random> <^.ingredient1NounPhrase.!random>, <^.ingredient2NounPhrase.!random>, and *dishName*"
+          ],
+          "ingredients": {
+            "Limb": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "blood", "meat", "limb" ],
+              "adj2": [ "bloody", "severed", "dismembered" ],
+              "nounPlural": [ "$LimbDisplayName", "meat", "extremity", "limb", "appendage" ],
+              "noun": [ "limb", "appendage", "meat" ]
+            },
+            "Face": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "blood", "meat", "face" ],
+              "adj2": [ "bloody", "severed", "dismembered", "facial" ],
+              "nounPlural": [ "$LimbDisplayName", "meat", "face", "visage" ],
+              "noun": [ "visage", "face", "meat" ]
+            },
+            "Head": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "blood", "meat", "head", "brain" ],
+              "adj2": [ "bloody", "severed", "dismembered", "brainy" ],
+              "nounPlural": [ "$LimbDisplayName", "meat", "head", "brain" ],
+              "noun": [ "head", "brain", "meat" ]
+            },
+            "Jerky": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "meat" ],
+              "adj2": [ "dried", "stripped", "hearty", "meaty" ],
+              "nounPlural": [ "$JerkyDisplayName", "meat" ],
+              "noun": [ "jerky", "meat", "flesh" ]
+            },
+            "Vinewafer Sheaf": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "wafer", "vinewafer", "watervine", "water" ],
+              "adj2": [ "watery", "moist", "soggy" ],
+              "nounPlural": [ "wafers", "vinewafers", "freshwater", "matz" ],
+              "noun": [ "wafer", "vinewafer", "water", "matz" ]
+            },
+            "Phase Silk": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "phase", "silk" ],
+              "adj2": [ "silk", "shimmering", "ethereal", "silky", "spectral", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "adj_Special": [ "shimmering", "ethereal", "spectral" ],
+              "nounPlural": [ "<^.adj_Special.!random> silk", "<^.adj_Special.!random> fiber" ],
+              "noun": [ "silk", "fiber" ]
+            },
+            "Congealed Shade Oil": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "phase", "shade", "oil", "shadow" ],
+              "adj2": [ "shimmering", "ethereal", "oily", "shady", "flickering", "spectral", "shadowy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "shade oil", "shade", "shade oil tonic", "tonic", "shadow" ],
+              "noun": [ "oil", "shade", "tonic", "shadow" ]
+            },
+            "Congealed Blaze": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fire-roasted", "flaming", "seared", "roasted", "hot", "blazed" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "blazed", "toasted", "spicy", "hot" ],
+              "nounPlural": [ "blaze", "open flame", "char", "smoke" ],
+              "noun": [ "char", "smoke", "blaze" ]
+            },
+            "Congealed Salve": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "herb", "salve", "balm", "sooth" ],
+              "adj2": [ "healing", "curative", "herbal", "soothing" ],
+              "nounPlural": [ "balm", "salve", "poultice", "anodyne" ],
+              "noun": [ "balm", "salve", "poultice", "anodyne" ]
+            },
+            "Soul Curd": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "life", "soul" ],
+              "adj2": [ "life", "soul" ],
+              "nounPlural": [ "soul curd" ],
+              "noun": [ "soul curd" ]
+            },
+            "Drop of Nectar": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "god" ],
+              "adj2": [ "god", "divine", "godly" ],
+              "nounPlural": [ "nectar" ],
+              "noun": [ "nectar" ]
+            },
+            "Congealed Love": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "love", "lust" ],
+              "adj2": [ "erotic", "lusty" ],
+              "nounPlural": [ "love", "lust" ],
+              "noun": [ "love", "lust" ]
+            },
+            "Congealed Hulk Honey": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "buff", "big", "growth" ],
+              "adj2": [ "hulking", "buff", "big", "growth" ],
+              "nounPlural": [ "hulk honey", "honey" ],
+              "noun": [ "hulk honey", "honey" ]
+            },
+            "Congealed Skulk": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "slink", "creep" ],
+              "adj2": [ "skulking", "slink", "creep" ],
+              "nounPlural": [ "skulk" ],
+              "noun": [ "skulk" ]
+            },
+            "Congealed Rubbergum": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "rubber", "bounce", "jump", "hop", "spring" ],
+              "adj2": [ "rubber", "bouncy", "springy" ],
+              "nounPlural": [ "rubbergum", "gum" ],
+              "noun": [ "rubbergum", "gum" ]
+            },
+            "Crusty Loaf": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "bread", "toast" ],
+              "adj2": [ "crunchy", "breaded", "toasted" ],
+              "nounPlural": [ "bread", "toast", "loaf" ],
+              "noun": [ "bread", "toast", "loaf", "cracker" ]
+            },
+            "Salthopper Chip": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "salt", "chip" ],
+              "adj2": [ "crunchy", "toasted", "salted", "salty" ],
+              "nounPlural": [ "chips", "salt" ],
+              "noun": [ "chip", "salt" ]
+            },
+            "Ekuemekiyyen Greens": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "leaf" ],
+              "adj2": [ "leafy", "verdurous" ],
+              "nounPlural": [ "leaves", "greens" ],
+              "noun": [ "leaf" ]
+            },
+            "Food Cube": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "cube" ],
+              "adj2": [ "cubic", "mystery" ],
+              "nounPlural": [ "cube", "cube", "cube", "mystery" ],
+              "noun": [ "cube", "cube", "cube", "mystery" ]
+            },
+            "Starapple Preserves": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "apple", "apple juice", "starapple", "balsamic", "fruit", "tart" ],
+              "adj2": [ "crisp", "balsamic", "fresh", "fruit", "tart", "sweet" ],
+              "nounPlural": [ "apples", "starapples", "jam", "apple jam", "starapple jam" ],
+              "noun": [ "apple", "starapple" ]
+            },
+            "Spine Fruit Jam": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "spine fruit", "spine", "fruit" ],
+              "adj2": [ "spiny", "thorny", "fruit", "sweet", "prickly", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "spine fruit", "nettles", "spines", "jam", "spine fruit jam", "thorns" ],
+              "noun": [ "spine fruit", "nettle", "spine", "thorn" ]
+            },
+            "Cured Dawnglider Tail": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fire-roasted", "flaming", "seared", "roasted", "scaled", "hot" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "scaled", "toasted", "spicy", "hot" ],
+              "nounPlural": [ "dawnglider tail", "scales", "open flame", "char", "smoke" ],
+              "noun": [ "dawnglider tail", "scale", "char", "smoke" ]
+            },
+            "Fire Ant Gaster Paste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "hot" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "toasted", "spicy", "hot" ],
+              "nounPlural": [ "fire ant gaster paste", "gaster paste", "open flame", "char", "smoke", "fire ant" ],
+              "noun": [ "gaster", "ant", "char", "smoke" ]
+            },
+            "Freeze-Dried Hoarshrooms": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "mushroom", "cold mushroom", "fungus", "hoarshroom" ],
+              "adj2": [ "luminous", "glowing", "radiant", "phosphorescent", "freeze-dried", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "hoarshrooms", "mushrooms", "motes of light", "fungus" ],
+              "noun": [ "hoarshroom", "mushroom", "fungus" ]
+            },
+            "Pickled Mushrooms": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "mushroom", "briny mushroom", "fungus" ],
+              "adj2": [ "pickled", "briny", "salty", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "pickled mushrooms", "mushrooms", "pickled mushroom water", "fungus" ],
+              "noun": [ "brineshroom", "mushroom", "fungus" ]
+            },
+            "Pickles": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "pickled", "water", "brine" ],
+              "adj2": [ "pickled", "briny", "salty", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "pickles", "pickle water", "brine", "water" ],
+              "noun": [ "cucumber", "pickle", "water" ]
+            },
+            "Fermented Yondercane": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "blink", "tele-", "far-", "there-" ],
+              "adj2": [ "blink", "blinking", "teleporting", "fermented", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "yondercane", "fermented yondercane", "yondercane", "fermented yondercane", "air" ],
+              "noun": [ "yondercane", "cane", "yondercane", "cane", "air" ]
+            },
+            "Voider Gland Paste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "blink", "tele-", "far-", "there-", "pasty" ],
+              "adj2": [ "blink", "blinking", "teleporting", "pasty", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "voider gland paste", "voider gland", "voider", "air" ],
+              "noun": [ "voider", "paste", "air" ]
+            },
+            "Spark Tick Plasma": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "spark", "voltaic", "jolt", "electric" ],
+              "adj2": [ "electric", "crackling", "sparky", "voltaic", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "spark tick plasma", "sparks", "electric current", "plasma", "electricity", "lightning" ],
+              "noun": [ "plasma", "spark", "electron", "volt", "jolt" ]
+            },
+            "Canned Have-It-All": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "all" ],
+              "adj2": [ "all", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "everything" ],
+              "noun": [ "everything" ]
+            },
+            "Wild Rice": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "wild" ],
+              "adj2": [ "wild", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "wild rice" ],
+              "noun": [ "rice" ]
+            },
+            "Dream Smoke": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "dream", "dreamy" ],
+              "adj2": [ "dream", "dreamy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "dream smoke", "dreams", "daydreams" ],
+              "noun": [ "dream", "daydream" ]
+            },
+            "Fermented Yuckwheat Stem": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "yuck", "yuckwheat", "bitter" ],
+              "adj2": [ "herbal", "yucky", "yuckwheat", "medicinal", "bitter", "acrid", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "fermented yuckwheat", "yuckwheat", "medicine", "yuckwheat" ],
+              "noun": [ "yuckwheat", "stem" ]
+            },
+            "Mashed Lag": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "lag" ],
+              "adj2": [ "starchy", "lag", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "lagroot", "lag" ],
+              "noun": [ "lagroot", "mashed lag" ]
+            },
+            "Dried Lah Petals": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "phobic", "lah", "spooky" ],
+              "adj2": [ "phobic", "lah", "lah-rubbed", "spooky", "flowery", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "lah", "petals", "flower" ],
+              "noun": [ "lah", "petal", "flowers" ]
+            },
+            "Dried Vanta Petals": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "void", "dusk", "black" ],
+              "adj2": [ "shady", "dusky", "abyssal", "darkling", "stygian", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "vanta", "petals", "flower" ],
+              "noun": [ "vanta", "petal", "flowers" ]
+            },
+            "Compacted Bone Meal": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "bone" ],
+              "adj2": [ "boney", "calcified", "ossified", "skeletal", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "bones", "bone meal" ],
+              "noun": [ "bone", "bone meal" ]
+            },
+            "Crushed Grave Moss": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "moss" ],
+              "adj2": [ "mossy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "grave moss", "moss" ],
+              "noun": [ "grave moss", "moss" ]
+            },
+            "Sun-Dried Banana": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fruit", "sweet" ],
+              "adj2": [ "fruity", "sweet", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "bananas" ],
+              "noun": [ "banana" ]
+            },
+            "Psychal Gland Paste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "thought", "mind" ],
+              "adj2": [ "mnemonic", "nostalgic", "psychal", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "psychal gland paste", "psychal gland", "memories" ],
+              "noun": [ "psyche", "paste", "memory" ]
+            },
+            "Mirror Dust": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "mirror", "dust", "mimic" ],
+              "adj2": [ "mirrored", "reflective", "glassy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "mirror dust", "dust" ],
+              "noun": [ "dust", "mirror dust" ]
+            },
+            "Sliced Bop Cheek": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "rubber", "bounce", "jump", "hop", "spring", "sponge" ],
+              "adj2": [ "rubber", "bouncy", "springy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "sponge", "bop sponge", "bop cheek" ],
+              "noun": [ "sponge", "bop", "cheek" ]
+            },
+            "Fermented Tongue": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "tongue", "glot", "talk" ],
+              "adj2": [ "talking", "tongue", "glot", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "tongue", "glot" ],
+              "noun": [ "tongue", "glot" ]
+            },
+            "FireBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "hot" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "toasted", "spicy", "hot" ],
+              "nounPlural": [ "flamebeard gland paste", "open flame", "char", "smoke", "flamebeard" ],
+              "noun": [ "flamebeard", "char", "smoke" ]
+            },
+            "ElderFireBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "hot" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "pasty", "toasted", "spicy", "hot" ],
+              "nounPlural": [ "concentrated flamebeard gland paste", "open flame", "char", "smoke", "elder flamebeard" ],
+              "noun": [ "elder flamebeard", "char", "smoke" ]
+            },
+            "IceBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "icy", "ice", "sleet" ],
+              "adj2": [ "icy", "ice", "sleet", "freezing", "frozen" ],
+              "nounPlural": [ "sleetbeard gland paste", "ice", "sleet", "sleetbeard" ],
+              "noun": [ "sleetbeard", "ice", "sleet" ]
+            },
+            "ElderIceBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "icy", "ice", "sleet" ],
+              "adj2": [ "icy", "ice", "sleet", "freezing", "frozen" ],
+              "nounPlural": [ "concentrated sleetbeard gland paste", "ice", "sleet", "elder sleetbeard" ],
+              "noun": [ "elder sleetbeard", "ice", "sleet" ]
+            },
+            "CorrosiveBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "acid" ],
+              "adj2": [ "acidic", "dissolved", "corrosive", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "acid", "tartbeard gland paste", "tartbeard" ],
+              "noun": [ "acid", "tartbeard" ]
+            },
+            "ElderCorrosiveBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "acid" ],
+              "adj2": [ "acidic", "dissolved", "corrosive", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "acid", "concentrated tartbeard gland paste", "elder tartbeard" ],
+              "noun": [ "acid", "elder tartbeard" ]
+            },
+            "NormalityBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "null" ],
+              "adj2": [ "null", "nothing", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "nullity", "nothing", "nullbeard gland paste", "nullbeard" ],
+              "noun": [ "nullity", "nothing", "nullbeard" ]
+            },
+            "ElderNormalityBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "null" ],
+              "adj2": [ "null", "nothing", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "nullity", "nothing", "concentrated nullbeard gland paste", "elder nullbeard" ],
+              "noun": [ "nullity", "nothing", "elder nullbeard" ]
+            },
+            "PoisonBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "poison", "toxin" ],
+              "adj2": [ "poisonous", "toxic", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "poison", "gallbeard gland paste", "gallbeard" ],
+              "noun": [ "poison", "toxin", "gallbeard" ]
+            },
+            "ElderPoisonBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "poison", "toxin" ],
+              "adj2": [ "poisonous", "toxic", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "poison", "concentrated gallbeard gland paste", "elder gallbeard" ],
+              "noun": [ "poison", "toxin", "elder gallbeard" ]
+            },
+            "SleepBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "sleep" ],
+              "adj2": [ "sleepy", "lazy", "drowsing", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "dreambeard gland paste", "dreambeard" ],
+              "noun": [ "sleep", "dreambeard" ]
+            },
+            "ElderSleepBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "sleep" ],
+              "adj2": [ "sleepy", "lazy", "drowsing", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "concentrated dreambeard gland paste", "elder dreambeard" ],
+              "noun": [ "sleep", "elder dreambeard" ]
+            },
+            "StunBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "stun", "still" ],
+              "adj2": [ "stun", "still", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "stillbeard gland paste", "stillbeard" ],
+              "noun": [ "stillbeard" ]
+            },
+            "ElderStunBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "stun", "still" ],
+              "adj2": [ "stun", "still", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "concentrated stillbeard gland paste", "elder stillbeard" ],
+              "noun": [ "elder stillbeard" ]
+            },
+            "ConfusionBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "maze", "puzzle" ],
+              "adj2": [ "confusing", "puzzling", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "mazebeard gland paste", "mazebeard" ],
+              "noun": [ "mazebeard" ]
+            },
+            "ElderConfusionBreatherGlandPaste": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "maze", "puzzle" ],
+              "adj2": [ "confusing", "puzzling", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "concentrated mazebeard gland paste", "elder mazebeard" ],
+              "noun": [ "elder mazebeard" ]
+            },
+            "cider": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "cider", "spice" ],
+              "adj2": [ "fermented", "spiced", "fragrant", "mulled", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "cider", "spice" ],
+              "noun": [ "cider", "spice" ]
+            },
+            "convalessence": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "cool", "cold", "convalessence", "balm" ],
+              "adj2": [ "cool", "cold", "rejuvenating", "convalescent" ],
+              "nounPlural": [ "convalessence", "balm", "elixir" ],
+              "noun": [ "convalessence", "balm", "elixir" ]
+            },
+            "honey": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "sweet", "honey" ],
+              "adj2": [ "sweet", "honeyed", "sweetened", "sticky", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "honey" ],
+              "noun": [ "honey" ]
+            },
+            "salt": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "salt", "brine" ],
+              "adj2": [ "salty", "briny", "salted", "tasty", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "salt" ],
+              "noun": [ "salt" ]
+            },
+            "asphalt": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "tar", "asphalt" ],
+              "adj2": [ "tarry", "sticky", "viscous", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "tar", "asphalt", "glue" ],
+              "noun": [ "tar", "asphalt", "glue" ]
+            },
+            "lava": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "lava", "fire-roasted", "flaming", "seared", "roasted", "hot" ],
+              "adj2": [ "fire-roasted", "flaming", "seared", "roasted", "magmatic", "molten", "hot", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "lava", "magma", "smoke" ],
+              "noun": [ "lava", "magma", "smoke" ]
+            },
+            "slime": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "slime" ],
+              "adj2": [ "slimy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "slime" ],
+              "noun": [ "slime" ]
+            },
+            "goo": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "goo" ],
+              "adj2": [ "gooey", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "goo" ],
+              "noun": [ "goo" ]
+            },
+            "sludge": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "sludge" ],
+              "adj2": [ "sludgey", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "sludge" ],
+              "noun": [ "sludge" ]
+            },
+            "ooze": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "ooze" ],
+              "adj2": [ "oozing", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "ooze" ],
+              "noun": [ "ooze" ]
+            },
+            "acid": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "acid" ],
+              "adj2": [ "acidic", "dissolved", "corrosive", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "acid" ],
+              "noun": [ "acid" ]
+            },
+            "algae": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "algae", "scum", "kelp", "seaweed" ],
+              "adj2": [ "algal", "scummy", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "algae", "scum", "kelp", "seaweed" ],
+              "noun": [ "algae", "scum", "kelp", "seaweed" ]
+            },
+            "neutronflux": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "neutron", "flux" ],
+              "adj2": [ "dense", "unstable", "compact", "heavy", "degenerate", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "flux", "neutrons" ],
+              "noun": [ "flux", "neutron" ]
+            },
+            "cloning": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "twice", "thrice", "cloned" ],
+              "adj2": [ "cloned", "homogenized", "twice-cooked", "thrice-cooked", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "cloning draught" ],
+              "noun": [ "cloning draught" ]
+            },
+            "Starch": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "starch" ],
+              "adj2": [ "starchy", "brisk", "<^.noun.!random>-<spice.cooking.recipeNames.suffix.!random>" ],
+              "nounPlural": [ "starch" ],
+              "noun": [ "starch" ]
+            },
+            "Lignin": {
+              "adj": [ "<^.adj1.!random>", "<^.adj2.!random>" ],
+              "adj1": [ "lignin" ],
+              "adj2": [ "lignin", "fresh", "vitalizing" ],
+              "nounPlural": [ "lignin" ],
+              "noun": [ "lignin" ]
+            }
+          }
+        },
+        "terrain": {
+          "General": {
+            "someIngredients": [ "<^.someEdible.!random>", "<^.someEdible.!random>", "<^.someInedible.!random>" ],
+            "someEdible": [ "salt", "bones", "water", "mint", "saffron", "sesame", "bulgur", "cardamom", "anise", "berries", "cinnamon", "cumin", "fenugreek", "uuyr", "yyrabra", "paprika", "vanilla" ],
+            "someInedible": [ "foamcrete flake", "rust", "fulcrete flake", "chrome", "ash", "trash", "congealed $tonicName" ],
+            "aIngredients": [ "<^.aEdible.!random>", "<^.aEdible.!random>", "<^.aInedible.!random>" ],
+            "aEdible": [ "hunk of cheese", "crust of bread", "mung bean", "soy bean", "chickpea", "sesame seed", "aniseed", "berry", "apricot", "uuyr seed", "yyrabra root" ],
+            "aInedible": [ "small stone", "cracked lens", "fractured microchip", "burnt capacitor", "corroded circuit board", "page torn from $bookName", "<spice.commonPhrases.puff.!random> of $gasName" ]
+          },
+          "Saltdunes": {
+            "someIngredients": [ "salt", "brinestalk", "dogthorn", "salt kraken larvae", "dromad hair", "dromad dander", "ash", "Issachari nomad hair" ],
+            "aIngredients": [ "dawnglider feather", "dawnglider egg", "dogthorn leaf", "thread from an Issachari banner", "fractus thorn", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Saltmarsh": {
+            "someIngredients": [ "<^.someEdible.!random>", "<^.someEdible.!random>", "<^.someInedible.!random>" ],
+            "aIngredients": [ "<^.aEdible.!random>", "<^.aEdible.!random>", "<^.aInedible.!random>" ],
+            "someEdible": [ "brineweed", "brine", "witchwood", "salt", "glowfish cheek", "dragonfly thorax", "brinestalk", "dogthorn", "croc meat", "fish meat" ],
+            "someInedible": [ "brineweed", "brine", "witchwood", "salt", "glowfish cheek", "dragonfly thorax", "brinestalk", "dogthorn", "croc meat", "fish meat" ],
+            "aEdible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ],
+            "aInedible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+  
+          },
+          "DesertCanyon": {
+            "someIngredients": [ "rust", "seed spit", "dog hair", "shavings from a tortoise shell", "equimax hair", "dogthorn", "shale" ],
+            "aIngredients": [ "flake of shale", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Hills": {
+            "someIngredients": [ "shale", "limestone", "dust", "clay", "gravel", "equimax hair", "silt", "tortoise shell", "hermit dander", "goat hair" ],
+            "aIngredients": [ "blade of grass", "flake of shale", "chameleon horn", "small stone", "pebble", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart", "snapjaw fang" ]
+          },
+          "Flowerfields": {
+            "someIngredients": [ "rust", "seed spit", "dog hair", "shavings from a tortoise shell", "equimax hair", "dogthorn", "shale", "flower petals", "flowers" ],
+            "aIngredients": [ "flower petal", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Jungle": {
+            "someIngredients": [ "rust", "boar hair", "ice frog spittle", "albino ape hair", "leech blood", "beetlebum chitin", "skunk hair", "hermit dander", "slug spit", "beetle chitin" ],
+            "aIngredients": [ "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "shimscale leaf", "star palm frond", "shimscale root", "quillipede quill", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "DeepJungle": {
+            "someIngredients": [ "rust", "ogre ape hair", "crysteel shards", "flower petals", "lush acid", "purple membrane", "smeared urberry", "nimbus bark", "star orchid dust", "displaced air", "mudroot" ],
+            "aIngredients": [ "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Ruins": {
+            "someIngredients": [ "rust", "scrap", "chrome", "scrap crystal", "scrap metal", "scrap electronics", "pure alloy", "boar hair", "ice frog spittle", "albino ape hair", "gunpowder", "leech blood", "beetlebum chitin", "skunk hair", "hermit dander", "slug spit", "beetle chitin" ],
+            "aIngredients": [ "roasted antenna", "musket muzzle", "bolt from a rifle turret", "light attenuator", "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "shimscale leaf", "shimscale root", "quillipede quill", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "BaroqueRuins": {
+            "someIngredients": [ "rust", "scrap", "chrome", "scrap crystal", "scrap metal", "scrap electronics", "pure alloy", "svardym spittle", "ogre ape hair", "gunpowder", "hermit dander", "slug spit", "astral dander", "purple membrane", "smeared urberry", "nimbus bark", "star orchid dust", "displaced air", "mudroot", "crysteel shards", "coolant", "antifreeze", "glass microtubing", "tetraxenonoglass", "psionic residue", "plasma", "nanomaterials", "photonic matter", "vectorized pebbles" ],
+            "aIngredients": [ "light attenuator", "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "magnet", "microcontroller", "pristine circuit", "vectorized fossil", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "TheSpindle": {
+            "someIngredients": [
+              "rust",
+              "scrap",
+              "chrome",
+              "scrap crystal",
+              "scrap metal",
+              "scrap electronics",
+              "Eater dander",
+              "Spindle glitter",
+              "ash",
+              "flakes of grave moss",
+              "bone dust",
+              "petrified hair",
+              "grave goods",
+              "digestive jelly",
+              "marble chalk",
+              "sarcophagus juice",
+              "bone brine"
+            ],
+            "aIngredients": [
+              "bone",
+              "skull",
+              "clump of hair",
+              "piece of marble",
+              "stillvine leaf",
+              "synthetic wing",
+              "bone",
+              "charred bone",
+              "mopango scale",
+              "circuitboard",
+              "cube of gelatin",
+              "fingernail",
+              "$creaturePossessive $creatureBodyPart",
+              "$creaturePossessive $creatureBodyPart"
+            ]
+          },
+          "Water": {
+            "someIngredients": [ "croc meat", "glowfish cheek", "fish meat", "brine", "brineweed", "madpole cheek" ],
+            "aIngredients": [ "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "diaphanous wing", "glowpad leaf", "madpole tooth", "dragonfly thorax", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Mountains": {
+            "someIngredients": [ "shale", "limestone", "dust", "clay", "gravel", "dog hair", "goat hair", "silt" ],
+            "aIngredients": [ "flake of shale", "bone of a cannibal", "small stone", "pebble", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Fungal": {
+            "someIngredients": [ "lichen", "mold", "fungus", "goop", "smut", "rust", "sludge" ],
+            "aIngredients": [ "mushroom stalk", "toadstool", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "BananaGrove": {
+            "someIngredients": [ "chrome", "rust", "musa", "Eater dander", "Spindle glitter", "goat hair", "marble chalk", "plant matter", "gibbon hair", "asphodelyte petals", "scrap", "scrap crystal", "scrap metal", "scrap electronics", "abraded stone" ],
+            "aIngredients": [ "banana leaf", "banana peel", "blade of grass", "chipped-off chunk of the Spindle", "pebble", "diaphanous wing", "palm frond", "dacca root", "diacalyptus leaf", "gibbon eye", "mural shaving", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "LakeHinnom": {
+            "someIngredients": [ "algae", "svardym egg shell", "kelp", "crysteel shards", "perch cheek", "fish meat", "brine", "eel hair", "tunnel sponge", "svardym drool", "algal water" ],
+            "aIngredients": [ "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "PalladiumReef": {
+            "someIngredients": [ "red coral", "blue coral", "gold coral", "palladium", "algae", "svardym egg shell", "scrap crystal", "scrap metal", "scrap electronics", "kelp", "crysteel shards", "perch cheek", "fish meat", "brine", "eel hair", "tunnel sponge", "svardym drool", "algal water" ],
+            "aIngredients": [ "coral polyp", "palladium strut", "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "MoonStair": {
+            "someIngredients": [ "cool static", "crystalline nectar", "dilute static", "psychal rhythm", "candle quartz", "quantum fuzz", "algebraic salt", "quartz dust", "hexagons", "compressed thoughtstuff", "entropy fungus", "glitchtree leaves", "unimax tail hair", "dreamcrunglem", "photons", "thoughtforms", "crystal flowers" ],
+            "aIngredients": [ "crystal petal", "psychal rhythm pebble", "hexagon", "glitchtree leaf", "icosahedron", "photon", "metacrystal", "negative number", "imaginary number", "dream wren feather", "leaf from Chavvah, the Tree of Life", "platonic solid", "starshell scute", "blade of noise grass", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          },
+          "Brightsheol": {
+            "someIngredients": [ "indeterminable qualia", "dream dust", "dim light", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random.pluralize>", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random.pluralize>", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random.pluralize>" ],
+            "aIngredients": [ "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random>", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random>", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random>", "abstract form", "dim memory", "photon", "bit", "byte" ]
+          },
+          "Tzimtzlum": {
+            "someIngredients": [ "<spice.adjectives.!random> clams" ],
+            "aIngredients": [ "<spice.adjectives.!random> clam" ]
+          },
+          "NorthSheva": {
+            "someIngredients": [ "glittering spores", "glittering spores", "star dust", "eroded remains of a <spice.history.gospels.EarlySultanate.vehicle.!random>", "eroded remains of a <spice.history.gospels.EarlySultanate.vehicle.!random>", "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random.pluralize>", "observation liquid", "forest motes", "dust from the Great Machine", "ultraviolet light", "black shale flakes", "Triangulum dust", "dark matter", "starship exhaust", "shattered stratum", "braided crysteel paper", "labyrinthite flakes", "thurible smoke", "blueshifted dust of chrome", "star orchid dust" ],
+            "aIngredients": [ "<spice.commonPhrases.astral.!random> <spice.objectNouns.!random>", "shaving of understratum", "<spice.adjectives.!random> seed", "pin from a dish horn", "sun ribbon panel", "pin from an underhorn", "tiny crab", "shard from a glass dome", "force coupling", "mover magnet", "pin from a scrying horn", "holographic coupler", "ecliptic glyph", "glittering spore", "glittering spore" ]
+          }
+        }
+      },
+  
+      "history": {
+        "gospels": {
+          "EarlySultanate": {
+            "adjective": [ "star", "space", "time", "temporal", "spatial", "cosmic", "empyrean", "ether", "algebraic", "astral", "luminous", "stellary", "high" ],
+            "location": [ "<spice.3Dshapes.!random>", "<spice.2Dshapes.!random>", "<spice.instancesOf.specialPlace.!random>" ],
+            "vehicle": [ "star blimp", "star <spice.3Dshapes.!random>", "<spice.geometricPatterns.!random> <spice.commonPhrases.ship.!random>" ],
+            "worshipObject": [ "<^.location.!random>", "<spice.nouns.!random>" ],
+            "objectNoun": [ "<spice.objectNouns.!random>", "<^.location.!random>" ]
+          },
+          "LateSultanate": {
+            "adjective": [ "sand", "salt", "dust", "terra", "fish", "glass", "low", "slag", "sea", "cinder" ],
+            "location": [ "<spice.placeNouns.!random>" ],
+            "vehicle": [ "<spice.instancesOf.sandOrSalt.!random> <spice.3Dshapes.!random>", "<spice.geometricPatterns.!random> <spice.commonPhrases.wagon.!random>" ],
+            "worshipObject": [ "<spice.nouns.!random>" ],
+            "objectNoun": [ "<spice.objectNouns.!random>" ]
+          },
+          "VehicularSabotage": {
+            "EarlySultanate": [
+              "sabotaged the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "put <spice.instancesOf.explosives.!random>",
+              "rewired the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>"
+            ],
+            "LateSultanate": [
+              "sabotaged the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.location.!random>",
+              "put <spice.instancesOf.explosives.!random>",
+              "rewired the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.location.!random>"
+            ]
+          },
+          "VehicularSabotageResult": {
+            "EarlySultanate": [
+              "implode",
+              "explode",
+              "phase out of existence",
+              "crash into <spice.history.gospels.EarlySultanate.location.!random.article>",
+              "vaporize",
+              "disintegrate"
+            ],
+            "LateSultanate": [
+              "implode",
+              "explode",
+              "phase out of existence",
+              "crash into <spice.history.gospels.LateSultanate.location.!random.article>",
+              "vaporize",
+              "disintegrate"
+            ]
+          },
+          "CrashedVehicle": {
+            "EarlySultanate": [
+              "crashed it into <spice.history.gospels.EarlySultanate.location.!random.article>"
+            ],
+            "LateSultanate": [
+              "crashed it into <spice.history.gospels.LateSultanate.location.!random.article>"
+            ]
+          },
+          "MarriageAllianceResult": {
+            "EarlySultanate": [
+              "allowed *group* to <spice.instancesOf.build.!random> *hall* inside the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "dismantled the <spice.history.gospels.EnemyHostName.EarlySultanate.!random> and their <spice.commonPhrases.despicable.!random> custom of <spice.history.gospels.ImmoralPractice.EarlySultanate.!random>",
+              "enabled *group* to start <spice.history.gospels.CivilizationActivity.EarlySultanate.!random>"
+            ],
+            "LateSultanate": [
+              "allowed *group* to <spice.instancesOf.build.!random> *hall* inside the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.location.!random>",
+              "dismantled the <spice.history.gospels.EnemyHostName.LateSultanate.!random> and their <spice.commonPhrases.despicable.!random> custom of <spice.history.gospels.ImmoralPractice.LateSultanate.!random>",
+              "enabled *group* to start <spice.history.gospels.CivilizationActivity.LateSultanate.!random>"
+            ]
+          },
+          "CommittedWrongAgainstSultan": {
+            "EarlySultanate": [
+              "<spice.commonPhrases.commandeered.!random> <entity.possessivePronoun> <spice.history.gospels.EarlySultanate.vehicle.!random>",
+              "stole <spice.elements.entity$elements[random].materials.!random> from <entity.possessivePronoun> <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "<spice.instancesOf.seceded.!random> to form the <spice.placeNouns.!random.capitalize> <spice.history.gospels.EarlySultanate.location.!random.capitalize>"
+            ],
+            "LateSultanate": [
+              "<spice.commonPhrases.commandeered.!random> <entity.possessivePronoun> <spice.history.gospels.LateSultanate.vehicle.!random>",
+              "stole <spice.elements.entity$elements[random].materials.!random> from <entity.possessivePronoun> <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.location.!random>",
+              "<spice.instancesOf.seceded.!random> to form the <spice.history.regions.government.city-states.name.!random> of <spice.placeNouns.!random.capitalize>"
+            ]
+          },
+          "EnemyHostName": {
+            "EarlySultanate": [
+              "<spice.history.gospels.EarlySultanate.adjective.!random.capitalize> <spice.commonPhrases.cult.!random.capitalize>",
+              "<spice.history.gospels.EarlySultanate.adjective.!random.capitalize>-<spice.history.gospels.EarlySultanate.worshipObject.!random.capitalize> <spice.commonPhrases.cult.!random.capitalize>"
+            ],
+            "LateSultanate": [
+              "<spice.history.gospels.LateSultanate.adjective.!random.capitalize> <spice.commonPhrases.cult.!random.capitalize>",
+              "<spice.history.gospels.LateSultanate.adjective.!random.capitalize>-<spice.history.gospels.LateSultanate.worshipObject.!random.capitalize> <spice.commonPhrases.cult.!random.capitalize>"
+            ]
+          },
+          "LostItem": {
+            "EarlySultanate": [
+              "had <entity.possessivePronoun> prized *item* stolen by the thieving <spice.history.gospels.EnemyHostName.EarlySultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* when thieves <spice.history.gospels.CommittedWrongAgainstSultan.EarlySultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* during the ritual of the <spice.history.gospels.RitualName.EarlySultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* while the townsfolk were busy <spice.history.gospels.CivilizationActivity.EarlySultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* after <entity.subjectPronoun> <spice.history.gospels.Celebration.EarlySultanate.!random>"
+            ],
+            "LateSultanate": [
+              "had <entity.possessivePronoun> prized *item* stolen by the thieving <spice.history.gospels.EnemyHostName.LateSultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* when thieves <spice.history.gospels.CommittedWrongAgainstSultan.LateSultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* during the ritual of the <spice.history.gospels.RitualName.LateSultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* while the townsfolk were busy <spice.history.gospels.CivilizationActivity.LateSultanate.!random>",
+              "lost <entity.possessivePronoun> prized *item* after <entity.subjectPronoun> <spice.history.gospels.Celebration.LateSultanate.!random>"
+            ]
+          },
+          "ImmoralPractice": {
+            "EarlySultanate": [
+              "<spice.history.gospels.EarlySultanate.worshipObject.!random> <spice.commonPhrases.worship.!random>"
+            ],
+            "LateSultanate": [
+              "<spice.history.gospels.LateSultanate.worshipObject.!random> <spice.commonPhrases.worship.!random>"
+            ]
+          },
+          "HumblePractice": {
+            "EarlySultanate": [
+              "<spice.instancesOf.careFor.!random> <spice.history.gospels.EarlySultanate.objectNoun.!random.pluralize>"
+            ],
+            "LateSultanate": [
+              "<spice.instancesOf.careFor.!random> <spice.history.gospels.LateSultanate.objectNoun.!random.pluralize>"
+            ]
+          },
+          "RitualName": {
+            "EarlySultanate": [
+              "<spice.history.gospels.EarlySultanate.adjective.!random.capitalize> <spice.history.gospels.EarlySultanate.worshipObject.!random.capitalize>"
+            ],
+            "LateSultanate": [
+              "<spice.history.gospels.LateSultanate.adjective.!random.capitalize> <spice.history.gospels.LateSultanate.worshipObject.!random.capitalize>"
+            ]
+          },
+          "ObjectFoundBy": {
+            "EarlySultanate": [
+              "<spice.commonPhrases.rescued.!random> from a crysteel blast furnace",
+              "pried free by emerald tongs",
+              "<spice.commonPhrases.found.!random> inside a <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "<spice.commonPhrases.found.!random> inside a <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "trawled from the slipstream",
+              "cooled on the voidpeaks of the early universe"
+            ],
+            "LateSultanate": [
+              "<spice.commonPhrases.rescued.!random> by orefishers from the trash sea",
+              "<spice.commonPhrases.wrapped.!random> in uuflax",
+              "wrested from the liminal tiers of a shale-toppled spire",
+              "<spice.commonPhrases.rescued.!random> from a perch fish aquarium",
+              "polished on a municipal lathe",
+              "<spice.commonPhrases.wrapped.!random> in ur-filament",
+              "<spice.commonPhrases.rescued.!random> from the steeple fires"
+            ]
+          },
+          "Celebration": {
+            "EarlySultanate": [
+              "climbed the crysteel blast furnaces",
+              "touched the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "climbed the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.location.!random>",
+              "swam the slipstream"
+            ],
+            "LateSultanate": [
+              "climbed the burning belfries",
+              "threw a <spice.objectNouns.!random> into the trash sea",
+              "wrested from the liminal tiers of a shale-toppled spire",
+              "smashed the perch fish aquaria",
+              "wrapped themselves with ur-filament",
+              "lit the steeple fires"
+            ]
+          },
+          "CivilizationActivity": {
+            "EarlySultanate": [
+              "proving obscure theorems",
+              "<spice.randomGerund.!random> the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.worshipObject.!random>",
+              "<spice.randomGerund.!random> the <spice.history.gospels.EarlySultanate.adjective.!random> <spice.history.gospels.EarlySultanate.worshipObject.!random>",
+              "reversing the course of the slipstream"
+            ],
+            "LateSultanate": [
+              "trawling the trash sea",
+              "wresting loot from shale-toppled spires",
+              "lighting the steeple fires",
+              "<spice.randomGerund.!random> the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.worshipObject.!random>",
+              "<spice.randomGerund.!random> the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.worshipObject.!random>",
+              "<spice.randomGerund.!random> the <spice.history.gospels.LateSultanate.adjective.!random> <spice.history.gospels.LateSultanate.worshipObject.!random>"
+            ]
+          }
+        },
+  
+        "relics": {
+          "names": [
+            "the <spice.itemTypes.*itemType*.!random> of the <spice.adjectives.!random> <spice.elements.*element*.nouns.!random>",
+            "the <spice.itemTypes.*itemType*.!random> of the <spice.elements.*element*.adjectives.!random> <spice.nouns.!random>",
+            "the <spice.itemTypes.*itemType*.!random> of the <spice.adjectives.!random> <spice.elements.*element*.professions.!random>",
+            "*personNounPossessive* <spice.elements.*element*.adjectives.!random> <spice.itemTypes.*itemType*.!random>",
+            "*creatureNamePossessive* <spice.elements.*element*.adjectives.!random> <spice.itemTypes.*itemType*.!random>",
+            "*creatureNamePossessive* <spice.itemTypes.*itemType*.!random>",
+            "<spice.nouns.!random>-<spice.nouns.!random>",
+            "<spice.adjectives.!random> <spice.nouns.!random>"
+          ]
+        },
+        "regions": {
+          "terrain": {
+            "Saltdunes": {
+              "over": [ "over the flats", "neath gusts of poisoned salt", "buried under the crescent dunes" ]
+            },
+            "Tremblezone": {
+              "over": [ "over the flats", "neath gusts of poisoned salt", "buried under the crescent dunes" ]
+            },
+            "Saltmarsh": {
+              "over": [ "shrouded in motes of fireflies", "tangled in brineweed", "in the still marsh waters" ],
+              "creatureRegionAdjective": [ "marsh", "brine", "lily", "glade", "mud", "saltwater", "sedge" ],
+              "creatureRegionNoun": [ "marshdweller", "brinestalker", "lilyeater", "marsheater", "mudeater" ],
+              "creatureAlteredLocale": [ "the marsh" ],
+              "creatureAlteredCast": [ "a briny cast" ],
+              "baseColor": [ "y", "w", "g" ],
+              "pluralRegionName": [ "marshlands" ],
+              "regionCrop" :  ["watervine"]
+            },
+            "Watervine": {
+              "over": [ "shrouded in motes of fireflies", "tangled in brineweed", "in the still marsh waters" ]
+            },
+            "DesertCanyon": {
+              "over": [ "deep within an earth-cleft", "under the labyrinthine shade", "nestled in the crumbling shale" ],
+              "creatureRegionAdjective": [ "canyon", "trench", "valley", "cliff", "gorge" ],
+              "creatureRegionNoun": [ "gorgedweller", "shale-eater", "cliffling", "sloper", "erosionist" ],
+              "creatureAlteredLocale": [ "the canyons" ],
+              "creatureAlteredCast": [ "a shale-like cast" ],
+              "baseColor": [ "y", "y", "w", "w", "r" ],
+              "pluralRegionName": [ "desert canyons" ],
+              "regionCrop": [ "starapple trees" ]
+            },
+            "Hills": {
+              "over": [ "nestled between the salt-spangled hills", "in a riven valley", "lit by the high salt sun" ],
+              "creatureRegionAdjective": [ "hill", "mound", "sun", "stone", "rock", "knoll" ],
+              "creatureRegionNoun": [ "lime-eater", "hilldweller", "sunbaker", "stone-eater", "hillchild" ],
+              "creatureAlteredLocale": [ "the hills" ],
+              "creatureAlteredCast": [ "a stony cast" ],
+              "baseColor": [ "y", "w", "Y" ],
+              "pluralRegionName": [ "hills" ],
+              "regionCrop": [ "starapple trees" ]
+            },
+            "Flowerfields": {
+              "over": [ "over the prismatic loam", "on a meadow of honeysuckle", "through the petal-strewn steppe" ]
+            },
+            "Jungle": {
+              "over": [ "hidden by the choking canopy", "root-strangled to the earth", "echoing the hoots of apes against its chrome walls" ]
+            },
+            "DeepJungle": {
+              "over": [ "hidden by the choking canopy", "wreathed around the root maze", "inside a hollowed-out nimbus beam" ]
+            },
+            "RiverSvy": {
+              "over": [ "flooded by Svy's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "Water": {
+              "over": [ "flooded by the river's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "Fungal": {
+              "over": [ "inside a nebula of spores", "through brooks of primordial soup", "neath a kaleidoscope of shrooms" ]
+            },
+            "BananaGrove": {
+              "over": [ "flooded by the river's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "LakeHinnom": {
+              "over": [ "blooming with algae", "threaded with fingers of coral", "through a porous bed of sponge" ]
+            },
+            "PalladiumReef": {
+              "over": [ "under the polyp-strewn trellis", "threaded with fingers of coral", "pleated to the labyrinth of coral" ]
+            },
+            "MoonStair": {
+              "over": [ "through the crystal labyrinth", "moated by pools of warm static", "on a black marble glade", "surrounded by the hum" ]
+            },
+            "Ruins": {
+              "over": [ "under a chrome arch", "through knots of braided rust", "entombed in a sarcophagus of circuitry" ]
+            },
+            "BaroqueRuins": {
+              "over": [ "under a crysteel balustrade", "atop the star orchid cornices", "behind a cryptic freize", "entombed in a sarcophagus of circuitry" ]
+            },
+            "Mountains": {
+              "over": [ "atop a high fastness", "looking out over the poisoned jungle", "chiseled into the limestone" ]
+            },
+            "OpalDuskwaters": {
+              "over": [ "flooded by Opal's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "RiverOpal": {
+              "over": [ "flooded by Opal's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "RiverYonth": {
+              "over": [ "flooded by Yonth's gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "MountainStream": {
+              "over": [ "flooded by alluvial gushes", "rotted by the salt water", "under the chrome carcasses of giants" ]
+            },
+            "RustWell": {
+              "over": [ "under a chrome arch", "through knots of braided rust", "entombed in a sarcophagus of circuitry" ]
+            }
+          },
+          "government": {
+            "types": [ "city-states", "precincts", "districts", "quarters", "provinces", "city-states", "city-states" ],
+            "city-states": {
+              "name": [ "autarchy", "republic", "city-state", "monarchy", "aristocracy", "oligarchy", "democracy", "theocracy" ],
+              "nameArticle": "the ",
+              "of": "of "
+            },
+            "precincts": {
+              "name": [ "precinct" ],
+              "nameArticle": " ",
+              "of": " "
+            },
+            "districts": {
+              "name": [ "district" ],
+              "nameArticle": " ",
+              "of": " "
+            },
+            "quarters": {
+              "name": [ "quarter" ],
+              "nameArticle": " ",
+              "of": " "
+            },
+            "provinces": {
+              "name": [ "province" ],
+              "nameArticle": " ",
+              "of": " "
+            }
+          },
+          "topology": {
+            "types": [ "random" ],
+            "random": {
+  
+            }
+          },
+          "organizingPrinciple": {
+            "types": [ "function", "wealth", "profession", "function", "religion" ],
+            "profession": {
+              "name": "profession",
+              "types": [ "<spice.professions.!random.singular>" ],
+              "generic": {
+                "thingsTheyDid": [
+                  "<$prof=entity.organizingPrincipleType><spice.professions.$prof.plural> plied their craft in isolation",
+                  "<$prof=entity.organizingPrincipleType><spice.professions.$prof.plural> gathered to exercise their art"
+                ]
+              },
+              "_staticfailureredirect": "spice.history.regions.organizingPrinciple.profession.generic.thingsTheyDid.!random"
+            },
+            "function": {
+              "types": [
+                "gardens",
+                "pools",
+                "museums",
+                "college",
+                "waste",
+                "consulate",
+                "market",
+                "forums",
+                "residential",
+                "theaters",
+                "food storage",
+                "pipe hub",
+                "prison",
+                "barracks",
+                "temple",
+                "tavern"
+              ],
+  
+              "gardens": {
+                "titles": [ "garden", "arboretum", "orchard" ],
+                "thingsTheyDid": [ "the Eaters admired their strange flora" ]
+              },
+              "pools": {
+                "titles": [ "lake", "spring", "pond" ],
+                "thingsTheyDid": [ "still pools quieted the Eaters' hearts" ]
+              },
+              "museums": {
+                "titles": [ "museum", "library" ],
+                "thingsTheyDid": [ "artworks were collected and cherished" ]
+              },
+              "college": {
+                "titles": [ "college", "lyceum", "seminary" ],
+                "thingsTheyDid": [ "the Eaters carried out their enigmatic studies" ]
+              },
+              "waste": {
+                "titles": [ "waste", "trash", "scum" ],
+                "thingsTheyDid": [ "trash was stored, compacted, and atomized" ]
+              },
+              "consulate": {
+                "titles": [ "consulate", "embassy" ],
+                "thingsTheyDid": [ "Eaters communed with cultures stranger than even their own" ]
+              },
+              "market": {
+                "titles": [ "market" ],
+                "thingsTheyDid": [ "curios exchanged gloved hands" ]
+              },
+              "forums": {
+                "titles": [ "forum" ],
+                "thingsTheyDid": [ "disputes and verbal contests were fought" ]
+              },
+              "residential": {
+                "titles": [ "house", "dwelling" ],
+                "thingsTheyDid": [ "the Eaters dwelled and dreamed" ]
+              },
+              "theaters": {
+                "titles": [ "theater", "hippodrome", "odeum", "coliseum", "gymnasium" ],
+                "thingsTheyDid": [ "players acted out their cosmic scripts" ]
+              },
+              "food storage": {
+                "titles": [ "granary", "silo" ],
+                "thingsTheyDid": [ "wheat wilted slowly" ]
+              },
+              "pipe hub": {
+                "titles": [ "pipe", "waterworks", "channel" ],
+                "thingsTheyDid": [ "a labyrinth of pipes ferried the chattel of the Eaters" ]
+              },
+              "prison": {
+                "titles": [ "prison" ],
+                "thingsTheyDid": [ "an unfortunate some were marginalized and forgotten" ]
+              },
+              "barracks": {
+                "titles": [ "barracks", "garrison" ],
+                "thingsTheyDid": [ "soldiers marched to the coronachs of the fallen" ]
+              },
+              "temple": {
+                "titles": [ "temple", "shrine", "tabernacle" ],
+                "thingsTheyDid": [ "the Eaters made offerings to strange gods" ]
+              },
+              "tavern": {
+                "titles": [ "saloon", "tavern", "club" ],
+                "thingsTheyDid": [ "dice were tossed and noses thumbed" ]
+              }
+            },
+            "wealth": {
+              "types": [ "poor", "middle-class", "rich" ],
+  
+              "poor": {
+                "titles": [ "slums", "ghetto", "barrio" ],
+                "titleArticle": "the",
+                "thingsTheyDid": [ "the poor huddled and dreamed", "sheet metal was pitched on poles to shelter the poor" ]
+              },
+              "middle-class": {
+                "titles": [ "homestead", "roost", "neighborhood" ],
+                "titleArticle": "the",
+                "thingsTheyDid": [ "the middling classes strolled and sneered", "streets crossed at right angles" ]
+              },
+              "rich": {
+                "titles": [ "manse", "hall", "palace", "manor", "castle" ],
+                "titleArticle": " ",
+                "thingsTheyDid": [ "the rich locked themselves away in high towers", "the rich built opulent monuments to themselves" ]
+              }
+  
+            },
+            "religion": {
+              "types": [ "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "<spice.elements.!random>", "sultans", "godless", "godless", "godless" ],
+              "sultans": {
+                "nouns": [ "sultan" ],
+                "thingsTheyDid": [ "the Eaters canonized past sultans and sang their praises" ]
+              },
+              "godless": {
+                "thingsTheyDid": [ "the Eaters spat on the shrines of gods" ]
+              },
+              "generic": {
+                "thingsTheyDid": [ "the Eaters sanctified <entity.orgPrincipleStash>", "the Eaters extolled the divine nature of <entity.orgPrincipleStash>" ]
+              },
+              "_staticfailureredirect": "spice.history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random"
+            }
+          }
+        }
+      },
+  
+      "satellitePower": {
+        "occlusionReasons": [
+          "orbital debris",
+          "a glass storm",
+          "a flock of birds",
+          "acid rain",
+          "drift film",
+          "an unidentified anomaly"
+        ]
+      }
+  
+    }
+  }
+  

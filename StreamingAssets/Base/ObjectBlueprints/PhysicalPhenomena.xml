@@ -732,7 +732,7 @@
     <tag Name="IgnoresGravity"/>
   </object>
   <object Name="Hologram Distraction" Inherits="InertObject">
-    <part Name="Render" DisplayName="[全息影像]" RenderString="@" RenderLayer="6" ColorString="&amp;B" RenderIfDark="false"/>
+    <part Name="Render" DisplayName="[全息影像]" RenderString="@" RenderLayer="9" ColorString="&amp;B" RenderIfDark="false"/>
     <part Name="Distraction"/>
     <part Name="HologramMaterial"/>
     <part Name="HologramInvulnerability"/>

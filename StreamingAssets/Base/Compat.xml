@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<compat>
+  <skill Old="Axe_ChargingStrike" New="Cudgel_ChargingStrike" />
+  <skill Old="Dual_Wield" New="Multiweapon_Fighting" />
+  <skill Old="Dual_Wield_Ambidexterity" New="Multiweapon_Expertise" />
+  <skill Old="Dual_Wield_Fussilade" New="Multiweapon_Flurry" />
+  <skill Old="Dual_Wield_Offhand_Strikes" New="Multiweapon_Proficiency" />
+  <skill Old="Dual_Wield_Two_Weapon_Fighting" New="Multiweapon_Mastery" />
+  <skill Old="Rifle_Kickback" New="Tactics_Kickback" />
+  <skill Old="Firstaid" New="Physic" />
+  <skill Old="Firstaid_StaunchWounds" New="Physic_StaunchWounds" />
+  <skill Old="Firstaid_Heal" New="Physic_Nostrums" />
+  <skill Old="Firstaid_Setlimb" New="Physic_AmputateLimb" />
+
+  <mutation Old="FreezingHands" New="FreezingRay" />
+  <mutation Old="FlamingHands" New="FlamingRay" />
+  <mutation Old="HooksForFeet2" New="HooksForFeet" />
+  <mutation Old="MentalBlast" New="SunderMind" />
+  
+  <faction Old="highly entropic beings" New="Entropic" />
+
+  <!-- misc -->
+  <blueprint Old="Cyberliver" New="BionicLiver" />
+  <blueprint Old="NotakeFurniture" New="MountedFurniture" />
+  <blueprint Old="VehicleGolemConsole N" New="VehicleConsole N" />
+  <blueprint Old="VehicleGolemConsole S" New="VehicleConsole S" />
+  <blueprint Old="Wild Watervine Merchant" New="Wild Water Merchant" />
+
+  <!-- Glow Wights -> Gyre Wights (7th plague) -->
+  <faction Old="Glow Wights" New="Gyre Wights" />
+  <blueprint Old="Glow Wight" New="BaseGyreWight" />
+  <blueprint Old="Glow Wight Apotheote" New="Gyre Wight Apotheote" />
+  <blueprint Old="Glow-Wight Cultist of Agolgut" New="Gyre Wight of Agolgot" />
+  <blueprint Old="Glow-Wight Cultist of Bethsaida" New="Gyre Wight of Bethsaida" />
+  <blueprint Old="Glow-Wight Hero of Agolgut 1" New="Uplifted Still Gyre Wight of Agolgot" />
+  <blueprint Old="Glow-Wight Hero of Bethsaida 1" New="Uplifted Still Gyre Wight of Bethsaida" />
+
+  <!-- Naphtaali (spring molting) -->
+  <blueprint Old="Naphtaali" New="BaseNaphtaali" />
+  <blueprint Old="Chrome Idol Hero 1" New="Planished Godhed" />
+  <blueprint Old="Naphtaali Corpse" New="Woodsprog Corpse" />
+
+  <!-- Joppa rework (spring molting) -->
+  <blueprint Old="JoppaZealot" New="VillageZeroConvert" />
+  <blueprint Old="Warden Ualraig" New="Warden Yrame" />
+  <blueprint Old="Doru" New="Tam" />
+
+  <!-- corpse rework -->
+  <blueprint Old="Beetlebum Corpse" New="Giant Beetle Corpse" />
+  <blueprint Old="Bloated Leech Corpse" New="Leech Corpse" />
+
+  <!-- bizarre contraption rework -->
+  <blueprint Old="UnknownTinyTrinket" New="UnknownOddTrinket" />
+  <blueprint Old="UnknownSmallTrinket" New="UnknownOddTrinket" />
+
+</compat>

@@ -292,7 +292,43 @@
 
   <command ID="CmdStatusShowEffects" DisplayText="显示效果" Category="状态" Layer="StatusScreens:Charsheet" Auto="DownPass">
     <keyboardBind Key="e"/>
-    <gamepadBind Button="buttonEast"/>
+    <gamepadBind Button="buttonWest"/>
+  </command>
+
+  <command ID="CmdMoveFarNW" DisplayText="移动到西北角" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad7"/>
+    <keyboardBind Modifier="alt,shift" Key="upArrow"/>
+  </command>
+  <command ID="CmdMoveFarN" DisplayText="移动到北方" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad8"/>
+    <keyboardBind Modifier="alt" Key="upArrow"/>
+  </command>
+  <command ID="CmdMoveFarNE" DisplayText="移动到东北角" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad9"/>
+    <keyboardBind Modifier="alt,shift" Key="rightArrow"/>
+  </command>
+  <command ID="CmdMoveFarW" DisplayText="移动到西方" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad4"/>
+    <keyboardBind Modifier="alt" Key="leftArrow"/>
+  </command>
+  <command ID="CmdMoveFarE" DisplayText="移动到东方" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad6"/>
+    <keyboardBind Modifier="alt" Key="rightArrow"/>
+  </command>
+  <command ID="CmdMoveFarSW" DisplayText="移动到西南角" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad1"/>
+    <keyboardBind Modifier="alt,shift" Key="leftArrow"/>
+  </command>
+  <command ID="CmdMoveFarS" DisplayText="移动到南方" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad2"/>
+    <keyboardBind Modifier="alt" Key="downArrow"/>
+  </command>
+  <command ID="CmdMoveFarSE" DisplayText="移动到东南角" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad3"/>
+    <keyboardBind Modifier="alt,shift" Key="downArrow"/>
+  </command>
+  <command ID="CmdMoveCenter" DisplayText="移动到中心" Category="高级冒险" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad5"/>
   </command>
 
   <command ID="Navigate Vertical" DisplayText="垂直操作" Category="行动" Layer="AdventureNav"></command>

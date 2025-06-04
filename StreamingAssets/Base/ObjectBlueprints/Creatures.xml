@@ -3648,7 +3648,7 @@
     <inventoryobject Blueprint="Wooden Arrow" Number="10-20"/>
     <inventoryobject Blueprint="Dagger" Number="1"/>
     <part Name="ConversationScript" ConversationID="HindrenScout"/>
-    <part Name="Description" Short="焦虑的化身，=pronouns.subjective= 站立着，姿态紧张，=pronouns.possessive= 的腿紧绷，=pronouns.possessive= 长长的耳朵抽动着。 狭小的眼睛四处搜寻着入侵者。 在这名侦察兵的身体里，后裔农民的高度紧张神经被提升到了极致。 "/>
+    <part Name="Description" Short="焦虑的化身，=pronouns.subjective= =verb:站立:afterpronoun=着，姿态紧张，=pronouns.possessive= 的腿紧绷，=pronouns.possessive= 长长的耳朵抽动着。 狭小的眼睛四处搜寻着入侵者。 在这名侦察兵的身体里，后裔农民的高度紧张神经被提升到了极致。 "/>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
   </object>
   <object Name="HindrenPariah" Inherits="HindrenVillager">
@@ -11403,8 +11403,7 @@
     <part Name="DropOnDeath" Blueprints="LightCircleQon"/>
     <part Name="ConfuseOnSight"/>
     <part Name="ImmuneToConfusionGas"/>
-    <mutation Name="Wings" Level="10"/>
-    <inventoryobject Blueprint="Nephal_Flap" Number="1"/>
+    <mutation Name="Wings" Level="10" Variant="Nephal_Flap" />
     <tag Name="Worshippable"/>
     <tag Name="WorshipPower" Value="37"/>
     <tag Name="Gender" Value="female"/>
@@ -14463,6 +14462,7 @@
     <removepart Name="DamageOnCreate"/>
     <part Name="EnergyCellSocket" ChanceFullCell="100"/>
     <tag Name="ExcludeFromDynamicEncounters"/>
+    <xtagReputation LovedBy="Templar" />
   </object>
 
   <!-- Ezra -->

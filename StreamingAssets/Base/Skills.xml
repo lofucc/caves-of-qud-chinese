@@ -4,7 +4,7 @@
   <skill Name="杂技" Class="Acrobatics" Description="你擅长杂技。" Cost="75" Attribute="Strength" Snippet="acrobatics" Tile="Abilities/sw_skill_acrobatics.png" Foreground="y" Detail="G">
     <power Name="迅捷反应" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="当躲避远程攻击时，你的闪避值（DV）获得+5加成。" Tile="Abilities/sw_skill_swift_reflexes.png" Foreground="y" Detail="G"/>
     <power Name="敏捷" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="你获得+2的DV加成。" Tile="Abilities/sw_skill_spry.png" Foreground="y" Detail="G"/>
-    <power Name="跳跃" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="你跳入距离2范围内的一个未被占据的方格。你不能跳过被生物占据的方格。" Tile="Abilities/abil_jump.bmp" Foreground="y" Detail="G"/>
+    <power Name="跳跃" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="你跳入距离2范围内的一个未被占据的方格。你不能跳过被生物占据的方格，除非你有某种能力（如飞行）来增强你的跳跃。" Tile="Abilities/abil_jump.bmp" Foreground="y" Detail="G"/>
     <power Name="翻滚" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="你获得+1的DV加成。此外，闪避的冷却时间减少到20。" Tile="Abilities/sw_skill_tumble.png" Foreground="y" Detail="G"/>
   </skill>
 
@@ -19,7 +19,7 @@
   </skill>
 
   <skill Name="弓箭与步枪" Class="Rifles" Description="你擅长使用弓箭和步枪。" Cost="100" Attribute="Agility" Snippet="the bow and the rifle" Tile="Abilities/sw_skill_bow_and_rifle.png" Foreground="y" Detail="B">
-    <power Name="稳定之手" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="在计算你使用弓和步枪的命中率时，你的敏捷值被视为提高了4点。" Tile="Abilities/sw_skill_steady_hand.png" Foreground="y" Detail="B"/>
+    <power Name="稳定之手" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="在计算你使用弓和步枪的命中率时，你的敏捷值被视为提高了4点。" Tile="Abilities/sw_skill_steady_hands.png" Foreground="y" Detail="B"/>
     <power Name="瞄准标记" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_DrawABead" Snippet="drawing a bead" Description="你花费一个回合对目标进行瞄准并标记。当你使用弓或步枪射击被标记的目标时，你的敏捷将被视为高出2点，以提高命中率。你一次只能标记一个目标。如果你失去对目标的视线，标记将会消失。" Tile="Abilities/abil_mark_target.bmp" Foreground="y" Detail="B"/>
     <power Name="压制射击" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SuppressiveFire" Prereq="Rifle_DrawABead" Snippet="suppressive fire" Description="你向标记的目标开火。如果你的射击穿透了目标，目标将被压制，在接下来的3-5轮内无法移动。然后目标将不再被标记。" Tile="Abilities/tile_supressive_fire.png" Foreground="y" Detail="B"/>
     <power Name="碾压之火" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_FlatteningFire" Prereq="Rifle_DrawABead,Rifle_SuppressiveFire" Snippet="flattening fire" Description="只要目标被6个或更多的固体障碍物包围，压制之火就会升级为碾压之火。碾压之火还会将目标击倒并使其解除武装。" Tile="Abilities/sw_skill_flattening_fire.png" Foreground="y" Detail="B"/>
@@ -111,7 +111,7 @@
   </skill>
 
   <skill Name="手枪" Class="Pistol" Description="你擅长使用各种类型的手枪。" Cost="100" Attribute="Agility" Snippet="the pistol" Tile="Abilities/sw_skill_pistol.png" Foreground="y" Detail="c">
-    <power Name="稳手" Cost="0" Attribute="Agility" Minimum="0" Class="Pistol_SteadyHands" Snippet="the pistol" Description="在计算你使用手枪的命中率时，你的敏捷被视为提高了4点。" Tile="Abilities/sw_skill_steady_hands.png" Foreground="y" Detail="c"/>
+    <power Name="稳手" Cost="0" Attribute="Agility" Minimum="0" Class="Pistol_SteadyHands" Snippet="the pistol" Description="在计算你使用手枪的命中率时，你的敏捷被视为提高了4点。" Tile="Abilities/sw_skill_steady_hand.png" Foreground="y" Detail="c"/>
     <power Name="双持连射" Cost="150" Attribute="Agility" Minimum="17" Class="Pistol_Akimbo" Snippet="akimbo" Description="当你持有多把枪械进行远程攻击时，每把枪都会发射一发子弹。" Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="c"/>
     <power Name="弱点瞄准者" Cost="150" Attribute="Agility" Minimum="19" Class="Pistol_WeakSpotter" Snippet="spotting weakness" Description="使用手枪时，你造成暴击的几率提高5%（基础几率为5%）" Tile="Abilities/sw_skill_weak_spotter.png" Foreground="y" Detail="c"/>
     <power Name="边跑边射" Cost="50" Attribute="Agility" Minimum="21" Class="Pistol_SlingAndRun" Snippet="slinging and running" Description="你在奔跑时使用手枪射击不会受到精度惩罚。" Tile="Abilities/sw_skill_sling_and_run.png" Foreground="y" Detail="c"/>

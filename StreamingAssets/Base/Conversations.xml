@@ -122,19 +122,19 @@
       <text>基础斯林斯定居文本</text>
       <choice Target="Start">再次感谢。</choice>
     </node>
-    <choice Target="SlynthRequest" Priority="10" IfNotHaveState="SlynthSettlementFaction"
+    <choice Target="SlynthRequest" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction"
       IfHaveQuest="停机坪" IfNotSlynthCandidate="Mayor" IfSpeakerHaveTagOrProperty="Mayor">
       <text>在我的旅途中，我遇到了一个种族，斯林斯，他们正在寻找新的家园。</text>
     </choice>
-    <choice Target="SlynthAbout" Priority="10" IfNotHaveState="SlynthSettlementFaction"
+    <choice Target="SlynthAbout" Priority="10" IfAllowEscape="true" IfNotHaveState="SlynthSettlementFaction"
       IfSlynthCandidate="Mayor">
       <text>关于斯林斯...</text>
     </choice>
-    <choice Target="SlynthArrived" Priority="10" IfSlynthChosen="Mayor"
+    <choice Target="SlynthArrived" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor"
       IfHaveState="LandingPadsSlynthArrived" IfNotHaveState="LandingPadsSlynthSettled">
       <text>我看斯林斯已经到了。他们怎么样？</text>
     </choice>
-    <choice Target="SlynthSettled" Priority="10" IfSlynthChosen="Mayor"
+    <choice Target="SlynthSettled" Priority="10" IfAllowEscape="true" IfSlynthChosen="Mayor"
       IfHaveState="LandingPadsSlynthSettled">
       <text>已经过去一周了。斯林斯安顿下来了吗？</text>
     </choice>
@@ -9984,7 +9984,7 @@
       <choice GotoID="Welcome2">...</choice>
     </start>
     <node ID="Choices">
-      <text>[空节点；仅用于选项重用]</text>
+      <!-- empty node; for choice reuse only -->
       <choice GotoID="Name">我是=name=。你是谁？</choice>
       <choice IfTestState="GyredreamKnown" GotoID="Gyredream">你体验过旋梦吗？</choice>
       <choice IfHaveActiveQuest="如果、那么、否则" GotoID="TauChime">我必须将陶的铃铛带给根茎，这样她就可以离开查瓦了。</choice>
