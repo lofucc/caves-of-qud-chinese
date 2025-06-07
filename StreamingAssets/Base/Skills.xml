@@ -57,7 +57,7 @@
     <power Name="适时攻击" Cost="0" Attribute="Agility|Strength" Minimum="17|17" Class="SingleWeaponFighting_OpportuneAttacks" Snippet="opportune attacks" Description="当你在单手使用近战武器时打出暴击，最多两个随机武器或盾牌技能的冷却时间将立即重置。" Tile="Abilities/sw_skill_opportune_attacks.png" Foreground="y" Detail="W"/>
     <power Name="武器专精" Cost="150" Attribute="Agility|Strength" Minimum="21|21" Class="SingleWeaponFighting_WeaponExpertise" Snippet="single weapon expertise" Description="当你单手使用武器进行近战攻击时，有50%的几率立即进行第二次免费攻击。" Tile="Abilities/sw_skill_weapon_expertise.png" Foreground="y" Detail="W"/>
     <power Name="穿透打击" Cost="200" Attribute="Agility|Strength" Minimum="23|23" Class="SingleWeaponFighting_PenetratingStrikes" Snippet="penetrating strikes" Description="单武器战斗时，你的近战攻击总是额外穿透一次。" Tile="Abilities/sw_skill_penetrating_strikes.png" Foreground="y" Detail="W"/>
-    <power Name="武器专精" Cost="300" Attribute="Agility|Strength" Minimum="29|29" Class="SingleWeaponFighting_WeaponMastery" Prereq="SingleWeaponFighting_WeaponExpertise" Snippet="single weapon mastery" Description="当你单手持武器进行近战攻击时，可以立即免费进行第二次攻击。" Tile="Abilities/sw_skill_weapon_mastery.png" Foreground="y" Detail="W"/>
+    <power Name="武器精通" Cost="300" Attribute="Agility|Strength" Minimum="29|29" Class="SingleWeaponFighting_WeaponMastery" Prereq="SingleWeaponFighting_WeaponExpertise" Snippet="single weapon mastery" Description="当你单手持武器进行近战攻击时，可以立即免费进行第二次攻击。" Tile="Abilities/sw_skill_weapon_mastery.png" Foreground="y" Detail="W"/>
   </skill>
 
   <skill Name="多武器战斗" Class="Multiweapon_Fighting" Description="你擅长多武器战斗。使用副手武器攻击的几率增加。" Cost="150" Attribute="Agility" Snippet="dual wielding" Tile="Abilities/sw_skill_multiweapon_fighting.png" Foreground="y" Detail="M">

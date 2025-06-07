@@ -178,7 +178,7 @@
       </pregen>
       
       <pregen Name="枪翼" Genotype="Mutated Human" Tile="Creatures/sw_gunwing.bmp" Foreground="y" Detail="K" Background="k">
-        <code>H4sIAL2AQWgC/8VTUWvbMBD+K8bs0TWyk3jJIA9ZNraxFbImtIWlD5J9ccRkyUi6jRDy33dyUramSyFQyIOFPt/dd58+nbZxzRv4BdZJo+N3UZynLM1Znvb7cRLFAqWq/olmFGUh0JgKFTj692N7AItNCyHn/uZbOl1zy0sP9n0gcOl3rML3CbTxlHbdFSTRxDlohNpcTedU0CbR7b7V+K+KJJqi8mhhrAG95SqJZiiULL/CZmF+gh5rVCpIqrjn1H8bv/EvK3mq4gOVPVMS+B7TAtM1eu6hij5jw3UIPvNkt0uiM5yYo7i8EU9EnPThkBV4llj0OFviYNTjSxwyNngNLzpzicBd1o0jGSf9aFoiYbRxoKDsKvbP4JFg79QgE6xbBa0l6y/xLYhVIJga1J6SMtrfcit5h1hn2hHHKAs+V6J3Xl0fcupXDLOCug6yFa15MTqTY5WT/hFj2Ut1D69w/xPvrRTo4cIDcKzj5ATMjNTezdCWa+6g6sjn3oKu/Tp4FIZjUksl/YbgkNDCYL3W4NwBf9EelJI16DIootPEd1Kp1vwGS7gg/LE2YUdWxrydt9AZfhUOTvgGGi611PVhFAXpmIS57OL/uZCH3R9hp+Sm6gUAAA==</code>
+        <code>H4sIABUnRGgC/8VTXWvbQBD8K0L0URHyp+qCH1y3tKUNuLFJAnUeVtJaPnq6E3e3Lcb4v3fv7NDGqQOGgB8kdm935kazq21cQ4O/0FihVfwuirtplnazbtrvx0kUFyRk9U+1w9XMFxpdkUTLZz+2h2SxadH33N98S6drMFA6NO89gU2/U+WfT6i047brAEiiibXYFHJzNZ0zoE2i2/1V478qkmhK0pHBsUJyBmQSzaiQovyKm4X+iWqsSEovqQIHfP82fuNeVvJUxQeGPVPi+R7bPNM1OXBYRZ+pAeWLzzzZ7ZLoDCfmVFzeiCciTvpw6PI8SxrmAEvqryB7DReCrUxgL+vDkYyTTjQtk2QcWJRYBsT+B3gk2Hs0ws5qSYPBaORBU03KcaHD8S0YASHLglFHuCzgEIbsc6/KOO718/M4Br2yXFK+WpVn4rqjgt95Dzx6+KLyh1eY/MQ5IwpyeOHRH+s4OfuZFsrZGZlyDRarQD53BlXt1pwMuWVSCyncxjvml2ShqV4rtH5H3nL+RTmUUtSoSq8o56M7IWWrf6M5MHysNUcDtjKGdt5iMPzKfzjnN9iAUELVhyUsWMfEb2So/2cgD7s/L4blhd4FAAA=</code>
         <description>
 &amp;c&#249;&amp;y 主要专注远程战斗
 &amp;c&#249;&amp;y 快速且机动性强
