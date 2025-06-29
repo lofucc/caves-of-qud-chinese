@@ -48,7 +48,7 @@
     <mutation Name="神经泡" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="神经泡者" Tile="Mutations/nerve_poppy.bmp" />
     <mutation Name="肉食者" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="光合皮肤" BearerDescription="食肉者" Tile="Items/sw_rawmeat1.bmp" />
     <mutation Name="冷血" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="冷血者" Tile="Mutations/cold-blooded.bmp" />
-    <mutation Name="电磁脉冲" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="电磁脉冲者" Tile="Mutations/electromagnetic_impulse.bmp" />
+    <mutation Name="电磁紊乱" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="电磁脉冲者" Tile="Mutations/electromagnetic_impulse.bmp" />
     <mutation Name="钩爪" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="钩爪者" Tile="Mutations/hooks_for_feet.bmp" />
     <mutation Name="易怒基因" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="易怒基因者" Tile="Mutations/irritable_genome.bmp" />
     <mutation Name="近视" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="近视者" Tile="Mutations/myopia.bmp" />
@@ -72,7 +72,7 @@
     <mutation Name="分解" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="分解者" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
     <mutation Name="支配" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="支配者" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp" />
     <mutation Name="自我投射" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="自我投射者" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
-    <mutation Name="力场泡沫" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="力场泡沫者" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
+    <mutation Name="力场罩" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="力场泡沫者" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
     <mutation Name="力场墙" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="力场墙者" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp" />
     <mutation Name="点燃" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="点燃者" BiomeAdjective="kindling" Tile="Mutations/kindle.bmp" />
     <mutation Name="光线操控" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="光线操控者" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp" />
@@ -97,7 +97,7 @@
     <mutation Name="心灵感知" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="心灵感知者" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
     <mutation Name="时空漩涡" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="时空漩涡者" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
     <mutation Name="震慑力量" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="震慑力量者" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
-    <mutation Name="震慑力量" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="震慑力量者" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
+    <mutation Name="心灵撕裂" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="心灵撕裂者" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
     <mutation Name="汲取活力" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="汲取活力者" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
     <mutation Name="心灵交流" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="心灵交流者" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />
     <mutation Name="传送" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="传送者" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />
